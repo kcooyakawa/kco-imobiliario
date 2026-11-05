@@ -72,13 +72,13 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .hero2 .row{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;border-top:1px solid rgba(250,250,250,.55);padding-top:20px}
 .hero2 .row p{max-width:38em;font-size:clamp(17px,1.4vw,20px);line-height:1.45}
 .hero2 .cta{display:flex;gap:8px;flex-wrap:wrap}
-.facades{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;height:min(56svh,560px);margin-top:8px}
+.facades{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;height:min(56svh,560px);margin-top:8px}
 .facades a{position:relative;overflow:hidden;display:block;background:var(--tile);text-decoration:none}
 .facades img{width:100%;height:100%;object-fit:cover;max-width:none;transition:transform 1.1s cubic-bezier(.2,.7,.1,1)}
 .facades a:hover img{transform:scale(1.05)}
 .facades .lab{position:absolute;left:12px;bottom:12px;background:#FAFAFA;color:var(--ink);padding:9px 11px}
 .facades a:hover .lab{background:var(--red);color:#fff}
-@media(max-width:760px){.facades{grid-template-columns:repeat(6,62vw);overflow-x:auto;scroll-snap-type:x mandatory;height:96vw}.facades a{scroll-snap-align:start}}
+@media(max-width:760px){.facades{grid-template-columns:repeat(7,62vw);overflow-x:auto;scroll-snap-type:x mandatory;height:96vw}.facades a{scroll-snap-align:start}}
 /* section head (site pattern) */
 .sec{margin-top:clamp(120px,11vw,160px)}
 .sh{border-top:1px solid var(--ink);padding-top:16px;display:flex;flex-wrap:wrap;gap:24px;margin-bottom:clamp(48px,5vw,72px)}
@@ -290,6 +290,7 @@ main > #tratamento:first-child{margin-top:8px}
     <a href="#case-ita"><img src="a/cov-ita.webp" alt="Fachada Itá Conceição"><span class="lab">Itá Conceição</span></a>
     <a href="#case-impar"><img src="a/cov-impar.webp" alt="Fachada Impar 737"><span class="lab">Impar 737</span></a>
     <a href="#case-seiza"><img src="a/cov-seiza.webp" alt="Fachada Seiza Paraíso"><span class="lab">Seiza Paraíso</span></a>
+    <a href="#case-ara"><img src="a/cov-ara.webp" alt="Fachada Ara Faria Lima"><span class="lab">Ara Faria Lima</span></a>
   </div>
 </header>
 
