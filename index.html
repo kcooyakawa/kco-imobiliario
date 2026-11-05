@@ -168,6 +168,7 @@ footer .in > :last-child{text-align:right}
 .casepage .top{position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--line)}
 .casepage .top .in{display:flex;justify-content:space-between;align-items:center;height:72px}
 .casepage .x{min-height:44px;padding:0 18px;border:1px solid var(--ink);background:var(--ink);color:#FAFAFA;font:500 12px/1 var(--l);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.casepage .x.home{background:transparent;color:var(--ink)}
 .casepage .x:hover{background:var(--red);border-color:var(--red);color:#fff}
 .cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:24px;padding-bottom:120px}
 .cg figure{margin:0}
@@ -181,6 +182,14 @@ footer .in > :last-child{text-align:right}
 .js .rise.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.js .rise{opacity:1;transform:none;transition:none}.hero img{animation:none}.card .sq img{transition:none}}
 
+
+#tratamento{--ink:#F3F1EC;--muted:#A8A49B;--line:#3A3936;--tile:#2A2A28;background:#1A1A19;color:#F3F1EC;margin-inline:calc(-1 * max(var(--m),env(safe-area-inset-left,0px)));padding:clamp(96px,9vw,140px) max(var(--m),env(safe-area-inset-right,0px));}
+#tratamento .ba-imgs{margin-inline:calc(-1 * max(var(--m),env(safe-area-inset-left,0px)))}
+#tratamento .ba-imgs figcaption{background:#F3F1EC;color:#111}
+#tratamento .ba-imgs .f figcaption{background:#E1251B;color:#fff}
+#tratamento .ba-imgs .f figcaption::before{background:#fff}
+#tratamento .flow{margin-right:calc(-1 * max(var(--m),env(safe-area-inset-right,0px)))}
+main > #tratamento:first-child{margin-top:8px}
 /* flow (carrossel lado a lado) */
 .flowblk{margin-top:clamp(64px,6vw,96px)}
 .flowblk:first-child{margin-top:0}
@@ -231,10 +240,10 @@ footer .in > :last-child{text-align:right}
     <path fill="#0E0E0E" d="M678.62,411.95c18.47,0,34.26-3.19,47.37-9.59,13.1-6.4,22.03-15.12,26.76-26.17h44.52c-4.42,24.48-16.93,42.55-37.54,54.24-20.6,11.69-47.64,17.52-81.11,17.52-37.74,0-67.26-7.38-88.58-22.14-21.32-14.76-31.97-37.62-31.97-68.57s10.66-54.08,31.97-68.92c21.31-14.84,50.84-22.26,88.58-22.26,33.78,0,61.02,5.92,81.71,17.76,20.68,11.84,33.08,30.24,37.18,55.18h-44.76c-4.42-11.52-13.19-20.6-26.29-27.23-13.11-6.63-29.05-9.95-47.84-9.95-23.84,0-42.43,4.74-55.77,14.21-13.35,9.47-20.01,23.21-20.01,41.21s6.67,31.42,20.01,40.74c13.34,9.32,31.93,13.97,55.77,13.97Z"></path>
     <path fill="#0E0E0E" d="M925.64,266.06c24.63,0,45.71,3.04,63.24,9.12,17.52,6.08,31.42,16.02,41.68,29.84,10.26,13.82,15.39,31.22,15.39,52.22,0,30.95-10.66,53.8-31.97,68.57-21.31,14.76-50.77,22.14-88.34,22.14s-67.22-7.38-88.46-22.14c-21.24-14.76-31.85-37.62-31.85-68.57s10.62-54.08,31.85-68.92c21.23-14.84,50.72-22.26,88.46-22.26ZM869.98,398.09c13.26,9.24,31.81,13.85,55.66,13.85s42.39-4.65,55.66-13.97c13.26-9.31,19.89-22.89,19.89-40.74s-6.67-31.74-20.01-41.21c-13.35-9.47-31.85-14.21-55.54-14.21s-42.39,4.74-55.66,14.21c-13.26,9.47-19.89,23.21-19.89,41.21s6.63,31.62,19.89,40.86Z"></path></svg></a>
   <span class="links">
-    <a class="lab" href="#tratamento">Tratamento</a>
-    <a class="lab" href="#campanhas">Campanhas</a>
+    <a class="lab" href="#topo">Home</a>
+    <a class="lab" href="#tratamento">Beyond the frame</a>
+    <a class="lab" href="#campanhas">Cases</a>
     <a class="lab" href="#bagamoio">Bagamoio</a>
-    <a class="lab" href="#brinde">Brinde</a>
   </span>
   <a class="btn" href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Portfólio KCO ↗</a>
 </div></nav>
@@ -251,7 +260,7 @@ footer .in > :last-child{text-align:right}
   <div class="hero2"><video class="bg" src="a/hero-vpi.mp4" poster="a/hero-vpi.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video><div class="in wrap">
     <h1>Criação para o mercado <span style="white-space:nowrap">imobiliário<span class="dot">.</span></span></h1>
     <div class="row">
-      <p>Tratamento de imagem, campanhas, marca, book e brinde para lançamentos e revendas em São Paulo.</p>
+      <p>Branding, estratégia, campanhas, conteúdo para redes sociais, vídeos, sites, landing pages, direção de arte, tratamento de imagens, books comerciais e materiais de lançamento. Soluções criativas e comunicação integrada para apresentar, posicionar e valorizar produtos imobiliários.</p>
       <div class="cta"><a class="btn w" href="#tratamento">Ver antes e depois →</a><a class="btn wo" href="#campanhas">Ver cases</a></div>
     </div>
   </div></div>
@@ -340,15 +349,7 @@ footer .in > :last-child{text-align:right}
     </div>
   </div>
 </section>
-<section class="sec" id="brinde">
-  <div class="sh"><span class="lab">04 — Case Vista Parque Ibirapuera</span><div><h2 class="rise">Brinde cartonado.</h2><p class="rise" style="--d:80ms">Estratégia de relacionamento para o lançamento do Vista Parque Ibirapuera, da Kallas: kit em caixa cartonada com garrafa e lâmina-convite para clientes selecionados, e os convites impressos dos eventos.</p></div></div>
-  <div class="brinde">
-    <figure class="c rise"><img src="a/c/vpi-kit-clean.webp" alt="Caixa cartonada e lâmina-convite" loading="lazy"><figcaption><b>Caixa cartonada e lâmina</b><span class="lab mut">Kit de relacionamento</span></figcaption></figure>
-    <figure class="d rise"><img src="a/c/vpi-gift-clean.webp" alt="Caixa aberta com a garrafa e a lâmina" loading="lazy"><figcaption><b>O kit aberto</b><span class="lab mut">Garrafa e lâmina-convite</span></figcaption></figure>
-    <figure class="e rise"><img src="a/vpi-rubayat.webp" alt="Convite 9x15 do evento" loading="lazy"><figcaption><b>Convite do evento</b><span class="lab mut">9×15 cm</span></figcaption></figure>
-    <figure class="c rise"><img src="a/vpi-af-convite.webp" alt="Arte-final da lâmina-convite" loading="lazy"><figcaption><b>Lâmina-convite</b><span class="lab mut">Arte-final 32×9 cm</span></figcaption></figure>
-  </div>
-</section>
+
 <section class="sec contact" id="contato">
   <div class="sh" style="margin-bottom:40px"><span class="lab">05 — Contato</span><div></div></div>
   <h2 class="rise">Vamos conversar<span class="dot">.</span></h2>
@@ -385,7 +386,7 @@ footer .in > :last-child{text-align:right}
   
     <path fill="#0E0E0E" d="M465.47,346.58l112.5,101.6h-66.79l-92.84-83.37h-53.52v83.37h-44.76v-241.81h44.76v122.92h53.52l70.34-63.24h66.31l-89.52,80.53Z"></path>
     <path fill="#0E0E0E" d="M678.62,411.95c18.47,0,34.26-3.19,47.37-9.59,13.1-6.4,22.03-15.12,26.76-26.17h44.52c-4.42,24.48-16.93,42.55-37.54,54.24-20.6,11.69-47.64,17.52-81.11,17.52-37.74,0-67.26-7.38-88.58-22.14-21.32-14.76-31.97-37.62-31.97-68.57s10.66-54.08,31.97-68.92c21.31-14.84,50.84-22.26,88.58-22.26,33.78,0,61.02,5.92,81.71,17.76,20.68,11.84,33.08,30.24,37.18,55.18h-44.76c-4.42-11.52-13.19-20.6-26.29-27.23-13.11-6.63-29.05-9.95-47.84-9.95-23.84,0-42.43,4.74-55.77,14.21-13.35,9.47-20.01,23.21-20.01,41.21s6.67,31.42,20.01,40.74c13.34,9.32,31.93,13.97,55.77,13.97Z"></path>
-    <path fill="#0E0E0E" d="M925.64,266.06c24.63,0,45.71,3.04,63.24,9.12,17.52,6.08,31.42,16.02,41.68,29.84,10.26,13.82,15.39,31.22,15.39,52.22,0,30.95-10.66,53.8-31.97,68.57-21.31,14.76-50.77,22.14-88.34,22.14s-67.22-7.38-88.46-22.14c-21.24-14.76-31.85-37.62-31.85-68.57s10.62-54.08,31.85-68.92c21.23-14.84,50.72-22.26,88.46-22.26ZM869.98,398.09c13.26,9.24,31.81,13.85,55.66,13.85s42.39-4.65,55.66-13.97c13.26-9.31,19.89-22.89,19.89-40.74s-6.67-31.74-20.01-41.21c-13.35-9.47-31.85-14.21-55.54-14.21s-42.39,4.74-55.66,14.21c-13.26,9.47-19.89,23.21-19.89,41.21s6.63,31.62,19.89,40.86Z"></path></svg></span><button class="x" id="case-close">Fechar ✕</button></div></div>
+    <path fill="#0E0E0E" d="M925.64,266.06c24.63,0,45.71,3.04,63.24,9.12,17.52,6.08,31.42,16.02,41.68,29.84,10.26,13.82,15.39,31.22,15.39,52.22,0,30.95-10.66,53.8-31.97,68.57-21.31,14.76-50.77,22.14-88.34,22.14s-67.22-7.38-88.46-22.14c-21.24-14.76-31.85-37.62-31.85-68.57s10.62-54.08,31.85-68.92c21.23-14.84,50.72-22.26,88.46-22.26ZM869.98,398.09c13.26,9.24,31.81,13.85,55.66,13.85s42.39-4.65,55.66-13.97c13.26-9.31,19.89-22.89,19.89-40.74s-6.67-31.74-20.01-41.21c-13.35-9.47-31.85-14.21-55.54-14.21s-42.39,4.74-55.66,14.21c-13.26,9.47-19.89,23.21-19.89,41.21s6.63,31.62,19.89,40.86Z"></path></svg></span><span style="display:flex;gap:8px"><button class="x home" id="case-home">← Home</button><button class="x" id="case-close">Fechar ✕</button></span></div></div>
   <div class="wrap" id="case-body"></div>
 </div>
 
@@ -399,7 +400,7 @@ const C=[
    {t:'Carrossel com as imagens tratadas',m:'Stories 1080×1920 · 7 telas',r:'9/16',s:seq('sint-tr',7)},
    {t:'Campanha 1 — Morar',m:'Feed 1080×1350 · 4 telas',r:'4/5',s:['a/sint-car-1.webp','a/sint-car-2.webp','a/sint-car-3.webp','a/sint-car-4.webp']},
    {t:'Campanha 2 — Investir',m:'Feed 1080×1350 · 3 telas',r:'4/5',s:['a/sint-car-5.webp','a/sint-car-6.webp','a/sint-car-7.webp']},
-   {t:'Reel',m:'1080×1920',r:'9/16',v:['a/sint-reel']}]},
+   {t:'Reels',m:'Geral · Morar · Investir — filmes completos',r:'9/16',v:['a/sint-reel','a/sint-reel-morar','a/sint-reel-investir']}]},
  {id:'hive',brand:'HIVE Moema',year:'2026',line:'Lançamento · 4 campanhas',cover:'a/cov-hive.webp',pos:'84% 50%',
   text:'Primeira fila do Parque Ibirapuera. Quatro campanhas de carrossel, cada uma com um argumento: refúgio urbano, endereço icônico, alto padrão e vista para o parque.',
   blocks:[
@@ -425,13 +426,14 @@ const C=[
    {t:'Landing page',m:'seizabykco.netlify.app',lp:'https://seizabykco.netlify.app/'},
    {t:'Campanha por público',m:'Investidor · Jovem profissional · Pais · Saúde',r:'4/5',s:['a/seiza-inv0.webp','a/seiza-jov0.webp','a/seiza-pais0.webp','a/seiza-sau0.webp']},
    {t:'Carrossel — Investidor',m:'4 telas',r:'4/5',s:['a/seiza-inv1.webp','a/seiza-inv2.webp','a/seiza-inv3.webp','a/seiza-inv4.webp']},
-   {t:'Filme',m:'1080×1920',r:'9/16',v:['a/seiza-reel']}]},
+   {t:'Filme',m:'Filme completo · 57 s',r:'9/16',v:['a/seiza-reel']}]},
  {id:'vpi',brand:'Vista Parque',year:'2025',line:'Kallas · carrossel, tapume e brinde',cover:'a/vpi-fachada.webp',
-  text:'Lançamento de alto padrão em frente ao Parque Ibirapuera. Carrossel de lançamento, simulação do tapume da obra e kit de relacionamento em caixa cartonada.',
+  text:'Lançamento de alto padrão em frente ao Parque Ibirapuera. Carrossel de lançamento, simulação do tapume da obra e estratégia de brinde: kit em caixa cartonada com garrafa e lâmina-convite para clientes selecionados, e os convites dos eventos.',
   blocks:[
    {t:'Carrossel de lançamento',m:'8 telas',r:'4/5',s:seq('vpi',8)},
    {t:'Simulação de tapume',m:'Antes e depois · dia e noite',wide:true,s:['a/c/tapume_04.webp','a/c/tapume_03.webp','a/c/tapume_02.webp','a/c/tapume_01.webp']},
-   {t:'Brinde cartonado',m:'Ver o case completo',link:'#brinde'}]},
+   {t:'Brinde cartonado',m:'Kit de relacionamento · caixa, garrafa e lâmina-convite',wide:true,s:['a/c/vpi-kit-clean.webp','a/c/vpi-gift-clean.webp']},
+   {t:'Convites',m:'Lâmina 32×9 cm · Convite do evento 9×15 cm',wide:true,s:['a/vpi-af-convite.webp','a/vpi-rubayat.webp']}]},
  {id:'bagamoio',brand:'Bagamoio',year:'2026',line:'Jabaquara · marca, book e campanha',cover:'a/c/bag-eb-05.webp',href:'#bagamoio'}
 ];
 const grid=document.getElementById('grid');
@@ -440,7 +442,7 @@ grid.innerHTML=C.map(c=>`<a class="card" href="${c.href||'#case-'+c.id}" aria-la
 function flowHTML(b,brand){
   if(b.lp) return `<div class="flowblk"><div class="fhead"><h3>${b.t}</h3><a class="btn out" href="${b.lp}" target="_blank" rel="noopener">Abrir a landing page ↗</a></div><div class="lp"><div class="bar"><span class="lab mut">${b.m}</span><span class="lab mut">Role dentro da página para ver as animações</span></div><iframe src="${b.lp}" title="Landing page ${brand}" loading="lazy"></iframe></div></div>`;
   if(b.link) return `<div class="flowblk"><div class="fhead"><h3>${b.t}</h3><a class="btn out" href="${b.link}">${b.m} →</a></div></div>`;
-  const items=b.v?b.v.map(v=>`<figure><video src="${v}.mp4" poster="${v}.jpg" muted loop playsinline autoplay controls preload="metadata"></video></figure>`).join(''):b.s.map((u,i)=>`<figure><img src="${u}" alt="${brand}, ${b.t}, tela ${i+1}" loading="lazy"></figure>`).join('');
+  const items=b.v?b.v.map(v=>`<figure><video src="${v}.mp4" poster="${v}.jpg" muted playsinline controls preload="metadata"></video></figure>`).join(''):b.s.map((u,i)=>`<figure><img src="${u}" alt="${brand}, ${b.t}, tela ${i+1}" loading="lazy"></figure>`).join('');
   return `<div class="flowblk"><div class="fhead"><h3>${b.t}</h3><span class="lab mut">${b.m}</span></div><div class="flow${b.wide?' wide':''}" style="--r:${b.r||'4/5'}" tabindex="0" aria-label="${b.t}, role para o lado">${items}</div><div class="fbar"><span></span></div></div>`;
 }
 function wireFlows(root){
@@ -465,6 +467,7 @@ function route(){
   page.hidden=false;page.scrollTop=0;document.body.style.overflow='hidden';wireFlows(body);document.getElementById('case-close').focus();
 }
 document.getElementById('case-close').onclick=()=>{location.hash='campanhas'};
+document.getElementById('case-home').onclick=()=>{location.hash='topo';scrollTo(0,0)};
 document.getElementById('case-body').addEventListener('click',e=>{const a=e.target.closest('a[href="#brinde"]');if(a){e.preventDefault();location.hash='brinde';}});
 addEventListener('keydown',e=>{if(e.key==='Escape'&&!page.hidden)location.hash='campanhas'});
 addEventListener('hashchange',route);route();
