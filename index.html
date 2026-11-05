@@ -209,6 +209,8 @@ main > #tratamento:first-child{margin-top:8px}
 @media(max-width:760px){.idx .d{display:none}.idx-prev{display:none}}
 @media(hover:none){.idx-prev{display:none}}
 .flow.wide{gap:24px}
+.flow .vcap{display:grid;gap:6px;border-top:1px solid var(--line);padding-top:10px;margin-top:12px}
+.flow .vcap b{font:600 18px/1.1 var(--g);text-transform:uppercase}
 /* flow (carrossel lado a lado) */
 .flowblk{margin-top:clamp(64px,6vw,96px)}
 .flowblk:first-child{margin-top:0}
@@ -448,7 +450,7 @@ const C=[
   text:'Studios de 25 e 29 m² pronto para morar, a poucos minutos da Faria Lima. Campanha 3 com fotos reais do empreendimento: filme manifesto, quatro reels por público e três carrosséis, para morar, investir e primeiro apartamento.',
   blocks:[
    {t:'Reel manifesto',m:'Filme completo · 50 s',r:'9/16',v:['a/ARA_C3_Reel_Manifesto']},
-   {t:'Reels por público',m:'Tudo a minutos · Vá de bike · Fim de tarde · Endereço que não para',r:'9/16',v:['a/ARA_C3_R1_Tudo_a_minutos','a/ARA_C3_R2_Va_de_bike','a/ARA_C3_R3_Fim_de_tarde','a/ARA_C3_R4_Endereco_que_nao_para']},
+   {t:'Reels por público',m:'Ara Faria Lima · 4 reels',r:'9/16',v:['a/ARA_C3_R1_Tudo_a_minutos','a/ARA_C3_R2_Va_de_bike','a/ARA_C3_R3_Fim_de_tarde','a/ARA_C3_R4_Endereco_que_nao_para'],caps:[['Ara · Tudo a minutos','Reel por público'],['Ara · Vá de bike','Reel por público'],['Ara · Fim de tarde','Reel por público'],['Ara · Endereço que não para','Reel por público']]},
    {t:'Carrossel — Morar',m:'8 telas',r:'4/5',s:seq('ara-A',8).map(u=>u.replace('ara-A_0','ara-A'))},
    {t:'Carrossel — Investir',m:'6 telas',r:'4/5',s:seq('ara-I',6).map(u=>u.replace('ara-I_0','ara-I'))},
    {t:'Carrossel — Primeiro apartamento',m:'6 telas',r:'4/5',s:seq('ara-P',6).map(u=>u.replace('ara-P_0','ara-P'))}]},
@@ -474,7 +476,7 @@ const A=[
   blocks:()=>[['sintese','Campanha 1 — Morar'],['hive','Campanha 2 — Um endereço emblemático'],['ita','Campanha 1'],['impar','Carrossel'],['seiza','Campanha por público'],['vpi','Carrossel de lançamento'],['ara','Carrossel — Morar']].flatMap(([id,t])=>[{...blk(id,t),t:byId(id).brand+' · '+t},{t:'',m:'Ver todas as campanhas de '+byId(id).brand,link:'#case-'+id,mini:true}])},
  {id:'videos',t:'Vídeos',d:'Reels, filmes manifesto e vídeos por público.',th:['a/ARA_C3_Reel_Manifesto.jpg','a/seiza-reel.jpg','a/sint-reel.jpg'],
   text:'Filmes para redes e lançamento: manifesto, tour pelo apartamento e reels por público.',
-  blocks:()=>[{t:'Filmes',m:'Ara Faria Lima · Seiza Paraíso · Síntese SP — filmes completos',r:'9/16',v:['a/ARA_C3_Reel_Manifesto','a/seiza-reel','a/sint-reel']},blk('ara','Reels por público')]},
+  blocks:()=>[{t:'Filmes',m:'Filmes completos · 1080×1920',r:'9/16',v:['a/ARA_C3_Reel_Manifesto','a/seiza-reel','a/sint-reel'],caps:[['Ara Faria Lima','Filme manifesto · Pinheiros'],['Seiza Paraíso','Filme de lançamento · Paraíso'],['Síntese SP','Reel de revenda · Moema']]},blk('ara','Reels por público')]},
  {id:'pack',t:'Pack',d:'Brinde cartonado, convites e kit de relacionamento.',th:['a/c/vpi-kit-clean.webp','a/c/vpi-gift-clean.webp','a/vpi-rubayat.webp'],
   text:'Embalagem e impressos de relacionamento: o kit em caixa cartonada do Vista Parque Ibirapuera e os convites dos eventos.',
   blocks:()=>[blk('vpi','Brinde cartonado'),blk('vpi','Convites'),{t:'Carta premium Bagamoio',m:'A4',wide:true,s:['a/bag-carta.webp']}]},
@@ -490,7 +492,7 @@ grid.innerHTML=C.map(c=>`<a class="card" href="${c.href||'#case-'+c.id}" aria-la
 function flowHTML(b,brand){
   if(b.lp) return `<div class="flowblk"><div class="fhead"><h3>${b.t}</h3><a class="btn out" href="${b.lp}" target="_blank" rel="noopener">Abrir a landing page ↗</a></div><div class="lp"><div class="bar"><span class="lab mut">${b.m}</span><span class="lab mut">Role dentro da página para ver as animações</span></div><iframe src="${b.lp}" title="Landing page ${brand}" loading="lazy"></iframe></div></div>`;
   if(b.link) return b.mini?`<div style="margin-top:16px"><a class="btn out" href="${b.link}">${b.m} →</a></div>`:`<div class="flowblk"><div class="fhead"><h3>${b.t}</h3><a class="btn out" href="${b.link}">${b.m} →</a></div></div>`;
-  const items=b.v?b.v.map(v=>`<figure><video src="${v}.mp4" poster="${v}.jpg" muted playsinline controls preload="metadata"></video></figure>`).join(''):b.s.map((u,i)=>`<figure><img src="${u}" alt="${brand}, ${b.t}, tela ${i+1}" loading="lazy"></figure>`).join('');
+  const items=b.v?b.v.map((v,k)=>`<figure><video src="${v}.mp4" poster="${v}.jpg" muted playsinline controls preload="metadata"></video>${b.caps?`<figcaption class="vcap"><b>${b.caps[k][0]}</b><span class="lab mut">${b.caps[k][1]}</span></figcaption>`:''}</figure>`).join(''):b.s.map((u,i)=>`<figure><img src="${u}" alt="${brand}, ${b.t}, tela ${i+1}" loading="lazy"></figure>`).join('');
   return `<div class="flowblk"><div class="fhead"><h3>${b.t}</h3><span class="lab mut">${b.m}</span></div><div class="flow${b.wide?' wide':''}" style="--r:${b.r||'4/5'}" tabindex="0" aria-label="${b.t}, role para o lado">${items}</div><div class="fbar"><span></span></div></div>`;
 }
 function wireFlows(root){
