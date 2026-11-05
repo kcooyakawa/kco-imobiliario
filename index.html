@@ -479,10 +479,7 @@ const A=[
   blocks:()=>[{t:'Antes e depois',m:'Ver Beyond the frame',link:'#tratamento'},blk('sintese','Carrossel com as imagens tratadas'),blk('vpi','Simulação de tapume')]}
 ];
 document.getElementById('idx').innerHTML=A.map((a,i)=>`<li><a href="#area-${a.id}" data-i="${i}"><span class="t"><span class="n">${String(i+1).padStart(2,'0')}</span><b>${a.t}</b></span><span class="d">${a.d}</span></a></li>`).join('');
-(()=>{const prev=document.createElement('div');prev.className='idx-prev';prev.innerHTML='<img alt="">';document.body.appendChild(prev);const im=prev.querySelector('img');const ol=document.getElementById('idx');
-ol.querySelectorAll('a').forEach(a=>{a.addEventListener('mouseenter',()=>{im.src=A[a.dataset.i].th[0];prev.classList.add('on')});});
-ol.addEventListener('mouseleave',()=>prev.classList.remove('on'));
-ol.addEventListener('mousemove',e=>{prev.style.left=Math.min(e.clientX+Math.min(innerWidth*.22,340),innerWidth-170)+'px';prev.style.top=e.clientY+'px'});})();
+
 const grid=document.getElementById('grid');
 grid.innerHTML=C.map(c=>`<a class="card" href="${c.href||'#case-'+c.id}" aria-label="Abrir case ${c.brand}"><span class="sq"><img src="${c.cover}" alt="" loading="lazy" style="object-position:${c.pos||'50% 50%'}"></span><span class="tr"><span class="tt">${c.brand}</span><span class="lab mut">${c.year}</span></span><span class="lab mut">${c.line}</span></a>`).join('');
 
