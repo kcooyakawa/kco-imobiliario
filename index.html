@@ -345,7 +345,6 @@ main > #tratamento:first-child{margin-top:8px}
     <div class="ba-txt"><h3>Síntese · Lavanderia</h3><p>Visão mais aberta da varanda técnica, com a cidade entrando na imagem.</p><span class="lab tech">Amplitude · Luz · Cor</span></div>
   </article>
 <div class="flowblk"><div class="fhead"><h3>Carrossel Síntese, com as imagens tratadas</h3><span class="lab mut">Stories 1080×1920 · 7 telas</span></div><div class="flow" style="--r:9/16" tabindex="0" aria-label="Carrossel Síntese, com as imagens tratadas, role para o lado"><figure><img src="a/c/sint-tr_01.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 1" loading="lazy"></figure><figure><img src="a/c/sint-tr_02.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 2" loading="lazy"></figure><figure><img src="a/c/sint-tr_03.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 3" loading="lazy"></figure><figure><img src="a/c/sint-tr_04.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 4" loading="lazy"></figure><figure><img src="a/c/sint-tr_05.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 5" loading="lazy"></figure><figure><img src="a/c/sint-tr_06.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 6" loading="lazy"></figure><figure><img src="a/c/sint-tr_07.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 7" loading="lazy"></figure></div><div class="fbar"><span></span></div></div>
-<div class="flowblk"><div class="fhead"><h3>Filmes</h3><span class="lab mut">Síntese SP · Seiza Paraíso · filmes completos</span></div><div class="flow" style="--r:9/16"><figure><video src="a/sint-reel.mp4" poster="a/sint-reel.jpg" muted playsinline controls preload="metadata"></video></figure><figure><video src="a/seiza-reel.mp4" poster="a/seiza-reel.jpg" muted playsinline controls preload="metadata"></video></figure></div></div>
 </section>
 
 <section class="sec" id="indice">
@@ -475,7 +474,7 @@ const A=[
   blocks:()=>[['sintese','Campanha 1 — Morar'],['hive','Campanha 2 — Um endereço emblemático'],['ita','Campanha 1'],['impar','Carrossel'],['seiza','Campanha por público'],['vpi','Carrossel de lançamento'],['ara','Carrossel — Morar']].flatMap(([id,t])=>[{...blk(id,t),t:byId(id).brand+' · '+t},{t:'',m:'Ver todas as campanhas de '+byId(id).brand,link:'#case-'+id,mini:true}])},
  {id:'videos',t:'Vídeos',d:'Reels, filmes manifesto e vídeos por público.',th:['a/ARA_C3_Reel_Manifesto.jpg','a/seiza-reel.jpg','a/sint-reel.jpg'],
   text:'Filmes para redes e lançamento: manifesto, tour pelo apartamento e reels por público.',
-  blocks:()=>[{t:'Filmes manifesto',m:'Ara Faria Lima · Seiza Paraíso · Síntese SP',r:'9/16',v:['a/ARA_C3_Reel_Manifesto','a/seiza-reel','a/sint-reel']},blk('ara','Reels por público')]},
+  blocks:()=>[{t:'Filmes',m:'Ara Faria Lima · Seiza Paraíso · Síntese SP — filmes completos',r:'9/16',v:['a/ARA_C3_Reel_Manifesto','a/seiza-reel','a/sint-reel']},blk('ara','Reels por público')]},
  {id:'pack',t:'Pack',d:'Brinde cartonado, convites e kit de relacionamento.',th:['a/c/vpi-kit-clean.webp','a/c/vpi-gift-clean.webp','a/vpi-rubayat.webp'],
   text:'Embalagem e impressos de relacionamento: o kit em caixa cartonada do Vista Parque Ibirapuera e os convites dos eventos.',
   blocks:()=>[blk('vpi','Brinde cartonado'),blk('vpi','Convites'),{t:'Carta premium Bagamoio',m:'A4',wide:true,s:['a/bag-carta.webp']}]},
