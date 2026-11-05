@@ -296,7 +296,7 @@ main > #tratamento:first-child{margin-top:8px}
 
 <main class="wrap">
 <section class="sec" id="tratamento">
-  <div class="sh"><span class="lab">01 — Tratamento de imagem</span><div><h2 class="rise" style="text-transform:uppercase">Beyond the frame<span class="dot">.</span></h2><p class="rise lab" style="--d:60ms;font-size:13px;margin-bottom:20px;letter-spacing:.08em">Uma nova perspectiva · Beyond the original image</p><p class="rise" style="--d:120ms">Transformamos registros cotidianos em imagens com olhar arquitetônico, composição refinada e linguagem visual publicitária.</p></div></div>
+  <div class="sh"><span class="lab" aria-hidden="true"></span><div><h2 class="rise" style="text-transform:uppercase">Beyond the frame<span class="dot">.</span></h2><p class="rise lab" style="--d:60ms;font-size:13px;margin-bottom:20px;letter-spacing:.08em">Uma nova perspectiva · Beyond the original image</p><p class="rise" style="--d:120ms">Transformo registros cotidianos em imagens com olhar arquitetônico, composição refinada e linguagem visual publicitária.</p></div></div>
 
   <div class="proc">
     <div class="rise"><span class="n">1</span><h3>Foto recebida</h3><p>Chega do celular, assim como está. Ângulo baixo, luz de lâmpada, ambiente parecendo menor.</p></div>
@@ -348,17 +348,20 @@ main > #tratamento:first-child{margin-top:8px}
 </section>
 
 <section class="sec" id="indice">
-  <div class="sh"><span class="lab">02 — Índice</span><div><h2 class="rise">Da marca ao ponto de venda.</h2><p class="rise" style="--d:80ms">Escolha uma frente para conhecer as soluções criativas e os projetos.</p></div></div>
+  <div class="sh"><span class="lab" aria-hidden="true"></span><div><h2 class="rise">Da marca ao ponto de venda.</h2><p class="rise" style="--d:80ms">Escolha uma frente para conhecer as soluções criativas e os projetos.</p></div></div>
   <ol class="idx" id="idx"></ol>
 </section>
 <section class="sec" id="campanhas">
-  <div class="sh"><span class="lab">03 — Cases</span><div><h2 class="rise">Campanhas por produto.</h2><p class="rise" style="--d:80ms">Cada empreendimento com o seu argumento. Abra o case para ver as campanhas, com cada carrossel na sequência em que foi publicado.</p></div></div>
+  <div class="sh"><span class="lab" aria-hidden="true"></span><div><h2 class="rise">Campanhas por produto.</h2><p class="rise" style="--d:80ms">Cada empreendimento com o seu argumento. Abra o case para ver as campanhas, com cada carrossel na sequência em que foi publicado.</p></div></div>
   <div class="grid" id="grid"></div>
 </section>
 
 
+<section class="sec" id="sobre">
+  <div class="sh"><span class="lab" aria-hidden="true"></span><div><h2 class="rise">Olhar de direção de arte.</h2><p class="rise" style="--d:80ms">Sou Head of Art, com mais de 20 anos em agências de publicidade. Levo para o mercado imobiliário o mesmo raciocínio de campanha: estratégia, conceito, narrativa e storytelling, direção de arte e tratamento de imagem, para que cada produto seja apresentado com personalidade e valor.</p></div></div>
+</section>
 <section class="sec contact" id="contato">
-  <div class="sh" style="margin-bottom:40px"><span class="lab">04 — Contato</span><div></div></div>
+  <div class="sh" style="margin-bottom:40px"><span class="lab" aria-hidden="true"></span><div></div></div>
   <h2 class="rise">Vamos conversar<span class="dot">.</span></h2>
   <div class="crow">
     <div><span class="lab mut">E-mail</span><a class="v" href="mailto:kcodigital@gmail.com">kcodigital@gmail.com</a></div>
@@ -511,7 +514,7 @@ function route(){
   if(m&&m[1]==='case'){o=C.find(x=>x.id===m[2]);if(o)blocks=o.blocks}
   if(m&&m[1]==='area'){o=A.find(x=>x.id===m[2]);if(o){blocks=o.blocks();label='Índice';o={brand:o.t,text:o.text}}}
   if(!o){if(!page.hidden){page.hidden=true;document.body.style.overflow='';body.innerHTML=''}return}
-  body.innerHTML=`<div class="sh" style="margin-top:48px"><span class="lab">${label}</span><div><h2 id="case-title">${o.brand}<span class="dot">.</span></h2><p>${o.text}</p></div></div>${blocks.map(b=>flowHTML(b,o.brand)).join('')}<div style="height:120px"></div>`;
+  body.innerHTML=`<div class="sh" style="margin-top:48px"><span class="lab" aria-hidden="true"></span><div><h2 id="case-title">${o.brand}<span class="dot">.</span></h2><p>${o.text}</p></div></div>${blocks.map(b=>flowHTML(b,o.brand)).join('')}<div style="height:120px"></div>`;
   page.hidden=false;page.scrollTop=0;document.body.style.overflow='hidden';wireFlows(body);document.getElementById('case-close').focus();
 }
 document.getElementById('case-close').onclick=()=>{location.hash=location.hash.startsWith('#area')?'indice':'campanhas'};
