@@ -190,6 +190,25 @@ footer .in > :last-child{text-align:right}
 #tratamento .ba-imgs .f figcaption::before{background:#fff}
 #tratamento .flow{margin-right:calc(-1 * max(var(--m),env(safe-area-inset-right,0px)))}
 main > #tratamento:first-child{margin-top:8px}
+
+/* índice — menu grande */
+.idx{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink);position:relative}
+.idx li{border-bottom:1px solid var(--line)}
+.idx a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:baseline;padding:clamp(10px,1.2vw,18px) 0;text-decoration:none;color:var(--ink)}
+.idx .t{display:flex;align-items:baseline;gap:clamp(12px,1.6vw,28px);min-width:0}
+.idx .n{font:500 12px/1 var(--l);letter-spacing:.06em;color:var(--muted);transform:translateY(-1.6em)}
+.idx .t b{font:300 clamp(48px,8.6vw,148px)/.92 var(--g);letter-spacing:-.055em;transition:color .25s,transform .45s cubic-bezier(.2,.7,.1,1)}
+.idx .d{font:500 12px/1.4 var(--l);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:right;max-width:22em;transition:color .25s}
+.idx:hover .t b{color:var(--line)}
+.idx a:hover .t b,.idx a:focus-visible .t b{color:var(--red);transform:translateX(clamp(8px,1.4vw,24px))}
+.idx a:hover .d{color:var(--ink)}
+.idx a:hover .n{color:var(--red)}
+.idx-prev{position:fixed;left:0;top:0;width:clamp(200px,20vw,300px);aspect-ratio:4/5;pointer-events:none;z-index:15;opacity:0;transform:translate(-50%,-50%) scale(.92);transition:opacity .25s,transform .35s cubic-bezier(.2,.7,.1,1);overflow:hidden;background:var(--tile)}
+.idx-prev.on{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.idx-prev img{width:100%;height:100%;object-fit:cover;max-width:none}
+@media(max-width:760px){.idx .d{display:none}.idx-prev{display:none}}
+@media(hover:none){.idx-prev{display:none}}
+.flow.wide{gap:24px}
 /* flow (carrossel lado a lado) */
 .flowblk{margin-top:clamp(64px,6vw,96px)}
 .flowblk:first-child{margin-top:0}
@@ -242,8 +261,8 @@ main > #tratamento:first-child{margin-top:8px}
   <span class="links">
     <a class="lab" href="#topo">Home</a>
     <a class="lab" href="#tratamento">Beyond the frame</a>
+    <a class="lab" href="#indice">Índice</a>
     <a class="lab" href="#campanhas">Cases</a>
-    <a class="lab" href="#bagamoio">Bagamoio</a>
   </span>
   <a class="btn" href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Portfólio KCO ↗</a>
 </div></nav>
@@ -327,31 +346,18 @@ main > #tratamento:first-child{margin-top:8px}
 <div class="flowblk"><div class="fhead"><h3>Carrossel Síntese, com as imagens tratadas</h3><span class="lab mut">Stories 1080×1920 · 7 telas</span></div><div class="flow" style="--r:9/16" tabindex="0" aria-label="Carrossel Síntese, com as imagens tratadas, role para o lado"><figure><img src="a/c/sint-tr_01.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 1" loading="lazy"></figure><figure><img src="a/c/sint-tr_02.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 2" loading="lazy"></figure><figure><img src="a/c/sint-tr_03.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 3" loading="lazy"></figure><figure><img src="a/c/sint-tr_04.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 4" loading="lazy"></figure><figure><img src="a/c/sint-tr_05.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 5" loading="lazy"></figure><figure><img src="a/c/sint-tr_06.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 6" loading="lazy"></figure><figure><img src="a/c/sint-tr_07.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 7" loading="lazy"></figure></div><div class="fbar"><span></span></div></div>
 </section>
 
+<section class="sec" id="indice">
+  <div class="sh"><span class="lab">02 — Índice</span><div><h2 class="rise">O que eu crio.</h2><p class="rise" style="--d:80ms">Da marca ao ponto de venda. Escolha uma frente para ver os projetos.</p></div></div>
+  <ol class="idx" id="idx"></ol>
+</section>
 <section class="sec" id="campanhas">
-  <div class="sh"><span class="lab">02 — Cases</span><div><h2 class="rise">Campanhas por produto.</h2><p class="rise" style="--d:80ms">Cada empreendimento com o seu argumento. Abra o case para ver as campanhas, com cada carrossel na sequência em que foi publicado.</p></div></div>
+  <div class="sh"><span class="lab">03 — Cases</span><div><h2 class="rise">Campanhas por produto.</h2><p class="rise" style="--d:80ms">Cada empreendimento com o seu argumento. Abra o case para ver as campanhas, com cada carrossel na sequência em que foi publicado.</p></div></div>
   <div class="grid" id="grid"></div>
 </section>
-<section class="sec" id="bagamoio">
-  <div class="sh"><span class="lab">03 — Case Bagamoio</span><div><h2 class="rise">Marca, book e campanha.</h2><p class="rise" style="--d:80ms">Bagamoio Residencial, Jabaquara. Criei a identidade do empreendimento, o book de vendas e as peças do lançamento.</p></div></div>
-  <div class="flowblk"><div class="fhead"><h3>Prancha conceito da marca</h3><span class="lab mut">Logotipo · Tipografia · Aplicações</span></div><div class="flow wide" tabindex="0" aria-label="Pranchas conceito, role para o lado"><figure><img src="a/c/bag-pr-1.webp" alt="Prancha conceito 1" loading="lazy"></figure><figure><img src="a/c/bag-pr-2.webp" alt="Prancha conceito 2" loading="lazy"></figure><figure><img src="a/c/bag-pr-3.webp" alt="Prancha conceito 3" loading="lazy"></figure></div><div class="fbar"><span></span></div></div>
-  <div class="flowblk"><div class="fhead"><h3>Book de vendas</h3><span class="lab mut">20 páginas</span></div><div class="flow wide" tabindex="0" aria-label="Book Bagamoio, role para o lado"><figure><img src="a/c/bag-eb-01.webp" alt="Book Bagamoio, página 1" loading="lazy"></figure><figure><img src="a/c/bag-eb-02.webp" alt="Book Bagamoio, página 2" loading="lazy"></figure><figure><img src="a/c/bag-eb-03.webp" alt="Book Bagamoio, página 3" loading="lazy"></figure><figure><img src="a/c/bag-eb-04.webp" alt="Book Bagamoio, página 4" loading="lazy"></figure><figure><img src="a/c/bag-eb-05.webp" alt="Book Bagamoio, página 5" loading="lazy"></figure><figure><img src="a/c/bag-eb-06.webp" alt="Book Bagamoio, página 6" loading="lazy"></figure><figure><img src="a/c/bag-eb-07.webp" alt="Book Bagamoio, página 7" loading="lazy"></figure><figure><img src="a/c/bag-eb-08.webp" alt="Book Bagamoio, página 8" loading="lazy"></figure><figure><img src="a/c/bag-eb-09.webp" alt="Book Bagamoio, página 9" loading="lazy"></figure><figure><img src="a/c/bag-eb-10.webp" alt="Book Bagamoio, página 10" loading="lazy"></figure><figure><img src="a/c/bag-eb-11.webp" alt="Book Bagamoio, página 11" loading="lazy"></figure><figure><img src="a/c/bag-eb-12.webp" alt="Book Bagamoio, página 12" loading="lazy"></figure><figure><img src="a/c/bag-eb-13.webp" alt="Book Bagamoio, página 13" loading="lazy"></figure><figure><img src="a/c/bag-eb-14.webp" alt="Book Bagamoio, página 14" loading="lazy"></figure><figure><img src="a/c/bag-eb-15.webp" alt="Book Bagamoio, página 15" loading="lazy"></figure><figure><img src="a/c/bag-eb-16.webp" alt="Book Bagamoio, página 16" loading="lazy"></figure><figure><img src="a/c/bag-eb-17.webp" alt="Book Bagamoio, página 17" loading="lazy"></figure><figure><img src="a/c/bag-eb-18.webp" alt="Book Bagamoio, página 18" loading="lazy"></figure><figure><img src="a/c/bag-eb-19.webp" alt="Book Bagamoio, página 19" loading="lazy"></figure><figure><img src="a/c/bag-eb-20.webp" alt="Book Bagamoio, página 20" loading="lazy"></figure></div><div class="fbar"><span></span></div></div>
-  <div class="flowblk"><div class="fhead"><h3>Campanha de lançamento</h3><span class="lab mut">Jornal · Folheto · Banners · Carta</span></div>
-    <div class="bcamp">
-      <figure class="w rise"><img src="a/bag-an-140.webp" alt="Anúncio 250x140" loading="lazy"><figcaption><b>Anúncio</b><span class="lab mut">Jornal 250×140</span></figcaption></figure>
-      <figure class="rise"><img src="a/bag-an-280.webp" alt="Anúncio 250x280" loading="lazy"><figcaption><b>Anúncio</b><span class="lab mut">Jornal 250×280</span></figcaption></figure>
-      <figure class="rise"><img src="a/bag-folheto-v.webp" alt="Folheto verso" loading="lazy"><figcaption><b>Folheto</b><span class="lab mut">A5 verso</span></figcaption></figure>
-      <figure class="w rise"><img src="a/bag-an-70.webp" alt="Rodapé 250x70" loading="lazy"><figcaption><b>Rodapé</b><span class="lab mut">Jornal 250×70</span></figcaption></figure>
-      <figure class="rise"><img src="a/bag-banner-1.webp" alt="Banner estande" loading="lazy"><figcaption><b>Estande</b><span class="lab mut">Banner 2×2 m</span></figcaption></figure>
-      <figure class="rise"><img src="a/bag-banner-2.webp" alt="Banner estande" loading="lazy"><figcaption><b>Estande</b><span class="lab mut">Banner 2×2 m</span></figcaption></figure>
-      <figure class="rise"><img src="a/bag-stand.webp" alt="Simulação no estande" loading="lazy"><figcaption><b>Simulação</b><span class="lab mut">Estande</span></figcaption></figure>
-      <figure class="rise"><img src="a/bag-carta.webp" alt="Carta premium" loading="lazy"><figcaption><b>Carta premium</b><span class="lab mut">A4</span></figcaption></figure>
-      <figure class="w rise"><img src="a/bag-simula.webp" alt="Anúncios simulados no jornal" loading="lazy"><figcaption><b>No jornal</b><span class="lab mut">Simulação</span></figcaption></figure>
-    </div>
-  </div>
-</section>
+
 
 <section class="sec contact" id="contato">
-  <div class="sh" style="margin-bottom:40px"><span class="lab">05 — Contato</span><div></div></div>
+  <div class="sh" style="margin-bottom:40px"><span class="lab">04 — Contato</span><div></div></div>
   <h2 class="rise">Vamos conversar<span class="dot">.</span></h2>
   <div class="crow">
     <div><span class="lab mut">E-mail</span><a class="v" href="mailto:kcodigital@gmail.com">kcodigital@gmail.com</a></div>
@@ -442,14 +448,47 @@ const C=[
    {t:'Carrossel — Morar',m:'8 telas',r:'4/5',s:seq('ara-A',8).map(u=>u.replace('ara-A_0','ara-A'))},
    {t:'Carrossel — Investir',m:'6 telas',r:'4/5',s:seq('ara-I',6).map(u=>u.replace('ara-I_0','ara-I'))},
    {t:'Carrossel — Primeiro apartamento',m:'6 telas',r:'4/5',s:seq('ara-P',6).map(u=>u.replace('ara-P_0','ara-P'))}]},
- {id:'bagamoio',brand:'Bagamoio',year:'2026',line:'Jabaquara · marca, book e campanha',cover:'a/c/bag-eb-05.webp',href:'#bagamoio'}
+ {id:'bagamoio',brand:'Bagamoio',year:'2026',line:'Jabaquara · marca, book e campanha',cover:'a/c/bag-eb-05.webp',
+  text:'Bagamoio Residencial, Jabaquara. Criei a identidade do empreendimento, o book de vendas e as peças do lançamento: anúncios de jornal, folheto, banners de fachada e estande e carta premium.',
+  blocks:[
+   {t:'Prancha conceito da marca',m:'Logotipo · Tipografia · Aplicações',wide:true,s:['a/c/bag-pr-1.webp','a/c/bag-pr-2.webp','a/c/bag-pr-3.webp']},
+   {t:'Book de vendas',m:'20 páginas',wide:true,s:Array.from({length:20},(_,i)=>`a/c/bag-eb-${String(i+1).padStart(2,'0')}.webp`)},
+   {t:'Campanha de lançamento',m:'Jornal · Folheto · Banners · Carta',wide:true,s:['a/bag-an-140.webp','a/bag-an-280.webp','a/bag-folheto.webp','a/bag-folheto-v.webp','a/bag-an-70.webp','a/bag-banner-fachada.webp','a/bag-banner-1.webp','a/bag-banner-2.webp','a/bag-stand.webp','a/bag-carta.webp','a/bag-simula.webp']}]}
 ];
+
+const byId=id=>C.find(c=>c.id===id);
+const blk=(id,t)=>byId(id).blocks.find(b=>b.t===t);
+const A=[
+ {id:'branding',t:'Branding',d:'Identidade de empreendimento, prancha conceito e book de vendas.',th:['a/c/bag-pr-1.webp','a/c/bag-eb-01.webp','a/c/bag-eb-06.webp'],
+  text:'Marcas de empreendimento pensadas para virar sistema: do logotipo ao book que o corretor leva para a mesa.',
+  blocks:()=>[blk('bagamoio','Prancha conceito da marca'),blk('bagamoio','Book de vendas'),{t:'Case completo',m:'Ver Bagamoio',link:'#case-bagamoio'}]},
+ {id:'landing',t:'Landing pages',d:'Páginas de captação com movimento e parallax.',th:['a/cov-seiza.webp','a/seiza-email-top.webp','a/seiza-inv0.webp'],
+  text:'Landing pages de lançamento, com narrativa por seções, animações e captação de leads.',
+  blocks:()=>[blk('seiza','Landing page')]},
+ {id:'redes',t:'Redes sociais',d:'Carrosséis e campanhas por público, produto a produto.',th:['a/c/hive2_01.webp','a/c/ita1_01.webp','a/c/ara-A1.webp'],
+  text:'Uma campanha de redes sociais por produto, cada uma com seu argumento. Aqui está o carrossel principal de cada empreendimento; abra o case para ver todas as campanhas.',
+  blocks:()=>[['sintese','Campanha 1 — Morar'],['hive','Campanha 2 — Um endereço emblemático'],['ita','Campanha 1'],['impar','Carrossel'],['seiza','Campanha por público'],['vpi','Carrossel de lançamento'],['ara','Carrossel — Morar']].flatMap(([id,t])=>[{...blk(id,t),t:byId(id).brand+' · '+t},{t:'',m:'Ver todas as campanhas de '+byId(id).brand,link:'#case-'+id,mini:true}])},
+ {id:'videos',t:'Vídeos',d:'Reels, filmes manifesto e vídeos por público.',th:['a/ARA_C3_Reel_Manifesto.jpg','a/seiza-reel.jpg','a/sint-reel.jpg'],
+  text:'Filmes para redes e lançamento: manifesto, tour pelo apartamento e reels por público.',
+  blocks:()=>[{t:'Filmes manifesto',m:'Ara Faria Lima · Seiza Paraíso · Síntese SP',r:'9/16',v:['a/ARA_C3_Reel_Manifesto','a/seiza-reel','a/sint-reel']},blk('ara','Reels por público')]},
+ {id:'pack',t:'Pack',d:'Brinde cartonado, convites e kit de relacionamento.',th:['a/c/vpi-kit-clean.webp','a/c/vpi-gift-clean.webp','a/vpi-rubayat.webp'],
+  text:'Embalagem e impressos de relacionamento: o kit em caixa cartonada do Vista Parque Ibirapuera e os convites dos eventos.',
+  blocks:()=>[blk('vpi','Brinde cartonado'),blk('vpi','Convites'),{t:'Carta premium Bagamoio',m:'A4',wide:true,s:['a/bag-carta.webp']}]},
+ {id:'tratamento',t:'Tratamento de imagem',d:'Fotos recriadas e simulação de tapume.',th:['a/ba-living-2-pos.webp','a/c/tapume_02.webp','a/c/sint-tr_01.webp'],
+  text:'Fotos de celular recriadas como imagem publicitária, e montagens de simulação para aprovação com o cliente.',
+  blocks:()=>[{t:'Antes e depois',m:'Ver Beyond the frame',link:'#tratamento'},blk('sintese','Carrossel com as imagens tratadas'),blk('vpi','Simulação de tapume')]}
+];
+document.getElementById('idx').innerHTML=A.map((a,i)=>`<li><a href="#area-${a.id}" data-i="${i}"><span class="t"><span class="n">${String(i+1).padStart(2,'0')}</span><b>${a.t}</b></span><span class="d">${a.d}</span></a></li>`).join('');
+(()=>{const prev=document.createElement('div');prev.className='idx-prev';prev.innerHTML='<img alt="">';document.body.appendChild(prev);const im=prev.querySelector('img');const ol=document.getElementById('idx');
+ol.querySelectorAll('a').forEach(a=>{a.addEventListener('mouseenter',()=>{im.src=A[a.dataset.i].th[0];prev.classList.add('on')});});
+ol.addEventListener('mouseleave',()=>prev.classList.remove('on'));
+ol.addEventListener('mousemove',e=>{prev.style.left=Math.min(e.clientX+Math.min(innerWidth*.22,340),innerWidth-170)+'px';prev.style.top=e.clientY+'px'});})();
 const grid=document.getElementById('grid');
 grid.innerHTML=C.map(c=>`<a class="card" href="${c.href||'#case-'+c.id}" aria-label="Abrir case ${c.brand}"><span class="sq"><img src="${c.cover}" alt="" loading="lazy" style="object-position:${c.pos||'50% 50%'}"></span><span class="tr"><span class="tt">${c.brand}</span><span class="lab mut">${c.year}</span></span><span class="lab mut">${c.line}</span></a>`).join('');
 
 function flowHTML(b,brand){
   if(b.lp) return `<div class="flowblk"><div class="fhead"><h3>${b.t}</h3><a class="btn out" href="${b.lp}" target="_blank" rel="noopener">Abrir a landing page ↗</a></div><div class="lp"><div class="bar"><span class="lab mut">${b.m}</span><span class="lab mut">Role dentro da página para ver as animações</span></div><iframe src="${b.lp}" title="Landing page ${brand}" loading="lazy"></iframe></div></div>`;
-  if(b.link) return `<div class="flowblk"><div class="fhead"><h3>${b.t}</h3><a class="btn out" href="${b.link}">${b.m} →</a></div></div>`;
+  if(b.link) return b.mini?`<div style="margin-top:16px"><a class="btn out" href="${b.link}">${b.m} →</a></div>`:`<div class="flowblk"><div class="fhead"><h3>${b.t}</h3><a class="btn out" href="${b.link}">${b.m} →</a></div></div>`;
   const items=b.v?b.v.map(v=>`<figure><video src="${v}.mp4" poster="${v}.jpg" muted playsinline controls preload="metadata"></video></figure>`).join(''):b.s.map((u,i)=>`<figure><img src="${u}" alt="${brand}, ${b.t}, tela ${i+1}" loading="lazy"></figure>`).join('');
   return `<div class="flowblk"><div class="fhead"><h3>${b.t}</h3><span class="lab mut">${b.m}</span></div><div class="flow${b.wide?' wide':''}" style="--r:${b.r||'4/5'}" tabindex="0" aria-label="${b.t}, role para o lado">${items}</div><div class="fbar"><span></span></div></div>`;
 }
@@ -469,14 +508,17 @@ function wireFlows(root){
 wireFlows(document);
 const page=document.getElementById('casepage'),body=document.getElementById('case-body');
 function route(){
-  const m=location.hash.match(/^#case-(\w+)$/);const c=m&&C.find(x=>x.id===m[1]&&!x.href);
-  if(!c){if(!page.hidden){page.hidden=true;document.body.style.overflow='';body.innerHTML=''}return}
-  body.innerHTML=`<div class="sh" style="margin-top:48px"><span class="lab">Case</span><div><h2 id="case-title">${c.brand}<span class="dot">.</span></h2><p>${c.text}</p></div></div>${c.blocks.map(b=>flowHTML(b,c.brand)).join('')}<div style="height:120px"></div>`;
+  const m=location.hash.match(/^#(case|area)-(\w+)$/);
+  let o=null,label='Case',blocks=null;
+  if(m&&m[1]==='case'){o=C.find(x=>x.id===m[2]);if(o)blocks=o.blocks}
+  if(m&&m[1]==='area'){o=A.find(x=>x.id===m[2]);if(o){blocks=o.blocks();label='Índice';o={brand:o.t,text:o.text}}}
+  if(!o){if(!page.hidden){page.hidden=true;document.body.style.overflow='';body.innerHTML=''}return}
+  body.innerHTML=`<div class="sh" style="margin-top:48px"><span class="lab">${label}</span><div><h2 id="case-title">${o.brand}<span class="dot">.</span></h2><p>${o.text}</p></div></div>${blocks.map(b=>flowHTML(b,o.brand)).join('')}<div style="height:120px"></div>`;
   page.hidden=false;page.scrollTop=0;document.body.style.overflow='hidden';wireFlows(body);document.getElementById('case-close').focus();
 }
-document.getElementById('case-close').onclick=()=>{location.hash='campanhas'};
+document.getElementById('case-close').onclick=()=>{location.hash=location.hash.startsWith('#area')?'indice':'campanhas'};
 document.getElementById('case-home').onclick=()=>{location.hash='topo';scrollTo(0,0)};
-document.getElementById('case-body').addEventListener('click',e=>{const a=e.target.closest('a[href="#brinde"]');if(a){e.preventDefault();location.hash='brinde';}});
+
 addEventListener('keydown',e=>{if(e.key==='Escape'&&!page.hidden)location.hash='campanhas'});
 addEventListener('hashchange',route);route();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
