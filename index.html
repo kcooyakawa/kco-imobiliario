@@ -153,7 +153,7 @@ main,header,footer{overflow-x:clip}
 @media(max-width:760px){.gift figure{grid-column:1/-1!important}}
 
 /* contact (site) */
-.contact h2{font:300 clamp(56px,8vw,128px)/.95 var(--g);letter-spacing:-.045em;margin-bottom:clamp(48px,5vw,72px)}
+.contact h2{font:300 clamp(44px,6.4vw,104px)/.95 var(--g);max-width:13ch;letter-spacing:-.045em;margin-bottom:clamp(48px,5vw,72px)}
 .crow{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
 .crow > div{border-top:1px solid var(--line);padding-top:12px;display:grid;gap:10px;align-content:start}
 .crow .v{font:500 clamp(17px,1.4vw,20px)/1.2 var(--g);letter-spacing:-.01em;text-decoration:none;overflow-wrap:anywhere}
@@ -189,7 +189,7 @@ footer .in > :last-child{text-align:right}
 #tratamento .ba-imgs .f figcaption{background:#E1251B;color:#fff}
 #tratamento .ba-imgs .f figcaption::before{background:#fff}
 #tratamento .flow{margin-right:calc(-1 * max(var(--m),env(safe-area-inset-right,0px)))}
-main > #tratamento:first-child{margin-top:8px}
+#tratamento{margin-top:clamp(120px,11vw,160px)}
 
 /* índice — menu grande */
 .idx{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink);position:relative}
@@ -211,6 +211,11 @@ main > #tratamento:first-child{margin-top:8px}
 .flow.wide{gap:24px}
 .flow .vcap{display:grid;gap:6px;border-top:1px solid var(--line);padding-top:10px;margin-top:12px}
 .flow .vcap b{font:600 18px/1.1 var(--g);text-transform:uppercase}
+
+.nar{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin:-24px 0 clamp(48px,5vw,72px)}
+.nar div{border-top:1px solid var(--ink);padding-top:12px;display:grid;gap:10px;align-content:start}
+.nar p{font-size:16px;line-height:1.5}
+@media(max-width:900px){.nar{grid-template-columns:1fr 1fr}}@media(max-width:560px){.nar{grid-template-columns:1fr}}
 /* flow (carrossel lado a lado) */
 .flowblk{margin-top:clamp(64px,6vw,96px)}
 .flowblk:first-child{margin-top:0}
@@ -262,9 +267,11 @@ main > #tratamento:first-child{margin-top:8px}
     <path fill="#0E0E0E" d="M925.64,266.06c24.63,0,45.71,3.04,63.24,9.12,17.52,6.08,31.42,16.02,41.68,29.84,10.26,13.82,15.39,31.22,15.39,52.22,0,30.95-10.66,53.8-31.97,68.57-21.31,14.76-50.77,22.14-88.34,22.14s-67.22-7.38-88.46-22.14c-21.24-14.76-31.85-37.62-31.85-68.57s10.62-54.08,31.85-68.92c21.23-14.84,50.72-22.26,88.46-22.26ZM869.98,398.09c13.26,9.24,31.81,13.85,55.66,13.85s42.39-4.65,55.66-13.97c13.26-9.31,19.89-22.89,19.89-40.74s-6.67-31.74-20.01-41.21c-13.35-9.47-31.85-14.21-55.54-14.21s-42.39,4.74-55.66,14.21c-13.26,9.47-19.89,23.21-19.89,41.21s6.63,31.62,19.89,40.86Z"></path></svg></a>
   <span class="links">
     <a class="lab" href="#topo">Home</a>
+    <a class="lab" href="#indice">Frentes</a>
     <a class="lab" href="#tratamento">Beyond the frame</a>
-    <a class="lab" href="#indice">Índice</a>
     <a class="lab" href="#campanhas">Cases</a>
+    <a class="lab" href="#sobre">Sobre</a>
+    <a class="lab" href="tabela.html">Serviços &amp; valores</a>
   </span>
   <a class="btn" href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Portfólio KCO ↗</a>
 </div></nav>
@@ -279,10 +286,10 @@ main > #tratamento:first-child{margin-top:8px}
     </div>
   </div>
   <div class="hero2"><video class="bg" src="a/hero-vpi.mp4" poster="a/hero-vpi.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video><div class="in wrap">
-    <h1>Criação para o mercado <span style="white-space:nowrap">imobiliário<span class="dot">.</span></span></h1>
+    <h1>Design para o mercado <span style="white-space:nowrap">imobiliário<span class="dot">.</span></span></h1>
     <div class="row">
-      <p>Branding, estratégia, campanhas, conteúdo para redes sociais, vídeos, sites, landing pages, direção de arte, tratamento de imagens, books comerciais e materiais de lançamento. Soluções criativas e comunicação integrada para apresentar, posicionar e valorizar produtos imobiliários.</p>
-      <div class="cta"><a class="btn w" href="#tratamento">Ver antes e depois →</a><a class="btn wo" href="#campanhas">Ver cases</a></div>
+      <p>Creative Studio de direção de arte, design e comunicação para o mercado imobiliário.</p>
+      <div class="cta"><a class="btn w" href="#indice">Frentes criativas →</a><a class="btn wo" href="#campanhas">Ver cases</a></div>
     </div>
   </div></div>
   <div class="facades">
@@ -297,79 +304,80 @@ main > #tratamento:first-child{margin-top:8px}
 </header>
 
 <main class="wrap">
+
+
+<section class="sec" id="indice">
+  <div class="sh"><span class="lab" aria-hidden="true"></span><div><h2 class="rise">Da marca ao ponto de venda.</h2><p class="rise" style="--d:80ms">Escolha uma frente para conhecer as soluções criativas e os projetos.</p></div></div>
+  <ol class="idx" id="idx"></ol>
+</section>
 <section class="sec" id="tratamento">
-  <div class="sh"><span class="lab" aria-hidden="true"></span><div><h2 class="rise" style="text-transform:uppercase">Beyond the frame<span class="dot">.</span></h2><p class="rise lab" style="--d:60ms;font-size:13px;margin-bottom:20px;letter-spacing:.08em">Uma nova perspectiva · Beyond the original image</p><p class="rise" style="--d:120ms">Transformo registros cotidianos em imagens com olhar arquitetônico, composição refinada e linguagem visual publicitária.</p></div></div>
+  <div class="sh"><span class="lab" aria-hidden="true"></span><div><h2 class="rise" style="text-transform:uppercase">Beyond the frame<span class="dot">.</span></h2><p class="rise lab" style="--d:60ms;font-size:13px;margin-bottom:20px;letter-spacing:.08em">Da imagem bruta à imagem que valoriza o empreendimento</p><p class="rise" style="--d:120ms">Muitas vezes o empreendimento tem tudo para impressionar, mas as imagens não mostram o seu verdadeiro potencial. Fotos de celular, sem enquadramento, sem profundidade e sem intenção visual, deixam de revelar o que o espaço tem de melhor.</p><p class="rise" style="--d:180ms;margin-top:18px">Transformo essas imagens em composições com direção de arte, tratamento e linguagem fotográfica publicitária: uma imagem pronta para os posts, que valoriza o espaço, sustenta a narrativa e desperta o desejo de conhecer.</p></div></div>
 
   <div class="proc">
-    <div class="rise"><span class="n">1</span><h3>Foto recebida</h3><p>Chega do celular, assim como está. Ângulo baixo, luz de lâmpada, ambiente parecendo menor.</p></div>
-    <div class="rise" style="--d:80ms"><span class="n">2</span><h3>Nova cena com IA</h3><p>Ângulo arquitetônico, profundidade e atmosfera de foto publicitária. Quando precisa, duas fotos viram uma cena só.</p></div>
-    <div class="rise" style="--d:160ms"><span class="n">3</span><h3>Photoshop</h3><p>Luz, geometria, cor e limpeza, fiel aos acabamentos reais do imóvel.</p></div>
+    <div class="rise"><span class="n">1</span><h3>Imagem bruta</h3><p>A foto chega como foi feita na visita: ângulo baixo, luz de lâmpada, ambiente parecendo menor.</p></div>
+    <div class="rise" style="--d:80ms"><span class="n">2</span><h3>Direção de arte</h3><p>Novo enquadramento, ângulo arquitetônico, profundidade e composição. Quando precisa, duas fotos viram uma cena só.</p></div>
+    <div class="rise" style="--d:160ms"><span class="n">3</span><h3>Finalização</h3><p>Luz, cor, geometria e limpeza, fiel aos acabamentos reais do imóvel. Pronta para post, portal ou campanha.</p></div>
   </div>
 
   <article class="ba">
     <div class="ba-imgs three rise">
-      <figure class="o"><img src="a/ba-living-2-pre.webp" alt="Living, foto de celular 1" loading="lazy"><figcaption>Recebida 1 · celular</figcaption></figure>
-      <figure class="o"><img src="a/ba-living-2-preB.webp" alt="Living, foto de celular 2" loading="lazy"><figcaption>Recebida 2 · celular</figcaption></figure>
-      <figure class="f"><img src="a/ba-living-2-pos.webp" alt="Living tratado, cena composta" loading="lazy"><figcaption>Final · publicitária</figcaption></figure>
+      <figure class="o"><img src="a/ba-living-2-pre.webp" alt="Living, foto de celular 1" loading="lazy"><figcaption>Imagem bruta 1</figcaption></figure>
+      <figure class="o"><img src="a/ba-living-2-preB.webp" alt="Living, foto de celular 2" loading="lazy"><figcaption>Imagem bruta 2</figcaption></figure>
+      <figure class="f"><img src="a/ba-living-2-pos.webp" alt="Living tratado, cena composta" loading="lazy"><figcaption>Imagem final</figcaption></figure>
     </div>
     <div class="ba-txt"><h3>Síntese · Living</h3><p>Duas fotos de celular compõem uma cena só, num ângulo mais bonito e amplo, com a suíte e a varanda no mesmo quadro.</p><span class="lab tech">Composição · Novo ângulo · Amplitude · Luz · Cor</span></div>
   </article>
 
   <article class="ba">
     <div class="ba-imgs rise">
-      <figure class="o"><img src="a/ba-living-1-pre.webp" alt="Suíte, foto de celular" loading="lazy"><figcaption>Recebida · celular</figcaption></figure>
-      <figure class="f"><img src="a/ba-living-1-pos.webp" alt="Suíte tratada" loading="lazy"><figcaption>Final · publicitária</figcaption></figure>
+      <figure class="o"><img src="a/ba-living-1-pre.webp" alt="Suíte, foto de celular" loading="lazy"><figcaption>Imagem bruta</figcaption></figure>
+      <figure class="f"><img src="a/ba-living-1-pos.webp" alt="Suíte tratada" loading="lazy"><figcaption>Imagem final</figcaption></figure>
     </div>
     <div class="ba-txt"><h3>Síntese · Suíte</h3><p>Sai o branco frio de lâmpada, entra a luz quente da janela. A cama vai para o centro do quadro.</p><span class="lab tech">Novo ângulo · Luz · Cor · Atmosfera</span></div>
   </article>
 
   <article class="ba">
     <div class="ba-imgs rise">
-      <figure class="o"><img src="a/ba-cozinha-integrada-pre.webp" alt="Cozinha, foto de celular" loading="lazy"><figcaption>Recebida · celular</figcaption></figure>
-      <figure class="f"><img src="a/ba-cozinha-integrada-pos.webp" alt="Cozinha tratada" loading="lazy"><figcaption>Final · publicitária</figcaption></figure>
+      <figure class="o"><img src="a/ba-cozinha-integrada-pre.webp" alt="Cozinha, foto de celular" loading="lazy"><figcaption>Imagem bruta</figcaption></figure>
+      <figure class="f"><img src="a/ba-cozinha-integrada-pos.webp" alt="Cozinha tratada" loading="lazy"><figcaption>Imagem final</figcaption></figure>
     </div>
     <div class="ba-txt"><h3>Síntese · Cozinha</h3><p>A diagonal vira vista frontal, com as linhas da marcenaria alinhadas e os materiais fiéis ao acabamento.</p><span class="lab tech">Geometria · Novo ângulo · Cor · Limpeza</span></div>
   </article>
 
   <article class="ba">
     <div class="ba-imgs rise">
-      <figure class="o"><img src="a/ba-entrada-pre.webp" alt="Entrada, foto de celular" loading="lazy"><figcaption>Recebida · celular</figcaption></figure>
-      <figure class="f"><img src="a/ba-entrada-pos.webp" alt="Entrada tratada" loading="lazy"><figcaption>Final · publicitária</figcaption></figure>
+      <figure class="o"><img src="a/ba-entrada-pre.webp" alt="Entrada, foto de celular" loading="lazy"><figcaption>Imagem bruta</figcaption></figure>
+      <figure class="f"><img src="a/ba-entrada-pos.webp" alt="Entrada tratada" loading="lazy"><figcaption>Imagem final</figcaption></figure>
     </div>
     <div class="ba-txt"><h3>Síntese · Entrada</h3><p>Sai a porta aberta e o ângulo torto. Fica a perspectiva do corredor até a janela.</p><span class="lab tech">Geometria · Limpeza · Luz</span></div>
   </article>
 
   <article class="ba" style="margin-bottom:0">
     <div class="ba-imgs rise">
-      <figure class="o"><img src="a/ba-lavanderia-pre.webp" alt="Lavanderia, foto de celular" loading="lazy"><figcaption>Recebida · celular</figcaption></figure>
-      <figure class="f"><img src="a/ba-lavanderia-pos.webp" alt="Lavanderia tratada" loading="lazy"><figcaption>Final · publicitária</figcaption></figure>
+      <figure class="o"><img src="a/ba-lavanderia-pre.webp" alt="Lavanderia, foto de celular" loading="lazy"><figcaption>Imagem bruta</figcaption></figure>
+      <figure class="f"><img src="a/ba-lavanderia-pos.webp" alt="Lavanderia tratada" loading="lazy"><figcaption>Imagem final</figcaption></figure>
     </div>
     <div class="ba-txt"><h3>Síntese · Lavanderia</h3><p>Visão mais aberta da varanda técnica, com a cidade entrando na imagem.</p><span class="lab tech">Amplitude · Luz · Cor</span></div>
   </article>
-<div class="flowblk"><div class="fhead"><h3>Carrossel Síntese, com as imagens tratadas</h3><span class="lab mut">Stories 1080×1920 · 7 telas</span></div><div class="flow" style="--r:9/16" tabindex="0" aria-label="Carrossel Síntese, com as imagens tratadas, role para o lado"><figure><img src="a/c/sint-tr_01.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 1" loading="lazy"></figure><figure><img src="a/c/sint-tr_02.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 2" loading="lazy"></figure><figure><img src="a/c/sint-tr_03.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 3" loading="lazy"></figure><figure><img src="a/c/sint-tr_04.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 4" loading="lazy"></figure><figure><img src="a/c/sint-tr_05.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 5" loading="lazy"></figure><figure><img src="a/c/sint-tr_06.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 6" loading="lazy"></figure><figure><img src="a/c/sint-tr_07.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 7" loading="lazy"></figure></div><div class="fbar"><span></span></div></div>
-</section>
-
-<section class="sec" id="indice">
-  <div class="sh"><span class="lab" aria-hidden="true"></span><div><h2 class="rise">Da marca ao ponto de venda.</h2><p class="rise" style="--d:80ms">Escolha uma frente para conhecer as soluções criativas e os projetos.</p></div></div>
-  <ol class="idx" id="idx"></ol>
+<div class="flowblk"><div class="fhead"><h3>Aplicação: carrossel Síntese com as imagens finais</h3><span class="lab mut">Stories 1080×1920 · 7 telas</span></div><div class="flow" style="--r:9/16" tabindex="0" aria-label="Carrossel Síntese, com as imagens tratadas, role para o lado"><figure><img src="a/c/sint-tr_01.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 1" loading="lazy"></figure><figure><img src="a/c/sint-tr_02.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 2" loading="lazy"></figure><figure><img src="a/c/sint-tr_03.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 3" loading="lazy"></figure><figure><img src="a/c/sint-tr_04.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 4" loading="lazy"></figure><figure><img src="a/c/sint-tr_05.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 5" loading="lazy"></figure><figure><img src="a/c/sint-tr_06.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 6" loading="lazy"></figure><figure><img src="a/c/sint-tr_07.webp" alt="Carrossel Síntese, com as imagens tratadas, peça 7" loading="lazy"></figure></div><div class="fbar"><span></span></div></div>
 </section>
 <section class="sec" id="campanhas">
-  <div class="sh"><span class="lab" aria-hidden="true"></span><div><h2 class="rise">Campanhas por produto.</h2><p class="rise" style="--d:80ms">Cada empreendimento com o seu argumento. Abra o case para ver as campanhas, com cada carrossel na sequência em que foi publicado.</p></div></div>
+  <div class="sh"><span class="lab" aria-hidden="true"></span><div><h2 class="rise">Projetos que ganham forma.</h2><p class="rise" style="--d:80ms">Cada empreendimento como um projeto de comunicação: o contexto, o desafio, o conceito e como ele se desdobra nas peças.</p></div></div>
   <div class="grid" id="grid"></div>
 </section>
 
 
 <section class="sec" id="sobre">
-  <div class="sh"><span class="lab" aria-hidden="true"></span><div><h2 class="rise">Olhar de direção de arte.</h2><p class="rise" style="--d:80ms">Sou Head of Art, com mais de 20 anos em agências de publicidade. Levo para o mercado imobiliário o mesmo raciocínio de campanha: estratégia, conceito, narrativa e storytelling, direção de arte e tratamento de imagem, para que cada produto seja apresentado com personalidade e valor.</p></div></div>
+  <div class="sh"><span class="lab" aria-hidden="true"></span><div><h2 class="rise">Sobre o KCO.</h2><p class="rise" style="--d:80ms">Sou Head of Art, com mais de 20 anos em agências de publicidade. Levo para o mercado imobiliário o mesmo raciocínio de campanha: estratégia, conceito, narrativa e storytelling, direção de arte e tratamento de imagem, para que cada produto seja apresentado com personalidade e valor.</p></div></div>
 </section>
 <section class="sec contact" id="contato">
   <div class="sh" style="margin-bottom:40px"><span class="lab" aria-hidden="true"></span><div></div></div>
-  <h2 class="rise">Vamos conversar<span class="dot">.</span></h2>
+  <h2 class="rise">Vamos desenvolver seu próximo projeto<span class="dot">?</span></h2>
   <div class="crow">
     <div><span class="lab mut">E-mail</span><a class="v" href="mailto:kcodigital@gmail.com">kcodigital@gmail.com</a></div>
     <div><span class="lab mut">WhatsApp</span><span class="v">+55 11 99577-7475</span></div>
     <div><span class="lab mut">LinkedIn</span><a class="v" href="https://linkedin.com/in/kcomitsunaga" target="_blank" rel="noopener">/in/kcomitsunaga ↗</a></div>
-    <div><span class="lab mut">Portfólio</span><a class="btn" href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener" style="justify-self:start">Ver portfólio completo →</a></div>
+    <div><span class="lab mut">Investimento</span><a class="btn" href="tabela.html" style="justify-self:start">Serviços &amp; valores →</a><a class="v" href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Portfólio KCO ↗</a></div>
   </div>
 </section>
 </main>
@@ -406,21 +414,21 @@ main > #tratamento:first-child{margin-top:8px}
 document.documentElement.classList.add('js');
 const seq=(p,n)=>Array.from({length:n},(_,i)=>`a/c/${p}_${String(i+1).padStart(2,'0')}.webp`);
 const C=[
- {id:'sintese',brand:'Síntese SP',year:'2026',line:'Moema · W3W · reels e carrosséis',cover:'a/cov-sintese.webp',
+ {id:'sintese',nar:['Studios mobiliados de 25 e 35 m² no Síntese SP, na Av. Ibirapuera, em Moema. Revenda pela W3W.', 'Vender duas unidades de revenda tendo como material apenas fotos de celular, disputando atenção com lançamentos cheios de renders.', 'Seu studio em Moema: pronto para morar ou investir, no coração do bairro. Uma frente para quem vai morar, outra para quem quer renda.', 'Imagens recriadas no Beyond the frame, carrossel em stories, duas campanhas de feed (Morar e Investir) e reel.'],brand:'Síntese SP',year:'2026',line:'Moema · W3W · reels e carrosséis',cover:'a/cov-sintese.webp',
   text:'Revenda de dois studios no Síntese SP. Duas frentes para o mesmo produto, morar e investir, com imagens recriadas a partir das fotos de celular.',
   blocks:[
    {t:'Carrossel com as imagens tratadas',m:'Stories 1080×1920 · 7 telas',r:'9/16',s:seq('sint-tr',7)},
    {t:'Campanha 1 — Morar',m:'Feed 1080×1350 · 4 telas',r:'4/5',s:['a/sint-car-1.webp','a/sint-car-2.webp','a/sint-car-3.webp','a/sint-car-4.webp']},
    {t:'Campanha 2 — Investir',m:'Feed 1080×1350 · 3 telas',r:'4/5',s:['a/sint-car-5.webp','a/sint-car-6.webp','a/sint-car-7.webp']},
    {t:'Reel',m:'Filme completo',r:'9/16',v:['a/sint-reel']}]},
- {id:'hive',brand:'HIVE Moema',year:'2026',line:'Lançamento · 4 campanhas',cover:'a/cov-hive.webp',pos:'84% 50%',
+ {id:'hive',nar:['Lançamento na esquina das avenidas Ibirapuera e Indianópolis, em frente ao Parque Ibirapuera.', 'Destacar um produto de alto padrão numa região disputada por muitos lançamentos.', 'Primeira fila do Ibirapuera: um endereço emblemático, um refúgio privado em meio à pulsação urbana.', 'Quatro campanhas de carrossel, cada uma com um argumento: refúgio, endereço, alto padrão e vista para o parque.'],brand:'HIVE Moema',year:'2026',line:'Lançamento · 4 campanhas',cover:'a/cov-hive.webp',pos:'84% 50%',
   text:'Primeira fila do Parque Ibirapuera. Quatro campanhas de carrossel, cada uma com um argumento: refúgio urbano, endereço icônico, alto padrão e vista para o parque.',
   blocks:[
    {t:'Campanha 1 — Pulsação urbana, refúgio privado',m:'8 telas',r:'4/5',s:seq('hive1',8)},
    {t:'Campanha 2 — Um endereço emblemático',m:'9 telas',r:'4/5',s:seq('hive2',9)},
    {t:'Campanha 3 — Moema alto padrão',m:'6 telas',r:'4/5',s:seq('hive3',6)},
    {t:'Campanha 4 — Primeira fila do Ibirapuera',m:'5 telas',r:'4/5',s:seq('hive4',5)}]},
- {id:'ita',brand:'Itá Conceição',year:'2026',line:'Conceição · 5 campanhas',cover:'a/cov-ita.webp',
+ {id:'ita',nar:['Residencial na Rua Itataia, na Conceição, zona sul de São Paulo.', 'Acelerar a venda das últimas unidades, incluindo as unidades PCD.', 'A localização como argumento: metrô Conceição, Itaú e Complexo do Aço a poucos passos.', 'Quatro campanhas de feed e stories e uma campanha dedicada às unidades PCD.'],brand:'Itá Conceição',year:'2026',line:'Conceição · 5 campanhas',cover:'a/cov-ita.webp',
   text:'Campanhas de lançamento e últimas unidades focadas em localização: metrô Conceição, Itaú e Complexo do Aço. Inclui uma campanha dedicada às unidades PCD.',
   blocks:[
    {t:'Campanha 1',m:'5 telas',r:'4/5',s:seq('ita1',5)},
@@ -429,24 +437,24 @@ const C=[
    {t:'Campanha 4 — Feed',m:'7 telas',r:'4/5',s:seq('ita4',7)},
    {t:'Campanha 4 — Stories',m:'7 telas',r:'9/16',s:seq('itast',7)},
    {t:'Campanha PCD',m:'8 telas',r:'4/5',s:seq('itapcd',8)}]},
- {id:'impar',brand:'Impar 737',year:'2026',line:'Pinheiros · carrossel de renda',cover:'a/cov-impar.webp',
+ {id:'impar',nar:['Studios prontos em Pinheiros, em frente ao Hospital Einstein.', 'Falar com o investidor, e não só com quem vai morar.', 'Renda garantida pela demanda 24/7 de um público premium, com liquidez e unidades compactas.', 'Carrossel de 7 telas com foco em rentabilidade.'],brand:'Impar 737',year:'2026',line:'Pinheiros · carrossel de renda',cover:'a/cov-impar.webp',
   text:'Em frente ao Hospital Einstein. O argumento é renda: demanda 24/7 de público premium, liquidez e unidades compactas prontas.',
   blocks:[{t:'Carrossel',m:'7 telas',r:'4/5',s:seq('impar',7)}]},
- {id:'seiza',brand:'Seiza Paraíso',year:'2026',line:'Rezende · filme, landing page e carrosséis',cover:'a/cov-seiza.webp',
+ {id:'seiza',nar:['Seiza Paraíso, da Rezende: studios de 24 a 32 m² no Paraíso, a 450 m do metrô.', 'Um mesmo produto para públicos muito diferentes: investidor, jovem profissional, pais e área da saúde.', 'Você no centro de tudo. Cada público recebe o seu motivo para estar ali.', 'Landing page com animações, campanha por público, carrossel do investidor e filme de lançamento.'],brand:'Seiza Paraíso',year:'2026',line:'Rezende · filme, landing page e carrosséis',cover:'a/cov-seiza.webp',
   text:'Studios de 24 a 32 m² no Paraíso, a 450 m do metrô. Campanha "Você no centro de tudo" dividida por público, com filme, landing page, carrosséis e peças estáticas.',
   blocks:[
    {t:'Landing page',m:'seizabykco.netlify.app',lp:'https://seizabykco.netlify.app/'},
    {t:'Campanha por público',m:'Investidor · Jovem profissional · Pais · Saúde',r:'4/5',s:['a/seiza-inv0.webp','a/seiza-jov0.webp','a/seiza-pais0.webp','a/seiza-sau0.webp']},
    {t:'Carrossel — Investidor',m:'4 telas',r:'4/5',s:['a/seiza-inv1.webp','a/seiza-inv2.webp','a/seiza-inv3.webp','a/seiza-inv4.webp']},
    {t:'Filme',m:'Filme completo · 57 s',r:'9/16',v:['a/seiza-reel']}]},
- {id:'vpi',brand:'Vista Parque',year:'2025',line:'Kallas · carrossel, tapume e brinde',cover:'a/vpi-fachada.webp',
+ {id:'vpi',nar:['Vista Parque Ibirapuera, da Kallas: alto padrão em frente ao Parque Ibirapuera.', 'Criar relacionamento com um público de altíssimo padrão antes e durante o lançamento.', 'Definitivamente exclusiva. Cada ponto de contato precisava ser tratado como experiência.', 'Carrossel de lançamento, simulação do tapume, kit de relacionamento em caixa cartonada e convites dos eventos.'],brand:'Vista Parque',year:'2025',line:'Kallas · carrossel, tapume e brinde',cover:'a/vpi-fachada.webp',
   text:'Lançamento de alto padrão em frente ao Parque Ibirapuera. Carrossel de lançamento, simulação do tapume da obra e estratégia de brinde: kit em caixa cartonada com garrafa e lâmina-convite para clientes selecionados, e os convites dos eventos.',
   blocks:[
    {t:'Carrossel de lançamento',m:'8 telas',r:'4/5',s:seq('vpi',8)},
    {t:'Simulação de tapume',m:'Antes e depois · dia e noite',wide:true,s:['a/c/tapume_04.webp','a/c/tapume_03.webp','a/c/tapume_02.webp','a/c/tapume_01.webp']},
    {t:'Brinde cartonado',m:'Kit de relacionamento · caixa, garrafa e lâmina-convite',wide:true,s:['a/c/vpi-kit-clean.webp','a/c/vpi-gift-clean.webp']},
    {t:'Convites',m:'Lâmina 32×9 cm · Convite do evento 9×15 cm',wide:true,s:['a/vpi-af-convite.webp','a/vpi-rubayat.webp']}]},
- {id:'ara',brand:'Ara Faria Lima',year:'2026',line:'Pinheiros · W3W · reels e carrosséis por público',cover:'a/cov-ara.webp',
+ {id:'ara',nar:['Ara Faria Lima: studios de 25 e 29 m², pronto para morar, a poucos minutos da Faria Lima.', 'Trocar os renders por fotos reais e conversar com quem vai morar, investir ou comprar o primeiro apartamento.', 'Tudo a minutos: o endereço que não para, para uma rotina que também não para.', 'Filme manifesto, quatro reels por público e três carrosséis: Morar, Investir e Primeiro apartamento.'],brand:'Ara Faria Lima',year:'2026',line:'Pinheiros · W3W · reels e carrosséis por público',cover:'a/cov-ara.webp',
   text:'Studios de 25 e 29 m² pronto para morar, a poucos minutos da Faria Lima. Campanha 3 com fotos reais do empreendimento: filme manifesto, quatro reels por público e três carrosséis, para morar, investir e primeiro apartamento.',
   blocks:[
    {t:'Reel manifesto',m:'Filme completo · 50 s',r:'9/16',v:['a/ARA_C3_Reel_Manifesto']},
@@ -454,7 +462,7 @@ const C=[
    {t:'Carrossel — Morar',m:'8 telas',r:'4/5',s:seq('ara-A',8).map(u=>u.replace('ara-A_0','ara-A'))},
    {t:'Carrossel — Investir',m:'6 telas',r:'4/5',s:seq('ara-I',6).map(u=>u.replace('ara-I_0','ara-I'))},
    {t:'Carrossel — Primeiro apartamento',m:'6 telas',r:'4/5',s:seq('ara-P',6).map(u=>u.replace('ara-P_0','ara-P'))}]},
- {id:'bagamoio',brand:'Bagamoio',year:'2026',line:'Jabaquara · marca, book e campanha',cover:'a/c/bag-eb-05.webp',
+ {id:'bagamoio',nar:['Bagamoio Residencial, no Jabaquara, zona sul de São Paulo.', 'Criar a marca do zero e todo o material de lançamento do empreendimento.', 'Uma nova fase começa aqui. A cidade ao seu alcance, perto do que importa.', 'Identidade visual, book de vendas de 20 páginas, anúncios de jornal, folheto, banners de fachada e estande e carta premium.'],brand:'Bagamoio',year:'2026',line:'Jabaquara · marca, book e campanha',cover:'a/c/bag-eb-05.webp',
   text:'Bagamoio Residencial, Jabaquara. Criei a identidade do empreendimento, o book de vendas e as peças do lançamento: anúncios de jornal, folheto, banners de fachada e estande e carta premium.',
   blocks:[
    {t:'Prancha conceito da marca',m:'Logotipo · Tipografia · Aplicações',wide:true,s:['a/c/bag-pr-1.webp','a/c/bag-pr-2.webp','a/c/bag-pr-3.webp']},
@@ -465,25 +473,26 @@ const C=[
 const byId=id=>C.find(c=>c.id===id);
 const blk=(id,t)=>byId(id).blocks.find(b=>b.t===t);
 const A=[
- {id:'branding',t:'Branding',d:'Identidade de empreendimento, prancha conceito e book de vendas.',th:['a/c/bag-pr-1.webp','a/c/bag-eb-01.webp','a/c/bag-eb-06.webp'],
-  text:'Marcas de empreendimento pensadas para virar sistema: do logotipo ao book que o corretor leva para a mesa.',
-  blocks:()=>[blk('bagamoio','Prancha conceito da marca'),blk('bagamoio','Book de vendas'),{t:'Case completo',m:'Ver Bagamoio',link:'#case-bagamoio'}]},
- {id:'landing',t:'Landing pages',d:'Páginas de captação com movimento e parallax.',th:['a/cov-seiza.webp','a/seiza-email-top.webp','a/seiza-inv0.webp'],
-  text:'Landing pages de lançamento, com narrativa por seções, animações e captação de leads.',
-  blocks:()=>[blk('seiza','Landing page')]},
- {id:'redes',t:'Redes sociais',d:'Carrosséis e campanhas por público, produto a produto.',th:['a/c/hive2_01.webp','a/c/ita1_01.webp','a/c/ara-A1.webp'],
-  text:'Uma campanha de redes sociais por produto, cada uma com seu argumento. Aqui está o carrossel principal de cada empreendimento; abra o case para ver todas as campanhas.',
-  blocks:()=>[['sintese','Campanha 1 — Morar'],['hive','Campanha 2 — Um endereço emblemático'],['ita','Campanha 1'],['impar','Carrossel'],['seiza','Campanha por público'],['vpi','Carrossel de lançamento'],['ara','Carrossel — Morar']].flatMap(([id,t])=>[{...blk(id,t),t:byId(id).brand+' · '+t},{t:'',m:'Ver todas as campanhas de '+byId(id).brand,link:'#case-'+id,mini:true}])},
- {id:'videos',t:'Vídeos',d:'Reels, filmes manifesto e vídeos por público.',th:['a/ARA_C3_Reel_Manifesto.jpg','a/seiza-reel.jpg','a/sint-reel.jpg'],
-  text:'Filmes para redes e lançamento: manifesto, tour pelo apartamento e reels por público.',
-  blocks:()=>[{t:'Filmes',m:'Filmes completos · 1080×1920',r:'9/16',v:['a/ARA_C3_Reel_Manifesto','a/seiza-reel','a/sint-reel'],caps:[['Ara Faria Lima','Filme manifesto · Pinheiros'],['Seiza Paraíso','Filme de lançamento · Paraíso'],['Síntese SP','Reel de revenda · Moema']]},blk('ara','Reels por público')]},
- {id:'pack',t:'Pack',d:'Brinde cartonado, convites e kit de relacionamento.',th:['a/c/vpi-kit-clean.webp','a/c/vpi-gift-clean.webp','a/vpi-rubayat.webp'],
-  text:'Embalagem e impressos de relacionamento: o kit em caixa cartonada do Vista Parque Ibirapuera e os convites dos eventos.',
-  blocks:()=>[blk('vpi','Brinde cartonado'),blk('vpi','Convites'),{t:'Carta premium Bagamoio',m:'A4',wide:true,s:['a/bag-carta.webp']}]},
- {id:'tratamento',t:'Tratamento de imagem',d:'Fotos recriadas e simulação de tapume.',th:['a/ba-living-2-pos.webp','a/c/tapume_02.webp','a/c/sint-tr_01.webp'],
-  text:'Fotos de celular recriadas como imagem publicitária, e montagens de simulação para aprovação com o cliente.',
-  blocks:()=>[{t:'Antes e depois',m:'Ver Beyond the frame',link:'#tratamento'},blk('sintese','Carrossel com as imagens tratadas'),blk('vpi','Simulação de tapume')]}
+ {id:'branding',t:'Branding',d:'Estratégia, posicionamento e identidade visual',
+  text:'Marcas de empreendimento pensadas como sistema: estratégia, posicionamento e identidade visual que sustentam toda a comunicação.',
+  blocks:()=>[blk('bagamoio','Prancha conceito da marca'),{t:'Case completo',m:'Ver Bagamoio',link:'#case-bagamoio'}]},
+ {id:'campanhas',t:'Campanhas',d:'Conceito, KV, comunicação e lançamentos',
+  text:'Conceito e key visual de lançamento, desdobrados em mídia, ponto de venda e relacionamento.',
+  blocks:()=>[blk('bagamoio','Campanha de lançamento'),{...blk('seiza','Campanha por público'),t:'Seiza Paraíso · Campanha por público'},{...blk('vpi','Simulação de tapume'),t:'Vista Parque · Tapume'}]},
+ {id:'conteudo',t:'Conteúdo',d:'Social media, vídeos e storytelling',
+  text:'Conteúdo para redes sociais com argumento: carrosséis por público, filmes e reels que contam o produto.',
+  blocks:()=>[blk2('videos'),blk('ara','Reels por público'),...[['sintese','Campanha 1 — Morar'],['hive','Campanha 2 — Um endereço emblemático'],['ita','Campanha 1'],['impar','Carrossel'],['vpi','Carrossel de lançamento'],['ara','Carrossel — Morar']].flatMap(([id,t])=>[{...blk(id,t),t:byId(id).brand+' · '+t},{t:'',m:'Ver todas as campanhas de '+byId(id).brand,link:'#case-'+id,mini:true}])]},
+ {id:'imagem',t:'Imagem',d:'Direção de arte, tratamento e composição',
+  text:'Direção de arte e tratamento que transformam a imagem bruta em fotografia publicitária, e montagens de simulação para aprovação.',
+  blocks:()=>[{t:'Beyond the frame',m:'Ver antes e depois',link:'#tratamento'},blk('sintese','Carrossel com as imagens tratadas'),{...blk('vpi','Simulação de tapume'),t:'Simulação de tapume · Vista Parque'}]},
+ {id:'digital',t:'Digital',d:'Sites, landing pages e experiências digitais',
+  text:'Landing pages e sites de lançamento, com narrativa por seções, animação e captação de leads.',
+  blocks:()=>[{...blk('seiza','Landing page'),t:'Landing page · Seiza Paraíso'}]},
+ {id:'comercial',t:'Comercial',d:'Books, apresentações e materiais de vendas',
+  text:'Material que o corretor leva para a mesa e o cliente leva para casa: books, impressos e kits de relacionamento.',
+  blocks:()=>[{...blk('bagamoio','Book de vendas'),t:'Book de vendas · Bagamoio'},{...blk('vpi','Brinde cartonado'),t:'Kit de relacionamento · Vista Parque'},{...blk('vpi','Convites'),t:'Convites · Vista Parque'},{t:'Folheto e carta premium · Bagamoio',m:'A5 · A4',wide:true,s:['a/bag-folheto.webp','a/bag-folheto-v.webp','a/bag-carta.webp']}]}
 ];
+const blk2=k=>({t:'Filmes',m:'Filmes completos · 1080×1920',r:'9/16',v:['a/ARA_C3_Reel_Manifesto','a/seiza-reel','a/sint-reel'],caps:[['Ara Faria Lima','Filme manifesto · Pinheiros'],['Seiza Paraíso','Filme de lançamento · Paraíso'],['Síntese SP','Reel de revenda · Moema']]});
 document.getElementById('idx').innerHTML=A.map((a,i)=>`<li><a href="#area-${a.id}" data-i="${i}"><span class="t"><span class="n">${String(i+1).padStart(2,'0')}</span><b>${a.t}</b></span><span class="d">${a.d}</span></a></li>`).join('');
 
 const grid=document.getElementById('grid');
@@ -516,7 +525,7 @@ function route(){
   if(m&&m[1]==='case'){o=C.find(x=>x.id===m[2]);if(o)blocks=o.blocks}
   if(m&&m[1]==='area'){o=A.find(x=>x.id===m[2]);if(o){blocks=o.blocks();label='Índice';o={brand:o.t,text:o.text}}}
   if(!o){if(!page.hidden){page.hidden=true;document.body.style.overflow='';body.innerHTML=''}return}
-  body.innerHTML=`<div class="sh" style="margin-top:48px"><span class="lab" aria-hidden="true"></span><div><h2 id="case-title">${o.brand}<span class="dot">.</span></h2><p>${o.text}</p></div></div>${blocks.map(b=>flowHTML(b,o.brand)).join('')}<div style="height:120px"></div>`;
+  body.innerHTML=`<div class="sh" style="margin-top:48px"><span class="lab" aria-hidden="true"></span><div><h2 id="case-title">${o.brand}<span class="dot">.</span></h2>${o.nar?'':`<p>${o.text}</p>`}</div></div>${o.nar?`<div class="nar">${['Empreendimento','Desafio','Conceito','O que foi desenvolvido'].map((h,i)=>`<div><span class="lab mut">${h}</span><p>${o.nar[i]}</p></div>`).join('')}</div>`:''}${blocks.map(b=>flowHTML(b,o.brand)).join('')}<div style="height:120px"></div>`;
   page.hidden=false;page.scrollTop=0;document.body.style.overflow='hidden';wireFlows(body);document.getElementById('case-close').focus();
 }
 document.getElementById('case-close').onclick=()=>{location.hash=location.hash.startsWith('#area')?'indice':'campanhas'};
