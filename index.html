@@ -411,13 +411,13 @@ footer .in > :last-child{text-align:right}
 document.documentElement.classList.add('js');
 const seq=(p,n)=>Array.from({length:n},(_,i)=>`a/c/${p}_${String(i+1).padStart(2,'0')}.webp`);
 const C=[
- {id:'sintese',nar:['Studios mobiliados de 25 e 35 m² no Síntese SP, na Av. Ibirapuera, em Moema. Revenda pela W3W.', 'Vender duas unidades de revenda tendo como material apenas fotos de celular, disputando atenção com lançamentos cheios de renders.', 'Seu studio em Moema: pronto para morar ou investir, no coração do bairro. Uma frente para quem vai morar, outra para quem quer renda.', 'Imagens recriadas no Beyond the frame, carrossel em stories, duas campanhas de feed (Morar e Investir) e reel.'],brand:'Síntese SP',year:'2026',line:'Moema · W3W · reels e carrosséis',cover:'a/cov-sintese.webp',
-  text:'Revenda de dois studios no Síntese SP. Duas frentes para o mesmo produto, morar e investir, com imagens recriadas a partir das fotos de celular.',
+ {id:'vpi',nar:['Vista Parque Ibirapuera, da Kallas: alto padrão em frente ao Parque Ibirapuera.', 'Criar relacionamento com um público de altíssimo padrão antes e durante o lançamento.', 'Definitivamente exclusiva. Cada ponto de contato precisava ser tratado como experiência.', 'Carrossel de lançamento, simulação do tapume, kit de relacionamento em caixa cartonada e convites dos eventos.'],brand:'Vista Parque Ibirapuera',year:'2025',line:'Kallas · carrossel, tapume e brinde',cover:'a/vpi-fachada.webp',
+  text:'Lançamento de alto padrão em frente ao Parque Ibirapuera. Carrossel de lançamento, simulação do tapume da obra e estratégia de brinde: kit em caixa cartonada com garrafa e lâmina-convite para clientes selecionados, e os convites dos eventos.',
   blocks:[
-   {t:'Carrossel com as imagens tratadas',m:'Stories 1080×1920 · 7 telas',r:'9/16',s:seq('sint-tr',7)},
-   {t:'Campanha 1 — Morar',m:'Feed 1080×1350 · 4 telas',r:'4/5',s:['a/sint-car-1.webp','a/sint-car-2.webp','a/sint-car-3.webp','a/sint-car-4.webp']},
-   {t:'Campanha 2 — Investir',m:'Feed 1080×1350 · 3 telas',r:'4/5',s:['a/sint-car-5.webp','a/sint-car-6.webp','a/sint-car-7.webp']},
-   {t:'Reel',m:'Filme completo',r:'9/16',v:['a/sint-reel']}]},
+   {t:'Carrossel de lançamento',m:'8 telas',r:'4/5',s:seq('vpi',8)},
+   {t:'Simulação de tapume',m:'Antes e depois · dia e noite',wide:true,s:['a/c/tapume_04.webp','a/c/tapume_03.webp','a/c/tapume_02.webp','a/c/tapume_01.webp']},
+   {t:'Brinde cartonado',m:'Kit de relacionamento · caixa, garrafa e lâmina-convite',wide:true,s:['a/c/vpi-kit-clean.webp','a/c/vpi-gift-clean.webp']},
+   {t:'Convites',m:'Lâmina 32×9 cm · Convite do evento 9×15 cm',wide:true,s:['a/vpi-af-convite.webp','a/vpi-rubayat.webp']}]},
  {id:'hive',nar:['Lançamento na esquina das avenidas Ibirapuera e Indianópolis, em frente ao Parque Ibirapuera.', 'Destacar um produto de alto padrão numa região disputada por muitos lançamentos.', 'Primeira fila do Ibirapuera: um endereço emblemático, um refúgio privado em meio à pulsação urbana.', 'Quatro campanhas de carrossel, cada uma com um argumento: refúgio, endereço, alto padrão e vista para o parque.'],brand:'HIVE Moema',year:'2026',line:'Lançamento · 4 campanhas',cover:'a/cov-hive.webp',pos:'84% 50%',
   text:'Primeira fila do Parque Ibirapuera. Quatro campanhas de carrossel, cada uma com um argumento: refúgio urbano, endereço icônico, alto padrão e vista para o parque.',
   blocks:[
@@ -425,6 +425,28 @@ const C=[
    {t:'Campanha 2 — Um endereço emblemático',m:'9 telas',r:'4/5',s:seq('hive2',9)},
    {t:'Campanha 3 — Moema alto padrão',m:'6 telas',r:'4/5',s:seq('hive3',6)},
    {t:'Campanha 4 — Primeira fila do Ibirapuera',m:'5 telas',r:'4/5',s:seq('hive4',5)}]},
+ {id:'seiza',nar:['Seiza Paraíso, da Rezende: studios de 24 a 32 m² no Paraíso, a 450 m do metrô.', 'Um mesmo produto para públicos muito diferentes: investidor, jovem profissional, pais e área da saúde.', 'Você no centro de tudo. Cada público recebe o seu motivo para estar ali.', 'Landing page com animações, campanha por público, carrossel do investidor e filme de lançamento.'],brand:'Seiza Paraíso',year:'2026',line:'Rezende · filme, landing page e carrosséis',cover:'a/cov-seiza.webp',
+  text:'Studios de 24 a 32 m² no Paraíso, a 450 m do metrô. Campanha "Você no centro de tudo" dividida por público, com filme, landing page, carrosséis e peças estáticas.',
+  blocks:[
+   {t:'Landing page',m:'Landing page de lançamento',lp:'seiza-lp/index.html'},
+   {t:'Campanha por público',m:'Investidor · Jovem profissional · Pais · Saúde',r:'4/5',s:['a/seiza-inv0.webp','a/seiza-jov0.webp','a/seiza-pais0.webp','a/seiza-sau0.webp']},
+   {t:'Carrossel — Investidor',m:'4 telas',r:'4/5',s:['a/seiza-inv1.webp','a/seiza-inv2.webp','a/seiza-inv3.webp','a/seiza-inv4.webp']},
+   {t:'Filme',m:'Filme completo · 57 s',r:'9/16',v:['a/seiza-reel']}]},
+ {id:'sintese',nar:['Studios mobiliados de 25 e 35 m² no Síntese SP, na Av. Ibirapuera, em Moema. Revenda pela W3W.', 'Vender duas unidades de revenda tendo como material apenas fotos de celular, disputando atenção com lançamentos cheios de renders.', 'Seu studio em Moema: pronto para morar ou investir, no coração do bairro. Uma frente para quem vai morar, outra para quem quer renda.', 'Imagens recriadas no Beyond the frame, carrossel em stories, duas campanhas de feed (Morar e Investir) e reel.'],brand:'Síntese SP',year:'2026',line:'Moema · W3W · reels e carrosséis',cover:'a/cov-sintese.webp',
+  text:'Revenda de dois studios no Síntese SP. Duas frentes para o mesmo produto, morar e investir, com imagens recriadas a partir das fotos de celular.',
+  blocks:[
+   {t:'Carrossel com as imagens tratadas',m:'Stories 1080×1920 · 7 telas',r:'9/16',s:seq('sint-tr',7)},
+   {t:'Campanha 1 — Morar',m:'Feed 1080×1350 · 4 telas',r:'4/5',s:['a/sint-car-1.webp','a/sint-car-2.webp','a/sint-car-3.webp','a/sint-car-4.webp']},
+   {t:'Campanha 2 — Investir',m:'Feed 1080×1350 · 3 telas',r:'4/5',s:['a/sint-car-5.webp','a/sint-car-6.webp','a/sint-car-7.webp']},
+   {t:'Reel',m:'Filme completo',r:'9/16',v:['a/sint-reel']}]},
+ {id:'ara',nar:['Ara Faria Lima: studios de 25 e 29 m², pronto para morar, a poucos minutos da Faria Lima.', 'Trocar os renders por fotos reais e conversar com quem vai morar, investir ou comprar o primeiro apartamento.', 'Tudo a minutos: o endereço que não para, para uma rotina que também não para.', 'Filme manifesto, quatro reels por público e três carrosséis: Morar, Investir e Primeiro apartamento.'],brand:'Ara Faria Lima',year:'2026',line:'Pinheiros · W3W · reels e carrosséis por público',cover:'a/cov-ara.webp',
+  text:'Studios de 25 e 29 m² pronto para morar, a poucos minutos da Faria Lima. Campanha 3 com fotos reais do empreendimento: filme manifesto, quatro reels por público e três carrosséis, para morar, investir e primeiro apartamento.',
+  blocks:[
+   {t:'Reel manifesto',m:'Filme completo · 50 s',r:'9/16',v:['a/ARA_C3_Reel_Manifesto']},
+   {t:'Reels por público',m:'Ara Faria Lima · 4 reels',r:'9/16',v:['a/ARA_C3_R1_Tudo_a_minutos','a/ARA_C3_R2_Va_de_bike','a/ARA_C3_R3_Fim_de_tarde','a/ARA_C3_R4_Endereco_que_nao_para'],caps:[['Ara · Tudo a minutos','Reel por público'],['Ara · Vá de bike','Reel por público'],['Ara · Fim de tarde','Reel por público'],['Ara · Endereço que não para','Reel por público']]},
+   {t:'Carrossel — Morar',m:'8 telas',r:'4/5',s:seq('ara-A',8).map(u=>u.replace('ara-A_0','ara-A'))},
+   {t:'Carrossel — Investir',m:'6 telas',r:'4/5',s:seq('ara-I',6).map(u=>u.replace('ara-I_0','ara-I'))},
+   {t:'Carrossel — Primeiro apartamento',m:'6 telas',r:'4/5',s:seq('ara-P',6).map(u=>u.replace('ara-P_0','ara-P'))}]},
  {id:'ita',nar:['Residencial na Rua Itataia, na Conceição, zona sul de São Paulo.', 'Acelerar a venda das últimas unidades, incluindo as unidades PCD.', 'A localização como argumento: metrô Conceição, Itaú e Complexo do Aço a poucos passos.', 'Quatro campanhas de feed e stories e uma campanha dedicada às unidades PCD.'],brand:'Itá Conceição',year:'2026',line:'Conceição · 5 campanhas',cover:'a/cov-ita.webp',
   text:'Campanhas de lançamento e últimas unidades focadas em localização: metrô Conceição, Itaú e Complexo do Aço. Inclui uma campanha dedicada às unidades PCD.',
   blocks:[
@@ -437,28 +459,6 @@ const C=[
  {id:'impar',nar:['Studios prontos em Pinheiros, em frente ao Hospital Einstein.', 'Falar com o investidor, e não só com quem vai morar.', 'Renda garantida pela demanda 24/7 de um público premium, com liquidez e unidades compactas.', 'Carrossel de 7 telas com foco em rentabilidade.'],brand:'Impar 737',year:'2026',line:'Pinheiros · carrossel de renda',cover:'a/cov-impar.webp',
   text:'Em frente ao Hospital Einstein. O argumento é renda: demanda 24/7 de público premium, liquidez e unidades compactas prontas.',
   blocks:[{t:'Carrossel',m:'7 telas',r:'4/5',s:seq('impar',7)}]},
- {id:'seiza',nar:['Seiza Paraíso, da Rezende: studios de 24 a 32 m² no Paraíso, a 450 m do metrô.', 'Um mesmo produto para públicos muito diferentes: investidor, jovem profissional, pais e área da saúde.', 'Você no centro de tudo. Cada público recebe o seu motivo para estar ali.', 'Landing page com animações, campanha por público, carrossel do investidor e filme de lançamento.'],brand:'Seiza Paraíso',year:'2026',line:'Rezende · filme, landing page e carrosséis',cover:'a/cov-seiza.webp',
-  text:'Studios de 24 a 32 m² no Paraíso, a 450 m do metrô. Campanha "Você no centro de tudo" dividida por público, com filme, landing page, carrosséis e peças estáticas.',
-  blocks:[
-   {t:'Landing page',m:'Landing page de lançamento',lp:'seiza-lp/index.html'},
-   {t:'Campanha por público',m:'Investidor · Jovem profissional · Pais · Saúde',r:'4/5',s:['a/seiza-inv0.webp','a/seiza-jov0.webp','a/seiza-pais0.webp','a/seiza-sau0.webp']},
-   {t:'Carrossel — Investidor',m:'4 telas',r:'4/5',s:['a/seiza-inv1.webp','a/seiza-inv2.webp','a/seiza-inv3.webp','a/seiza-inv4.webp']},
-   {t:'Filme',m:'Filme completo · 57 s',r:'9/16',v:['a/seiza-reel']}]},
- {id:'vpi',nar:['Vista Parque Ibirapuera, da Kallas: alto padrão em frente ao Parque Ibirapuera.', 'Criar relacionamento com um público de altíssimo padrão antes e durante o lançamento.', 'Definitivamente exclusiva. Cada ponto de contato precisava ser tratado como experiência.', 'Carrossel de lançamento, simulação do tapume, kit de relacionamento em caixa cartonada e convites dos eventos.'],brand:'Vista Parque',year:'2025',line:'Kallas · carrossel, tapume e brinde',cover:'a/vpi-fachada.webp',
-  text:'Lançamento de alto padrão em frente ao Parque Ibirapuera. Carrossel de lançamento, simulação do tapume da obra e estratégia de brinde: kit em caixa cartonada com garrafa e lâmina-convite para clientes selecionados, e os convites dos eventos.',
-  blocks:[
-   {t:'Carrossel de lançamento',m:'8 telas',r:'4/5',s:seq('vpi',8)},
-   {t:'Simulação de tapume',m:'Antes e depois · dia e noite',wide:true,s:['a/c/tapume_04.webp','a/c/tapume_03.webp','a/c/tapume_02.webp','a/c/tapume_01.webp']},
-   {t:'Brinde cartonado',m:'Kit de relacionamento · caixa, garrafa e lâmina-convite',wide:true,s:['a/c/vpi-kit-clean.webp','a/c/vpi-gift-clean.webp']},
-   {t:'Convites',m:'Lâmina 32×9 cm · Convite do evento 9×15 cm',wide:true,s:['a/vpi-af-convite.webp','a/vpi-rubayat.webp']}]},
- {id:'ara',nar:['Ara Faria Lima: studios de 25 e 29 m², pronto para morar, a poucos minutos da Faria Lima.', 'Trocar os renders por fotos reais e conversar com quem vai morar, investir ou comprar o primeiro apartamento.', 'Tudo a minutos: o endereço que não para, para uma rotina que também não para.', 'Filme manifesto, quatro reels por público e três carrosséis: Morar, Investir e Primeiro apartamento.'],brand:'Ara Faria Lima',year:'2026',line:'Pinheiros · W3W · reels e carrosséis por público',cover:'a/cov-ara.webp',
-  text:'Studios de 25 e 29 m² pronto para morar, a poucos minutos da Faria Lima. Campanha 3 com fotos reais do empreendimento: filme manifesto, quatro reels por público e três carrosséis, para morar, investir e primeiro apartamento.',
-  blocks:[
-   {t:'Reel manifesto',m:'Filme completo · 50 s',r:'9/16',v:['a/ARA_C3_Reel_Manifesto']},
-   {t:'Reels por público',m:'Ara Faria Lima · 4 reels',r:'9/16',v:['a/ARA_C3_R1_Tudo_a_minutos','a/ARA_C3_R2_Va_de_bike','a/ARA_C3_R3_Fim_de_tarde','a/ARA_C3_R4_Endereco_que_nao_para'],caps:[['Ara · Tudo a minutos','Reel por público'],['Ara · Vá de bike','Reel por público'],['Ara · Fim de tarde','Reel por público'],['Ara · Endereço que não para','Reel por público']]},
-   {t:'Carrossel — Morar',m:'8 telas',r:'4/5',s:seq('ara-A',8).map(u=>u.replace('ara-A_0','ara-A'))},
-   {t:'Carrossel — Investir',m:'6 telas',r:'4/5',s:seq('ara-I',6).map(u=>u.replace('ara-I_0','ara-I'))},
-   {t:'Carrossel — Primeiro apartamento',m:'6 telas',r:'4/5',s:seq('ara-P',6).map(u=>u.replace('ara-P_0','ara-P'))}]},
  {id:'bagamoio',nar:['Bagamoio Residencial, no Jabaquara, zona sul de São Paulo.', 'Criar a marca do zero e todo o material de lançamento do empreendimento.', 'Uma nova fase começa aqui. A cidade ao seu alcance, perto do que importa.', 'Identidade visual, book de vendas de 20 páginas, anúncios de jornal, folheto, banners de fachada e estande e carta premium.'],brand:'Bagamoio',year:'2026',line:'Jabaquara · marca, book e campanha',cover:'a/c/bag-eb-05.webp',
   text:'Bagamoio Residencial, Jabaquara. Criei a identidade do empreendimento, o book de vendas e as peças do lançamento: anúncios de jornal, folheto, banners de fachada e estande e carta premium.',
   blocks:[
@@ -484,13 +484,13 @@ const A=[
   blocks:()=>[blk2(),blk('ara','Reels por público')]},
  {id:'tratamento',t:'Tratamento de imagem',d:'Fotos de celular transformadas em imagem publicitária e simulações',
   text:'Fotos de celular transformadas em imagem publicitária, e montagens de simulação, como o tapume, para aprovação com o cliente.',
-  blocks:()=>[{t:'Beyond the frame',m:'Ver antes e depois',link:'#tratamento'},blk('sintese','Carrossel com as imagens tratadas'),{...blk('vpi','Simulação de tapume'),t:'Vista Parque · Simulação de tapume'}]},
+  blocks:()=>[{t:'Beyond the frame',m:'Ver antes e depois',link:'#tratamento'},blk('sintese','Carrossel com as imagens tratadas'),{...blk('vpi','Simulação de tapume'),t:'Vista Parque Ibirapuera · Simulação de tapume'}]},
  {id:'materiais',t:'Books e materiais de venda',d:'Book do empreendimento, anúncios, folhetos, banners e estande',
   text:'O material que o corretor leva para a mesa e que o empreendimento mostra na rua: book de vendas, anúncios, folhetos, banners e estande.',
   blocks:()=>[{...blk('bagamoio','Book de vendas'),t:'Bagamoio · Book de vendas'},{...blk('bagamoio','Campanha de lançamento'),t:'Bagamoio · Anúncios, folheto e banners'}]},
  {id:'pack',t:'Pack e brindes',d:'Embalagens, kits de relacionamento e convites',
   text:'Embalagem e impressos de relacionamento: o kit em caixa cartonada do Vista Parque Ibirapuera, os convites dos eventos e a carta premium do Bagamoio.',
-  blocks:()=>[{...blk('vpi','Brinde cartonado'),t:'Vista Parque · Kit de relacionamento'},{...blk('vpi','Convites'),t:'Vista Parque · Convites'},{t:'Bagamoio · Carta premium',m:'A4',wide:true,s:['a/bag-carta.webp']}]}
+  blocks:()=>[{...blk('vpi','Brinde cartonado'),t:'Vista Parque Ibirapuera · Kit de relacionamento'},{...blk('vpi','Convites'),t:'Vista Parque Ibirapuera · Convites'},{t:'Bagamoio · Carta premium',m:'A4',wide:true,s:['a/bag-carta.webp']}]}
 ];
 const blk2=()=>({t:'Filmes',m:'Filmes completos · 1080×1920',r:'9/16',v:['a/ARA_C3_Reel_Manifesto','a/seiza-reel','a/sint-reel'],caps:[['Ara Faria Lima','Filme manifesto · Pinheiros'],['Seiza Paraíso','Filme de lançamento · Paraíso'],['Síntese SP','Reel de revenda · Moema']]});
 document.getElementById('idx').innerHTML=A.map((a,i)=>`<li><a href="#area-${a.id}" data-i="${i}"><span class="t"><span class="n">${String(i+1).padStart(2,'0')}</span><b>${a.t}</b></span><span class="d">${a.d}</span></a></li>`).join('');
