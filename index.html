@@ -79,6 +79,11 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .facades .lab{position:absolute;left:12px;bottom:12px;background:#FAFAFA;color:var(--ink);padding:9px 11px}
 .facades a:hover .lab{background:var(--red);color:#fff}
 @media(max-width:760px){.facades{grid-template-columns:repeat(7,62vw);overflow-x:auto;scroll-snap-type:x mandatory;height:96vw}.facades a{scroll-snap-align:start}}
+.scrolldown{display:inline-flex;align-items:center;gap:14px;color:#FAFAFA;text-decoration:none;font:500 12px/1 var(--l);letter-spacing:.08em;text-transform:uppercase}
+.scrolldown:hover{color:#FAFAFA}
+.scrolldown svg{animation:bob 1.8s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+@media(prefers-reduced-motion:reduce){.scrolldown svg{animation:none}}
 /* section head (site pattern) */
 .sec{margin-top:clamp(120px,11vw,160px)}
 .sh{border-top:1px solid var(--ink);padding-top:16px;display:flex;flex-wrap:wrap;gap:24px;margin-bottom:clamp(48px,5vw,72px)}
@@ -289,18 +294,10 @@ footer .in > :last-child{text-align:right}
     <h1>Design para o mercado <span style="white-space:nowrap">imobiliário<span class="dot">.</span></span></h1>
     <div class="row">
       <p>Creative Studio de direção de arte, design e comunicação para o mercado imobiliário.</p>
-      <div class="cta"><a class="btn w" href="#indice">Frentes criativas →</a><a class="btn wo" href="#campanhas">Ver cases</a></div>
+      <a class="scrolldown" href="#indice"><span>Role para explorar</span><svg width="18" height="26" viewBox="0 0 18 26" fill="none" aria-hidden="true"><path d="M9 1v23M1 16l8 8 8-8" stroke="currentColor" stroke-width="1.5"/></svg></a>
     </div>
   </div></div>
-  <div class="facades">
-    <a href="#case-sintese"><img src="a/cov-sintese.webp" alt="Fachada Síntese SP"><span class="lab">Síntese SP</span></a>
-    <a href="#case-hive"><img src="a/cov-hive.webp" alt="Fachada HIVE Moema" style="object-position:84% 50%"><span class="lab">HIVE Moema</span></a>
-    <a href="#case-vpi"><img src="a/vpi-fachada.webp" alt="Fachada Vista Parque Ibirapuera"><span class="lab">Vista Parque</span></a>
-    <a href="#case-ita"><img src="a/cov-ita.webp" alt="Fachada Itá Conceição"><span class="lab">Itá Conceição</span></a>
-    <a href="#case-impar"><img src="a/cov-impar.webp" alt="Fachada Impar 737"><span class="lab">Impar 737</span></a>
-    <a href="#case-seiza"><img src="a/cov-seiza.webp" alt="Fachada Seiza Paraíso"><span class="lab">Seiza Paraíso</span></a>
-    <a href="#case-ara"><img src="a/cov-ara.webp" alt="Fachada Ara Faria Lima"><span class="lab">Ara Faria Lima</span></a>
-  </div>
+  
 </header>
 
 <main class="wrap">
@@ -443,7 +440,7 @@ const C=[
  {id:'seiza',nar:['Seiza Paraíso, da Rezende: studios de 24 a 32 m² no Paraíso, a 450 m do metrô.', 'Um mesmo produto para públicos muito diferentes: investidor, jovem profissional, pais e área da saúde.', 'Você no centro de tudo. Cada público recebe o seu motivo para estar ali.', 'Landing page com animações, campanha por público, carrossel do investidor e filme de lançamento.'],brand:'Seiza Paraíso',year:'2026',line:'Rezende · filme, landing page e carrosséis',cover:'a/cov-seiza.webp',
   text:'Studios de 24 a 32 m² no Paraíso, a 450 m do metrô. Campanha "Você no centro de tudo" dividida por público, com filme, landing page, carrosséis e peças estáticas.',
   blocks:[
-   {t:'Landing page',m:'seizabykco.netlify.app',lp:'https://seizabykco.netlify.app/'},
+   {t:'Landing page',m:'Landing page de lançamento',lp:'seiza-lp/index.html'},
    {t:'Campanha por público',m:'Investidor · Jovem profissional · Pais · Saúde',r:'4/5',s:['a/seiza-inv0.webp','a/seiza-jov0.webp','a/seiza-pais0.webp','a/seiza-sau0.webp']},
    {t:'Carrossel — Investidor',m:'4 telas',r:'4/5',s:['a/seiza-inv1.webp','a/seiza-inv2.webp','a/seiza-inv3.webp','a/seiza-inv4.webp']},
    {t:'Filme',m:'Filme completo · 57 s',r:'9/16',v:['a/seiza-reel']}]},
@@ -473,33 +470,36 @@ const C=[
 const byId=id=>C.find(c=>c.id===id);
 const blk=(id,t)=>byId(id).blocks.find(b=>b.t===t);
 const A=[
- {id:'branding',t:'Branding',d:'Estratégia, posicionamento e identidade visual',
-  text:'Marcas de empreendimento pensadas como sistema: estratégia, posicionamento e identidade visual que sustentam toda a comunicação.',
+ {id:'branding',t:'Branding',d:'Marca do empreendimento: nome, logotipo, cores e identidade visual',
+  text:'A marca do empreendimento, pensada como sistema: conceito, logotipo, tipografia, cores e as aplicações que sustentam toda a comunicação.',
   blocks:()=>[blk('bagamoio','Prancha conceito da marca'),{t:'Case completo',m:'Ver Bagamoio',link:'#case-bagamoio'}]},
- {id:'campanhas',t:'Campanhas',d:'Conceito, KV, comunicação e lançamentos',
-  text:'Conceito e key visual de lançamento, desdobrados em mídia, ponto de venda e relacionamento.',
-  blocks:()=>[blk('bagamoio','Campanha de lançamento'),{...blk('seiza','Campanha por público'),t:'Seiza Paraíso · Campanha por público'},{...blk('vpi','Simulação de tapume'),t:'Vista Parque · Tapume'}]},
- {id:'conteudo',t:'Conteúdo',d:'Social media, vídeos e storytelling',
-  text:'Conteúdo para redes sociais com argumento: carrosséis por público, filmes e reels que contam o produto.',
-  blocks:()=>[blk2('videos'),blk('ara','Reels por público'),...[['sintese','Campanha 1 — Morar'],['hive','Campanha 2 — Um endereço emblemático'],['ita','Campanha 1'],['impar','Carrossel'],['vpi','Carrossel de lançamento'],['ara','Carrossel — Morar']].flatMap(([id,t])=>[{...blk(id,t),t:byId(id).brand+' · '+t},{t:'',m:'Ver todas as campanhas de '+byId(id).brand,link:'#case-'+id,mini:true}])]},
- {id:'imagem',t:'Imagem',d:'Direção de arte, tratamento e composição',
-  text:'Direção de arte e tratamento que transformam a imagem bruta em fotografia publicitária, e montagens de simulação para aprovação.',
-  blocks:()=>[{t:'Beyond the frame',m:'Ver antes e depois',link:'#tratamento'},blk('sintese','Carrossel com as imagens tratadas'),{...blk('vpi','Simulação de tapume'),t:'Simulação de tapume · Vista Parque'}]},
- {id:'digital',t:'Digital',d:'Sites, landing pages e experiências digitais',
-  text:'Landing pages e sites de lançamento, com narrativa por seções, animação e captação de leads.',
-  blocks:()=>[{...blk('seiza','Landing page'),t:'Landing page · Seiza Paraíso'}]},
- {id:'comercial',t:'Comercial',d:'Books, apresentações e materiais de vendas',
-  text:'Material que o corretor leva para a mesa e o cliente leva para casa: books, impressos e kits de relacionamento.',
-  blocks:()=>[{...blk('bagamoio','Book de vendas'),t:'Book de vendas · Bagamoio'},{...blk('vpi','Brinde cartonado'),t:'Kit de relacionamento · Vista Parque'},{...blk('vpi','Convites'),t:'Convites · Vista Parque'},{t:'Folheto e carta premium · Bagamoio',m:'A5 · A4',wide:true,s:['a/bag-folheto.webp','a/bag-folheto-v.webp','a/bag-carta.webp']}]}
+ {id:'redes',t:'Redes sociais',d:'Carrosséis, posts e stories por público, para cada empreendimento',
+  text:'Campanhas para Instagram e redes sociais, com um argumento por público. Aqui está o carrossel principal de cada empreendimento; abra o case para ver todas as campanhas.',
+  blocks:()=>[['sintese','Campanha 1 — Morar'],['hive','Campanha 2 — Um endereço emblemático'],['ita','Campanha 1'],['impar','Carrossel'],['seiza','Campanha por público'],['vpi','Carrossel de lançamento'],['ara','Carrossel — Morar']].flatMap(([id,t])=>[{...blk(id,t),t:byId(id).brand+' · '+t},{t:'',m:'Ver todas as campanhas de '+byId(id).brand,link:'#case-'+id,mini:true}])},
+ {id:'videos',t:'Vídeos',d:'Reels, filmes de lançamento e vídeos para redes sociais',
+  text:'Filmes de lançamento, manifestos e reels por público, feitos para redes sociais e apresentação do empreendimento.',
+  blocks:()=>[blk2(),blk('ara','Reels por público')]},
+ {id:'landing',t:'Landing pages',d:'Páginas de lançamento e captação de leads, com animação',
+  text:'Landing pages de lançamento com narrativa por seções, animações em parallax e captação de contatos pelo WhatsApp.',
+  blocks:()=>[{...blk('seiza','Landing page'),t:'Seiza Paraíso · Landing page'}]},
+ {id:'tratamento',t:'Tratamento de imagem',d:'Fotos de celular transformadas em imagem publicitária e simulações',
+  text:'Fotos de celular transformadas em imagem publicitária, e montagens de simulação, como o tapume, para aprovação com o cliente.',
+  blocks:()=>[{t:'Beyond the frame',m:'Ver antes e depois',link:'#tratamento'},blk('sintese','Carrossel com as imagens tratadas'),{...blk('vpi','Simulação de tapume'),t:'Vista Parque · Simulação de tapume'}]},
+ {id:'materiais',t:'Books e materiais de venda',d:'Book do empreendimento, anúncios, folhetos, banners e estande',
+  text:'O material que o corretor leva para a mesa e que o empreendimento mostra na rua: book de vendas, anúncios, folhetos, banners e estande.',
+  blocks:()=>[{...blk('bagamoio','Book de vendas'),t:'Bagamoio · Book de vendas'},{...blk('bagamoio','Campanha de lançamento'),t:'Bagamoio · Anúncios, folheto e banners'}]},
+ {id:'pack',t:'Pack e brindes',d:'Embalagens, kits de relacionamento e convites',
+  text:'Embalagem e impressos de relacionamento: o kit em caixa cartonada do Vista Parque Ibirapuera, os convites dos eventos e a carta premium do Bagamoio.',
+  blocks:()=>[{...blk('vpi','Brinde cartonado'),t:'Vista Parque · Kit de relacionamento'},{...blk('vpi','Convites'),t:'Vista Parque · Convites'},{t:'Bagamoio · Carta premium',m:'A4',wide:true,s:['a/bag-carta.webp']}]}
 ];
-const blk2=k=>({t:'Filmes',m:'Filmes completos · 1080×1920',r:'9/16',v:['a/ARA_C3_Reel_Manifesto','a/seiza-reel','a/sint-reel'],caps:[['Ara Faria Lima','Filme manifesto · Pinheiros'],['Seiza Paraíso','Filme de lançamento · Paraíso'],['Síntese SP','Reel de revenda · Moema']]});
+const blk2=()=>({t:'Filmes',m:'Filmes completos · 1080×1920',r:'9/16',v:['a/ARA_C3_Reel_Manifesto','a/seiza-reel','a/sint-reel'],caps:[['Ara Faria Lima','Filme manifesto · Pinheiros'],['Seiza Paraíso','Filme de lançamento · Paraíso'],['Síntese SP','Reel de revenda · Moema']]});
 document.getElementById('idx').innerHTML=A.map((a,i)=>`<li><a href="#area-${a.id}" data-i="${i}"><span class="t"><span class="n">${String(i+1).padStart(2,'0')}</span><b>${a.t}</b></span><span class="d">${a.d}</span></a></li>`).join('');
 
 const grid=document.getElementById('grid');
 grid.innerHTML=C.map(c=>`<a class="card" href="${c.href||'#case-'+c.id}" aria-label="Abrir case ${c.brand}"><span class="sq"><img src="${c.cover}" alt="" loading="lazy" style="object-position:${c.pos||'50% 50%'}"></span><span class="tr"><span class="tt">${c.brand}</span><span class="lab mut">${c.year}</span></span><span class="lab mut">${c.line}</span></a>`).join('');
 
 function flowHTML(b,brand){
-  if(b.lp) return `<div class="flowblk"><div class="fhead"><h3>${b.t}</h3><a class="btn out" href="${b.lp}" target="_blank" rel="noopener">Abrir a landing page ↗</a></div><div class="lp"><div class="bar"><span class="lab mut">${b.m}</span><span class="lab mut">Role dentro da página para ver as animações</span></div><iframe src="${b.lp}" title="Landing page ${brand}" loading="lazy"></iframe></div></div>`;
+  if(b.lp) return `<div class="flowblk"><div class="fhead"><h3>${b.t}</h3><a class="btn out" href="${b.lp}" target="_blank" rel="noopener">Abrir em tela cheia ↗</a></div><div class="lp"><div class="bar"><span class="lab mut">${b.m}</span><span class="lab mut">Role dentro da página para ver as animações</span></div><iframe src="${b.lp}" title="Landing page ${brand}" loading="lazy"></iframe></div></div>`;
   if(b.link) return b.mini?`<div style="margin-top:16px"><a class="btn out" href="${b.link}">${b.m} →</a></div>`:`<div class="flowblk"><div class="fhead"><h3>${b.t}</h3><a class="btn out" href="${b.link}">${b.m} →</a></div></div>`;
   const items=b.v?b.v.map((v,k)=>`<figure><video src="${v}.mp4" poster="${v}.jpg" muted playsinline controls preload="metadata"></video>${b.caps?`<figcaption class="vcap"><b>${b.caps[k][0]}</b><span class="lab mut">${b.caps[k][1]}</span></figcaption>`:''}</figure>`).join(''):b.s.map((u,i)=>`<figure><img src="${u}" alt="${brand}, ${b.t}, tela ${i+1}" loading="lazy"></figure>`).join('');
   return `<div class="flowblk"><div class="fhead"><h3>${b.t}</h3><span class="lab mut">${b.m}</span></div><div class="flow${b.wide?' wide':''}" style="--r:${b.r||'4/5'}" tabindex="0" aria-label="${b.t}, role para o lado">${items}</div><div class="fbar"><span></span></div></div>`;
