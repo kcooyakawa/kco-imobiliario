@@ -496,7 +496,7 @@ const C=[
 ];
 
 const byId=id=>C.find(c=>c.id===id);
-const blk=(id,t)=>byId(id).blocks.find(b=>b.t===t);
+const blk=(id,t)=>byId(id).blocks.find(b=>b.t===t)||byId(id).blocks.find(b=>b.t.startsWith(t));
 const A=[
  {id:'landing',t:'Landing pages',d:'Páginas de lançamento e captação de leads, com animação',
   text:'Landing pages de lançamento com narrativa por seções, animações em parallax e captação de contatos pelo WhatsApp.',
