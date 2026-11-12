@@ -1,0 +1,2238 @@
+[
+ {
+  "area": 355.25,
+  "atencao": [],
+  "bairro": "Vila Andrade",
+  "cidade": "São Paulo",
+  "comitente": "Caixa",
+  "concorrencia": [],
+  "condominio": "Edifício Penthouse",
+  "endereco": "Av. Giovanni Gronchi, 3891, apto 03, São Paulo, SP",
+  "falta": [],
+  "fonte": "Caixa",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Caixa)",
+    "url": "assets/fotos/10217325-1.jpg"
+   }
+  ],
+  "lanceMin": 713912.7,
+  "links": {
+   "ficha": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=10217325"
+  },
+  "modalidade": "Venda Online",
+  "motivo": "R$ 2.010/m², praticamente igual à última venda registrada no ITBI do prédio (08/2026: R$ 1.205.410 por 558 m², R$ 2.160/m², itbisp.com); não fica 30% abaixo do mercado e o capital passa do teto.",
+  "nota": null,
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "status": "descartada",
+  "tipo": "Apartamento",
+  "vagas": 3,
+  "_id": "20261112-10217325"
+ },
+ {
+  "area": 141.48,
+  "atencao": [],
+  "bairro": "Saúde (Vila Gumercindo)",
+  "cidade": "São Paulo",
+  "comitente": "Caixa",
+  "concorrencia": [
+   {
+    "area": 141,
+    "circulo": "condominio",
+    "condominio": "R$ 1.000",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://www.quintoandar.com.br/condominio/edificio-torre-do-sol-vila-gumercindo-sao-paulo-9p6js8yl8k",
+    "preco": 595562,
+    "rsm2": 4224,
+    "titulo": "Ed. Torre do Sol: menor preço de compra do prédio (QuintoAndar)"
+   }
+  ],
+  "condominio": "Edifício Torre do Sol",
+  "dorm": 2,
+  "endereco": "Rua Vigário Albernaz, 750, apto 184 (duplex), São Paulo, SP",
+  "falta": [],
+  "fonte": "Caixa",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Caixa)",
+    "url": "assets/fotos/1444413540874-1.jpg"
+   }
+  ],
+  "lanceMin": 556966,
+  "links": {
+   "ficha": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444413540874",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/SP/1444413540874.pdf"
+  },
+  "matricula": {
+   "atos": [
+    [
+     "Abertura 23/01/1991",
+     "Apto duplex 184, 18º andar e cobertura, 141,48 m² privativos, 1 vaga indeterminada"
+    ],
+    [
+     "R.10 (16/06/2000)",
+     "Venda a Edson de Oliveira e Inês Iria Gallo de Oliveira"
+    ],
+    [
+     "R.11 (30/10/2020)",
+     "Venda a Ocimar Augusto de Castro por R$ 903.000 (com a matrícula 105.130)"
+    ],
+    [
+     "R.12 (30/10/2020)",
+     "Alienação fiduciária à Caixa, R$ 784.000"
+    ],
+    [
+     "Av.14 (19/02/2024)",
+     "Cancelamento da cédula de crédito Av.13"
+    ],
+    [
+     "Av.15 (19/02/2024)",
+     "Consolidação da propriedade em favor da Caixa por R$ 999.721,72"
+    ]
+   ],
+   "cartorio": "14º RI São Paulo",
+   "lida": true,
+   "numero": "105.118"
+  },
+  "modalidade": "Venda Online",
+  "motivo": "Menos de 30% abaixo do mercado: o anúncio mais barato do mesmo prédio está a R$ 595.562 (R$ 4.224/m², QuintoAndar, 12/11/2026); a Caixa pede R$ 3.937/m², só cerca de 7% abaixo. O desconto de 41,6% é sobre uma avaliação inflada.",
+  "nota": null,
+  "pagamento": "Recursos próprios, FGTS ou SBPE",
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "status": "descartada",
+  "tipo": "Apartamento",
+  "_id": "20261112-1444413540874"
+ },
+ {
+  "area": 170.64,
+  "atencao": [],
+  "bairro": "Consolação",
+  "cidade": "São Paulo",
+  "comitente": "Caixa",
+  "concorrencia": [
+   {
+    "area": 171,
+    "circulo": "condominio",
+    "condominio": "R$ 2.090",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://www.netimoveis.com",
+    "preco": 780000,
+    "rsm2": 4571,
+    "titulo": "Cond. José Passarelli, 171 m² (Netimóveis) — página 'Condomínio José Passarelli - Consolação' (URL exata não capturada)"
+   }
+  ],
+  "condominio": "Edifício José Passarelli (1976)",
+  "dorm": 3,
+  "endereco": "Rua Augusta, 257, apto 31, São Paulo, SP",
+  "falta": [],
+  "fonte": "Caixa",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Caixa)",
+    "url": "assets/fotos/1555522609958-1.jpg"
+   }
+  ],
+  "lanceMin": 729654.97,
+  "links": {
+   "ficha": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1555522609958"
+  },
+  "modalidade": "Venda Online",
+  "motivo": "Só cerca de 6% abaixo do anúncio do mesmo prédio (171 m² a R$ 780.000, R$ 4.571/m², Netimóveis, 12/11/2026), e há penhora/indisponibilidade averbada a regularizar pelo comprador.",
+  "nota": null,
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "status": "descartada",
+  "tipo": "Apartamento",
+  "vagas": 1,
+  "_id": "20261112-1555522609958"
+ },
+ {
+  "andar": 4,
+  "area": 67.36,
+  "atencao": [],
+  "bairro": "Vila Palmeiras",
+  "cidade": "São Paulo",
+  "comitente": "Judicial (proc. 0001848-21.2007.8.26.0020)",
+  "concorrencia": [],
+  "condominio": "Conjunto Residencial Portal das Artes",
+  "dataLeilao": "2026-11-18T14:20:00-03:00",
+  "debitos": "Condomínio R$ 292.856,26 (out/2026), maior que o lance; a diferença fica com o arrematante, o que leva o custo efetivo a cerca de R$ 293 mil (R$ 4.350/m²). IPTU R$ 1.530,39.",
+  "dorm": 3,
+  "endereco": "Rua Santo Ubaldo, 28, Bloco F, apto 43, São Paulo, SP",
+  "falta": [
+   "Comparáveis do condomínio e da rua (sem eles não dá para saber se fica 30% abaixo)",
+   "Edital e matrícula 131.406 (8º CRI)",
+   "Fotos internas e da área de lazer (o anúncio do leilão só traz a fachada)"
+  ],
+  "fonte": "Portal Zuk",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Portal Zuk)",
+    "url": "assets/fotos/37772-235868-1.jpg"
+   }
+  ],
+  "lanceMin": 186918.85,
+  "links": {
+   "ficha": "https://www.portalzuk.com.br/imovel/sp/sao-paulo/vila-palmeiras/rua-santo-ubaldo-28/37772-235868"
+  },
+  "mapa": {
+   "entorno": [],
+   "lat": -23.500248,
+   "lon": -46.682649,
+   "metro": "Estações próximas não verificadas (a consulta ao OpenStreetMap não respondeu).",
+   "url": "assets/mapas/37772-235868.jpg"
+  },
+  "modalidade": "Leilão judicial (2ª praça)",
+  "nota": 40,
+  "notas": {
+   "ader": 7,
+   "conf": 3,
+   "econ": 10,
+   "liq": 10,
+   "risco": 10
+  },
+  "ocupacao": 4,
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "status": "investigacao",
+  "tipo": "Apartamento",
+  "vagas": 1,
+  "_id": "20261112-37772-235868"
+ },
+ {
+  "area": 68.81,
+  "atencao": [],
+  "bairro": "Saúde",
+  "cidade": "São Paulo",
+  "comitente": "Judicial",
+  "concorrencia": [],
+  "condominio": "Cond. La Fontana — Ed. Fontana di Trevi",
+  "endereco": "Rua do Arraial, 209, apto 101, São Paulo, SP",
+  "falta": [],
+  "fonte": "Portal Zuk",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Portal Zuk)",
+    "url": "assets/fotos/37955-236943-1.jpg"
+   }
+  ],
+  "lanceMin": 200842.54,
+  "links": {
+   "ficha": "https://www.portalzuk.com.br/imovel/sp/sao-paulo/saude/rua-do-arraial-209/37955-236943"
+  },
+  "motivo": "Parte ideal (50%) do imóvel.",
+  "nota": null,
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "status": "descartada",
+  "tipo": "Apartamento",
+  "_id": "20261112-37955-236943"
+ },
+ {
+  "area": 66.64,
+  "atencao": [],
+  "bairro": "Cambuci",
+  "cidade": "São Paulo",
+  "comitente": "Judicial (proc. 0169745-62.2006.8.26.0100)",
+  "concorrencia": [],
+  "condominio": "Edifício José Faria",
+  "dataLeilao": "2026-12-08T13:50:00-03:00",
+  "debitos": "Condomínio e IPTU: 'informação pendente' na ficha.",
+  "dorm": 2,
+  "endereco": "Rua Senador Carlos Teixeira de Carvalho, 650, apto 08, São Paulo, SP",
+  "falta": [
+   "Débitos de condomínio e IPTU",
+   "Ler edital e matrícula 97.986 (6º CRI)",
+   "Comparáveis",
+   "Fotos internas e da área de lazer (o anúncio do leilão só traz a fachada)"
+  ],
+  "fonte": "Portal Zuk",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Portal Zuk)",
+    "url": "assets/fotos/37967-236959-1.jpg"
+   }
+  ],
+  "lanceMin": 235274.84,
+  "links": {
+   "edital": "https://documentacaoleilao.portalzuk.com.br/2026/10/e6330d4294044c002f4bead47286dcad.pdf",
+   "ficha": "https://www.portalzuk.com.br/imovel/sp/sao-paulo/cambuci/rua-senador-carlos-teixeira-de-carvalho-650/37967-236959"
+  },
+  "mapa": {
+   "entorno": [],
+   "lat": -23.569697,
+   "lon": -46.620235,
+   "metro": "Metrô/trem: Juventus - Mooca a 1,8 km (linha reta); Vergueiro - Sebrae a 2,0 km (linha reta); São Joaquim a 2,1 km (linha reta)",
+   "url": "assets/mapas/37967-236959.jpg"
+  },
+  "modalidade": "Leilão judicial (2ª praça)",
+  "nota": 45,
+  "notas": {
+   "ader": 6,
+   "conf": 3,
+   "econ": 20,
+   "liq": 9,
+   "risco": 7
+  },
+  "ocupacao": 4,
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "status": "investigacao",
+  "tipo": "Apartamento",
+  "_id": "20261112-37967-236959"
+ },
+ {
+  "andar": 5,
+  "area": 73.125,
+  "atencao": [],
+  "bairro": "Penha de França",
+  "cidade": "São Paulo",
+  "comitente": "Banco Santander (alienação fiduciária)",
+  "concorrencia": [
+   {
+    "area": null,
+    "circulo": "condominio",
+    "condominio": "R$ 569",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://www.quintoandar.com.br/condominio/ametista-penha-de-franca-sao-paulo-8kojsv4wvd",
+    "preco": 233000,
+    "rsm2": 3906,
+    "titulo": "Cond. Ametista: média das últimas negociações (QuintoAndar)"
+   }
+  ],
+  "condominio": "Edifício Ametista",
+  "dataLeilao": "2026-12-23T14:30:00-03:00",
+  "endereco": "Rua Coronel Rodovalho, 321, apto 75 (5º andar), São Paulo, SP",
+  "falta": [],
+  "fonte": "Portal Zuk",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Portal Zuk)",
+    "url": "assets/fotos/38013-237298-1.jpg"
+   }
+  ],
+  "lanceMax": 147150,
+  "lanceMin": 178158.75,
+  "links": {
+   "ficha": "https://www.portalzuk.com.br/imovel/sp/sao-paulo/penha-de-franca/rua-coronel-rodovalho-321/38013-237298"
+  },
+  "mercado": 257064,
+  "modalidade": "Leilão extrajudicial (2º leilão)",
+  "motivo": "A conta não fecha: a média das últimas negociações do prédio é R$ 3.906/m² (QuintoAndar), o que dá mercado de cerca de R$ 257 mil. O lance fica só 31% abaixo, o lucro seria de cerca de R$ 2 mil e o lance máximo (R$ 147 mil) fica abaixo do mínimo.",
+  "nota": null,
+  "ocupacao": 4,
+  "pagamento": "À vista em 24h + 5% de comissão; ITBI à vista; escritura em 30 dias",
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "status": "descartada",
+  "tipo": "Apartamento",
+  "vagas": 0,
+  "_id": "20261112-38013-237298"
+ },
+ {
+  "area": 48.17,
+  "atencao": [],
+  "bairro": "Vila Leopoldina",
+  "cidade": "São Paulo",
+  "comitente": "Judicial",
+  "concorrencia": [],
+  "condominio": "Ed. Melbourne — Quatro Estações Alto",
+  "endereco": "Av. Imperatriz Leopoldina, 1170, apto 98, Bloco B, São Paulo, SP",
+  "falta": [],
+  "fonte": "Portal Zuk",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Portal Zuk)",
+    "url": "assets/fotos/38019-237315-1.jpg"
+   }
+  ],
+  "lanceMin": 208906.81,
+  "links": {
+   "ficha": "https://www.portalzuk.com.br/imovel/sp/sao-paulo/vila-leopoldina/avenida-imperatriz-leopoldina-1170/38019-237315"
+  },
+  "motivo": "Venda de direitos do compromissário comprador (sem escritura) e unidade unificada ao apto 97.",
+  "nota": null,
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "status": "descartada",
+  "tipo": "Apartamento",
+  "_id": "20261112-38019-237315"
+ },
+ {
+  "andar": 9,
+  "area": 28.05,
+  "atencao": [],
+  "bairro": "Bela Vista",
+  "cidade": "São Paulo",
+  "comitente": "Judicial (proc. 1038392-80.2023.8.26.0100)",
+  "concorrencia": [],
+  "condominio": "Edifício União",
+  "dataLeilao": "2026-12-08T10:50:00-03:00",
+  "debitos": "Condomínio: pendente. IPTU R$ 393,49 + dívida ativa R$ 1.950,49.",
+  "endereco": "Rua Francisca Miquelina, 177, apto 97 (9º andar), São Paulo, SP",
+  "falta": [
+   "Comparáveis do prédio e da rua",
+   "Ler edital e matrícula 6.199 (4º CRI)",
+   "Débito condominial",
+   "Fotos internas e da área de lazer (o anúncio do leilão só traz a fachada)"
+  ],
+  "fonte": "Portal Zuk",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Portal Zuk)",
+    "url": "assets/fotos/38106-238033-1.jpg"
+   }
+  ],
+  "lanceMin": 121748.16,
+  "links": {
+   "edital": "https://documentacaoleilao.portalzuk.com.br/2026/10/1f891c530c956dccda2a97e09bb4b3f8.pdf",
+   "ficha": "https://www.portalzuk.com.br/imovel/sp/sao-paulo/bela-vista/rua-francisca-miquelina-177/38106-238033"
+  },
+  "mapa": {
+   "entorno": [],
+   "lat": -23.553576,
+   "lon": -46.639353,
+   "metro": "Metrô/trem: Japão - Liberdade a 401 m (linha reta); Anhangabaú a 646 m (linha reta); Sé a 696 m (linha reta)",
+   "url": "assets/mapas/38106-238033.jpg"
+  },
+  "modalidade": "Leilão judicial (2ª praça)",
+  "nota": 45,
+  "notas": {
+   "ader": 6,
+   "conf": 3,
+   "econ": 18,
+   "liq": 10,
+   "risco": 8
+  },
+  "ocupacao": 4,
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "status": "investigacao",
+  "tipo": "Apartamento",
+  "_id": "20261112-38106-238033"
+ },
+ {
+  "area": 49.64,
+  "atencao": [],
+  "bairro": "Tatuapé",
+  "cidade": "São Paulo",
+  "comitente": "Judicial — Cond. Parque Residencial Iguaré x Espólio de Antonio Gomes Oliveira (3ª Vara Cível do Tatuapé)",
+  "concorrencia": [],
+  "condominio": "Condomínio Parque Residencial Iguaré",
+  "dataLeilao": "2026-12-03T14:00:00-03:00",
+  "endereco": "Rua Iguaré, 72, Bloco 03, apto 56, São Paulo, SP",
+  "falta": [],
+  "fonte": "Portal Zuk",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Portal Zuk)",
+    "url": "assets/fotos/38108-238038-1.jpg"
+   }
+  ],
+  "lanceMax": 169806,
+  "lanceMin": 197309.17,
+  "links": {
+   "edital": "https://documentacaoleilao.portalzuk.com.br/2026/10/1018077bf33c88edb3fb135d47c96979.pdf",
+   "ficha": "https://www.portalzuk.com.br/imovel/sp/sao-paulo/tatuape/rua-iguare-72/38108-238038"
+  },
+  "mercado": 270449,
+  "modalidade": "Leilão judicial (2ª praça, 60%)",
+  "motivo": "Só 27% abaixo do mercado: anúncios no mesmo condomínio de 49–56 m² a R$ 250–342 mil (mediana R$ 6.054/m²). O lance máximo (R$ 170 mil) fica abaixo do mínimo. Obs.: a ficha do Zuk cita 'Ed. Monte Alegre, Av. Santo Antônio, 72', mas o edital descreve o Parque Residencial Iguaré.",
+  "nota": null,
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "status": "descartada",
+  "tipo": "Apartamento",
+  "vagas": 1,
+  "_id": "20261112-38108-238038"
+ },
+ {
+  "area": 68.5,
+  "atencao": [],
+  "bairro": "Santo Amaro (Jardim Taquaral)",
+  "cidade": "São Paulo",
+  "comitente": "Judicial",
+  "concorrencia": [],
+  "condominio": "Portal do Brooklin",
+  "endereco": "Av. Sargento Geraldo Santana, 1100, Bloco 24, apto 33, São Paulo, SP",
+  "falta": [],
+  "fonte": "Portal Zuk",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Portal Zuk)",
+    "url": "assets/fotos/38113-238100-1.jpg"
+   }
+  ],
+  "lanceMin": 209673.76,
+  "links": {
+   "ficha": "https://www.portalzuk.com.br/imovel/sp/sao-paulo/jardim-taquaral/avenida-sargento-geraldo-sant-ana-1100/38113-238100"
+  },
+  "motivo": "Venda de direitos do compromissário comprador (sem escritura).",
+  "nota": null,
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "status": "descartada",
+  "tipo": "Apartamento",
+  "_id": "20261112-38113-238100"
+ },
+ {
+  "andar": 9,
+  "area": 46.83,
+  "atencao": [],
+  "bairro": "Vila Mariana",
+  "cidade": "São Paulo",
+  "comitente": "Banco Bradesco (alienação fiduciária)",
+  "concorrencia": [
+   {
+    "area": 45,
+    "circulo": "condominio",
+    "condominio": "",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://www.zapimoveis.com.br/imovel/venda-apartamento-2-quartos-mobiliado-vila-mariana-zona-sul-sao-paulo-sp-45m2-id-2913211139/",
+    "preco": 447000,
+    "rsm2": 9933,
+    "titulo": "Ed. Norma, 45 m² (Zap)"
+   },
+   {
+    "area": 46,
+    "circulo": "condominio",
+    "condominio": "",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://www.zapimoveis.com.br/imovel/venda-apartamento-2-quartos-com-elevador-paraiso-zona-sul-sao-paulo-sp-46m2-id-2910841216/",
+    "preco": 380000,
+    "rsm2": 8261,
+    "titulo": "Ed. Norma, 46 m² (Zap)"
+   },
+   {
+    "area": 56,
+    "circulo": "condominio",
+    "condominio": "",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://www.zapimoveis.com.br/imovel/venda-apartamento-2-quartos-vila-mariana-zona-sul-sao-paulo-sp-56m2-id-2919037816/",
+    "preco": 610000,
+    "rsm2": 10893,
+    "titulo": "Ed. Norma, 56 m² (Zap)"
+   },
+   {
+    "area": null,
+    "circulo": "condominio",
+    "condominio": "",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://www.zapimoveis.com.br/condominio/sp-sao-paulo-vila-mariana-edificio-norma-id-dfd6f8dc-85e8/",
+    "preco": null,
+    "rsm2": null,
+    "titulo": "Página do Ed. Norma no Zap (7 anúncios, média R$ 380 mil)"
+   }
+  ],
+  "condominio": "Edifício Norma",
+  "dataLeilao": "2026-12-04T11:00:00-03:00",
+  "endereco": "Rua Dr. Nicolau de Sousa Queirós, 811, apto 92 (9º andar), São Paulo, SP",
+  "falta": [],
+  "fonte": "Portal Zuk",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Portal Zuk)",
+    "url": "assets/fotos/38146-238410-1.jpg"
+   }
+  ],
+  "lanceMax": 259642,
+  "lanceMin": 285916.97,
+  "links": {
+   "edital": "https://documentacaoleilao.portalzuk.com.br/2026/11/888ef284e4e596dceae318a97c53f8d2.pdf",
+   "ficha": "https://www.portalzuk.com.br/imovel/sp/sao-paulo/vila-mariana/rua-doutor-nicolau-de-sousa-queiros-811/38146-238410"
+  },
+  "mercado": 418660,
+  "modalidade": "Leilão extrajudicial (2º leilão)",
+  "motivo": "A conta não fecha: os anúncios de 45–56 m² no mesmo prédio dão mediana de R$ 9.933/m², ou mercado de cerca de R$ 419 mil. O lance fica só 32% abaixo, o ROI seria de 7% (abaixo do CDI líquido de 11,3%) e o lance máximo (R$ 260 mil) fica abaixo do mínimo.",
+  "nota": null,
+  "ocupacao": 4,
+  "pagamento": "À vista + 5% de comissão",
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "status": "descartada",
+  "tipo": "Apartamento",
+  "_id": "20261112-38146-238410"
+ },
+ {
+  "andar": 6,
+  "area": 41.48,
+  "atencao": [
+   "Embargos de Terceiro pendentes de julgamento: se procedentes, podem desfazer a arrematação",
+   "Agravo 4097310-30.2026.8.26.0000 (TJSP) autorizou o prosseguimento dos atos",
+   "Imóvel ocupado pelo executado ou terceiro; desocupação por conta do arrematante",
+   "Sem visitação"
+  ],
+  "bairro": "Consolação",
+  "capital": 378090,
+  "capitalAlavancado": 267967,
+  "cdi": 17.3,
+  "cidade": "São Paulo",
+  "comitente": "Judicial — Condomínio Edifício Victoria x Marco Antonio de Mello Mendes (42ª Vara Cível Central, proc. 1012626-30.2020.8.26.0100)",
+  "concorrencia": [
+   {
+    "area": 38,
+    "circulo": "condominio",
+    "condominio": "Ed. Victoria",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://loft.com.br/imovel/apartamento-rua-frei-caneca-consolacao-sao-paulo-1-quarto-38m2/tzae2kmw",
+    "preco": 565000,
+    "rsm2": 14868,
+    "titulo": "Ed. Victoria, 1 dorm, 1 vaga (Loft)"
+   },
+   {
+    "area": 38,
+    "circulo": "condominio",
+    "condominio": "Ed. Victoria",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://loft.com.br/imovel/apartamento-rua-frei-caneca-consolacao-sao-paulo-1-quarto-38m2/k12akfep",
+    "preco": 550000,
+    "rsm2": 14474,
+    "titulo": "Ed. Victoria, 1 dorm, 1 vaga (Loft)"
+   },
+   {
+    "area": 38,
+    "circulo": "condominio",
+    "condominio": "Ed. Victoria",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://loft.com.br/imovel/apartamento-rua-frei-caneca-consolacao-sao-paulo-1-quarto-38m2/crf11aci",
+    "preco": 575000,
+    "rsm2": 15132,
+    "titulo": "Ed. Victoria, 1 dorm, 1 vaga (Loft)"
+   },
+   {
+    "area": 38,
+    "circulo": "condominio",
+    "condominio": "Ed. Victoria",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://loft.com.br/imovel/apartamento-rua-frei-caneca-consolacao-sao-paulo-1-quarto-38m2/65x5p0tt",
+    "preco": 575000,
+    "rsm2": 15132,
+    "titulo": "Ed. Victoria, 1 dorm, 1 vaga (Loft)"
+   },
+   {
+    "area": 38,
+    "circulo": "condominio",
+    "condominio": "Ed. Victoria",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://loft.com.br/imovel/apartamento-rua-frei-caneca-consolacao-sao-paulo-1-quarto-38m2/hl3zph",
+    "preco": 575000,
+    "rsm2": 15132,
+    "titulo": "Ed. Victoria, 1 dorm, 1 vaga (Loft)"
+   },
+   {
+    "area": 65,
+    "circulo": "rua",
+    "condominio": "",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://loft.com.br/imovel/apartamento-rua-frei-caneca-bela-vista-sao-paulo-1-quarto-65m2/huwe7l",
+    "preco": 530000,
+    "rsm2": 8154,
+    "titulo": "Frei Caneca, 1 dorm, sem vaga (Loft)"
+   },
+   {
+    "area": 35,
+    "circulo": "bairro",
+    "condominio": "",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://loft.com.br/imovel/apartamento-rua-paim-bela-vista-sao-paulo-1-quarto-35m2/5ru0z6",
+    "preco": 329000,
+    "rsm2": 9400,
+    "titulo": "Studio R. Paim, Bela Vista (Loft)"
+   },
+   {
+    "area": 38,
+    "circulo": "bairro",
+    "condominio": "",
+    "data": "2026-11-12",
+    "foto": "",
+    "link": "https://loft.com.br/imovel/apartamento-rua-da-consolacao-republica-sao-paulo-1-quarto-38m2/rdqhcq",
+    "preco": 410000,
+    "rsm2": 10789,
+    "titulo": "Studio R. da Consolação (Loft)"
+   }
+  ],
+  "condMes": 1153,
+  "condominio": "Edifício Victória",
+  "conta": [
+   [
+    "Lance mínimo (2ª praça)",
+    "R$ 293.660",
+    0
+   ],
+   [
+    "Comissão 5% + ITBI 3% + registro 1%",
+    "R$ 26.429",
+    0
+   ],
+   [
+    "Reserva dívida condominial excedente",
+    "R$ 10.000",
+    0
+   ],
+   [
+    "Reforma",
+    "R$ 20.000",
+    0
+   ],
+   [
+    "Desocupação + giro 15 meses",
+    "R$ 13.000",
+    0
+   ],
+   [
+    "Jurídico (embargos de terceiro)",
+    "R$ 15.000",
+    0
+   ],
+   [
+    "Custo total C",
+    "R$ 378.090",
+    1
+   ],
+   [
+    "Venda conservadora (mercado)",
+    "R$ 564.892",
+    0
+   ],
+   [
+    "Ganho (0,94×venda − C)",
+    "R$ 152.909",
+    0
+   ],
+   [
+    "IR 15%",
+    "R$ 22.936",
+    0
+   ],
+   [
+    "Lucro líquido",
+    "R$ 129.972",
+    1
+   ],
+   [
+    "ROI no lance mínimo",
+    "34,4% em 15 meses (CDI 17,3%)",
+    1
+   ],
+   [
+    "Lance máximo",
+    "R$ 360.870",
+    1
+   ]
+  ],
+  "dataLeilao": "2026-12-08T13:30:00-03:00",
+  "debitos": "Condomínio R$ 255.658,94 (set/2026), pago com o produto da arrematação; diferença fica com o arrematante. IPTU: certidão negativa da PMSP (edital).",
+  "dorm": 1,
+  "endereco": "Rua Frei Caneca, 219, apto 63 (6º andar) + vaga 21, São Paulo, SP",
+  "falta": [
+   "Ler a matrícula 92.994 e 92.995 (4º CRI) ato por ato: o Zuk não libera sem login e o navegador não estava logado",
+   "Situação dos Embargos de Terceiro 4128851-72.2026.8.26.0100 (Luiz Carlos Piccin Ricci): não aparecem no e-SAJ (processo migrado)",
+   "Confirmar se os 5 anúncios do Ed. Victória são unidades distintas (podem ser a mesma unidade com vários corretores)",
+   "O leilão tem só 1 foto (fachada); não há fotos internas do lote"
+  ],
+  "fonte": "Portal Zuk",
+  "fotos": [
+   {
+    "legenda": "Fachada do Ed. Victória: única foto do anúncio do leilão (Portal Zuk, lote 38153-238428)",
+    "url": "assets/fotos/38153-238428-1.jpg"
+   },
+   {
+    "legenda": "Prédio: fachada com sacadas (anúncio Foxter/Loft crf11aci, mesmo condomínio)",
+    "url": "assets/fotos/38153-238428-2.jpg"
+   },
+   {
+    "legenda": "Prédio: guarita e entrada 'Victória 219' (anúncio Foxter/Loft crf11aci)",
+    "url": "assets/fotos/38153-238428-3.jpg"
+   },
+   {
+    "legenda": "Prédio: portão e acesso à garagem (anúncio Foxter/Loft crf11aci)",
+    "url": "assets/fotos/38153-238428-4.jpg"
+   },
+   {
+    "legenda": "Vista de unidade do prédio para a Rua Frei Caneca (anúncio Foxter/Loft crf11aci)",
+    "url": "assets/fotos/38153-238428-5.jpg"
+   },
+   {
+    "legenda": "Interior de unidade comparável de 38 m² no mesmo prédio, não é o lote (anúncio Foxter/Loft crf11aci)",
+    "url": "assets/fotos/38153-238428-6.jpg"
+   }
+  ],
+  "iptuAno": 2145,
+  "lanceMax": 360870,
+  "lanceMin": 293660.39,
+  "links": {
+   "edital": "https://documentacaoleilao.portalzuk.com.br/2026/11/6eced30f96f4a199f22af72c19638792.pdf",
+   "ficha": "https://www.portalzuk.com.br/imovel/sp/sao-paulo/consolacao/rua-frei-caneca-219/38153-238428",
+   "matricula": ""
+  },
+  "lucro": 129972,
+  "mapa": {
+   "entorno": [
+    "Shopping Frei Caneca a ~360 m",
+    "Praça Roosevelt a ~490 m",
+    "Universidade Mackenzie e Rua Augusta (bares, restaurantes, teatros) a poucos quarteirões",
+    "Av. Paulista a ~1,3 km"
+   ],
+   "lat": -23.5522751,
+   "lon": -46.6496087,
+   "metro": "Higienópolis-Mackenzie (L6) a ~530 m em linha reta; Consolação (L2) a ~1,1 km; Trianon-Masp (L2) a ~1,3 km; Paulista (L4) a ~1,7 km",
+   "url": "assets/mapas/38153-238428.jpg"
+  },
+  "matricula": {
+   "atos": [
+    [
+     "Av.05 (27/01/2026)",
+     "Penhora exequenda nas duas matrículas (citada no edital)"
+    ]
+   ],
+   "cartorio": "4º CRI São Paulo",
+   "lida": false,
+   "numero": "92.994 e 92.995"
+  },
+  "melhorConcorrente": "Nenhum concorrente fica abaixo do lance; o studio da R. Paim a R$ 329 mil (35 m², sem vaga) é o mais barato do bairro, e mesmo assim acima do lance por m².",
+  "mercado": 564892,
+  "meses": 15,
+  "modalidade": "Leilão judicial (2ª praça)",
+  "nota": 68,
+  "notas": {
+   "ader": 8,
+   "conf": 4,
+   "econ": 31,
+   "liq": 16,
+   "risco": 9
+  },
+  "ocupacao": 4,
+  "pagamento": "À vista em 24h por guia judicial, ou proposta art. 895 CPC: 25% de sinal + até 30 parcelas corrigidas (sujeita ao juiz). Comissão 5%.",
+  "pctAbaixo": 48,
+  "posicao": "O lance mínimo dá R$ 7.080/m², contra R$ 14.474–15.132/m² nos 5 anúncios do mesmo prédio (38 m² com vaga), cerca de metade. No bairro sem vaga/lazer os anúncios ficam em R$ 8.154–10.789/m².",
+  "regiao": "Capital",
+  "resumo": "Apto de 41 m² + vaga no Ed. Victória (Frei Caneca, a 5 min a pé da Paulista). 2ª praça a R$ 293,7 mil contra anúncios de 38 m² do mesmo prédio a R$ 550–575 mil. Melhor conta do dia, mas há embargos de terceiro pendentes e a matrícula não foi lida.",
+  "rodada": "2026-11-12",
+  "roi": 34.4,
+  "status": "investigacao",
+  "tipo": "Apartamento",
+  "vagas": 1,
+  "valorizacao": [],
+  "vendaConservadora": 564892,
+  "_id": "20261112-38153-238428"
+ },
+ {
+  "area": 108.48,
+  "atencao": [
+   "Rodada parcial pela nuvem em 12/11: edital e matrícula não lidos (PDF bloqueado), sem fotos gravadas, sem mapa e com concorrência parcial."
+  ],
+  "bairro": "Vila Tupi",
+  "cidade": "Praia Grande",
+  "condominio": "Residencial São Salvador",
+  "dataLeilao": "2026-12-01T13:09:00-03:00",
+  "endereco": "Rua Caiapós, 570, apto 40, Praia Grande, SP",
+  "falta": [
+   "Ocupação",
+   "Débitos",
+   "Matrícula 98.951",
+   "Comparáveis"
+  ],
+  "fonte": "Grupo Lance",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Grupo Lance) · 1/3",
+    "url": "assets/fotos/gl17576-1.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Grupo Lance) · 2/3",
+    "url": "assets/fotos/gl17576-2.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Grupo Lance) · 3/3",
+    "url": "assets/fotos/gl17576-3.jpg"
+   }
+  ],
+  "lanceMin": 274325,
+  "links": {
+   "ficha": "https://www.grupolance.com.br/sp/praia-grande/imoveis/apartamentos/apartamento-108m2-condominio-edificio-sao-salvador-praia-grande-sp-17576"
+  },
+  "mapa": {
+   "entorno": [],
+   "lat": -24.022205,
+   "lon": -46.456053,
+   "metro": "Estações próximas não verificadas (a consulta ao OpenStreetMap não respondeu).",
+   "url": "assets/mapas/gl17576.jpg"
+  },
+  "modalidade": "Judicial · execução de condomínio",
+  "pagamento": "À vista ou 25% + 30x",
+  "regiao": "Litoral",
+  "rodada": "2026-11-12",
+  "rodadaParcial": true,
+  "status": "investigacao",
+  "tipo": "Apartamento",
+  "vagas": "1",
+  "_id": "20261112-gl17576"
+ },
+ {
+  "area": 55,
+  "atencao": [
+   "Rodada parcial pela nuvem em 12/11: edital e matrícula não lidos (PDF bloqueado), sem fotos gravadas, sem mapa e com concorrência parcial."
+  ],
+  "bairro": "Centro",
+  "cidade": "Bertioga",
+  "condominio": "Condomínio Buriquioca",
+  "dataLeilao": "2026-12-01T18:23:00-03:00",
+  "dorm": 2,
+  "endereco": "Av. Dr. Leonardo de Bonna, 110, apto 32, Bertioga, SP",
+  "falta": [
+   "Ocupação",
+   "Débitos",
+   "Matrícula 47.299",
+   "Comparáveis"
+  ],
+  "fonte": "Grupo Lance",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Grupo Lance) · 1/3",
+    "url": "assets/fotos/gl24763-1.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Grupo Lance) · 2/3",
+    "url": "assets/fotos/gl24763-2.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Grupo Lance) · 3/3",
+    "url": "assets/fotos/gl24763-3.jpg"
+   }
+  ],
+  "lanceMin": 175848,
+  "links": {
+   "ficha": "https://www.grupolance.com.br/sp/bertioga/imoveis/apartamentos/apartamento-ac-7602m2-2-dormitorios-01-vaga-de-garagem-centro-bertioga-sp-24763"
+  },
+  "mapa": {
+   "entorno": [],
+   "lat": -23.852677,
+   "lon": -46.137737,
+   "metro": "Estações próximas não verificadas (a consulta ao OpenStreetMap não respondeu).",
+   "url": "assets/mapas/gl24763.jpg"
+  },
+  "modalidade": "Judicial · execução de condomínio",
+  "pagamento": "À vista ou 25% + 30x",
+  "regiao": "Litoral",
+  "rodada": "2026-11-12",
+  "rodadaParcial": true,
+  "status": "investigacao",
+  "tipo": "Apartamento 2 dorm.",
+  "vagas": "1",
+  "_id": "20261112-gl24763"
+ },
+ {
+  "area": 155.12,
+  "atencao": [
+   "Rodada parcial pela nuvem em 12/11: edital e matrícula não lidos (PDF bloqueado), sem fotos gravadas, sem mapa e com concorrência parcial."
+  ],
+  "bairro": "Macuco",
+  "cidade": "Santos",
+  "dataLeilao": "2026-12-01T13:13:00-03:00",
+  "endereco": "Rua Borges, 101, apto 101, Macuco, Santos, SP",
+  "falta": [
+   "Esclarecer fração de 50%",
+   "Ocupação",
+   "Matrícula 74.897",
+   "Comparáveis"
+  ],
+  "fonte": "Grupo Lance",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Grupo Lance)",
+    "url": "assets/fotos/gl28638-1.jpg"
+   }
+  ],
+  "lanceMin": 151549,
+  "links": {
+   "ficha": "https://www.grupolance.com.br/sp/santos/imoveis/casas/apartamento-15512m2-macuco-santos-sp-28638"
+  },
+  "mapa": {
+   "entorno": [],
+   "lat": -23.953585,
+   "lon": -46.318385,
+   "metro": "VLT: Carvalho de Mendonça a 651 m (linha reta); Universidades II a 860 m (linha reta); Campos Sales a 1,1 km (linha reta)",
+   "url": "assets/mapas/gl28638.jpg"
+  },
+  "modalidade": "Judicial · execução fiscal (espólio)",
+  "pagamento": "À vista ou 25% + 30x",
+  "regiao": "Litoral",
+  "rodada": "2026-11-12",
+  "rodadaParcial": true,
+  "status": "investigacao",
+  "tipo": "Apartamento térreo",
+  "_id": "20261112-gl28638"
+ },
+ {
+  "andar": "1º",
+  "area": 46.72,
+  "atencao": [
+   "Rodada parcial pela nuvem em 12/11: edital e matrícula não lidos (PDF bloqueado), sem fotos gravadas, sem mapa e com concorrência parcial."
+  ],
+  "bairro": "José Menino",
+  "cidade": "Santos",
+  "comitente": "Massa falida",
+  "condominio": "Edifício Orla",
+  "dataLeilao": "2026-11-13T14:00:00-03:00",
+  "endereco": "Av. Presidente Wilson, 175, apto 12, José Menino, Santos, SP",
+  "falta": [
+   "Comparáveis",
+   "Ocupação",
+   "Sub-rogação dos débitos"
+  ],
+  "fonte": "Mega Leilões",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 1/3",
+    "url": "assets/fotos/j128070-1.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 2/3",
+    "url": "assets/fotos/j128070-2.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 3/3",
+    "url": "assets/fotos/j128070-3.jpg"
+   }
+  ],
+  "lanceMin": 144095,
+  "links": {
+   "ficha": "https://www.megaleiloes.com.br/imoveis/apartamentos/sp/santos/apartamento-no-litoral-46-m2-jose-menino-santos-sp-j128070"
+  },
+  "mapa": {
+   "entorno": [],
+   "lat": -23.968115,
+   "lon": -46.351119,
+   "metro": "Estações próximas não verificadas (a consulta ao OpenStreetMap não respondeu).",
+   "url": "assets/mapas/j128070.jpg"
+  },
+  "modalidade": "Judicial · falência",
+  "nota": null,
+  "pagamento": "À vista em 24h",
+  "regiao": "Litoral",
+  "resumo": "Lance atual R$ 144.095. Matrícula com hipoteca, arresto e execução de condomínio.",
+  "rodada": "2026-11-12",
+  "rodadaParcial": true,
+  "status": "investigacao",
+  "tipo": "Apartamento",
+  "_id": "20261112-j128070"
+ },
+ {
+  "andar": "3º",
+  "area": 62.64,
+  "atencao": [
+   "Rodada parcial pela nuvem em 12/11: edital e matrícula não lidos (PDF bloqueado), sem fotos gravadas, sem mapa e com concorrência parcial."
+  ],
+  "bairro": "Vila Guarani",
+  "capital": 357705,
+  "capitalAlavancado": 217936,
+  "cdi": 11.3,
+  "cidade": "São Paulo",
+  "comitente": "Massa falida (3ª Vara de Falências SP)",
+  "concorrencia": [
+   {
+    "area": 65,
+    "circulo": "rua",
+    "data": "12/11/2026",
+    "link": "https://www.spimovel.com.br/imovel/apartamento-venda-rs530000-2quartos-1vaga-65m2-vila-guaranizona-sul-sao-paulo-sp/4256551/",
+    "preco": 530000,
+    "rsm2": 8154,
+    "titulo": "Apto 65 m², 2 dorm., Vila Guarani (SPImóvel)"
+   },
+   {
+    "area": 65,
+    "circulo": "rua",
+    "data": "12/11/2026",
+    "link": "https://www.spimovel.com.br/imovel/apartamento-venda-rs560000-2quartos-1vaga-65m2-vila-guaranizona-sul-sao-paulo-sp/4558017/",
+    "preco": 560000,
+    "rsm2": 8615,
+    "titulo": "Apto 65 m², 2 dorm., Vila Guarani (SPImóvel)"
+   },
+   {
+    "area": 47,
+    "circulo": "bairro",
+    "data": "12/11/2026",
+    "link": "https://www.spimovel.com.br/imovel/apartamento-venda-rs420000-2quartos-1vaga-47m2-vila-guarani(zona-sul)-sao-paulo-sao-paulo-sp/4465274/",
+    "preco": 420000,
+    "rsm2": 8936,
+    "titulo": "Apto 47 m², 2 dorm., Vila Guarani (SPImóvel)"
+   }
+  ],
+  "condominio": "Edifício Portofino",
+  "conta": [
+   [
+    "Venda conservadora (R$ 7.340/m²)",
+    "R$ 460.000"
+   ],
+   [
+    "Corretagem 6%",
+    "− R$ 27.600"
+   ],
+   [
+    "Lance mínimo",
+    "R$ 279.546"
+   ],
+   [
+    "Comissão 5% + ITBI 3% + registro 1%",
+    "R$ 25.159"
+   ],
+   [
+    "Reserva de dívidas",
+    "R$ 10.000"
+   ],
+   [
+    "Reforma",
+    "R$ 15.000"
+   ],
+   [
+    "Giro (condomínio + IPTU)",
+    "R$ 8.000"
+   ],
+   [
+    "Jurídico e desocupação",
+    "R$ 20.000"
+   ],
+   [
+    "Capital total investido",
+    "R$ 357.705",
+    1
+   ],
+   [
+    "Ganho antes do IR",
+    "R$ 74.695"
+   ],
+   [
+    "IR 15% sobre o ganho",
+    "− R$ 11.204"
+   ],
+   [
+    "Lucro líquido · ROI",
+    "R$ 63.491 · 17,7%",
+    1
+   ],
+   [
+    "Lance máximo",
+    "R$ 288.569"
+   ]
+  ],
+  "dataLeilao": "2026-12-03T15:00:00-03:00",
+  "debitos": "IPTU e condomínio sub-rogados no preço",
+  "endereco": "Rua Maracá, 73, apto 34, Vila Guarani, São Paulo, SP",
+  "falta": [
+   "Confirmar datas no edital",
+   "Excluir mistura com imóvel de Itatiba",
+   "Ocupação",
+   "Fotos internas e da área de lazer (o anúncio do leilão só traz a fachada)"
+  ],
+  "fonte": "Mega Leilões",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 1/3",
+    "url": "assets/fotos/j129388-1.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 2/3",
+    "url": "assets/fotos/j129388-2.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 3/3",
+    "url": "assets/fotos/j129388-3.jpg"
+   }
+  ],
+  "fotosLinks": [
+   "https://cdn1.megaleiloes.com.br/batches/129388/283a57468bb1a828e236d72ba08031d6_670x380.jpg"
+  ],
+  "lanceMax": 288569,
+  "lanceMin": 279546,
+  "links": {
+   "edital": "https://cdn1.megaleiloes.com.br/batches/129388/megaleiloes_edital_J129388_260914-144430.pdf",
+   "ficha": "https://www.megaleiloes.com.br/imoveis/apartamentos/sp/sao-paulo/apartamento-62-m2-01-vaga-vila-guarani-sao-paulo-sp-j129388",
+   "matricula": "https://cdn1.megaleiloes.com.br/batches/129388/megaleiloes_matricula_J129388_260914-144805.pdf"
+  },
+  "lucro": 63491,
+  "mapa": {
+   "entorno": [],
+   "lat": -23.634043,
+   "lon": -46.637526,
+   "metro": "Metrô/trem: Conceição a 399 m (linha reta); São Judas a 999 m (linha reta); Jabaquara - Comitê Paralímpico Brasileiro a 1,4 km (linha reta)",
+   "url": "assets/mapas/j129388.jpg"
+  },
+  "matricula": {
+   "atos": [
+    [
+     "Av.1",
+     "Hipoteca ao Bradesco (R$ 2,87 mi, 2004), cancelável na venda (art. 1.499 CC)"
+    ]
+   ],
+   "cartorio": "8º RI São Paulo",
+   "lida": false,
+   "numero": "142.283"
+  },
+  "mercado": 460000,
+  "meses": 10,
+  "modalidade": "Judicial · falência",
+  "nota": 64,
+  "notas": {
+   "ader": 8,
+   "conf": 4,
+   "econ": 25,
+   "liq": 15,
+   "risco": 12
+  },
+  "pagamento": "À vista em 24h ou art. 895 (25% + 30x)",
+  "pctAbaixo": 39,
+  "posicao": "2ª praça a R$ 4.463/m²; anúncios da região pedem R$ 8.154 a 8.936/m².",
+  "regiao": "Capital",
+  "resumo": "Datas da ficha e do edital divergem e a ficha mistura outro imóvel (Itatiba). Se o edital for contraditório, vai para descarte.",
+  "rodada": "2026-11-12",
+  "rodadaParcial": true,
+  "roi": 17.7,
+  "status": "investigacao",
+  "tipo": "Apartamento",
+  "vagas": "1",
+  "vendaConservadora": 460000,
+  "_id": "20261112-j129388"
+ },
+ {
+  "area": 62.59,
+  "atencao": [],
+  "bairro": "Vila Formosa",
+  "cidade": "São Paulo",
+  "comitente": "Judicial",
+  "concorrencia": [],
+  "condominio": "Conjunto Residencial Vila Bela",
+  "dataLeilao": "2026-11-19T14:00:00-03:00",
+  "endereco": "Av. Cipriano Rodrigues, 218, Bloco C, apto 03 (térreo), São Paulo, SP",
+  "falta": [],
+  "fonte": "Mega Leilões",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 1/3",
+    "url": "assets/fotos/j129527-1.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 2/3",
+    "url": "assets/fotos/j129527-2.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 3/3",
+    "url": "assets/fotos/j129527-3.jpg"
+   }
+  ],
+  "lanceMin": 208315.49,
+  "links": {
+   "edital": "https://cdn1.megaleiloes.com.br/batches/129527/megaleiloes_edital_J129527_260918-143531.pdf",
+   "ficha": "https://www.megaleiloes.com.br/imoveis/apartamentos/sp/sao-paulo/apartamento-62-m2-01-vaga-vila-formosa-sao-paulo-sp-j129527",
+   "matricula": "https://cdn1.megaleiloes.com.br/batches/129527/megaleiloes_matricula_J129527_260918-143531.pdf"
+  },
+  "motivo": "Imóvel em nome de cooperativa habitacional, com indisponibilidade (Av.05) e penhora de outro credor (Av.06); dívida ativa de IPTU R$ 32.643,08; vaga com manobrista. Risco de ocupante cooperado com direitos sobre a unidade.",
+  "nota": null,
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "status": "descartada",
+  "tipo": "Apartamento",
+  "vagas": 1,
+  "_id": "20261112-j129527"
+ },
+ {
+  "area": 50.68,
+  "bairro": "Cambuci",
+  "cidade": "São Paulo",
+  "comitente": "Itaú Unibanco",
+  "condominio": "Edifício Tuca",
+  "dataLeilao": "2026-11-13T15:00:00-03:00",
+  "endereco": "Av. Lacerda Franco, 1170, apto 31, São Paulo, SP",
+  "fonte": "Mega Leilões",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 1/3",
+    "url": "assets/fotos/x129861-1.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 2/3",
+    "url": "assets/fotos/x129861-2.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 3/3",
+    "url": "assets/fotos/x129861-3.jpg"
+   }
+  ],
+  "lanceMin": 301980,
+  "links": {
+   "ficha": "https://www.megaleiloes.com.br/imoveis/apartamentos/sp/sao-paulo/apartamento-50-m2-cambuci-sao-paulo-sp-x129861"
+  },
+  "motivo": "Habilitação encerrada em 11/11.",
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "rodadaParcial": true,
+  "status": "descartada",
+  "tipo": "Apartamento",
+  "_id": "20261112-x129861"
+ },
+ {
+  "area": 41.9,
+  "bairro": "Bela Vista",
+  "cidade": "São Paulo",
+  "comitente": "Itaú Unibanco",
+  "condominio": "Conjunto Nova Perimetral",
+  "dataLeilao": "2026-11-13T15:06:00-03:00",
+  "endereco": "Av. Brigadeiro Luís Antônio, 733, apto 604, São Paulo, SP",
+  "fonte": "Mega Leilões",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 1/2",
+    "url": "assets/fotos/x130498-1.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 2/2",
+    "url": "assets/fotos/x130498-2.jpg"
+   }
+  ],
+  "lanceMin": 180000,
+  "links": {
+   "edital": "https://cdn1.megaleiloes.com.br/batches/130498/megaleiloes_edital_X130498_261103-173257.pdf",
+   "ficha": "https://www.megaleiloes.com.br/imoveis/apartamentos/sp/sao-paulo/apartamento-41-m2-bela-vista-sao-paulo-sp-x130498",
+   "matricula": "https://cdn1.megaleiloes.com.br/batches/130498/megaleiloes_matricula_X130498_261013-143546.pdf"
+  },
+  "matricula": {
+   "atos": [
+    [
+     "Abertura 22/02/2000",
+     "Apto 604, Bloco A, Conjunto Habitacional Nova Perimetral, 41,90 m² úteis, sem vaga"
+    ],
+    [
+     "R.1 (22/02/2000)",
+     "Venda a Massamitsu Miyamura"
+    ],
+    [
+     "R.02 (17/11/2004)",
+     "Venda a Maria Margarida de Freitas por R$ 30.000"
+    ],
+    [
+     "R.3 (19/01/2023)",
+     "Alienação fiduciária ao Itaú (CCB, R$ 30.968,26)"
+    ],
+    [
+     "Av.4 (11/09/2026)",
+     "Consolidação da propriedade em favor do Itaú, valor R$ 265.000"
+    ]
+   ],
+   "cartorio": "1º RI São Paulo",
+   "lida": true,
+   "numero": "84.282"
+  },
+  "motivo": "Matrícula limpa (AF Itaú consolidada na Av.4 em 11/09/2026), mas o edital dá ciência da ação 4216614-14.2026.8.26.0100 (19ª Vara Cível), ajuizada depois da consolidação. Ocupado, só à vista, com débitos anteriores não informados. Os anúncios do prédio são de 67–77 m² (R$ 8.300–9.400/m²); não há ≥3 comparáveis da tipologia de 41 m². Leilão em 13/11 às 15h06, já com lance de R$ 180.000,01.",
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "rodadaParcial": false,
+  "status": "descartada",
+  "tipo": "Apartamento",
+  "_id": "20261112-x130498"
+ },
+ {
+  "andar": "15º/16º (ficha diverge)",
+  "area": 94.65,
+  "atencao": [
+   "Rodada parcial pela nuvem em 12/11: edital e matrícula não lidos (PDF bloqueado), sem fotos gravadas, sem mapa e com concorrência parcial.",
+   "Ocupado",
+   "Praça em 13/11: confirmar habilitação"
+  ],
+  "bairro": "Centro",
+  "capital": 174390,
+  "cdi": 11.3,
+  "cidade": "Piracicaba",
+  "comitente": "Itaú Unibanco",
+  "concorrencia": [
+   {
+    "area": 94,
+    "circulo": "rua",
+    "condominio": 600,
+    "data": "12/11/2026",
+    "link": "https://www.lopes.com.br/busca/venda/br/sp/piracicaba/centro/tipo/apartamento",
+    "preco": 250000,
+    "rsm2": 2660,
+    "titulo": "Apto 2 dorm., 94 m², Rua Treze de Maio (Lopes)"
+   },
+   {
+    "area": 72,
+    "circulo": "rua",
+    "data": "12/11/2026",
+    "link": "https://www.lopes.com.br/busca/venda/br/sp/piracicaba/centro/tipo/apartamento",
+    "preco": 165000,
+    "rsm2": 2292,
+    "titulo": "Apto 2 dorm., 72 m², Rua Treze de Maio (Lopes)"
+   },
+   {
+    "area": 87,
+    "circulo": "bairro",
+    "data": "12/11/2026",
+    "link": "https://www.lopes.com.br/busca/venda/br/sp/piracicaba/centro/tipo/apartamento",
+    "preco": 250000,
+    "rsm2": 2874,
+    "titulo": "Apto 87 m², Rua Benjamin Constant (Lopes)"
+   },
+   {
+    "area": 120,
+    "circulo": "bairro",
+    "data": "12/11/2026",
+    "link": "https://www.lopes.com.br/busca/venda/br/sp/piracicaba/centro/tipo/apartamento",
+    "preco": 330000,
+    "rsm2": 2750,
+    "titulo": "Apto 120 m², Rua Alferes José Caetano (Lopes)"
+   }
+  ],
+  "condMes": 600,
+  "condominio": "Ed. Comendador Luciano Guidotti",
+  "conta": [
+   [
+    "Venda conservadora (anúncio 94 m² na mesma rua −10%)",
+    "R$ 225.000"
+   ],
+   [
+    "Corretagem 6%",
+    "− R$ 13.500"
+   ],
+   [
+    "Lance mínimo",
+    "R$ 121.000"
+   ],
+   [
+    "Comissão 5% + ITBI 3% + registro 1%",
+    "R$ 10.890"
+   ],
+   [
+    "Reserva de dívidas",
+    "R$ 10.000"
+   ],
+   [
+    "Reforma",
+    "R$ 15.000"
+   ],
+   [
+    "Giro (condomínio + IPTU)",
+    "R$ 7.500"
+   ],
+   [
+    "Jurídico e desocupação",
+    "R$ 10.000"
+   ],
+   [
+    "Capital total investido",
+    "R$ 174.390",
+    1
+   ],
+   [
+    "Ganho antes do IR",
+    "R$ 37.110"
+   ],
+   [
+    "IR 15% sobre o ganho",
+    "− R$ 5.566"
+   ],
+   [
+    "Lucro líquido · ROI",
+    "R$ 31.544 · 18,1%",
+    1
+   ],
+   [
+    "Lance máximo",
+    "R$ 125.940"
+   ]
+  ],
+  "dataLeilao": "2026-11-13T15:08:00-03:00",
+  "debitos": "Não informados na ficha",
+  "endereco": "Rua Treze de Maio, 846, apto 154-D, Centro, Piracicaba, SP",
+  "falta": [
+   "Ler matrícula 78.932 e edital",
+   "Débitos de condomínio e IPTU",
+   "Fotos internas e da área de lazer (o anúncio do leilão só traz a fachada)",
+   "Folga do lance máximo menor que um incremento"
+  ],
+  "fonte": "Mega Leilões",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 1/3",
+    "url": "assets/fotos/x130500-1.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 2/3",
+    "url": "assets/fotos/x130500-2.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 3/3",
+    "url": "assets/fotos/x130500-3.jpg"
+   }
+  ],
+  "fotosLinks": [
+   "https://cdn1.megaleiloes.com.br/batches/130500/21cc73d1b01912f31f1211b7bd97d74f_670x380.jpg"
+  ],
+  "lanceMax": 125940,
+  "lanceMin": 121000,
+  "links": {
+   "edital": "https://cdn1.megaleiloes.com.br/batches/130500/megaleiloes_edital_X130500_261013-145657.pdf",
+   "ficha": "https://www.megaleiloes.com.br/imoveis/apartamentos/sp/piracicaba/apartamento-94-m2-unid-154-d-centro-piracicaba-sp-x130500",
+   "matricula": "https://cdn1.megaleiloes.com.br/batches/130500/megaleiloes_matricula_X130500_261013-145657.pdf"
+  },
+  "lucro": 31544,
+  "mapa": {
+   "entorno": [],
+   "lat": -22.721632,
+   "lon": -47.650257,
+   "metro": "Estações próximas não verificadas (a consulta ao OpenStreetMap não respondeu).",
+   "url": "assets/mapas/x130500.jpg"
+  },
+  "matricula": {
+   "cartorio": "1º RI Piracicaba",
+   "lida": false,
+   "numero": "78.932"
+  },
+  "mercado": 225000,
+  "meses": 10,
+  "modalidade": "Extrajudicial · 2ª praça",
+  "nota": 64,
+  "notas": {
+   "ader": 7,
+   "conf": 7,
+   "econ": 24,
+   "liq": 10,
+   "risco": 16
+  },
+  "ocupacao": 3,
+  "pagamento": "Somente à vista",
+  "pctAbaixo": 46,
+  "posicao": "Lance mínimo a R$ 1.278/m²; os anúncios da mesma rua pedem R$ 2.292 a 2.660/m².",
+  "regiao": "Interior",
+  "resumo": "Aprovada na pré-análise de 12/11 pela régua antiga. Pela régua nova não passa: o lance máximo fica a menos de um incremento (R$ 10 mil) do mínimo.",
+  "rodada": "2026-11-12",
+  "rodadaParcial": true,
+  "roi": 18.1,
+  "status": "investigacao",
+  "tipo": "Apartamento",
+  "vendaConservadora": 225000,
+  "_id": "20261112-x130500"
+ },
+ {
+  "andar": "6º",
+  "area": 91.07,
+  "atencao": [
+   "Rodada parcial pela nuvem em 12/11: edital e matrícula não lidos (PDF bloqueado), sem fotos gravadas, sem mapa e com concorrência parcial.",
+   "Ocupado",
+   "Pagamento só à vista"
+  ],
+  "bairro": "Rudge Ramos",
+  "capital": 532734,
+  "cdi": 8.9,
+  "cidade": "São Bernardo do Campo",
+  "comitente": "Banco Santander",
+  "concorrencia": [
+   {
+    "area": 91,
+    "circulo": "condominio",
+    "condominio": 1119,
+    "data": "12/11/2026",
+    "link": "https://www.quintoandar.com.br/condominio/ladresse-rudge-ramos-sao-bernardo-do-campo-4pxns73rqd",
+    "preco": 915000,
+    "rsm2": 10055,
+    "titulo": "L'Adresse 91 m², 3 dorm., 2 vagas"
+   },
+   {
+    "area": 91,
+    "circulo": "condominio",
+    "condominio": 815,
+    "data": "12/11/2026",
+    "link": "https://www.quintoandar.com.br/condominio/ladresse-rudge-ramos-sao-bernardo-do-campo-4pxns73rqd",
+    "preco": 960000,
+    "rsm2": 10549,
+    "titulo": "L'Adresse 91 m², 3 dorm., 2 vagas"
+   },
+   {
+    "area": 91,
+    "circulo": "condominio",
+    "data": "12/11/2026",
+    "link": "https://www.quintoandar.com.br/condominio/ladresse-rudge-ramos-sao-bernardo-do-campo-4pxns73rqd",
+    "preco": 970000,
+    "rsm2": 10659,
+    "titulo": "L'Adresse 91 m², 3 dorm., 2 vagas"
+   },
+   {
+    "area": 93,
+    "circulo": "condominio",
+    "condominio": 972,
+    "data": "12/11/2026",
+    "link": "https://www.quintoandar.com.br/condominio/ladresse-rudge-ramos-sao-bernardo-do-campo-4pxns73rqd",
+    "preco": 990000,
+    "rsm2": 10645,
+    "titulo": "L'Adresse 93 m², 3 dorm., 2 vagas"
+   },
+   {
+    "area": 87,
+    "circulo": "bairro",
+    "condominio": 900,
+    "data": "12/11/2026",
+    "link": "https://www.lopes.com.br/condominios/sp/sao-bernardo-do-campo/rudge-ramos/REC222174/condominio-edificio-ladresse-rua-paulo-di-favari-683",
+    "preco": 580000,
+    "rsm2": 6667,
+    "titulo": "Contiplazza 87 m² (Lopes)"
+   },
+   {
+    "area": 134,
+    "circulo": "bairro",
+    "condominio": 500,
+    "data": "12/11/2026",
+    "link": "https://www.lopes.com.br/condominios/sp/sao-bernardo-do-campo/rudge-ramos/REC222174/condominio-edificio-ladresse-rua-paulo-di-favari-683",
+    "preco": 760000,
+    "rsm2": 5672,
+    "titulo": "Kaikoura 134 m² (Lopes)"
+   }
+  ],
+  "condominio": "Edifício L'Adresse",
+  "conta": [
+   [
+    "Venda conservadora (menor anúncio do prédio −10%)",
+    "R$ 823.500"
+   ],
+   [
+    "Corretagem 6%",
+    "− R$ 49.410"
+   ],
+   [
+    "Lance mínimo",
+    "R$ 433.334"
+   ],
+   [
+    "Comissão 5% + ITBI 3% + registro 1%",
+    "R$ 39.000"
+   ],
+   [
+    "Reserva de dívidas",
+    "R$ 15.000"
+   ],
+   [
+    "Reforma",
+    "R$ 15.000"
+   ],
+   [
+    "Giro (condomínio + IPTU)",
+    "R$ 10.400"
+   ],
+   [
+    "Jurídico e desocupação",
+    "R$ 20.000"
+   ],
+   [
+    "Capital total investido",
+    "R$ 532.734",
+    1
+   ],
+   [
+    "Ganho antes do IR",
+    "R$ 241.356"
+   ],
+   [
+    "IR 15% sobre o ganho",
+    "− R$ 36.203"
+   ],
+   [
+    "Lucro líquido · ROI",
+    "R$ 205.153 · 38,5%",
+    1
+   ],
+   [
+    "Lance máximo",
+    "R$ 548.235"
+   ]
+  ],
+  "dataLeilao": "2026-11-18T10:00:00-03:00",
+  "dorm": 3,
+  "endereco": "Rua Paulo di Favari, 683, apto 62, Rudge Ramos, São Bernardo do Campo, SP",
+  "falta": [
+   "Capital total R$ 533 mil acima do teto (avaliar sociedade de 2 investidores)",
+   "Ler edital e matrícula 164.055",
+   "Débitos",
+   "Fotos internas e da área de lazer (o anúncio do leilão só traz a fachada)"
+  ],
+  "fonte": "Mega Leilões",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões)",
+    "url": "assets/fotos/x130902-1.jpg"
+   }
+  ],
+  "fotosLinks": [
+   "https://cdn1.megaleiloes.com.br/batches/130902/0deb4b1e8d06ecb364796db5a03b69e5_670x380.jpg"
+  ],
+  "lanceMax": 548235,
+  "lanceMin": 433334,
+  "links": {
+   "edital": "https://cdn1.megaleiloes.com.br/batches/130902/megaleiloes_edital_X130902_261027-121226.pdf",
+   "ficha": "https://www.megaleiloes.com.br/imoveis/apartamentos/sp/sao-bernardo-do-campo/apartamento-111-m2-02-vagas-rudge-ramos-sao-bernardo-do-campo-sp-x130902",
+   "matricula": "https://cdn1.megaleiloes.com.br/batches/130902/megaleiloes_matricula_X130902_261027-121226.pdf"
+  },
+  "lucro": 205153,
+  "mapa": {
+   "entorno": [],
+   "lat": -23.669295,
+   "lon": -46.563349,
+   "metro": "Nenhuma estação de metrô/trem no raio de 2,5 km consultado no OpenStreetMap.",
+   "url": "assets/mapas/x130902.jpg"
+  },
+  "matricula": {
+   "atos": [
+    [
+     "R.2",
+     "Alienação fiduciária ao Banco Santander (pela ficha)"
+    ],
+    [
+     "Av.5",
+     "Consolidação da propriedade em nome do Santander (pela ficha)"
+    ]
+   ],
+   "cartorio": "1º RI São Bernardo do Campo",
+   "lida": false,
+   "numero": "164.055"
+  },
+  "mercado": 823500,
+  "meses": 8,
+  "modalidade": "Extrajudicial · 2ª praça",
+  "nota": 79,
+  "notas": {
+   "ader": 4,
+   "conf": 8,
+   "econ": 33,
+   "liq": 17,
+   "risco": 17
+  },
+  "ocupacao": 3,
+  "pagamento": "Somente à vista",
+  "pctAbaixo": 47,
+  "posicao": "Lance mínimo a R$ 4.758/m²: o menor valor entre os 6 imóveis mapeados, e menos da metade do R$/m² pedido no próprio prédio.",
+  "regiao": "Grande SP",
+  "resumo": "Mesmo prédio anunciado entre R$ 915 e 990 mil. Alienação fiduciária consolidada (Av.5). Capital total passa do teto de R$ 500 mil.",
+  "rodada": "2026-11-12",
+  "rodadaParcial": true,
+  "roi": 38.5,
+  "status": "investigacao",
+  "tipo": "Apartamento 3 dorm.",
+  "vagas": "2 (vaga dupla)",
+  "vendaConservadora": 823500,
+  "_id": "20261112-x130902"
+ },
+ {
+  "area": 44.73,
+  "bairro": "Cruz das Almas",
+  "cidade": "Itu",
+  "comitente": "Itaú Unibanco",
+  "endereco": "Av. Caetano Ruggieri, 5.540, apto 33, Itu, SP",
+  "fonte": "Mega Leilões",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 1/3",
+    "url": "assets/fotos/x131042-1.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 2/3",
+    "url": "assets/fotos/x131042-2.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 3/3",
+    "url": "assets/fotos/x131042-3.jpg"
+   }
+  ],
+  "lanceMin": 89200,
+  "links": {
+   "ficha": "https://www.megaleiloes.com.br/imoveis/apartamentos/sp/itu/apartamento-44-m2-cruz-das-almas-itu-sp-x131042"
+  },
+  "motivo": "Habilitação encerrada em 09/11 e execução fiscal registrada na ficha.",
+  "regiao": "Interior",
+  "rodada": "2026-11-12",
+  "rodadaParcial": true,
+  "status": "descartada",
+  "tipo": "Apartamento",
+  "_id": "20261112-x131042"
+ },
+ {
+  "andar": "2º",
+  "area": 97.04,
+  "atencao": [
+   "Rodada parcial pela nuvem em 12/11: edital e matrícula não lidos (PDF bloqueado), sem fotos gravadas, sem mapa e com concorrência parcial.",
+   "Ocupado por ex-fiduciante",
+   "Débitos de ~R$ 50 mil sem reembolso"
+  ],
+  "bairro": "Jardim Ampliação",
+  "capital": 308740,
+  "capitalAlavancado": 212840,
+  "cdi": 11.3,
+  "cidade": "São Paulo",
+  "comitente": "Banco Bradesco",
+  "concorrencia": [
+   {
+    "area": 97,
+    "circulo": "bairro",
+    "condominio": 1350,
+    "data": "12/11/2026",
+    "link": "https://www.quintoandar.com.br/imovel/895114959/comprar/apartamento-3-quartos-vila-andrade-sao-paulo",
+    "preco": 890000,
+    "rsm2": 9175,
+    "titulo": "Perfil Morumbi 97 m², Rua Carvalho de Freitas (QuintoAndar)"
+   },
+   {
+    "area": 95,
+    "circulo": "bairro",
+    "data": "12/11/2026",
+    "link": "https://www.lopes.com.br/condominios/sp/sao-paulo/vila-andrade/REC202228/condominio-edificio-domenico-scarlatti-rua-do-angulo-412",
+    "preco": 800000,
+    "rsm2": 8421,
+    "titulo": "Elegance Morumbi 95 m² (Lopes)"
+   },
+   {
+    "area": 96,
+    "circulo": "bairro",
+    "data": "12/11/2026",
+    "link": "https://www.lopes.com.br/condominios/sp/sao-paulo/vila-andrade/REC202228/condominio-edificio-domenico-scarlatti-rua-do-angulo-412",
+    "preco": 900000,
+    "rsm2": 9375,
+    "titulo": "O2 Jardim Sul 96 m² (Lopes)"
+   }
+  ],
+  "condominio": "Edifício Torre D'Alessandro",
+  "conta": [
+   [
+    "Venda conservadora (R$ 4.000/m²)",
+    "R$ 388.000"
+   ],
+   [
+    "Corretagem 6%",
+    "− R$ 23.280"
+   ],
+   [
+    "Lance mínimo",
+    "R$ 186.000"
+   ],
+   [
+    "Comissão 5% + ITBI 3% + registro 1%",
+    "R$ 16.740"
+   ],
+   [
+    "Reserva de dívidas",
+    "R$ 50.000"
+   ],
+   [
+    "Reforma",
+    "R$ 25.000"
+   ],
+   [
+    "Giro (condomínio + IPTU)",
+    "R$ 11.000"
+   ],
+   [
+    "Jurídico e desocupação",
+    "R$ 20.000"
+   ],
+   [
+    "Capital total investido",
+    "R$ 308.740",
+    1
+   ],
+   [
+    "Ganho antes do IR",
+    "R$ 55.980"
+   ],
+   [
+    "IR 15% sobre o ganho",
+    "− R$ 8.397"
+   ],
+   [
+    "Lucro líquido · ROI",
+    "R$ 47.583 · 15,4%",
+    1
+   ],
+   [
+    "Lance máximo",
+    "R$ 187.167"
+   ]
+  ],
+  "dataLeilao": "2026-11-16T20:00:00-03:00",
+  "debitos": "~R$ 50 mil de IPTU e condomínio por conta do comprador",
+  "endereco": "Rua do Ângulo, 471, apto 21, Jardim Ampliação, São Paulo, SP",
+  "falta": [
+   "Comparáveis do prédio e da rua",
+   "Ler matrícula 187.107 (11º RI SP) e edital",
+   "Fotos internas e da área de lazer (o anúncio do leilão só traz a fachada)"
+  ],
+  "fonte": "Mega Leilões",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 1/2",
+    "url": "assets/fotos/x131134-1.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 2/2",
+    "url": "assets/fotos/x131134-2.jpg"
+   }
+  ],
+  "fotosLinks": [
+   "https://cdn1.megaleiloes.com.br/batches/131134/abcfef8144c1962f471e2d9c5b8e4f60_670x380.jpg"
+  ],
+  "lanceMax": 187167,
+  "lanceMin": 186000,
+  "links": {
+   "edital": "https://cdn1.megaleiloes.com.br/auctions/35104/megaleiloes_edital_ML35104_261111-140440.pdf",
+   "ficha": "https://www.megaleiloes.com.br/imoveis/apartamentos/sp/sao-paulo/apartamento-97-m2-sao-paulo-sp-rua-do-angulo-471-apto-21-jardim-ampliacao-x131134",
+   "matricula": "https://cdn1.megaleiloes.com.br/batches/131134/megaleiloes_matricula_X131134_261030-173818.pdf"
+  },
+  "lucro": 47583,
+  "mapa": {
+   "entorno": [],
+   "lat": -23.628016,
+   "lon": -46.730095,
+   "metro": "Metrô/trem: João Dias a 1,5 km (linha reta); Giovanni Gronchi a 1,8 km (linha reta); Granja Julieta a 1,8 km (linha reta)",
+   "url": "assets/mapas/x131134.jpg"
+  },
+  "matricula": {
+   "cartorio": "11º RI São Paulo",
+   "lida": false,
+   "numero": "187.107"
+  },
+  "mercado": 388000,
+  "meses": 10,
+  "modalidade": "Extrajudicial · praça única",
+  "nota": 59,
+  "notas": {
+   "ader": 8,
+   "conf": 5,
+   "econ": 22,
+   "liq": 11,
+   "risco": 13
+  },
+  "ocupacao": 3,
+  "pagamento": "À vista −10% ou 30% + 36/48x (12% a.a. + IGP-M)",
+  "pctAbaixo": 52,
+  "posicao": "Lance mínimo a R$ 1.917/m². Falta comparável do próprio prédio ou da Rua do Ângulo.",
+  "regiao": "Capital",
+  "resumo": "Mercado estimado de forma conservadora (R$ 4.000/m²) por estar perto de Paraisópolis; os comparáveis da Vila Andrade pedem R$ 7 a 9 mil/m².",
+  "rodada": "2026-11-12",
+  "rodadaParcial": true,
+  "roi": 15.4,
+  "status": "investigacao",
+  "tipo": "Apartamento",
+  "vagas": "1",
+  "vendaConservadora": 388000,
+  "_id": "20261112-x131134"
+ },
+ {
+  "area": 40.23,
+  "atencao": [
+   "Rodada parcial pela nuvem em 12/11: edital e matrícula não lidos (PDF bloqueado), sem fotos gravadas, sem mapa e com concorrência parcial."
+  ],
+  "bairro": "Água Chata",
+  "cidade": "Guarulhos",
+  "comitente": "Banco Bradesco",
+  "condominio": "Residencial Santa Cecília",
+  "dataLeilao": "2026-11-16T20:00:00-03:00",
+  "debitos": "~R$ 8 mil de condomínio por conta do comprador",
+  "endereco": "Estrada da Água Chata, 2.515, apto 301, Guarulhos, SP",
+  "falta": [
+   "Comparáveis",
+   "Matrícula 105.233 e edital",
+   "Fotos internas e da área de lazer (o anúncio do leilão só traz a fachada)"
+  ],
+  "fonte": "Mega Leilões",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 1/2",
+    "url": "assets/fotos/x131143-1.jpg"
+   },
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões) · 2/2",
+    "url": "assets/fotos/x131143-2.jpg"
+   }
+  ],
+  "lanceMin": 95000,
+  "links": {
+   "ficha": "https://www.megaleiloes.com.br/imoveis/apartamentos/sp/guarulhos/apartamento-40-m2-guarulhos-sp-estrada-da-agua-chata-2515-apto-301-agua-chata-x131143"
+  },
+  "mapa": {
+   "entorno": [],
+   "lat": -23.443085,
+   "lon": -46.393315,
+   "metro": "Estações próximas não verificadas (a consulta ao OpenStreetMap não respondeu).",
+   "url": "assets/mapas/x131143.jpg"
+  },
+  "modalidade": "Extrajudicial · praça única",
+  "ocupacao": 3,
+  "pagamento": "À vista −10% ou 25% + 12/24x",
+  "regiao": "Grande SP",
+  "resumo": "Já tem um lance de R$ 95.000.",
+  "rodada": "2026-11-12",
+  "rodadaParcial": true,
+  "status": "investigacao",
+  "tipo": "Apartamento",
+  "vagas": "1",
+  "_id": "20261112-x131143"
+ },
+ {
+  "area": 47.78,
+  "bairro": "Altos de Vila Prudente",
+  "cidade": "São Paulo",
+  "comitente": "Itaú Unibanco",
+  "concorrencia": [
+   {
+    "area": 46,
+    "circulo": "rua",
+    "data": "12/11/2026",
+    "link": "https://www.spimovel.com.br/imoveis/apartamentos/venda/altos-de-vila-prudente/zona-leste/sao-paulo/",
+    "preco": 210000,
+    "rsm2": 4565,
+    "titulo": "Rosas de Maio, 90 · 46 m² (SPImóvel)"
+   },
+   {
+    "area": 46,
+    "circulo": "rua",
+    "data": "12/11/2026",
+    "link": "https://www.spimovel.com.br/imoveis/apartamentos/venda/altos-de-vila-prudente/zona-leste/sao-paulo/",
+    "preco": 218000,
+    "rsm2": 4739,
+    "titulo": "Rosas de Maio, 90 · 46 m² (SPImóvel)"
+   }
+  ],
+  "condominio": "SP LIV Altos de Vila Prudente",
+  "dataLeilao": "2026-11-23T15:05:00-03:00",
+  "endereco": "Rua Rosas de Maio, 130, apto 31, São Paulo, SP",
+  "fonte": "Mega Leilões",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões)",
+    "url": "assets/fotos/x131268-1.jpg"
+   }
+  ],
+  "lanceMin": 190825,
+  "links": {
+   "ficha": "https://www.megaleiloes.com.br/imoveis/apartamentos/sp/sao-paulo/apartamento-47-m2-01-vaga-altos-de-vila-prudente-sao-paulo-sp-x131268"
+  },
+  "motivo": "Vizinho na mesma rua anunciado a R$ 210–218 mil (46 m²); a 2ª praça fica só ~12% abaixo do mercado.",
+  "regiao": "Capital",
+  "rodada": "2026-11-12",
+  "rodadaParcial": true,
+  "status": "descartada",
+  "tipo": "Apartamento",
+  "_id": "20261112-x131268"
+ },
+ {
+  "area": 59.75,
+  "atencao": [
+   "Rodada parcial pela nuvem em 12/11: edital e matrícula não lidos (PDF bloqueado), sem fotos gravadas, sem mapa e com concorrência parcial.",
+   "Ocupado: desocupação por conta do arrematante",
+   "Imóvel sem vaga informada"
+  ],
+  "bairro": "Parque Bitaru",
+  "capital": 150626,
+  "capitalAlavancado": 75006,
+  "cdi": 11.3,
+  "cidade": "São Vicente",
+  "comitente": "Banco Santander",
+  "concorrencia": [
+   {
+    "area": 60,
+    "circulo": "bairro",
+    "data": "12/11/2026",
+    "link": "https://www.vivareal.com.br/imovel/apartamento-2-quartos-parque-bitaru-bairros-sao-vicente-com-garagem-60m2-venda-RS265000-id-2737072518/",
+    "preco": 265000,
+    "rsm2": 4417,
+    "titulo": "Apto 2 dorm. com vaga, Parque Bitaru (VivaReal)"
+   },
+   {
+    "area": 50,
+    "circulo": "bairro",
+    "data": "12/11/2026",
+    "link": "https://imoveis.mitula.com.br/imoveis/apartamentos-sao-vicente-parque-bitaru",
+    "preco": 190000,
+    "rsm2": 3800,
+    "titulo": "Apto 50 m², Parque Bitaru (Mitula)"
+   }
+  ],
+  "conta": [
+   [
+    "Venda conservadora (R$ 3.420/m²)",
+    "R$ 204.000"
+   ],
+   [
+    "Corretagem 6%",
+    "− R$ 12.240"
+   ],
+   [
+    "Lance mínimo",
+    "R$ 106.400"
+   ],
+   [
+    "Comissão 5% + ITBI 3% + registro 1%",
+    "R$ 9.576"
+   ],
+   [
+    "Reserva de dívidas",
+    "R$ 3.000"
+   ],
+   [
+    "Reforma",
+    "R$ 15.000"
+   ],
+   [
+    "Giro (condomínio + IPTU)",
+    "R$ 6.650"
+   ],
+   [
+    "Jurídico e desocupação",
+    "R$ 10.000"
+   ],
+   [
+    "Capital total investido",
+    "R$ 150.626",
+    1
+   ],
+   [
+    "Ganho antes do IR",
+    "R$ 41.134"
+   ],
+   [
+    "IR 15% sobre o ganho",
+    "− R$ 6.170"
+   ],
+   [
+    "Lucro líquido · ROI",
+    "R$ 34.964 · 23,2%",
+    1
+   ],
+   [
+    "Lance máximo",
+    "R$ 117.749"
+   ]
+  ],
+  "dataLeilao": "2026-11-17T10:47:00-03:00",
+  "debitos": "Vendedor quita IPTU e condomínio até o leilão",
+  "dorm": 2,
+  "endereco": "Av. Capitão Antão de Moura, 490, Parque Bitaru, São Vicente, SP",
+  "falta": [
+   "Ler matrícula 31.764 (1º CRI São Vicente) ato por ato",
+   "Ler edital ML35144 completo",
+   "Fotos internas e da área de lazer (o anúncio do leilão só traz a fachada)",
+   "Mais 1 comparável no bairro (mínimo 3)",
+   "Valor-alvo de R$ 133 mil fica acima do lance máximo"
+  ],
+  "fonte": "Mega Leilões",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões)",
+    "url": "assets/fotos/x131332-1.jpg"
+   }
+  ],
+  "fotosLinks": [
+   "https://cdn1.megaleiloes.com.br/batches/131332/4b7f5dd3deacbd03d27988840a5c6340_670x380.jpg"
+  ],
+  "iptuAno": 3170,
+  "lanceMax": 117749,
+  "lanceMin": 106400,
+  "links": {
+   "edital": "https://cdn1.megaleiloes.com.br/auctions/35144/megaleiloes_edital_ML35144_261107-212335.pdf",
+   "ficha": "https://www.megaleiloes.com.br/imoveis/apartamentos/sp/sao-vicente/apartamento-59-m2-parque-bitaru-sao-vicente-sp-x131332",
+   "matricula": "https://cdn1.megaleiloes.com.br/batches/131332/megaleiloes_matricula_X131332_261107-001435.pdf"
+  },
+  "lucro": 34964,
+  "mapa": {
+   "entorno": [],
+   "lat": -23.962689,
+   "lon": -46.387686,
+   "metro": "Nenhuma estação de metrô/trem no raio de 2,5 km consultado no OpenStreetMap. Endereço localizado de forma aproximada.",
+   "url": "assets/mapas/x131332.jpg"
+  },
+  "matricula": {
+   "cartorio": "1º CRI São Vicente",
+   "lida": false,
+   "numero": "31.764"
+  },
+  "mercado": 220935,
+  "meses": 10,
+  "modalidade": "Extrajudicial · oferta condicionada",
+  "nota": 71,
+  "notas": {
+   "ader": 9,
+   "conf": 6,
+   "econ": 27,
+   "liq": 12,
+   "risco": 17
+  },
+  "ocupacao": 3,
+  "pagamento": "À vista ou financiamento até 420 meses (sinal 20%)",
+  "pctAbaixo": 52,
+  "posicao": "Lance mínimo a R$ 1.781/m², contra R$ 3.800 a 4.417/m² nos anúncios do bairro encontrados.",
+  "regiao": "Litoral",
+  "resumo": "Avaliação do banco R$ 182.000; valor-alvo do vendedor R$ 133.000. Aprovada na pré-análise de 12/11 pela régua antiga; pela régua nova volta para investigação até ler a matrícula.",
+  "rodada": "2026-11-12",
+  "rodadaParcial": true,
+  "roi": 23.2,
+  "status": "investigacao",
+  "tipo": "Apartamento",
+  "vagas": "não informada",
+  "vendaConservadora": 204000,
+  "_id": "20261112-x131332"
+ },
+ {
+  "area": 42.52,
+  "atencao": [
+   "Rodada parcial pela nuvem em 12/11: edital e matrícula não lidos (PDF bloqueado), sem fotos gravadas, sem mapa e com concorrência parcial."
+  ],
+  "bairro": "Cohab Castelo Branco",
+  "cidade": "Carapicuíba",
+  "comitente": "Banco Santander",
+  "dataLeilao": "2026-11-17T11:46:00-03:00",
+  "debitos": "Vendedor quita até o leilão",
+  "endereco": "Rua Alvinópolis, 271, Carapicuíba, SP",
+  "falta": [
+   "Comparáveis (portais recusaram acesso pela nuvem)",
+   "Matrícula 2.096 e edital",
+   "Fotos internas e da área de lazer (o anúncio do leilão só traz a fachada)"
+  ],
+  "fonte": "Mega Leilões",
+  "fotos": [
+   {
+    "legenda": "Foto do anúncio do leilão (Mega Leilões)",
+    "url": "assets/fotos/x131393-1.jpg"
+   }
+  ],
+  "lanceMin": 78400,
+  "links": {
+   "ficha": "https://www.megaleiloes.com.br/imoveis/apartamentos/sp/carapicuiba/apartamento-42-m2-conjunto-habitacional-presidente-castelo-branco-carapicuiba-sp-x131393"
+  },
+  "mapa": {
+   "entorno": [],
+   "lat": -23.532893,
+   "lon": -46.820356,
+   "metro": "Metrô/trem: General Miguel Costa a 1,1 km (linha reta); Quitaúna a 1,8 km (linha reta); Carapicuíba a 2,2 km (linha reta)",
+   "url": "assets/mapas/x131393.jpg"
+  },
+  "modalidade": "Extrajudicial · oferta condicionada",
+  "ocupacao": 3,
+  "pagamento": "À vista ou financiamento 420 meses",
+  "regiao": "Grande SP",
+  "resumo": "Avaliação R$ 135 mil; valor-alvo R$ 98 mil.",
+  "rodada": "2026-11-12",
+  "rodadaParcial": true,
+  "status": "investigacao",
+  "tipo": "Apartamento",
+  "_id": "20261112-x131393"
+ }
+]

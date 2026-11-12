@@ -1,0 +1,27 @@
+[
+ {
+  "aprovadas": 0,
+  "cdiAno": 13.65,
+  "destaque": "20261112-38153-238428",
+  "fontesFora": [
+   "Sodré Santoro, Frazão, Grupo Lance, Sato, Biasi, Freitas, Superbid: não percorridos nesta rodada (tempo)",
+   "Portais Santander/Itaú/Bradesco: não abertos",
+   "Zuk: matrículas exigem login, e o navegador não estava logado",
+   "e-SAJ/TJSP: processos migrados aparecem como cancelados, e os embargos não foram localizados",
+   "Shell do Mac (device_bash): nenhuma pasta conectada à tarefa, sem download de fotos e tiles de mapa"
+  ],
+  "fontesOk": [
+   "Caixa (lista SP 11/11/2026 + fichas e matrícula)",
+   "Portal Zuk (359 residenciais SP)",
+   "Mega Leilões (48 lotes de apto na capital)",
+   "QuintoAndar, Zap, Loft, Netimóveis (comparáveis)"
+  ],
+  "lidos": 15,
+  "parcial": false,
+  "preSelecionados": 6,
+  "resumo": "Nenhum lote com o selo Select nesta rodada. O destaque é o apto com vaga na Frei Caneca (Zuk, 2ª praça R$ 293,7 mil em 08/12, cerca de 48% abaixo dos anúncios do prédio), que segue em análise: faltam o resultado dos embargos de terceiro e a leitura da matrícula. Todos os lotes analisados já têm fotos, e os lotes em análise têm mapa.",
+  "selic": 13.75,
+  "triados": 2527,
+  "_id": "2026-11-12"
+ }
+]
