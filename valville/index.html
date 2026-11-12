@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Valville 1 · KCO Studio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+@font-face{font-family:"PP Right Grotesk";src:url("fonts/PPRightGrotesk-Light.woff") format("woff");font-weight:300;font-display:swap}
+@font-face{font-family:"PP Right Grotesk";src:url("fonts/PPRightGrotesk-Medium.woff") format("woff");font-weight:500;font-display:swap}
+@font-face{font-family:"PP Right Grotesk Text";src:url("fonts/PPRightGroteskText-Regular.woff") format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"PP Right Grotesk Text Compact";src:url("fonts/PPRightGroteskText-CompactMedium.woff") format("woff");font-weight:500;font-display:swap}
+
+/* KCO Studio design system. Grid de 12 colunas: índice nas colunas 1–3, conteúdo nas 4–12. Branco, cinza claro, grafite, preto; vermelho só em detalhe. */
+:root{
+  --bg:#FFFFFF; --bg-2:#F0F0EF; --fg:#0E0E0E; --graphite:#2E2F31; --fg-muted:#5F6064; --rule:#0E0E0E; --rule-soft:#D9D9D7; --rule-hairline:#ECECEA;
+  --red:#E1251B; --red-text:#B81E13; --inverse-bg:#0E0E0E; --inverse-fg:#FFFFFF;
+  --font-display:"PP Right Grotesk","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-text:"PP Right Grotesk Text","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-label:"PP Right Grotesk Text Compact","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+:root{color-scheme:light}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-text);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--fg);color:var(--bg)}
+a{color:inherit;text-underline-offset:.22em}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.wrap{max-width:1440px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:760px){.wrap{padding-left:max(48px,env(safe-area-inset-left,0px));padding-right:max(48px,env(safe-area-inset-right,0px))}}
+@media (min-width:1200px){.wrap{padding-left:80px;padding-right:80px}}
+.g12{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}
+.label{font-family:var(--font-label);font-weight:500;font-size:12px;line-height:1.2;letter-spacing:.06em;text-transform:uppercase}
+.muted{color:var(--fg-muted)}
+.dot{color:var(--red)}
+.pt{display:inline-block;width:8px;height:8px;border-radius:999px;background:var(--red);vertical-align:middle;margin-right:8px}
+.tab{font-variant-numeric:tabular-nums}
+
+/* barra superior */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:31;background:var(--bg)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--rule-soft)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:24px}
+.logo{font-family:var(--font-display);font-weight:500;font-size:20px;letter-spacing:-.03em;text-decoration:none;white-space:nowrap}
+.nav{display:flex;gap:20px}
+.nav a{text-decoration:none;color:var(--fg-muted);transition:color .3s}
+.nav a.on{color:var(--fg)}
+.nav a.on::before{content:"";display:inline-block;width:6px;height:6px;border-radius:9px;background:var(--red);margin-right:6px;vertical-align:1px}
+@media (max-width:1040px){.nav{display:none}}
+.progress{position:absolute;left:0;bottom:-1px;height:1px;width:100%;background:var(--red);transform-origin:0 50%;transform:scaleX(0)}
+
+/* grid à mostra */
+.gridov{position:absolute;inset:0;pointer-events:none;z-index:0}
+.gridov .wrap{height:100%}
+.gridov .g12{height:100%}
+.gridov i{border-left:1px solid var(--rule-hairline)}
+.gridov i:last-child{border-right:1px solid var(--rule-hairline)}
+@media (max-width:760px){.gridov .g12{grid-template-columns:repeat(4,1fr)}.gridov i:nth-child(n+5){display:none}.gridov i:nth-child(4){border-right:1px solid var(--rule-hairline)}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:clamp(40px,6vw,72px) 0}
+.hero>.wrap{position:relative;z-index:1}
+.ibar{border-top:1px solid var(--rule);padding-top:10px;row-gap:6px}
+.ibar>span{grid-column:span 3}
+.ibar .end{grid-column:-3/-1;text-align:right}
+@media (max-width:760px){.ibar>span{grid-column:span 6}.ibar .end{grid-column:span 6;text-align:left}}
+.hero h1{margin:clamp(96px,16vw,220px) 0 0;grid-column:1/11;font-family:var(--font-display);font-weight:300;font-size:clamp(56px,9.4vw,140px);line-height:.96;letter-spacing:-.04em;text-wrap:balance;will-change:transform}
+.hero .lead{grid-column:4/10;margin:40px 0 0;font-size:clamp(19px,1.7vw,22px);line-height:1.4;letter-spacing:-.01em;color:var(--graphite);max-width:40ch}
+.hero .facts{grid-column:10/-1;margin-top:40px;font-size:14px;display:grid;gap:4px;align-self:end}
+@media (max-width:900px){.hero h1{grid-column:1/-1}.hero .lead,.hero .facts{grid-column:1/-1}}
+.cue{display:flex;align-items:center;gap:14px;margin-top:clamp(72px,10vw,140px);padding-block:18px;border-top:1px solid var(--rule-soft);text-decoration:none;color:var(--fg-muted)}
+.cue svg{width:18px;height:28px;flex:none}
+.cue .shaft{animation:drop 2.2s var(--ease) infinite}
+@keyframes drop{0%{transform:translateY(-6px);opacity:0}30%{opacity:1}100%{transform:translateY(6px);opacity:0}}
+.cue:hover{color:var(--fg)}
+
+/* seções */
+section{position:relative;padding-block:clamp(96px,11vw,160px)}
+.shead{border-top:1px solid var(--rule);padding-top:16px;row-gap:16px}
+.shead .idx{grid-column:1/4}
+.shead h2{grid-column:4/-1;margin:0;font-family:var(--font-display);font-weight:500;font-size:clamp(38px,5vw,64px);line-height:1;letter-spacing:-.03em;text-wrap:balance;max-width:18ch}
+.body{margin-top:48px}
+.body>.c{grid-column:4/-1;min-width:0}
+.body>.c8{grid-column:4/12;min-width:0}
+@media (max-width:900px){.shead .idx,.shead h2,.body>.c,.body>.c8{grid-column:1/-1}}
+.lead{font-size:clamp(19px,1.7vw,22px);line-height:1.4;letter-spacing:-.01em;color:var(--graphite);max-width:44ch;margin:0 0 1em}
+p{margin:0 0 1em;max-width:62ch}
+.small{font-size:14px;color:var(--fg-muted)}
+h3{margin:0;font-family:var(--font-display);font-weight:500;font-size:24px;line-height:1.1;letter-spacing:-.02em}
+.band{background:var(--bg-2)}
+.graph{background:var(--graphite);color:#fff}
+.graph .copy p{color:#C9CACC!important}
+.graph .num{color:#fff}
+
+/* listas em colunas */
+.cols{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));column-gap:24px;margin-top:56px}
+.cols>div{border-top:1px solid var(--rule);padding-top:16px;padding-bottom:28px;min-width:0}
+.cols p{font-size:15px;color:var(--graphite);margin-top:10px}
+.cols .label{display:block;margin-bottom:28px;color:var(--fg-muted)}
+@media (max-width:980px){.cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.cols{grid-template-columns:1fr}}
+
+/* capítulos */
+.chap{margin-top:56px;border-top:1px solid var(--rule)}
+.chap li{display:grid;grid-template-columns:64px 1fr auto;gap:16px;padding:18px 0;border-bottom:1px solid var(--rule-soft);align-items:baseline}
+.chap{list-style:none;padding:0;margin-bottom:0}
+.chap .n{font-family:var(--font-label);font-size:12px;letter-spacing:.06em;color:var(--fg-muted)}
+.chap .t{font-family:var(--font-display);font-size:clamp(20px,2vw,26px);letter-spacing:-.02em}
+.chap .f{font-size:14px;color:var(--fg-muted);text-align:right}
+@media (max-width:620px){.chap li{grid-template-columns:44px 1fr}.chap .f{grid-column:2;text-align:left}}
+
+/* mídia split */
+.split{margin-top:56px;display:flex;height:64px;border-top:1px solid var(--rule)}
+.split>div{border-right:1px solid var(--bg);padding:12px 12px 0 0;font-size:14px;display:flex;flex-direction:column;justify-content:space-between}
+.split .bar{height:8px;background:var(--fg);margin-bottom:0}
+.split>div:nth-child(2) .bar{background:var(--graphite);opacity:.55}
+.split>div:nth-child(3) .bar{background:var(--rule-soft)}
+
+/* tabelas */
+.tw{position:relative;margin-top:48px}
+.tscroll{overflow-x:auto;border-top:1px solid var(--rule);-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:15px 18px 15px 0;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+th{font-family:var(--font-label);font-weight:500;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-muted);white-space:nowrap}
+.r{text-align:right}
+td{font-variant-numeric:tabular-nums}
+.drag{display:none;align-items:center;gap:10px;margin-top:12px;color:var(--fg-muted)}
+.drag svg{width:28px;height:12px}
+.drag .shaft{animation:slide 2s var(--ease) infinite}
+@keyframes slide{0%{transform:translateX(-5px);opacity:0}30%{opacity:1}100%{transform:translateX(5px);opacity:0}}
+.tw.overflow .drag{display:flex}
+
+/* range */
+.range{margin-top:56px}
+.track{position:relative;height:48px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule-soft)}
+.track .band2{position:absolute;top:12px;bottom:12px;background:var(--bg-2);border:1px solid var(--rule-soft)}
+.track .tk{position:absolute;top:0;bottom:0;width:1px;background:var(--fg)}
+.track .tk span{position:absolute;top:calc(100% + 10px);transform:translateX(-50%);font-size:13px;white-space:nowrap;color:var(--fg-muted);font-variant-numeric:tabular-nums}
+.track .tk:first-child span{transform:none}
+.track .tk:last-child span{transform:translateX(-100%)}
+
+/* 90 */
+.ninety{overflow:hidden;padding-block:clamp(80px,10vw,140px)}
+.ninety .num{grid-column:1/8;font-family:var(--font-display);font-weight:300;font-size:clamp(200px,34vw,520px);line-height:.78;letter-spacing:-.06em;margin:0;will-change:transform}
+.ninety .copy{grid-column:8/-1;align-self:end;padding-bottom:2vw}
+.ninety .copy h2{font-family:var(--font-display);font-weight:500;font-size:clamp(30px,3.4vw,44px);line-height:1.05;letter-spacing:-.03em;margin:0 0 24px}
+.ninety .copy p{color:var(--graphite)}
+@media (max-width:900px){.ninety .num,.ninety .copy{grid-column:1/-1}}
+
+/* semanas */
+.weeks{border-top:1px solid var(--rule)}
+.wk{padding:26px 0;border-bottom:1px solid var(--rule-soft);row-gap:12px}
+.wk .when{grid-column:1/4;font-size:14px;color:var(--fg-muted);padding-top:4px}
+.wk .when b{display:block;color:var(--fg);font-weight:400;font-size:15px}
+.wk h3{grid-column:4/8}
+.wk ul{grid-column:8/-1;margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:15px;color:var(--graphite)}
+.wk ul li{padding-left:18px;position:relative}
+.wk ul li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:1px;background:var(--fg-muted)}
+.wk.key h3::after{content:"";display:inline-block;width:8px;height:8px;border-radius:9px;background:var(--red);margin-left:10px;vertical-align:4px}
+@media (max-width:900px){.wk .when,.wk h3,.wk ul{grid-column:1/-1}}
+
+/* gantt */
+.gantt{min-width:820px;display:grid;grid-template-columns:200px repeat(13,minmax(0,1fr));font-size:13px}
+.gantt>div{border-bottom:1px solid var(--rule-soft);min-height:48px;position:relative}
+.gantt .h{font-family:var(--font-label);font-size:11px;letter-spacing:.06em;color:var(--fg-muted);text-align:center;padding:12px 0;min-height:0}
+.gantt .lb{padding:14px 16px 0 0}
+.gb{position:absolute;top:14px;height:20px;font-size:11.5px;line-height:20px;padding:0 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gb.prep{background:var(--bg-2);color:var(--graphite)}
+.gb.live{background:var(--fg);color:var(--bg)}
+.gb.opt{box-shadow:inset 0 0 0 1px var(--fg);color:var(--fg)}
+.gb.mark{background:var(--red);color:#fff}
+.legend{display:flex;gap:24px;flex-wrap:wrap;margin-top:18px;font-size:13px;color:var(--fg-muted)}
+.legend i{display:inline-block;width:22px;height:10px;vertical-align:-1px;margin-right:8px}
+
+/* ativações */
+.acts{border-top:1px solid var(--rule);margin-top:56px;display:grid;grid-template-columns:1fr 1fr;column-gap:24px}
+.act{border-bottom:1px solid var(--rule-soft);padding:26px 0;display:grid;grid-template-columns:48px 1fr;gap:12px;min-width:0}
+.act .label{color:var(--fg-muted);padding-top:6px}
+.act p{font-size:15px;color:var(--graphite);margin:8px 0 12px}
+.act .m{font-size:13px;color:var(--fg-muted)}
+@media (max-width:820px){.acts{grid-template-columns:1fr}}
+
+/* packs */
+.packs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:24px;margin-top:56px}
+.pack{border-top:1px solid var(--rule);padding:18px 0 28px;display:flex;flex-direction:column;gap:18px;min-width:0}
+.pack.feat{background:var(--bg-2);padding-left:24px;padding-right:24px;margin-inline:-12px}
+.pack .top2{display:flex;justify-content:space-between;color:var(--fg-muted)}
+.pack h3{font-size:30px}
+.price{font-family:var(--font-display);font-weight:300;font-size:clamp(52px,5.4vw,76px);line-height:1;letter-spacing:-.05em}
+.price small{font-size:.32em;letter-spacing:-.01em;margin-right:6px;font-weight:500}
+.pack .inst{font-size:14px;color:var(--fg-muted)}
+.pack .desc{font-size:15px;color:var(--graphite);margin:0}
+.pack .fee{margin-top:auto;border-top:1px solid var(--rule-soft);padding-top:14px;display:flex;justify-content:space-between;gap:12px;font-size:14px}
+@media (max-width:900px){.packs{grid-template-columns:1fr}.pack.feat{margin-inline:0}}
+.matrix td:not(:first-child),.matrix th:not(:first-child){text-align:center;width:14%}
+.matrix tr.grp td{font-family:var(--font-label);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-muted);padding-top:36px;border-bottom:1px solid var(--rule)}
+.matrix .fc{background:var(--bg-2)}
+.ok{display:inline-block;width:13px;height:7px;border-left:1.5px solid var(--fg);border-bottom:1.5px solid var(--fg);transform:rotate(-45deg) translate(1px,-2px)}
+.no{color:var(--fg-muted)}
+
+.matrix{min-width:860px}
+.matrix th.ph,.matrix th.ph0{vertical-align:top;text-align:left!important;white-space:normal;text-transform:none;letter-spacing:0;color:var(--fg);font-family:var(--font-text);font-weight:400;padding:20px 20px 24px;width:22%;border-bottom:1px solid var(--rule)}
+.matrix th.ph0{width:34%;padding-left:0}
+.pk{display:flex;flex-direction:column;gap:10px;height:100%}
+.pk .lv{color:var(--fg-muted)}
+.pk .pn{font-family:var(--font-display);font-weight:500;font-size:24px;letter-spacing:-.02em;line-height:1.1}
+.pk .price{font-size:clamp(44px,4.2vw,60px)}
+.pk .inst{font-size:13.5px;color:var(--fg-muted);font-variant-numeric:tabular-nums}
+.pk .desc{font-size:14px;color:var(--graphite);line-height:1.45;min-height:3em}
+.pk .fee{border-top:1px solid var(--rule-soft);padding-top:12px;font-size:13px;color:var(--fg-muted);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.pk .fee b{font-weight:400;color:var(--red-text);font-variant-numeric:tabular-nums}
+.matrix td:not(:first-child){padding-left:20px;padding-right:20px}
+.pgrid{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr));border-top:1px solid var(--rule)}
+.pgrid .fc{background:var(--bg-2)}
+.ph0{padding:20px 20px 24px 0;border-bottom:1px solid var(--rule)}
+.ph0 .small{margin-top:12px;max-width:26ch}
+.ph{display:flex;flex-direction:column;gap:8px;padding:20px 18px 22px;border-bottom:1px solid var(--rule);min-width:0}
+.ph .lv{color:var(--fg-muted)}
+.ph .pn{font-family:var(--font-display);font-weight:500;font-size:clamp(15px,1.9vw,24px);letter-spacing:-.02em;line-height:1.1}
+.ph .pr{font-family:var(--font-display);font-weight:300;font-size:clamp(28px,4.4vw,60px);line-height:1;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.ph .pr small{font-size:.36em;margin-right:4px;font-weight:500;letter-spacing:0}
+.ph .inst{font-size:13px;color:var(--fg-muted);font-variant-numeric:tabular-nums}
+.ph .desc{font-size:14px;color:var(--graphite);line-height:1.45}
+.ph .fee{margin-top:auto;border-top:1px solid var(--rule-soft);padding-top:10px;font-size:12.5px;color:var(--fg-muted);display:flex;justify-content:space-between;gap:6px;flex-wrap:wrap}
+.ph .fee b{font-weight:400;color:var(--red-text);font-variant-numeric:tabular-nums}
+.pgrp{grid-column:1/-1;padding:32px 0 10px;border-bottom:1px solid var(--rule);color:var(--fg-muted)}
+.pl,.pv{padding:13px 0;border-bottom:1px solid var(--rule-soft);font-size:15px;min-width:0}
+.pl{padding-right:16px}
+.pv{text-align:center;font-variant-numeric:tabular-nums;display:flex;align-items:center;justify-content:center}
+@media (max-width:760px){
+  .pgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .ph0{grid-column:1/-1;padding-bottom:16px}
+  .ph{padding:14px 8px 16px;gap:6px}
+  .ph .desc{display:none}
+  .ph .pr{font-size:clamp(20px,6.4vw,28px)}
+  .ph .pr small{display:block;margin-bottom:2px}
+  .ph .lv{font-size:10.5px}
+  .ph .fee{flex-direction:column;gap:2px;font-size:11px}
+  .pl{grid-column:1/-1;border-bottom:0;padding:14px 0 2px;font-size:13.5px;color:var(--graphite)}
+  .pv{font-size:13.5px;padding:6px 0 12px}
+}
+.pk-wrap{max-width:1120px;margin:72px auto 0}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{display:flex;flex-direction:column;align-items:center;text-align:center;padding:36px 24px 32px;min-width:0}
+.card.feat{background:var(--bg-2)}
+.badge{font-family:var(--font-label);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--red-text);min-height:14px}
+.cn{font-family:var(--font-display);font-weight:300;font-size:clamp(40px,6vw,88px);line-height:1;letter-spacing:-.05em;color:var(--rule-soft);margin:18px 0 10px}
+.card.feat .cn{color:var(--fg)}
+.cname{font-size:clamp(17px,2.4vw,32px)!important;font-weight:500;letter-spacing:-.03em;line-height:1.05;text-wrap:balance}
+.cline{font-size:15px;color:var(--graphite);margin:14px auto 0;max-width:26ch;line-height:1.45}
+.cprice{font-family:var(--font-display);font-weight:500;font-size:clamp(26px,4.4vw,56px);letter-spacing:-.04em;line-height:1;margin-top:28px;font-variant-numeric:tabular-nums}
+.cprice small{font-size:.38em;font-weight:500;margin-right:4px;letter-spacing:0;vertical-align:.9em}
+.cinst{font-size:13.5px;color:var(--fg-muted);margin-top:8px;font-variant-numeric:tabular-nums}
+.chl{list-style:none;padding:24px 0 0;margin:24px 0 0;border-top:1px solid var(--rule-soft);width:100%;display:grid;gap:8px;font-size:14.5px;color:var(--graphite)}
+.cfee{margin-top:auto;padding-top:24px;display:grid;gap:4px;font-size:12.5px;color:var(--fg-muted)}
+.cfee b{font-family:var(--font-display);font-weight:500;font-size:20px;color:var(--red-text);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.cmp{position:relative;margin-top:96px}
+.stick{position:sticky;top:calc(56px + env(safe-area-inset-top,0px));z-index:5;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--rule);padding:14px 0}
+.stick>div{display:flex;flex-direction:column;align-items:center;text-align:center;gap:2px;padding:4px 6px;min-width:0}
+.stick>div.feat{background:var(--bg-2)}
+.stick b{font-family:var(--font-display);font-weight:500;font-size:clamp(13px,1.6vw,18px);letter-spacing:-.02em;line-height:1.15}
+.stick span{font-size:12.5px;color:var(--fg-muted);font-variant-numeric:tabular-nums}
+.cmp-title{text-align:center;font-size:clamp(22px,2.6vw,32px)!important;margin:56px 0 8px!important}
+.cg{font-family:var(--font-label);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-muted);text-align:center;padding:48px 0 14px;border-bottom:1px solid var(--rule)}
+.crow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 16px;border-bottom:1px solid var(--rule-soft);padding:16px 0}
+.cl{grid-column:1/-1;text-align:center;font-size:15px;color:var(--graphite);margin-bottom:10px}
+.cv{display:flex;align-items:center;justify-content:center;min-height:32px;font-family:var(--font-display);font-size:clamp(16px,1.8vw,22px);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.cv.feat{background:var(--bg-2)}
+.cv .ok{width:15px;height:8px}
+@media (max-width:760px){.cards{gap:6px}.card{padding:20px 6px 20px}.cline{display:none}.chl{font-size:12px;gap:6px;padding-top:14px;margin-top:14px}.cfee{font-size:10.5px}.cfee b{font-size:15px}.stick{gap:6px}.crow{gap:0 6px}.cl{font-size:13.5px}.badge{font-size:9.5px}}
+.cmpc{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px}
+.cmpc>div{padding:28px 28px 24px;border-top:1px solid var(--rule)}
+.cmpc>div.feat{background:var(--bg-2)}
+.cmpc p{font-size:15px;color:var(--graphite);margin-top:12px}
+.big5{font-family:var(--font-display);font-weight:300;font-size:clamp(72px,9vw,128px);line-height:.9;letter-spacing:-.05em;margin-top:24px;display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.big5 small{font-size:.45em}
+.big5 .plus{font-size:clamp(18px,2vw,26px);font-weight:500;letter-spacing:-.02em;color:var(--red-text);margin-left:10px}
+.cmpc>div:first-child .big5{color:var(--fg-muted)}
+@media (max-width:620px){.cmpc{grid-template-columns:1fr}}
+.cl{font-size:18px!important;color:var(--fg)!important}
+.cv{font-size:clamp(19px,2vw,24px)!important}
+@media (max-width:760px){.cl{font-size:16px!important}.cv{font-size:18px!important}}
+/* investimento */
+.inv{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}
+@media (max-width:900px){.inv{grid-template-columns:1fr}}
+tr.tot td{border-bottom:1px solid var(--rule);font-weight:400;color:var(--fg)}
+tr.hl td{background:var(--bg-2)}
+tr.hl td:first-child{padding-left:12px}
+
+/* success fee */
+.fees{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:24px;margin-top:56px}
+.fees>div{border-top:1px solid var(--rule);padding-top:16px}
+.fees .v{font-family:var(--font-display);font-weight:300;font-size:clamp(48px,5.6vw,80px);line-height:1;letter-spacing:-.05em;margin-top:28px}
+@media (max-width:700px){.fees{grid-template-columns:1fr;row-gap:28px}}
+.quote{margin-top:64px;font-family:var(--font-display);font-weight:300;font-size:clamp(24px,2.6vw,34px);line-height:1.2;letter-spacing:-.025em;max-width:30ch;text-wrap:balance}
+
+/* termos */
+.terms{columns:2;column-gap:24px;font-size:14.5px;color:var(--graphite);padding:0;list-style:none;margin:48px 0 0}
+.terms li{break-inside:avoid;border-top:1px solid var(--rule-soft);padding:12px 0 14px}
+@media (max-width:820px){.terms{columns:1}}
+
+/* rodapé */
+footer{position:relative;overflow:hidden;padding-block:120px 48px;border-top:1px solid var(--rule)}
+.contact{row-gap:24px}
+.contact .label{grid-column:1/4;color:var(--fg-muted)}
+.contact h2{grid-column:4/10;margin:0;font-family:var(--font-display);font-weight:500;font-size:clamp(38px,5vw,64px);line-height:1;letter-spacing:-.03em}
+.contact .info{grid-column:10/-1;font-size:14px;display:grid;gap:4px;align-self:end}
+@media (max-width:900px){.contact .label,.contact h2,.contact .info{grid-column:1/-1}}
+.wm{display:flex;justify-content:space-between;margin:96px 0 0;font-family:var(--font-display);font-weight:500;font-size:clamp(110px,27vw,400px);line-height:.8;letter-spacing:0;color:var(--bg-2);user-select:none;will-change:transform}
+
+/* reveal */
+.rv{transition:transform 1.1s var(--ease),opacity 1.1s var(--ease)}
+.js .rv.pend{transform:translateY(28px);opacity:.001}
+@media (prefers-reduced-motion:reduce){.rv,.cue .shaft,.drag .shaft{transition:none;animation:none}.js .rv.pend{transform:none;opacity:1}html{scroll-behavior:auto}}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top"><svg role="img" aria-label="KCO Studio" style="height:30px;width:auto;display:block" xmlns="http://www.w3.org/2000/svg" viewBox="300 195 750 375"><path fill="#0E0E0E" d="M331.11,547.86c3.97,4.62,10.44,8.96,19.22,8.96,12.66,0,16.26-7.02,16.26-12.29,0-8.68-8.31-11.08-16.91-13.39-9.7-2.68-20.04-5.45-20.04-16.82,0-10.07,9.05-16.44,20.23-16.44,9.15,0,16.07,3.23,20.88,8.68l-3.51,3.88c-4.44-5.36-10.72-7.76-17.65-7.76-8.22,0-14.41,4.71-14.41,11.36,0,7.3,7.67,9.42,16.07,11.73,9.88,2.77,20.88,5.91,20.88,18.47,0,7.85-5.27,17.37-21.89,17.37-10.16,0-17.83-4.06-22.54-9.79l3.42-3.97Z"></path>
+    <path fill="#0E0E0E" d="M477.77,503.71h-20.14v-4.8h45.63v4.8h-20.14v56.81h-5.36v-56.81Z"></path>
+    <path fill="#0E0E0E" d="M591.73,498.9h5.36v37.87c0,12.47,6.56,20.05,18.66,20.05s18.66-7.57,18.66-20.05v-37.87h5.36v37.97c0,15.24-8.13,24.75-24.02,24.75s-24.02-9.61-24.02-24.75v-37.97Z"></path>
+    <path fill="#0E0E0E" d="M732.67,498.9h19.68c19.12,0,31.13,13.95,31.13,30.85s-12.01,30.76-31.13,30.76h-19.68v-61.61ZM752.34,555.71c16.26,0,25.59-11.55,25.59-25.95s-9.24-26.05-25.59-26.05h-14.41v52h14.41Z"></path>
+    <path fill="#0E0E0E" d="M874.15,498.9h5.27v61.61h-5.27v-61.61Z"></path>
+    <path fill="#0E0E0E" d="M999.94,497.89c18.01,0,29.93,13.86,29.93,31.87s-11.92,31.86-29.93,31.86-29.93-13.86-29.93-31.86,11.82-31.87,29.93-31.87ZM999.94,502.69c-14.97,0-24.39,11.46-24.39,27.07s9.42,27.06,24.39,27.06,24.39-11.55,24.39-27.06-9.61-27.07-24.39-27.07Z"></path>
+  
+    <path fill="#0E0E0E" d="M465.47,346.58l112.5,101.6h-66.79l-92.84-83.37h-53.52v83.37h-44.76v-241.81h44.76v122.92h53.52l70.34-63.24h66.31l-89.52,80.53Z"></path>
+    <path fill="#0E0E0E" d="M678.62,411.95c18.47,0,34.26-3.19,47.37-9.59,13.1-6.4,22.03-15.12,26.76-26.17h44.52c-4.42,24.48-16.93,42.55-37.54,54.24-20.6,11.69-47.64,17.52-81.11,17.52-37.74,0-67.26-7.38-88.58-22.14-21.32-14.76-31.97-37.62-31.97-68.57s10.66-54.08,31.97-68.92c21.31-14.84,50.84-22.26,88.58-22.26,33.78,0,61.02,5.92,81.71,17.76,20.68,11.84,33.08,30.24,37.18,55.18h-44.76c-4.42-11.52-13.19-20.6-26.29-27.23-13.11-6.63-29.05-9.95-47.84-9.95-23.84,0-42.43,4.74-55.77,14.21-13.35,9.47-20.01,23.21-20.01,41.21s6.67,31.42,20.01,40.74c13.34,9.32,31.93,13.97,55.77,13.97Z"></path>
+    <path fill="#0E0E0E" d="M925.64,266.06c24.63,0,45.71,3.04,63.24,9.12,17.52,6.08,31.42,16.02,41.68,29.84,10.26,13.82,15.39,31.22,15.39,52.22,0,30.95-10.66,53.8-31.97,68.57-21.31,14.76-50.77,22.14-88.34,22.14s-67.22-7.38-88.46-22.14c-21.24-14.76-31.85-37.62-31.85-68.57s10.62-54.08,31.85-68.92c21.23-14.84,50.72-22.26,88.46-22.26ZM869.98,398.09c13.26,9.24,31.81,13.85,55.66,13.85s42.39-4.65,55.66-13.97c13.26-9.31,19.89-22.89,19.89-40.74s-6.67-31.74-20.01-41.21c-13.35-9.47-31.85-14.21-55.54-14.21s-42.39,4.74-55.66,14.21c-13.26,9.47-19.89,23.21-19.89,41.21s6.63,31.62,19.89,40.86Z"></path></svg></a>
+    <nav class="nav label" aria-label="Seções">
+      <a href="#ideia">Ideia</a><a href="#operacao">Operação</a><a href="#mercado">Mercado</a><a href="#plano">Plano</a><a href="#ativacoes">Ativações</a><a href="#packs">Packs</a><a href="#investimento">Investimento</a><a href="#comissao">Comissão</a><a href="#success">Success fee</a>
+    </nav>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div class="g12 ibar label"><span>P.01 Proposta</span><span class="muted">Valville 1</span><span class="muted">Santana de Parnaíba, SP</span><span class="end">Nov 2026</span></div>
+    <div class="g12">
+      <h1 data-speed="0.10">Antes de entrar, imagine<span class="dot">.</span></h1>
+      <p class="lead">Uma operação de marketing e aquisição para vender a casa direto ao comprador certo. Estratégia, criação e mídia em uma frente só, em 90 dias.</p>
+      <div class="facts"><span class="muted">Preparado para</span><span>Edilson</span><span class="muted" style="margin-top:10px">Proposta</span><span>Wilson Rodrigues e KCO Studio</span></div>
+    </div>
+    <a class="cue label" href="#ideia"><svg viewBox="0 0 18 28" fill="none" aria-hidden="true"><g class="shaft"><path d="M9 4v18" stroke="currentColor" stroke-width="1"/><path d="M3 16l6 6 6-6" stroke="currentColor" stroke-width="1"/></g></svg>Role para conhecer a proposta</a>
+  </div>
+</div>
+
+<section id="ideia">
+  <div class="wrap">
+    <div class="g12 shead rv"><span class="label idx">01 — Ideia</span><h2>Uma casa para conhecer. Uma vida para imaginar.</h2></div>
+    <div class="g12 body">
+      <div class="c8">
+        <p class="lead rv">Os anúncios do Valville disputam atenção com metragem, suítes e piscina. A campanha vai apresentar uma razão para escolher esta casa: a pessoa faz a primeira visita pela comunicação e chega à visita presencial já querendo morar ali.</p>
+        <p class="rv">A peça central é um filme de 60 segundos, com cortes de 30 e 15. A landing page vira a <em>Sua primeira visita</em>: uma página em capítulos, construída só com imagens reais da casa.</p>
+      </div>
+      <div class="c">
+        <ol class="chap rv">
+          <li><span class="n">01</span><span class="t">A primeira impressão</span><span class="f">Fachada e chegada</span></li>
+          <li><span class="n">02</span><span class="t">O espaço que recebe</span><span class="f">Entrada e living</span></li>
+          <li><span class="n">03</span><span class="t">Os ambientes que conectam</span><span class="f">Integração e circulação</span></li>
+          <li><span class="n">04</span><span class="t">Os detalhes que revelam cuidado</span><span class="f">Acabamentos e luz</span></li>
+          <li><span class="n">05</span><span class="t">Os espaços de privacidade</span><span class="f">Suítes</span></li>
+          <li><span class="n">06</span><span class="t">O que existe ao redor</span><span class="f">Condomínio e região</span></li>
+          <li><span class="n">07</span><span class="t">Agende sua visita</span><span class="f">Formulário e WhatsApp</span></li>
+        </ol>
+        <p class="small rv" style="margin-top:16px">A ordem dos capítulos é definida depois da captação, a partir dos ambientes e diferenciais que a casa de fato tem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="operacao">
+  <div class="wrap">
+    <div class="g12 shead rv"><span class="label idx">02 — Operação</span><h2>Não é um perfil no Instagram. É um sistema de aquisição.</h2></div>
+    <div class="g12 body"><div class="c">
+      <p class="lead rv">Cada canal tem uma função na jornada. A aquisição é direta: sem comissões, sem indicações remuneradas, sem parcerias pagas.</p>
+      <div class="cols rv" style="--n:5">
+        <div><span class="label">Intenção</span><h3>Google Search</h3><p>Captura quem já busca casa no Valville, em Alphaville e em Santana de Parnaíba.</p></div>
+        <div><span class="label">Desejo</span><h3>Meta Ads</h3><p>Filme, vídeos por ambiente e carrosséis no Instagram e no Facebook.</p></div>
+        <div><span class="label">Valor</span><h3>Primeira visita</h3><p>Landing page em capítulos, com ficha técnica, região e convite à visita.</p></div>
+        <div><span class="label">Retomada</span><h3>Remarketing</h3><p>Uma mensagem diferente para cada etapa: quem viu o filme, quem visitou a página, quem viu a ficha.</p></div>
+        <div><span class="label">Visita</span><h3>Atendimento</h3><p>A W3W atende e qualifica cada lead até o agendamento. O Edilson recebe a visita com roteiro, e cada objeção volta para a campanha.</p></div>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<section id="mercado">
+  <div class="wrap">
+    <div class="g12 shead rv"><span class="label idx">03 — Mercado</span><h2>A concorrência anuncia metragem. Nós vamos mostrar a casa.</h2></div>
+    <div class="g12 body"><div class="c">
+      <p class="lead rv">No Valville 1, casas novas e recentes estão anunciadas entre R$ 8.200 e R$ 8.900 por m² construído. Nenhum anúncio informa condições de pagamento, e quase todos têm apresentação apenas correta.</p>
+      <div class="range rv" role="img" aria-label="Faixa de R$ 8.214 a R$ 10.120 por metro quadrado">
+        <div class="track">
+          <div class="band2" style="left:0;right:63.5%"></div>
+          <div class="tk" style="left:0"><span>R$ 8.214</span></div>
+          <div class="tk" style="left:36.5%"><span>R$ 8.909</span></div>
+          <div class="tk" style="left:100%"><span>R$ 10.120</span></div>
+        </div>
+        <p class="small" style="margin-top:44px">R$/m² construído. Faixa sombreada: casas novas e recém-construídas. O ponto mais alto é uma casa reformada de 166 m².</p>
+      </div>
+      <div class="tw rv">
+        <div class="tscroll"><table>
+          <thead><tr><th>Anúncio</th><th>Estado</th><th class="r">Preço pedido</th><th class="r">Constr. m²</th><th class="r">Terreno m²</th><th class="r">Suítes</th><th class="r">R$/m²</th></tr></thead>
+          <tbody>
+            <tr><td>AlphaHouse · 1455</td><td>Nova</td><td class="r">2.450.000</td><td class="r">275</td><td class="r">392,87</td><td class="r">3</td><td class="r">8.909</td></tr>
+            <tr><td>Bestville · CA0257</td><td>Nova</td><td class="r">2.500.000</td><td class="r">303</td><td class="r">392,87</td><td class="r">3</td><td class="r">8.251</td></tr>
+            <tr><td>Century 21 · CA0053</td><td>Recém-construída</td><td class="r">2.300.000</td><td class="r">280</td><td class="r">360</td><td class="r">4</td><td class="r">8.214</td></tr>
+            <tr><td>Face Norte · CA2016</td><td>Reformada</td><td class="r">1.680.000</td><td class="r">166</td><td class="r">360</td><td class="r">3</td><td class="r">10.120</td></tr>
+            <tr><td>Century 21 · CA0388</td><td>Não declarado</td><td class="r">2.900.000</td><td class="r">350</td><td class="r">n/i</td><td class="r">2</td><td class="r">8.286</td></tr>
+            <tr><td>Century 21 · CA0483</td><td>Não declarado</td><td class="r">3.600.000</td><td class="r">430</td><td class="r">n/i</td><td class="r">5</td><td class="r">8.372</td></tr>
+          </tbody>
+        </table></div>
+        <div class="drag label"><svg viewBox="0 0 28 12" fill="none" aria-hidden="true"><g class="shaft"><path d="M2 6h22" stroke="currentColor"/><path d="M19 1l5 5-5 5" stroke="currentColor"/></g></svg>Arraste para ver a tabela</div>
+      </div>
+      <p class="small rv" style="margin-top:16px">Anúncios públicos coletados em 12/11/2026. Preços pedidos, não valores de fechamento; não é laudo de avaliação. A casa entra na matriz depois do levantamento técnico.</p>
+    </div></div>
+  </div>
+</section>
+
+<section class="ninety graph" id="plano">
+  <div class="wrap g12">
+    <p class="num" data-speed="0.16" aria-hidden="true">90</p>
+    <div class="copy">
+      <h2>Noventa dias, três tempos<span class="dot">.</span></h2>
+      <p>Preparar a oferta nas duas primeiras semanas. Lançar na terceira. Depois, aprender com a resposta do mercado e concentrar o investimento no que gera visitas.</p>
+      <p>A verba de mídia só começa quando página, criativos, rastreamento e destinos estão testados e aprovados.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="g12 shead rv"><span class="label idx">04 — Plano tático</span><h2>Semana a semana.</h2></div>
+    <div class="body weeks">
+      <div class="g12 wk key rv"><div class="when"><b>Semana 1</b>Primeira ação</div><h3>Imersão e captação</h3><ul><li>Sessão presencial de até 4h, com roteiro e lista de planos</li><li>Levantamento de metragens, suítes, custos, documentos, preço e condições</li><li>Gestor estrutura contas, palavras-chave, pixel e públicos, sem gastar verba</li></ul></div>
+      <div class="g12 wk rv"><div class="when"><b>Semana 2</b>Preparação</div><h3>Filme, página e rastreamento</h3><ul><li>Tratamento das fotos, filme principal e primeiros cortes</li><li>Sua primeira visita publicada em teste, com formulário e WhatsApp</li><li>Eventos, UTMs e destinos testados; aprovação final</li></ul></div>
+      <div class="g12 wk key rv"><div class="when"><b>Semana 3</b>Mídia ativa</div><h3>Lançamento</h3><ul><li>Google Search e Meta Ads no ar</li><li>Distribuição nos canais próprios e rede pessoal</li><li>Monitoramento diário e correções técnicas</li></ul></div>
+      <div class="g12 wk rv"><div class="when"><b>Semana 4</b>Leitura</div><h3>Primeira otimização</h3><ul><li>Buscas, criativos e conversão da página</li><li>Qualidade dos primeiros contatos com a W3W</li><li>Mensagens ajustadas às dúvidas reais</li></ul></div>
+      <div class="g12 wk rv"><div class="when"><b>Semanas 5–8</b>Aprendizado</div><h3>Remarketing e objeções</h3><ul><li>Remarketing narrativo, se houver volume</li><li>Conteúdos de prova: medidas, custos, localização, acabamento</li><li>Primeiro dia de visitas privadas</li></ul></div>
+      <div class="g12 wk key rv"><div class="when"><b>Dia 45</b>Ponto de decisão</div><h3>Revisão de oferta</h3><ul><li>Leitura conjunta de cliques, contatos, visitas e propostas</li><li>Interesse sem visita: revisar mensagem. Visita sem proposta: revisar preço ou condições</li><li>Mais mídia não corrige uma oferta desalinhada</li></ul></div>
+      <div class="g12 wk rv"><div class="when"><b>Semanas 9–13</b>Conversão</div><h3>Aceleração e fechamento</h3><ul><li>Verba concentrada no que gera visitas</li><li>Novos cortes criativos e segundo dia de visitas privadas</li><li>Relatório final com resultados e próximos passos</li></ul></div>
+    </div>
+    <div class="tw rv" style="margin-top:80px">
+      <div class="tscroll" style="border-top:0">
+        <div class="gantt" role="table" aria-label="Frentes de trabalho ao longo de 13 semanas" id="gantt">
+          <div class="h lb" style="text-align:left;padding-top:12px">Frente</div>
+        </div>
+      </div>
+      <div class="drag label"><svg viewBox="0 0 28 12" fill="none" aria-hidden="true"><g class="shaft"><path d="M2 6h22" stroke="currentColor"/><path d="M19 1l5 5-5 5" stroke="currentColor"/></g></svg>Arraste para ver as 13 semanas</div>
+      <div class="legend"><span><i style="background:var(--bg-2)"></i>Preparação</span><span><i style="background:var(--fg)"></i>Execução e mídia ativa</span><span><i style="box-shadow:inset 0 0 0 1px var(--fg)"></i>Otimização</span><span><i style="background:var(--red)"></i>Marco</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="ativacoes">
+  <div class="wrap">
+    <div class="g12 shead rv"><span class="label idx">05 — Ativações</span><h2>Além do feed.</h2></div>
+    <div class="g12 body"><div class="c">
+      <p class="lead rv">O comprador desta casa decide com a família, compara com outras opções e precisa de segurança para o próximo passo. Nenhuma destas ações depende de pagar corretores ou terceiros.</p>
+      <div class="acts">
+        <div class="act rv"><span class="label">A1</span><div><h3>Dias de visita privada</h3><p>Dois sábados no ciclo, horários de 45 minutos reservados pela página. Concentra a agenda do Edilson e cria escassez real.</p><div class="m">Semanas 6 e 11 · sem custo extra</div></div></div>
+        <div class="act rv"><span class="label">A2</span><div><h3>Dossiê do comprador</h3><p>Matrícula, habite-se, IPTU, condomínio, memorial e planta em um PDF. Tira a insegurança que trava a decisão e o financiamento.</p><div class="m">Semana 2 · depende dos documentos</div></div></div>
+        <div class="act rv"><span class="label">A3</span><div><h3>Condições na vitrine</h3><p>Simulação de financiamento e custo mensal real na página. Nenhum concorrente mostra essa conta.</p><div class="m">Semana 2 · Edilson define as condições</div></div></div>
+        <div class="act rv"><span class="label">A4</span><div><h3>Roteiro de visita</h3><p>Percurso pelos ambientes, diferenciais na ordem certa e fechamento com preço e próximos passos. A campanha continua dentro da casa.</p><div class="m">Semana 3 · operação do Edilson</div></div></div>
+        <div class="act rv"><span class="label">A5</span><div><h3>Placa com QR rastreável</h3><p>Placa de fachada com design próprio levando à página, conforme as regras do condomínio.</p><div class="m">Semana 3 · impressão à parte</div></div></div>
+        <div class="act rv"><span class="label">A6</span><div><h3>Anúncio direto do proprietário</h3><p>Portais em nome do proprietário, com o material premium e link para a página, sem imobiliária na frente.</p><div class="m">Semana 3 · plano de portal à parte</div></div></div>
+        <div class="act rv"><span class="label">A7</span><div><h3>Rede própria</h3><p>LinkedIn da equipe e da família, grupos comunitários da região e contatos próprios, com kit de compartilhamento pronto.</p><div class="m">Semana 3 em diante · sem custo</div></div></div>
+        <div class="act rv"><span class="label">A8</span><div><h3>Atendimento exclusivo W3W</h3><p>Todo lead captado é atendido pela equipe da W3W, com qualificação e acompanhamento até o agendamento da visita. O Edilson recebe o comprador já qualificado.</p><div class="m">Semana 3 em diante · incluído</div></div></div>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<section id="packs">
+  <div class="wrap">
+    <div class="g12 shead rv"><span class="label idx">06 — Packs</span><h2>Três níveis de operação.</h2></div>
+    <div class="g12 body"><div class="c8"><p class="lead rv" style="margin:0">Cumulativos: o Pack 02 inclui tudo do Pack 01, e o Pack 03 inclui tudo dos anteriores. Honorários KCO em três parcelas mensais.</p></div></div>
+    <div class="pk-wrap">
+      <div class="cards">
+        <article class="card"><span class="badge" aria-hidden="true">&nbsp;</span><span class="cn">01</span><h3 class="cname">Imóvel em Vitrine</h3><p class="cline">Apresentar a casa com qualidade e iniciar a aquisição.</p><div class="cprice"><small>R$</small>8.900</div><span class="cinst">ou 3 × R$ 2.966,67</span><ul class="chl"><li>15 fotos · 2 vídeos</li><li>Landing page</li><li>Google e Meta</li></ul><div class="cfee"><span>Success fee, só se vender</span><b>R$ 2.225</b></div></article><article class="card feat"><span class="badge">Recomendado</span><span class="cn">02</span><h3 class="cname">Campanha de Venda</h3><p class="cline">Inteligência de mercado, o dobro de conteúdo e remarketing.</p><div class="cprice"><small>R$</small>11.400</div><span class="cinst">ou 3 × R$ 3.800</span><ul class="chl"><li>25 fotos · 4 vídeos</li><li>Matriz de concorrência</li><li>Remarketing</li></ul><div class="cfee"><span>Success fee, só se vender</span><b>R$ 2.850</b></div></article><article class="card"><span class="badge" aria-hidden="true">&nbsp;</span><span class="cn">03</span><h3 class="cname">Operação 360°</h3><p class="cline">Mais volume criativo, stories e acompanhamento próximo.</p><div class="cprice"><small>R$</small>13.200</div><span class="cinst">ou 3 × R$ 4.400</span><ul class="chl"><li>30 fotos · 4 vídeos</li><li>12 telas de stories</li><li>3 relatórios</li></ul><div class="cfee"><span>Success fee, só se vender</span><b>R$ 3.300</b></div></article>
+      </div>
+      <div class="cmp" id="pcmp">
+        <div class="stick" aria-hidden="true"><div><b>Imóvel em Vitrine</b><span>R$ 8.900</span></div><div class="feat"><b>Campanha de Venda</b><span>R$ 11.400</span></div><div><b>Operação 360°</b><span>R$ 13.200</span></div></div>
+        <h3 class="cmp-title">Compare o que cada pack contempla<span class="dot">.</span></h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="investimento">
+  <div class="wrap">
+    <div class="g12 shead rv"><span class="label idx">07 — Investimento</span><h2>Tudo à vista, nada embutido.</h2></div>
+    <div class="g12 body"><div class="c">
+      <p class="lead rv">A mídia é paga direto às plataformas e não é receita da KCO. A gestão de tráfego é paga ao profissional.</p>
+      <div class="inv">
+        <div class="tw rv"><div class="tscroll"><table><thead><tr><th>Custos externos</th><th class="r">Mês</th><th class="r">90 dias</th></tr></thead><tbody>
+          <tr><td>Gestão de tráfego</td><td class="r">700</td><td class="r">2.100</td></tr>
+          <tr><td>Verba de mídia</td><td class="r">2.500</td><td class="r">7.500</td></tr>
+          <tr><td>Logística, até 2 deslocamentos</td><td class="r">—</td><td class="r">200</td></tr>
+          <tr class="tot"><td>Total externo</td><td class="r"></td><td class="r">9.800</td></tr>
+        </tbody></table></div></div>
+        <div class="tw rv"><div class="tscroll"><table><thead><tr><th>Total 90 dias</th><th class="r">KCO</th><th class="r">Externos</th><th class="r">Total</th></tr></thead><tbody>
+          <tr><td>Pack 01</td><td class="r">8.900</td><td class="r">9.800</td><td class="r">18.700</td></tr>
+          <tr class="hl"><td>Pack 02</td><td class="r">11.400</td><td class="r">9.800</td><td class="r">21.200</td></tr>
+          <tr><td>Pack 03</td><td class="r">13.200</td><td class="r">9.800</td><td class="r">23.000</td></tr>
+        </tbody></table></div></div>
+      </div>
+      <div class="tw rv"><div class="tscroll"><table><thead><tr><th>Desembolso mensal</th><th class="r">Mês 1</th><th class="r">Mês 2</th><th class="r">Mês 3</th></tr></thead><tbody>
+        <tr><td>Pack 01</td><td class="r">6.366,67</td><td class="r">6.166,67</td><td class="r">6.166,66</td></tr>
+        <tr class="hl"><td>Pack 02</td><td class="r">7.200,00</td><td class="r">7.000,00</td><td class="r">7.000,00</td></tr>
+        <tr><td>Pack 03</td><td class="r">7.800,00</td><td class="r">7.600,00</td><td class="r">7.600,00</td></tr>
+      </tbody></table></div></div>
+      <p class="small rv" style="margin-top:16px">Valores em R$. O mês 1 inclui parcela KCO, gestão, mídia e logística; os meses 2 e 3, parcela KCO, gestão e mídia. O success fee não está nesses totais.</p>
+      <div class="cols rv" style="--n:2;margin-top:48px">
+        <div><span class="label">Mídia adicional</span><h3>A verba pode precisar crescer</h3><p>Os R$ 2.500 mensais são o ponto de partida. Se a campanha mostrar demanda e houver espaço para ampliar, pode ser recomendada uma verba maior, sempre aprovada antes de qualquer gasto.</p></div>
+        <div><span class="label">Materiais extras</span><h3>Fora do pack, orçado à parte</h3><p>Peças ou formatos diferentes dos previstos nos packs (drone, tour 3D, impressos, vídeos adicionais, novas sessões) são orçados separadamente.</p></div>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<section id="comissao">
+  <div class="wrap">
+    <div class="g12 shead rv"><span class="label idx">08 — Comissão</span><h2>Menos comissão, mais operação.</h2></div>
+    <div class="g12 body"><div class="c">
+      <p class="lead rv">A comissão de mercado para venda de imóveis é de 5%. Nesta proposta, a comissão da W3W é de 3%. A diferença cobre a operação completa: mídia, produção das peças, gestão de tráfego e acompanhamento.</p>
+      <div class="cmpc rv">
+        <div><span class="label muted">Modelo tradicional</span><div class="big5">5<small>%</small></div><p>Comissão de corretagem. A divulgação fica restrita a portais, placa e carteira da imobiliária.</p></div>
+        <div class="feat"><span class="label">Wilson Rodrigues e KCO Studio</span><div class="big5">3<small>%</small><span class="plus">+ operação</span></div><p>Comissão W3W, mais estratégia, conteúdo, landing page, Google, Meta e atendimento exclusivo dos leads.</p></div>
+      </div>
+      <div class="tw rv"><div class="tscroll"><table><thead><tr><th>Exemplo com venda de R$ 2.400.000</th><th class="r">Tradicional</th><th class="r">Esta proposta</th></tr></thead><tbody>
+        <tr><td>Comissão</td><td class="r">120.000 (5%)</td><td class="r">72.000 (3%)</td></tr>
+        <tr><td>Pack 02 com mídia, tráfego e logística</td><td class="r">—</td><td class="r">21.200</td></tr>
+        <tr><td>Success fee KCO</td><td class="r">—</td><td class="r">2.850</td></tr>
+        <tr class="tot"><td>Total</td><td class="r">120.000</td><td class="r">96.050</td></tr>
+      </tbody></table></div></div>
+      <p class="small rv" style="margin-top:16px">Valor de venda ilustrativo, na faixa dos anúncios do Valville 1; o preço da casa ainda será definido. A comissão de 3% é devida à W3W na conclusão da venda, nos termos do contrato de intermediação.</p>
+    </div></div>
+  </div>
+</section>
+
+<section id="success" class="band">
+  <div class="wrap">
+    <div class="g12 shead rv"><span class="label idx">09 — Success fee</span><h2>Se a casa vender pela operação, a KCO ganha junto.</h2></div>
+    <div class="g12 body"><div class="c">
+      <p class="lead rv">Além do plano contratado, há um success fee de 25% dos honorários KCO. Ele não incide sobre o preço de venda do imóvel.</p>
+      <div class="fees rv">
+        <div><span class="label muted">Pack 01 · 25% de R$ 8.900</span><div class="v tab">R$ 2.225</div></div>
+        <div><span class="label muted">Pack 02 · 25% de R$ 11.400</span><div class="v tab">R$ 2.850</div></div>
+        <div><span class="label muted">Pack 03 · 25% de R$ 13.200</span><div class="v tab">R$ 3.300</div></div>
+      </div>
+      <p class="quote rv">Devido uma única vez, só se a venda for concluída e comprovadamente atribuída à operação da KCO. Sem venda, sem success fee<span class="dot">.</span></p>
+      <p class="small rv" style="margin-top:32px">Critérios de atribuição (origem e registro do lead, janela de atribuição, contatos anteriores, vendas por outros canais), momento de pagamento e comprovação serão definidos em contrato, com revisão jurídica.</p>
+    </div></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="g12 shead rv"><span class="label idx">10 — Responsabilidades</span><h2>Quem faz o quê.</h2></div>
+    <div class="g12 body"><div class="c">
+      <div class="cols rv" style="--n:4;margin-top:0">
+        <div><span class="label">Criação e coordenação</span><h3>KCO Studio</h3><p>Estratégia, direção criativa, captação, edição, landing page, coordenação da aquisição e relatórios.</p></div>
+        <div><span class="label">Mídia</span><h3>Gestor de tráfego</h3><p>Configuração, operação e otimização de Google e Meta, com dados para a KCO.</p></div>
+        <div><span class="label">Comercial</span><h3>Edilson</h3><p>Valida dados e preço, conduz as visitas agendadas e negocia.</p></div>
+        <div><span class="label">Atendimento</span><h3>W3W · Wilson Rodrigues</h3><p>Coautor da proposta. Atendimento exclusivo e qualificação dos leads até o agendamento da visita.</p></div>
+      </div>
+      <ul class="terms rv">
+        <li>Uma sessão presencial de captação de até 4 horas em cada plano.</li>
+        <li>Até 2 rodadas de ajustes por etapa.</li>
+        <li>Domínio, hospedagem, planos de portal, impressão e integrações pagas não incluídos.</li>
+        <li>Drone, home staging, locução, atores, sessões extras e peças além do escopo orçados à parte.</li>
+        <li>A KCO não faz atendimento comercial, visitas de venda nem negociação. O atendimento dos leads até o agendamento é da W3W.</li>
+        <li>A verba de mídia pode ser redistribuída entre canais e, se necessário, ampliada, sempre com aprovação prévia.</li><li>Materiais diferentes dos previstos nos packs estão sujeitos a orçamento à parte.</li>
+        <li>Não há garantia de venda, volume de leads ou prazo. O resultado também depende de preço, condições, concorrência e velocidade de atendimento.</li>
+        <li>A mídia começa depois da validação técnica da página, dos criativos e do rastreamento.</li>
+      </ul>
+    </div></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="g12 contact">
+      <span class="label">11 — Próximo passo</span>
+      <h2>Vamos conhecer a casa<span class="dot">.</span></h2>
+      <div class="info"><span>Wilson Rodrigues</span><span class="muted">+55 11 99246-0734</span><span style="margin-top:12px">Kco Oyakawa · KCO Studio</span><span class="muted">kcodigital@gmail.com</span><span class="muted">São Paulo · Novembro de 2026</span></div>
+    </div>
+    <p class="wm" data-speed="-0.06" aria-hidden="true"><span>K</span><span>C</span><span>O</span></p>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+// Gantt
+const W=['S1','S2','S3','S4','S5','S6','S7','S8','S9','S10','S11','S12','S13'];
+const G=document.getElementById('gantt');
+W.forEach(w=>{const d=document.createElement('div');d.className='h';d.textContent=w;G.appendChild(d)});
+const rows=[
+ ['Captação e conteúdo',[[1,1,'mark','Captação'],[2,2,'prep','Filme'],[5,8,'opt','Peças de prova'],[9,13,'opt','Novos cortes']]],
+ ['Primeira visita (LP)',[[1,2,'prep','Construção e testes'],[3,4,'live','Publicada'],[5,13,'opt','Otimização']]],
+ ['Google Search',[[1,2,'prep','Pesquisa e setup'],[3,13,'live','Mídia ativa e otimização']]],
+ ['Meta Ads',[[1,2,'prep','Públicos e setup'],[3,13,'live','Mídia ativa e otimização']]],
+ ['Remarketing',[[1,4,'prep','Formação de público'],[5,13,'opt','Ativo, se elegível']]],
+ ['Ativações',[[2,2,'prep','Dossiê'],[3,4,'live','Placa · portais · rede'],[6,6,'mark','Visitas'],[7,10,'opt','Rede e conteúdo'],[11,11,'mark','Visitas']]],
+ ['Leads e oferta',[[2,2,'prep','Roteiro'],[3,6,'opt','Primeiros contatos'],[7,7,'mark','Dia 45'],[8,12,'opt','Leitura e ajustes'],[13,13,'live','Relatório']]]
+];
+rows.forEach(([lb,bars])=>{
+  const l=document.createElement('div');l.className='lb';l.textContent=lb;G.appendChild(l);
+  const lane=document.createElement('div');lane.style.gridColumn='2 / span 13';
+  bars.forEach(([s,e,t,x])=>{const b=document.createElement('span');b.className='gb '+t;b.textContent=x;b.title=x;b.style.left=`calc(${(s-1)/13*100}% + 2px)`;b.style.right=`calc(${(13-e)/13*100}% + 2px)`;lane.appendChild(b)});
+  G.appendChild(lane);
+});
+// Matriz
+const Y='<span class="ok" role="img" aria-label="incluído"></span>',N='<span class="no">—</span>';
+const M=[['Estratégia'],['Briefing, diagnóstico e público',Y,Y,Y],['Direção criativa e conceito visual',Y,Y,Y],['Matriz de concorrência e posicionamento',N,Y,Y],['Plano de aquisição e argumentos',N,Y,Y],['Plano de testes e otimização',N,Y,Y],
+['Produção'],['Sessão presencial de captação','1 × 4h','1 × 4h','1 × 4h'],['Fotografias tratadas','até 15','até 25','até 30'],['Vídeos editados, até 60s','2','4','4'],['Carrosséis, até 6 telas','1','2','3'],['Posts estáticos','2','4','4'],['Criativos para anúncios','2','4','6'],['Telas de stories',N,N,'até 12'],
+['Conversão'],['Landing page Sua primeira visita',Y,Y,Y],['Ficha técnica e diferenciais',Y,Y,Y],['Rastreamento de leads',Y,Y,Y],['Apresentação comercial em PDF',N,Y,Y],['Kit digital para compartilhamento',N,Y,Y],
+['Mídia e acompanhamento'],['Meta Ads e Google Search',Y,Y,Y],['Remarketing',N,Y,Y],['Orientação para qualificar leads',N,Y,Y],['Relatórios de desempenho','1','2','3'],['Reuniões de acompanhamento','1','2','3']];
+document.getElementById('pcmp').insertAdjacentHTML('beforeend',M.map(r=>r.length===1?`<div class="cg">${r[0]}</div>`:`<div class="crow"><div class="cl">${r[0]}</div><div class="cv">${r[1]}</div><div class="cv feat">${r[2]}</div><div class="cv">${r[3]}</div></div>`).join(''));
+
+// Dica "arraste" só quando a tabela transborda
+const checkOverflow=()=>document.querySelectorAll('.tw').forEach(w=>{const s=w.querySelector('.tscroll');w.classList.toggle('overflow',s.scrollWidth>s.clientWidth+4)});
+addEventListener('resize',checkOverflow);checkOverflow();
+document.querySelectorAll('.tscroll').forEach(s=>s.addEventListener('scroll',()=>{if(s.scrollLeft>20)s.parentElement.classList.remove('overflow')},{passive:true}));
+
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduce&&'IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.remove('pend');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.rv').forEach(el=>{if(el.getBoundingClientRect().top>innerHeight){el.classList.add('pend');io.observe(el)}});
+}
+// Parallax, progresso e seção ativa
+const P=[...document.querySelectorAll('[data-speed]')],bar=document.getElementById('progress');
+const links=[...document.querySelectorAll('.nav a')],secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+let ticking=false;
+function frame(){
+  const h=document.documentElement.scrollHeight-innerHeight;bar.style.transform=`scaleX(${h>0?scrollY/h:0})`;
+  if(!reduce)P.forEach(el=>{const r=el.parentElement.getBoundingClientRect();const c=r.top+r.height/2-innerHeight/2;el.style.transform=`translate3d(0,${(-c*parseFloat(el.dataset.speed)).toFixed(1)}px,0)`});
+  let cur=-1;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<innerHeight*.4)cur=i});
+  links.forEach((a,i)=>a.classList.toggle('on',i===cur));
+  ticking=false;
+}
+addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(frame)}},{passive:true});frame();
+</script>
+
+</body>
+</html>
