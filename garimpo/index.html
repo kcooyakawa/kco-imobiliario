@@ -834,7 +834,30 @@ body::before{background:#ECEEF1!important}
 .rs.c{background:var(--gain-wash);color:#0F7A37}.rs.p{background:#FDF3E2;color:#9A5B05}.rs.f{background:#FDECEC;color:#B42318}
 </style>
 <style>html,body{max-width:100%;overflow-x:hidden}@supports (overflow:clip){html,body{overflow-x:clip}}</style>
-<style>.top2 .brand2{flex:none}@media (max-width:640px){.sb-tg{order:3;margin-left:auto!important;margin-right:0!important;padding:9px 10px!important}.sb-tg{font-size:0!important;gap:0!important}.top2 #upd{display:none!important}}</style>
+<style>.top2 .brand2{flex:none}@media (max-width:640px){.sb-tg{order:3;margin-left:auto!important;margin-right:0!important;padding:9px 10px!important}.sb-tg{font-size:0!important;gap:0!important}.top2 #upd{display:none!important}}
+.gpsec{margin-top:40px}
+.gp-card{background:var(--panel);border-radius:3px;padding:18px 20px;margin-bottom:18px;display:flex;flex-direction:column;gap:14px}
+.gp-row{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:flex-end}
+.gp-tipo{border:0;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 16px}
+.gp-tipo legend{font-size:12px;color:var(--ink3);padding:0 0 6px;width:100%}
+.gp-tipo label{display:flex;align-items:center;gap:6px;font-size:13.5px;color:var(--ink2);cursor:pointer}
+.gp-f{flex:1 1 220px;flex-direction:column;align-items:flex-start!important;gap:4px;padding:10px 12px!important;min-height:0!important}
+.gp-f input{border:0;background:transparent;outline:0;width:100%;padding:4px 0;font-size:14px;color:var(--ink)}
+.gp-note{margin:0;font-size:12px;color:var(--ink3)}
+.gp-item{background:var(--panel);border-radius:3px;padding:14px 16px;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-bottom:10px}
+.gp-item .gp-ps{font-weight:600;font-size:13px;border-radius:999px;padding:4px 10px}
+.gp-ps.pendente{background:var(--warn-wash);color:var(--warn)}
+.gp-ps.rodando{background:var(--brand-wash);color:var(--brand-ink)}
+.gp-ps.concluido{background:var(--gain-wash);color:var(--gain)}
+.gp-item .gp-meta{flex:1 1 260px;font-size:13.5px;color:var(--ink2);min-width:0}
+.gp-item .gp-meta b{color:var(--ink);font-weight:600}
+.gp-res{display:flex;flex-wrap:wrap;gap:8px;width:100%;margin-top:6px}
+.gp-res button{display:flex;align-items:center;gap:10px;background:#fff;border-radius:3px;padding:7px 10px 7px 7px;text-align:left;cursor:pointer;border:0;max-width:280px}
+.gp-res img,.gp-res .gpth{width:44px;height:34px;object-fit:cover;border-radius:2px;background:var(--line);flex:none}
+.gp-res span{font-size:12.5px;color:var(--ink2);line-height:1.3;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.gp-res b{display:block;font-size:12.5px;color:var(--ink);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gp-empty{color:var(--ink3);font-size:13.5px;padding:8px 2px}
+</style>
 </head><body>
 <script>/* Modo demonstração: dados de data/*.json embutidos, no lugar do banco do Claude. */
 window.claude={use:async()=>({collection:n=>({onSnapshot:(cb)=>{const D=n==="lotes"?window.__LOTES:window.__RODADAS;setTimeout(()=>cb({metadata:{fromCache:false},docs:D.map(x=>({id:x._id,data:()=>x}))}),30)}})})};
@@ -847,6 +870,7 @@ window.__RODADAS=[{"aprovadas": 0, "cdiAno": 13.65, "destaque": "20261112-38153-
     <button class="sb-l on" data-go="top"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Rodada de hoje</button>
     <button class="sb-l" data-go="mapa"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>Mapa</button>
     <button class="sb-l" data-go="hist"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Histórico</button>
+    <button class="sb-l" data-go="garimpar"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M11 8v6M8 11h6"/></svg>Garimpar</button>
     <div class="sb-h">Oportunidades</div>
     <button class="sb-l" data-sst="todas"><i class="d" style="background:#9AA0AE"></i>Todos<b></b></button>
     <button class="sb-l" data-sst="aprovada"><i class="d" style="background:var(--gain)"></i>Selo Select<b></b></button>
@@ -901,6 +925,26 @@ window.__RODADAS=[{"aprovadas": 0, "cdiAno": 13.65, "destaque": "20261112-38153-
   <section class="runs" id="runs-sec" hidden>
     <div class="sec"><h2>Histórico de rodadas</h2></div>
     <div class="list tbl"><table id="runs"><thead><tr><th>Rodada</th><th class="r">Triados</th><th class="r">Lidos</th><th class="r">Pré-sel.</th><th class="r">Selo</th><th>Modo</th><th>Fontes fora</th></tr></thead><tbody></tbody></table></div>
+  </section>
+  <section class="gpsec" id="garimpar">
+    <div class="sec"><h2>Garimpar sob demanda</h2><span>Peça uma busca com os parâmetros que você quiser</span></div>
+    <form class="gp-card" id="gp-form" hidden>
+      <div class="gp-row">
+        <fieldset class="gp-tipo"><legend>Tipo</legend>
+          <label><input type="checkbox" name="gp-tipo" value="Apartamento" checked>Apartamento</label>
+          <label><input type="checkbox" name="gp-tipo" value="Casa">Casa</label>
+          <label><input type="checkbox" name="gp-tipo" value="Terreno">Terreno</label>
+          <label><input type="checkbox" name="gp-tipo" value="Comercial">Comercial</label>
+        </fieldset>
+      </div>
+      <div class="gp-row">
+        <label class="sel gp-f">Zona ou região<input type="text" id="gp-zona" placeholder="ex.: Zona Sul de São Paulo, Moema, litoral…"></label>
+        <label class="sel gp-f">Valor máximo (capital)<input type="number" id="gp-valor" placeholder="300000" min="0" step="1000"></label>
+      </div>
+      <button type="submit" class="btn-p" id="gp-send">Garimpar</button>
+      <p class="gp-note">O pedido é registrado aqui; a busca roda quando você pedir pra eu rodar no chat.</p>
+    </form>
+    <div id="gp-list"></div>
   </section>
 </div>
 <footer><div class="wrap">Pré-análise. A validação jurídica final é feita por advogado antes do lance. · Mapas © OpenStreetMap</div></footer>
@@ -1092,7 +1136,7 @@ function syncSide(){
 document.querySelectorAll(".side9 [data-sst]").forEach(b=>b.addEventListener("click",()=>{if(b.dataset.sst==="fav"){S.favOnly=!S.favOnly;render();$("grid").scrollIntoView({behavior:"smooth",block:"start"});return}const t=document.querySelector(`.seg button[data-st="${b.dataset.sst}"]`);if(t)t.click();setTimeout(syncSide,0);$("grid").scrollIntoView({behavior:"smooth",block:"start"})}));
 document.querySelectorAll(".side9 [data-go]").forEach(b=>b.addEventListener("click",()=>{if(b.dataset.go==="top")window.scrollTo({top:0,behavior:"smooth"});else (b.dataset.go==="mapa"?(setView("map"),$("mapa")):$(b.dataset.go)).scrollIntoView({behavior:"smooth",block:"start"})}));
 $("sb-tg").addEventListener("click",e=>{e.stopPropagation();document.querySelector(".side9").classList.toggle("open")});document.addEventListener("click",e=>{const sd=document.querySelector(".side9");if(sd.classList.contains("open")&&(!sd.contains(e.target)||e.target.closest("button")))setTimeout(()=>sd.classList.remove("open"),0)});
-(()=>{const upd=()=>{const h=$("hist");let cur="top";["mapa","hist"].forEach(id=>{const e=$(id);if(e&&e.offsetParent!==null&&e.getBoundingClientRect().top<innerHeight*.45)cur=id});if(!h.hidden&&h.getBoundingClientRect().top<innerHeight*.45)cur="hist";document.querySelectorAll(".side9 [data-go]").forEach(b=>b.classList.toggle("on",b.dataset.go===cur))};addEventListener("scroll",upd,{passive:true});upd()})();
+(()=>{const upd=()=>{const h=$("hist");let cur="top";["mapa","hist","garimpar"].forEach(id=>{const e=$(id);if(e&&e.offsetParent!==null&&e.getBoundingClientRect().top<innerHeight*.45)cur=id});if(!h.hidden&&h.getBoundingClientRect().top<innerHeight*.45)cur="hist";document.querySelectorAll(".side9 [data-go]").forEach(b=>b.classList.toggle("on",b.dataset.go===cur))};addEventListener("scroll",upd,{passive:true});upd()})();
 
 /* ===== v10: favoritos, selos, mapa, comparar, números ===== */
 const HEART=`<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.5 8 3.6 4.5 7.2 4.5c2 0 3.6 1.1 4.8 2.8 1.2-1.7 2.8-2.8 4.8-2.8 3.6 0 5.7 3.5 4.5 6.8-1.8 4.6-9.3 9.2-9.3 9.2z" fill="var(--hf,none)" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>`;
@@ -1116,6 +1160,42 @@ async function toggleFav(id){
   if(ME==="local"||!DBX){try{localStorage.setItem(LKEY,JSON.stringify(nx))}catch(e){};toast(on?"Removido dos favoritos":"Guardado nos favoritos deste navegador");return}
   try{await DBX.collection("favoritos").doc(ME).set({lotes:nx,em:new Date().toISOString()});toast(on?"Removido dos favoritos":"Guardado nos favoritos")}
   catch(e){FAV[ME]=cur;refreshFav();toast("Não deu para salvar: peça acesso de edição para favoritar")}
+}
+/* garimpar sob demanda */
+let PED=[],DBP=null;
+const PEDL={pendente:"Pendente",rodando:"Rodando",concluido:"Concluído"};
+function pedTipos(p){return (p.tipos||[]).join(", ")||"Qualquer tipo"}
+function pedValor(p){return p.valorMax?("até "+Number(p.valorMax).toLocaleString("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:0})):"sem limite de valor"}
+function pedResItem(l){const f=(l.fotos||[])[0];return `<button data-go-lote="${esc(l._id)}">${f?`<img src="${esc(f.url)}" alt="">`:'<i class="gpth"></i>'}<span><b>${esc(l.bairro||l.cidade||"")}</b>${esc((l.pctAbaixo?l.pctAbaixo+"% abaixo · ":"")+(l.nota?"nota "+l.nota:""))}</span></button>`}
+function renderPedidos(){
+  const el=$("gp-list");if(!el)return;
+  if(!PED.length){el.innerHTML='<p class="gp-empty">Nenhum pedido ainda. Use o formulário acima (ou peça no chat) para garimpar com seus próprios parâmetros.</p>';return}
+  el.innerHTML=PED.slice().sort((a,b)=>(b.criadoEm||"").localeCompare(a.criadoEm||"")).map(p=>{
+    const res=(S.lotes||[]).filter(l=>l.pedidoId===p._id);
+    return `<div class="gp-item"><span class="gp-ps ${esc(p.status||"pendente")}">${esc(PEDL[p.status]||p.status||"Pendente")}</span>
+      <div class="gp-meta"><b>${esc(pedTipos(p))}</b> · ${esc(p.zona||"qualquer região")} · ${esc(pedValor(p))}${p.resumo?" — "+esc(p.resumo):""}</div>
+      ${res.length?`<div class="gp-res">${res.map(pedResItem).join("")}</div>`:""}
+    </div>`
+  }).join("");
+  el.querySelectorAll("[data-go-lote]").forEach(b=>b.addEventListener("click",()=>location.hash="lote-"+b.dataset.goLote));
+}
+async function initGarimpar(db){
+  DBP=db;
+  try{db.collection("pedidos").onSnapshot(sn=>{PED=sn.docs.map(d=>Object.assign({_id:d.id},d.data()));renderPedidos()},()=>{})}catch(e){}
+  let canSend=false;try{canSend=!!(USR&&USR.canEdit&&await USR.canEdit())}catch(e){}
+  if(!canSend)return;
+  const f=$("gp-form");if(!f)return;f.hidden=false;
+  f.addEventListener("submit",async e=>{
+    e.preventDefault();
+    const tipos=[...f.querySelectorAll('[name="gp-tipo"]:checked')].map(c=>c.value);
+    const zona=$("gp-zona").value.trim(),valorMax=Number($("gp-valor").value)||null;
+    if(!tipos.length){toast("Marque ao menos um tipo de imóvel");return}
+    const btn=$("gp-send");btn.disabled=true;
+    try{await DBP.collection("pedidos").add({tipos,zona,valorMax,status:"pendente",criadoEm:new Date().toISOString(),por:ME||null});
+      toast('Pedido registrado. Peça no chat: "roda esse pedido de garimpo"');f.reset()}
+    catch(err){toast("Não deu para registrar o pedido agora")}
+    btn.disabled=false;
+  });
 }
 /* selos e contagem regressiva */
 const codeOf=l=>l._id.split("-").slice(1).join("-");
@@ -1408,6 +1488,7 @@ sync();render();$("f-btn").addEventListener("click",()=>{const x=$("f-x");x.hidd
   const db=await (window.claude?.use?window.claude.use("db"):null);
   if(!db){$("upd").textContent="Abra no Claude para ver os dados";$("empty").hidden=false;return}
   initFav(db);
+  initGarimpar(db);
   const t=setTimeout(()=>{$("upd").textContent="Aguardando os dados…"},10000);
   db.collection("lotes").onSnapshot(s=>{if(!s.metadata.fromCache)clearTimeout(t);S.lotes=s.docs.map(d=>Object.assign({_id:d.id},d.data()));if(S.runs.length)renderRuns();render();route()},()=>{clearTimeout(t);$("upd").textContent="Não foi possível ler os lotes agora"});
   db.collection("rodadas").onSnapshot(s=>{S.runs=s.docs.map(d=>Object.assign({_id:d.id},d.data()));renderRuns();feat()},()=>{});
