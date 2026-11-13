@@ -833,6 +833,8 @@ body::before{background:#ECEEF1!important}
 .rs{font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:2px}
 .rs.c{background:var(--gain-wash);color:#0F7A37}.rs.p{background:#FDF3E2;color:#9A5B05}.rs.f{background:#FDECEC;color:#B42318}
 </style>
+<style>html,body{max-width:100%;overflow-x:hidden}@supports (overflow:clip){html,body{overflow-x:clip}}</style>
+<style>.top2 .brand2{flex:none}@media (max-width:640px){.sb-tg{order:3;margin-left:auto!important;margin-right:0!important;padding:9px 10px!important}.sb-tg{font-size:0!important;gap:0!important}.top2 #upd{display:none!important}}</style>
 </head><body>
 <script>/* Modo demonstração: dados de data/*.json embutidos, no lugar do banco do Claude. */
 window.claude={use:async()=>({collection:n=>({onSnapshot:(cb)=>{const D=n==="lotes"?window.__LOTES:window.__RODADAS;setTimeout(()=>cb({metadata:{fromCache:false},docs:D.map(x=>({id:x._id,data:()=>x}))}),30)}})})};
