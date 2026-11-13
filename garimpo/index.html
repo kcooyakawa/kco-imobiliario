@@ -1182,7 +1182,7 @@ function renderPedidos(){
 async function initGarimpar(db){
   DBP=db;
   try{db.collection("pedidos").onSnapshot(sn=>{PED=sn.docs.map(d=>Object.assign({_id:d.id},d.data()));renderPedidos()},()=>{})}catch(e){}
-  let canSend=false;try{canSend=!!(USR&&USR.canEdit&&await USR.canEdit())}catch(e){}
+  let canSend=false;try{const usr=await claude.use("user");canSend=!!(usr&&await usr.canEdit())}catch(e){}
   if(!canSend)return;
   const f=$("gp-form");if(!f)return;f.hidden=false;
   f.addEventListener("submit",async e=>{
