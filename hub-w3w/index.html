@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hub W3W</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:wght@300;400;500&display=swap">
+<style>
+:root{
+  --noir:#111111; --carbono:#1C1D20; --grafite:#2E3035; --aco:#757E8D; --aco-claro:#A9B0BC; --aco-prof:#545C69;
+  --marfim:#F4F1EA; --papel:#FAFAFA; --branco:#FFFFFF; --tinta:#111111; --apoio:#555B66; --fio:#DDDEE0;
+  --ease:cubic-bezier(0.23,1,0.32,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Poppins',system-ui,sans-serif;font-weight:300;font-size:17px;line-height:1.55;background:var(--noir);color:var(--marfim);-webkit-font-smoothing:antialiased}
+::selection{background:var(--aco);color:#fff}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--aco-claro);outline-offset:3px}
+.claro :focus-visible{outline-color:var(--aco-prof)}
+.serif{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;letter-spacing:0}
+.label{font-size:12px;letter-spacing:.28em;text-transform:uppercase;font-weight:400}
+[hidden]{display:none!important}
+
+/* topo */
+.topo{position:sticky;top:0;z-index:30;background:var(--noir);border-bottom:1px solid var(--grafite);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px clamp(18px,4vw,56px)}
+.marca{display:flex;align-items:center;gap:14px;text-decoration:none}
+.marca svg{height:26px;width:auto;color:var(--aco-claro)}
+.marca i{width:1px;height:22px;background:var(--grafite)}
+.marca b{font-weight:400;font-size:15px;letter-spacing:.42em;color:var(--marfim)}
+.quem{display:flex;align-items:center;gap:10px}
+.quem span{font-size:12px;color:var(--aco-claro);display:none}
+.seg{display:flex;border:1px solid var(--grafite)}
+.seg button{padding:8px 14px;font-size:14px;font-weight:400;color:var(--aco-claro);transition:background-color .2s var(--ease),color .2s var(--ease)}
+.seg button[aria-pressed=true]{background:var(--marfim);color:var(--noir)}
+@media(min-width:640px){.quem span{display:block}}
+
+/* home */
+.home{padding:clamp(28px,6vw,72px) clamp(18px,4vw,56px) 80px}
+.home h1{font-weight:300;font-size:clamp(38px,7.4vw,92px);line-height:.98;letter-spacing:-.03em;max-width:12ch;text-wrap:balance}
+.home .sub{margin-top:22px;max-width:46ch;color:var(--aco-claro);font-size:17px}
+.galeria{margin-top:clamp(32px,5vw,64px);display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:620px){.galeria{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.galeria{grid-template-columns:repeat(12,1fr)}.galeria>*{grid-column:span 3}.galeria>.dest{grid-column:span 6;grid-row:span 2}}
+.card{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;text-decoration:none;background:var(--carbono);border:1px solid var(--grafite)}
+.galeria>.dest{aspect-ratio:auto;min-height:440px}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(17,17,17,.92),rgba(17,17,17,.25) 55%,rgba(17,17,17,.45))}
+.card .tx{position:absolute;left:22px;right:22px;bottom:20px;z-index:2}
+.card .nome{font-size:clamp(24px,2.6vw,34px);line-height:1.08;letter-spacing:-.01em;font-weight:300}
+.dest .nome{font-size:clamp(34px,4.4vw,60px)}
+.card .onde{margin-top:8px;color:var(--aco-claro);font-size:14px}
+.card .st{position:absolute;top:18px;left:22px;z-index:2;color:var(--aco-claro)}
+.card.vazio::after{display:none}
+.card.vazio .nome{color:var(--aco-claro)}
+a.card:active{transform:scale(.985)}
+a.card{transition:transform .16s var(--ease)}
+@media(hover:hover) and (pointer:fine){a.card:hover img{transform:scale(1.04)}}
+
+/* produto */
+.claro{background:var(--papel);color:var(--tinta)}
+.capa{position:relative;background:var(--noir);color:var(--marfim);overflow:hidden}
+.capa img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%;opacity:.62}
+.capa::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(17,17,17,.94),rgba(17,17,17,.35) 60%,rgba(17,17,17,.6))}
+.capa .in{position:relative;z-index:2;padding:22px clamp(18px,4vw,56px) 30px;min-height:min(58vh,520px);display:flex;flex-direction:column}
+.volta{align-self:flex-start;font-size:14px;font-weight:400;text-decoration:none;color:var(--marfim);border-bottom:1px solid rgba(244,241,234,.4);padding-bottom:2px}
+.capa h1{margin-top:clamp(28px,6vw,64px);font-weight:300;font-size:clamp(40px,8vw,104px);line-height:.95;letter-spacing:-.03em}
+.capa .tarja{margin-top:18px;align-self:flex-start;background:var(--marfim);color:var(--noir);padding:9px 14px;font-weight:500;font-size:13px;letter-spacing:.22em;text-transform:uppercase}
+.fatos{margin-top:auto;padding-top:28px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px 20px}
+@media(min-width:760px){.fatos{grid-template-columns:repeat(4,auto);justify-content:start;column-gap:56px}}
+.fatos b{display:block;font-weight:300;font-size:clamp(24px,3.2vw,34px);line-height:1.1;white-space:nowrap}
+.fatos span{font-size:14px;color:var(--aco-claro)}
+.nav{position:sticky;top:55px;z-index:20;background:var(--papel);border-bottom:1px solid var(--fio);display:flex;gap:4px;overflow-x:auto;padding:0 clamp(10px,3.4vw,48px);scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav button{padding:15px 10px;font-size:15px;font-weight:400;white-space:nowrap;color:var(--apoio);border-bottom:2px solid transparent}
+.nav button.on{color:var(--tinta);border-bottom-color:var(--tinta)}
+section{padding:clamp(40px,6vw,76px) clamp(18px,4vw,56px) 0;scroll-margin-top:110px;max-width:1240px}
+section:last-of-type{padding-bottom:90px}
+h2{font-weight:300;font-size:clamp(30px,4.4vw,48px);line-height:1.05;letter-spacing:-.02em}
+h2+p{margin-top:12px;color:var(--apoio);max-width:62ch}
+h3{font-weight:500;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--aco-prof);margin:38px 0 4px}
+.nota{margin-top:18px;padding:14px 16px;border:1px solid var(--fio);background:var(--branco);font-size:15px;color:var(--apoio);max-width:70ch}
+.nota b{font-weight:500;color:var(--tinta)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 18px;border:1px solid var(--tinta);font-size:15px;font-weight:400;text-decoration:none;white-space:nowrap;transition:background-color .2s var(--ease),color .2s var(--ease),transform .16s var(--ease)}
+.btn:active{transform:scale(.97)}
+.btn.cheio{background:var(--tinta);color:var(--papel)}
+.btn.ok{background:var(--aco-prof);border-color:var(--aco-prof);color:#fff}
+@media(hover:hover) and (pointer:fine){.btn:hover{background:var(--tinta);color:var(--papel)}.btn.cheio:hover{background:var(--aco-prof);border-color:var(--aco-prof)}}
+.acoes{display:flex;flex-wrap:wrap;gap:10px}
+
+/* textos */
+.txt{display:grid;gap:14px;padding:22px 0;border-bottom:1px solid var(--fio)}
+@media(min-width:860px){.txt{grid-template-columns:230px 1fr auto;column-gap:32px;align-items:start}}
+.txt .t{font-weight:500;font-size:17px;line-height:1.3}
+.txt .t small{display:block;margin-top:4px;font-weight:300;font-size:14px;color:var(--apoio)}
+.txt pre{font:inherit;font-size:18px;line-height:1.5;white-space:pre-wrap;word-break:break-word;max-width:62ch;background:var(--branco);border:1px solid var(--fio);padding:16px 18px}
+
+/* ficha */
+.ficha{margin-top:28px;display:grid;gap:28px}
+@media(min-width:860px){.ficha{grid-template-columns:minmax(0,420px) 1fr;align-items:start;column-gap:48px}}
+.ficha img{width:100%;border:1px solid var(--fio)}
+.ficha ul{list-style:none;margin:6px 0 24px}
+.ficha li{padding:11px 0;border-bottom:1px solid var(--fio);font-size:17px}
+
+/* tabela */
+.tw{margin-top:26px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:16px}
+th{font-weight:400;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--apoio);text-align:right;padding:10px 12px;border-bottom:1px solid var(--tinta);white-space:nowrap}
+td{text-align:right;padding:14px 12px;border-bottom:1px solid var(--fio);white-space:nowrap}
+th:first-child,td:first-child{text-align:left;padding-left:0}
+td:first-child{font-size:22px}
+td.tot{font-weight:500}
+td:last-child,th:last-child{padding-right:0}
+@media(max-width:900px){
+  table,tbody,tr,td{display:block}thead{display:none}
+  tr{padding:18px 0;border-bottom:1px solid var(--tinta)}
+  td{display:flex;justify-content:space-between;gap:16px;padding:5px 0;border:0;white-space:normal}
+  td::before{content:attr(data-l);color:var(--apoio);font-size:14px;text-align:left}
+  td:first-child{font-size:28px;display:block}td:first-child::before{display:none}
+  td:last-child{display:block;margin-top:12px}td:last-child::before{display:none}
+  td:last-child .btn{width:100%}
+}
+.pg{margin-top:24px;display:grid;gap:1px;background:var(--fio);border:1px solid var(--fio);grid-template-columns:1fr}
+@media(min-width:700px){.pg{grid-template-columns:repeat(3,1fr)}}
+.pg div{background:var(--branco);padding:18px}
+.pg b{display:block;font-weight:300;font-size:34px;line-height:1.1}
+.pg span{font-size:15px;color:var(--apoio)}
+
+/* casas */
+.chips{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px}
+.chips button{min-width:58px;min-height:48px;padding:6px 12px;border:1px solid var(--fio);background:var(--branco);font-size:18px;font-weight:400;font-variant-numeric:tabular-nums;transition:background-color .2s var(--ease),color .2s var(--ease),transform .16s var(--ease)}
+.chips button:active{transform:scale(.96)}
+.chips button.disp{border-color:var(--tinta)}
+.chips button[aria-pressed=true]{background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
+.leg{margin-top:10px;font-size:14px;color:var(--apoio)}
+.casa{margin-top:28px;border-top:1px solid var(--tinta);padding-top:22px}
+.casa .cab{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px}
+.casa .n{font-weight:300;font-size:clamp(44px,7vw,76px);line-height:.95;letter-spacing:-.03em}
+.casa .n small{display:block;margin-top:10px;font-size:15px;letter-spacing:0;color:var(--apoio)}
+.dados{margin-top:20px;display:grid;grid-template-columns:repeat(2,1fr);gap:14px 24px}
+@media(min-width:760px){.dados{grid-template-columns:repeat(4,auto);justify-content:start;column-gap:52px}}
+.dados b{display:block;font-weight:300;font-size:26px;line-height:1.15;font-variant-numeric:tabular-nums;white-space:nowrap}
+.dados span{font-size:14px;color:var(--apoio)}
+.plantas{margin-top:24px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(min-width:900px){.plantas{grid-template-columns:repeat(4,1fr)}}
+.plantas button{display:block;text-align:left;background:var(--branco);border:1px solid var(--fio);transition:border-color .2s var(--ease)}
+.plantas img{width:100%;aspect-ratio:1.414;object-fit:cover;object-position:left top}
+.plantas span{display:block;padding:10px 12px;font-size:15px;font-weight:400;border-top:1px solid var(--fio)}
+@media(hover:hover) and (pointer:fine){.plantas button:hover{border-color:var(--tinta)}}
+
+/* imagens */
+.imgs{margin-top:26px;display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:700px){.imgs{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.imgs{grid-template-columns:repeat(3,1fr)}}
+.imgs figure{background:var(--branco);border:1px solid var(--fio);display:flex;flex-direction:column}
+.imgs img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.imgs figcaption{padding:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:15px;font-weight:400;margin-top:auto}
+
+/* links */
+.lk{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;padding:20px 0;border-bottom:1px solid var(--fio)}
+.lk b{display:block;font-weight:500}
+.lk span{color:var(--apoio);word-break:break-word}
+
+dialog{border:0;padding:0;background:var(--noir);color:var(--marfim);width:min(96vw,1500px);max-height:94vh;margin:auto}
+dialog::backdrop{background:rgba(17,17,17,.82)}
+dialog .db{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px}
+dialog .db .btn{border-color:var(--marfim);color:var(--marfim);min-height:42px}
+dialog .dv{overflow:auto;max-height:calc(94vh - 70px);background:#fff}
+dialog img{width:100%;min-width:900px}
+.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,16px);opacity:0;background:var(--noir);color:var(--marfim);border:1px solid var(--grafite);padding:12px 18px;font-size:15px;font-weight:400;z-index:60;pointer-events:none;transition:opacity .2s var(--ease),transform .2s var(--ease);max-width:92vw;text-align:center}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media(prefers-reduced-motion:reduce){*{transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <a class="marca" href="#" aria-label="Hub W3W, início">
+    <span id="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="67.918 70.371 156.707 47" role="img" aria-label="W3W"><defs><path id="w3w-w" d="M 127.457031 83.730469 C 126.785156 83.410156 125.980469 83.691406 125.660156 84.363281 L 116.273438 103.914062 C 115.867188 104.71875 115.054688 105.21875 114.15625 105.21875 C 113.257812 105.21875 112.445312 104.71875 112.039062 103.917969 C 112.039062 103.914062 112.035156 103.914062 112.035156 103.910156 L 109.910156 99.484375 C 109.902344 99.464844 109.898438 99.449219 109.890625 99.433594 L 103.707031 86.550781 C 103.703125 86.542969 103.703125 86.539062 103.699219 86.535156 C 103.699219 86.535156 103.695312 86.53125 103.695312 86.527344 C 102.828125 84.8125 101.09375 83.75 99.175781 83.75 C 97.253906 83.75 95.523438 84.8125 94.652344 86.527344 C 94.652344 86.53125 94.652344 86.535156 94.648438 86.539062 C 94.644531 86.546875 94.640625 86.550781 94.636719 86.558594 L 90.921875 94.296875 C 90.902344 94.332031 90.878906 94.359375 90.859375 94.398438 L 86.292969 103.914062 C 86.292969 103.914062 86.292969 103.914062 86.289062 103.917969 C 85.882812 104.71875 85.070312 105.21875 84.171875 105.21875 C 83.273438 105.21875 82.464844 104.71875 82.054688 103.914062 L 72.667969 84.363281 C 72.347656 83.691406 71.542969 83.410156 70.871094 83.730469 C 70.199219 84.054688 69.917969 84.859375 70.238281 85.53125 L 79.640625 105.113281 C 79.640625 105.117188 79.644531 105.121094 79.648438 105.125 C 79.648438 105.125 79.648438 105.125 79.648438 105.128906 C 79.648438 105.128906 79.652344 105.132812 79.652344 105.132812 C 79.652344 105.136719 79.652344 105.136719 79.65625 105.140625 C 79.65625 105.140625 79.65625 105.144531 79.660156 105.148438 C 80.53125 106.855469 82.257812 107.914062 84.171875 107.914062 C 86.09375 107.914062 87.824219 106.847656 88.695312 105.136719 C 88.695312 105.128906 88.699219 105.125 88.699219 105.117188 C 88.703125 105.113281 88.710938 105.105469 88.710938 105.101562 L 90.152344 102.101562 C 90.167969 102.074219 90.1875 102.058594 90.199219 102.03125 L 97.054688 87.75 C 97.054688 87.746094 97.054688 87.746094 97.058594 87.746094 C 97.464844 86.941406 98.277344 86.445312 99.175781 86.445312 C 100.074219 86.445312 100.882812 86.941406 101.289062 87.746094 L 105.023438 95.515625 C 105.027344 95.53125 105.03125 95.546875 105.039062 95.566406 L 109.617188 105.101562 C 109.621094 105.109375 109.625 105.113281 109.628906 105.121094 C 109.632812 105.125 109.632812 105.128906 109.636719 105.136719 C 110.503906 106.847656 112.234375 107.914062 114.15625 107.914062 C 116.019531 107.914062 117.699219 106.90625 118.589844 105.277344 C 118.59375 105.277344 118.59375 105.273438 118.597656 105.273438 C 118.621094 105.238281 118.640625 105.199219 118.664062 105.160156 C 118.664062 105.15625 118.667969 105.152344 118.667969 105.148438 C 118.671875 105.144531 118.675781 105.140625 118.675781 105.132812 C 118.679688 105.128906 118.679688 105.128906 118.679688 105.125 C 118.683594 105.121094 118.6875 105.117188 118.6875 105.113281 L 128.089844 85.53125 C 128.410156 84.859375 128.128906 84.054688 127.457031 83.730469"/></defs><g fill="currentColor"><use href="#w3w-w"/><use href="#w3w-w" transform="translate(94.214844 0)"/><path d="M 134.625 73.074219 C 134.304688 73.566406 134.585938 74.15625 135.257812 74.394531 L 154.808594 81.289062 C 154.808594 81.292969 154.808594 81.292969 154.8125 81.292969 C 155.613281 81.589844 156.113281 82.1875 156.113281 82.847656 C 156.113281 83.507812 155.613281 84.101562 154.8125 84.402344 C 154.808594 84.402344 154.808594 84.40625 154.808594 84.40625 L 150.378906 85.96875 C 150.363281 85.972656 150.34375 85.976562 150.328125 85.980469 L 137.445312 90.523438 C 137.4375 90.527344 137.433594 90.53125 137.429688 90.53125 C 137.429688 90.53125 137.425781 90.53125 137.421875 90.535156 C 135.707031 91.171875 134.644531 92.445312 134.644531 93.855469 C 134.644531 95.265625 135.707031 96.539062 137.421875 97.179688 C 137.425781 97.179688 137.429688 97.179688 137.433594 97.183594 C 137.441406 97.1875 137.445312 97.191406 137.457031 97.191406 L 145.191406 99.921875 C 145.226562 99.9375 145.257812 99.953125 145.292969 99.964844 L 154.808594 103.324219 C 154.808594 103.324219 154.8125 103.324219 154.8125 103.324219 C 155.613281 103.625 156.113281 104.21875 156.113281 104.878906 C 156.113281 105.539062 155.613281 106.136719 154.8125 106.4375 C 154.808594 106.4375 154.808594 106.4375 154.808594 106.4375 L 135.257812 113.332031 C 134.585938 113.570312 134.304688 114.160156 134.625 114.65625 C 134.949219 115.148438 135.753906 115.355469 136.425781 115.117188 L 156.007812 108.210938 C 156.011719 108.210938 156.015625 108.207031 156.019531 108.207031 C 156.019531 108.207031 156.019531 108.207031 156.023438 108.203125 C 156.023438 108.203125 156.027344 108.203125 156.027344 108.203125 C 156.03125 108.203125 156.03125 108.203125 156.035156 108.199219 C 156.039062 108.199219 156.042969 108.199219 156.046875 108.195312 L 156.042969 108.195312 C 157.75 107.554688 158.808594 106.285156 158.808594 104.878906 C 158.808594 103.46875 157.742188 102.195312 156.03125 101.558594 C 156.023438 101.554688 156.019531 101.554688 156.011719 101.554688 C 156.007812 101.550781 156.003906 101.546875 155.996094 101.546875 L 152.996094 100.488281 C 152.96875 100.476562 152.953125 100.460938 152.925781 100.453125 L 138.644531 95.414062 C 138.644531 95.414062 138.640625 95.414062 138.640625 95.410156 C 137.835938 95.113281 137.339844 94.515625 137.339844 93.855469 C 137.339844 93.195312 137.835938 92.597656 138.640625 92.300781 L 146.410156 89.558594 C 146.425781 89.554688 146.445312 89.550781 146.460938 89.546875 L 155.996094 86.183594 C 156.003906 86.179688 156.007812 86.175781 156.015625 86.171875 C 156.019531 86.171875 156.023438 86.171875 156.03125 86.167969 C 157.742188 85.53125 158.808594 84.257812 158.808594 82.847656 C 158.808594 81.476562 157.800781 80.242188 156.175781 79.589844 C 156.171875 79.585938 156.171875 79.585938 156.167969 79.585938 C 156.132812 79.566406 156.09375 79.550781 156.054688 79.535156 C 156.050781 79.535156 156.046875 79.53125 156.042969 79.53125 C 156.039062 79.53125 156.035156 79.527344 156.027344 79.523438 C 156.023438 79.523438 156.023438 79.523438 156.019531 79.523438 C 156.015625 79.519531 156.011719 79.519531 156.007812 79.515625 L 136.425781 72.609375 C 135.753906 72.371094 134.949219 72.578125 134.625 73.074219"/></g></svg></span><i></i><b>HUB</b>
+  </a>
+  <div class="quem">
+    <span>Quem envia</span>
+    <div class="seg" role="group" aria-label="Quem envia">
+      <button type="button" data-q="yoko" aria-pressed="true">Yoko</button>
+      <button type="button" data-q="wilson" aria-pressed="false">Wilson</button>
+    </div>
+  </div>
+</header>
+
+<main class="home" id="v-home">
+  <h1>Tudo para ofertar, <span class="serif">num só lugar.</span></h1>
+  <p class="sub">Textos prontos, fichas, tabelas, plantas e imagens de cada empreendimento. Escolha o produto e copie o que precisa.</p>
+  <div class="galeria" id="galeria"></div>
+</main>
+
+<main class="claro" id="v-prod" hidden>
+  <div class="capa">
+    <img src="img/petrella/fachada.jpg" alt="Fachada do Casa Jardim Petrella ao entardecer">
+    <div class="in">
+      <a class="volta" href="#">Todos os produtos</a>
+      <h1>Casa Jardim <span class="serif">Petrella</span></h1>
+      <div class="tarja">Obras aceleradas · entrega ago/2027</div>
+      <div class="fatos">
+        <div><b>18 casas</b><span>condomínio fechado, Brooklin</span></div>
+        <div><b>485 a 618 m²</b><span>área privativa total</span></div>
+        <div><b>3 ou 4 suítes</b><span>4 vagas por casa</span></div>
+        <div><b>7 disponíveis</b><span>tabela de setembro/2026</span></div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav" id="nav" aria-label="Seções do produto">
+    <button type="button" data-s="textos">Textos</button>
+    <button type="button" data-s="ficha">Ficha técnica</button>
+    <button type="button" data-s="tabela">Tabela</button>
+    <button type="button" data-s="casas">Casas e plantas</button>
+    <button type="button" data-s="imagens">Imagens</button>
+    <button type="button" data-s="links">Links</button>
+  </nav>
+
+  <section id="textos">
+    <h2>Textos para <span class="serif">copiar e colar</span></h2>
+    <p>Já formatados para o WhatsApp. Troque [nome] pelo nome do cliente. O nome de quem envia muda no botão do topo.</p>
+    <div id="lista-textos"></div>
+  </section>
+
+  <section id="ficha">
+    <h2>Ficha <span class="serif">técnica</span></h2>
+    <p>Card compacto para enviar pelo WhatsApp, em imagem ou PDF, com o contato de quem envia.</p>
+    <div class="ficha">
+      <img id="ficha-img" src="img/petrella/ficha-tecnica-yoko.png" alt="Card da ficha técnica do Casa Jardim Petrella">
+      <div>
+        <div class="acoes">
+          <button class="btn cheio" type="button" id="ficha-png">Baixar imagem</button>
+          <button class="btn" type="button" id="ficha-pdf">Baixar PDF</button>
+          <button class="btn" type="button" id="ficha-txt">Copiar em texto</button>
+        </div>
+        <ul id="ficha-lista"></ul>
+        <div class="nota"><b>Confirmar com a incorporadora antes de divulgar:</b> portaria 24h, guarita blindada e ponto para carro elétrico entraram a pedido da Yoko e não constam nos books. No folder, a churrasqueira aparece como previsão de instalação, por isso o card diz “espaço para churrasqueira”.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tabela">
+    <h2>Tabela e <span class="serif">condições</span></h2>
+    <p>Referência de setembro/2026, com as 7 casas disponíveis. Confirme valores e disponibilidade antes de enviar uma proposta.</p>
+    <div class="pg">
+      <div><b>15%</b><span>no ato, na assinatura</span></div>
+      <div><b>25%</b><span>em 11 parcelas mensais</span></div>
+      <div><b>60%</b><span>parcela única em 01/06/2027</span></div>
+    </div>
+    <div class="tw"><table>
+      <thead><tr><th>Casa</th><th>Coberta m²</th><th>Descoberta m²</th><th>Total m²</th><th>Ato</th><th>11 mensais</th><th>Parcela única</th><th>Valor total</th><th></th></tr></thead>
+      <tbody id="tb"></tbody>
+    </table></div>
+    <div class="nota">Valores corrigidos pelo INCC-DI até o Habite-se. Depois dele, IPCA-FGV mais juros de 12% ao ano. Documento sem valor contratual, sujeito à disponibilidade das unidades.</div>
+    <div class="acoes" style="margin-top:18px">
+      <button class="btn" type="button" data-dl="pdf/casa-jardim-petrella-tabela-set-2026.pdf">Baixar tabela original (PDF)</button>
+      <button class="btn" type="button" id="tab-copy">Copiar resumo de valores</button>
+    </div>
+  </section>
+
+  <section id="casas">
+    <h2>Casas e <span class="serif">plantas</span></h2>
+    <p>Escolha a casa para ver metragem, valor, as plantas de contrato e baixar o book.</p>
+    <div class="chips" id="chips"></div>
+    <p class="leg">Contorno escuro: disponível na tabela de setembro/2026.</p>
+    <div class="casa" id="casa"></div>
+  </section>
+
+  <section id="imagens">
+    <h2>Imagens para <span class="serif">enviar</span></h2>
+    <p>Toque em baixar para salvar ou compartilhar direto no WhatsApp.</p>
+    <div class="imgs" id="imgs"></div>
+    <div class="nota"><b>Faltam os renders.</b> Living, jardim, rooftop e suítes entram aqui assim que o folder ou as imagens originais forem enviados.</div>
+  </section>
+
+  <section id="links">
+    <h2>Links e <span class="serif">endereço</span></h2>
+    <div id="lks" style="margin-top:14px"></div>
+  </section>
+</main>
+
+<dialog id="dlg" aria-label="Planta ampliada">
+  <div class="db"><span id="dlg-t"></span><span class="acoes"><button class="btn" type="button" id="dlg-dl">Baixar</button><button class="btn" type="button" id="dlg-x">Fechar</button></span></div>
+  <div class="dv"><img id="dlg-img" alt=""></div>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const LOGO='<svg xmlns="http://www.w3.org/2000/svg" viewBox="67.918 70.371 156.707 47" role="img" aria-label="W3W">__LOGO__</svg>';
+
+
+const QUEM={yoko:{nome:'Yoko',apres:'a corretora Yoko',fone:'(11) 94029-7871'},wilson:{nome:'Wilson',apres:'o Wilson',fone:'(11) 94029-8171'}};
+let quem='yoko';
+try{const s=localStorage.getItem('w3w-hub-quem');if(s&&QUEM[s])quem=s}catch(e){}
+
+const PRODUTOS=[
+  {id:'casa-jardim-petrella',nome:'Casa Jardim Petrella',onde:'Brooklin · casas em condomínio',img:'img/petrella/fachada.jpg',ativo:true},
+  {nome:'Seiza Paraíso',onde:'Paraíso · studios',img:'img/seiza.jpg'},
+  {nome:'Síntese',onde:'Moema · studios'},
+  {nome:'Ara Faria Lima',onde:'Pinheiros'},
+  {nome:'Casas Altas Morumbi',onde:'Morumbi'}
+];
+
+const TAB={
+ '01':{c:'366,26',d:'153,83',t:'520,09',ato:'R$ 1.092.189,00',m:'R$ 165.483,18',u:'R$ 4.368.756,00',v:'R$ 7.281.260,00'},
+ '06':{c:'364,91',d:'123,74',t:'488,65',ato:'R$ 1.026.165,00',m:'R$ 155.479,55',u:'R$ 4.104.660,00',v:'R$ 6.841.100,00'},
+ '08':{c:'364,91',d:'123,74',t:'488,65',ato:'R$ 1.026.165,00',m:'R$ 155.479,55',u:'R$ 4.104.660,00',v:'R$ 6.841.100,00'},
+ '09':{c:'364,91',d:'123,74',t:'488,65',ato:'R$ 1.026.165,00',m:'R$ 155.479,55',u:'R$ 4.104.660,00',v:'R$ 6.841.100,00'},
+ '10':{c:'366,97',d:'213,13',t:'580,10',ato:'R$ 1.218.210,00',m:'R$ 184.577,27',u:'R$ 4.872.840,00',v:'R$ 8.121.400,00'},
+ '14':{c:'364,91',d:'151,30',t:'516,21',ato:'R$ 1.084.041,00',m:'R$ 164.248,64',u:'R$ 4.336.164,00',v:'R$ 7.226.940,00'},
+ '17':{c:'364,91',d:'151,30',t:'516,21',ato:'R$ 1.084.041,00',m:'R$ 164.248,64',u:'R$ 4.336.164,00',v:'R$ 7.226.940,00'}
+};
+const BOOKS=['01','02','03','05','06','08','09','14','17'];
+const CASAS=['01','02','03','05','06','08','09','10','14','17'];
+const PAV=[[3,'Subsolo'],[4,'Térreo'],[5,'1º pavimento'],[6,'Rooftop']];
+
+const FICHA=[
+ 'Obras aceleradas, entrega prevista para agosto/2027',
+ 'Condomínio fechado com 18 casas',
+ 'De 485 a 618 m²',
+ '3 ou 4 suítes',
+ '4 vagas, uma com ponto para carro elétrico',
+ '4 pavimentos: subsolo, térreo, 1º pavimento e rooftop com piscina e espaço para churrasqueira',
+ 'Portaria 24h e guarita blindada',
+ 'Terreno de 4.785,72 m²',
+ 'Arquitetura de Gui Mattos',
+ 'Rua Pascoal Pais, 270, esquina com a Rua Roque Petrella, Brooklin'
+];
+
+const TEXTOS=[
+ {g:'Primeiro contato'},
+ {t:'Abertura',s:'Lead que pediu informações',x:q=>`Olá, [nome]! Sou ${q.apres}, da W3W Imóveis, e atendo o Casa Jardim Petrella. Tudo bem?\n\nVocê solicitou informações das casas, correto?`},
+ {t:'Captação',s:'Contato frio ou indicação',x:q=>`Olá, [nome]! Sou ${q.apres}, da W3W Imóveis. Estou apresentando um condomínio fechado de 18 casas no Brooklin, com jardim e rooftop privativos, de 485 a 618 m².\n\nPosso enviar a ficha técnica?`},
+ {g:'Informações do produto'},
+ {t:'Apresentação',s:'Resumo do empreendimento',x:()=>`*Casa Jardim Petrella · Brooklin*\nObras aceleradas, com entrega prevista para agosto de 2027.\n\nCondomínio fechado com 18 casas, de 485 m² a 618 m².\n3 ou 4 suítes e 4 vagas, uma delas com ponto para carro elétrico.\n4 pavimentos: subsolo, térreo, 1º pavimento e rooftop com piscina e espaço para churrasqueira.\nPortaria 24h e guarita blindada.\nTerreno de 4.785 m² e arquitetura de Gui Mattos.`},
+ {t:'Lazer',s:'Privativo e comum',x:()=>`*Lazer privativo*\n• Rooftop gourmet com piscina e espaço para churrasqueira\n• Jardim integrado ao living\n\n*Lazer comum*\n• Academia equipada\n• Espaço kids\n• Pet place`},
+ {t:'Disponibilidade',s:'Casas, metragens e faixa de preço',x:()=>`São 18 casas no total e *7 estão disponíveis*: casas 1, 6, 8, 9, 10, 14 e 17.\n\n*Metragens das casas disponíveis*\n488,65 m² · 516,21 m² · 520,09 m² · 580,10 m²\n\n*Valores* de R$ 6,84 milhões a R$ 8,12 milhões (tabela de setembro/2026).`},
+ {t:'Pagamento',s:'Fluxo da tabela',x:()=>`*Condição de pagamento*\n• 15% no ato\n• 25% em 11 parcelas mensais\n• 60% em parcela única em junho/2027\n\nValores corrigidos pelo INCC-DI até o Habite-se.`},
+ {t:'Localização',s:'Endereço',x:()=>`*Localização*\nRua Pascoal Pais, 270, esquina com a Rua Roque Petrella, no Brooklin.`},
+ {t:'Prazo de entrega',s:'',x:()=>`*Prazo de entrega*\nObras aceleradas, com entrega prevista para agosto de 2027.`},
+ {t:'Site',s:'Link oficial',x:()=>`Conheça o Casa Jardim Petrella:\nhttps://casajardimpetrella.com.br`},
+ {g:'Follow-up'},
+ {t:'Depois do material',s:'1 a 2 dias sem resposta',x:()=>`Olá, [nome], tudo bem? Conseguiu ver o material do Casa Jardim Petrella que enviei?\n\nSe quiser, separo a planta e a condição da casa que mais combina com o que você procura.`},
+ {t:'Convite para visita',s:'',x:()=>`[nome], as obras do Casa Jardim Petrella estão aceleradas e vale ver de perto.\n\nTenho horários nesta semana para uma visita. Qual dia fica melhor para você?`},
+ {t:'Últimas casas',s:'Escassez',x:()=>`[nome], passando para avisar que restam 7 das 18 casas do Casa Jardim Petrella.\n\nSe alguma planta chamou sua atenção, consigo confirmar a disponibilidade e a condição atualizada ainda hoje.`},
+ {t:'Retomada',s:'Lead parado há semanas',x:()=>`Olá, [nome]. Faz um tempo que conversamos sobre o Casa Jardim Petrella.\n\nVocê segue buscando casa em condomínio no Brooklin? Se o momento mudou, me avise e eu ajusto a busca para você.`}
+];
+
+const $=s=>document.querySelector(s);
+const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+let tt;function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('on'),2200)}
+
+async function copiar(texto,btn){
+  let ok=false;
+  try{await navigator.clipboard.writeText(texto);ok=true}catch(e){
+    try{const a=document.createElement('textarea');a.value=texto;a.style.cssText='position:fixed;opacity:0';document.body.appendChild(a);a.select();ok=document.execCommand('copy');a.remove()}catch(e2){}
+  }
+  if(ok&&btn){const o=btn.dataset.o||btn.textContent;btn.dataset.o=o;btn.textContent='Copiado';btn.classList.add('ok');setTimeout(()=>{btn.textContent=o;btn.classList.remove('ok')},1600)}
+  toast(ok?'Texto copiado':'Não foi possível copiar. Selecione o texto e copie manualmente.');
+}
+
+async function baixar(caminho,btn){
+  const nome=caminho.split('/').pop();
+  let dl=null;
+  try{if(window.claude&&window.claude.use)dl=await window.claude.use('downloads')}catch(e){}
+  if(dl){
+    try{
+      if(btn)btn.disabled=true;
+      const r=await fetch(caminho);if(!r.ok)throw {code:'fetch'};
+      await dl.save({filename:nome,data:await r.blob()});
+      toast('Arquivo pronto');
+    }catch(e){
+      if(e&&e.code==='declined'){}
+      else if(e&&e.code==='rate_limited')toast('Aguarde um instante e tente de novo');
+      else abrir(caminho);
+    }finally{if(btn)btn.disabled=false}
+  }else abrir(caminho);
+}
+function abrir(caminho){const a=document.createElement('a');a.href=caminho;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove()}
+
+function textoCasa(n){const d=TAB[n];return `*Casa ${n} · Casa Jardim Petrella*\nÁrea privativa total: ${d.t} m² (${d.c} m² cobertos + ${d.d} m² descobertos)\n\n*Valor total:* ${d.v}\n• Ato (15%): ${d.ato}\n• 11 parcelas mensais de ${d.m} (25%)\n• Parcela única em 01/06/2027 (60%): ${d.u}\n\nTabela de setembro/2026, sujeita a confirmação e à disponibilidade.`}
+
+function rGaleria(){
+  $('#galeria').innerHTML=PRODUTOS.map((p,i)=>p.ativo
+   ?`<a class="card dest" href="#${p.id}"><img src="${p.img}" alt=""><div class="tx"><div class="nome">${p.nome}</div><div class="onde">${p.onde}</div></div></a>`
+   :`<div class="card ${p.img?'':'vazio'}" aria-disabled="true">${p.img?`<img src="${p.img}" alt="" style="opacity:.45">`:''}<div class="st label">Em preparação</div><div class="tx"><div class="nome">${p.nome}</div><div class="onde">${p.onde}</div></div></div>`).join('');
+}
+function rTextos(){
+  const q=QUEM[quem];
+  $('#lista-textos').innerHTML=TEXTOS.map((o,i)=>o.g?`<h3>${o.g}</h3>`:`<div class="txt"><div class="t">${o.t}${o.s?`<small>${o.s}</small>`:''}</div><pre>${esc(o.x(q))}</pre><button class="btn cheio" type="button" data-tx="${i}">Copiar</button></div>`).join('');
+}
+function rFicha(){
+  $('#ficha-img').src=`img/petrella/ficha-tecnica-${quem}.png`;
+  $('#ficha-lista').innerHTML=FICHA.map(f=>`<li>${f}</li>`).join('');
+}
+function rTabela(){
+  $('#tb').innerHTML=Object.keys(TAB).sort().map(n=>{const d=TAB[n];return `<tr><td>Casa ${n}</td><td data-l="Coberta">${d.c} m²</td><td data-l="Descoberta">${d.d} m²</td><td data-l="Total">${d.t} m²</td><td data-l="Ato (15%)">${d.ato}</td><td data-l="11 mensais (25%)">${d.m}</td><td data-l="Parcela única (60%)">${d.u}</td><td class="tot" data-l="Valor total">${d.v}</td><td><button class="btn" type="button" data-cc="${n}">Copiar condição</button></td></tr>`}).join('');
+}
+let casaSel='01';
+function rCasas(){
+  $('#chips').innerHTML=CASAS.map(n=>`<button type="button" class="${TAB[n]?'disp':''}" aria-pressed="${n===casaSel}" data-casa="${n}" aria-label="Casa ${n}">${n}</button>`).join('');
+  const d=TAB[casaSel],tem=BOOKS.includes(casaSel);
+  let h=`<div class="cab"><div class="n">Casa ${casaSel}<small>${d?'Disponível na tabela de setembro/2026':'Fora da tabela de setembro/2026. Confirme a disponibilidade antes de ofertar.'}</small></div><div class="acoes">`;
+  if(tem)h+=`<button class="btn cheio" type="button" data-dl="pdf/casa-jardim-petrella-book-casa-${casaSel}.pdf">Baixar book (PDF)</button>`;
+  if(d)h+=`<button class="btn" type="button" data-cc="${casaSel}">Copiar condição</button>`;
+  h+=`</div></div>`;
+  if(d)h+=`<div class="dados"><div><b>${d.t} m²</b><span>área privativa total</span></div><div><b>${d.c} m²</b><span>coberta</span></div><div><b>${d.d} m²</b><span>descoberta</span></div><div><b>${d.v}</b><span>valor total</span></div></div>`;
+  if(tem)h+=`<div class="plantas">${PAV.map(([p,l])=>`<button type="button" data-pl="img/petrella/plantas/c${casaSel}-${p}.jpg" data-plt="Casa ${casaSel} · ${l}"><img loading="lazy" src="img/petrella/plantas/c${casaSel}-${p}.jpg" alt="Planta do ${l} da casa ${casaSel}"><span>${l}</span></button>`).join('')}</div>`;
+  else h+=`<div class="nota"><b>Book da casa ${casaSel} ainda não recebido.</b> As plantas entram aqui quando o arquivo for enviado.</div>`;
+  $('#casa').innerHTML=h;
+}
+function rImgs(){
+  const L=[['img/petrella/fachada.jpg','Fachada'],['img/petrella/implantacao.jpg','Implantação do condomínio'],[`img/petrella/ficha-tecnica-${quem}.png`,'Ficha técnica']];
+  $('#imgs').innerHTML=L.map(([s,l])=>`<figure><img loading="lazy" src="${s}" alt="${l}"><figcaption>${l}<button class="btn" type="button" data-dl="${s}">Baixar</button></figcaption></figure>`).join('');
+}
+function rLinks(){
+  const L=[['Site oficial','https://casajardimpetrella.com.br','https://casajardimpetrella.com.br'],['Endereço','Rua Pascoal Pais, 270, esquina com a Rua Roque Petrella, Brooklin, São Paulo','https://www.google.com/maps/search/?api=1&query=Rua+Pascoal+Pais+270+Brooklin+S%C3%A3o+Paulo'],[`WhatsApp de ${QUEM[quem].nome}`,QUEM[quem].fone,'https://wa.me/55'+QUEM[quem].fone.replace(/\D/g,'')]];
+  $('#lks').innerHTML=L.map(([t,v,u],i)=>`<div class="lk"><div><b>${t}</b><span>${v}</span></div><div class="acoes"><button class="btn" type="button" data-cp="${esc(i===2?u:v)}">Copiar</button><a class="btn" href="${u}" target="_blank" rel="noopener">Abrir</a></div></div>`).join('');
+}
+function rQuem(){
+  document.querySelectorAll('[data-q]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.q===quem));
+  rTextos();rFicha();rImgs();rLinks();
+}
+
+document.addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  if(b.dataset.q){quem=b.dataset.q;try{localStorage.setItem('w3w-hub-quem',quem)}catch(x){}rQuem();return}
+  if(b.dataset.tx){copiar(TEXTOS[b.dataset.tx].x(QUEM[quem]),b);return}
+  if(b.dataset.cc){copiar(textoCasa(b.dataset.cc),b);return}
+  if(b.dataset.cp){copiar(b.dataset.cp,b);return}
+  if(b.dataset.dl){baixar(b.dataset.dl,b);return}
+  if(b.dataset.casa){casaSel=b.dataset.casa;rCasas();return}
+  if(b.dataset.s){document.getElementById(b.dataset.s).scrollIntoView();return}
+  if(b.dataset.pl){$('#dlg-img').src=b.dataset.pl;$('#dlg-img').alt=b.dataset.plt;$('#dlg-t').textContent=b.dataset.plt;$('#dlg-dl').dataset.dl=b.dataset.pl;$('#dlg').showModal();return}
+  if(b.id==='dlg-x'){$('#dlg').close();return}
+  if(b.id==='ficha-png'){baixar(`img/petrella/ficha-tecnica-${quem}.png`,b);return}
+  if(b.id==='ficha-pdf'){baixar(`pdf/casa-jardim-petrella-ficha-tecnica-${quem}.pdf`,b);return}
+  if(b.id==='ficha-txt'){copiar('*Casa Jardim Petrella · Ficha técnica*\n'+FICHA.map(f=>'• '+f).join('\n'),b);return}
+  if(b.id==='tab-copy'){copiar('*Casa Jardim Petrella · casas disponíveis (tabela de setembro/2026)*\n'+Object.keys(TAB).sort().map(n=>`• Casa ${n}: ${TAB[n].t} m² · ${TAB[n].v}`).join('\n')+'\n\n15% no ato, 25% em 11 mensais e 60% em parcela única em junho/2027.',b);return}
+});
+$('#dlg').addEventListener('click',e=>{if(e.target===$('#dlg'))$('#dlg').close()});
+
+function rota(){
+  const h=location.hash.replace('#','');
+  const prod=h==='casa-jardim-petrella';
+  $('#v-home').hidden=prod;$('#v-prod').hidden=!prod;
+  document.body.style.background=prod?'var(--papel)':'var(--noir)';
+  document.title=prod?'Casa Jardim Petrella · Hub W3W':'Hub W3W';
+  window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',rota);
+
+const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.s===en.target.id));const on=document.querySelector('#nav .on');if(on)on.scrollIntoView({block:'nearest',inline:'nearest'})}})},{rootMargin:'-120px 0px -60% 0px'});
+document.querySelectorAll('#v-prod section').forEach(s=>io.observe(s));
+
+rGaleria();rTabela();rCasas();rQuem();rota();
+</script>
+</body>
+</html>
