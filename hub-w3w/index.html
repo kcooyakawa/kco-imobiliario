@@ -349,12 +349,12 @@ const TEXTOS=[
  {t:'Abertura',s:'Lead que pediu informações',x:q=>`Olá, [nome]! Sou ${q.apres}, da W3W Imóveis, e atendo o Casa Jardim Petrella. Tudo bem?\n\nVocê solicitou informações das casas, correto?`},
  {t:'Captação',s:'Contato frio ou indicação',x:q=>`Olá, [nome]! Sou ${q.apres}, da W3W Imóveis. Estou apresentando um condomínio fechado de 18 casas no Brooklin, com jardim e rooftop privativos, de 485 a 618 m².\n\nPosso enviar a ficha técnica?`},
  {g:'Informações do produto'},
- {t:'Apresentação',s:'Resumo do empreendimento',x:()=>`*Casa Jardim Petrella · Brooklin*\nObras aceleradas, com entrega prevista para agosto de 2027.\n\nCondomínio fechado com 18 casas, de 485 m² a 618 m².\n3 ou 4 suítes e 4 vagas, uma delas com ponto para carro elétrico.\n4 pavimentos: subsolo, térreo, 1º pavimento e rooftop com piscina e espaço para churrasqueira.\nPortaria 24h e guarita blindada.\nTerreno de 4.785 m² e arquitetura de Gui Mattos.`},
- {t:'Lazer',s:'Privativo e comum',x:()=>`*Lazer privativo*\n• Rooftop gourmet com piscina e espaço para churrasqueira\n• Jardim integrado ao living\n\n*Lazer comum*\n• Academia equipada\n• Espaço kids\n• Pet place`},
- {t:'Disponibilidade',s:'Casas, metragens e faixa de preço',x:()=>`São 18 casas no total e *7 estão disponíveis*: casas 1, 6, 8, 9, 10, 14 e 17.\n\n*Metragens das casas disponíveis*\n488,65 m² · 516,21 m² · 520,09 m² · 580,10 m²\n\n*Valores* de R$ 6,84 milhões a R$ 8,12 milhões (tabela de setembro/2026).`},
- {t:'Pagamento',s:'Fluxo da tabela',x:()=>`*Condição de pagamento*\n• 15% no ato\n• 25% em 11 parcelas mensais\n• 60% em parcela única em junho/2027\n\nValores corrigidos pelo INCC-DI até o Habite-se.`},
- {t:'Localização',s:'Endereço',x:()=>`*Localização*\nRua Pascoal Pais, 270, esquina com a Rua Roque Petrella, no Brooklin.`},
- {t:'Prazo de entrega',s:'',x:()=>`*Prazo de entrega*\nObras aceleradas, com entrega prevista para agosto de 2027.`},
+ {t:'Apresentação',s:'Resumo do empreendimento',x:()=>`Casa Jardim Petrella · Brooklin\nObras aceleradas, com entrega prevista para agosto de 2027.\n\nCondomínio fechado com 18 casas, de 485 m² a 618 m².\n3 ou 4 suítes e 4 vagas, uma delas com ponto para carro elétrico.\n4 pavimentos: subsolo, térreo, 1º pavimento e rooftop com piscina e espaço para churrasqueira.\nPortaria 24h e guarita blindada.\nTerreno de 4.785 m² e arquitetura de Gui Mattos.`},
+ {t:'Lazer',s:'Privativo e comum',x:()=>`Lazer privativo:\n• Rooftop gourmet com piscina e espaço para churrasqueira\n• Jardim integrado ao living\n\nLazer comum:\n• Academia equipada\n• Espaço kids\n• Pet place`},
+ {t:'Disponibilidade',s:'Casas, metragens e faixa de preço',x:()=>`São 18 casas no total e 7 estão disponíveis: casas 1, 6, 8, 9, 10, 14 e 17.\n\nMetragens das casas disponíveis:\n488,65 m² · 516,21 m² · 520,09 m² · 580,10 m²\n\nValores de R$ 6,84 milhões a R$ 8,12 milhões.`},
+ {t:'Pagamento',s:'Fluxo da tabela',x:()=>`Condição de pagamento:\n• 15% no ato\n• 25% em 11 parcelas mensais\n• 60% em parcela única em junho/2027\n\nValores corrigidos pelo INCC-DI até o Habite-se.`},
+ {t:'Localização',s:'Endereço',x:()=>`Localização:\nRua Pascoal Pais, 270, esquina com a Rua Roque Petrella, no Brooklin.`},
+ {t:'Prazo de entrega',s:'',x:()=>`Prazo de entrega:\nObras aceleradas, com entrega prevista para agosto de 2027.`},
  {t:'Site',s:'Link oficial',x:()=>`Conheça o Casa Jardim Petrella:\nhttps://casajardimpetrella.com.br`},
  {g:'Follow-up'},
  {t:'Depois do material',s:'1 a 2 dias sem resposta',x:()=>`Olá, [nome], tudo bem? Conseguiu ver o material do Casa Jardim Petrella que enviei?\n\nSe quiser, separo a planta e a condição da casa que mais combina com o que você procura.`},
@@ -395,7 +395,7 @@ async function baixar(caminho,btn){
 }
 function abrir(caminho){const a=document.createElement('a');a.href=caminho;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove()}
 
-function textoCasa(n){const d=TAB[n];return `*Casa ${n} · Casa Jardim Petrella*\nÁrea privativa total: ${d.t} m² (${d.c} m² cobertos + ${d.d} m² descobertos)\n\n*Valor total:* ${d.v}\n• Ato (15%): ${d.ato}\n• 11 parcelas mensais de ${d.m} (25%)\n• Parcela única em 01/06/2027 (60%): ${d.u}\n\nTabela de setembro/2026, sujeita a confirmação e à disponibilidade.`}
+function textoCasa(n){const d=TAB[n];return `Casa ${n} · Casa Jardim Petrella\nÁrea privativa total: ${d.t} m² (${d.c} m² cobertos + ${d.d} m² descobertos)\n\nValor total: ${d.v}\n• Ato (15%): ${d.ato}\n• 11 parcelas mensais de ${d.m} (25%)\n• Parcela única em 01/06/2027 (60%): ${d.u}\n\nTabela de setembro/2026, sujeita a confirmação e à disponibilidade.`}
 
 function rGaleria(){
   $('#galeria').innerHTML=PRODUTOS.map((p,i)=>p.ativo
@@ -452,8 +452,8 @@ document.addEventListener('click',e=>{
   if(b.id==='dlg-x'){$('#dlg').close();return}
   if(b.id==='ficha-png'){baixar(`img/petrella/ficha-tecnica-${quem}.png`,b);return}
   if(b.id==='ficha-pdf'){baixar(`pdf/casa-jardim-petrella-ficha-tecnica-${quem}.pdf`,b);return}
-  if(b.id==='ficha-txt'){copiar('*Casa Jardim Petrella · Ficha técnica*\n'+FICHA.map(f=>'• '+f).join('\n'),b);return}
-  if(b.id==='tab-copy'){copiar('*Casa Jardim Petrella · casas disponíveis (tabela de setembro/2026)*\n'+Object.keys(TAB).sort().map(n=>`• Casa ${n}: ${TAB[n].t} m² · ${TAB[n].v}`).join('\n')+'\n\n15% no ato, 25% em 11 mensais e 60% em parcela única em junho/2027.',b);return}
+  if(b.id==='ficha-txt'){copiar('Casa Jardim Petrella · Ficha técnica\n'+FICHA.map(f=>'• '+f).join('\n'),b);return}
+  if(b.id==='tab-copy'){copiar('Casa Jardim Petrella · casas disponíveis (tabela de setembro/2026)\n'+Object.keys(TAB).sort().map(n=>`• Casa ${n}: ${TAB[n].t} m² · ${TAB[n].v}`).join('\n')+'\n\n15% no ato, 25% em 11 mensais e 60% em parcela única em junho/2027.',b);return}
 });
 $('#dlg').addEventListener('click',e=>{if(e.target===$('#dlg'))$('#dlg').close()});
 
