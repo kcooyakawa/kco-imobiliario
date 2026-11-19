@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VP Cotovia Moema — Ficha Técnica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --or:#D9481E; --bl:#1755A2; --ink:#121212; --paper:#FFFFFF; --paper2:#F4F4F2;
+  --mut:#5F5F5B; --line:#E2E2DF; --am:#EC8A17;
+  --pad:clamp(20px,4.5vw,64px); --max:1240px;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scrollbar-color:var(--ink) var(--paper)}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.6 "Inter Tight",system-ui,sans-serif;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+::selection{background:var(--or);color:#fff}
+:focus-visible{outline:2px solid var(--bl);outline-offset:3px;border-radius:2px}
+img,video,svg{display:block;max-width:100%}
+h1,h2,h3,.disp{font-family:"Familjen Grotesk",sans-serif;font-weight:600;letter-spacing:-.03em;line-height:1;text-wrap:balance}
+a{color:inherit;text-underline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+
+/* ---------- HERO (content starts at top) ---------- */
+.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.brand{display:flex;align-items:center;gap:10px;font:600 15px "Familjen Grotesk"}
+.brand svg{width:34px;height:22px}
+.brand small{font:500 11px "Inter Tight";letter-spacing:.16em;color:var(--mut)}
+.top nav{display:flex;gap:22px;font-size:14px}
+.top nav a{text-decoration:none;color:var(--mut);transition:color .2s}
+.top nav a:hover{color:var(--ink)}
+
+.hero{padding:clamp(28px,5vw,64px) 0 clamp(28px,4vw,48px);display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(24px,5vw,72px);align-items:end}
+.hero h1{font-size:clamp(56px,10.5vw,96px);font-weight:700;letter-spacing:-.04em;line-height:.9}
+.hero h1 em{font-style:normal;color:var(--or)}
+.hero .intro{font-size:clamp(17px,1.5vw,19px);color:#2a2824;max-width:44ch}
+.facts{display:flex;flex-wrap:wrap;gap:0;margin-top:22px;border-top:1px solid var(--ink)}
+.facts span{font-size:14px;padding:10px 18px 0 0;margin-right:18px;color:var(--mut)}
+.facts b{color:var(--ink);font-weight:600}
+
+.stage{position:relative;height:min(78vh,760px);min-height:420px;overflow:hidden;background:var(--ink)}
+.stage img{width:100%;height:100%;object-fit:cover;object-position:center 40%;transform:scale(1.06);animation:settle 1.8s var(--ease) forwards}
+@keyframes settle{to{transform:scale(1)}}
+.stage .frame{position:absolute;left:0;bottom:0;width:clamp(120px,18vw,240px);height:auto}
+.stage .frame2{position:absolute;right:0;top:0;width:clamp(90px,12vw,170px)}
+.stage figcaption{position:absolute;right:var(--pad);bottom:16px;color:#fff;font-size:11px;opacity:.75}
+
+/* ---------- KEY FIGURES as a typographic line ---------- */
+.line{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--ink)}
+.line div{padding:28px 20px 26px 0}
+.line div+div{padding-left:20px;border-left:1px solid var(--line)}
+.line .disp{font-size:clamp(30px,4vw,52px);font-weight:600}
+.line .disp small{font-size:.45em;font-weight:500;margin-left:2px}
+.line p{font-size:14px;color:var(--mut);margin-top:6px}
+
+section,section.wrap{padding-top:clamp(80px,11vw,140px)}
+.sh{display:grid;grid-template-columns:1fr 1fr;gap:24px 64px;align-items:end;margin-bottom:clamp(32px,4vw,52px)}
+.sh h2{font-size:clamp(38px,5.4vw,72px)}
+.sh p{color:var(--mut);max-width:52ch;font-size:17px}
+
+/* ---------- TYPOLOGY TABS ---------- */
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--ink);overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{padding:14px 20px 12px;font:600 16px "Familjen Grotesk";color:var(--mut);border-bottom:3px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:color .2s,border-color .3s var(--ease)}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected=true]{color:var(--ink);border-color:var(--or)}
+.panel{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(24px,4vw,56px);padding-top:clamp(28px,3.5vw,44px)}
+.panel[hidden]{display:none}
+.panel .pic{aspect-ratio:4/3;overflow:hidden;background:var(--paper2)}
+.panel .pic img{width:100%;height:100%;object-fit:cover;animation:fade .6s var(--ease)}
+@keyframes fade{from{opacity:0;filter:blur(6px)}to{opacity:1;filter:none}}
+.panel h3{font-size:clamp(30px,3.4vw,44px);margin-bottom:6px}
+.panel .area{font:500 18px "Familjen Grotesk";color:var(--or);margin-bottom:22px}
+.kv{border-top:1px solid var(--ink)}
+.kv div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.kv dt{color:var(--mut)}
+.kv dd{font-weight:600;text-align:right}
+.panel .note{font-size:13px;color:var(--mut);margin-top:16px}
+
+/* distribution */
+.dist{margin-top:clamp(40px,5vw,64px)}
+.bar{display:flex;height:12px;gap:2px}
+.bar i{display:block}
+.dist ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:14px;font-size:14px;color:var(--mut)}
+.dist li b{color:var(--ink);font-weight:600;margin-right:4px}
+.dist li::before{content:"";display:inline-block;width:9px;height:9px;margin-right:8px;background:var(--c)}
+
+/* plan */
+.plan{margin-top:clamp(40px,5vw,64px);background:#fff;padding:clamp(12px,2vw,28px);cursor:zoom-in}
+.plan img{width:100%}
+
+/* ---------- VAGAS (dark band) ---------- */
+.band{background:var(--ink);color:var(--paper);margin-top:clamp(80px,11vw,140px);padding:clamp(64px,9vw,120px) 0;position:relative;overflow:hidden}
+.band .sh p{color:#B9B3A7}
+.band .big{font:700 clamp(120px,22vw,300px)/.8 "Familjen Grotesk";letter-spacing:-.05em;color:var(--or)}
+.vg{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(32px,5vw,80px);align-items:end}
+.vg ul{list-style:none;border-top:1px solid #3a3833}
+.vg li{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #3a3833;font-size:15px}
+.vg li span{color:#B9B3A7}
+.band .shape{position:absolute;right:-40px;top:-40px;width:clamp(160px,22vw,300px);opacity:.95}
+
+/* ---------- LAZER carousel ---------- */
+.levels{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,40px);margin-bottom:clamp(32px,4vw,48px)}
+.levels h3{font-size:20px;padding-bottom:10px;border-bottom:1px solid var(--ink);margin-bottom:10px}
+.levels p{font-size:15px;color:#3a3732}
+.car{position:relative}
+.track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 var(--pad);scroll-padding:0 var(--pad)}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 min(78vw,860px);scroll-snap-align:start}
+.slide .ph{aspect-ratio:16/10;overflow:hidden;background:var(--paper2);cursor:zoom-in}
+.slide img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.slide:hover img{transform:scale(1.025)}
+.slide figcaption{display:flex;justify-content:space-between;padding-top:12px;font-size:15px}
+.slide figcaption span{color:var(--mut)}
+.ctl{display:flex;justify-content:space-between;align-items:center;margin-top:20px}
+.ctl .count{font-size:14px;color:var(--mut)}
+.arrows{display:flex;gap:8px}
+.arrows button{width:48px;height:48px;border:1px solid var(--ink);display:grid;place-items:center;transition:background .2s,color .2s}
+.arrows button:hover{background:var(--ink);color:var(--paper)}
+.arrows svg{width:18px;height:18px}
+
+/* ---------- VIDEOS ---------- */
+.vmain video{width:100%;aspect-ratio:16/9;background:#000}
+.vrow{display:grid;grid-template-columns:1fr 1fr .5fr .5fr;gap:14px;margin-top:14px;align-items:start}
+.vrow video{width:100%;background:#000;aspect-ratio:16/9;object-fit:cover}
+.vrow .vt video{aspect-ratio:9/16}
+.vcap{font-size:14px;padding-top:8px}
+.vcap span{color:var(--mut);display:block;font-size:13px}
+
+/* ---------- UNIT + DIFFS ---------- */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px)}
+.list{list-style:none;border-top:1px solid var(--ink)}
+.list li{padding:13px 0;border-bottom:1px solid var(--line);font-size:16px;display:flex;gap:14px}
+.list li::before{content:"";flex:0 0 8px;height:8px;margin-top:9px;background:var(--or)}
+.list.b li::before{background:var(--bl)}
+.small{font-size:13px;color:var(--mut);margin-top:14px}
+
+/* ---------- PRICES ---------- */
+.prices{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}
+.price{padding:24px 20px 24px 0}
+.price+.price{padding-left:20px;border-left:1px solid var(--line)}
+.price h3{font-size:20px}
+.price .meta{font-size:14px;color:var(--mut);margin:4px 0 18px}
+.price .disp{font-size:clamp(26px,2.6vw,34px)}
+.price .cond{font-size:13px;color:var(--mut);margin-top:6px}
+.flow{display:flex;height:56px;margin-top:40px;gap:2px}
+.flow div{display:flex;flex-direction:column;justify-content:center;padding:0 10px;font-size:12px;color:#fff;overflow:hidden;white-space:nowrap}
+.flow b{font:600 15px "Familjen Grotesk"}
+
+details{border-bottom:1px solid var(--line)}
+details summary{list-style:none;cursor:pointer;padding:16px 0;display:flex;justify-content:space-between;font:600 17px "Familjen Grotesk"}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";font-weight:400;transition:transform .3s var(--ease)}
+details[open] summary::after{transform:rotate(45deg)}
+details .in{padding-bottom:20px}
+.spec{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.spec div{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.spec dt{color:var(--mut)} .spec dd{font-weight:600;text-align:right}
+
+/* ---------- LOCATION ---------- */
+.loc{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:start}
+.times{border-top:1px solid var(--ink)}
+.times div{display:grid;grid-template-columns:90px 1fr;padding:14px 0;border-bottom:1px solid var(--line)}
+.times b{font:600 20px "Familjen Grotesk";color:var(--or)}
+.loc .ph{aspect-ratio:4/3;overflow:hidden}
+.loc .ph img{width:100%;height:100%;object-fit:cover}
+
+.pend{margin-top:clamp(80px,11vw,140px);background:var(--paper2);padding:clamp(32px,5vw,56px)}
+.pend .two ul{list-style:none}
+.pend li{padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}
+.pend h3{font-size:22px;margin-bottom:12px}
+
+footer{padding:48px 0 64px;font-size:12px;color:var(--mut)}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;border-top:1px solid var(--ink);padding-top:24px}
+
+.lb{position:fixed;inset:0;background:rgba(18,18,18,.95);display:flex;align-items:center;justify-content:center;padding:24px;z-index:50;cursor:zoom-out;opacity:0;pointer-events:none;transition:opacity .3s var(--ease)}
+.lb.on{opacity:1;pointer-events:auto}
+.lb img{max-height:90vh;object-fit:contain}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.stage img{transform:none}}
+@media (max-width:860px){
+  .top nav{display:none}
+  .hero,.sh,.panel,.vg,.two,.loc,.spec,footer .wrap{grid-template-columns:1fr}
+  .line,.prices{grid-template-columns:1fr 1fr}
+  .line div:nth-child(3),.price:nth-child(3){border-left:0;padding-left:0}
+  .line div:nth-child(n+3){border-top:1px solid var(--line)}
+  .price:nth-child(n+3){border-top:1px solid var(--line)}
+  .levels{grid-template-columns:1fr}
+  .vrow{grid-template-columns:1fr 1fr}
+  .stage{height:62vh}
+  .flow div span{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <svg viewBox="0 0 34 22" aria-hidden="true"><path d="M0 0h7l5 15L17 0h0v22H9z" fill="#121212"/><path d="M19 0h7a8 8 0 0 1 0 16h-1v6h-6z" fill="#D9481E"/></svg>
+      VP Cotovia <small>MOEMA</small>
+    </div>
+    <nav aria-label="Seções">
+      <a href="#plantas">Plantas</a><a href="#vagas">Vagas</a><a href="#lazer">Lazer</a><a href="#videos">Vídeos</a><a href="#valores">Valores</a><a href="#localizacao">Localização</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>VP Cotovia<br><em>Moema</em></h1>
+    <div>
+      <p class="intro">Torre única de compactos da Vistaplan na Av. Cotovia, 372. Studios, 1 e 2 dormitórios e gardens, 100% R2V, com short stay permitido e um andar inteiro de lazer.</p>
+      <div class="facts"><span><b>Breve lançamento</b></span><span>Vistaplan</span><span>Abyara</span><span><a href="https://vpinc.com.br/vp-cotovia/" target="_blank" rel="noopener"><b>Site oficial ↗</b></a></span></div>
+    </div>
+  </div>
+</div>
+
+<figure class="stage">
+  <img src="img/fachada.jpg" alt="Perspectiva da fachada do VP Cotovia ao entardecer">
+  <figcaption>Perspectiva artística ilustrativa · material preliminar</figcaption>
+</figure>
+
+<div class="wrap">
+  <div class="line">
+    <div><div class="disp">374</div><p>unidades residenciais</p></div>
+    <div><div class="disp">22–60<small>m²</small></div><p>de área privativa</p></div>
+    <div><div class="disp">107</div><p>vagas cobertas</p></div>
+    <div><div class="disp"><small>R$</small>368 mil</div><p>preço inicial do studio</p></div>
+  </div>
+</div>
+
+<!-- PLANTAS -->
+<section id="plantas" class="wrap">
+  <div class="sh"><h2>Quatro jeitos de morar</h2><p>São 19 apartamentos por andar do 2º ao 20º e 13 no 21º. Escolha a tipologia para ver metragem, quantidade, vaga e valor de referência.</p></div>
+
+  <div class="tabs" role="tablist" aria-label="Tipologias">
+    <button class="tab" role="tab" aria-selected="true" aria-controls="t-st" id="b-st">Studio</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="t-1d" id="b-1d" tabindex="-1">1 dormitório</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="t-2d" id="b-2d" tabindex="-1">2 dormitórios</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="t-gd" id="b-gd" tabindex="-1">Garden</button>
+  </div>
+
+  <div class="panel" role="tabpanel" id="t-st" aria-labelledby="b-st">
+    <div class="pic"><img src="img/studio.jpg" alt="Studio decorado"></div>
+    <div>
+      <h3>Studio</h3><div class="area">22,36 e 22,96 m²</div>
+      <dl class="kv">
+        <div><dt>Unidades</dt><dd>172</dd></div>
+        <div><dt>Finais</dt><dd>1, 2, 5, 6, 10–13, 19</dd></div>
+        <div><dt>Vaga</dt><dd>Não tem</dd></div>
+        <div><dt>A partir de</dt><dd>R$ 368.000</dd></div>
+        <div><dt>Condomínio estimado</dt><dd>R$ 244,54</dd></div>
+      </dl>
+      <p class="note">Um ponto de ar-condicionado. É a tipologia de entrada e a maior parte do prédio.</p>
+    </div>
+  </div>
+
+  <div class="panel" role="tabpanel" id="t-1d" aria-labelledby="b-1d" hidden>
+    <div class="pic"><img src="img/1dorm-living.jpg" alt="Living do 1 dormitório" loading="lazy"></div>
+    <div>
+      <h3>1 dormitório</h3><div class="area">29,74 a 37,04 m²</div>
+      <dl class="kv">
+        <div><dt>Unidades</dt><dd>173</dd></div>
+        <div><dt>37,04 m² · finais 3, 4, 15, 16</dt><dd>76 · todos com vaga</dd></div>
+        <div><dt>32,21 m² · final 8</dt><dd>19 · vaga do 17º ao 21º</dd></div>
+        <div><dt>30,62 m² · final 7</dt><dd>20 · vaga do 18º ao 21º</dd></div>
+        <div><dt>29,74 / 29,92 m² · finais 9, 14, 17</dt><dd>58 · sem vaga</dd></div>
+        <div><dt>A partir de</dt><dd>R$ 477.050 (29 m²) · R$ 720.760 (37 m², vaga)</dd></div>
+        <div><dt>Condomínio estimado</dt><dd>R$ 338,69 sem vaga · R$ 465,69 com vaga</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="panel" role="tabpanel" id="t-2d" aria-labelledby="b-2d" hidden>
+    <div class="pic"><img src="img/2dorm-living.jpg" alt="Living do 2 dormitórios" loading="lazy"></div>
+    <div>
+      <h3>2 dormitórios</h3><div class="area">45,10 m²</div>
+      <dl class="kv">
+        <div><dt>Unidades</dt><dd>20</dd></div>
+        <div><dt>Final</dt><dd>18</dd></div>
+        <div><dt>Vaga</dt><dd>Todos com vaga</dd></div>
+        <div><dt>A partir de</dt><dd>R$ 876.600</dd></div>
+        <div><dt>Condomínio estimado</dt><dd>R$ 559,05</dd></div>
+      </dl>
+      <p class="note">Também há a opção de planta ampliada, que transforma o apartamento em 1 dormitório com sala maior.</p>
+    </div>
+  </div>
+
+  <div class="panel" role="tabpanel" id="t-gd" aria-labelledby="b-gd" hidden>
+    <div class="pic"><img src="img/praca-lounge.jpg" alt="Área externa ajardinada" loading="lazy"></div>
+    <div>
+      <h3>Garden</h3><div class="area">36,96 a 59,74 m²</div>
+      <dl class="kv">
+        <div><dt>Unidades</dt><dd>9, todas no 2º andar</dd></div>
+        <div><dt>Finais</dt><dd>8 a 16</dd></div>
+        <div><dt>Vaga</dt><dd>Finais 15 e 16</dd></div>
+        <div><dt>Valor</dt><dd>A confirmar</dd></div>
+      </dl>
+      <p class="note">Apartamentos com área externa privativa. O material não traz o preço dos gardens. A imagem ao lado é de uma área comum, apenas como referência de paisagismo.</p>
+    </div>
+  </div>
+
+  <div class="dist" aria-label="Distribuição das 374 unidades">
+    <div class="bar"><i style="flex:172;background:var(--or)"></i><i style="flex:173;background:var(--bl)"></i><i style="flex:20;background:var(--ink)"></i><i style="flex:9;background:var(--am)"></i></div>
+    <ul>
+      <li style="--c:var(--or)"><b>172</b>studios</li>
+      <li style="--c:var(--bl)"><b>173</b>1 dormitório</li>
+      <li style="--c:var(--ink)"><b>20</b>2 dormitórios</li>
+      <li style="--c:var(--am)"><b>9</b>gardens</li>
+    </ul>
+  </div>
+
+  <figure class="plan" data-zoom><img src="img/pavimento-tipo.jpg" alt="Planta do pavimento tipo com os 19 finais" loading="lazy"></figure>
+</section>
+
+<!-- VAGAS -->
+<div class="band" id="vagas">
+  <svg class="shape" viewBox="0 0 300 300" aria-hidden="true"><path d="M300 0v300A300 300 0 0 1 0 0z" fill="#1755A2"/><path d="M300 0H150l150 150z" fill="#EC8A17"/></svg>
+  <div class="wrap">
+    <div class="sh"><h2>Compacto com vaga</h2><p>Esse é o argumento que a incorporadora mais destaca: poucos compactos da região oferecem vaga. Aqui, 107 unidades têm direito de uso de uma.</p></div>
+    <div class="vg">
+      <div class="big">107</div>
+      <ul>
+        <li>Vagas de carro <span>todas cobertas</span></li>
+        <li>1º subsolo <span>55</span></li>
+        <li>Térreo coberto <span>52</span></li>
+        <li>Tipo de vaga <span>indeterminada, soltas e presas</span></li>
+        <li>PCD <span>2</span></li>
+        <li>Moto <span>10</span></li>
+        <li>Bicicleta <span>52 + 7 bikes elétricas</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- LAZER -->
+<section id="lazer">
+  <div class="wrap">
+    <div class="sh"><h2>Um andar inteiro de lazer</h2><p>O térreo cuida da chegada. O 1º pavimento é todo dedicado ao lazer e ao bem-estar.</p></div>
+    <div class="levels">
+      <div><h3>Térreo</h3><p>Portaria com vidro de segurança, jardim e praça de acesso, lobby com concierge, delivery e pet place.</p></div>
+      <div><h3>1º pavimento</h3><p>Piscina de 20 m com deck molhado e solário, pool bar, fitness interno e externo, lounge, coworking, salão e terraço de festas, sauna seca, massagem e repouso.</p></div>
+      <div><h3>Serviços</h3><p>Mini market e lavanderia pay per use, bicicletário com ponto de carga, VP Bike e gerador para áreas comuns.</p></div>
+    </div>
+  </div>
+  <div class="car">
+    <div class="track" id="track" tabindex="0" aria-label="Galeria do lazer">
+      <figure class="slide"><div class="ph"><img src="img/piscina.jpg" alt="Piscina" loading="lazy"></div><figcaption>Piscina de 20 m e solário <span>1º pavimento</span></figcaption></figure>
+      <figure class="slide"><div class="ph"><img src="img/portaria.jpg" alt="Portaria" loading="lazy"></div><figcaption>Portaria e jardim de entrada <span>Térreo</span></figcaption></figure>
+      <figure class="slide"><div class="ph"><img src="img/lobby.jpg" alt="Lobby" loading="lazy"></div><figcaption>Lobby <span>Térreo</span></figcaption></figure>
+      <figure class="slide"><div class="ph"><img src="img/concierge.jpg" alt="Concierge" loading="lazy"></div><figcaption>Concierge <span>Térreo</span></figcaption></figure>
+      <figure class="slide"><div class="ph"><img src="img/praca-acesso.jpg" alt="Praça de acesso" loading="lazy"></div><figcaption>Praça de acesso <span>Térreo</span></figcaption></figure>
+      <figure class="slide"><div class="ph"><img src="img/coworking.jpg" alt="Coworking" loading="lazy"></div><figcaption>Coworking <span>1º pavimento</span></figcaption></figure>
+      <figure class="slide"><div class="ph"><img src="img/lounge.jpg" alt="Lounge" loading="lazy"></div><figcaption>Lounge <span>1º pavimento</span></figcaption></figure>
+      <figure class="slide"><div class="ph"><img src="img/fitness.jpg" alt="Fitness" loading="lazy"></div><figcaption>Fitness <span>1º pavimento</span></figcaption></figure>
+      <figure class="slide"><div class="ph"><img src="img/massagem.jpg" alt="Sala de massagem" loading="lazy"></div><figcaption>Massagem <span>1º pavimento</span></figcaption></figure>
+      <figure class="slide"><div class="ph"><img src="img/repouso.jpg" alt="Repouso" loading="lazy"></div><figcaption>Repouso <span>1º pavimento</span></figcaption></figure>
+      <figure class="slide"><div class="ph"><img src="img/festas.jpg" alt="Salão de festas" loading="lazy"></div><figcaption>Salão de festas <span>1º pavimento</span></figcaption></figure>
+      <figure class="slide"><div class="ph"><img src="img/terraco-festas.jpg" alt="Terraço de festas" loading="lazy"></div><figcaption>Terraço de festas <span>1º pavimento</span></figcaption></figure>
+      <figure class="slide"><div class="ph"><img src="img/praca-lounge.jpg" alt="Praça lounge" loading="lazy"></div><figcaption>Praça lounge <span>1º pavimento</span></figcaption></figure>
+      <figure class="slide"><div class="ph"><img src="img/petplace.jpg" alt="Pet place" loading="lazy"></div><figcaption>Pet place <span>Térreo</span></figcaption></figure>
+    </div>
+    <div class="wrap ctl">
+      <span class="count" id="count">1 / 14</span>
+      <div class="arrows">
+        <button id="prev" aria-label="Imagem anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button id="next" aria-label="Próxima imagem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos" class="wrap">
+  <div class="sh"><h2>Veja por dentro</h2><p>Os vídeos oficiais: tour do edifício, decorados de 1 e 2 dormitórios, teaser e a campanha "Será que cabe?".</p></div>
+  <div class="vmain"><video src="vid/v3.mp4" poster="vid/v3.jpg" controls preload="none" playsinline></video><p class="vcap">Tour do edifício <span>Fachada, portaria, praça de acesso e lobby</span></p></div>
+  <div class="vrow">
+    <div><video src="vid/v4.mp4" poster="vid/v4.jpg" controls preload="none" playsinline></video><p class="vcap">Decorado 1 dormitório</p></div>
+    <div><video src="vid/v5.mp4" poster="vid/v5.jpg" controls preload="none" playsinline></video><p class="vcap">Decorado 2 dormitórios <span>Opção ampliada</span></p></div>
+    <div class="vt"><video src="vid/v1.mp4" poster="vid/v1.jpg" controls preload="none" playsinline></video><p class="vcap">Teaser</p></div>
+    <div class="vt"><video src="vid/v2.mp4" poster="vid/v2.jpg" controls preload="none" playsinline></video><p class="vcap">"Será que cabe?"</p></div>
+  </div>
+</section>
+
+<!-- UNIDADE + DIFERENCIAIS -->
+<section class="wrap">
+  <div class="two">
+    <div>
+      <h2 style="font-size:clamp(32px,3.6vw,48px);margin-bottom:28px">Por que o VP Cotovia</h2>
+      <ul class="list">
+        <li>100% R2V: valoriza a preço de mercado e o dono escolhe entre long stay e short stay</li>
+        <li>Compactos com vaga, todas cobertas</li>
+        <li>Estrutura de concreto armado, com paredes internas alteráveis</li>
+        <li>4 elevadores, quando o cálculo pedia 3</li>
+        <li>Um pavimento inteiro de lazer</li>
+        <li>Terreno de 3 frentes, torre recuada e jardim de entrada</li>
+      </ul>
+    </div>
+    <div>
+      <h2 style="font-size:clamp(32px,3.6vw,48px);margin-bottom:28px">O que vem no apartamento</h2>
+      <ul class="list b">
+        <li>Fechadura digital</li>
+        <li>Infraestrutura completa de ar-condicionado e terraço técnico</li>
+        <li>Água quente nos banheiros e pré-aquecimento solar</li>
+        <li>Terraço nivelado com o living</li>
+        <li>Pontos para lava-louças e máquina de lavar*</li>
+        <li>Infra para automação de persianas no dormitório principal</li>
+        <li>Pé-direito de 2,71 m no contrapiso</li>
+      </ul>
+      <p class="small">* Máquina de lavar só nas unidades de 1 e 2 dormitórios. Aquecedor de passagem e equipamentos por conta do proprietário.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VALORES -->
+<section id="valores" class="wrap">
+  <div class="sh"><h2>Valores de referência</h2><p>Estudo de fluxo de outubro de 2026, valores "a partir de". Sujeitos à tabela vigente e à disponibilidade.</p></div>
+  <div class="prices">
+    <div class="price"><h3>Studio</h3><p class="meta">22,30 m² · sem vaga</p><div class="disp">R$ 368.000</div><p class="cond">Condomínio ~ R$ 245</p></div>
+    <div class="price"><h3>1 dormitório</h3><p class="meta">29 m² · sem vaga</p><div class="disp">R$ 477.050</div><p class="cond">Condomínio ~ R$ 339</p></div>
+    <div class="price"><h3>1 dormitório</h3><p class="meta">37 m² · com vaga</p><div class="disp">R$ 720.760</div><p class="cond">Condomínio ~ R$ 466</p></div>
+    <div class="price"><h3>2 dormitórios</h3><p class="meta">45,10 m² · com vaga</p><div class="disp">R$ 876.600</div><p class="cond">Condomínio ~ R$ 559</p></div>
+  </div>
+  <div class="flow" aria-label="Fluxo de pagamento">
+    <div style="flex:8;background:var(--or)"><b>8%</b><span>ato</span></div>
+    <div style="flex:6;background:var(--am)"><b>6%</b><span>30/60/90</span></div>
+    <div style="flex:8;background:var(--bl)"><b>8%</b><span>33 mensais</span></div>
+    <div style="flex:8;background:#0f3f7c"><b>8%</b><span>3 anuais</span></div>
+    <div style="flex:5;background:#5b5650"><b>5%</b><span>única</span></div>
+    <div style="flex:65;background:var(--ink)"><b>65%</b><span>financiamento</span></div>
+  </div>
+  <p class="small">35% pagos direto à incorporadora durante a obra e 65% financiados. Taxa de antecipação de 9% ao ano.</p>
+
+  <div style="margin-top:56px;border-top:1px solid var(--ink)">
+    <details><summary>Ficha técnica completa</summary><div class="in">
+      <dl class="spec">
+        <div><dt>Endereço</dt><dd>Av. Cotovia, 372 – Moema, SP</dd></div>
+        <div><dt>Incorporação e construção</dt><dd>Vistaplan</dd></div>
+        <div><dt>Comercialização</dt><dd>Abyara</dd></div>
+        <div><dt>Torres</dt><dd>1</dd></div>
+        <div><dt>Unidades</dt><dd>374 · 100% R2V · sem HIS/HMP</dd></div>
+        <div><dt>Pavimentos</dt><dd>20 residenciais (2º ao 21º)</dd></div>
+        <div><dt>Outros níveis</dt><dd>Subsolo · térreo · 1º lazer</dd></div>
+        <div><dt>Terreno</dt><dd>2.041,00 m² · 3 frentes</dd></div>
+        <div><dt>Elevadores</dt><dd>4 (1 de serviço)</dd></div>
+        <div><dt>Estrutura</dt><dd>Concreto armado convencional</dd></div>
+        <div><dt>Arquitetura</dt><dd>Marcos Perazzo</dd></div>
+        <div><dt>Decoração</dt><dd>Carlos Rossi</dd></div>
+        <div><dt>Paisagismo</dt><dd>Benedito Abbud</dd></div>
+        <div><dt>Short stay</dt><dd>Permitido em convenção</dd></div>
+        <div><dt>Piscina</dt><dd>20 m · 1,20 m · deck 0,15 m</dd></div>
+        <div><dt>Acesso</dt><dd>Todas as unidades pela Av. Cotovia</dd></div>
+      </dl>
+    </div></details>
+    <details><summary>Detalhe de vagas por final</summary><div class="in">
+      <dl class="spec">
+        <div><dt>Finais 3, 4, 15, 16, 18 · 2º ao 20º</dt><dd>95 vagas</dd></div>
+        <div><dt>Finais 15, 16, 18 · 21º</dt><dd>3 vagas</dd></div>
+        <div><dt>Final 7 · 18º ao 21º</dt><dd>4 vagas</dd></div>
+        <div><dt>Final 8 · 17º ao 21º</dt><dd>5 vagas</dd></div>
+      </dl>
+      <p class="small">No 2º andar, os finais 15 e 16 são gardens com vaga.</p>
+    </div></details>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+<section id="localizacao" class="wrap">
+  <div class="sh"><h2>Av. Cotovia, 372</h2><p>Tempos de deslocamento divulgados na apresentação oficial.</p></div>
+  <div class="loc">
+    <div class="times">
+      <div><b>2 min</b><span>Vila das Frutas · Velocity · Vertical Tennis</span></div>
+      <div><b>5 min</b><span>Estação Eucaliptos · Shopping Ibirapuera · Bodytech</span></div>
+      <div><b>7 min</b><span>Insper</span></div>
+      <div><b>8 min</b><span>Universidade Anhembi Morumbi</span></div>
+      <div><b>12 min</b><span>Hospital São Luiz Itaim · Hospital Vila Nova Star</span></div>
+      <div><b>15 min</b><span>Aeroporto de Congonhas</span></div>
+    </div>
+    <div class="ph" data-zoom style="cursor:zoom-in"><img src="img/localizacao.jpg" alt="Vista do entorno com pontos de interesse" loading="lazy"></div>
+  </div>
+
+  <div class="pend">
+    <div class="two">
+      <div><h3>Ainda a confirmar</h3><ul><li>Data de lançamento e prazo de entrega</li><li>Registro da incorporação</li><li>Tabela de preços vigente e disponibilidade</li><li>Preço dos gardens e dos 1 dorm. de 30 e 32 m² com vaga</li><li>Condomínio dos gardens</li></ul></div>
+      <div><h3>Fontes</h3><ul><li>Apresentação VP Cotovia (preliminar)</li><li>Treinamento Abyara</li><li>Estudo de Fluxo – Out/2026</li><li>Tabela de tipologias e planta do pavimento tipo</li><li>Vídeos oficiais de divulgação</li><li><a href="https://vpinc.com.br/vp-cotovia/" target="_blank" rel="noopener">vpinc.com.br/vp-cotovia</a></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <p><b style="color:var(--ink)">Material de uso interno.</b> Informações preliminares que podem mudar até o registro da incorporação. Plantas, perspectivas e imagens são ilustrativas. Áreas e descrições prevalecem conforme memorial de incorporação e convenção de condomínio.</p>
+  <p>Incorporação e construção: Vistaplan. Comercialização: Abyara. Resumo preparado pela W3W Imóveis.</p>
+</div></footer>
+
+<div class="lb" id="lb" aria-hidden="true"><img alt=""></div>
+
+<script>
+// tabs
+const tabs=[...document.querySelectorAll('.tab')];
+function sel(t){tabs.forEach(b=>{const on=b===t;b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;document.getElementById(b.getAttribute('aria-controls')).hidden=!on});t.focus({preventScroll:true})}
+tabs.forEach((t,i)=>{t.addEventListener('click',()=>sel(t));t.addEventListener('keydown',e=>{if(e.key==='ArrowRight')sel(tabs[(i+1)%tabs.length]);if(e.key==='ArrowLeft')sel(tabs[(i-1+tabs.length)%tabs.length])})});
+// carousel
+const tr=document.getElementById('track'),sl=[...tr.children],cnt=document.getElementById('count');
+const step=d=>{const w=sl[0].getBoundingClientRect().width+14;tr.scrollBy({left:d*w,behavior:'smooth'})};
+document.getElementById('prev').onclick=()=>step(-1);document.getElementById('next').onclick=()=>step(1);
+tr.addEventListener('scroll',()=>{const w=sl[0].getBoundingClientRect().width+14;cnt.textContent=Math.min(sl.length,Math.round(tr.scrollLeft/w)+1)+' / '+sl.length},{passive:true});
+// lightbox
+const lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.slide .ph,[data-zoom]').forEach(el=>el.addEventListener('click',()=>{const i=el.querySelector('img');li.src=i.src;li.alt=i.alt;lb.classList.add('on')}));
+lb.onclick=()=>lb.classList.remove('on');document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+// one video at a time
+document.querySelectorAll('video').forEach(v=>v.addEventListener('play',()=>document.querySelectorAll('video').forEach(o=>{if(o!==v)o.pause()})));
+</script>
+</body>
+</html>
