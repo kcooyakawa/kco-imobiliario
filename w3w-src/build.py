@@ -14,6 +14,7 @@ EMAIL = 'w3wimoveis@gmail.com'
 TEL = '+55 (11) 94029-7871'
 CRECI = 'CRECI 047467-J'
 OG = 'https://kcooyakawa.github.io/kco-imobiliario/w3w-share/w3w-og.jpg'
+GA = os.environ.get('W3W_GA', '')  # ID do Google Analytics 4 (G-XXXXXXX); vazio = desligado
 HERO = 'https://w3wimoveis.com.br/wp-content/uploads/2024/12/o-que-fazer-no-parque-ibirapuera.jpeg'
 
 E = json.load(open(os.path.join(ROOT, 'empreendimentos.json'), encoding='utf-8'))
@@ -637,6 +638,10 @@ ICON = {
 }
 WA_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.5.2.3.7 1.1 1.4 1.8 1 .9 1.8 1.1 2 1.2.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3 0 .1 0 .7-.2 1.3Z"/></svg>'
 
+def ga_tag():
+    if not GA: return ''
+    return f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag("js",new Date());gtag("config","{GA}");</script>'
+
 def head(title, desc, path, extra=''):
     url = SITE + u(path)
     return f'''<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
@@ -653,6 +658,7 @@ def head(title, desc, path, extra=''):
 <link rel="preload" href="{FONTS}/ppneuemontreal-regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{BASE}/assets/site.css?v={VER}">
 <link rel="icon" href="{BASE}/assets/favicon.svg" type="image/svg+xml">
+{ga_tag()}<script src="{BASE}/assets/track.js?v={VER}" defer></script>
 {extra}</head><body>'''
 
 def header(active=''):
@@ -883,6 +889,7 @@ def build():
     if os.path.isdir(OUT): shutil.rmtree(OUT)
     write('assets/site.css', CSS)
     write('assets/motion.js', open(os.path.join(ROOT,'motion.js'),encoding='utf-8').read())
+    write('assets/track.js', open(os.path.join(ROOT,'track.js'),encoding='utf-8').read())
     write('assets/sheet.js', open(os.path.join(ROOT,'sheet.js'),encoding='utf-8').read())
     write('assets/favicon.svg', LOGO.replace('currentColor', '#1A1817'))
     filt_js = '''<script>
