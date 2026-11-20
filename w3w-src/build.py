@@ -599,6 +599,8 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .cafe-f .btn{background:#F6F7F9!important;color:#1A1817!important;border-color:#F6F7F9!important}
 .cafe-f .btn:hover{background:transparent!important;color:#F6F7F9!important}
 .cafe-f small,.cafe-f small a{color:rgba(246,247,249,.65)!important}
+
+.ft-kco{padding-bottom:22px;text-align:center}.ft-kco a{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(246,247,249,.28);transition:color .3s}.ft-kco a:hover{color:rgba(246,247,249,.6)}
 """.replace('__F__', FONTS)
 
 ICON = {
@@ -642,7 +644,7 @@ def footer():
 <a class="brand ft-b" href="{BASE}/">{LOGO}<span class="creci">{CRECI}</span></a>
 <nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema</a><a href="{u('vila-nova-conceicao')}">Vila Nova Conceição</a><a href="{BASE}/#socios">Sócios</a><a href="{BASE}/#parcerias">Parcerias</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
 <div class="ft-c"><a href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener">{TEL}</a><a href="mailto:{EMAIL}">{EMAIL}</a></div>
-</div><div class="wrap ft-bot"><span>W3W Imóveis · Curadoria imobiliária · Desde 2004</span><span>{CRECI} · Moema, São Paulo</span></div></footer>
+</div><div class="wrap ft-bot"><span>W3W Imóveis · Curadoria imobiliária · Desde 2004</span><span>{CRECI} · Moema, São Paulo</span></div><div class="wrap ft-kco"><a href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Produzido por KCO Studio</a></div></footer>
 <a class="wa" href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">{WA_ICON}</a>
 <script src="{BASE}/assets/motion.js?v={VER}" defer></script>
 </body></html>"""

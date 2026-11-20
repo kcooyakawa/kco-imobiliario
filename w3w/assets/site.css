@@ -562,3 +562,5 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .cafe-f .btn{background:#F6F7F9!important;color:#1A1817!important;border-color:#F6F7F9!important}
 .cafe-f .btn:hover{background:transparent!important;color:#F6F7F9!important}
 .cafe-f small,.cafe-f small a{color:rgba(246,247,249,.65)!important}
+
+.ft-kco{padding-bottom:22px;text-align:center}.ft-kco a{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(246,247,249,.28);transition:color .3s}.ft-kco a:hover{color:rgba(246,247,249,.6)}
