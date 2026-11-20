@@ -522,7 +522,148 @@
   "img": "https://w3wimoveis.com.br/wp-content/uploads/2025/01/Fachada-Composite.png",
   "categorias": [
    "studios"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Viva em um espaço único, cercado de conforto e sofisticação.",
+   "conceito": "Torre única com 352 residências em terreno de 2.239 m², na Av. dos Carinás, em Moema.",
+   "endereco": "Av. dos Carinás · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "27 a 100 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Conx"
+    ],
+    [
+     "Arquitetura",
+     "Rubio & Luongo"
+    ],
+    [
+     "Paisagismo",
+     "Martha Gavião"
+    ],
+    [
+     "Decoração",
+     "Basiches Arquitetos"
+    ]
+   ],
+   "destaques": [
+    [
+     "352",
+     "residências"
+    ],
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "17",
+     "pavimentos"
+    ],
+    [
+     "100 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "1 dorm.",
+     "27 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "1 dorm.",
+     "35 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "1 dorm.",
+     "36 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "2 dorm.",
+     "100 m²",
+     "—",
+     "Sem vaga"
+    ]
+   ],
+   "lazer": [
+    "Apoio salão de festas",
+    "Coworking",
+    "Piscina adulto",
+    "Bicicletário",
+    "Espaço gourmet",
+    "Playground",
+    "Brinquedoteca",
+    "Fitness",
+    "Salão de festas"
+   ],
+   "local": [
+    "Av. dos Carinás, Moema"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "2.239 m²"
+    ],
+    [
+     "Unidades",
+     "352"
+    ],
+    [
+     "Entrega",
+     "Entregue em ago/2023"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2025/01/Fachada-Composite.png",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/2333/composite-moema-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2333/composite-moema-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/2333/composite-moema-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2333/composite-moema-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2333/composite-moema-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2333/composite-moema-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2333/composite-moema-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2333/composite-moema-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "autoral-moema",
@@ -717,7 +858,153 @@
   "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/ON-IMARES-10.jpg",
   "categorias": [
    "studios"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Viva o conforto e a elegância no seu novo lar. Sua vida, seu estilo, sua felicidade.",
+   "conceito": "Torre única com 246 residências em terreno de 1.502 m², na Avenida dos Imarés, em Moema.",
+   "endereco": "Avenida dos Imarés · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "20 a 42 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Vitacon"
+    ],
+    [
+     "Arquitetura",
+     "Acia Arquitetura"
+    ],
+    [
+     "Paisagismo e Decoração",
+     "Gaaz Arquitetos Associados"
+    ]
+   ],
+   "destaques": [
+    [
+     "246",
+     "residências"
+    ],
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "17",
+     "pavimentos"
+    ],
+    [
+     "42 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "Studio",
+     "20 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "22 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "24 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "25 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "27 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "28 m²",
+     "—",
+     "Sem vaga"
+    ]
+   ],
+   "lazer": [
+    "Coworking",
+    "Bicicletário",
+    "Fitness",
+    "Lavanderia",
+    "Cozinha compartilhada",
+    "Salão de festas"
+   ],
+   "local": [
+    "Avenida dos Imarés, Moema"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "1.502 m²"
+    ],
+    [
+     "Unidades",
+     "246"
+    ],
+    [
+     "Entrega",
+     "Entregue em dez/2022"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/ON-IMARES-10.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/1966/on-imares-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/1966/on-imares-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/1966/on-imares-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/1966/on-imares-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/1966/on-imares-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/1966/on-imares-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/1966/on-imares-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/1966/on-imares-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "on-maracatins",
@@ -4266,7 +4553,143 @@
   "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/CYRELA_ARAPANES_FACHADA_RESIDENCIAL_NOTURNA_HR00.jpg",
   "categorias": [
    "apartamentos"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Moema te espera! Novo jeito de viver com espaços inteligentes e conectados ao seu estilo.",
+   "conceito": "Torre única com 314 residências, na Alameda dos Arapanés, em Moema.",
+   "endereco": "Alameda dos Arapanés · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "29 a 73 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Cyrela"
+    ]
+   ],
+   "destaques": [
+    [
+     "314",
+     "residências"
+    ],
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "16",
+     "pavimentos"
+    ],
+    [
+     "73 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "Studio",
+     "29 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "36 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "1 dorm.",
+     "42 m²",
+     "1 suíte",
+     "Sem vaga"
+    ],
+    [
+     "1 dorm.",
+     "51 m²",
+     "1 suíte",
+     "Sem vaga"
+    ],
+    [
+     "1 dorm.",
+     "61 m²",
+     "1 suíte",
+     "Sem vaga"
+    ],
+    [
+     "1 dorm.",
+     "73 m²",
+     "1 suíte",
+     "Sem vaga"
+    ]
+   ],
+   "lazer": [
+    "Lounge festas e jogos",
+    "Piscina adulto com raia de 25m",
+    "Jardim de apoio festas",
+    "Sauna",
+    "Lounge bar",
+    "Fitness",
+    "Lavanderia",
+    "Coworking"
+   ],
+   "local": [
+    "Alameda dos Arapanés, Moema"
+   ],
+   "tecnica": [
+    [
+     "Unidades",
+     "314"
+    ],
+    [
+     "Entrega",
+     "Entregue em jul/2023"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/CYRELA_ARAPANES_FACHADA_RESIDENCIAL_NOTURNA_HR00.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/2272/cyrela-for-you-moema-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2272/cyrela-for-you-moema-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/2272/cyrela-for-you-moema-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2272/cyrela-for-you-moema-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2272/cyrela-for-you-moema-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2272/cyrela-for-you-moema-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2272/cyrela-for-you-moema-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2272/cyrela-for-you-moema-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "cyrela-moema-by-yoo",
