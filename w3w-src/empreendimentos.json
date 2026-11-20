@@ -672,27 +672,23 @@
   ],
   "frase": "Viva em um espaço único, cercado de conforto e sofisticação.",
   "resumo": {
-   "tipologias": "Studio",
-   "metragem": "27 a 62 m²",
-   "vagas": ""
+   "tipologias": "Studios e 1 dorm.",
+   "metragem": "27 a 37 m²",
+   "vagas": "Sem vaga"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2025/01/Fachada-Composite.png",
+  "img": "https://conx.com.br/wp-content/uploads/2023/05/1-2.png",
   "categorias": [
    "studios"
   ],
   "ficha": {
-   "tagline": "Viva em um espaço único, cercado de conforto e sofisticação.",
-   "conceito": "Torre única com 352 residências em terreno de 2.239 m², na Av. dos Carinás, em Moema.",
+   "tagline": "Compacto pronto, com jardim e piscina, em Moema Índios.",
+   "conceito": "O Composite é um compacto da Conx já entregue e 100% vendido pela incorporadora, então as unidades disponíveis hoje vêm de revenda. É uma boa porta de entrada para investir em Moema: studios e unidades de 1 dormitório de 27 a 37 m², com piscina, jardim, coworking e lavanderia. A W3W ajuda a encontrar a unidade certa e a avaliar o preço frente ao mercado.",
    "endereco": "Av. dos Carinás · Moema",
    "entrega": "Pronto para morar",
-   "faixa": "27 a 100 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "faixa": "27 a 37 m²",
+   "plantas_tit": "studios e 1 dormitório.",
    "assinaturas": [
-    [
-     "Incorporação",
-     "Conx"
-    ],
     [
      "Arquitetura",
      "Rubio & Luongo"
@@ -703,66 +699,60 @@
     ],
     [
      "Decoração",
-     "Basiches Arquitetos"
+     "Basiches"
+    ],
+    [
+     "Incorporação e construção",
+     "Conx"
     ]
    ],
    "destaques": [
     [
-     "352",
-     "residências"
+     "355",
+     "unidades"
     ],
     [
      "1",
      "torre"
     ],
     [
-     "17",
-     "pavimentos"
+     "Entregue",
+     "pronto para locar"
     ],
     [
-     "100 m²",
-     "maior planta"
+     "Revenda",
+     "100% vendido na planta"
     ]
    ],
    "plantas": [
     [
-     "1 dorm.",
+     "Studio",
      "27 m²",
      "—",
      "Sem vaga"
     ],
     [
      "1 dorm.",
-     "35 m²",
-     "—",
-     "Sem vaga"
-    ],
-    [
-     "1 dorm.",
-     "36 m²",
-     "—",
-     "Sem vaga"
-    ],
-    [
-     "2 dorm.",
-     "100 m²",
+     "35 a 37 m²",
      "—",
      "Sem vaga"
     ]
    ],
    "lazer": [
-    "Apoio salão de festas",
-    "Coworking",
-    "Piscina adulto",
-    "Bicicletário",
+    "Piscina",
+    "Jardim e praça",
     "Espaço gourmet",
-    "Playground",
-    "Brinquedoteca",
+    "Salão de festas",
+    "Coworking",
     "Fitness",
-    "Salão de festas"
+    "Lavanderia",
+    "Pet place",
+    "Bicicletário"
    ],
    "local": [
-    "Av. dos Carinás, Moema"
+    "Av. dos Carinás, Moema Índios",
+    "Perto do Shopping Ibirapuera e da Av. Ibirapuera",
+    "Metrô Eucaliptos nas proximidades"
    ],
    "tecnica": [
     [
@@ -770,54 +760,51 @@
      "2.239 m²"
     ],
     [
-     "Unidades",
-     "352"
-    ],
-    [
-     "Entrega",
-     "Entregue em ago/2023"
+     "Elevadores",
+     "5"
     ],
     [
      "Status",
-     "Pronto para morar"
+     "Pronto · disponibilidade via revenda"
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2025/01/Fachada-Composite.png",
+    "capa": "https://conx.com.br/wp-content/uploads/2023/05/1-2.png",
     "par": [
      [
-      "https://api.apto.vc/images/realties/2333/composite-moema-condominio-1.jpg",
-      "Áreas comuns"
+      "https://conx.com.br/wp-content/uploads/2023/05/3-1.png",
+      "Lobby"
      ],
      [
-      "https://api.apto.vc/images/realties/2333/composite-moema-apartamento-1.jpg",
-      "Residência"
+      "https://conx.com.br/wp-content/uploads/2023/05/17.png",
+      "Studio"
      ]
     ],
+    "voo": "https://conx.com.br/wp-content/uploads/2023/05/5.png",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/2333/composite-moema-condominio-2.jpg",
-      "Lazer"
+      "https://conx.com.br/wp-content/uploads/2023/05/6.png",
+      "Piscina"
      ],
      [
-      "https://api.apto.vc/images/realties/2333/composite-moema-condominio-3.jpg",
-      "Lazer"
+      "https://conx.com.br/wp-content/uploads/2023/05/7.png",
+      "Jardim"
      ],
      [
-      "https://api.apto.vc/images/realties/2333/composite-moema-condominio-4.jpg",
-      "Lazer"
+      "https://conx.com.br/wp-content/uploads/2023/05/9-2.png",
+      "Salão de festas"
      ],
      [
-      "https://api.apto.vc/images/realties/2333/composite-moema-condominio-5.jpg",
-      "Lazer"
+      "https://conx.com.br/wp-content/uploads/2023/05/11.png",
+      "Coworking"
      ],
      [
-      "https://api.apto.vc/images/realties/2333/composite-moema-condominio-6.jpg",
-      "Lazer"
+      "https://conx.com.br/wp-content/uploads/2023/05/12.png",
+      "Fitness"
      ],
      [
-      "https://api.apto.vc/images/realties/2333/composite-moema-condominio-7.jpg",
-      "Lazer"
+      "https://conx.com.br/wp-content/uploads/2023/05/13.png",
+      "Lavanderia"
      ]
     ]
    }
@@ -834,27 +821,23 @@
   ],
   "frase": "Viva a experiência única de um lar que se conecta com a natureza e o bem-estar.",
   "resumo": {
-   "tipologias": "Studios",
-   "metragem": "27 a 62 m²",
-   "vagas": ""
+   "tipologias": "2 suítes, 3 dorms. e studios NR",
+   "metragem": "83 a 89 m²",
+   "vagas": "1 vaga (residencial)"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2025/01/Fachada-Autoral.png",
+  "img": "https://conx.com.br/wp-content/uploads/2023/06/FACHADA.png",
   "categorias": [
    "studios"
   ],
   "ficha": {
-   "tagline": "Viva a experiência única de um lar que se conecta com a natureza e o bem-estar.",
-   "conceito": "2 torres com 112 residências em terreno de 2.054 m², na Rua dos Chanés, em Moema.",
+   "tagline": "Duas torres na Rua dos Chanés: residencial com vaga e studios para investir.",
+   "conceito": "O Autoral combina dois produtos num só terreno da Rua dos Chanés: uma torre residencial com 112 apartamentos de 83 a 89 m², todos com vaga, e uma torre não residencial com studios para quem quer investir. O projeto é de Jonas Birger, com paisagismo de Martha Gavião e decoração de Chris Silveira. Para casal ou família pequena, a planta de duas suítes com sala ampliada é das mais bem resolvidas nessa metragem em Moema.",
    "endereco": "Rua dos Chanés · Moema",
-   "entrega": "Previsão: dez/2026",
-   "faixa": "86 e 106 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "entrega": "Em obras",
+   "faixa": "83 a 89 m²",
+   "plantas_tit": "2 suítes ou 3 dormitórios.",
    "assinaturas": [
-    [
-     "Incorporação",
-     "Conx"
-    ],
     [
      "Arquitetura",
      "Jonas Birger"
@@ -865,91 +848,82 @@
     ],
     [
      "Decoração",
-     "Chris Silveira e Arquitetos Associados"
+     "Chris Silveira"
+    ],
+    [
+     "Incorporação e construção",
+     "Conx"
     ]
    ],
    "destaques": [
     [
      "112",
-     "residências"
+     "apartamentos residenciais"
     ],
     [
      "2",
      "torres"
     ],
     [
-     "17",
-     "pavimentos"
+     "2.054 m²",
+     "de terreno"
     ],
     [
-     "106 m²",
-     "maior planta"
+     "Vaga",
+     "em todas as unidades R"
     ]
    ],
    "plantas": [
     [
-     "3 dorm.",
-     "85 m²",
+     "3 dorms.",
+     "83 a 86 m²",
      "1 suíte",
      "1 vaga"
     ],
     [
-     "2 dorm.",
-     "86 m²",
+     "2 suítes · sala ampliada",
+     "85 a 86 m²",
      "2 suítes",
      "1 vaga"
     ],
     [
-     "3 dorm.",
-     "86 m²",
-     "1 suíte",
+     "Tipo",
+     "Até 89 m²",
+     "Sob consulta",
      "1 vaga"
     ],
     [
-     "2 dorm.",
-     "86 m²",
-     "1 suíte",
-     "1 vaga"
-    ],
-    [
-     "3 dorm.",
-     "88 m²",
-     "1 suíte",
-     "1 vaga"
-    ],
-    [
-     "3 dorm.",
-     "89 m²",
-     "1 suíte",
-     "1 vaga"
+     "Studio NR",
+     "Sob consulta",
+     "—",
+     "Sem vaga"
     ]
    ],
    "lazer": [
-    "Espaço delivery",
+    "Piscina e solarium",
     "Fitness",
     "Espaço gourmet",
+    "Churrasqueira",
+    "Coworking",
     "Brinquedoteca",
-    "Car wash",
-    "Apoio festas",
-    "Playground",
-    "Piscina",
-    "Sauna"
+    "Lavanderia",
+    "Espaço delivery",
+    "Bicicletário",
+    "Lobby"
    ],
    "local": [
-    "Rua dos Chanés, Moema"
+    "Rua dos Chanés, perto do Shopping Ibirapuera",
+    "Metrô Eucaliptos nas proximidades",
+    "Moema Índios, comércio de bairro"
    ],
    "tecnica": [
     [
-     "Terreno",
-     "2.054 m²"
-    ],
-    [
      "Unidades",
-     "112"
+     "112 residenciais, 62 não residenciais e 2 lojas"
     ],
     [
-     "Entrega",
-     "Previsão: dez/2026"
+     "Vagas",
+     "4 com recarga para carro elétrico"
     ],
     [
      "Status",
@@ -957,41 +931,42 @@
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2025/01/Fachada-Autoral.png",
+    "capa": "https://conx.com.br/wp-content/uploads/2023/06/FACHADA.png",
     "par": [
      [
-      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-condominio-1.jpg",
-      "Áreas comuns"
+      "https://conx.com.br/wp-content/uploads/2023/06/LOBBY.png",
+      "Lobby"
      ],
      [
-      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-apartamento-1.jpg",
-      "Residência"
+      "https://conx.com.br/wp-content/uploads/2023/06/2-SUITES-SALA-AMPLIADA-86M%C2%B2.png",
+      "2 suítes · sala ampliada"
      ]
     ],
+    "voo": "https://conx.com.br/wp-content/uploads/2023/06/PISCINA-E-SOLARIUM.png",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-condominio-2.jpg",
-      "Lazer"
+      "https://conx.com.br/wp-content/uploads/2023/06/FITNESS.png",
+      "Fitness"
      ],
      [
-      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-condominio-3.jpg",
-      "Lazer"
+      "https://conx.com.br/wp-content/uploads/2023/06/ESPACO-GOURMET.png",
+      "Espaço gourmet"
      ],
      [
-      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-condominio-4.jpg",
-      "Lazer"
+      "https://conx.com.br/wp-content/uploads/2023/06/CHURRASQUEIRA-1.png",
+      "Churrasqueira"
      ],
      [
-      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-condominio-5.jpg",
-      "Lazer"
+      "https://conx.com.br/wp-content/uploads/2023/06/COWORKING.png",
+      "Coworking"
      ],
      [
-      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-condominio-6.jpg",
-      "Lazer"
+      "https://conx.com.br/wp-content/uploads/2023/06/BRINQUEDOTECA.png",
+      "Brinquedoteca"
      ],
      [
-      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-condominio-7.jpg",
-      "Lazer"
+      "https://conx.com.br/wp-content/uploads/2023/06/FACHADAA.png",
+      "Fachada"
      ]
     ]
    }
