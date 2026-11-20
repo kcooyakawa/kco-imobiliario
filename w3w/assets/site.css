@@ -549,4 +549,5 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .pf-feat .g:first-child .vt-t em{font-size:clamp(18px,1.6vw,24px);max-width:44ch}
 .pf-feat .g:not(:first-child) .vt-t strong{font-size:clamp(30px,3vw,52px)}
 .pf-feat .g:first-child .vt-t small::after{content:" · Ver ficha →";opacity:.8}
+.pf-feat .vt-t small{display:block;margin-bottom:14px}
 @media(max-width:767px){.pf-feat{margin:0 -20px 36px!important;padding:0 20px}.pf-feat .g .ph,.pf-feat .g:first-child .ph,.pf-feat .g:not(:first-child) .ph{height:auto!important;min-height:0;aspect-ratio:4/5!important}.pf-feat .g:first-child .vt-t{padding:22px}.pf-feat .g:first-child .vt-t strong{font-size:38px}}

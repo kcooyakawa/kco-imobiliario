@@ -586,6 +586,7 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .pf-feat .g:first-child .vt-t em{font-size:clamp(18px,1.6vw,24px);max-width:44ch}
 .pf-feat .g:not(:first-child) .vt-t strong{font-size:clamp(30px,3vw,52px)}
 .pf-feat .g:first-child .vt-t small::after{content:" · Ver ficha →";opacity:.8}
+.pf-feat .vt-t small{display:block;margin-bottom:14px}
 @media(max-width:767px){.pf-feat{margin:0 -20px 36px!important;padding:0 20px}.pf-feat .g .ph,.pf-feat .g:first-child .ph,.pf-feat .g:not(:first-child) .ph{height:auto!important;min-height:0;aspect-ratio:4/5!important}.pf-feat .g:first-child .vt-t{padding:22px}.pf-feat .g:first-child .vt-t strong{font-size:38px}}
 """.replace('__F__', FONTS)
 
@@ -725,7 +726,7 @@ def rich(e, h='h2'):
 def feat():
     fs = [e for e in E if e['bairro_slug']=='moema' and e['status']=='Lançamento' and e.get('ficha') and 'alto-padrao' in e['categorias']][:3]
     if len(fs) < 3: fs += [e for e in E if e.get('ficha') and e not in fs and 'alto-padrao' in e['categorias']][:3-len(fs)]
-    cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e["slug"])}" data-slug="{e["slug"]}"><div class="ph"><img src="{e["img"]}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="vt-t"><small>{e["status"]} · {esc(e["bairro"])}</small><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
+    cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e["slug"])}" data-slug="{e["slug"]}"><div class="ph"><img src="{e.get("vitrine") or e["img"]}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="vt-t"><small>{e["status"]} · {esc(e["bairro"])}</small><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
     return f'<div class="pf-feat">{cards}</div>'
 
 def build_home():
