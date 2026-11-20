@@ -554,7 +554,7 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 /* vitrine */
 .pf-feat{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);grid-template-rows:1fr 1fr;gap:20px;margin:0 0 56px;height:min(78vh,760px)}
 .pf-feat .g{min-width:0;min-height:0}.pf-feat .g:first-child{grid-row:1/3}
-.pf-feat .ph{position:relative;height:100%;border-radius:18px;overflow:hidden;background:#dfe2e6}
+.pf-feat .g .ph{aspect-ratio:auto;width:100%;position:relative;height:100%;border-radius:18px;overflow:hidden;background:#dfe2e6}
 .pf-feat .g .ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
 .pf-feat .g:hover .ph img{transform:scale(1.03)}
 .vt-t{position:absolute;left:0;right:0;bottom:0;padding:28px;color:#F6F7F9;background:linear-gradient(transparent,rgba(18,17,16,.7));display:flex;flex-direction:column;gap:6px}
