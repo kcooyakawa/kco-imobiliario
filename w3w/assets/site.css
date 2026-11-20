@@ -551,3 +551,14 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .pf-feat .g:first-child .vt-t small::after{content:" · Ver ficha →";opacity:.8}
 .pf-feat .vt-t small{display:block;margin-bottom:14px}
 @media(max-width:767px){.pf-feat{margin:0 -20px 36px!important;padding:0 20px}.pf-feat .g .ph,.pf-feat .g:first-child .ph,.pf-feat .g:not(:first-child) .ph{height:auto!important;min-height:0;aspect-ratio:4/5!important}.pf-feat .g:first-child .vt-t{padding:22px}.pf-feat .g:first-child .vt-t strong{font-size:38px}}
+
+/* contato prime: sem caixa branca */
+.cafe-f{background:transparent!important;box-shadow:none!important;border-radius:0!important;padding:0!important;border-top:1px solid rgba(246,247,249,.35)!important;padding-top:28px!important}
+.cafe-f label{color:rgba(246,247,249,.72)!important}
+.cafe-f input,.cafe-f textarea,.cafe-f select{color:#fff!important;background:transparent!important;border:0!important;border-bottom:1px solid rgba(246,247,249,.45)!important;font-size:17px;caret-color:#fff}
+.cafe-f input:focus,.cafe-f textarea:focus,.cafe-f select:focus{outline:0;border-bottom-color:#fff!important}
+.cafe-f select option{color:#1A1817}
+.cafe-f input:-webkit-autofill{-webkit-text-fill-color:#fff;transition:background-color 9999s}
+.cafe-f .btn{background:#F6F7F9!important;color:#1A1817!important;border-color:#F6F7F9!important}
+.cafe-f .btn:hover{background:transparent!important;color:#F6F7F9!important}
+.cafe-f small,.cafe-f small a{color:rgba(246,247,249,.65)!important}
