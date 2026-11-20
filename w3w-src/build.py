@@ -562,7 +562,7 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .vt-t strong{font-family:var(--serif);font-weight:300;font-size:clamp(26px,2.6vw,44px);line-height:1;letter-spacing:-.02em}
 .vt-t em{font-family:var(--serif);font-style:italic;font-weight:300;font-size:16px;opacity:.9;max-width:40ch}
 .pf-feat .g:not(:first-child) .vt-t em{display:none}
-@media(max-width:767px){.pf-feat{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;height:auto;margin:0 -20px 36px;padding:0 20px;gap:12px;scrollbar-width:none}.pf-feat::-webkit-scrollbar{display:none}.pf-feat .g{flex:0 0 84%;scroll-snap-align:center}.pf-feat .ph{aspect-ratio:4/5;height:auto}.vt-t{padding:20px}}
+@media(max-width:767px){.pf-feat{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;height:auto;margin:0 -20px 36px;padding:0 20px;gap:12px;scrollbar-width:none}.pf-feat::-webkit-scrollbar{display:none}.pf-feat .g{flex:0 0 84%;scroll-snap-align:center}.pf-feat .g .ph{aspect-ratio:4/5;height:auto}.vt-t{padding:20px}}
 /* swipe no card */
 .sw{position:absolute;inset:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;z-index:0}
 .sw::-webkit-scrollbar{display:none}
