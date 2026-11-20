@@ -4294,39 +4294,39 @@
    "vagas": "3 e 4 Vagas"
   },
   "torres": [],
-  "img": "https://api.apto.vc/images/realties/7986/splend-moema-condominio-1.jpg",
+  "img": "https://www.exto.com.br/wp-content/uploads/2025/02/PERSPECTIVAS-SPLEND-DESKTOP-22.jpg",
   "categorias": [
    "alto-padrao"
   ],
   "ficha": {
-   "tagline": "Quatro suítes, hall privativo e unidade personalizável.",
-   "conceito": "Apartamentos de 258 m² com quatro suítes, hall social privativo e depósito individual, com serviço de personalização de layout e acabamentos.",
-   "endereco": "Av. Juriti · Moema",
+   "tagline": "Metragem única de 258 m², quatro suítes e gerador para o apartamento inteiro.",
+   "conceito": "O Splend está no lado de Moema Pássaros que mais procuramos para clientes de família: fora da rota dos aviões, na Alameda dos Arapanés. A Exto fez uma escolha que admiramos: uma única planta de 258 m², com quatro suítes, sala aberta de fachada a fachada e hall privativo com biometria. É dos poucos do bairro com gerador full, que mantém até o ar-condicionado das unidades em caso de queda de energia. Decoração de Débora Aguiar e quadra de tênis by Lisonda.",
+   "endereco": "Al. dos Arapanés, 397 · Moema Pássaros",
    "entrega": "Previsão: out/2027",
    "faixa": "258 m²",
-   "plantas_tit": "quatro suítes, hall privativo.",
+   "plantas_tit": "metragem única, quatro suítes.",
    "assinaturas": [
     [
-     "Incorporação",
-     "Exto"
+     "Arquitetura",
+     "Exto · equipe liderada por Dina Melaragno"
     ],
     [
-     "Personalização",
-     "Layout e acabamentos"
+     "Decoração",
+     "Débora Aguiar"
     ],
     [
      "Fitness",
      "Life Fitness"
     ],
     [
-     "Entrega",
-     "Prevista para out/2027"
+     "Incorporação e construção",
+     "Exto"
     ]
    ],
    "destaques": [
     [
      "258 m²",
-     "privativos"
+     "planta única"
     ],
     [
      "4",
@@ -4337,8 +4337,8 @@
      "de piscina"
     ],
     [
-     "3–4",
-     "vagas"
+     "Full",
+     "gerador para todas as unidades"
     ]
    ],
    "plantas": [
@@ -4350,21 +4350,190 @@
     ]
    ],
    "lazer": [
-    "Piscina de 20 m",
-    "Quadra de tênis Lisonda",
-    "Spa wellness",
-    "Fitness Life Fitness",
-    "Salão de festas",
-    "Espaço gourmet"
+    "Quadra de tênis by Lisonda",
+    "Espaço gourmet tennis view",
+    "Piscina descoberta de 20 m",
+    "Piscina infantil",
+    "Wellness spa com hidromassagem",
+    "Sauna úmida",
+    "Espaço zen",
+    "Fitness by Life Fitness",
+    "Mini campo",
+    "Pet agility",
+    "Espaço gamer e coworking",
+    "Lounge family com bar",
+    "Brinquedoteca",
+    "Mini market"
    ],
    "local": [
-    "Moema Índios",
-    "Perto do Ibirapuera Shopping"
+    "Moema Pássaros, fora da rota dos aviões",
+    "Alameda dos Arapanés, miolo residencial do bairro",
+    "Perto do Shopping Ibirapuera e do Parque Ibirapuera"
    ],
    "tecnica": [
     [
-     "Diferenciais",
-     "Hall privativo, depósito individual"
+     "Elevadores",
+     "Sociais panorâmicos, com código de segurança"
+    ],
+    [
+     "Unidades",
+     "Persiana automatizada na suíte master, infra para adega"
+    ],
+    [
+     "Personalização",
+     "Opções de layout e acabamento"
+    ],
+    [
+     "Status",
+     "Em obras · previsão out/2027"
+    ]
+   ],
+   "img": {
+    "capa": "https://www.exto.com.br/wp-content/uploads/2025/02/PERSPECTIVAS-SPLEND-DESKTOP-22.jpg",
+    "par": [
+     [
+      "https://www.exto.com.br/wp-content/uploads/2024/12/PERSPECTIVAS-SPLEND-DESKTOP-19-1920x1200_c.jpg",
+      "Lobby"
+     ],
+     [
+      "https://www.exto.com.br/wp-content/uploads/2024/12/DECORADO-SPLEND-DESKTOP-1-1920x1200_c.jpg",
+      "Living · decorado"
+     ]
+    ],
+    "voo": "https://www.exto.com.br/wp-content/uploads/2024/12/PERSPECTIVAS-SPLEND-DESKTOP-1-1920x1200_c.jpg",
+    "lazer": [
+     [
+      "https://www.exto.com.br/wp-content/uploads/2024/12/PERSPECTIVAS-SPLEND-DESKTOP-3-1920x1200_c.jpg",
+      "Piscina de 20 m"
+     ],
+     [
+      "https://www.exto.com.br/wp-content/uploads/2024/12/PERSPECTIVAS-SPLEND-DESKTOP-2-1920x1200_c.jpg",
+      "Gourmet tennis view"
+     ],
+     [
+      "https://www.exto.com.br/wp-content/uploads/2024/12/PERSPECTIVAS-SPLEND-DESKTOP-10-1920x1200_c.jpg",
+      "Wellness spa"
+     ],
+     [
+      "https://www.exto.com.br/wp-content/uploads/2024/12/PERSPECTIVAS-SPLEND-DESKTOP-8-1920x1200_c.jpg",
+      "Fitness"
+     ],
+     [
+      "https://www.exto.com.br/wp-content/uploads/2024/12/PERSPECTIVAS-SPLEND-DESKTOP-14-1920x1200_c.jpg",
+      "Lounge family"
+     ],
+     [
+      "https://www.exto.com.br/wp-content/uploads/2024/12/DECORADO-SPLEND-DESKTOP-11-1920x1200_c.jpg",
+      "Suíte master"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "the-selection-moema",
+  "nome": "The Selection Moema",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": "Apartamentos 3 suítes",
+  "frase": "Torre única de 170 m² com tênis e piscina coberta, fora da rota dos aviões.",
+  "resumo": {
+   "tipologias": "3 suítes ou 4 dorms.",
+   "metragem": "170 m²",
+   "vagas": "Sob consulta"
+  },
+  "torres": "1",
+  "img": "https://www.exto.com.br/wp-content/uploads/2025/09/Fachada.jpg",
+  "categorias": [
+   "alto-padrao",
+   "apartamentos"
+  ],
+  "ficha": {
+   "tagline": "Torre única, 170 m² e lazer de clube na Alameda dos Maracatins.",
+   "conceito": "Incluímos o The Selection porque ele preenche uma faixa que falta em Moema: 170 m² com padrão construtivo de alto luxo e lazer de clube. A Exto escolheu a Alameda dos Maracatins, fora da rota dos aviões, para uma torre única com quadra de tênis by Lisonda e piscina coberta com raia de 25 m. Os apartamentos têm hall privativo com biometria, gerador full e opção de 3 suítes ou 4 dormitórios.",
+   "endereco": "Al. dos Maracatins, 857 · Moema",
+   "entrega": "Em obras",
+   "faixa": "170 m²",
+   "plantas_tit": "três suítes ou quatro dormitórios.",
+   "assinaturas": [
+    [
+     "Arquitetura",
+     "Exto · equipe liderada por Dina Melaragno"
+    ],
+    [
+     "Fitness",
+     "Life Fitness"
+    ],
+    [
+     "Tênis",
+     "Lisonda"
+    ],
+    [
+     "Incorporação e construção",
+     "Exto"
+    ]
+   ],
+   "destaques": [
+    [
+     "170 m²",
+     "planta única"
+    ],
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "25 m",
+     "raia da piscina coberta"
+    ],
+    [
+     "Full",
+     "gerador para as unidades"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "170 m²",
+     "3 suítes",
+     "Sob consulta"
+    ],
+    [
+     "Tipo · opção",
+     "170 m²",
+     "4 dorms. (3 suítes)",
+     "Sob consulta"
+    ]
+   ],
+   "lazer": [
+    "Quadra de tênis by Lisonda",
+    "Gourmet tennis",
+    "Piscina coberta com raia de 25 m",
+    "Piscina descoberta com deck molhado e solário",
+    "Sauna úmida",
+    "Fitness by Life Fitness",
+    "Espaço beauty com sala de massagem",
+    "Campo gramado",
+    "Salão e praça de festas",
+    "Coworking",
+    "Brinquedoteca",
+    "Playground",
+    "Espaço pet"
+   ],
+   "local": [
+    "Moema, fora da rota dos aviões",
+    "Alameda dos Maracatins, perto do comércio da Av. Ibirapuera",
+    "Áreas comuns entregues decoradas"
+   ],
+   "tecnica": [
+    [
+     "Segurança",
+     "Duplo bloqueio e guarita recuada em vidro blindado"
+    ],
+    [
+     "Unidades",
+     "Hall privativo com biometria, persiana automatizada na suíte master"
     ],
     [
      "Status",
@@ -4372,41 +4541,42 @@
     ]
    ],
    "img": {
-    "capa": "https://api.apto.vc/images/realties/7986/splend-moema-condominio-1.jpg",
+    "capa": "https://www.exto.com.br/wp-content/uploads/2025/09/Fachada.jpg",
     "par": [
      [
-      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-2.jpg",
-      "Fachada"
+      "https://www.exto.com.br/wp-content/uploads/2025/09/Lobby-de-acesso-com-pe-direito-duplo-e-decoracao-de-alto-padrao-1920x1200_c.jpg",
+      "Lobby com pé-direito duplo"
      ],
      [
-      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-3.jpg",
-      "Lazer"
+      "https://www.exto.com.br/wp-content/uploads/2025/10/The-Selection-Moema-Jantar-e-Living-1920x1200_c.jpg",
+      "Living e jantar · decorado"
      ]
     ],
+    "voo": "https://www.exto.com.br/wp-content/uploads/2025/02/Exto_Maracatins_07_Quadra-Tenis_R01_LR-1-1-1920x1200_c.jpg",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-4.jpg",
-      "Áreas comuns"
+      "https://www.exto.com.br/wp-content/uploads/2025/09/Piscina-coberta-25m-com-raia-1920x1200_c.jpg",
+      "Piscina coberta"
      ],
      [
-      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-5.jpg",
-      "Áreas comuns"
+      "https://www.exto.com.br/wp-content/uploads/2025/09/Piscina-descoberta-com-deck-molhado-e-Solario-1920x1200_c.jpg",
+      "Piscina descoberta"
      ],
      [
-      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-6.jpg",
-      "Áreas comuns"
+      "https://www.exto.com.br/wp-content/uploads/2025/09/Gourmet-Tennis-1920x1200_c.jpg",
+      "Gourmet tennis"
      ],
      [
-      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-7.jpg",
-      "Áreas comuns"
+      "https://www.exto.com.br/wp-content/uploads/2025/09/Fitness-BY-LIFEFITNESS-1920x1200_c.jpg",
+      "Fitness"
      ],
      [
-      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-8.jpg",
-      "Áreas comuns"
+      "https://www.exto.com.br/wp-content/uploads/2025/09/Campo-Gramado-1920x1200_c.jpg",
+      "Campo gramado"
      ],
      [
-      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-9.jpg",
-      "Áreas comuns"
+      "https://www.exto.com.br/wp-content/uploads/2025/10/The-Selection-Moema-Suite-Master-1920x1200_c.jpg",
+      "Suíte master"
      ]
     ]
    }
@@ -4423,38 +4593,38 @@
   ],
   "frase": "Vida premium e sustentável em um endereço desejável, próximo ao Parque Ibirapuera.",
   "resumo": {
-   "tipologias": "3 Suítes",
-   "metragem": "317 m²",
-   "vagas": "4 Vagas"
+   "tipologias": "3 suítes e duplex 4 suítes",
+   "metragem": "317 e 625 m²",
+   "vagas": "4 e 5 vagas"
   },
   "torres": [],
-  "img": "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-1.jpg",
+  "img": "https://evenautoatendimento.blob.core.windows.net/site-container/6143ee7c-5bd5-4d4e-8004-15e1854295cb-08012025133133.png",
   "categorias": [
    "alto-padrao"
   ],
   "ficha": {
-   "tagline": "Duas torres, 74 casas suspensas em Moema.",
-   "conceito": "Projeto Aflalo/Gasperini para a Even num terreno de 5.570 m²: 74 residências, piscina coberta com raia de 25 m e quadra de tênis.",
-   "endereco": "Al. dos Arapanés, 522 · Moema",
+   "tagline": "Setenta casas suspensas e quatro duplex entre a Sabiá e a Arapanés.",
+   "conceito": "Casa Sabiá entrou na seleção pelo tamanho do terreno e pela planta. São mais de 5,5 mil m² atravessando a quadra, da Av. Sabiá à Alameda dos Arapanés, para apenas 74 residências em duas torres. O apartamento tipo tem 317 m² e três suítes, com 4 vagas; no topo, quatro duplex de 625 m². O lazer é de clube: quadra de tênis, piscina coberta com raia de 25 m e spa. Arquitetura da Aflalo/Gasperini e decoração de Gui Mattos.",
+   "endereco": "Av. Sabiá, 668 · Al. dos Arapanés, 522 · Moema",
    "entrega": "Previsão: nov/2026",
-   "faixa": "315 a 317 m²",
-   "plantas_tit": "três suítes, varanda gourmet.",
+   "faixa": "317 a 625 m²",
+   "plantas_tit": "três suítes no tipo, quatro nos duplex.",
    "assinaturas": [
     [
      "Arquitetura",
      "Aflalo/Gasperini"
     ],
     [
-     "Incorporação",
+     "Decoração",
+     "Gui Mattos"
+    ],
+    [
+     "Paisagismo",
+     "Tagu"
+    ],
+    [
+     "Incorporação e construção",
      "Even"
-    ],
-    [
-     "Terreno",
-     "5.570 m²"
-    ],
-    [
-     "Entrega",
-     "Prevista para nov/2026"
     ]
    ],
    "destaques": [
@@ -4463,95 +4633,110 @@
      "residências"
     ],
     [
-     "2",
-     "torres"
+     "5.570 m²",
+     "de terreno"
+    ],
+    [
+     "625 m²",
+     "duplex"
     ],
     [
      "25 m",
-     "raia na piscina coberta"
-    ],
-    [
-     "4",
-     "vagas"
+     "raia da piscina coberta"
     ]
    ],
    "plantas": [
     [
      "Tipo",
-     "315 m²",
+     "317 m²",
      "3 suítes",
      "4 vagas"
     ],
     [
-     "Tipo",
-     "317 m²",
-     "3 suítes",
-     "4 vagas"
+     "Duplex",
+     "625 m²",
+     "4 suítes",
+     "5 vagas"
     ]
    ],
    "lazer": [
-    "Piscina coberta com raia de 25 m",
     "Quadra de tênis",
-    "Fitness",
-    "Sauna",
+    "Piscina coberta com raia de 25 m",
+    "Piscina adulto e infantil",
+    "Spa",
+    "Sauna seca",
     "Sala de massagem",
-    "Salão de festas",
+    "Academia",
+    "Salão de festas com terraço",
+    "Espaço gourmet",
+    "Quadra de jogos",
+    "Brinquedoteca",
     "Playground"
    ],
    "local": [
-    "Moema Pássaros, perto da Av. Sabiá",
-    "Caminho do Parque Ibirapuera"
+    "Atravessa a quadra entre a Av. Sabiá e a Alameda dos Arapanés",
+    "Cerca de 5 min do Parque Ibirapuera",
+    "Ruas arborizadas de Moema Pássaros, restaurantes a pé"
    ],
    "tecnica": [
+    [
+     "Terreno",
+     "5.570 m²"
+    ],
     [
      "Torres",
      "2"
     ],
     [
      "Unidades",
-     "74"
+     "70 tipo + 4 duplex"
+    ],
+    [
+     "Serviços",
+     "Assessoria esportiva, pet care, safe storage"
     ],
     [
      "Status",
-     "Em obras"
+     "Em obras · previsão nov/2026"
     ]
    ],
    "img": {
-    "capa": "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-1.jpg",
+    "capa": "https://evenautoatendimento.blob.core.windows.net/site-container/6143ee7c-5bd5-4d4e-8004-15e1854295cb-08012025133133.png",
     "par": [
      [
-      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-2.jpg",
-      "Fachada"
+      "https://evenautoatendimento.blob.core.windows.net/site-container/12aa3607-79e0-44d5-8738-8125bf8eb237-08012025133230.png",
+      "Acesso do residencial"
      ],
      [
-      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-3.jpg",
-      "Lazer"
+      "https://evenautoatendimento.blob.core.windows.net/site-container/11d1487d-c5c9-4d3c-9442-d96985ddbddb-15012024180802.jpg",
+      "Living · decorado 317 m²"
      ]
     ],
+    "voo": "https://evenautoatendimento.blob.core.windows.net/site-container/f67f89b1-1a14-49df-9886-e425e8e6a9c9-10112025134818.jpg",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-4.jpg",
-      "Áreas comuns"
+      "https://evenautoatendimento.blob.core.windows.net/site-container/edc1460c-ba21-4504-8290-ff5e7c47d287-08012025134334.png",
+      "Piscina coberta"
      ],
      [
-      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-5.jpg",
-      "Áreas comuns"
+      "https://evenautoatendimento.blob.core.windows.net/site-container/26cbec29-bd31-420b-b876-5b9f47da613a-08012025133342.png",
+      "Piscina adulto"
      ],
      [
-      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-6.jpg",
-      "Áreas comuns"
+      "https://evenautoatendimento.blob.core.windows.net/site-container/782f328f-0483-48a8-b6e4-36d6b4da105d-08012025133801.png",
+      "Salão de festas"
      ],
      [
-      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-7.jpg",
-      "Áreas comuns"
+      "https://evenautoatendimento.blob.core.windows.net/site-container/cd04da3b-26b0-4f9f-9592-3befc157631e-08012025133926.png",
+      "Espaço gourmet"
      ],
      [
-      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-8.jpg",
-      "Áreas comuns"
+      "https://evenautoatendimento.blob.core.windows.net/site-container/e00a1721-b6e3-4caf-9a9f-342394f0eb7c-08012025134235.png",
+      "Sauna"
      ],
      [
-      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-9.jpg",
-      "Áreas comuns"
+      "https://evenautoatendimento.blob.core.windows.net/site-container/d1b19c94-5c2e-4192-a8d6-9c89ab62c6ef-15012024181731.jpg",
+      "Suíte master"
      ]
     ]
    }
