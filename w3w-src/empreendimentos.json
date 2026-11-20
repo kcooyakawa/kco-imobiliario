@@ -2149,98 +2149,109 @@
   ],
   "frase": "Viva com conforto e estilo. Garanta seu lugar neste empreendimento único e desfrute de exclusividade e modernidade.",
   "resumo": {
-   "tipologias": "Studios",
-   "metragem": "23 a 33 m²",
-   "vagas": ""
+   "tipologias": "Studios e 3 suítes",
+   "metragem": "21 a 141 m²",
+   "vagas": "2 vagas (141 m²)"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/03_YOU_GAI_ESQUINA_FINAL_2SCOPEOMEDIA-2.jpg",
+  "img": "https://younewback.youinc.com.br/wp-content/uploads/2022/11/03_YOU_GAI_ESQUINA_FINAL_2SCOPEOMEDIA-2.jpg",
   "categorias": [
+   "apartamentos",
    "studios"
   ],
   "ficha": {
-   "tagline": "Viva com conforto e estilo. Garanta seu lugar neste empreendimento único e desfrute de exclusividade e modernidade.",
-   "conceito": "Torre única com 30 residências em terreno de 1.127 m², na R. Gaivota, em Moema.",
-   "endereco": "R. Gaivota · Moema",
+   "tagline": "A esquina da Sabiá com a Gaivota, a 850 m do Ibirapuera.",
+   "conceito": "Selecionamos o Moema Signature pela esquina: Av. Sabiá com Rua Gaivota, a 850 metros a pé do Parque Ibirapuera e a 450 metros do metrô. A Perkins&Will desenhou um edifício de uso misto, com loja no térreo e fachada de brises, que foge da torre convencional do bairro. Os apartamentos de 141 m² têm três suítes e hall privativo; os studios atendem quem compra para investir. O prédio está pronto, com piscina em L de 25 m e sky lounge.",
+   "endereco": "Av. Sabiá, 476 · esquina com R. Gaivota · Moema",
    "entrega": "Pronto para morar",
-   "faixa": "141 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "faixa": "21 a 141 m²",
+   "plantas_tit": "três suítes com hall privativo, ou studio.",
    "assinaturas": [
     [
-     "Incorporação",
-     "You,inc"
-    ],
-    [
      "Arquitetura",
-     "Perkins + Will Arquitetura"
+     "Perkins&Will"
     ],
     [
-     "Decoração",
-     "Melina Romano Interiores"
+     "Interiores",
+     "Melina Romano"
     ],
     [
      "Paisagismo",
-     "Cardim Arquitetura Paisagística"
+     "Cardim"
+    ],
+    [
+     "Incorporação",
+     "You,inc"
     ]
    ],
    "destaques": [
     [
-     "30",
-     "residências"
+     "850 m",
+     "a pé do Parque Ibirapuera"
     ],
     [
-     "1",
-     "torre"
+     "450 m",
+     "do metrô Moema"
     ],
     [
-     "21",
-     "pavimentos"
+     "25 m",
+     "raia da piscina em L"
     ],
     [
-     "141 m²",
-     "maior planta"
+     "3",
+     "suítes"
     ]
    ],
    "plantas": [
     [
-     "3 dorm.",
-     "141 m²",
-     "3 suítes",
-     "2 vagas"
+     "Studio",
+     "21 a 33 m²",
+     "—",
+     "Sem vaga"
     ],
     [
-     "4 dorm.",
+     "Tipo",
      "141 m²",
-     "2 suítes",
-     "2 vagas"
+     "3 suítes",
+     "2 vagas demarcadas"
+    ],
+    [
+     "Tipo · opção",
+     "141 m²",
+     "4 dorms.",
+     "2 vagas demarcadas"
     ]
    ],
    "lazer": [
-    "Salão de festas",
-    "Brinquedoteca",
-    "Espaço delivery",
-    "Pet place",
-    "Jardim descoberto",
-    "Academia",
+    "Piscina em L com deck molhado e raia de 25 m",
+    "Piscina infantil",
+    "Sky lounge",
+    "Solarium",
+    "Fitness",
     "Sauna seca",
     "Sala de massagem",
-    "Piscina adulto"
+    "Salão de festas",
+    "Brinquedoteca",
+    "Pet place",
+    "Bicicletário"
    ],
    "local": [
-    "R. Gaivota, Moema"
+    "850 m a pé do Parque Ibirapuera",
+    "450 m da estação Moema do metrô",
+    "Esquina da Av. Sabiá, comércio de bairro e restaurantes"
    ],
    "tecnica": [
     [
-     "Terreno",
-     "1.127 m²"
+     "Sustentabilidade",
+     "Reúso de água de chuva, infra para aquecimento solar"
+    ],
+    [
+     "Mobilidade",
+     "Tomadas para carro e bicicleta elétricos"
     ],
     [
      "Unidades",
-     "30"
-    ],
-    [
-     "Entrega",
-     "Entregue em jan/2026"
+     "Fechadura eletrônica"
     ],
     [
      "Status",
@@ -2248,41 +2259,42 @@
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/03_YOU_GAI_ESQUINA_FINAL_2SCOPEOMEDIA-2.jpg",
+    "capa": "https://younewback.youinc.com.br/wp-content/uploads/2022/11/03_YOU_GAI_ESQUINA_FINAL_2SCOPEOMEDIA-2.jpg",
     "par": [
      [
-      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-condominio-1.jpg",
-      "Áreas comuns"
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/01_YOU_GAI_EMBASAMENTO_G_FINAL2SCOPEOMEDIA-2.jpg",
+      "Embasamento"
      ],
      [
-      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-apartamento-1.jpg",
-      "Residência"
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/09-YOU_GAI_4DORM_FINALSCOPEOMEDIA-2.jpg",
+      "Living · 141 m²"
      ]
     ],
+    "voo": "https://younewback.youinc.com.br/wp-content/uploads/2022/11/04_YGV-VOO-PISCINA.jpg",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-condominio-2.jpg",
-      "Lazer"
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/09_YOU_GAI_PISCINA_ALTO_FINAL2SCOPEOMEDIA-1.jpg",
+      "Piscina com solarium"
      ],
      [
-      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-condominio-3.jpg",
-      "Lazer"
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/05_YOU_GAI_SKY_BAR_FINALSCOPEOMEIDA-1.jpg",
+      "Sky lounge"
      ],
      [
-      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-condominio-4.jpg",
-      "Lazer"
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/18_YOU_GAI_FITNESS_ALTO_FINALSCOPEOMEDIA-1.jpg",
+      "Fitness"
      ],
      [
-      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-condominio-5.jpg",
-      "Lazer"
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/20_YOU_GAI_SPA_FINAL2.jpg",
+      "Sala de massagem"
      ],
      [
-      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-condominio-6.jpg",
-      "Lazer"
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/16_YOU_GAI_FESTAS_ALTO_F2SCOPEOMEDIA.jpg",
+      "Salão de festas"
      ],
      [
-      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-condominio-7.jpg",
-      "Lazer"
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/24_YOU_GAI_SUITE_FINALSCOPEOMEDIA-1.jpg",
+      "Suíte master"
      ]
     ]
    }
@@ -2290,7 +2302,7 @@
  },
  {
   "slug": "moma-moema",
-  "nome": "Moma Moema",
+  "nome": "MOMA Moema",
   "bairro": "Moema",
   "bairro_slug": "moema",
   "status": "Em obras",
@@ -2305,120 +2317,104 @@
    "vagas": "3 e 4 Vagas (demarcadas)"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada-listagem_MOMA_vs02.jpg",
+  "img": "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Fachada-Esquina.jpg",
   "categorias": [
    "alto-padrao",
    "studios"
   ],
   "ficha": {
-   "tagline": "Sofisticação, design exclusivo e localização privilegiada se unem para uma experiência única.",
-   "conceito": "Conceito wellness, três andares dedicados ao lazer e um rooftop no 28º pavimento com piscina, solarium e lounge bar.",
-   "endereco": "Av. Macuco · Moema",
-   "entrega": "Previsão: jun/2027",
-   "faixa": "24 a 384 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "tagline": "Um condomínio dentro de um clube de 4 mil m², a 350 m do metrô.",
+   "conceito": "O MOMA entrou na seleção pela escala: um clube de 4 mil m² em pleno Moema Pássaros, com duas torres de 100 metros e apenas dois apartamentos por andar. A Aflalo & Gasperini desenhou um embasamento na altura das copas das árvores, com lojas na calçada, e um rooftop com piscina e vista 360° no topo da torre da Av. Ibirapuera. As varandas de esquina têm floreiras em toda a extensão, para que o verde da rua continue dentro de casa.",
+   "endereco": "Av. Ibirapuera, 2.480 · Moema Pássaros",
+   "entrega": "Em obras",
+   "faixa": "Studios a 194 m²",
+   "plantas_tit": "dois apartamentos por andar, varandas de esquina.",
    "assinaturas": [
-    [
-     "Incorporação",
-     "You,inc, Kallas"
-    ],
     [
      "Arquitetura",
      "Aflalo & Gasperini"
     ],
     [
-     "Decoração",
+     "Interiores",
      "Studio ro+ca"
     ],
     [
      "Paisagismo",
-     "Rodrigo Oliveira Paisagismo"
+     "Rodrigo Oliveira"
+    ],
+    [
+     "Incorporação",
+     "You,inc · Kallas"
     ]
    ],
    "destaques": [
     [
-     "84",
-     "residências"
+     "4 mil m²",
+     "de clube"
+    ],
+    [
+     "350 m",
+     "da estação Moema"
+    ],
+    [
+     "100 m",
+     "de altura"
     ],
     [
      "2",
-     "torres"
-    ],
-    [
-     "27",
-     "pavimentos"
-    ],
-    [
-     "384 m²",
-     "maior planta"
+     "apartamentos por andar"
     ]
    ],
    "plantas": [
     [
-     "Studio",
-     "24 m²",
+     "Studio+ e 1 dorm.+",
+     "24 a 58 m²",
      "—",
      "Sem vaga"
     ],
     [
-     "3 dorm.",
+     "Tipo",
      "147 m²",
      "3 suítes",
      "2 vagas"
     ],
     [
-     "2 dorm.",
-     "147 m²",
-     "2 suítes",
-     "2 vagas"
-    ],
-    [
-     "4 dorm.",
+     "Tipo",
      "194 m²",
-     "2 suítes",
+     "4 dorms. ou 3 suítes",
      "3 vagas"
-    ],
-    [
-     "3 dorm.",
-     "194 m²",
-     "3 suítes",
-     "3 vagas"
-    ],
-    [
-     "4 dorm.",
-     "384 m²",
-     "4 suítes",
-     "4 vagas"
     ]
    ],
    "lazer": [
-    "Bicicletário",
-    "Brinquedoteca",
-    "Churrasqueira",
-    "Delivery",
+    "Rooftop com piscina e sky bar",
+    "Piscina coberta com raia de 25 m",
+    "Piscina descoberta com solarium",
+    "Quadra de beach tennis",
     "Fitness",
-    "Piscina adulto",
-    "Piscina infantil",
-    "Piscina coberta com raia de 20m",
-    "Piscina descoberta"
+    "Sauna e sala de massagem",
+    "Salão de festas",
+    "Churrasqueira",
+    "Brinquedoteca",
+    "Playground",
+    "Coworking"
    ],
    "local": [
-    "A 650 metros do Shopping Ibirapuera",
-    "A 5 minutos de caminhada da estação de metrô Moema",
-    "Apartamentos com amplas varandas e jardim suspenso"
+    "350 m da estação Moema do metrô",
+    "Cerca de 10 min de bike até o Parque Ibirapuera",
+    "Frentes para a Av. Ibirapuera e a Av. Macuco"
    ],
    "tecnica": [
     [
-     "Terreno",
-     "4.206 m²"
+     "Torres",
+     "2 × 100 m de altura"
     ],
     [
-     "Unidades",
-     "84"
+     "Pé-direito",
+     "3,70 m nos Studios+"
     ],
     [
-     "Entrega",
-     "Previsão: jun/2027"
+     "Imagens",
+     "Perspectivas ilustradas da incorporadora"
     ],
     [
      "Status",
@@ -2426,41 +2422,42 @@
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada-listagem_MOMA_vs02.jpg",
+    "capa": "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Fachada-Esquina.jpg",
     "par": [
      [
-      "https://api.apto.vc/images/realties/6708/moma-moema-condominio-1.jpg",
-      "Áreas comuns"
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Lobby.jpg",
+      "Lobby"
      ],
      [
-      "https://api.apto.vc/images/realties/6708/moma-moema-apartamento-1.jpg",
-      "Residência"
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Living-Apartamento-194.jpg",
+      "Living · 194 m²"
      ]
     ],
+    "voo": "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Rooftop-com-Piscina-e-Sky-Bar.jpg",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/6708/moma-moema-condominio-2.jpg",
-      "Lazer"
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Piscina-Coberta-com-Raia-de-25-m.jpg",
+      "Piscina coberta"
      ],
      [
-      "https://api.apto.vc/images/realties/6708/moma-moema-condominio-3.jpg",
-      "Lazer"
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Voo-Lazer.jpg",
+      "Clube de lazer"
      ],
      [
-      "https://api.apto.vc/images/realties/6708/moma-moema-condominio-4.jpg",
-      "Lazer"
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Quadra-de-Beach-Tennis.jpg",
+      "Beach tennis"
      ],
      [
-      "https://api.apto.vc/images/realties/6708/moma-moema-condominio-5.jpg",
-      "Lazer"
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Fitness-Musculacao.jpg",
+      "Fitness"
      ],
      [
-      "https://api.apto.vc/images/realties/6708/moma-moema-condominio-6.jpg",
-      "Lazer"
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Salao-de-Festas.jpg",
+      "Salão de festas"
      ],
      [
-      "https://api.apto.vc/images/realties/6708/moma-moema-condominio-7.jpg",
-      "Lazer"
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Suite-Master-Apartamento-194.jpg",
+      "Suíte master · 194 m²"
      ]
     ]
    }
