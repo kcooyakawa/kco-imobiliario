@@ -4693,22 +4693,22 @@
   ],
   "frase": "Exclusividade e sofisticação te esperam em Moema. Descubra um refúgio com detalhes que surpreendem.",
   "resumo": {
-   "tipologias": "3 e 4 Suítes",
-   "metragem": "177 a 392 m²",
-   "vagas": "3 e 4 Vagas"
+   "tipologias": "3 e 4 suítes, duplex e gardens",
+   "metragem": "172 a 569 m²",
+   "vagas": "Sob consulta"
   },
   "torres": [],
-  "img": "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-2.jpg",
+  "img": "https://www.dialogo.com.br/estatico/2023/11/06/14/29/f46633e13c5a0efd06078d2a796bd5457a0722c7.webp",
   "categorias": [
    "alto-padrao"
   ],
   "ficha": {
-   "tagline": "O espírito dos grandes lodges, entre Moema e o Ibirapuera.",
-   "conceito": "Baixa densidade, apenas duas unidades por andar e um lazer inspirado nos lodges de luxo internacionais, a poucos minutos do Parque Ibirapuera.",
+   "tagline": "Um grand lodge com quadra de tênis oficial entre Moema e o Ibirapuera.",
+   "conceito": "O Monã nos chamou atenção pela variedade rara num só endereço: são três torres na Av. Indianópolis com apartamentos de 172 a 284 m², duplex de até 562 m² e gardens de até 569 m², com jardim privativo. O conceito vem dos lodges de luxo internacionais, com quadra de tênis oficial, beach tennis, piscina coberta e aquecida, pilates e um fitness de 245 m². Baixa densidade, com duas unidades por andar.",
    "endereco": "Av. Indianópolis, 588 · Moema",
-   "entrega": "Previsão: 2026",
-   "faixa": "354 a 392 m²",
-   "plantas_tit": "duas unidades por andar.",
+   "entrega": "Em obras",
+   "faixa": "172 a 569 m²",
+   "plantas_tit": "do tipo ao duplex e garden.",
    "assinaturas": [
     [
      "Incorporação e construção",
@@ -4719,62 +4719,99 @@
      "Grand lodge"
     ],
     [
-     "Andares",
-     "2 unidades por andar"
+     "Torres",
+     "3"
     ],
     [
-     "Entrega",
-     "Prevista para 2026"
+     "Andares",
+     "2 unidades por andar"
     ]
    ],
    "destaques": [
     [
-     "2",
-     "unidades por andar"
+     "569 m²",
+     "garden com jardim"
     ],
     [
-     "392 m²",
-     "maior planta"
+     "562 m²",
+     "duplex"
     ],
     [
-     "4",
-     "suítes"
+     "245 m²",
+     "de fitness"
     ],
     [
-     "5",
-     "vagas"
+     "Tênis",
+     "quadra oficial"
     ]
    ],
    "plantas": [
     [
      "Tipo",
-     "354 m²",
-     "3 a 4 suítes",
-     "4 vagas"
+     "172 m²",
+     "2 ou 3 suítes",
+     "Sob consulta"
     ],
     [
      "Tipo",
-     "392 m²",
+     "191 m²",
+     "3 suítes",
+     "Sob consulta"
+    ],
+    [
+     "Tipo",
+     "241 m²",
+     "2 ou 3 suítes",
+     "Sob consulta"
+    ],
+    [
+     "Tipo",
+     "284 m²",
+     "3 ou 4 suítes",
+     "Sob consulta"
+    ],
+    [
+     "Duplex",
+     "344 a 562 m²",
+     "3 ou 4 suítes",
+     "Sob consulta"
+    ],
+    [
+     "Garden",
+     "323 a 569 m²",
      "4 suítes",
-     "5 vagas"
+     "Sob consulta"
     ]
    ],
    "lazer": [
-    "Piscina",
-    "Fitness",
-    "Spa",
-    "Salão de festas",
+    "Quadra de tênis oficial com lounge",
+    "Beach tennis",
+    "Piscina coberta e aquecida",
+    "Piscinas adulto e infantil",
+    "Fitness de 245 m²",
+    "Pilates",
+    "Sauna",
+    "Sala de massagem",
     "Espaço gourmet",
-    "Brinquedoteca"
+    "Salão de festas",
+    "Salão de jogos",
+    "Brinquedoteca",
+    "Playground",
+    "Pet place"
    ],
    "local": [
     "Entre Moema e o Parque Ibirapuera",
-    "Av. Indianópolis"
+    "Av. Indianópolis, com saída rápida para a 23 de Maio",
+    "Frentes para as ruas Açocê e dos Aicás"
    ],
    "tecnica": [
     [
-     "Unidades por andar",
-     "2"
+     "Torres",
+     "3"
+    ],
+    [
+     "Imagens",
+     "Perspectivas artísticas da incorporadora"
     ],
     [
      "Status",
@@ -4782,33 +4819,42 @@
     ]
    ],
    "img": {
-    "capa": "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-2.jpg",
+    "capa": "https://www.dialogo.com.br/estatico/2023/11/06/14/29/f46633e13c5a0efd06078d2a796bd5457a0722c7.webp",
     "par": [
      [
-      "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-3.jpg",
-      "Fachada"
+      "https://www.dialogo.com.br/estatico/2023/09/26/18/01/bfbbb9a36f913c425bd8d3315471cbe2df218cdd.jpg",
+      "Living · 284 m²"
      ],
      [
-      "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-4.jpg",
-      "Lazer"
+      "https://www.dialogo.com.br/estatico/2023/09/26/18/01/11e131e6ed5eb1472b2d9d8b5339f2eec1d904c0.jpg",
+      "Jardim do garden · 569 m²"
      ]
     ],
+    "voo": "https://www.dialogo.com.br/estatico/2023/09/26/18/32/5fe417fcd636e04e72f4600b4fecf10f02fd5383.jpg",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-5.jpg",
-      "Áreas comuns"
+      "https://www.dialogo.com.br/estatico/2023/09/26/18/32/4b6309282bc1387bd900439b13cb7764902bde73.jpg",
+      "Piscina coberta e aquecida"
      ],
      [
-      "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-6.jpg",
-      "Áreas comuns"
+      "https://www.dialogo.com.br/estatico/2023/09/26/18/32/2d5ce142466d3c16da32a37ddf4475a6ae192ec9.jpg",
+      "Piscinas"
      ],
      [
-      "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-7.jpg",
-      "Áreas comuns"
+      "https://www.dialogo.com.br/estatico/2023/09/26/18/32/64643f9765b436f2c02e7a1420c4c965ce3e9fdd.jpg",
+      "Beach tennis"
      ],
      [
-      "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-8.jpg",
-      "Áreas comuns"
+      "https://www.dialogo.com.br/estatico/2023/09/26/18/32/ea28637b7ea0b06811ca22ac5c16f6cc4930c764.jpg",
+      "Lounge da quadra de tênis"
+     ],
+     [
+      "https://www.dialogo.com.br/estatico/2024/12/09/09/09/efcf184db81079f2528258320771b395215bf782.png",
+      "Fitness de 245 m²"
+     ],
+     [
+      "https://www.dialogo.com.br/estatico/2023/09/26/18/01/ad61f7c6e52f393c7bd27ed3a55554137ccd1bf6.jpg",
+      "Duplex · 562 m²"
      ]
     ]
    }
