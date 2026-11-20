@@ -557,12 +557,12 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .pf-feat .ph{position:relative;height:100%;border-radius:18px;overflow:hidden;background:#dfe2e6}
 .pf-feat .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
 .pf-feat .g:hover .ph img{transform:scale(1.03)}
-.ft-t{position:absolute;left:0;right:0;bottom:0;padding:28px;color:#F6F7F9;background:linear-gradient(transparent,rgba(18,17,16,.7));display:flex;flex-direction:column;gap:6px}
-.ft-t small{font:500 10.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;opacity:.85}
-.ft-t strong{font-family:var(--serif);font-weight:300;font-size:clamp(26px,2.6vw,44px);line-height:1;letter-spacing:-.02em}
-.ft-t em{font-family:var(--serif);font-style:italic;font-weight:300;font-size:16px;opacity:.9;max-width:40ch}
-.pf-feat .g:not(:first-child) .ft-t em{display:none}
-@media(max-width:767px){.pf-feat{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;height:auto;margin:0 -20px 36px;padding:0 20px;gap:12px;scrollbar-width:none}.pf-feat::-webkit-scrollbar{display:none}.pf-feat .g{flex:0 0 84%;scroll-snap-align:center}.pf-feat .ph{aspect-ratio:4/5;height:auto}.ft-t{padding:20px}}
+.vt-t{position:absolute;left:0;right:0;bottom:0;padding:28px;color:#F6F7F9;background:linear-gradient(transparent,rgba(18,17,16,.7));display:flex;flex-direction:column;gap:6px}
+.vt-t small{font:500 10.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;opacity:.85}
+.vt-t strong{font-family:var(--serif);font-weight:300;font-size:clamp(26px,2.6vw,44px);line-height:1;letter-spacing:-.02em}
+.vt-t em{font-family:var(--serif);font-style:italic;font-weight:300;font-size:16px;opacity:.9;max-width:40ch}
+.pf-feat .g:not(:first-child) .vt-t em{display:none}
+@media(max-width:767px){.pf-feat{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;height:auto;margin:0 -20px 36px;padding:0 20px;gap:12px;scrollbar-width:none}.pf-feat::-webkit-scrollbar{display:none}.pf-feat .g{flex:0 0 84%;scroll-snap-align:center}.pf-feat .ph{aspect-ratio:4/5;height:auto}.vt-t{padding:20px}}
 /* swipe no card */
 .sw{position:absolute;inset:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;z-index:0}
 .sw::-webkit-scrollbar{display:none}
@@ -712,7 +712,7 @@ def rich(e, h='h2'):
 def feat():
     fs = [e for e in E if e['bairro_slug']=='moema' and e['status']=='Lançamento' and e.get('ficha') and 'alto-padrao' in e['categorias']][:3]
     if len(fs) < 3: fs += [e for e in E if e.get('ficha') and e not in fs and 'alto-padrao' in e['categorias']][:3-len(fs)]
-    cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e["slug"])}" data-slug="{e["slug"]}"><div class="ph"><img src="{e["img"]}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="ft-t"><small>{e["status"]} · {esc(e["bairro"])}</small><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
+    cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e["slug"])}" data-slug="{e["slug"]}"><div class="ph"><img src="{e["img"]}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="vt-t"><small>{e["status"]} · {esc(e["bairro"])}</small><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
     return f'<div class="pf-feat">{cards}</div>'
 
 def build_home():
