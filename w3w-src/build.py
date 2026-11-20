@@ -555,7 +555,7 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .pf-feat{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr;gap:20px;margin:0 0 56px;height:min(78vh,760px)}
 .pf-feat .g:first-child{grid-row:1/3}
 .pf-feat .ph{position:relative;height:100%;border-radius:18px;overflow:hidden;background:#dfe2e6}
-.pf-feat .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.pf-feat .g .ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
 .pf-feat .g:hover .ph img{transform:scale(1.03)}
 .vt-t{position:absolute;left:0;right:0;bottom:0;padding:28px;color:#F6F7F9;background:linear-gradient(transparent,rgba(18,17,16,.7));display:flex;flex-direction:column;gap:6px}
 .vt-t small{font:500 10.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;opacity:.85}
@@ -566,7 +566,7 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 /* swipe no card */
 .sw{position:absolute;inset:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;z-index:0}
 .sw::-webkit-scrollbar{display:none}
-.g .ph>img{position:relative;z-index:0}
+.pf-grid .g .ph>img{position:relative;z-index:0}
 .sw{pointer-events:none}
 @media(hover:none){.sw{pointer-events:auto}}
 .sw::before{content:"";flex:0 0 100%;scroll-snap-align:start}
