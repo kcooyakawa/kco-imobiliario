@@ -796,9 +796,9 @@ def build_home():
 {''.join(f'<template id="fx-{e[chr(115)+chr(108)+chr(117)+chr(103)]}">'+rich(e)+'</template>' for e in E if e.get('ficha'))}
 <script>window.W3W={json.dumps(ficha_data(), ensure_ascii=False)};window.W3W_WA='{WA}';window.W3W_BASE='{BASE}';</script>
 <script src="{BASE}/assets/sheet.js?v={VER}" defer></script>
-<script>(function(){{var st={{b:'moema',c:'',s:''}},lim=16,all=[].slice.call(document.querySelectorAll('.pf-grid .g')),more=document.getElementById('more'),num=document.querySelector('.pf-n');
+<script>(function(){{var st={{b:'moema',c:'',s:''}},lim=9999,all=[].slice.call(document.querySelectorAll('.pf-grid .g')),more=document.getElementById('more'),num=document.querySelector('.pf-n');
 function ap(){{var v=all.filter(function(g){{return (st.b==='moema'?g.dataset.b==='moema':g.dataset.b!=='moema')&&(!st.c||g.dataset.cat.split(' ').indexOf(st.c)>-1)&&(!st.s||g.dataset.st===st.s)}});all.forEach(function(g){{g.hidden=true}});v.forEach(function(g,i){{g.hidden=i>=lim;g.querySelector('.n').textContent=String(i+1).padStart(2,'0')}});num.textContent=v.length+(v.length===1?' imóvel':' imóveis');more.parentNode.hidden=v.length<=lim}}
-document.querySelectorAll('.pf-bar .seg').forEach(function(gr){{gr.querySelectorAll('button').forEach(function(b){{b.onclick=function(){{gr.querySelectorAll('button').forEach(function(x){{x.setAttribute('aria-pressed','false')}});b.setAttribute('aria-pressed','true');st[gr.dataset.k]=b.dataset.v;lim=16;ap()}}}})}});
+document.querySelectorAll('.pf-bar .seg').forEach(function(gr){{gr.querySelectorAll('button').forEach(function(b){{b.onclick=function(){{gr.querySelectorAll('button').forEach(function(x){{x.setAttribute('aria-pressed','false')}});b.setAttribute('aria-pressed','true');st[gr.dataset.k]=b.dataset.v;ap()}}}})}});
 more.onclick=function(){{lim+=16;ap()}};ap();
 var h=document.querySelector('.hd.over');function sc(){{h.classList.toggle('solid',scrollY>window.innerHeight*.6)}}addEventListener('scroll',sc,{{passive:true}});sc();
 document.querySelectorAll('.sw').forEach(function(w){{var d=w.nextElementSibling.children;d[0].classList.add('on');w.addEventListener('scroll',function(){{var k=Math.round(w.scrollLeft/w.clientWidth);[].forEach.call(d,function(x,j){{x.classList.toggle('on',j===k)}})}},{{passive:true}})}});
