@@ -3592,106 +3592,97 @@
   ],
   "frase": "Novo jeito de viver em São Paulo: studios inteligentes a 3 min do Ibirapuera. Conforto e exclusividade.",
   "resumo": {
-   "tipologias": "3 suítes",
-   "metragem": "153 m²",
-   "vagas": "2 vagas + depósito"
+   "tipologias": "3 suítes e cobertura duplex",
+   "metragem": "153 a 281 m²",
+   "vagas": "2 a 3 vagas + depósito"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/01-fachada.jpg",
+  "img": "https://gafisa.s3.sa-east-1.amazonaws.com/storage/517732c4f5830b3e1774fd60c2b12404_cropped_2021-05-05_20h45m24s.jpg",
   "categorias": [
    "alto-padrao"
   ],
   "ficha": {
-   "tagline": "Novo jeito de viver em São Paulo: studios inteligentes a 3 min do Ibirapuera. Conforto e exclusividade.",
-   "conceito": "Torre única de estilo contemporâneo.",
-   "endereco": "Alameda Jauaperi · Moema",
+   "tagline": "Três suítes, depósito privativo e o Ibirapuera a poucas quadras.",
+   "conceito": "O Ibirapuera Park Houses é uma das plantas mais eficientes de três suítes em Moema: 153 m² com depósito privativo, duas vagas e infraestrutura de ar-condicionado em todos os ambientes. A torre única, desenhada pela Königsberger Vannucchi na Alameda Jauaperi, tem piscina coberta e entradas social e de serviço separadas. No topo, coberturas duplex de 281 m². Pronto para morar.",
+   "endereco": "Al. Jauaperi, 185 · Moema",
    "entrega": "Pronto para morar",
-   "faixa": "153 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "faixa": "153 a 281 m²",
+   "plantas_tit": "três suítes, cobertura duplex.",
    "assinaturas": [
-    [
-     "Incorporação",
-     "Gafisa"
-    ],
     [
      "Arquitetura",
      "Königsberger Vannucchi"
     ],
     [
      "Decoração",
-     "Fernando Piva Interiores"
+     "Fernando Piva"
     ],
     [
      "Paisagismo",
      "Mera Arquitetura"
+    ],
+    [
+     "Incorporação",
+     "Gafisa"
     ]
    ],
    "destaques": [
     [
-     "54",
-     "residências"
-    ],
-    [
-     "1",
-     "torre"
-    ],
-    [
-     "26",
-     "pavimentos"
-    ],
-    [
      "153 m²",
-     "maior planta"
+     "tipo com depósito"
+    ],
+    [
+     "3",
+     "suítes"
+    ],
+    [
+     "281 m²",
+     "cobertura duplex"
+    ],
+    [
+     "Biometria",
+     "nos elevadores sociais"
     ]
    ],
    "plantas": [
     [
-     "3 dorm.",
+     "Tipo",
      "153 m²",
      "3 suítes",
-     "2 vagas"
+     "2 vagas + depósito"
     ],
     [
-     "3 dorm.",
-     "153 m²",
-     "3 suítes",
-     "3 vagas"
-    ],
-    [
-     "3 dorm.",
+     "Cobertura duplex",
      "281 m²",
      "3 suítes",
      "3 vagas"
     ]
    ],
    "lazer": [
-    "Piscina",
     "Piscina coberta",
-    "Salão de festas",
-    "Brinquedoteca",
+    "Piscina",
     "Fitness",
-    "Playground",
-    "Salão de jogos",
     "Sauna seca",
-    "Sala de massagem"
+    "Sala de massagem",
+    "Salão de festas",
+    "Salão de jogos",
+    "Brinquedoteca",
+    "Playground",
+    "Lobby"
    ],
    "local": [
-    "Entrada social e de serviço separadas",
-    "Churrasqueira entregue nas unidades",
-    "Infra para ar-condicionado split"
+    "Moema, próximo ao Parque Ibirapuera",
+    "Alameda Jauaperi, rua residencial",
+    "Comércio da Av. Ibirapuera e de Moema Pássaros"
    ],
    "tecnica": [
     [
-     "Terreno",
-     "1.993 m²"
+     "Torre",
+     "Única"
     ],
     [
      "Unidades",
-     "54"
-    ],
-    [
-     "Entrega",
-     "Entregue em abr/2023"
+     "Gerador conforto, água quente nas bancadas, churrasqueira entregue"
     ],
     [
      "Status",
@@ -3699,41 +3690,41 @@
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/01-fachada.jpg",
+    "capa": "https://gafisa.s3.sa-east-1.amazonaws.com/storage/517732c4f5830b3e1774fd60c2b12404_cropped_2021-05-05_20h45m24s.jpg",
     "par": [
      [
-      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-condominio-1.jpg",
-      "Áreas comuns"
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/2fb0310b936024e9918b3f93e241a1cc_cropped_2021-05-05_20h45m42s.jpg",
+      "Lobby"
      ],
      [
-      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-apartamento-1.jpg",
-      "Residência"
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/26a510dfa594cd0005bceef16ce18dae_cropped_2021-07-06_18h35m12s.jpg",
+      "Decorado · 153 m²"
      ]
     ],
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-condominio-2.jpg",
-      "Lazer"
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/0c52bef203ff34673bd72b7d9a62476c_cropped_2021-05-05_20h47m33s.jpg",
+      "Piscina coberta"
      ],
      [
-      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-condominio-3.jpg",
-      "Lazer"
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/7473fc78a56da0205d9a556cf8e43a33_cropped_2021-05-05_20h48m11s.jpg",
+      "Piscina"
      ],
      [
-      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-condominio-4.jpg",
-      "Lazer"
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/6fe4ad62c60a06b5937c43046936757a_cropped_2021-05-20_14h11m59s.jpg",
+      "Fitness"
      ],
      [
-      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-condominio-5.jpg",
-      "Lazer"
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/5e08e2ef97e312d89bbff5d08867321e_cropped_2021-05-05_20h49m29s.jpg",
+      "Salão de festas"
      ],
      [
-      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-condominio-6.jpg",
-      "Lazer"
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/13d5155b45fd9165dedff42a491d1a84_cropped_2021-05-05_20h46m40s.jpg",
+      "Living · cobertura 281 m²"
      ],
      [
-      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-condominio-7.jpg",
-      "Lazer"
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/2529102b3129233f63fe28bacd2cc053_cropped_2021-07-06_18h34m10s.jpg",
+      "Decorado · 153 m²"
      ]
     ]
    }
