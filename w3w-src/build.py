@@ -550,6 +550,30 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 @media(max-width:900px){.cafe-f{justify-self:stretch;max-width:none;padding:22px!important}.cafe{padding:64px 0}}
 .terr video,.par-v video{will-change:transform}
 .pf-bar{scrollbar-width:none}.pf-bar::-webkit-scrollbar{display:none}
+
+/* vitrine */
+.pf-feat{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr;gap:20px;margin:0 0 56px;height:min(78vh,760px)}
+.pf-feat .g:first-child{grid-row:1/3}
+.pf-feat .ph{position:relative;height:100%;border-radius:18px;overflow:hidden;background:#dfe2e6}
+.pf-feat .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.pf-feat .g:hover .ph img{transform:scale(1.03)}
+.ft-t{position:absolute;left:0;right:0;bottom:0;padding:28px;color:#F6F7F9;background:linear-gradient(transparent,rgba(18,17,16,.7));display:flex;flex-direction:column;gap:6px}
+.ft-t small{font:500 10.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;opacity:.85}
+.ft-t strong{font-family:var(--serif);font-weight:300;font-size:clamp(26px,2.6vw,44px);line-height:1;letter-spacing:-.02em}
+.ft-t em{font-family:var(--serif);font-style:italic;font-weight:300;font-size:16px;opacity:.9;max-width:40ch}
+.pf-feat .g:not(:first-child) .ft-t em{display:none}
+@media(max-width:767px){.pf-feat{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;height:auto;margin:0 -20px 36px;padding:0 20px;gap:12px;scrollbar-width:none}.pf-feat::-webkit-scrollbar{display:none}.pf-feat .g{flex:0 0 84%;scroll-snap-align:center}.pf-feat .ph{aspect-ratio:4/5;height:auto}.ft-t{padding:20px}}
+/* swipe no card */
+.sw{position:absolute;inset:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;z-index:0}
+.sw::-webkit-scrollbar{display:none}
+.g .ph>img{position:relative;z-index:0}
+.sw{pointer-events:none}
+@media(hover:none){.sw{pointer-events:auto}}
+.sw::before{content:"";flex:0 0 100%;scroll-snap-align:start}
+.sw img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:start;background:#dfe2e6}
+.sw-d{position:absolute;z-index:2;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:5px;pointer-events:none}
+.sw-d i{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.55)}.sw-d i.on{background:#fff}
+@media(hover:hover){.g .ph:hover .sw-d{opacity:0}}
 """.replace('__F__', FONTS)
 
 ICON = {
@@ -627,10 +651,18 @@ ORG = {"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "W3
 VID = 'https://w3wlp.netlify.app/v'
 CATS = [('', 'Todos'), ('studios', 'Studios'), ('apartamentos', 'Apartamentos'), ('alto-padrao', 'Alto padrão')]
 
+def strip(e):
+    f = e.get('ficha') or {}
+    im = (f.get('img') or {})
+    xs = [x[0] for x in (im.get('par') or [])] + [x[0] for x in (im.get('lazer') or [])]
+    xs = [x for x in xs if x and x != e['img']][:3]
+    if not xs: return ''
+    return '<span class="sw">' + ''.join(f'<img src="{x}" alt="" loading="lazy" decoding="async">' for x in xs) + '</span><span class="sw-d">' + '<i></i>'*(len(xs)+1) + '</span>'
+
 def gcard(e, i):
     r = e['resumo']
     return f"""<a class="g" href="{u('empreendimentos/'+e['slug'])}" data-slug="{e['slug']}" data-cat="{' '.join(e['categorias'])}" data-b="{e['bairro_slug']}" data-st="{e['status']}">
-<div class="ph"><span class="pf-st st-{e['status'].split()[0].lower().replace('ç','c')}">{e['status']}</span><span class="pf-ov"><em>{esc(e['nome'])}</em><small>Ver ficha →</small></span><img src="{e['img']}" alt="{esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async"></div>
+<div class="ph"><span class="pf-st st-{e['status'].split()[0].lower().replace('ç','c')}">{e['status']}</span><span class="pf-ov"><em>{esc(e['nome'])}</em><small>Ver ficha →</small></span><img src="{e['img']}" alt="{esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async">{strip(e)}</div>
 <div class="gi"><span class="n" hidden>{i:02d}</span><h3>{esc(e['nome'])}</h3><p>{esc(e['bairro'])} · {esc(r['metragem'])}</p></div></a>"""
 
 STATUS = [('Lançamento', 'Lançamentos', 'Antes de todo mundo.'), ('Em obras', 'Em obras', 'Garanta na planta.'), ('Pronto', 'Prontos para morar', 'Chaves na mão.')]
@@ -677,6 +709,12 @@ def rich(e, h='h2'):
 <a class="btn light solid-l lx-go" href="{wa("Olá, quero receber o book completo, a tabela e as plantas do " + nome + ".")}" target="_blank" rel="noopener">Quero receber <span aria-hidden="true">→</span></a></div></article>"""
     return out
 
+def feat():
+    fs = [e for e in E if e['bairro_slug']=='moema' and e['status']=='Lançamento' and e.get('ficha') and 'alto-padrao' in e['categorias']][:3]
+    if len(fs) < 3: fs += [e for e in E if e.get('ficha') and e not in fs and 'alto-padrao' in e['categorias']][:3-len(fs)]
+    cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e["slug"])}" data-slug="{e["slug"]}"><div class="ph"><img src="{e["img"]}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="ft-t"><small>{e["status"]} · {esc(e["bairro"])}</small><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
+    return f'<div class="pf-feat">{cards}</div>'
+
 def build_home():
     moema = [e for e in E if e['bairro_slug'] == 'moema']
     outros = [e for e in E if e['bairro_slug'] != 'moema']
@@ -704,7 +742,7 @@ def build_home():
 <section class="pf" id="imoveis"><div class="wrap">
 <div class="pf-hd2"><div><span class="eyebrow">Galeria W3W</span><h2>Imóveis <em>selecionados.</em></h2></div><span class="pf-n"></span></div>
 <div class="pf-bar"><div class="pf-bar-in"><div class="seg" data-k="b" role="group"><button data-v="moema" aria-pressed="true">Moema</button><button data-v="outros" aria-pressed="false">Outras regiões</button></div>{''.join(['<div class="seg" data-k="c" role="group">']+[f'<button data-v="{v}" aria-pressed="{"true" if v=="" else "false"}">{l}</button>' for v,l in CATS]+['</div>'])}<div class="seg" data-k="s" role="group"><button data-v="" aria-pressed="true">Todas</button><button data-v="Lançamento" aria-pressed="false">Lançamento</button><button data-v="Em obras" aria-pressed="false">Em obras</button><button data-v="Pronto" aria-pressed="false">Pronto</button></div></div></div>
-<div class="pf-grid">{''.join(gcard(e, i+1) for i, e in enumerate(sorted(E, key=lambda e: (e['bairro_slug']!='moema', ['Lançamento','Em obras','Pronto'].index(e['status']), 'alto-padrao' not in e['categorias']))))}</div>
+{feat()}<div class="pf-grid">{''.join(gcard(e, i+1) for i, e in enumerate(sorted(E, key=lambda e: (e['bairro_slug']!='moema', ['Lançamento','Em obras','Pronto'].index(e['status']), 'alto-padrao' not in e['categorias']))))}</div>
 <div class="more"><button class="btn" id="more">Ver mais imóveis</button></div>
 </div></section>
 
@@ -749,7 +787,8 @@ function ap(){{var v=all.filter(function(g){{return (st.b==='moema'?g.dataset.b=
 document.querySelectorAll('.pf-bar .seg').forEach(function(gr){{gr.querySelectorAll('button').forEach(function(b){{b.onclick=function(){{gr.querySelectorAll('button').forEach(function(x){{x.setAttribute('aria-pressed','false')}});b.setAttribute('aria-pressed','true');st[gr.dataset.k]=b.dataset.v;lim=16;ap()}}}})}});
 more.onclick=function(){{lim+=16;ap()}};ap();
 var h=document.querySelector('.hd.over');function sc(){{h.classList.toggle('solid',scrollY>window.innerHeight*.6)}}addEventListener('scroll',sc,{{passive:true}});sc();
-if(!matchMedia('(prefers-reduced-motion: reduce)').matches){{var px=[].slice.call(document.querySelectorAll('[data-px],.pf-grid .g .ph img,.sc-ph img'));var tk=0;function run(){{tk=0;var H=innerHeight;px.forEach(function(el){{var r=el.parentNode.getBoundingClientRect();if(r.bottom<0||r.top>H)return;var k=parseFloat(el.dataset.px||.06);var d=((r.top+r.height/2)-H/2)*k;el.style.transform='translate3d(0,'+d.toFixed(1)+'px,0) scale('+(1+k*1.4).toFixed(3)+')'}})}}addEventListener('scroll',function(){{if(!tk)tk=requestAnimationFrame(run)}},{{passive:true}});run()}}
+document.querySelectorAll('.sw').forEach(function(w){{var d=w.nextElementSibling.children;d[0].classList.add('on');w.addEventListener('scroll',function(){{var k=Math.round(w.scrollLeft/w.clientWidth);[].forEach.call(d,function(x,j){{x.classList.toggle('on',j===k)}})}},{{passive:true}})}});
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){{var px=[].slice.call(document.querySelectorAll('[data-px],.pf-grid .g .ph>img,.sc-ph img'));var tk=0;function run(){{tk=0;var H=innerHeight;px.forEach(function(el){{var r=el.parentNode.getBoundingClientRect();if(r.bottom<0||r.top>H)return;var k=parseFloat(el.dataset.px||.06);var d=((r.top+r.height/2)-H/2)*k;el.style.transform='translate3d(0,'+d.toFixed(1)+'px,0) scale('+(1+k*1.4).toFixed(3)+')'}})}}addEventListener('scroll',function(){{if(!tk)tk=requestAnimationFrame(run)}},{{passive:true}});run()}}
 }})();</script>"""
     pg += footer()
     write('index.html', pg)
