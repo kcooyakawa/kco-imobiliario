@@ -601,6 +601,12 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .cafe-f small,.cafe-f small a{color:rgba(246,247,249,.65)!important}
 
 .ft-kco{padding-bottom:22px;text-align:center}.ft-kco a{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(246,247,249,.28);transition:color .3s}.ft-kco a:hover{color:rgba(246,247,249,.6)}
+
+.pf-q{display:flex;align-items:center;gap:8px;padding:0 14px;height:38px;border-radius:11px;background:rgba(26,24,23,.07);color:var(--ink-2);flex:1 1 220px;max-width:320px}
+.pf-q input{border:0;background:transparent;font:500 13px var(--sans);color:var(--ink);width:100%;outline:0}
+.pf-q:focus-within{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.08),0 3px 10px rgba(0,0,0,.06)}
+.pf-empty{grid-column:1/-1;padding:40px 0;color:var(--ink-2);font-size:15px}
+@media(max-width:767px){.pf-q{flex:0 0 220px}}
 """.replace('__F__', FONTS)
 
 ICON = {
@@ -686,9 +692,21 @@ def strip(e):
     if not xs: return ''
     return '<span class="sw">' + ''.join(f'<img src="{x}" alt="" loading="lazy" decoding="async">' for x in xs) + '</span><span class="sw-d">' + '<i></i>'*(len(xs)+1) + '</span>'
 
+def qidx(e):
+    import unicodedata
+    f=e.get('ficha') or {}
+    parts=[e['nome'],e['bairro'],' '.join(e['tipos']) if isinstance(e.get('tipos'),list) else e.get('tipos',''),f.get('endereco',''),' '.join(v for k,v in f.get('assinaturas',[])),e['resumo'].get('metragem',''),e['status']]
+    t=' '.join(parts).lower()
+    return esc(''.join(c for c in unicodedata.normalize('NFD',t) if unicodedata.category(c)!='Mn'))
+
+def score(e):
+    sc={'Lançamento':0,'Em obras':1,'Pronto':2}[e['status']]
+    tier=0 if 'alto-padrao' in e['categorias'] else (1 if 'apartamentos' in e['categorias'] else 2)
+    return (e['bairro_slug']!='moema', e.get('ordem',99), tier, sc, 0 if e.get('ficha') else 1)
+
 def gcard(e, i):
     r = e['resumo']
-    return f"""<a class="g" href="{u('empreendimentos/'+e['slug'])}" data-slug="{e['slug']}" data-cat="{' '.join(e['categorias'])}" data-b="{e['bairro_slug']}" data-st="{e['status']}">
+    return f"""<a class="g" href="{u('empreendimentos/'+e['slug'])}" data-q="{qidx(e)}" data-slug="{e['slug']}" data-cat="{' '.join(e['categorias'])}" data-b="{e['bairro_slug']}" data-st="{e['status']}">
 <div class="ph"><span class="pf-st st-{e['status'].split()[0].lower().replace('ç','c')}">{e['status']}</span><span class="pf-ov"><em>{esc(e['nome'])}</em><small>Ver ficha →</small></span><img src="{e['img']}" alt="{esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async">{strip(e)}</div>
 <div class="gi"><span class="n" hidden>{i:02d}</span><h3>{esc(e['nome'])}</h3><p>{esc(e['bairro'])} · {esc(r['metragem'])}</p></div></a>"""
 
@@ -768,8 +786,8 @@ def build_home():
 
 <section class="pf" id="imoveis"><div class="wrap">
 <div class="pf-hd2"><div><span class="eyebrow">Galeria W3W</span><h2>Imóveis <em>selecionados.</em></h2></div><span class="pf-n"></span></div>
-<div class="pf-bar"><div class="pf-bar-in"><div class="seg" data-k="b" role="group"><button data-v="moema" aria-pressed="true">Moema</button><button data-v="outros" aria-pressed="false">Outras regiões</button></div>{''.join(['<div class="seg" data-k="c" role="group">']+[f'<button data-v="{v}" aria-pressed="{"true" if v=="" else "false"}">{l}</button>' for v,l in CATS]+['</div>'])}<div class="seg" data-k="s" role="group"><button data-v="" aria-pressed="true">Todas</button><button data-v="Lançamento" aria-pressed="false">Lançamento</button><button data-v="Em obras" aria-pressed="false">Em obras</button><button data-v="Pronto" aria-pressed="false">Pronto</button></div></div></div>
-{feat()}<div class="pf-grid">{''.join(gcard(e, i+1) for i, e in enumerate(sorted(E, key=lambda e: (e['bairro_slug']!='moema', ['Lançamento','Em obras','Pronto'].index(e['status']), 'alto-padrao' not in e['categorias']))))}</div>
+<div class="pf-bar"><div class="pf-bar-in"><label class="pf-q"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pfq" type="search" placeholder="Nome, rua ou construtora" autocomplete="off" aria-label="Buscar imóveis"></label><div class="seg" data-k="b" role="group"><button data-v="moema" aria-pressed="true">Moema</button><button data-v="outros" aria-pressed="false">Outras regiões</button></div>{''.join(['<div class="seg" data-k="c" role="group">']+[f'<button data-v="{v}" aria-pressed="{"true" if v=="" else "false"}">{l}</button>' for v,l in CATS]+['</div>'])}<div class="seg" data-k="s" role="group"><button data-v="" aria-pressed="true">Todas</button><button data-v="Lançamento" aria-pressed="false">Lançamento</button><button data-v="Em obras" aria-pressed="false">Em obras</button><button data-v="Pronto" aria-pressed="false">Pronto</button></div></div></div>
+{feat()}<div class="pf-grid">{''.join(gcard(e, i+1) for i, e in enumerate(sorted(E, key=score)))}</div>
 <div class="more"><button class="btn" id="more">Ver mais imóveis</button></div>
 </div></section>
 
@@ -809,10 +827,10 @@ def build_home():
 {''.join(f'<template id="fx-{e[chr(115)+chr(108)+chr(117)+chr(103)]}">'+rich(e)+'</template>' for e in E if e.get('ficha'))}
 <script>window.W3W={json.dumps(ficha_data(), ensure_ascii=False)};window.W3W_WA='{WA}';window.W3W_BASE='{BASE}';</script>
 <script src="{BASE}/assets/sheet.js?v={VER}" defer></script>
-<script>(function(){{var st={{b:'moema',c:'',s:''}},lim=9999,all=[].slice.call(document.querySelectorAll('.pf-grid .g')),more=document.getElementById('more'),num=document.querySelector('.pf-n');
-function ap(){{var v=all.filter(function(g){{return (st.b==='moema'?g.dataset.b==='moema':g.dataset.b!=='moema')&&(!st.c||g.dataset.cat.split(' ').indexOf(st.c)>-1)&&(!st.s||g.dataset.st===st.s)}});all.forEach(function(g){{g.hidden=true}});v.forEach(function(g,i){{g.hidden=i>=lim;g.querySelector('.n').textContent=String(i+1).padStart(2,'0')}});num.textContent=v.length+(v.length===1?' imóvel':' imóveis');more.parentNode.hidden=v.length<=lim}}
+<script>(function(){{var qq='',st={{b:'moema',c:'',s:''}},lim=9999,all=[].slice.call(document.querySelectorAll('.pf-grid .g')),more=document.getElementById('more'),num=document.querySelector('.pf-n');
+function ap(){{var v=all.filter(function(g){{return (!st.b||(st.b==='moema'?g.dataset.b==='moema':g.dataset.b!=='moema'))&&(!st.c||g.dataset.cat.split(' ').indexOf(st.c)>-1)&&(!st.s||g.dataset.st===st.s)&&(!qq||qq.split(' ').every(function(w){{return g.dataset.q.indexOf(w)>-1}}))}});all.forEach(function(g){{g.hidden=true}});v.forEach(function(g,i){{g.hidden=i>=lim;g.querySelector('.n').textContent=String(i+1).padStart(2,'0')}});num.textContent=v.length+(v.length===1?' imóvel':' imóveis');more.parentNode.hidden=v.length<=lim}}
 document.querySelectorAll('.pf-bar .seg').forEach(function(gr){{gr.querySelectorAll('button').forEach(function(b){{b.onclick=function(){{gr.querySelectorAll('button').forEach(function(x){{x.setAttribute('aria-pressed','false')}});b.setAttribute('aria-pressed','true');st[gr.dataset.k]=b.dataset.v;ap()}}}})}});
-more.onclick=function(){{lim+=16;ap()}};ap();
+more.onclick=function(){{lim+=16;ap()}};var qi=document.getElementById('pfq');qi.oninput=function(){{qq=qi.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();if(qq){{st.b='';}}else{{st.b=document.querySelector('.seg[data-k=b] [aria-pressed=true]').dataset.v}};ap()}};ap();
 var h=document.querySelector('.hd.over');function sc(){{h.classList.toggle('solid',scrollY>window.innerHeight*.6)}}addEventListener('scroll',sc,{{passive:true}});sc();
 document.querySelectorAll('.sw').forEach(function(w){{var d=w.nextElementSibling.children;d[0].classList.add('on');w.addEventListener('scroll',function(){{var k=Math.round(w.scrollLeft/w.clientWidth);[].forEach.call(d,function(x,j){{x.classList.toggle('on',j===k)}})}},{{passive:true}})}});
 if(!matchMedia('(prefers-reduced-motion: reduce)').matches){{var px=[].slice.call(document.querySelectorAll('[data-px],.pf-grid .g .ph>img,.sc-ph img'));var tk=0;function run(){{tk=0;var H=innerHeight;px.forEach(function(el){{var r=el.parentNode.getBoundingClientRect();if(r.bottom<0||r.top>H)return;var k=parseFloat(el.dataset.px||.06);var d=((r.top+r.height/2)-H/2)*k;el.style.transform='translate3d(0,'+d.toFixed(1)+'px,0) scale('+(1+k*1.4).toFixed(3)+')'}})}}addEventListener('scroll',function(){{if(!tk)tk=requestAnimationFrame(run)}},{{passive:true}});run()}}
