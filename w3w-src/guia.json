@@ -1,0 +1,23 @@
+{
+ "categorias": ["Gastronomia", "Bares e vida boêmia", "Compras", "Lazer e parques", "Cultura", "Morar em Moema"],
+ "posts": [
+  {
+   "slug": "moema-em-cinco-tempos",
+   "titulo": "Moema em cinco tempos",
+   "sub": "Um primeiro passeio pelo bairro: da padaria de manhã ao chope no fim da noite.",
+   "categoria": "Morar em Moema",
+   "data": "2026-11-20",
+   "leitura": "5 min",
+   "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/agami-park-residences/voo.jpg",
+   "secoes": [
+    ["Por que um guia", "Moema é o bairro onde a W3W nasceu e trabalha há mais de vinte anos. Vender imóvel aqui é, antes de tudo, explicar como é viver aqui: onde se toma café, onde se caminha no domingo, onde se leva a família para jantar. Este guia sai toda semana e conta isso, com olhar de quem mora e trabalha no bairro."],
+    ["Manhã · o parque ao lado", "Poucos bairros de São Paulo têm o Ibirapuera como quintal. Boa parte de Moema fica a uma caminhada do parque, e a rotina de muitos moradores começa ali: corrida, bicicleta ou só um café olhando o lago. Para quem pedala, vale lembrar que Moema recebeu a primeira ciclofaixa permanente da cidade, em 2011."],
+    ["Tarde · ruas de pássaros", "Andar por Moema é ler um mapa de pássaros e povos indígenas: Sabiá, Bem-te-vi, Cotovia, Jurupis, Maracatins. As ruas são arborizadas, residenciais e cheias de comércio de bairro. Desde 2018, a Linha 5-Lilás do metrô passa pelo bairro, com as estações Eucaliptos, Moema e AACD-Servidor, o que mudou o jeito de circular por aqui."],
+    ["Noite · a mesa de Moema", "Moema é um dos polos gastronômicos da zona sul. Tem casa tradicional, como a Galeteria Assados, na Av. Cotovia, e o Bar do Alemão, na Av. Juriti, que veio de Itu. Tem a Bráz, uma das pizzarias mais conhecidas de São Paulo, e uma lista longa de japoneses, italianos e bistrôs. Nas próximas semanas, cada um desses mundos ganha um capítulo próprio."],
+    ["Fim de noite · a Moema boêmia", "Apesar de residencial, o bairro tem vida noturna de verdade: bares com mesa na calçada, pubs e casas de música ao vivo, como o Bourbon Street Music Club, referência de jazz e blues na cidade. É a Moema que mistura tranquilidade de dia e movimento à noite."],
+    ["Nas próximas semanas", "Gastronomia, bares, compras, lazer, cultura e o dia a dia de quem mora aqui. Se você tem uma dica do bairro, mande no nosso WhatsApp: os melhores lugares quase sempre vêm de quem conhece."]
+   ],
+   "imoveis": ["agami-park-residences", "la-galerie-moema", "casa-sabia"]
+  }
+ ]
+}

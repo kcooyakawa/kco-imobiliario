@@ -2,7 +2,7 @@
 """Gera o site estático da W3W a partir de empreendimentos.json.
 Uso: python3 build.py  ->  escreve em ../site/
 """
-import json, os, html, shutil, urllib.parse
+import json, os, html, shutil, urllib.parse, re
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, '..', 'w3w')
@@ -17,6 +17,8 @@ OG = 'https://kcooyakawa.github.io/kco-imobiliario/w3w-share/w3w-og.jpg'
 HERO = 'https://w3wimoveis.com.br/wp-content/uploads/2024/12/o-que-fazer-no-parque-ibirapuera.jpeg'
 
 E = json.load(open(os.path.join(ROOT, 'empreendimentos.json'), encoding='utf-8'))
+E = [e for e in E if not e['slug'].startswith('on-')]  # Vitacon fora (nov/2026)
+EM = [e for e in E if e['bairro_slug'] == 'moema']  # vitrine pública: só Moema por enquanto
 LOGO = open(os.path.join(ROOT, 'logo.svg'), encoding='utf-8').read().strip()
 LOGO = LOGO.replace('aria-label="W3W Imóveis"', 'role="img" aria-label="W3W Imóveis"')
 
@@ -607,6 +609,25 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .pf-q:focus-within{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.08),0 3px 10px rgba(0,0,0,.06)}
 .pf-empty{grid-column:1/-1;padding:40px 0;color:var(--ink-2);font-size:15px}
 @media(max-width:767px){.pf-q{flex:0 0 220px}}
+
+/* Guia Moema */
+.gm-hero{padding:150px 0 40px}.gm-hero h1{font-family:var(--serif);font-weight:200;font-size:clamp(44px,7vw,96px);line-height:1;letter-spacing:-.02em;margin:14px 0 18px}.gm-hero h1 em{font-style:italic}
+.gm-hero p{max-width:620px;color:var(--ink-2);font-size:17px}
+.gm-cats{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}.gm-cats span{border:1px solid var(--line);padding:9px 14px;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2)}
+.gm-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr));gap:28px;padding-bottom:90px}
+.gm-c{display:block;background:var(--paper-2);transition:transform .4s var(--ease)}.gm-c:hover{transform:translateY(-4px)}
+.gm-c .ph{aspect-ratio:4/3;overflow:hidden}.gm-c img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}.gm-c:hover img{transform:scale(1.04)}
+.gm-c .bd{padding:22px 22px 26px}.gm-c h2{font-family:var(--serif);font-weight:300;font-size:28px;line-height:1.1;margin:10px 0 8px}.gm-c p{color:var(--ink-2);font-size:14.5px}
+.gm-art{max-width:760px;margin:0 auto;padding:0 24px}
+.gm-cover{position:relative;height:min(78vh,720px);overflow:hidden;background:var(--ink)}.gm-cover img{width:100%;height:100%;object-fit:cover;opacity:.78}
+.gm-cover .t{position:absolute;inset:auto 0 0 0;padding:0 0 56px;color:#F6F7F9;background:linear-gradient(transparent,rgba(26,24,23,.65))}
+.gm-cover .eyebrow{color:rgba(246,247,249,.8)}.gm-cover h1{font-family:var(--serif);font-weight:200;font-size:clamp(40px,6.4vw,88px);line-height:1.02;margin:14px 0 12px}
+.gm-cover p{font-size:18px;max-width:640px;opacity:.9}
+.gm-body{padding:64px 0 24px}.gm-body h2{font-family:var(--serif);font-weight:300;font-style:italic;font-size:30px;margin:44px 0 12px}.gm-body p{font-size:18px;line-height:1.75;color:#2b2a29}
+.gm-body section:first-child p:first-child::first-letter{font-family:var(--serif);font-size:64px;float:left;line-height:.9;padding:6px 10px 0 0}
+.gm-meta{display:flex;gap:18px;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0}
+.gm-near{padding:40px 0 90px}
+@media(max-width:700px){.gm-hero{padding:120px 0 24px}.gm-cover{height:70vh}.gm-cover .t{padding-bottom:36px}.gm-body{padding-top:40px}.gm-body p{font-size:17px}}
 """.replace('__F__', FONTS)
 
 ICON = {
@@ -642,18 +663,31 @@ def header(active=''):
 <a class="brand" href="{BASE}/" aria-label="W3W Imóveis, página inicial">{LOGO}<span class="creci">{CRECI}</span></a>
 <button class="burger" aria-label="Abrir menu" aria-expanded="false" onclick="var n=document.querySelector('.nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h16M4 16h16"/></svg></button>
 <nav class="nav" aria-label="Principal">
-<a href="{BASE}/#imoveis">Imóveis</a><a href="{BASE}/#territorio">Território</a><a href="{BASE}/#socios">Sócios</a><a href="{BASE}/#parcerias">Parcerias</a>
+<a href="{BASE}/#imoveis">Imóveis</a><a href="{BASE}/#territorio">Território</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Sócios</a><a href="{BASE}/#parcerias">Parcerias</a>
 <a class="btn" href="{BASE}/#contato">Fale com um consultor</a></nav></div></header>'''
 
 def footer():
     return f"""<footer class="ft"><div class="wrap ft-t">
 <a class="brand ft-b" href="{BASE}/">{LOGO}<span class="creci">{CRECI}</span></a>
-<nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema</a><a href="{u('vila-nova-conceicao')}">Vila Nova Conceição</a><a href="{BASE}/#socios">Sócios</a><a href="{BASE}/#parcerias">Parcerias</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
+<nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Sócios</a><a href="{BASE}/#parcerias">Parcerias</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
 <div class="ft-c"><a href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener">{TEL}</a><a href="mailto:{EMAIL}">{EMAIL}</a></div>
 </div><div class="wrap ft-bot"><span>W3W Imóveis · Curadoria imobiliária · Desde 2004</span><span>{CRECI} · Moema, São Paulo</span></div><div class="wrap ft-kco"><a href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Produzido por KCO Studio</a></div></footer>
 <a class="wa" href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">{WA_ICON}</a>
 <script src="{BASE}/assets/motion.js?v={VER}" defer></script>
 </body></html>"""
+
+MESES = ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez']
+def selo(e):
+    ent = (e.get('entrega') or (e.get('ficha') or {}).get('entrega') or '').lower()
+    if e.get('entrega') and 'breve' in ((e.get('ficha') or {}).get('entrega') or '').lower(): ent = 'breve ' + ent
+    m = re.search(r'(' + '|'.join(MESES) + r')[a-z]*\W*(\d{2,4})', ent)
+    quando = f" · entrega {m.group(1).upper()}/{m.group(2)[-2:]}" if m else ''
+    if e['status'] == 'Lançamento':
+        return ('Breve lançamento' if 'breve' in ent else 'Lançamento') + quando
+    if e['status'] == 'Em obras':
+        return 'Em obras' + quando
+    y = re.search(r'(20\d\d)', ent)
+    return f"Pronto · {y.group(1)}" if y else 'Pronto para morar'
 
 def card(e):
     tags = ''.join(f'<span class="tag">{t}</span>' for t in e['tipos'])
@@ -663,7 +697,7 @@ def card(e):
     if r['metragem']: lis += f'<li>{ICON["met"]}{esc(r["metragem"])}</li>'
     if r['vagas']: lis += f'<li>{ICON["vag"]}{esc(r["vagas"])}</li>'
     return f'''<a class="card" href="{u('empreendimentos/'+e['slug'])}" data-tipos="{' '.join(e['tipos'])}" data-status="{e['status']}">
-<div class="ph"><img src="{e['img']}" alt="Fachada do {esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async"><span class="tag st">{e['status']}</span><div class="tags-b">{tags}</div></div>
+<div class="ph"><img src="{e['img']}" alt="Fachada do {esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async"><span class="tag st">{selo(e)}</span><div class="tags-b">{tags}</div></div>
 <div class="bd"><span class="eyebrow">{esc(e['bairro'])} · SP</span><h3>{esc(e['nome'])}</h3><ul>{lis}</ul><span class="btn">Ver empreendimento</span></div></a>'''
 
 def band():
@@ -707,13 +741,13 @@ def score(e):
 def gcard(e, i):
     r = e['resumo']
     return f"""<a class="g" href="{u('empreendimentos/'+e['slug'])}" data-q="{qidx(e)}" data-slug="{e['slug']}" data-cat="{' '.join(e['categorias'])}" data-b="{e['bairro_slug']}" data-st="{e['status']}">
-<div class="ph"><span class="pf-st st-{e['status'].split()[0].lower().replace('ç','c')}">{e['status']}</span><span class="pf-ov"><em>{esc(e['nome'])}</em><small>Ver ficha →</small></span><img src="{e['img']}" alt="{esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async">{strip(e)}</div>
+<div class="ph"><span class="pf-st st-{e['status'].split()[0].lower().replace('ç','c')}">{selo(e)}</span><span class="pf-ov"><em>{esc(e['nome'])}</em><small>Ver ficha →</small></span><img src="{e['img']}" alt="{esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async">{strip(e)}</div>
 <div class="gi"><span class="n" hidden>{i:02d}</span><h3>{esc(e['nome'])}</h3><p>{esc(e['bairro'])} · {esc(r['metragem'])}</p></div></a>"""
 
 STATUS = [('Lançamento', 'Lançamentos', 'Antes de todo mundo.'), ('Em obras', 'Em obras', 'Garanta na planta.'), ('Pronto', 'Prontos para morar', 'Chaves na mão.')]
 
 def ficha_data():
-    return [dict({k: e[k] for k in ('slug', 'nome', 'bairro', 'status', 'frase', 'img', 'resumo', 'categorias')}, bt=BAIRROS[e['bairro_slug']]['lead']) for e in E]
+    return [dict({k: e[k] for k in ('slug', 'nome', 'bairro', 'status', 'frase', 'img', 'resumo', 'categorias')}, selo=selo(e), bt=BAIRROS[e['bairro_slug']]['lead']) for e in EM]
 
 SHEET = r"""<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" hidden>
 <div class="sh-bg" data-close></div><div class="sh-p" tabindex="-1"><div class="sh-grab" aria-hidden="true"></div>
@@ -730,7 +764,7 @@ def rich(e, h='h2'):
     plantas = ''.join(f'<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td><td><a href="{wa(f"Olá, quero receber a planta de {b} ({a}) do {nome}.")}" target="_blank" rel="noopener">Receber planta</a></td></tr>' for a, b, c, d in f['plantas'])
     out = f"""<article class="lx bk">
 <header class="bk-cover"><img src="{I.get('capa', e['img'])}" alt="{esc(nome)}"><div class="bk-sh"></div>
-<div class="bk-ct"><div class="bk-top"><span>{esc(e['bairro'])} · São Paulo</span><span class="lx-st st-{st}">{e['status']}</span></div>
+<div class="bk-ct"><div class="bk-top"><span>{esc(e['bairro'])} · São Paulo</span><span class="lx-st st-{st}">{selo(e)}</span></div>
 <{h} id="sh-t">{esc(nome)}</{h}><p class="bk-tg">{esc(f['tagline'])}</p></div></header>
 <section class="bk-open"><div class="bk-meta"><span class="eyebrow">{esc(f['endereco'])}</span><span class="eyebrow">{esc(f['entrega']) if 'ronto' in f['entrega'] else 'Entrega ' + esc(f['entrega'])}</span></div>
 <p class="bk-lead">{esc(f['conceito'])}</p>
@@ -750,13 +784,13 @@ def rich(e, h='h2'):
 <p class="bk-note">Imagens: perspectivas ilustradas fornecidas pela incorporadora. Informações sujeitas a alteração.</p></section>
 <section class="lx-end"><span class="eyebrow">Tabela, plantas e condições</span><h3>Receba o material completo <em>do {esc(nome)}.</em></h3>
 <a class="btn light solid-l" href="{wa(msg)}" target="_blank" rel="noopener">Receber no WhatsApp</a></section>
-<div class="lx-bar"><span class="lx-bar-t"><small>{esc(nome)} · {e['status']}</small><strong>Book completo, tabela e plantas <em>no seu WhatsApp.</em></strong></span>
+<div class="lx-bar"><span class="lx-bar-t"><small>{esc(nome)} · {selo(e)}</small><strong>Book completo, tabela e plantas <em>no seu WhatsApp.</em></strong></span>
 <a class="btn light solid-l lx-go" href="{wa("Olá, quero receber o book completo, a tabela e as plantas do " + nome + ".")}" target="_blank" rel="noopener">Quero receber <span aria-hidden="true">→</span></a></div></article>"""
     return out
 
 def feat():
     fs = [e for e in E if e['bairro_slug']=='moema' and e['status']=='Lançamento' and e.get('ficha') and 'alto-padrao' in e['categorias']][:3]
-    if len(fs) < 3: fs += [e for e in E if e.get('ficha') and e not in fs and 'alto-padrao' in e['categorias']][:3-len(fs)]
+    if len(fs) < 3: fs += [e for e in EM if e.get('ficha') and e not in fs and 'alto-padrao' in e['categorias']][:3-len(fs)]
     cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e["slug"])}" data-slug="{e["slug"]}"><div class="ph"><img src="{e.get("vitrine") or e["img"]}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="vt-t"><small>{e["status"]} · {esc(e["bairro"])}</small><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
     return f'<div class="pf-feat">{cards}</div>'
 
@@ -766,7 +800,7 @@ def build_home():
     chips = ''.join(f'<button class="chip" data-v="{v}" aria-pressed="{"true" if v=="" else "false"}">{l}</button>' for v, l in CATS)
     rows = ''
     for st, tit, sub in STATUS:
-        lst = [e for e in E if e['status'] == st]
+        lst = [e for e in EM if e['status'] == st]
         lst = sorted(lst, key=lambda e: (e['bairro_slug'] != 'moema', 'alto-padrao' not in e['categorias']))
         rows += f"""<div class="row-s" data-st="{st}"><div class="row-hd"><div><span class="eyebrow">{sub}</span><h3>{tit} <sup class="rc"></sup></h3></div>
 <div class="arr"><button aria-label="Anterior" data-d="-1">←</button><button aria-label="Próximo" data-d="1">→</button></div></div>
@@ -786,8 +820,8 @@ def build_home():
 
 <section class="pf" id="imoveis"><div class="wrap">
 <div class="pf-hd2"><div><span class="eyebrow">Galeria W3W</span><h2>Imóveis <em>selecionados.</em></h2></div><span class="pf-n"></span></div>
-<div class="pf-bar"><div class="pf-bar-in"><label class="pf-q"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pfq" type="search" placeholder="Nome, rua ou construtora" autocomplete="off" aria-label="Buscar imóveis"></label><div class="seg" data-k="b" role="group"><button data-v="moema" aria-pressed="true">Moema</button><button data-v="outros" aria-pressed="false">Outras regiões</button></div>{''.join(['<div class="seg" data-k="c" role="group">']+[f'<button data-v="{v}" aria-pressed="{"true" if v=="" else "false"}">{l}</button>' for v,l in CATS]+['</div>'])}<div class="seg" data-k="s" role="group"><button data-v="" aria-pressed="true">Todas</button><button data-v="Lançamento" aria-pressed="false">Lançamento</button><button data-v="Em obras" aria-pressed="false">Em obras</button><button data-v="Pronto" aria-pressed="false">Pronto</button></div></div></div>
-{feat()}<div class="pf-grid">{''.join(gcard(e, i+1) for i, e in enumerate(sorted(E, key=score)))}</div>
+<div class="pf-bar"><div class="pf-bar-in"><label class="pf-q"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pfq" type="search" placeholder="Nome, rua ou construtora" autocomplete="off" aria-label="Buscar imóveis"></label><div class="seg" data-k="b" role="group"><button data-v="moema" aria-pressed="true">Moema</button></div>{''.join(['<div class="seg" data-k="c" role="group">']+[f'<button data-v="{v}" aria-pressed="{"true" if v=="" else "false"}">{l}</button>' for v,l in CATS]+['</div>'])}<div class="seg" data-k="s" role="group"><button data-v="" aria-pressed="true">Todas</button><button data-v="Lançamento" aria-pressed="false">Lançamento</button><button data-v="Em obras" aria-pressed="false">Em obras</button><button data-v="Pronto" aria-pressed="false">Pronto</button></div></div></div>
+{feat()}<div class="pf-grid">{''.join(gcard(e, i+1) for i, e in enumerate(sorted(EM, key=score)))}</div>
 <div class="more"><button class="btn" id="more">Ver mais imóveis</button></div>
 </div></section>
 
@@ -795,7 +829,6 @@ def build_home():
 <div class="wrap terr-in"><span class="eyebrow">Território</span><h2>Nossa casa é <em>Moema.</em></h2>
 <p>A W3W nasceu e trabalha em Moema. Conhecemos cada rua, cada lançamento e cada mudança do bairro. Quando a oportunidade certa está ao lado, também acompanhamos de perto Vila Nova Conceição, Itaim Bibi, Brooklin e Paraíso.</p>
 <div class="terr-b"><a href="{u('moema')}"><strong>Moema</strong><span>{len(moema)} empreendimentos</span></a>
-<a href="{u('vila-nova-conceicao')}"><strong>Vila Nova Conceição</strong><span>{len(outros)} empreendimentos</span></a>
 <a href="#contato"><strong>Itaim · Brooklin · Paraíso</strong><span>Sob consulta</span></a></div></div></section>
 
 <section class="socx" id="socios"><div class="wrap">
@@ -824,7 +857,7 @@ def build_home():
 <small>Ao enviar, você concorda com a nossa <a href="{u('politica-de-privacidade')}">Política de Privacidade</a>.</small></form>
 </div></section></main>
 {SHEET}
-{''.join(f'<template id="fx-{e[chr(115)+chr(108)+chr(117)+chr(103)]}">'+rich(e)+'</template>' for e in E if e.get('ficha'))}
+{''.join(f'<template id="fx-{e[chr(115)+chr(108)+chr(117)+chr(103)]}">'+rich(e)+'</template>' for e in EM if e.get('ficha'))}
 <script>window.W3W={json.dumps(ficha_data(), ensure_ascii=False)};window.W3W_WA='{WA}';window.W3W_BASE='{BASE}';</script>
 <script src="{BASE}/assets/sheet.js?v={VER}" defer></script>
 <script>(function(){{var qq='',st={{b:'moema',c:'',s:''}},lim=9999,all=[].slice.call(document.querySelectorAll('.pf-grid .g')),more=document.getElementById('more'),num=document.querySelector('.pf-n');
@@ -892,8 +925,8 @@ document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click
         pg += header(e['bairro_slug'])
         pg += f'''<main><section class="pg-hd" style="padding-bottom:0"><div class="wrap"><div class="crumbs"><a class="back" href="{BASE}/#imoveis">← Voltar à galeria</a></div></div></section>
 ''' + (rich(e,'h1') if e.get('ficha') else f'''<section class="sec fxp" style="padding-top:8px"><div class="wrap">
-<div class="fx-ph"><img src="{e['img']}" alt="Fachada do {esc(e['nome'])}, {esc(e['bairro'])}" decoding="async"><span class="tag st">{e['status']}</span></div>
-<div class="fx-b"><div class="fx-t"><span class="eyebrow">{esc(e['bairro'])} · {e['status']}</span><h1>{esc(e['nome'])}</h1>{f'<p class="fx-q">{esc(e["frase"])}</p>' if e['frase'] else ''}</div>
+<div class="fx-ph"><img src="{e['img']}" alt="Fachada do {esc(e['nome'])}, {esc(e['bairro'])}" decoding="async"><span class="tag st">{selo(e)}</span></div>
+<div class="fx-b"><div class="fx-t"><span class="eyebrow">{esc(e['bairro'])} · {selo(e)}</span><h1>{esc(e['nome'])}</h1>{f'<p class="fx-q">{esc(e["frase"])}</p>' if e['frase'] else ''}</div>
 <dl class="fx-s">{ficha}</dl></div>
 <div class="fx-c"><a class="btn solid" href="{wa(msg)}" target="_blank" rel="noopener">Quero a ficha completa</a><a class="btn" href="{wa('Olá, quero agendar uma visita ao ' + e['nome'] + '.')}" target="_blank" rel="noopener">Agendar visita</a></div>
 <p class="fx-n">Plantas, lazer, incorporadora e previsão de entrega: fale com um consultor.</p></div></section>
@@ -952,5 +985,33 @@ document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click
     write('robots.txt', 'User-agent: *\nDisallow: /\n')
     print('ok', len(E), 'empreendimentos')
 
+
+def build_guia():
+    G = json.load(open(os.path.join(ROOT, 'guia.json'), encoding='utf-8'))
+    posts = sorted(G['posts'], key=lambda p: p['data'], reverse=True)
+    def dt(d):
+        y, m, dd = d.split('-'); return f"{int(dd)} {MESES[int(m)-1]} {y}"
+    pg = head('Guia Moema | W3W Imóveis', 'Gastronomia, bares, compras, lazer e cultura em Moema: o guia semanal da W3W Imóveis para quem mora ou quer morar no bairro.', 'guia-moema')
+    pg += header('guia-moema')
+    cards = ''.join(f'<a class="gm-c" href="{u("guia-moema/"+p["slug"])}"><div class="ph"><img src="{p["capa"]}" alt="{esc(p["titulo"])}" loading="lazy"></div><div class="bd"><span class="eyebrow">{esc(p["categoria"])} · {dt(p["data"])}</span><h2>{esc(p["titulo"])}</h2><p>{esc(p["sub"])}</p></div></a>' for p in posts)
+    pg += f'''<main><section class="gm-hero"><div class="wrap"><span class="eyebrow">Guia Moema · toda semana</span><h1>Viver <em>Moema.</em></h1>
+<p>Gastronomia, vida boêmia, compras, lazer e cultura, contados por quem trabalha no bairro há mais de vinte anos.</p>
+<div class="gm-cats">{''.join(f'<span>{esc(c)}</span>' for c in G['categorias'])}</div></div></section>
+<section><div class="wrap gm-list">{cards}</div></section>{band()}</main>'''
+    pg += footer(); write('guia-moema/index.html', pg)
+    for p in posts:
+        ld = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": p['titulo'], "datePublished": p['data'], "image": p['capa'], "author": {"@type": "Organization", "name": "W3W Imóveis"}}
+        pg = head(f"{p['titulo']} | Guia Moema · W3W", p['sub'], 'guia-moema/' + p['slug'], f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>')
+        pg += header('guia-moema').replace('class="hd"', 'class="hd over"')
+        body = ''.join(f'<section><h2>{esc(t)}</h2><p>{esc(x)}</p></section>' if i else f'<section><p>{esc(x)}</p></section>' for i, (t, x) in enumerate(p['secoes']))
+        near = [e for e in EM if e['slug'] in p.get('imoveis', [])]
+        pg += f'''<main><header class="gm-cover"><img src="{p["capa"]}" alt=""><div class="t"><div class="wrap"><span class="eyebrow">Guia Moema · {esc(p["categoria"])}</span><h1>{esc(p["titulo"])}</h1><p>{esc(p["sub"])}</p></div></div></header>
+<article class="gm-art"><div class="gm-body"><div class="gm-meta"><span class="eyebrow">{dt(p["data"])}</span><span class="eyebrow">Leitura · {p["leitura"]}</span><span class="eyebrow">Por W3W Imóveis</span></div>{body}</div></article>
+<section class="gm-near"><div class="wrap"><div class="sec-hd"><h2>Morar perto <em>daqui</em></h2><a href="{u('guia-moema')}">← Todos os textos</a></div>
+<div class="grid">{''.join(card(e) for e in near)}</div></div></section>{band()}</main>
+<script>(function(){{var h=document.querySelector('.hd.over');function sc(){{h.classList.toggle('solid',scrollY>innerHeight*.5)}}addEventListener('scroll',sc,{{passive:true}});sc()}})();</script>'''
+        pg += footer(); write(f"guia-moema/{p['slug']}/index.html", pg)
+
 if __name__ == '__main__':
     build()
+    build_guia()

@@ -8,12 +8,12 @@ var FASE={'Lançamento':'Condições de lançamento e melhor escolha de unidades
 function html(e){var r=e.resumo,specs=[['Tipologias',r.tipologias],['Metragem',r.metragem],['Vagas',r.vagas],['Bairro',e.bairro+', São Paulo']].filter(function(x){return x[1]});
 var ideal=[];(e.categorias||[]).forEach(function(c){(IDEAL[c]||[]).forEach(function(x){if(ideal.indexOf(x)<0)ideal.push(x)})});
 var q=encodeURIComponent(e.nome+' '+e.bairro+' São Paulo');
-return '<div class="fx-ph"><img src="'+e.img+'" alt="'+esc(e.nome)+'"><span class="tag st">'+esc(e.status)+'</span></div>'+
-'<div class="fx-b"><div class="fx-t"><span class="eyebrow">'+esc(e.bairro)+' · '+esc(e.status)+'</span><h2 id="sh-t">'+esc(e.nome)+'</h2>'+(e.frase?'<p class="fx-q">'+esc(e.frase)+'</p>':'')+'</div>'+
+return '<div class="fx-ph"><img src="'+e.img+'" alt="'+esc(e.nome)+'"><span class="tag st">'+esc(e.selo||e.status)+'</span></div>'+
+'<div class="fx-b"><div class="fx-t"><span class="eyebrow">'+esc(e.bairro)+' · '+esc(e.selo||e.status)+'</span><h2 id="sh-t">'+esc(e.nome)+'</h2>'+(e.frase?'<p class="fx-q">'+esc(e.frase)+'</p>':'')+'</div>'+
 '<dl class="fx-s">'+specs.map(function(x){return '<div><dt>'+x[0]+'</dt><dd>'+esc(x[1])+'</dd></div>'}).join('')+'</dl></div>'+
 '<div class="fx-c"><a class="btn solid" target="_blank" rel="noopener" href="'+wa('Olá, vi o '+e.nome+' ('+e.bairro+') no site da W3W e quero a ficha completa.')+'">Quero a ficha completa</a>'+
 '<a class="btn" target="_blank" rel="noopener" href="'+wa('Olá, quero agendar uma visita ao '+e.nome+'.')+'">Agendar visita</a></div>'+
-'<div class="fx-x"><div><span class="eyebrow">Momento da obra</span><h4>'+esc(e.status)+'</h4><p>'+(FASE[e.status]||'')+'</p></div>'+
+'<div class="fx-x"><div><span class="eyebrow">Momento da obra</span><h4>'+esc(e.selo||e.status)+'</h4><p>'+(FASE[e.status]||'')+'</p></div>'+
 (ideal.length?'<div><span class="eyebrow">Ideal para</span><ul>'+ideal.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div>':'')+
 '<div><span class="eyebrow">O bairro</span><h4>'+esc(e.bairro)+'</h4><p>'+esc(e.bt||'')+'</p></div></div>'+
 '<div class="fx-map"><span class="eyebrow">Localização aproximada</span><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa '+esc(e.nome)+'" src="https://www.google.com/maps?q='+q+'&output=embed"></iframe></div>'+
