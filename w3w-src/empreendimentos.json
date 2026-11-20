@@ -526,7 +526,7 @@
  },
  {
   "slug": "autoral-moema",
-  "nome": "Autoral Moema",
+  "nome": "Autoral Moema Residences",
   "bairro": "Moema",
   "bairro_slug": "moema",
   "status": "Em obras",
@@ -543,7 +543,160 @@
   "img": "https://w3wimoveis.com.br/wp-content/uploads/2025/01/Fachada-Autoral.png",
   "categorias": [
    "studios"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Viva a experiência única de um lar que se conecta com a natureza e o bem-estar.",
+   "conceito": "2 torres com 112 residências em terreno de 2.054 m², na Rua dos Chanés, em Moema.",
+   "endereco": "Rua dos Chanés · Moema",
+   "entrega": "Previsão: dez/2026",
+   "faixa": "86 e 106 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Conx"
+    ],
+    [
+     "Arquitetura",
+     "Jonas Birger"
+    ],
+    [
+     "Paisagismo",
+     "Martha Gavião"
+    ],
+    [
+     "Decoração",
+     "Chris Silveira e Arquitetos Associados"
+    ]
+   ],
+   "destaques": [
+    [
+     "112",
+     "residências"
+    ],
+    [
+     "2",
+     "torres"
+    ],
+    [
+     "17",
+     "pavimentos"
+    ],
+    [
+     "106 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "3 dorm.",
+     "85 m²",
+     "1 suíte",
+     "1 vaga"
+    ],
+    [
+     "2 dorm.",
+     "86 m²",
+     "2 suítes",
+     "1 vaga"
+    ],
+    [
+     "3 dorm.",
+     "86 m²",
+     "1 suíte",
+     "1 vaga"
+    ],
+    [
+     "2 dorm.",
+     "86 m²",
+     "1 suíte",
+     "1 vaga"
+    ],
+    [
+     "3 dorm.",
+     "88 m²",
+     "1 suíte",
+     "1 vaga"
+    ],
+    [
+     "3 dorm.",
+     "89 m²",
+     "1 suíte",
+     "1 vaga"
+    ]
+   ],
+   "lazer": [
+    "Espaço delivery",
+    "Fitness",
+    "Espaço gourmet",
+    "Brinquedoteca",
+    "Car wash",
+    "Apoio festas",
+    "Playground",
+    "Piscina",
+    "Sauna"
+   ],
+   "local": [
+    "Rua dos Chanés, Moema"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "2.054 m²"
+    ],
+    [
+     "Unidades",
+     "112"
+    ],
+    [
+     "Entrega",
+     "Previsão: dez/2026"
+    ],
+    [
+     "Status",
+     "Em obras"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2025/01/Fachada-Autoral.png",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6417/autoral-moema-residences-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "on-imares",
@@ -568,7 +721,7 @@
  },
  {
   "slug": "on-maracatins",
-  "nome": "ON Maracatins",
+  "nome": "On Maracatins",
   "bairro": "Moema",
   "bairro_slug": "moema",
   "status": "Pronto",
@@ -585,7 +738,114 @@
   "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/01-R00.jpg",
   "categorias": [
    "studios"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Bem-vindo ao seu novo lar de conforto e elegância. Viva a experiência completa.",
+   "conceito": "Projeto, na Alameda dos Maracatins, em Moema.",
+   "endereco": "Alameda dos Maracatins · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "24 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Vitacon"
+    ]
+   ],
+   "destaques": [
+    [
+     "24 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "Studio",
+     "24 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "26 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "29 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "30 m²",
+     "—",
+     "Sem vaga"
+    ]
+   ],
+   "lazer": [
+    "Housi art",
+    "Housi market",
+    "Coworking",
+    "Housi bar",
+    "Tool sharing",
+    "Bike sharing",
+    "Fitness"
+   ],
+   "local": [
+    "Alameda dos Maracatins, Moema"
+   ],
+   "tecnica": [
+    [
+     "Entrega",
+     "Entregue em jul/2024"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/01-R00.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-2.jpg",
+      "Áreas comuns"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "on-jurupis",
@@ -608,14 +868,167 @@
   "categorias": [
    "apartamentos",
    "studios"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Charme, modernidade conforto, segurança e lazer em um só lugar.",
+   "conceito": "Torre única com 384 residências em terreno de 3.880 m², na Alameda dos Jurupis, em Moema.",
+   "endereco": "Alameda dos Jurupis · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "26 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Vitacon"
+    ],
+    [
+     "Arquitetura",
+     "Agres Arquitetura, Ide Studio"
+    ],
+    [
+     "Decoração",
+     "Consuelo Jorge"
+    ],
+    [
+     "Paisagismo",
+     "Beatriz Quinelato"
+    ]
+   ],
+   "destaques": [
+    [
+     "384",
+     "residências"
+    ],
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "27",
+     "pavimentos"
+    ],
+    [
+     "26 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "Studio",
+     "26 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "1 dorm.",
+     "26 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "2 dorm.",
+     "60 m²",
+     "1 suíte",
+     "1 vaga"
+    ],
+    [
+     "3 dorm.",
+     "85 m²",
+     "1 suíte",
+     "2 vagas"
+    ],
+    [
+     "3 dorm.",
+     "86 m²",
+     "1 suíte",
+     "1 vaga"
+    ],
+    [
+     "3 dorm.",
+     "90 m²",
+     "1 suíte",
+     "2 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina",
+    "Deck",
+    "Pet play",
+    "Pet place",
+    "Brinquedoteca",
+    "Playground",
+    "Churrasqueira",
+    "On party",
+    "Mega lounge"
+   ],
+   "local": [
+    "Alameda dos Jurupis, Moema"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "3.880 m²"
+    ],
+    [
+     "Unidades",
+     "384"
+    ],
+    [
+     "Entrega",
+     "Entregue em dez/2024"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/DJI_1046.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/2937/on-jurupis-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2937/on-jurupis-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/2937/on-jurupis-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2937/on-jurupis-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2937/on-jurupis-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2937/on-jurupis-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2937/on-jurupis-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2937/on-jurupis-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "nex-one-nhambiquaras",
-  "nome": "NEX One Nhambiquaras",
+  "nome": "Nex One Nhambiquaras",
   "bairro": "Moema",
   "bairro_slug": "moema",
-  "status": "Em obras",
+  "status": "Pronto",
   "tipos": [
    "Apartamento"
   ],
@@ -629,14 +1042,164 @@
   "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/nhamb.jpg",
   "categorias": [
    "apartamentos"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Descubra um conceito único de moradia em São Paulo, com design moderno e áreas exclusivas.",
+   "conceito": "Torre única com 285 residências em terreno de 1.579 m², na Alameda dos Nhambiquaras, em Moema.",
+   "endereco": "Alameda dos Nhambiquaras · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "39 a 43 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "One Innovation"
+    ],
+    [
+     "Arquitetura",
+     "Marchi Arquitetura"
+    ],
+    [
+     "Decoração",
+     "DP Barros"
+    ],
+    [
+     "Paisagismo",
+     "Marcelo Vassalo"
+    ]
+   ],
+   "destaques": [
+    [
+     "285",
+     "residências"
+    ],
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "15",
+     "pavimentos"
+    ],
+    [
+     "43 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "1 dorm.",
+     "27 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "1 dorm.",
+     "28 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "2 dorm.",
+     "39 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "2 dorm.",
+     "40 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "2 dorm.",
+     "43 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "2 dorm.",
+     "61 m²",
+     "—",
+     "Sem vaga"
+    ]
+   ],
+   "lazer": [
+    "Piscina com solarium",
+    "Salão de festas gourmet",
+    "Fitness",
+    "Coworking",
+    "Lavanderia",
+    "Espaço delivery"
+   ],
+   "local": [
+    "Alameda dos Nhambiquaras, Moema"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "1.579 m²"
+    ],
+    [
+     "Unidades",
+     "285"
+    ],
+    [
+     "Entrega",
+     "Entregue em dez/2024"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/nhamb.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-2.jpg",
+      "Áreas comuns"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "nex-one-jurupis",
-  "nome": "NEX One Jurupis",
+  "nome": "Nex One Jurupis",
   "bairro": "Moema",
   "bairro_slug": "moema",
-  "status": "Em obras",
+  "status": "Pronto",
   "tipos": [
    "Studio",
    "Apartamento"
@@ -652,14 +1215,167 @@
   "categorias": [
    "apartamentos",
    "studios"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Moradia inovadora e exclusiva para quem busca sofisticação e qualidade de vida.",
+   "conceito": "2 torres com 412 residências em terreno de 2.280 m², na Alameda dos Jurupis, em Moema.",
+   "endereco": "Alameda dos Jurupis · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "30 a 39 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "One Innovation"
+    ],
+    [
+     "Arquitetura",
+     "Rodrigo Sobreiro Arquitetos"
+    ],
+    [
+     "Decoração",
+     "DP Barros"
+    ],
+    [
+     "Paisagismo",
+     "Marcelo Vassalo"
+    ]
+   ],
+   "destaques": [
+    [
+     "412",
+     "residências"
+    ],
+    [
+     "2",
+     "torres"
+    ],
+    [
+     "17",
+     "pavimentos"
+    ],
+    [
+     "39 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "Studio",
+     "27 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "28 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "1 dorm.",
+     "30 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "2 dorm.",
+     "32 m²",
+     "1 suíte",
+     "Sem vaga"
+    ],
+    [
+     "1 dorm.",
+     "34 m²",
+     "1 suíte",
+     "Sem vaga"
+    ],
+    [
+     "1 dorm.",
+     "35 m²",
+     "—",
+     "Sem vaga"
+    ]
+   ],
+   "lazer": [
+    "Coworking",
+    "Living space",
+    "Espaço gourmet",
+    "Fitness",
+    "Apoio funcional",
+    "Lavanderia",
+    "Pet place",
+    "Bicicletário",
+    "Praça externa"
+   ],
+   "local": [
+    "Alameda dos Jurupis, Moema"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "2.280 m²"
+    ],
+    [
+     "Unidades",
+     "412"
+    ],
+    [
+     "Entrega",
+     "Entregue em jul/2026"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/nex-one-juru.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-2.jpg",
+      "Áreas comuns"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "most-moema",
-  "nome": "Most Moema",
+  "nome": "Most Moema Home",
   "bairro": "Moema",
   "bairro_slug": "moema",
-  "status": "Em obras",
+  "status": "Pronto",
   "tipos": [
    "Studio",
    "Apartamento"
@@ -675,14 +1391,169 @@
   "categorias": [
    "apartamentos",
    "studios"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Reinvente seu viver. Descubra um conceito inovador de moradia que transforma sua qualidade de vida.",
+   "conceito": "Duas torres justapostas, com entradas e condomínios independentes.",
+   "endereco": "Rua Pintassilgo · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "94 a 205 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "MPD Engenharia"
+    ],
+    [
+     "Arquitetura",
+     "LE Arquitetos"
+    ],
+    [
+     "Paisagismo",
+     "Beth Miyazaki"
+    ],
+    [
+     "Decoração",
+     "Cristina Quitete & Leonardo Faria Arquitetura"
+    ]
+   ],
+   "destaques": [
+    [
+     "82",
+     "residências"
+    ],
+    [
+     "2",
+     "torres"
+    ],
+    [
+     "21",
+     "pavimentos"
+    ],
+    [
+     "205 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "2 dorm.",
+     "80 m²",
+     "2 suítes",
+     "1 vaga"
+    ],
+    [
+     "2 dorm.",
+     "82 m²",
+     "2 suítes",
+     "2 vagas"
+    ],
+    [
+     "2 dorm.",
+     "94 m²",
+     "2 suítes",
+     "1 vaga"
+    ],
+    [
+     "3 dorm.",
+     "147 m²",
+     "2 suítes",
+     "2 vagas"
+    ],
+    [
+     "3 dorm.",
+     "147 m²",
+     "3 suítes",
+     "2 vagas"
+    ],
+    [
+     "3 dorm.",
+     "169 m²",
+     "3 suítes",
+     "2 vagas"
+    ]
+   ],
+   "lazer": [
+    "Espaço delivery",
+    "Brinquedoteca",
+    "Playground",
+    "Quadra",
+    "Churrasqueira",
+    "Pet place",
+    "Salão de festas",
+    "Espaço gourmet",
+    "Coworking"
+   ],
+   "local": [
+    "Lavabo entregue com bancada de mármore",
+    "Piso entre terraço e living entregue nivelado",
+    "Terraço com previsão para bancada e churrasqueira a carvão"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "2.564 m²"
+    ],
+    [
+     "Unidades",
+     "82"
+    ],
+    [
+     "Entrega",
+     "Entregue em nov/2025"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/most-moema-20230419092314000.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/5341/most-moema-home-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5341/most-moema-home-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/5341/most-moema-home-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5341/most-moema-home-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5341/most-moema-home-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5341/most-moema-home-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5341/most-moema-home-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5341/most-moema-home-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "bem-moema",
-  "nome": "Bem Moema",
+  "nome": "Bem Moema Studios",
   "bairro": "Moema",
   "bairro_slug": "moema",
-  "status": "Em obras",
+  "status": "Pronto",
   "tipos": [
    "Studio",
    "Apartamento"
@@ -699,14 +1570,136 @@
    "alto-padrao",
    "apartamentos",
    "studios"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Descubra um novo jeito de viver: sofisticação, natureza e exclusividade. Uma experiência única.",
+   "conceito": "Empreendimento mixed-use de duas torres, com acessos independentes entre residenciais, studios e salas comerciais.",
+   "endereco": "Avenida Bem-te-vi · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "26 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Tegra Incorporadora"
+    ],
+    [
+     "Arquitetura",
+     "Königsberger Vannucchi"
+    ],
+    [
+     "Decoração",
+     "Suite Arquitetos"
+    ],
+    [
+     "Paisagismo",
+     "Cardim Arquitetura Paisagística"
+    ]
+   ],
+   "destaques": [
+    [
+     "113",
+     "residências"
+    ],
+    [
+     "2",
+     "torres"
+    ],
+    [
+     "26 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "Studio",
+     "26 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "36 m²",
+     "—",
+     "Sem vaga"
+    ]
+   ],
+   "lazer": [
+    "Coworking",
+    "Lobby",
+    "Piscina",
+    "Deck",
+    "Salão de festas",
+    "Churrasqueira",
+    "Fitness",
+    "Lavanderia"
+   ],
+   "local": [
+    "Áreas comuns entregues equipadas e decoradas",
+    "Fitness amplo com área externa",
+    "Infraestrutura para aquecimento solar"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "2.602 m²"
+    ],
+    [
+     "Unidades",
+     "113"
+    ],
+    [
+     "Entrega",
+     "Entregue em nov/2025"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/Tegra-Incorporadora-Perspectiva-Ilustrada-Area-Externa-Lazer-Apartamentos-Bem-Moema-Sao-Paulo-SP-001-1715460274740.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/6455/bem-moema-studios-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6455/bem-moema-studios-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/6455/bem-moema-studios-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6455/bem-moema-studios-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6455/bem-moema-studios-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6455/bem-moema-studios-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6455/bem-moema-studios-condominio-6.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "moema-signature-by-you-inc",
-  "nome": "Moema Signature by You,Inc",
+  "nome": "Moema Signature by You,inc",
   "bairro": "Moema",
   "bairro_slug": "moema",
-  "status": "Em obras",
+  "status": "Pronto",
   "tipos": [
    "Studio"
   ],
@@ -720,11 +1713,140 @@
   "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/03_YOU_GAI_ESQUINA_FINAL_2SCOPEOMEDIA-2.jpg",
   "categorias": [
    "studios"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Viva com conforto e estilo. Garanta seu lugar neste empreendimento único e desfrute de exclusividade e modernidade.",
+   "conceito": "Torre única com 30 residências em terreno de 1.127 m², na R. Gaivota, em Moema.",
+   "endereco": "R. Gaivota · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "141 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "You,inc"
+    ],
+    [
+     "Arquitetura",
+     "Perkins + Will Arquitetura"
+    ],
+    [
+     "Decoração",
+     "Melina Romano Interiores"
+    ],
+    [
+     "Paisagismo",
+     "Cardim Arquitetura Paisagística"
+    ]
+   ],
+   "destaques": [
+    [
+     "30",
+     "residências"
+    ],
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "21",
+     "pavimentos"
+    ],
+    [
+     "141 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "3 dorm.",
+     "141 m²",
+     "3 suítes",
+     "2 vagas"
+    ],
+    [
+     "4 dorm.",
+     "141 m²",
+     "2 suítes",
+     "2 vagas"
+    ]
+   ],
+   "lazer": [
+    "Salão de festas",
+    "Brinquedoteca",
+    "Espaço delivery",
+    "Pet place",
+    "Jardim descoberto",
+    "Academia",
+    "Sauna seca",
+    "Sala de massagem",
+    "Piscina adulto"
+   ],
+   "local": [
+    "R. Gaivota, Moema"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "1.127 m²"
+    ],
+    [
+     "Unidades",
+     "30"
+    ],
+    [
+     "Entrega",
+     "Entregue em jan/2026"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/03_YOU_GAI_ESQUINA_FINAL_2SCOPEOMEDIA-2.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/4179/moema-signature-by-youinc-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "moma-moema",
-  "nome": "MOMA Moema",
+  "nome": "Moma Moema",
   "bairro": "Moema",
   "bairro_slug": "moema",
   "status": "Em obras",
@@ -743,7 +1865,162 @@
   "categorias": [
    "alto-padrao",
    "studios"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Sofisticação, design exclusivo e localização privilegiada se unem para uma experiência única.",
+   "conceito": "Conceito wellness, três andares dedicados ao lazer e um rooftop no 28º pavimento com piscina, solarium e lounge bar.",
+   "endereco": "Av. Macuco · Moema",
+   "entrega": "Previsão: jun/2027",
+   "faixa": "24 a 384 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "You,inc, Kallas"
+    ],
+    [
+     "Arquitetura",
+     "Aflalo & Gasperini"
+    ],
+    [
+     "Decoração",
+     "Studio ro+ca"
+    ],
+    [
+     "Paisagismo",
+     "Rodrigo Oliveira Paisagismo"
+    ]
+   ],
+   "destaques": [
+    [
+     "84",
+     "residências"
+    ],
+    [
+     "2",
+     "torres"
+    ],
+    [
+     "27",
+     "pavimentos"
+    ],
+    [
+     "384 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "Studio",
+     "24 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "3 dorm.",
+     "147 m²",
+     "3 suítes",
+     "2 vagas"
+    ],
+    [
+     "2 dorm.",
+     "147 m²",
+     "2 suítes",
+     "2 vagas"
+    ],
+    [
+     "4 dorm.",
+     "194 m²",
+     "2 suítes",
+     "3 vagas"
+    ],
+    [
+     "3 dorm.",
+     "194 m²",
+     "3 suítes",
+     "3 vagas"
+    ],
+    [
+     "4 dorm.",
+     "384 m²",
+     "4 suítes",
+     "4 vagas"
+    ]
+   ],
+   "lazer": [
+    "Bicicletário",
+    "Brinquedoteca",
+    "Churrasqueira",
+    "Delivery",
+    "Fitness",
+    "Piscina adulto",
+    "Piscina infantil",
+    "Piscina coberta com raia de 20m",
+    "Piscina descoberta"
+   ],
+   "local": [
+    "A 650 metros do Shopping Ibirapuera",
+    "A 5 minutos de caminhada da estação de metrô Moema",
+    "Apartamentos com amplas varandas e jardim suspenso"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "4.206 m²"
+    ],
+    [
+     "Unidades",
+     "84"
+    ],
+    [
+     "Entrega",
+     "Previsão: jun/2027"
+    ],
+    [
+     "Status",
+     "Em obras"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada-listagem_MOMA_vs02.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/6708/moma-moema-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6708/moma-moema-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/6708/moma-moema-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6708/moma-moema-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6708/moma-moema-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6708/moma-moema-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6708/moma-moema-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6708/moma-moema-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "mirage-ibirapuera",
@@ -920,10 +2197,10 @@
  },
  {
   "slug": "canto-sabia",
-  "nome": "Canto Sabiá",
+  "nome": "Canto Sabiá Moema",
   "bairro": "Moema",
   "bairro_slug": "moema",
-  "status": "Em obras",
+  "status": "Pronto",
   "tipos": [
    "Apartamento"
   ],
@@ -937,7 +2214,156 @@
   "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/RFM_SABIA_EXTERNA_FACHADALATERAL_HR00-1-5000x485-1.jpg",
   "categorias": [
    "apartamentos"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Descubra um novo conceito de moradia que vai transformar sua vida com sofisticação e exclusividade.",
+   "conceito": "Torre única com 48 residências em terreno de 750 m², na Av. Sabiá, em Moema.",
+   "endereco": "Av. Sabiá · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "68 e 135 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Realização",
+     "RFM & JVM"
+    ],
+    [
+     "Decoração",
+     "Consuelo Jorge"
+    ],
+    [
+     "Paisagismo",
+     "Rodrigo Oliveira Paisagismo"
+    ]
+   ],
+   "destaques": [
+    [
+     "48",
+     "residências"
+    ],
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "13",
+     "pavimentos"
+    ],
+    [
+     "135 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "1 dorm.",
+     "48 m²",
+     "1 suíte",
+     "Sem vaga"
+    ],
+    [
+     "1 dorm.",
+     "55 m²",
+     "1 suíte",
+     "Sem vaga"
+    ],
+    [
+     "2 dorm.",
+     "68 m²",
+     "2 suítes",
+     "1 vaga"
+    ],
+    [
+     "2 dorm.",
+     "84 m²",
+     "2 suítes",
+     "1 vaga"
+    ],
+    [
+     "2 dorm.",
+     "131 m²",
+     "2 suítes",
+     "2 vagas"
+    ],
+    [
+     "2 dorm.",
+     "135 m²",
+     "2 suítes",
+     "1 vaga"
+    ]
+   ],
+   "lazer": [
+    "Coworking",
+    "Espaço delivery",
+    "Bicicletário",
+    "Fitness",
+    "Piscina adulto",
+    "Piscina infantil",
+    "Solarium",
+    "Salão de festas",
+    "Espaço gourmet"
+   ],
+   "local": [
+    "Av. Sabiá, Moema"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "750 m²"
+    ],
+    [
+     "Unidades",
+     "48"
+    ],
+    [
+     "Entrega",
+     "Entregue em fev/2025"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/RFM_SABIA_EXTERNA_FACHADALATERAL_HR00-1-5000x485-1.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/3889/canto-sabia-moema-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3889/canto-sabia-moema-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/3889/canto-sabia-moema-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3889/canto-sabia-moema-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3889/canto-sabia-moema-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3889/canto-sabia-moema-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3889/canto-sabia-moema-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3889/canto-sabia-moema-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "atmos-moema",
@@ -1239,7 +2665,7 @@
   "nome": "Moema Vida Nova",
   "bairro": "Moema",
   "bairro_slug": "moema",
-  "status": "Em obras",
+  "status": "Pronto",
   "tipos": [
    "Apartamento"
   ],
@@ -1253,14 +2679,144 @@
   "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/DSC0262-1.png",
   "categorias": [
    "apartamentos"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Novo jeito de viver: design inovador e experiência única. Empreendimento que redefine a qualidade de vida.",
+   "conceito": "Torre única com 43 residências, na Alameda Jauaperi, em Moema.",
+   "endereco": "Alameda Jauaperi · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "66 e 80 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Lote5 Incorporadora"
+    ],
+    [
+     "Decoração",
+     "João Armentano"
+    ],
+    [
+     "Paisagismo",
+     "Martha Gavião"
+    ]
+   ],
+   "destaques": [
+    [
+     "43",
+     "residências"
+    ],
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "17",
+     "pavimentos"
+    ],
+    [
+     "80 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "2 dorm.",
+     "66 m²",
+     "1 suíte",
+     "1 vaga"
+    ],
+    [
+     "2 dorm.",
+     "80 m²",
+     "2 suítes",
+     "1 vaga"
+    ],
+    [
+     "2 dorm.",
+     "82 m²",
+     "1 suíte",
+     "1 vaga"
+    ],
+    [
+     "2 dorm.",
+     "151 m²",
+     "2 suítes",
+     "1 vaga"
+    ]
+   ],
+   "lazer": [
+    "Piscina",
+    "Festas gourmet",
+    "Academia",
+    "Delivery",
+    "Brinquedoteca",
+    "Bicicletário"
+   ],
+   "local": [
+    "Alameda Jauaperi, Moema"
+   ],
+   "tecnica": [
+    [
+     "Unidades",
+     "43"
+    ],
+    [
+     "Entrega",
+     "Entregue em fev/2026"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/DSC0262-1.png",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/5117/moema-vida-nova-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5117/moema-vida-nova-condominio-2.jpg",
+      "Áreas comuns"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/5117/moema-vida-nova-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5117/moema-vida-nova-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5117/moema-vida-nova-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5117/moema-vida-nova-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5117/moema-vida-nova-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5117/moema-vida-nova-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "villa-versace-home",
   "nome": "Villa Versace Home",
   "bairro": "Moema",
   "bairro_slug": "moema",
-  "status": "Em obras",
+  "status": "Pronto",
   "tipos": [
    "Studio",
    "Apartamento"
@@ -1276,7 +2832,162 @@
   "categorias": [
    "alto-padrao",
    "studios"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Viva o estilo de vida dos seus sonhos. Descubra o que te espera.",
+   "conceito": "Duas torres em condomínios totalmente independentes, com lazer enriquecido pelo design da Versace Home.",
+   "endereco": "Av. Agami · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "149 a 291 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Lavvi"
+    ],
+    [
+     "Participação",
+     "Cyrela"
+    ],
+    [
+     "Paisagismo",
+     "Benedito Abbud"
+    ],
+    [
+     "Arquitetura",
+     "Aflalo & Gasperini"
+    ]
+   ],
+   "destaques": [
+    [
+     "300",
+     "residências"
+    ],
+    [
+     "2",
+     "torres"
+    ],
+    [
+     "26",
+     "pavimentos"
+    ],
+    [
+     "291 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "3 dorm.",
+     "149 m²",
+     "3 suítes",
+     "2 vagas"
+    ],
+    [
+     "3 dorm.",
+     "150 m²",
+     "3 suítes",
+     "3 vagas"
+    ],
+    [
+     "3 dorm.",
+     "150 m²",
+     "2 suítes",
+     "2 vagas"
+    ],
+    [
+     "3 dorm.",
+     "150 m²",
+     "3 suítes",
+     "4 vagas"
+    ],
+    [
+     "3 dorm.",
+     "216 m²",
+     "3 suítes",
+     "3 vagas"
+    ],
+    [
+     "3 dorm.",
+     "291 m²",
+     "3 suítes",
+     "4 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina adulto",
+    "Piscina infantil",
+    "Deck molhado",
+    "Spa",
+    "Fitness",
+    "Salão de festas",
+    "Praça central",
+    "Bar",
+    "Solarium"
+   ],
+   "local": [
+    "Primeiro lançamento com assinatura Versace Home da América Latina",
+    "Áreas de lazer com design da Versace Home",
+    "Residencial e studios em condomínios independentes"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "4.366 m²"
+    ],
+    [
+     "Unidades",
+     "300"
+    ],
+    [
+     "Entrega",
+     "Entregue em set/2025"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/644037cb5f7255e46368c870_02.png",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "saffire",
@@ -1459,7 +3170,7 @@
   "nome": "Ibirapuera Park Houses",
   "bairro": "Moema",
   "bairro_slug": "moema",
-  "status": "Em obras",
+  "status": "Pronto",
   "tipos": [
    "Apartamento"
   ],
@@ -1473,7 +3184,144 @@
   "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/01-fachada.jpg",
   "categorias": [
    "alto-padrao"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Novo jeito de viver em São Paulo: studios inteligentes a 3 min do Ibirapuera. Conforto e exclusividade.",
+   "conceito": "Torre única de estilo contemporâneo.",
+   "endereco": "Alameda Jauaperi · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "153 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Gafisa"
+    ],
+    [
+     "Arquitetura",
+     "Königsberger Vannucchi"
+    ],
+    [
+     "Decoração",
+     "Fernando Piva Interiores"
+    ],
+    [
+     "Paisagismo",
+     "Mera Arquitetura"
+    ]
+   ],
+   "destaques": [
+    [
+     "54",
+     "residências"
+    ],
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "26",
+     "pavimentos"
+    ],
+    [
+     "153 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "3 dorm.",
+     "153 m²",
+     "3 suítes",
+     "2 vagas"
+    ],
+    [
+     "3 dorm.",
+     "153 m²",
+     "3 suítes",
+     "3 vagas"
+    ],
+    [
+     "3 dorm.",
+     "281 m²",
+     "3 suítes",
+     "3 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina",
+    "Piscina coberta",
+    "Salão de festas",
+    "Brinquedoteca",
+    "Fitness",
+    "Playground",
+    "Salão de jogos",
+    "Sauna seca",
+    "Sala de massagem"
+   ],
+   "local": [
+    "Entrada social e de serviço separadas",
+    "Churrasqueira entregue nas unidades",
+    "Infra para ar-condicionado split"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "1.993 m²"
+    ],
+    [
+     "Unidades",
+     "54"
+    ],
+    [
+     "Entrega",
+     "Entregue em abr/2023"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/01-fachada.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3258/ibirapuera-park-houses-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "park-avenue",
@@ -1650,7 +3498,7 @@
  },
  {
   "slug": "z-ibirapuera",
-  "nome": "Z Ibirapuera",
+  "nome": "Z. Ibirapuera",
   "bairro": "Moema",
   "bairro_slug": "moema",
   "status": "Pronto",
@@ -1667,14 +3515,169 @@
   "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/z-ibirapuera-fachada.jpg",
   "categorias": [
    "studios"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Novo jeito de viver: conforto, modernidade e experiência única em um endereço que te conecta a tudo.",
+   "conceito": "Torre única com 136 residências em terreno de 1.338 m², na Alameda dos Arapanés, em Moema.",
+   "endereco": "Alameda dos Arapanés · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "26 a 45 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Eztec"
+    ],
+    [
+     "Arquitetura",
+     "LE Arquitetos"
+    ],
+    [
+     "Paisagismo",
+     "Benedito Abbud"
+    ],
+    [
+     "Decoração",
+     "Priscilla Zarzur"
+    ]
+   ],
+   "destaques": [
+    [
+     "136",
+     "residências"
+    ],
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "25",
+     "pavimentos"
+    ],
+    [
+     "45 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "Studio",
+     "26 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "29 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "34 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "1 dorm.",
+     "45 m²",
+     "1 suíte",
+     "Sem vaga"
+    ],
+    [
+     "2 dorm.",
+     "51 m²",
+     "1 suíte",
+     "1 vaga"
+    ],
+    [
+     "1 dorm.",
+     "54 m²",
+     "1 suíte",
+     "1 vaga"
+    ]
+   ],
+   "lazer": [
+    "Piscina adulto",
+    "Deck",
+    "Salão de festas",
+    "Playground",
+    "Lavanderia",
+    "Fitness externo",
+    "Fitness",
+    "Coliving",
+    "Churrasqueira"
+   ],
+   "local": [
+    "Piscina no rooftop com iluminação de LED",
+    "Academia com design by Cia Athletica",
+    "Lavanderia com design by DryClean USA"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "1.338 m²"
+    ],
+    [
+     "Unidades",
+     "136"
+    ],
+    [
+     "Entrega",
+     "Entregue em dez/2022"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/z-ibirapuera-fachada.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/2039/z-ibirapuera-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2039/z-ibirapuera-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/2039/z-ibirapuera-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2039/z-ibirapuera-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2039/z-ibirapuera-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2039/z-ibirapuera-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2039/z-ibirapuera-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/2039/z-ibirapuera-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "chanes-street",
   "nome": "Chanés Street",
   "bairro": "Moema",
   "bairro_slug": "moema",
-  "status": "Em obras",
+  "status": "Pronto",
   "tipos": [
    "Studio",
    "Apartamento"
@@ -1690,7 +3693,148 @@
   "categorias": [
    "apartamentos",
    "studios"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Moema com o charme do Soho! Descubra o Chanés, um novo conceito de morar que vai te surpreender.",
+   "conceito": "Torre única com 250 residências em terreno de 2.144 m², na Rua dos Chanés, em Moema.",
+   "endereco": "Rua dos Chanés · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "29 e 55 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Eztec"
+    ],
+    [
+     "Arquitetura",
+     "LE Arquitetos"
+    ],
+    [
+     "Paisagismo",
+     "Benedito Abbud"
+    ],
+    [
+     "Decoração",
+     "Priscilla Zarzur"
+    ]
+   ],
+   "destaques": [
+    [
+     "250",
+     "residências"
+    ],
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "19",
+     "pavimentos"
+    ],
+    [
+     "55 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "Studio",
+     "29 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "30 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "1 dorm.",
+     "55 m²",
+     "1 suíte",
+     "1 vaga"
+    ],
+    [
+     "2 dorm.",
+     "75 m²",
+     "2 suítes",
+     "1 vaga"
+    ]
+   ],
+   "lazer": [
+    "Pet care",
+    "Beauty care",
+    "Espaço delivery",
+    "Fitness",
+    "Party room",
+    "Churrasqueira",
+    "Lounge",
+    "Brinquedoteca",
+    "Playground"
+   ],
+   "local": [
+    "Rua dos Chanés, Moema"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "2.144 m²"
+    ],
+    [
+     "Unidades",
+     "250"
+    ],
+    [
+     "Entrega",
+     "Entregue em fev/2026"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/chanes-moema-fachada-1.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/5640/chanes-street-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5640/chanes-street-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/5640/chanes-street-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5640/chanes-street-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5640/chanes-street-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5640/chanes-street-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5640/chanes-street-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/5640/chanes-street-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "splend-moema",
@@ -2129,7 +4273,7 @@
   "nome": "Cyrela Moema by YOO",
   "bairro": "Moema",
   "bairro_slug": "moema",
-  "status": "Em obras",
+  "status": "Pronto",
   "tipos": [
    "Apartamento"
   ],
@@ -2143,11 +4287,148 @@
   "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/JUR_02_Fachada_Frontal_EF3_ajustada_1.png",
   "categorias": [
    "alto-padrao"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Desvende um novo jeito de viver em Moema. Design inovador e exclusividade em uma torre única.",
+   "conceito": "Arquitetura contemporânea de linhas retas e interiores assinados pela YOO.",
+   "endereco": "Av. dos Imarés · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "252 a 269 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Cyrela"
+    ],
+    [
+     "Arquitetura",
+     "LE Arquitetos"
+    ],
+    [
+     "Paisagismo",
+     "Benedito Abbud"
+    ],
+    [
+     "Decoração",
+     "YOO"
+    ]
+   ],
+   "destaques": [
+    [
+     "52",
+     "residências"
+    ],
+    [
+     "2",
+     "torres"
+    ],
+    [
+     "13",
+     "pavimentos"
+    ],
+    [
+     "269 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "4 dorm.",
+     "252 m²",
+     "4 suítes",
+     "4 vagas"
+    ],
+    [
+     "4 dorm.",
+     "264 m²",
+     "4 suítes",
+     "3 vagas"
+    ],
+    [
+     "4 dorm.",
+     "269 m²",
+     "4 suítes",
+     "3 vagas"
+    ]
+   ],
+   "lazer": [
+    "The blue bar",
+    "Sky lounge",
+    "Piscina",
+    "Gazebo",
+    "Deck molhado",
+    "Fitness",
+    "Spa",
+    "Sauna",
+    "Kids place"
+   ],
+   "local": [
+    "Design de interiores by YOO",
+    "Jardim com irrigação automatizada nos apartamentos",
+    "Elevador social com controle de acesso"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "5.900 m²"
+    ],
+    [
+     "Unidades",
+     "52"
+    ],
+    [
+     "Entrega",
+     "Entregue em jan/2025"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/JUR_02_Fachada_Frontal_EF3_ajustada_1.png",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "lis-moema",
-  "nome": "Lis Moema",
+  "nome": "LIS Moema",
   "bairro": "Moema",
   "bairro_slug": "moema",
   "status": "Em obras",
@@ -2164,7 +4445,142 @@
   "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/CTV_01_Fachada_T1e2_A_EF2_v2-1.png",
   "categorias": [
    "alto-padrao"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Descubra um novo lar em Moema, onde sofisticação e natureza se encontram.",
+   "conceito": "3 torres com 114 residências em terreno de 6.157 m², na Alameda dos Arapanés, em Moema.",
+   "endereco": "Alameda dos Arapanés · Moema",
+   "entrega": "Previsão: nov/2026",
+   "faixa": "174 a 256 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Cyrela"
+    ]
+   ],
+   "destaques": [
+    [
+     "114",
+     "residências"
+    ],
+    [
+     "3",
+     "torres"
+    ],
+    [
+     "15",
+     "pavimentos"
+    ],
+    [
+     "256 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "3 dorm.",
+     "170 m²",
+     "3 suítes",
+     "2 vagas"
+    ],
+    [
+     "3 dorm.",
+     "174 m²",
+     "3 suítes",
+     "2 vagas"
+    ],
+    [
+     "3 dorm.",
+     "185 m²",
+     "3 suítes",
+     "2 vagas"
+    ],
+    [
+     "3 dorm.",
+     "213 m²",
+     "3 suítes",
+     "3 vagas"
+    ],
+    [
+     "4 dorm.",
+     "256 m²",
+     "4 suítes",
+     "3 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina descoberta",
+    "Piscina coberta",
+    "Deck molhado",
+    "Salão de festas",
+    "Espaço gourmet",
+    "Bar",
+    "Solarium",
+    "Fitness",
+    "Brinquedoteca"
+   ],
+   "local": [
+    "Alameda dos Arapanés, Moema"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "6.157 m²"
+    ],
+    [
+     "Unidades",
+     "114"
+    ],
+    [
+     "Entrega",
+     "Previsão: nov/2026"
+    ],
+    [
+     "Status",
+     "Em obras"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/CTV_01_Fachada_T1e2_A_EF2_v2-1.png",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/6208/lis-moema-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6208/lis-moema-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/6208/lis-moema-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6208/lis-moema-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6208/lis-moema-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6208/lis-moema-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6208/lis-moema-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6208/lis-moema-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "ibate",
@@ -2428,14 +4844,132 @@
   "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada-2.jpg",
   "categorias": [
    "studios"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Descubra tecnologias que vão revolucionar seu dia a dia. Prepare-se para uma experiência única.",
+   "conceito": "Torre única com 120 residências, na Avenida Cotovia, em Moema.",
+   "endereco": "Avenida Cotovia · Moema",
+   "entrega": "Previsão: dez/2027",
+   "faixa": "26 e 27 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Realização",
+     "AAM Incorporadora"
+    ],
+    [
+     "Arquitetura",
+     "Spol Architects"
+    ],
+    [
+     "Decoração",
+     "Barbara & Purchio"
+    ],
+    [
+     "Paisagismo",
+     "Soma Arquitetos"
+    ]
+   ],
+   "destaques": [
+    [
+     "120",
+     "residências"
+    ],
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "24",
+     "pavimentos"
+    ],
+    [
+     "27 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "Studio",
+     "26 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "27 m²",
+     "—",
+     "Sem vaga"
+    ]
+   ],
+   "lazer": [
+    "Piscina na cobertura",
+    "Coworking",
+    "Fitness",
+    "Espaço delivery",
+    "Sala de reunião",
+    "Lavanderia coletiva"
+   ],
+   "local": [
+    "Avenida Cotovia, Moema"
+   ],
+   "tecnica": [
+    [
+     "Unidades",
+     "120"
+    ],
+    [
+     "Entrega",
+     "Previsão: dez/2027"
+    ],
+    [
+     "Status",
+     "Em obras"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada-2.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/7190/ndk-studios-moema-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7190/ndk-studios-moema-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/7190/ndk-studios-moema-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7190/ndk-studios-moema-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7190/ndk-studios-moema-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7190/ndk-studios-moema-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7190/ndk-studios-moema-condominio-6.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "monogram",
-  "nome": "Monogram",
+  "nome": "Monogram Moema",
   "bairro": "Moema",
   "bairro_slug": "moema",
-  "status": "Em obras",
+  "status": "Pronto",
   "tipos": [
    "Apartamento"
   ],
@@ -2450,7 +4984,141 @@
   "categorias": [
    "alto-padrao",
    "apartamentos"
-  ]
+  ],
+  "ficha": {
+   "tagline": "Explore um novo conceito em design e exclusividade. A experiência que você sempre quis, ao seu alcance.",
+   "conceito": "Torre única com 60 residências em terreno de 1.923 m², na Alameda dos Arapanés, em Moema.",
+   "endereco": "Alameda dos Arapanés · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "121 a 148 m²",
+   "plantas_tit": "plantas disponíveis.",
+   "assinaturas": [
+    [
+     "Realização",
+     "AAM Incorporadora"
+    ],
+    [
+     "Arquitetura",
+     "Spol Architects"
+    ],
+    [
+     "Paisagismo",
+     "Soma Arquitetos"
+    ],
+    [
+     "Decoração",
+     "Barbara & Purchio"
+    ]
+   ],
+   "destaques": [
+    [
+     "60",
+     "residências"
+    ],
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "16",
+     "pavimentos"
+    ],
+    [
+     "148 m²",
+     "maior planta"
+    ]
+   ],
+   "plantas": [
+    [
+     "3 dorm.",
+     "121 m²",
+     "3 suítes",
+     "2 vagas"
+    ],
+    [
+     "2 dorm.",
+     "121 m²",
+     "2 suítes",
+     "2 vagas"
+    ],
+    [
+     "3 dorm.",
+     "148 m²",
+     "3 suítes",
+     "2 vagas"
+    ]
+   ],
+   "lazer": [
+    "Salão de festas",
+    "Espaço gourmet",
+    "Pet place",
+    "Playground",
+    "Brinquedoteca",
+    "Salão de jogos",
+    "Espaço delivery",
+    "Fitness"
+   ],
+   "local": [
+    "Alameda dos Arapanés, Moema"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "1.923 m²"
+    ],
+    [
+     "Unidades",
+     "60"
+    ],
+    [
+     "Entrega",
+     "Entregue em ago/2026"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/6923/monogram-moema-condominio-1.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6923/monogram-moema-apartamento-1.jpg",
+      "Residência"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/6923/monogram-moema-condominio-2.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6923/monogram-moema-condominio-3.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6923/monogram-moema-condominio-4.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6923/monogram-moema-condominio-5.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6923/monogram-moema-condominio-6.jpg",
+      "Lazer"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6923/monogram-moema-condominio-7.jpg",
+      "Lazer"
+     ]
+    ]
+   }
+  }
  },
  {
   "slug": "park-lane",
