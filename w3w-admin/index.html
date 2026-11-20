@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>W3W · Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;1,6..72,300&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: sóbrio, de mesa de corretor — números primeiro, nada decorativo
+   IDEA: a ficha de atendimento da W3W virada painel: origem → produto → etapa
+   PICTURE: o funil de leads em barras horizontais grandes, ao lado da origem
+   COLOUR and TYPE: gelo #ECEEF1, grafite #1A1817, cinza-azulado #757E8D (cartão); Newsreader + Inter Tight
+   LAYOUT: cabeçalho fino, abas, KPIs em linha, duas colunas de gráficos, tabela de leads */
+:root{color-scheme:light dark;--bg:light-dark(#ECEEF1,#121315);--pa:light-dark(#F6F7F9,#1B1D20);--ink:light-dark(#1A1817,#ECEEF1);--ink2:light-dark(#5E6672,#A9B0BA);--sl:light-dark(#757E8D,#9AA3AF);--line:light-dark(rgba(26,24,23,.12),rgba(236,238,241,.14));--bar:light-dark(#5E6672,#AEB6C1);--ok:light-dark(#2f6b4f,#7cc6a0);--serif:"Newsreader",Georgia,serif;--sans:"Inter Tight",system-ui,sans-serif}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--sans);overflow-x:clip}
+.band{padding:clamp(20px,3vw,40px) max(5vw,16px)}
+.wrap{max-width:1240px;margin:0 auto}
+header.top{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:18px}
+h1{font:300 clamp(32px,4.6vw,52px)/1.05 var(--serif);margin:0;text-wrap:balance}h1 em{font-style:italic}
+.sub{color:var(--ink2);margin:6px 0 0;max-width:62ch}
+nav.tabs{display:flex;gap:6px;flex-wrap:wrap}
+nav.tabs a{min-height:44px;display:inline-flex;align-items:center;padding:0 16px;border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:14px;font-weight:500}
+nav.tabs a[aria-current]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+section[hidden]{display:none}
+.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:22px 0 6px}
+select,input,textarea,button{font:16px var(--sans);color:var(--ink);background:var(--pa);border:1px solid var(--line);min-height:44px;padding:8px 12px;border-radius:0}
+button{cursor:pointer;font-weight:500}button.pri{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+:focus-visible{outline:2px solid var(--sl);outline-offset:2px}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:16px 0 26px}
+.kpi{background:var(--pa);padding:18px 18px 16px}.kpi b{display:block;font:300 clamp(30px,4vw,44px)/1 var(--serif)}.kpi span{font-size:13px;color:var(--ink2)}
+.grid2{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:28px}
+h2{font:300 26px/1.15 var(--serif);margin:0 0 4px}h2 em{font-style:italic}
+.note{font-size:13px;color:var(--ink2);margin:0 0 14px}
+.rows{display:grid;gap:8px}
+.row{display:grid;grid-template-columns:9.5em minmax(0,1fr) 3.2em;gap:10px;align-items:center;font-size:14px}
+.row .l{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.row .v{text-align:right;font-variant-numeric:tabular-nums}
+.track{height:22px;background:light-dark(rgba(26,24,23,.05),rgba(236,238,241,.06))}
+.track i{display:block;height:100%;background:var(--bar);border-radius:0 4px 4px 0;transition:width .5s}
+.row:hover .track i{background:var(--ink)}
+.fig{position:relative;min-height:220px;margin-top:6px}.fig>svg{position:absolute;inset:0;width:100%;height:100%}
+.empty{padding:28px;border:1px dashed var(--line);color:var(--ink2);text-align:center;font-size:15px}
+form.lead{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;background:var(--pa);border:1px solid var(--line);padding:18px;margin:18px 0}
+form.lead label{display:grid;gap:4px;font-size:13px;color:var(--ink2)}form.lead .full{grid-column:1/-1}
+table{width:100%;border-collapse:collapse;font-size:14px;background:var(--pa)}th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:500;color:var(--ink2);font-size:13px}td.n{white-space:nowrap}
+td select{min-height:36px;font-size:14px;padding:4px 8px}
+.pill{display:inline-block;padding:2px 8px;border:1px solid var(--line);font-size:12px;white-space:nowrap}
+.utm{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;background:var(--pa);border:1px solid var(--line);padding:18px;margin-top:18px}
+.out{grid-column:1/-1;display:flex;gap:8px}.out input{flex:1;font-size:14px}
+.status{font-size:13px;color:var(--ink2);min-height:20px}
+.scroll{overflow-x:auto}
+@media(max-width:860px){.grid2{grid-template-columns:minmax(0,1fr)}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}form.lead{grid-template-columns:minmax(0,1fr)}.utm{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){table{font-size:13px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:8em;text-align:start}.stack td::before{content:attr(data-l);float:inline-start;width:7.5em;margin-inline-start:-8em;white-space:normal;color:var(--ink2)}.stack td:empty{display:none}.row{grid-template-columns:7em minmax(0,1fr) 2.6em}}
+@media(prefers-reduced-motion:reduce){.track i{transition:none}}
+
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:22px}
+.cards a{background:var(--pa);padding:22px;color:var(--ink);text-decoration:none;display:grid;gap:6px;min-height:150px}
+.cards a:hover{background:var(--bg)}.cards b{font:300 26px/1.1 var(--serif)}.cards span{color:var(--ink2);font-size:14px}
+.cards a.main{background:var(--ink);color:var(--bg)}.cards a.main span{color:var(--bg);opacity:.75}
+@media(max-width:860px){.cards{grid-template-columns:minmax(0,1fr)}}
+</style></head><body><div class="band"><div class="wrap">
+<header class="top"><div><h1>W3W <em>admin.</em></h1><p class="sub">Área interna. Não aparece no site nem no Google.</p></div></header>
+<div class="cards">
+<a class="main" href="https://claude.ai/artifact/MQsF5TjRmrc5AuUgcyRHj1" target="_blank" rel="noopener"><b>Painel de leads →</b><span>Origem, funil, produtos e registro de leads. Abre com login da conta Claude; os dados ficam protegidos lá.</span></a>
+<a href="https://kcooyakawa.github.io/kco-imobiliario/w3w/" target="_blank" rel="noopener"><b>Site W3W →</b><span>Prévia do site no ar.</span></a>
+<a href="https://github.com/kcooyakawa/kco-imobiliario" target="_blank" rel="noopener"><b>Repositório →</b><span>Código, fotos e fichas dos empreendimentos. Versões salvas: v001 e v002.</span></a>
+</div>
+<section id="links"><h2 style="margin-top:34px">Links com <em>origem marcada</em></h2><p class="note">Use na bio do Instagram, nos anúncios e nas landing pages. Assim cada lead chega no WhatsApp com a origem.</p>
+<div class="utm"><label class="note" style="display:grid;gap:4px">Página do site <select id="u-pg"></select></label>
+<label class="note" style="display:grid;gap:4px">Canal <select id="u-ch"></select></label>
+<label class="note" style="display:grid;gap:4px">Nome da campanha <input id="u-camp" placeholder="ex.: lancamentos-nov"></label>
+<label class="note" style="display:grid;gap:4px">Conteúdo (opcional) <input id="u-ct" placeholder="ex.: story-1"></label>
+<div class="out"><input id="u-out" readonly aria-label="Link gerado"><button id="u-cp" type="button">Copiar</button></div></div></section>
+</div></div>
+<script>{
+const PRODS=[["Agami Park Residences", "agami-park-residences"], ["Almaz República do Líbano", "almaz"], ["Arbórea Ibirapuera", "arborea-ibirapuera"], ["Atmos Moema", "atmos-moema"], ["Autoral Moema Residences", "autoral-moema"], ["Bem Moema Studios", "bem-moema"], ["Canto Sabiá Moema", "canto-sabia"], ["Casa Sabiá", "casa-sabia"], ["Chanés Street", "chanes-street"], ["Composite Moema", "composite-moema"], ["Copa", "copa"], ["Cyrela For You Moema", "cyrela-for-you-moema"], ["Cyrela Moema by YOO", "cyrela-moema-by-yoo"], ["Emiie Moema", "emiie-moema"], ["Fraiha Ybirá Jurupis", "fraiha-ybira-jurupis"], ["Gran Oscar Ibirapuera", "gran-oscar-ibirapuera"], ["Helbor Lens Moema", "helbor-lens-moema"], ["Ibaté", "ibate"], ["Ibirapuera Park Houses", "ibirapuera-park-houses"], ["LIS Moema · Île Saint-Louis", "lis-moema"], ["La Galerie Moema", "la-galerie-moema"], ["Lindenberg Moema", "lindenberg-moema"], ["MOMA Moema", "moma-moema"], ["Mirage Ibirapuera", "mirage-ibirapuera"], ["Moema Signature by You,inc", "moema-signature-by-you-inc"], ["Moema Vida Nova", "moema-vida-nova"], ["Monogram Moema", "monogram"], ["Monã The Grand Lodge", "mona-the-grand-lodge"], ["Most Moema Home", "most-moema"], ["NDK Studios Moema", "ndk-studios-moema"], ["NEX One Cotovia | Arapanés", "nex-one-estacao-moema"], ["Nex One Jurupis", "nex-one-jurupis"], ["Nex One Nhambiquaras", "nex-one-nhambiquaras"], ["Park Avenue", "park-avenue"], ["Park Lane Ibirapuera", "park-lane"], ["Purity Moema", "purity-moema"], ["Saffire by Elie Saab", "saffire"], ["Singular Ibirapuera", "singular-ibirapuera"], ["Splend Moema", "splend-moema"], ["The Only Moema", "the-only-moema"], ["The Selection Moema", "the-selection-moema"], ["VP Cotovia", "vp-cotovia"], ["Villa Ibirapuera · Versace Home", "villa-versace-home"], ["Vista Parque Ibirapuera", "vista-parque-ibirapuera"], ["Z. Ibirapuera", "z-ibirapuera"]];const BASE='https://kcooyakawa.github.io/kco-imobiliario/w3w/';
+const CH={'Instagram (bio/stories)':['instagram','social'],'Instagram Ads':['instagram','paid'],'Meta Ads (Facebook)':['facebook','paid'],'Google Ads':['google','cpc'],'WhatsApp (lista/status)':['whatsapp','social'],'Landing page':['lp','landing'],'E-mail':['email','email']};
+const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+$('u-pg').innerHTML='<option value="">Home</option><option value="guia-moema/">Guia Moema</option>'+PRODS.map(p=>`<option value="empreendimentos/${p[1]}/">${esc(p[0])}</option>`).join('');
+$('u-ch').innerHTML=Object.keys(CH).map(k=>`<option>${k}</option>`).join('');
+function utm(){const [s,m]=CH[$('u-ch').value];const c=$('u-camp').value.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');const p=new URLSearchParams({utm_source:s,utm_medium:m});if(c)p.set('utm_campaign',c);const ct=$('u-ct').value.trim();if(ct)p.set('utm_content',ct.replace(/\s+/g,'-'));$('u-out').value=BASE+$('u-pg').value+'?'+p}
+['u-pg','u-ch','u-camp','u-ct'].forEach(i=>$(i).addEventListener('input',utm));utm();
+$('u-cp').onclick=async()=>{try{await navigator.clipboard.writeText($('u-out').value);$('u-cp').textContent='Copiado'}catch(e){$('u-out').select()}setTimeout(()=>$('u-cp').textContent='Copiar',1800)};
+}</script></body></html>
