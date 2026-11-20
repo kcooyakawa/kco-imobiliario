@@ -3915,27 +3915,23 @@
   ],
   "frase": "Novo jeito de viver: conforto, modernidade e experiência única em um endereço que te conecta a tudo.",
   "resumo": {
-   "tipologias": "Studio",
-   "metragem": "24 e 54 m²",
-   "vagas": ""
+   "tipologias": "Studio a 2 dorms.",
+   "metragem": "24 a 54 m²",
+   "vagas": "1 vaga (2 dorms.)"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/z-ibirapuera-fachada.jpg",
+  "img": "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_fachada.png",
   "categorias": [
    "studios"
   ],
   "ficha": {
-   "tagline": "Novo jeito de viver: conforto, modernidade e experiência única em um endereço que te conecta a tudo.",
-   "conceito": "Torre única com 136 residências em terreno de 1.338 m², na Alameda dos Arapanés, em Moema.",
-   "endereco": "Alameda dos Arapanés · Moema",
+   "tagline": "Use. Enjoy. Connect. Entre duas estações de metrô, ao lado do Shopping Ibirapuera.",
+   "conceito": "O Z Ibirapuera é um dos compactos de Moema que mais recomendamos para investidor: está a 2 minutos da estação Eucaliptos, a 3 do Shopping Ibirapuera e tem piscina com iluminação de LED e sky bar no topo. Há studios residenciais de 24 m², apartamentos de 2 dormitórios de 51 a 54 m² com vaga, e studios não residenciais, que permitem hospedagem. Pronto para morar ou locar.",
+   "endereco": "Al. dos Arapanés, 918 · Moema",
    "entrega": "Pronto para morar",
-   "faixa": "26 a 45 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "faixa": "24 a 54 m²",
+   "plantas_tit": "studios e 2 dormitórios.",
    "assinaturas": [
-    [
-     "Incorporação",
-     "Eztec"
-    ],
     [
      "Arquitetura",
      "LE Arquitetos"
@@ -3947,92 +3943,74 @@
     [
      "Decoração",
      "Priscilla Zarzur"
+    ],
+    [
+     "Incorporação e construção",
+     "EZTEC"
     ]
    ],
    "destaques": [
     [
-     "136",
-     "residências"
+     "2 min",
+     "da estação Eucaliptos"
     ],
     [
-     "1",
-     "torre"
+     "3 min",
+     "do Shopping Ibirapuera"
     ],
     [
-     "25",
-     "pavimentos"
+     "Sky bar",
+     "no rooftop"
     ],
     [
-     "45 m²",
-     "maior planta"
+     "NR",
+     "studios para hospedagem"
     ]
    ],
    "plantas": [
     [
      "Studio",
-     "26 m²",
+     "24 m²",
      "—",
      "Sem vaga"
     ],
     [
-     "Studio",
-     "29 m²",
+     "Studio NR",
+     "24 a 48 m²",
      "—",
      "Sem vaga"
     ],
     [
-     "Studio",
-     "34 m²",
-     "—",
-     "Sem vaga"
-    ],
-    [
-     "1 dorm.",
-     "45 m²",
-     "1 suíte",
-     "Sem vaga"
-    ],
-    [
-     "2 dorm.",
-     "51 m²",
-     "1 suíte",
-     "1 vaga"
-    ],
-    [
-     "1 dorm.",
-     "54 m²",
+     "2 dorms.",
+     "51 a 54 m²",
      "1 suíte",
      "1 vaga"
     ]
    ],
    "lazer": [
-    "Piscina adulto",
-    "Deck",
-    "Salão de festas",
-    "Playground",
-    "Lavanderia",
-    "Fitness externo",
-    "Fitness",
+    "Piscina com iluminação de LED",
+    "Sky bar",
+    "Solário",
+    "Deck molhado",
+    "Lounge piscina",
+    "Fitness com design by Cia Athletica",
+    "Fitness outdoor",
     "Coliving",
-    "Churrasqueira"
+    "Lavanderia"
    ],
    "local": [
-    "Piscina no rooftop com iluminação de LED",
-    "Academia com design by Cia Athletica",
-    "Lavanderia com design by DryClean USA"
+    "2 min da estação Eucaliptos",
+    "3 min do Shopping Ibirapuera",
+    "Ciclovia e Parque Ibirapuera por perto"
    ],
    "tecnica": [
     [
-     "Terreno",
-     "1.338 m²"
+     "Torre",
+     "Única, estilo contemporâneo"
     ],
     [
-     "Unidades",
-     "136"
-    ],
-    [
-     "Entrega",
-     "Entregue em dez/2022"
+     "Studio NR",
+     "Hospedagem e moradia (decreto 57.378/2016)"
     ],
     [
      "Status",
@@ -4040,41 +4018,42 @@
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/z-ibirapuera-fachada.jpg",
+    "capa": "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_fachada.png",
     "par": [
      [
-      "https://api.apto.vc/images/realties/2039/z-ibirapuera-condominio-1.jpg",
-      "Áreas comuns"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_lobby_concierge.jpg",
+      "Lobby com concierge"
      ],
      [
-      "https://api.apto.vc/images/realties/2039/z-ibirapuera-apartamento-1.jpg",
-      "Residência"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_living_do_apto_de_54m_final_6.jpg",
+      "Living · 54 m²"
      ]
     ],
+    "voo": "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_hero.jpg",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/2039/z-ibirapuera-condominio-2.jpg",
-      "Lazer"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_coliving.jpg",
+      "Coliving"
      ],
      [
-      "https://api.apto.vc/images/realties/2039/z-ibirapuera-condominio-3.jpg",
-      "Lazer"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_lavanderia_a.jpg",
+      "Lavanderia"
      ],
      [
-      "https://api.apto.vc/images/realties/2039/z-ibirapuera-condominio-4.jpg",
-      "Lazer"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_portaria.jpg",
+      "Portaria"
      ],
      [
-      "https://api.apto.vc/images/realties/2039/z-ibirapuera-condominio-5.jpg",
-      "Lazer"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_studio_de_24m_final_4.jpg",
+      "Studio · 24 m²"
      ],
      [
-      "https://api.apto.vc/images/realties/2039/z-ibirapuera-condominio-6.jpg",
-      "Lazer"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_conceito.jpg",
+      "Conceito"
      ],
      [
-      "https://api.apto.vc/images/realties/2039/z-ibirapuera-condominio-7.jpg",
-      "Lazer"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_portaria_2.jpg",
+      "Acesso"
      ]
     ]
    }
@@ -4092,28 +4071,24 @@
   ],
   "frase": "Moema com o charme do Soho! Descubra o Chanés, um novo conceito de morar que vai te surpreender.",
   "resumo": {
-   "tipologias": "Studio, 1 e 2 Suítes",
-   "metragem": "29 a 75 m²",
-   "vagas": "1 Vaga"
+   "tipologias": "Studios, 1 e 2 suítes, gardens",
+   "metragem": "29 a 170 m²",
+   "vagas": "1 vaga (suítes)"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/chanes-moema-fachada-1.jpg",
+  "img": "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_fachada.jpg",
   "categorias": [
    "apartamentos",
    "studios"
   ],
   "ficha": {
-   "tagline": "Moema com o charme do Soho! Descubra o Chanés, um novo conceito de morar que vai te surpreender.",
-   "conceito": "Torre única com 250 residências em terreno de 2.144 m², na Rua dos Chanés, em Moema.",
-   "endereco": "Rua dos Chanés · Moema",
+   "tagline": "O Soho de Nova York encontra Moema, a 550 m do metrô.",
+   "conceito": "Chanés Street é a nossa indicação para quem quer um apartamento compacto com personalidade. A EZTEC se inspirou no Soho de Nova York para criar fachada e atmosfera de bairro, a 550 metros da estação Eucaliptos e a duas quadras do Shopping Ibirapuera. O destaque é o rooftop no 17º andar, com piscina, pool bar, spa e coworking com vista. Além dos studios e suítes, há gardens de até 170 m², raros nessa faixa.",
+   "endereco": "Rua dos Chanés, 310 · Moema",
    "entrega": "Pronto para morar",
-   "faixa": "29 e 55 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "faixa": "29 a 170 m²",
+   "plantas_tit": "studios, suítes e gardens.",
    "assinaturas": [
-    [
-     "Incorporação",
-     "Eztec"
-    ],
     [
      "Arquitetura",
      "LE Arquitetos"
@@ -4125,78 +4100,82 @@
     [
      "Decoração",
      "Priscilla Zarzur"
+    ],
+    [
+     "Incorporação e construção",
+     "EZTEC"
     ]
    ],
    "destaques": [
     [
-     "250",
-     "residências"
+     "550 m",
+     "da estação Eucaliptos"
     ],
     [
-     "1",
-     "torre"
+     "17º",
+     "andar: rooftop"
     ],
     [
-     "19",
-     "pavimentos"
+     "170 m²",
+     "garden"
     ],
     [
-     "55 m²",
-     "maior planta"
+     "187",
+     "unidades residenciais"
     ]
    ],
    "plantas": [
     [
      "Studio",
-     "29 m²",
+     "29 a 30 m²",
      "—",
      "Sem vaga"
     ],
     [
-     "Studio",
-     "30 m²",
-     "—",
-     "Sem vaga"
-    ],
-    [
-     "1 dorm.",
+     "1 suíte",
      "55 m²",
      "1 suíte",
      "1 vaga"
     ],
     [
-     "2 dorm.",
+     "2 suítes",
      "75 m²",
      "2 suítes",
      "1 vaga"
+    ],
+    [
+     "Garden",
+     "Até 170 m²",
+     "Sob consulta",
+     "Sob consulta"
     ]
    ],
    "lazer": [
-    "Pet care",
-    "Beauty care",
-    "Espaço delivery",
+    "Rooftop high living",
+    "Piscina com pool bar",
+    "Solarium",
+    "Spa e steam room",
+    "Sala de massagem",
     "Fitness",
-    "Party room",
-    "Churrasqueira",
+    "Beach tennis e vôlei",
+    "Coworking no rooftop",
+    "Laundry e mini market",
     "Lounge",
-    "Brinquedoteca",
-    "Playground"
+    "Pet care"
    ],
    "local": [
-    "Rua dos Chanés, Moema"
+    "550 m da estação Eucaliptos (Linha 5-Lilás)",
+    "Duas quadras do Shopping Ibirapuera",
+    "7 min do Parque Ibirapuera"
    ],
    "tecnica": [
     [
-     "Terreno",
-     "2.144 m²"
-    ],
-    [
      "Unidades",
-     "250"
+     "187 residenciais + 63 não residenciais"
     ],
     [
-     "Entrega",
-     "Entregue em fev/2026"
+     "Uso",
+     "Misto"
     ],
     [
      "Status",
@@ -4204,41 +4183,42 @@
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/chanes-moema-fachada-1.jpg",
+    "capa": "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_fachada.jpg",
     "par": [
      [
-      "https://api.apto.vc/images/realties/5640/chanes-street-condominio-1.jpg",
-      "Áreas comuns"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_lobby.jpg",
+      "Lobby"
      ],
      [
-      "https://api.apto.vc/images/realties/5640/chanes-street-apartamento-1.jpg",
-      "Residência"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_1_living_do_apto_de_75m_com_sugestao_de_decoracao_final_16.jpg",
+      "Living · 75 m²"
      ]
     ],
+    "voo": "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_voo_coworking_17_pavimento_rooftop.jpg",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/5640/chanes-street-condominio-2.jpg",
-      "Lazer"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_coworking_17_pavimento_rooftop.jpg",
+      "Coworking no rooftop"
      ],
      [
-      "https://api.apto.vc/images/realties/5640/chanes-street-condominio-3.jpg",
-      "Lazer"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_lounge.jpg",
+      "Lounge"
      ],
      [
-      "https://api.apto.vc/images/realties/5640/chanes-street-condominio-4.jpg",
-      "Lazer"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_portaria.jpg",
+      "Portaria"
      ],
      [
-      "https://api.apto.vc/images/realties/5640/chanes-street-condominio-5.jpg",
-      "Lazer"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_detalhe_da_fachada.jpg",
+      "Detalhe da fachada"
      ],
      [
-      "https://api.apto.vc/images/realties/5640/chanes-street-condominio-6.jpg",
-      "Lazer"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_3_living_do_studio_de_29m_com_sugestao_de_decoracao_final_2.jpg",
+      "Studio · 29 m²"
      ],
      [
-      "https://api.apto.vc/images/realties/5640/chanes-street-condominio-7.jpg",
-      "Lazer"
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_laundry-mini_market_17_pavimento_rooftop-scaled.jpg",
+      "Laundry e mini market"
      ]
     ]
    }
