@@ -1,0 +1,2947 @@
+[
+ {
+  "slug": "vp-cotovia",
+  "nome": "VP Cotovia",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Lançamento",
+  "tipos": "Studios, 1 e 2 dorms.",
+  "frase": "Studios e 1 dormitório em Moema, para morar ou investir.",
+  "resumo": {
+   "tipologias": "Studio, 1 e 2 dorms. e gardens",
+   "metragem": "22 a 60 m²",
+   "vagas": "Opcional"
+  },
+  "torres": "1",
+  "img": "https://kcooyakawa.github.io/kco-imobiliario/vp-cotovia/img/fachada.jpg",
+  "categorias": [
+   "studios",
+   "apartamentos"
+  ],
+  "ficha": {
+   "tagline": "Moema para morar, investir e locar.",
+   "conceito": "Torre única recuada, com jardim de entrada, 374 unidades 100% residenciais e short stay permitido em convenção. Lazer completo num pavimento inteiro.",
+   "endereco": "Av. Cotovia, 372 · Moema",
+   "entrega": "Breve lançamento",
+   "faixa": "22 a 60 m²",
+   "plantas_tit": "studios, 1 e 2 dormitórios e gardens.",
+   "assinaturas": [
+    [
+     "Arquitetura",
+     "Marcos Perazzo"
+    ],
+    [
+     "Decoração",
+     "Carlos Rossi"
+    ],
+    [
+     "Paisagismo",
+     "Benedito Abbud"
+    ],
+    [
+     "Incorporação",
+     "Vistaplan"
+    ]
+   ],
+   "destaques": [
+    [
+     "374",
+     "unidades"
+    ],
+    [
+     "20 m",
+     "de piscina"
+    ],
+    [
+     "5 min",
+     "da Estação Eucaliptos"
+    ],
+    [
+     "Short stay",
+     "permitido"
+    ]
+   ],
+   "plantas": [
+    [
+     "Studio",
+     "22 a 23 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "1 dormitório",
+     "30 a 37 m²",
+     "—",
+     "Com ou sem vaga"
+    ],
+    [
+     "2 dormitórios",
+     "45 m²",
+     "—",
+     "Com vaga"
+    ],
+    [
+     "Garden",
+     "37 a 60 m²",
+     "—",
+     "Sob consulta"
+    ]
+   ],
+   "lazer": [
+    "Piscina de 20 m com deck molhado",
+    "Pool bar",
+    "Fitness interno e externo",
+    "Coworking",
+    "Lounge",
+    "Salão e terraço de festas",
+    "Wellness spa",
+    "Mini market e lavanderia",
+    "Pet place",
+    "VP Bike"
+   ],
+   "local": [
+    "5 min da Estação Eucaliptos e do Ibirapuera Shopping",
+    "15 min de Congonhas"
+   ],
+   "tecnica": [
+    [
+     "Pavimentos",
+     "20 residenciais"
+    ],
+    [
+     "Elevadores",
+     "4"
+    ],
+    [
+     "Unidades",
+     "Fechadura digital, infra de ar-condicionado"
+    ],
+    [
+     "Status",
+     "Breve lançamento"
+    ]
+   ],
+   "img": {
+    "capa": "https://kcooyakawa.github.io/kco-imobiliario/vp-cotovia/img/fachada.jpg",
+    "par": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/vp-cotovia/img/lobby.jpg",
+      "Lobby"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/vp-cotovia/img/studio.jpg",
+      "Studio decorado"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/vp-cotovia/img/piscina.jpg",
+      "Piscina"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/vp-cotovia/img/fitness.jpg",
+      "Fitness"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/vp-cotovia/img/coworking.jpg",
+      "Coworking"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/vp-cotovia/img/lounge.jpg",
+      "Lounge"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/vp-cotovia/img/festas.jpg",
+      "Salão de festas"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/vp-cotovia/img/terraco-festas.jpg",
+      "Terraço de festas"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "agami-park-residences",
+  "nome": "Agami Park Residences",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Lançamento",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "",
+  "resumo": {
+   "tipologias": "3 e 4 Suítes",
+   "metragem": "215 e 290 m²",
+   "vagas": "3 e 4 Vagas"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2025/01/Fachada-Agami_EZTEC.png",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "A escultura de viver.",
+   "conceito": "Torre única com apenas duas unidades por andar, a poucos passos do Parque Ibirapuera. Arquitetura de linhas esculturais, materiais nobres e um lazer de clube para quem não abre mão de privacidade.",
+   "endereco": "Avenida Agami, 220 · Moema",
+   "entrega": "Jan/2029",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "EZTEC"
+    ],
+    [
+     "Arquitetura",
+     "Perkins&Will"
+    ],
+    [
+     "Paisagismo",
+     "Benedito Abbud"
+    ],
+    [
+     "Interiores",
+     "Carlos Rossi"
+    ]
+   ],
+   "destaques": [
+    [
+     "2",
+     "unidades por andar"
+    ],
+    [
+     "25 m",
+     "raia na piscina adulto"
+    ],
+    [
+     "650 m",
+     "da estação Moema do metrô"
+    ],
+    [
+     "45",
+     "unidades no total"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "215 m²",
+     "3 suítes",
+     "3 vagas"
+    ],
+    [
+     "Tipo",
+     "290 m²",
+     "4 suítes",
+     "4 vagas"
+    ],
+    [
+     "Garden",
+     "381 m²",
+     "4 suítes",
+     "Vagas determinadas"
+    ],
+    [
+     "Garden",
+     "424 m²",
+     "4 suítes",
+     "Vagas determinadas"
+    ],
+    [
+     "Duplex",
+     "572 m²",
+     "4 suítes",
+     "Até 6 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina adulto com raia de 25 m",
+    "Piscina infantil",
+    "Spa com hidromassagem",
+    "Pool bar",
+    "Fitness completo",
+    "Academia externa",
+    "Salão de festas",
+    "Lounge com lareira",
+    "Salão de jogos",
+    "Brinquedoteca",
+    "Miniquadra gramada",
+    "Playground",
+    "Coworking",
+    "Solarium"
+   ],
+   "local": [
+    "A poucos minutos do Parque Ibirapuera",
+    "650 m da estação Moema do metrô",
+    "Restaurantes, mercados e serviços de Moema a pé",
+    "Acesso rápido a Congonhas e à Av. 23 de Maio"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "1.544 m²"
+    ],
+    [
+     "Torre",
+     "Única, 25 pavimentos"
+    ],
+    [
+     "Elevadores",
+     "6"
+    ],
+    [
+     "Unidades",
+     "45, duas por andar"
+    ],
+    [
+     "Previsão de entrega",
+     "Jan/2029"
+    ]
+   ],
+   "galeria": [],
+   "faixa": "215 a 572 m²",
+   "img": {
+    "capa": "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_hero.jpg",
+    "fachada": "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_fachada.jpg",
+    "conceito": "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_conceito.jpg",
+    "par": [
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_living_apto_290m-scaled.jpg",
+      "Living, apartamento de 290 m²"
+     ],
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_suite_duplex_571m-scaled.jpg",
+      "Suíte, duplex de 572 m²"
+     ]
+    ],
+    "voo": "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_voo_piscinas.jpg",
+    "lazer": [
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_piscina_adulto_de_25m.jpg",
+      "Piscina adulto com raia de 25 m"
+     ],
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_deck_molhado_spa.jpg",
+      "Deck molhado e spa"
+     ],
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_lounge_lareira.jpg",
+      "Lounge com lareira"
+     ],
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_fitness_musculacao.jpg",
+      "Fitness"
+     ],
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_salao_de_festas.jpg",
+      "Salão de festas"
+     ],
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_pool_bar.jpg",
+      "Pool bar"
+     ]
+    ],
+    "terraco": "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_terraco_duplex_571m.jpg",
+    "lobby": "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_lobby_galeria.jpg",
+    "regiao": "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_regiao.jpg"
+   }
+  },
+  "img_card": "https://hub.eztec.com.br/wp-content/uploads/2026/08/agami_fachada.jpg"
+ },
+ {
+  "slug": "copa",
+  "nome": "Copa",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Descubra o verdadeiro significado de viver com exclusividade e conforto.",
+  "resumo": {
+   "tipologias": "4 Suítes",
+   "metragem": "300 m²",
+   "vagas": "4 Vagas"
+  },
+  "torres": [],
+  "img": "https://www.edificiocopa.com.br/images/fachada.webp",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "Viver bem é uma arte.",
+   "conceito": "Torre única com apenas 28 residências de 300 m², bosque privativo de 800 m² com 97 árvores centenárias preservadas e 3 mil m² de lazer, em frente ao Parque das Bicicletas.",
+   "endereco": "Av. Indianópolis, 300 · Moema",
+   "entrega": "Obras em andamento",
+   "faixa": "300 m²",
+   "plantas_tit": "três ou quatro suítes, plantas personalizáveis.",
+   "assinaturas": [
+    [
+     "Arquitetura",
+     "MCAA"
+    ],
+    [
+     "Paisagismo",
+     "Benedito Abbud"
+    ],
+    [
+     "Interiores",
+     "Fernanda Marques"
+    ],
+    [
+     "Realização",
+     "Lote5"
+    ]
+   ],
+   "destaques": [
+    [
+     "28",
+     "residências"
+    ],
+    [
+     "800 m²",
+     "de bosque privativo"
+    ],
+    [
+     "3 mil m²",
+     "de lazer"
+    ],
+    [
+     "4",
+     "vagas"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "300 m²",
+     "3 suítes",
+     "4 vagas"
+    ],
+    [
+     "Tipo",
+     "300 m²",
+     "4 suítes",
+     "4 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina com teto retrátil e raia de 25 m",
+    "Piscina infantil",
+    "Spa e jacuzzi",
+    "Sala de massagem",
+    "Academia",
+    "Espaço gourmet",
+    "Bar e festas",
+    "Brinquedoteca",
+    "Playground",
+    "Pet place"
+   ],
+   "local": [
+    "Em frente ao Parque das Bicicletas",
+    "Vizinho aos clubes Monte Líbano e Sírio",
+    "Minutos do Parque Ibirapuera"
+   ],
+   "tecnica": [
+    [
+     "Torre",
+     "Única, 100% residencial"
+    ],
+    [
+     "Vagas",
+     "4, duas com ponto para carro elétrico"
+    ],
+    [
+     "Diferenciais",
+     "Garagem para esportivos, sala de motorista, aspiração central"
+    ],
+    [
+     "Status",
+     "Em obras"
+    ]
+   ],
+   "img": {
+    "capa": "https://www.edificiocopa.com.br/images/fachada.webp",
+    "par": [
+     [
+      "https://www.edificiocopa.com.br/images/lobby_r2_dia.effectsResult-copy.webp",
+      "Lobby"
+     ],
+     [
+      "https://www.edificiocopa.com.br/images/bosque_elev_noite.webp",
+      "Bosque privativo"
+     ]
+    ],
+    "voo": "https://www.edificiocopa.com.br/images/aerea_foto_insercao_2_mirror-copy.webp",
+    "lazer": [
+     [
+      "https://www.edificiocopa.com.br/images/piscina_3_dia_r4.webp",
+      "Piscina com raia de 25 m"
+     ],
+     [
+      "https://www.edificiocopa.com.br/images/spa_r2.effectsResult-copy.webp",
+      "Spa"
+     ],
+     [
+      "https://www.edificiocopa.com.br/images/academia2_r2.webp",
+      "Academia"
+     ],
+     [
+      "https://www.edificiocopa.com.br/images/gourmet_r1.webp",
+      "Espaço gourmet"
+     ],
+     [
+      "https://www.edificiocopa.com.br/images/bar_festas_r1.effectsResult-copy.webp",
+      "Bar e festas"
+     ],
+     [
+      "https://www.edificiocopa.com.br/images/brinquedoteca.webp",
+      "Brinquedoteca"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "composite-moema",
+  "nome": "Composite Moema",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Pronto",
+  "tipos": [
+   "Studio"
+  ],
+  "frase": "Viva em um espaço único, cercado de conforto e sofisticação.",
+  "resumo": {
+   "tipologias": "Studio",
+   "metragem": "27 a 62 m²",
+   "vagas": ""
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2025/01/Fachada-Composite.png",
+  "categorias": [
+   "studios"
+  ]
+ },
+ {
+  "slug": "autoral-moema",
+  "nome": "Autoral Moema",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Studio"
+  ],
+  "frase": "Viva a experiência única de um lar que se conecta com a natureza e o bem-estar.",
+  "resumo": {
+   "tipologias": "Studios",
+   "metragem": "27 a 62 m²",
+   "vagas": ""
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2025/01/Fachada-Autoral.png",
+  "categorias": [
+   "studios"
+  ]
+ },
+ {
+  "slug": "on-imares",
+  "nome": "ON Imarés",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Pronto",
+  "tipos": [
+   "Studio"
+  ],
+  "frase": "Viva o conforto e a elegância no seu novo lar. Sua vida, seu estilo, sua felicidade.",
+  "resumo": {
+   "tipologias": "Studios",
+   "metragem": "20 a 28 m²",
+   "vagas": ""
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/ON-IMARES-10.jpg",
+  "categorias": [
+   "studios"
+  ]
+ },
+ {
+  "slug": "on-maracatins",
+  "nome": "ON Maracatins",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Pronto",
+  "tipos": [
+   "Studio"
+  ],
+  "frase": "Bem-vindo ao seu novo lar de conforto e elegância. Viva a experiência completa.",
+  "resumo": {
+   "tipologias": "Studios",
+   "metragem": "24 e 29 m²",
+   "vagas": ""
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/01-R00.jpg",
+  "categorias": [
+   "studios"
+  ]
+ },
+ {
+  "slug": "on-jurupis",
+  "nome": "ON Jurupis",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Pronto",
+  "tipos": [
+   "Studio",
+   "Apartamento"
+  ],
+  "frase": "Charme, modernidade conforto, segurança e lazer em um só lugar.",
+  "resumo": {
+   "tipologias": "Studios e 3 dormitórios",
+   "metragem": "26 a 107 m²",
+   "vagas": "2 Vagas"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/DJI_1046.jpg",
+  "categorias": [
+   "apartamentos",
+   "studios"
+  ]
+ },
+ {
+  "slug": "nex-one-nhambiquaras",
+  "nome": "NEX One Nhambiquaras",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Descubra um conceito único de moradia em São Paulo, com design moderno e áreas exclusivas.",
+  "resumo": {
+   "tipologias": "1 e 2 dormitórios",
+   "metragem": "27 a 69 m²",
+   "vagas": ""
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/nhamb.jpg",
+  "categorias": [
+   "apartamentos"
+  ]
+ },
+ {
+  "slug": "nex-one-jurupis",
+  "nome": "NEX One Jurupis",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Studio",
+   "Apartamento"
+  ],
+  "frase": "Moradia inovadora e exclusiva para quem busca sofisticação e qualidade de vida.",
+  "resumo": {
+   "tipologias": "Studio, 1 e 2 dormitórios",
+   "metragem": "29 e 47 m²",
+   "vagas": "1 Vaga"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/nex-one-juru.jpg",
+  "categorias": [
+   "apartamentos",
+   "studios"
+  ]
+ },
+ {
+  "slug": "most-moema",
+  "nome": "Most Moema",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Studio",
+   "Apartamento"
+  ],
+  "frase": "Reinvente seu viver. Descubra um conceito inovador de moradia que transforma sua qualidade de vida.",
+  "resumo": {
+   "tipologias": "Studio, 1 e 2 dormitórios",
+   "metragem": "33 a 147 m²",
+   "vagas": "1 e 2 Vagas (demarcadas) + depósito"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/most-moema-20230419092314000.jpg",
+  "categorias": [
+   "apartamentos",
+   "studios"
+  ]
+ },
+ {
+  "slug": "bem-moema",
+  "nome": "Bem Moema",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Studio",
+   "Apartamento"
+  ],
+  "frase": "Descubra um novo jeito de viver: sofisticação, natureza e exclusividade. Uma experiência única.",
+  "resumo": {
+   "tipologias": "Studios, 2 e 3 Suítes",
+   "metragem": "26 a 36, 80 e 123 m²",
+   "vagas": "1 e 2 Vagas"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/Tegra-Incorporadora-Perspectiva-Ilustrada-Area-Externa-Lazer-Apartamentos-Bem-Moema-Sao-Paulo-SP-001-1715460274740.jpg",
+  "categorias": [
+   "alto-padrao",
+   "apartamentos",
+   "studios"
+  ]
+ },
+ {
+  "slug": "moema-signature-by-you-inc",
+  "nome": "Moema Signature by You,Inc",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Studio"
+  ],
+  "frase": "Viva com conforto e estilo. Garanta seu lugar neste empreendimento único e desfrute de exclusividade e modernidade.",
+  "resumo": {
+   "tipologias": "Studios",
+   "metragem": "23 a 33 m²",
+   "vagas": ""
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/03_YOU_GAI_ESQUINA_FINAL_2SCOPEOMEDIA-2.jpg",
+  "categorias": [
+   "studios"
+  ]
+ },
+ {
+  "slug": "moma-moema",
+  "nome": "MOMA Moema",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Studio",
+   "Apartamento"
+  ],
+  "frase": "Sofisticação, design exclusivo e localização privilegiada se unem para uma experiência única.",
+  "resumo": {
+   "tipologias": "Studios e 3 Suítes",
+   "metragem": "25 a 194 m²",
+   "vagas": "3 e 4 Vagas (demarcadas)"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada-listagem_MOMA_vs02.jpg",
+  "categorias": [
+   "alto-padrao",
+   "studios"
+  ]
+ },
+ {
+  "slug": "mirage-ibirapuera",
+  "nome": "Mirage Ibirapuera",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Pronto",
+  "tipos": [
+   "Studio",
+   "Apartamento"
+  ],
+  "frase": "Exclusividade, sofisticação e natureza: uma nova forma de viver.",
+  "resumo": {
+   "tipologias": "Studios - 4 e 5 Suítes",
+   "metragem": "19 a 25 m² - 238 m²",
+   "vagas": "3 e 4 Vagas"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/3021a7ce-8333-49ca-a46a-7cc9ea1ce043.jpg",
+  "categorias": [
+   "alto-padrao",
+   "studios"
+  ],
+  "ficha": {
+   "tagline": "Uma nova forma de olhar.",
+   "conceito": "Um apartamento por andar em frente ao Clube Monte Líbano, a poucos passos do Ibirapuera. Linhas puras, luz natural e um paisagismo de Mata Atlântica que traz a natureza para dentro do projeto.",
+   "endereco": "Av. República do Líbano, 2354 · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "238 a 427 m²",
+   "plantas_tit": "um apartamento por andar.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "DZ Inc"
+    ],
+    [
+     "Arquitetura",
+     "Jonas Birger"
+    ],
+    [
+     "Interiores",
+     "Suite Arquitetos"
+    ],
+    [
+     "Paisagismo",
+     "Cardim Arquitetura Paisagística"
+    ]
+   ],
+   "destaques": [
+    [
+     "1",
+     "apartamento por andar"
+    ],
+    [
+     "19",
+     "unidades e um duplex"
+    ],
+    [
+     "4",
+     "suítes por unidade"
+    ],
+    [
+     "1.200 m²",
+     "de terreno"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "238,70 m²",
+     "4 suítes",
+     "3 vagas"
+    ],
+    [
+     "Tipo opção",
+     "238,70 m²",
+     "3 suítes",
+     "3 vagas"
+    ],
+    [
+     "Duplex",
+     "427,10 m²",
+     "4 suítes",
+     "4 vagas"
+    ],
+    [
+     "Studios",
+     "19 a 25 m²",
+     "Studio",
+     "Sob consulta"
+    ]
+   ],
+   "lazer": [
+    "Piscina adulta climatizada",
+    "Fitness",
+    "Salão de festas",
+    "Lazer exclusivo dos studios",
+    "Bicicletário e lockers",
+    "Hall social privativo",
+    "Elevador com biometria"
+   ],
+   "local": [
+    "Em frente ao Clube Monte Líbano",
+    "Poucos minutos do Parque Ibirapuera",
+    "Na Av. República do Líbano, entre Moema e Ibirapuera"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "1.200 m²"
+    ],
+    [
+     "Torre",
+     "Única"
+    ],
+    [
+     "Unidades",
+     "19 apartamentos e um duplex"
+    ],
+    [
+     "Por andar",
+     "1 apartamento"
+    ],
+    [
+     "Diferenciais",
+     "Personalização livre, tratamento acústico, carga para carro elétrico"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://cdnm.com.br/dzinc/media/f0/33/ab/80/conversions/mirage-ibirapuera-20211022163849000-min-width-1200.jpg",
+    "fachada": "https://cdnm.com.br/dzinc/media/e4/da/3b/5/conversions/mirage-ibirapuera-20211007095546000-min-width-1200.jpg",
+    "par": [
+     [
+      "https://cdnm.com.br/dzinc/media/d6/45/92/40/conversions/mirage-ibirapuera-20211014095741000-min-width-1200.jpg",
+      "Perspectiva ilustrada"
+     ],
+     [
+      "https://cdnm.com.br/dzinc/media/e2/c4/20/71/conversions/mirage-ibirapuera-20211018142344000-min-width-1200.jpg",
+      "Perspectiva ilustrada"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://cdnm.com.br/dzinc/media/17/e6/21/43/conversions/mirage-ibirapuera-20211014095840000-min-width-1200.jpg",
+      "Piscina climatizada"
+     ],
+     [
+      "https://cdnm.com.br/dzinc/media/a3/f3/90/68/conversions/mirage-ibirapuera-20211018142256000-min-width-1200.jpg",
+      "Fitness"
+     ],
+     [
+      "https://cdnm.com.br/dzinc/media/7c/bb/c4/70/conversions/mirage-ibirapuera-20211018142329000-min-width-1200.jpg",
+      "Salão de festas"
+     ],
+     [
+      "https://cdnm.com.br/dzinc/media/ad/61/ab/74/conversions/mirage-ibirapuera-20211018142415000-min-width-1200.jpg",
+      "Lazer dos studios"
+     ],
+     [
+      "https://cdnm.com.br/dzinc/media/34/16/a7/41/conversions/mirage-ibirapuera-20211014095800000-min-width-1200.jpg",
+      "Lazer dos studios"
+     ],
+     [
+      "https://cdnm.com.br/dzinc/media/14/bf/a6/69/conversions/mirage-ibirapuera-20211018142313000-min-width-1200.jpg",
+      "Bicicletário e lockers"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "canto-sabia",
+  "nome": "Canto Sabiá",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Descubra um novo conceito de moradia que vai transformar sua vida com sofisticação e exclusividade.",
+  "resumo": {
+   "tipologias": "1 e 2 Suítes",
+   "metragem": "48 a 135 m²",
+   "vagas": "1 Vaga"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/RFM_SABIA_EXTERNA_FACHADALATERAL_HR00-1-5000x485-1.jpg",
+  "categorias": [
+   "apartamentos"
+  ]
+ },
+ {
+  "slug": "atmos-moema",
+  "nome": "Atmos Moema",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Pronto",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Descubra a experiência de morar em Moema: exclusividade, conforto e um toque de futuro.",
+  "resumo": {
+   "tipologias": "3 e 4 Suítes",
+   "metragem": "160 a 292 m²",
+   "vagas": "2 e 3 Vagas + depósito"
+  },
+  "torres": [],
+  "img": "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-1.jpg",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "24 residências, selo AQUA e três assinaturas.",
+   "conceito": "Arquitetura de Itamar Berezin, interiores de Fernanda Marques e paisagismo de Marcelo Vassalo num terreno de 1.700 m². Selo AQUA-HQE de construção sustentável.",
+   "endereco": "Av. Pavão, 464 · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "160 a 345 m²",
+   "plantas_tit": "de 160 m² a coberturas de 345 m².",
+   "assinaturas": [
+    [
+     "Arquitetura",
+     "Itamar Berezin"
+    ],
+    [
+     "Interiores",
+     "Fernanda Marques"
+    ],
+    [
+     "Paisagismo",
+     "Marcelo Vassalo"
+    ],
+    [
+     "Incorporação",
+     "One Innovation"
+    ]
+   ],
+   "destaques": [
+    [
+     "24",
+     "residências"
+    ],
+    [
+     "8",
+     "andares"
+    ],
+    [
+     "345 m²",
+     "cobertura"
+    ],
+    [
+     "AQUA",
+     "selo sustentável"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "160 m²",
+     "3 suítes",
+     "2 vagas"
+    ],
+    [
+     "Cobertura",
+     "305 m²",
+     "3 suítes",
+     "3 vagas"
+    ],
+    [
+     "Cobertura",
+     "345 m²",
+     "4 suítes",
+     "3 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina",
+    "Fitness",
+    "Salão de festas",
+    "Espaço gourmet",
+    "Hall privativo"
+   ],
+   "local": [
+    "Esquina Av. Pavão com Rua Inhambu",
+    "Moema Pássaros"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "1.700 m²"
+    ],
+    [
+     "Certificação",
+     "AQUA-HQE"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-1.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-2.jpg",
+      "Fachada"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-3.jpg",
+      "Interiores"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-4.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-5.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-6.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-7.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-8.jpg",
+      "Áreas comuns"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "nex-one-estacao-moema",
+  "nome": "NEX One Cotovia | Arapanés",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Lançamento",
+  "tipos": [
+   "Studio",
+   "Apartamento"
+  ],
+  "frase": "Prepare-se para uma experiência única! Novo conceito de vida com design inovador e tudo o que você sempre quis.",
+  "resumo": {
+   "tipologias": "Studios e 1 dormitório",
+   "metragem": "19 e 28 m²",
+   "vagas": ""
+  },
+  "torres": [],
+  "img": "https://api.oneinnovation.com.br/wp-content/uploads/2026/11/apartamento-nex-one-cotovia-arapanes-sao-paulo-sp-galeria-fachada-principal.jpg",
+  "categorias": [
+   "apartamentos",
+   "studios"
+  ],
+  "ficha": {
+   "tagline": "Studios e apartamentos a 2 minutos da Estação Eucaliptos.",
+   "conceito": "Duas torres na esquina da Av. Cotovia com a Al. dos Arapanés, com piscina no rooftop, coworking e fitness, a dois minutos a pé do metrô.",
+   "endereco": "Av. Cotovia, 756 · Moema",
+   "entrega": "Breve lançamento",
+   "faixa": "20 a 38,5 m²",
+   "plantas_tit": "studios, 1 e 2 dormitórios.",
+   "assinaturas": [
+    [
+     "Arquitetura",
+     "Rodrigo Sobreiro Arquitetos"
+    ],
+    [
+     "Paisagismo",
+     "Núcleo da Paisagem"
+    ],
+    [
+     "Interiores",
+     "Debora Dalanezi"
+    ],
+    [
+     "Incorporação",
+     "One Innovation"
+    ]
+   ],
+   "destaques": [
+    [
+     "2",
+     "torres"
+    ],
+    [
+     "2 min",
+     "da Estação Eucaliptos"
+    ],
+    [
+     "Rooftop",
+     "com piscina"
+    ],
+    [
+     "2.320 m²",
+     "de terreno"
+    ]
+   ],
+   "plantas": [
+    [
+     "Studio",
+     "20 m²",
+     "—",
+     "Sob consulta"
+    ],
+    [
+     "1 dormitório",
+     "24 a 27,5 m²",
+     "—",
+     "Sob consulta"
+    ],
+    [
+     "2 dormitórios",
+     "38,5 m²",
+     "—",
+     "Sob consulta"
+    ]
+   ],
+   "lazer": [
+    "Piscina rooftop",
+    "Lounge gourmet",
+    "Coworking",
+    "Fitness",
+    "Espaço recovery",
+    "Salão de festas",
+    "Churrasqueira",
+    "Bicicletário"
+   ],
+   "local": [
+    "2 minutos a pé da Estação Eucaliptos",
+    "Perto do Ibirapuera Shopping e da Av. Ibirapuera"
+   ],
+   "tecnica": [
+    [
+     "Torres",
+     "Cotovia e Arapanés"
+    ],
+    [
+     "Status",
+     "Breve lançamento"
+    ]
+   ],
+   "img": {
+    "capa": "https://api.oneinnovation.com.br/wp-content/uploads/2026/11/apartamento-nex-one-cotovia-arapanes-sao-paulo-sp-galeria-fachada-principal.jpg",
+    "par": [
+     [
+      "https://api.oneinnovation.com.br/wp-content/uploads/2026/11/apartamento-nex-one-cotovia-arapanes-sao-paulo-sp-galeria-acesso.jpg",
+      "Acesso"
+     ],
+     [
+      "https://api.oneinnovation.com.br/wp-content/uploads/2026/11/apartamento-nex-one-cotovia-arapanes-sao-paulo-sp-galeria-embasamento-fachada.jpg",
+      "Embasamento"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.oneinnovation.com.br/wp-content/uploads/2026/11/apartamento-nex-one-cotovia-arapanes-sao-paulo-sp-galeria-piscina-rooftop.jpg",
+      "Piscina rooftop"
+     ],
+     [
+      "https://api.oneinnovation.com.br/wp-content/uploads/2026/11/apartamento-nex-one-cotovia-arapanes-sao-paulo-sp-galeria-fitness.jpg",
+      "Fitness"
+     ],
+     [
+      "https://api.oneinnovation.com.br/wp-content/uploads/2026/11/apartamento-nex-one-cotovia-arapanes-sao-paulo-sp-galeria-coworking.jpg",
+      "Coworking"
+     ],
+     [
+      "https://api.oneinnovation.com.br/wp-content/uploads/2026/11/apartamento-nex-one-cotovia-arapanes-sao-paulo-sp-galeria-festas.jpg",
+      "Salão de festas"
+     ],
+     [
+      "https://api.oneinnovation.com.br/wp-content/uploads/2026/11/apartamento-nex-one-cotovia-arapanes-sao-paulo-sp-galeria-churrasqueira.jpg",
+      "Churrasqueira"
+     ],
+     [
+      "https://api.oneinnovation.com.br/wp-content/uploads/2026/11/apartamento-nex-one-cotovia-arapanes-sao-paulo-sp-galeria-festas-2.jpg",
+      "Festas"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "moema-vida-nova",
+  "nome": "Moema Vida Nova",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Novo jeito de viver: design inovador e experiência única. Empreendimento que redefine a qualidade de vida.",
+  "resumo": {
+   "tipologias": "1 e 2 Suítes",
+   "metragem": "66 e 80 m²",
+   "vagas": "1 Vaga"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/DSC0262-1.png",
+  "categorias": [
+   "apartamentos"
+  ]
+ },
+ {
+  "slug": "villa-versace-home",
+  "nome": "Villa Versace Home",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Studio",
+   "Apartamento"
+  ],
+  "frase": "Viva o estilo de vida dos seus sonhos. Descubra o que te espera.",
+  "resumo": {
+   "tipologias": "Studios, 3 e 4 Suítes",
+   "metragem": "28 a 291 m²",
+   "vagas": "3 e 4 Vagas"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/644037cb5f7255e46368c870_02.png",
+  "categorias": [
+   "alto-padrao",
+   "studios"
+  ]
+ },
+ {
+  "slug": "saffire",
+  "nome": "Saffire by Elie Saab",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Exclusividade e luxo esperam por você em um endereço sofisticado. Descubra novas experiências e comodidades.",
+  "resumo": {
+   "tipologias": "4 e 5 Suítes",
+   "metragem": "360 e 493 m²",
+   "vagas": "4 a 6 Vagas"
+  },
+  "torres": [],
+  "img": "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/saffire-elie-saab/galeria/9_-_perspectiva_ilustrada_da_fachada_torre_2_.webp",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "A alta-costura do morar.",
+   "conceito": "O primeiro residencial assinado pela maison libanesa Elie Saab no Brasil. Duas torres em cerca de 7.500 m², com áreas comuns decoradas com peças exclusivas da coleção Elie Saab Maison, quadra de tênis, beach tennis e private pool house.",
+   "endereco": "Moema · São Paulo",
+   "entrega": "Em obras",
+   "faixa": "360 a 868 m²",
+   "plantas_tit": "4 ou 5 suítes e duplex.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Lavvi"
+    ],
+    [
+     "Design",
+     "Elie Saab Maison"
+    ],
+    [
+     "Terreno",
+     "Cerca de 7.500 m²"
+    ],
+    [
+     "Torres",
+     "2"
+    ]
+   ],
+   "destaques": [
+    [
+     "25 m",
+     "raia na piscina coberta e aquecida"
+    ],
+    [
+     "7.500 m²",
+     "de terreno"
+    ],
+    [
+     "2",
+     "torres"
+    ],
+    [
+     "5",
+     "suítes nas maiores plantas"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "360 m²",
+     "4 suítes",
+     "4 vagas"
+    ],
+    [
+     "Tipo",
+     "493 m²",
+     "4 ou 5 suítes",
+     "5 vagas"
+    ],
+    [
+     "Duplex",
+     "649 m²",
+     "Sob consulta",
+     "Sob consulta"
+    ],
+    [
+     "Duplex",
+     "868 m²",
+     "Sob consulta",
+     "Sob consulta"
+    ]
+   ],
+   "lazer": [
+    "Piscina coberta aquecida com raia de 25 m",
+    "Piscina descoberta com raia de 25 m",
+    "Spa e sauna",
+    "Private pool house",
+    "Quadra de tênis",
+    "Quadra de beach tennis",
+    "Fitness",
+    "Salão de festas com terraço",
+    "Lounge piano bar",
+    "Brinquedoteca",
+    "Praça central",
+    "Porte-cochère"
+   ],
+   "local": [
+    "Em Moema, próximo às avenidas Ibirapuera e Santo Amaro",
+    "Poucos minutos do Parque Ibirapuera",
+    "Restaurantes e serviços de Moema no entorno"
+   ],
+   "tecnica": [
+    [
+     "Incorporação",
+     "Lavvi"
+    ],
+    [
+     "Design",
+     "Elie Saab Maison"
+    ],
+    [
+     "Terreno",
+     "Cerca de 7.500 m²"
+    ],
+    [
+     "Torres",
+     "2"
+    ],
+    [
+     "Status",
+     "Em obras"
+    ]
+   ],
+   "img": {
+    "capa": "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/saffire-elie-saab/galeria/12_-_perspectiva_ilustrada_da_praca_lazer.webp",
+    "fachada": "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/saffire-elie-saab/galeria/9_-_perspectiva_ilustrada_da_fachada_torre_2_.webp",
+    "fachada_cap": "Fachada, torre 2 · Perspectiva ilustrada",
+    "par": [
+     [
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/saffire-elie-saab/galeria/20_-_perspectiva_ilustrada_do_lobby_-_torre_1.webp",
+      "Lobby, torre 1"
+     ],
+     [
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/saffire-elie-saab/galeria/7_-_perspectiva_ilustrada_do_lounge_piano_bar.webp",
+      "Lounge piano bar"
+     ]
+    ],
+    "voo": "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/saffire-elie-saab/galeria/10_-_perspectiva_ilustrada_da_piscina_descoberta_com_raia_de_25_metros.webp",
+    "lazer": [
+     [
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/saffire-elie-saab/galeria/2_-_perspectiva_ilustrada_da_piscina_coberta_aquecida_com_raia_de_25_m.webp",
+      "Piscina coberta aquecida"
+     ],
+     [
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/saffire-elie-saab/galeria/3_-_persectiva_ilustrada_do_spa_e_sauna.webp",
+      "Spa e sauna"
+     ],
+     [
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/saffire-elie-saab/galeria/14_-_perspectiva_ilustrada_da_private_pool_house.webp",
+      "Private pool house"
+     ],
+     [
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/saffire-elie-saab/galeria/16_-_perspectiva_ilustrada_da_quadra_de_t_enis.webp",
+      "Quadra de tênis"
+     ],
+     [
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/saffire-elie-saab/galeria/26_-_perspectiva_ilustrada_do_sal_ao_de_festas.webp",
+      "Salão de festas"
+     ],
+     [
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/saffire-elie-saab/galeria/19_-_perspectiva_ilustrada_do_fitness.webp",
+      "Fitness"
+     ]
+    ],
+    "terraco": "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/saffire-elie-saab/galeria/27_-_perspectiva_ilustrada_do_terraco_festas.webp",
+    "terraco_cap": "Terraço de festas"
+   }
+  }
+ },
+ {
+  "slug": "ibirapuera-park-houses",
+  "nome": "Ibirapuera Park Houses",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Novo jeito de viver em São Paulo: studios inteligentes a 3 min do Ibirapuera. Conforto e exclusividade.",
+  "resumo": {
+   "tipologias": "3 suítes",
+   "metragem": "153 m²",
+   "vagas": "2 vagas + depósito"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/01-fachada.jpg",
+  "categorias": [
+   "alto-padrao"
+  ]
+ },
+ {
+  "slug": "park-avenue",
+  "nome": "Park Avenue",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Pronto",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Exclusividade no seu espaço privado: privacidade transforma cada dia em conforto e sofisticação.",
+  "resumo": {
+   "tipologias": "3 e 4 Suítes",
+   "metragem": "240 e 298 m²",
+   "vagas": "4 Vagas + depósito"
+  },
+  "torres": [],
+  "img": "https://hub.eztec.com.br/wp-content/uploads/2026/08/park_avenue_fachada.jpg",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "De frente para o Ibirapuera.",
+   "conceito": "Um raro terreno na Avenida República do Líbano, com vista para o Parque Ibirapuera. Torre de 102 metros, duas unidades por andar e um diálogo entre o contemporâneo e o natural em cada detalhe.",
+   "endereco": "Av. República do Líbano × Al. dos Arapanés · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "240 e 298 m²",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "EZTEC e Fraiha"
+    ],
+    [
+     "Arquitetura",
+     "Pablo Slemenson"
+    ],
+    [
+     "Interiores",
+     "Fernanda Marques"
+    ],
+    [
+     "Paisagismo",
+     "Alex Hanazaki"
+    ]
+   ],
+   "destaques": [
+    [
+     "3 min",
+     "do Parque Ibirapuera"
+    ],
+    [
+     "102 m",
+     "de altura"
+    ],
+    [
+     "25 m",
+     "raia na piscina"
+    ],
+    [
+     "2",
+     "unidades por andar"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "240 m²",
+     "3 suítes",
+     "4 vagas + depósito"
+    ],
+    [
+     "Tipo",
+     "298 m²",
+     "4 suítes",
+     "4 vagas + depósito"
+    ],
+    [
+     "Cobertura duplex",
+     "Sob consulta",
+     "4 suítes",
+     "Sob consulta"
+    ]
+   ],
+   "lazer": [
+    "Piscina com raia de 25 m",
+    "Piscina adulto e infantil",
+    "Deck molhado",
+    "Bar lounge da piscina",
+    "Solarium",
+    "Hidromassagem",
+    "Sauna seca",
+    "Sala de massagem",
+    "Fitness completo",
+    "Coworking",
+    "Salão de festas com jardim integrado",
+    "Brinquedoteca",
+    "Playground",
+    "Salão de jogos",
+    "Pet place"
+   ],
+   "local": [
+    "3 min do Parque Ibirapuera",
+    "Em frente ao Clube Monte Líbano",
+    "2 min do Parque das Bicicletas",
+    "7 min do Aeroporto de Congonhas"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "2.495 m²"
+    ],
+    [
+     "Torre",
+     "Única, 21 pavimentos tipo + cobertura"
+    ],
+    [
+     "Unidades",
+     "44, duas por andar"
+    ],
+    [
+     "Altura",
+     "102 m"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://hub.eztec.com.br/wp-content/uploads/2026/08/park_avenue_hero.jpg",
+    "fachada": "https://hub.eztec.com.br/wp-content/uploads/2026/08/park_avenue_fachada.jpg",
+    "par": [
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/park_avenue_living_do_apto_de_298m_planta_opcao_final_1.jpg",
+      "Living, apartamento de 298 m²"
+     ],
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/park_avenue_suite_master_do_apto_de_298m_final_1.jpg",
+      "Suíte master, 298 m²"
+     ]
+    ],
+    "voo": "https://hub.eztec.com.br/wp-content/uploads/2026/08/park_avenue_vista_aerea_do_4_andar.jpg",
+    "lazer": [
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/park_avenue_piscina_de_25m.jpg",
+      "Piscina com raia de 25 m"
+     ],
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/park_avenue_deck_molhado.jpg",
+      "Deck molhado"
+     ],
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/park_avenue_salao_de_festas.jpg",
+      "Salão de festas"
+     ],
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/park_avenue_fitness_musculacao.jpg",
+      "Fitness"
+     ],
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/park_avenue_jardim_integrado_ao_salao_de_festas.jpg",
+      "Jardim integrado"
+     ],
+     [
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/park_avenue_salao_de_jogos.jpg",
+      "Salão de jogos"
+     ]
+    ],
+    "terraco": "https://hub.eztec.com.br/wp-content/uploads/2026/08/park_avenue_terraco_do_apto_de_298m_planta_opcao_final_1.jpg",
+    "terraco_cap": "Terraço, apartamento de 298 m²"
+   },
+   "plantas_tit": "3 e 4 suítes, todos com depósito."
+  }
+ },
+ {
+  "slug": "z-ibirapuera",
+  "nome": "Z Ibirapuera",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Pronto",
+  "tipos": [
+   "Studio"
+  ],
+  "frase": "Novo jeito de viver: conforto, modernidade e experiência única em um endereço que te conecta a tudo.",
+  "resumo": {
+   "tipologias": "Studio",
+   "metragem": "24 e 54 m²",
+   "vagas": ""
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/z-ibirapuera-fachada.jpg",
+  "categorias": [
+   "studios"
+  ]
+ },
+ {
+  "slug": "chanes-street",
+  "nome": "Chanés Street",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Studio",
+   "Apartamento"
+  ],
+  "frase": "Moema com o charme do Soho! Descubra o Chanés, um novo conceito de morar que vai te surpreender.",
+  "resumo": {
+   "tipologias": "Studio, 1 e 2 Suítes",
+   "metragem": "29 a 75 m²",
+   "vagas": "1 Vaga"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/chanes-moema-fachada-1.jpg",
+  "categorias": [
+   "apartamentos",
+   "studios"
+  ]
+ },
+ {
+  "slug": "splend-moema",
+  "nome": "Splend Moema",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Novidade que une sofisticação, natureza e tecnologia em um só lugar.",
+  "resumo": {
+   "tipologias": "4 Suítes",
+   "metragem": "258 m²",
+   "vagas": "3 e 4 Vagas"
+  },
+  "torres": [],
+  "img": "https://api.apto.vc/images/realties/7986/splend-moema-condominio-1.jpg",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "Quatro suítes, hall privativo e unidade personalizável.",
+   "conceito": "Apartamentos de 258 m² com quatro suítes, hall social privativo e depósito individual, com serviço de personalização de layout e acabamentos.",
+   "endereco": "Av. Juriti · Moema",
+   "entrega": "Previsão: out/2027",
+   "faixa": "258 m²",
+   "plantas_tit": "quatro suítes, hall privativo.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Exto"
+    ],
+    [
+     "Personalização",
+     "Layout e acabamentos"
+    ],
+    [
+     "Fitness",
+     "Life Fitness"
+    ],
+    [
+     "Entrega",
+     "Prevista para out/2027"
+    ]
+   ],
+   "destaques": [
+    [
+     "258 m²",
+     "privativos"
+    ],
+    [
+     "4",
+     "suítes"
+    ],
+    [
+     "20 m",
+     "de piscina"
+    ],
+    [
+     "3–4",
+     "vagas"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "258 m²",
+     "4 suítes",
+     "3 ou 4 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina de 20 m",
+    "Quadra de tênis Lisonda",
+    "Spa wellness",
+    "Fitness Life Fitness",
+    "Salão de festas",
+    "Espaço gourmet"
+   ],
+   "local": [
+    "Moema Índios",
+    "Perto do Ibirapuera Shopping"
+   ],
+   "tecnica": [
+    [
+     "Diferenciais",
+     "Hall privativo, depósito individual"
+    ],
+    [
+     "Status",
+     "Em obras"
+    ]
+   ],
+   "img": {
+    "capa": "https://api.apto.vc/images/realties/7986/splend-moema-condominio-1.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-2.jpg",
+      "Fachada"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-3.jpg",
+      "Lazer"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-4.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-5.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-6.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-7.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-8.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7986/splend-moema-condominio-9.jpg",
+      "Áreas comuns"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "casa-sabia",
+  "nome": "Casa Sabiá",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Vida premium e sustentável em um endereço desejável, próximo ao Parque Ibirapuera.",
+  "resumo": {
+   "tipologias": "3 Suítes",
+   "metragem": "317 m²",
+   "vagas": "4 Vagas"
+  },
+  "torres": [],
+  "img": "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-1.jpg",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "Duas torres, 74 casas suspensas em Moema.",
+   "conceito": "Projeto Aflalo/Gasperini para a Even num terreno de 5.570 m²: 74 residências, piscina coberta com raia de 25 m e quadra de tênis.",
+   "endereco": "Al. dos Arapanés, 522 · Moema",
+   "entrega": "Previsão: nov/2026",
+   "faixa": "315 a 317 m²",
+   "plantas_tit": "três suítes, varanda gourmet.",
+   "assinaturas": [
+    [
+     "Arquitetura",
+     "Aflalo/Gasperini"
+    ],
+    [
+     "Incorporação",
+     "Even"
+    ],
+    [
+     "Terreno",
+     "5.570 m²"
+    ],
+    [
+     "Entrega",
+     "Prevista para nov/2026"
+    ]
+   ],
+   "destaques": [
+    [
+     "74",
+     "residências"
+    ],
+    [
+     "2",
+     "torres"
+    ],
+    [
+     "25 m",
+     "raia na piscina coberta"
+    ],
+    [
+     "4",
+     "vagas"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "315 m²",
+     "3 suítes",
+     "4 vagas"
+    ],
+    [
+     "Tipo",
+     "317 m²",
+     "3 suítes",
+     "4 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina coberta com raia de 25 m",
+    "Quadra de tênis",
+    "Fitness",
+    "Sauna",
+    "Sala de massagem",
+    "Salão de festas",
+    "Playground"
+   ],
+   "local": [
+    "Moema Pássaros, perto da Av. Sabiá",
+    "Caminho do Parque Ibirapuera"
+   ],
+   "tecnica": [
+    [
+     "Torres",
+     "2"
+    ],
+    [
+     "Unidades",
+     "74"
+    ],
+    [
+     "Status",
+     "Em obras"
+    ]
+   ],
+   "img": {
+    "capa": "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-1.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-2.jpg",
+      "Fachada"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-3.jpg",
+      "Lazer"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-4.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-5.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-6.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-7.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-8.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6799/casa-sabia-condominio-9.jpg",
+      "Áreas comuns"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "mona-the-grand-lodge",
+  "nome": "Monã The Grand Lodge",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Exclusividade e sofisticação te esperam em Moema. Descubra um refúgio com detalhes que surpreendem.",
+  "resumo": {
+   "tipologias": "3 e 4 Suítes",
+   "metragem": "177 a 392 m²",
+   "vagas": "3 e 4 Vagas"
+  },
+  "torres": [],
+  "img": "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-2.jpg",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "O espírito dos grandes lodges, entre Moema e o Ibirapuera.",
+   "conceito": "Baixa densidade, apenas duas unidades por andar e um lazer inspirado nos lodges de luxo internacionais, a poucos minutos do Parque Ibirapuera.",
+   "endereco": "Av. Indianópolis, 588 · Moema",
+   "entrega": "Previsão: 2026",
+   "faixa": "354 a 392 m²",
+   "plantas_tit": "duas unidades por andar.",
+   "assinaturas": [
+    [
+     "Incorporação e construção",
+     "Diálogo Engenharia"
+    ],
+    [
+     "Conceito",
+     "Grand lodge"
+    ],
+    [
+     "Andares",
+     "2 unidades por andar"
+    ],
+    [
+     "Entrega",
+     "Prevista para 2026"
+    ]
+   ],
+   "destaques": [
+    [
+     "2",
+     "unidades por andar"
+    ],
+    [
+     "392 m²",
+     "maior planta"
+    ],
+    [
+     "4",
+     "suítes"
+    ],
+    [
+     "5",
+     "vagas"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "354 m²",
+     "3 a 4 suítes",
+     "4 vagas"
+    ],
+    [
+     "Tipo",
+     "392 m²",
+     "4 suítes",
+     "5 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina",
+    "Fitness",
+    "Spa",
+    "Salão de festas",
+    "Espaço gourmet",
+    "Brinquedoteca"
+   ],
+   "local": [
+    "Entre Moema e o Parque Ibirapuera",
+    "Av. Indianópolis"
+   ],
+   "tecnica": [
+    [
+     "Unidades por andar",
+     "2"
+    ],
+    [
+     "Status",
+     "Em obras"
+    ]
+   ],
+   "img": {
+    "capa": "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-2.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-3.jpg",
+      "Fachada"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-4.jpg",
+      "Lazer"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-5.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-6.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-7.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/6640/mona-the-grand-lodge-condominio-8.jpg",
+      "Áreas comuns"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "cyrela-for-you-moema",
+  "nome": "Cyrela For You Moema",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Pronto",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Moema te espera! Novo jeito de viver com espaços inteligentes e conectados ao seu estilo.",
+  "resumo": {
+   "tipologias": "1 Suíte",
+   "metragem": "61 m²",
+   "vagas": "1 Vaga"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/CYRELA_ARAPANES_FACHADA_RESIDENCIAL_NOTURNA_HR00.jpg",
+  "categorias": [
+   "apartamentos"
+  ]
+ },
+ {
+  "slug": "cyrela-moema-by-yoo",
+  "nome": "Cyrela Moema by YOO",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Desvende um novo jeito de viver em Moema. Design inovador e exclusividade em uma torre única.",
+  "resumo": {
+   "tipologias": "3 e 4 Suítes",
+   "metragem": "252 a 291 m²",
+   "vagas": "3 e 4 Vagas"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/JUR_02_Fachada_Frontal_EF3_ajustada_1.png",
+  "categorias": [
+   "alto-padrao"
+  ]
+ },
+ {
+  "slug": "lis-moema",
+  "nome": "Lis Moema",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Descubra um novo lar em Moema, onde sofisticação e natureza se encontram.",
+  "resumo": {
+   "tipologias": "3 e 4 Suítes",
+   "metragem": "172 a 253 m²",
+   "vagas": "2 e 3 Vagas"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/CTV_01_Fachada_T1e2_A_EF2_v2-1.png",
+  "categorias": [
+   "alto-padrao"
+  ]
+ },
+ {
+  "slug": "ibate",
+  "nome": "Ibaté",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Pronto",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Vivencie a autenticidade que você sempre sonhou em Moema. Um novo empreendimento que vai te surpreender.",
+  "resumo": {
+   "tipologias": "4 Suítes",
+   "metragem": "480 m²",
+   "vagas": "5 Vagas + depósito"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/apartamento-ibate-fachada2-scaled-1.jpg",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "Concreto, jardim e silêncio por Arthur Casas.",
+   "conceito": "Monólito de concreto aparente suavizado por jardins verticais, numa esquina de Moema. Um apartamento por andar, assinado pelo Studio Arthur Casas.",
+   "endereco": "Av. Sabiá · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "479 m²",
+   "plantas_tit": "um apartamento por andar.",
+   "assinaturas": [
+    [
+     "Arquitetura e interiores",
+     "Studio Arthur Casas"
+    ],
+    [
+     "Paisagismo",
+     "Arterra"
+    ],
+    [
+     "Incorporação",
+     "JAC · Cáucaso"
+    ],
+    [
+     "Entrega",
+     "Dezembro de 2023"
+    ]
+   ],
+   "destaques": [
+    [
+     "1",
+     "apartamento por andar"
+    ],
+    [
+     "26",
+     "residências"
+    ],
+    [
+     "479 m²",
+     "privativos"
+    ],
+    [
+     "5",
+     "vagas"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "479 m²",
+     "4 suítes",
+     "5 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina coberta",
+    "Sauna",
+    "Fitness",
+    "Salão de festas",
+    "Jardim"
+   ],
+   "local": [
+    "Avenida Sabiá, Moema Pássaros",
+    "Caminho do Parque Ibirapuera"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "2.162 m²"
+    ],
+    [
+     "Pavimentos",
+     "27"
+    ],
+    [
+     "Unidades",
+     "26, uma por andar"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/apartamento-ibate-fachada2-scaled-1.jpg"
+   }
+  }
+ },
+ {
+  "slug": "purity-moema",
+  "nome": "Purity Moema",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Pronto",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Moema reinventada: luxo e exclusividade em um novo conceito. Descubra o que te espera.",
+  "resumo": {
+   "tipologias": "3 e 4 Suítes",
+   "metragem": "150 a 290 m²",
+   "vagas": "2 e 3 Vagas (determinadas)"
+  },
+  "torres": [],
+  "img": "https://api.apto.vc/images/realties/7157/purity-moema-condominio-3.jpg",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "Torre única, linguagem contemporânea na Av. Moema.",
+   "conceito": "Torre única com projeto da JNA Arquitetos, lazer completo e plantas de 140 a 295 m², pronta para morar.",
+   "endereco": "Av. Moema, 756 · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "140 a 295 m²",
+   "plantas_tit": "de 140 a 295 m².",
+   "assinaturas": [
+    [
+     "Arquitetura",
+     "JNA Arquitetos"
+    ],
+    [
+     "Incorporação",
+     "Barbara · Luni"
+    ],
+    [
+     "Torre",
+     "Única"
+    ],
+    [
+     "Entrega",
+     "Dezembro de 2025"
+    ]
+   ],
+   "destaques": [
+    [
+     "1",
+     "torre"
+    ],
+    [
+     "295 m²",
+     "maior planta"
+    ],
+    [
+     "3",
+     "suítes"
+    ],
+    [
+     "4",
+     "vagas"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "140 a 150 m²",
+     "3 suítes",
+     "2 vagas"
+    ],
+    [
+     "Amplo",
+     "Até 295 m²",
+     "Sob consulta",
+     "Até 4 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina",
+    "Fitness",
+    "Quadra",
+    "Sauna",
+    "Salão de festas",
+    "Espaço gourmet",
+    "Brinquedoteca",
+    "Playground"
+   ],
+   "local": [
+    "Av. Moema",
+    "Perto do Ibirapuera Shopping"
+   ],
+   "tecnica": [
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://api.apto.vc/images/realties/7157/purity-moema-condominio-3.jpg",
+    "par": [
+     [
+      "https://api.apto.vc/images/realties/7157/purity-moema-condominio-4.jpg",
+      "Fachada"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7157/purity-moema-condominio-5.jpg",
+      "Lazer"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://api.apto.vc/images/realties/7157/purity-moema-condominio-6.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7157/purity-moema-condominio-7.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7157/purity-moema-condominio-8.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7157/purity-moema-condominio-9.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7157/purity-moema-condominio-10.jpg",
+      "Áreas comuns"
+     ],
+     [
+      "https://api.apto.vc/images/realties/7157/purity-moema-condominio-11.jpg",
+      "Áreas comuns"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "ndk-studios-moema",
+  "nome": "NDK Studios Moema",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Studio"
+  ],
+  "frase": "Descubra tecnologias que vão revolucionar seu dia a dia. Prepare-se para uma experiência única.",
+  "resumo": {
+   "tipologias": "Studios",
+   "metragem": "26 m²",
+   "vagas": ""
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada-2.jpg",
+  "categorias": [
+   "studios"
+  ]
+ },
+ {
+  "slug": "monogram",
+  "nome": "Monogram",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Explore um novo conceito em design e exclusividade. A experiência que você sempre quis, ao seu alcance.",
+  "resumo": {
+   "tipologias": "3 Suítes",
+   "metragem": "121 m²",
+   "vagas": "2 Vagas"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada.jpg",
+  "categorias": [
+   "alto-padrao",
+   "apartamentos"
+  ]
+ },
+ {
+  "slug": "park-lane",
+  "nome": "Park Lane Ibirapuera",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Pronto",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Transforme seu conceito de luxo e exclusividade. Projeto inovador para um novo patamar de bem morar.",
+  "resumo": {
+   "tipologias": "4 Suítes",
+   "metragem": "375 a 688 m²",
+   "vagas": "5 à 7 Vagas (determinadas)"
+  },
+  "torres": [],
+  "img": "https://lindenberg.com.br/wp-content/uploads/2024/01/parklane-fachada-1.jpg",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "Mansões suspensas a caminho do Ibirapuera.",
+   "conceito": "Apenas 28 apartamentos, um por andar, numa torre de 105 metros com vista para o Parque Ibirapuera e o Clube Monte Líbano. A sofisticação da Lindenberg como estado de natureza.",
+   "endereco": "Av. Min. Gabriel de Rezende Passos, 319 · Moema",
+   "entrega": "Pronto para morar",
+   "faixa": "375 a 688 m²",
+   "plantas_tit": "um apartamento por andar.",
+   "assinaturas": [
+    [
+     "Incorporação e construção",
+     "Adolpho Lindenberg"
+    ],
+    [
+     "Torre",
+     "105 m de altura"
+    ],
+    [
+     "Unidades",
+     "28, uma por andar"
+    ],
+    [
+     "Entrega",
+     "Julho de 2023"
+    ]
+   ],
+   "destaques": [
+    [
+     "1",
+     "apartamento por andar"
+    ],
+    [
+     "28",
+     "residências"
+    ],
+    [
+     "105 m",
+     "de altura"
+    ],
+    [
+     "4",
+     "suítes em todas as plantas"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "375 m²",
+     "4 suítes",
+     "4 vagas"
+    ],
+    [
+     "Garden",
+     "Até 548 m²",
+     "4 suítes",
+     "Sob consulta"
+    ],
+    [
+     "Cobertura duplex",
+     "688 m²",
+     "4 suítes",
+     "Até 7 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina",
+    "Fitness",
+    "Salão de festas",
+    "Churrasqueira",
+    "Brinquedoteca",
+    "Hall social privativo",
+    "Dois elevadores por andar com biometria"
+   ],
+   "local": [
+    "Vista para o Parque Ibirapuera",
+    "Vizinho ao Clube Monte Líbano",
+    "Entre Moema e o Ibirapuera"
+   ],
+   "tecnica": [
+    [
+     "Unidades",
+     "28, uma por andar"
+    ],
+    [
+     "Altura",
+     "105 m"
+    ],
+    [
+     "Diferenciais",
+     "Persianas automatizadas, aspiração central, carga para carro elétrico"
+    ],
+    [
+     "Status",
+     "Pronto para morar"
+    ]
+   ],
+   "img": {
+    "capa": "https://lindenberg.com.br/wp-content/uploads/2024/01/parklane-fachada-1.jpg",
+    "par": [
+     [
+      "https://lindenberg.com.br/wp-content/uploads/2024/01/parklane-hall-1.jpg",
+      "Hall social"
+     ],
+     [
+      "https://lindenberg.com.br/wp-content/uploads/2024/01/parklane-hall-2.jpg",
+      "Hall social"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://lindenberg.com.br/wp-content/uploads/2024/01/parklane-sala-piscina.jpg",
+      "Piscina"
+     ],
+     [
+      "https://lindenberg.com.br/wp-content/uploads/2024/01/parklane-academia-1.jpg",
+      "Fitness"
+     ],
+     [
+      "https://lindenberg.com.br/wp-content/uploads/2024/01/parklane-festas-1.jpg",
+      "Salão de festas"
+     ],
+     [
+      "https://lindenberg.com.br/wp-content/uploads/2024/01/parklane-churrasqueira-1.jpg",
+      "Churrasqueira"
+     ],
+     [
+      "https://lindenberg.com.br/wp-content/uploads/2024/01/parklane-brinquedoteca-1.jpg",
+      "Brinquedoteca"
+     ],
+     [
+      "https://lindenberg.com.br/wp-content/uploads/2024/01/parklane-festas-2.jpg",
+      "Salão de festas"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "filadelfo-vila-nova-conceicao",
+  "nome": "Filadelfo Vila Nova Conceição",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Pronto",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Descubra seu novo lar em uma localização privilegiada, onde sofisticação e natureza se encontram.",
+  "resumo": {
+   "tipologias": "2 ou 3 dormitórios",
+   "metragem": "75 a 275 m²",
+   "vagas": "1 ou 2 vagas"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2025/01/Fachada-Filadelfo-1.png",
+  "categorias": [
+   "alto-padrao"
+  ]
+ },
+ {
+  "slug": "tiel",
+  "nome": "Tiel",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Em obras",
+  "tipos": [
+   "Studio"
+  ],
+  "frase": "Viva de um jeito novo em Vila Nova: inovação, localização privilegiada e qualidade em um só lugar.",
+  "resumo": {
+   "tipologias": "Studios",
+   "metragem": "19 m²",
+   "vagas": ""
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/tiel.jpg",
+  "categorias": [
+   "studios"
+  ]
+ },
+ {
+  "slug": "nex-one-praca-pereira-coutinho",
+  "nome": "NEX One Praça Pereira Coutinho",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Inove seu estilo de vida em Vila Nova Conceição. Conforto, exclusividade e praticidade.",
+  "resumo": {
+   "tipologias": "1 e 2 dormitórios",
+   "metragem": "26 e 48 m²",
+   "vagas": ""
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/apartamento-nex-one-pereira-coutinho-sao-paulo-sp-fachada-destaque-2.png",
+  "categorias": [
+   "apartamentos"
+  ]
+ },
+ {
+  "slug": "nex-one-vila-nova",
+  "nome": "NEX One Vila Nova",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Vila Nova: descubra um novo jeito de viver! Inovação, localização e qualidade de vida em um só lugar.",
+  "resumo": {
+   "tipologias": "1 e 2 dormitórios",
+   "metragem": "24 a 37 m²",
+   "vagas": ""
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/next-one.jpg",
+  "categorias": [
+   "apartamentos"
+  ]
+ },
+ {
+  "slug": "dom-564",
+  "nome": "DOM 564",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Pronto",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Novo jeito de viver na Vila Nova Conceição! Exclusividade, piscina no rooftop e vista do Ibirapuera.",
+  "resumo": {
+   "tipologias": "1 e 2 Suítes",
+   "metragem": "56 a 107 m²",
+   "vagas": "1 e 2 Vagas"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/4c51744dac86d0672fa7b1304acae0380a7756ec.png",
+  "categorias": [
+   "apartamentos"
+  ]
+ },
+ {
+  "slug": "arbre-vila-nova",
+  "nome": "Arbre Vila Nova",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Viva o luxo em um apartamento de alto padrão, com amplos espaços e lazer completo.",
+  "resumo": {
+   "tipologias": "4 Suítes",
+   "metragem": "372 m²",
+   "vagas": "4 e 5 Vagas + depósito"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/arbre.jpg",
+  "categorias": [
+   "alto-padrao"
+  ]
+ },
+ {
+  "slug": "d-o-c-vila-nova",
+  "nome": "D.O.C Vila Nova",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Exclusividade e sofisticação em um novo endereço. Vila Nova Conceição: descubra o que te espera.",
+  "resumo": {
+   "tipologias": "3 Suítes",
+   "metragem": "195 m²",
+   "vagas": "3 Vagas"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/19-Afonso-Braz_Fachada-R.-Afonso-Braz_R06-HR-.jpg",
+  "categorias": [
+   "alto-padrao"
+  ]
+ },
+ {
+  "slug": "bueno-brandao",
+  "nome": "Bueno Brandão",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Elegância e inovação: explore o que está por vir! Um novo conceito de vida à sua disposição.",
+  "resumo": {
+   "tipologias": "5 Suítes",
+   "metragem": "500 m²",
+   "vagas": "5 e 7 Vagas + depósito"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada_noturna.png",
+  "categorias": [
+   "alto-padrao"
+  ]
+ },
+ {
+  "slug": "opera-vila-nova",
+  "nome": "Ópera Vila Nova",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Novo padrão de vida na Vila Nova Conceição: privacidade e sofisticação à sua espera.",
+  "resumo": {
+   "tipologias": "4 Suítes",
+   "metragem": "293 m²",
+   "vagas": "4 Vagas"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/EMOCOES_HELIO_FACHADA_DIURNA_HR.jpg",
+  "categorias": [
+   "alto-padrao"
+  ]
+ },
+ {
+  "slug": "helio-454",
+  "nome": "Helio 454",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Design inovador e exclusividade inédita! Um novo conceito de vida, esperando por você.",
+  "resumo": {
+   "tipologias": "3 Suítes",
+   "metragem": "258 m² e 491 m²",
+   "vagas": "3 e 4 Vagas + depósito"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/RFM_Helio-Pelegrino-01-FACHADA-FRONTAL_HR1.png",
+  "categorias": [
+   "alto-padrao"
+  ]
+ },
+ {
+  "slug": "sete-vila-nova-conceicao",
+  "nome": "Sete Vila Nova Conceição",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Pronto",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Viva uma experiência inigualável: moradia com design inovador e todas as comodidades que você merece.",
+  "resumo": {
+   "tipologias": "4 Suítes",
+   "metragem": "398 m²",
+   "vagas": "5 Vagas + depósito"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada-1723570998863-1.jpg",
+  "categorias": [
+   "alto-padrao"
+  ]
+ },
+ {
+  "slug": "pallazo-grimaldi",
+  "nome": "Pallazo Grimaldi",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Em obras",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Morar em uma obra-prima na Vila Nova Conceição. Redefinindo luxo e inovação. Experiência única te espera.",
+  "resumo": {
+   "tipologias": "3 e 4 Suítes",
+   "metragem": "290 a 422 m²",
+   "vagas": "4 Vagas + depósito"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/palazzo-1.png",
+  "categorias": [
+   "alto-padrao"
+  ]
+ },
+ {
+  "slug": "the-frame",
+  "nome": "The Frame",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Pronto",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Descubra um novo estilo de vida, onde arte e inovação redefinem o conceito de luxo.",
+  "resumo": {
+   "tipologias": "4 Suítes",
+   "metragem": "358 m²",
+   "vagas": "4 Vagas + depósito"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/theframe_Fachada.jpg",
+  "categorias": [
+   "alto-padrao"
+  ]
+ },
+ {
+  "slug": "praca-da-vila",
+  "nome": "Praça da Vila",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Pronto",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Redefina o luxo com arte e inovação. Uma experiência única te espera.",
+  "resumo": {
+   "tipologias": "3 Suítes",
+   "metragem": "154 m²",
+   "vagas": "2 Vagas"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/destaquehome-praca-da-vila-fachada-m.jpg",
+  "categorias": [
+   "alto-padrao"
+  ]
+ },
+ {
+  "slug": "triad-vila-nova-conceicao",
+  "nome": "Triad Vila Nova Conceição",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Pronto",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Desvende um empreendimento que vai além de suas expectativas. Descubra a novidade que transformará sua vida.",
+  "resumo": {
+   "tipologias": "3 Suítes",
+   "metragem": "160 m²",
+   "vagas": "3 Vagas (demarcadas)"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/galeria-header-triad-entrada.jpg",
+  "categorias": [
+   "alto-padrao"
+  ]
+ },
+ {
+  "slug": "bosque-vila-nova",
+  "nome": "Bosque Vila Nova",
+  "bairro": "Vila Nova Conceição",
+  "bairro_slug": "vila-nova-conceicao",
+  "status": "Lançamento",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Sofisticação e tecnologia esperam por você na Vila Nova Conceição. Descubra como sua vida pode ser transformada.",
+  "resumo": {
+   "tipologias": "4 Suítes",
+   "metragem": "194 e 237 m²",
+   "vagas": "2 e 3 Vagas + depósito"
+  },
+  "torres": [],
+  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/Fachada-Noturna.png",
+  "categorias": [
+   "alto-padrao"
+  ]
+ }
+]
