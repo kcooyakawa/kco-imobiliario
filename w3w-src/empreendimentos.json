@@ -163,6 +163,163 @@
   }
  },
  {
+  "slug": "la-galerie-moema",
+  "nome": "La Galerie Moema",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Lançamento",
+  "tipos": "Apartamentos 4 suítes",
+  "frase": "Um endereço pensado como obra de arte na Av. Sabiá.",
+  "resumo": {
+   "tipologias": "4 suítes",
+   "metragem": "283 a 416 m²",
+   "vagas": "3 e 4 vagas"
+  },
+  "torres": "2",
+  "img": "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DA%20FACHADA.webp",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "Arquitetura e arte no mesmo endereço: o lançamento mais aguardado da Av. Sabiá.",
+   "conceito": "La Galerie é o lançamento de alto padrão que mais nos chamou atenção em Moema este ano. Cyrela e Nortis ocupam um terreno de mais de 4 mil m² na Av. Sabiá com duas torres e apenas 68 residências, de 283 a 416 m², todas com quatro suítes possíveis. A proposta é tratar o prédio como uma galeria: curadoria de arte nas áreas comuns, port-cochère interno e plantas com ventilação cruzada e luz natural.",
+   "endereco": "Av. Sabiá, 418 · Moema Pássaros",
+   "entrega": "Lançamento",
+   "faixa": "283 a 416 m²",
+   "plantas_tit": "até quatro suítes, plantas flexíveis.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Cyrela e Nortis"
+    ],
+    [
+     "Torres",
+     "2, com 26 pavimentos"
+    ],
+    [
+     "Residências",
+     "68"
+    ],
+    [
+     "Status",
+     "Lançamento"
+    ]
+   ],
+   "destaques": [
+    [
+     "68",
+     "residências"
+    ],
+    [
+     "416 m²",
+     "maior planta"
+    ],
+    [
+     "4",
+     "suítes"
+    ],
+    [
+     "25 m",
+     "raia da piscina coberta"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo · torre 2",
+     "283 m²",
+     "Até 4 suítes",
+     "3 vagas"
+    ],
+    [
+     "Tipo · torre 2",
+     "345 m²",
+     "4 suítes",
+     "3 a 4 vagas"
+    ],
+    [
+     "Tipo · torre 1",
+     "416 m²",
+     "4 suítes",
+     "4 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina coberta com raia de 25 m",
+    "Piscina descoberta",
+    "Quadra de tênis",
+    "Fitness",
+    "Espaço gourmet",
+    "Salão de festas",
+    "Brinquedoteca",
+    "Port-cochère interno",
+    "Lobby independente por torre"
+   ],
+   "local": [
+    "Av. Sabiá, uma das quadras mais tradicionais de Moema Pássaros",
+    "Caminho a pé até o Parque Ibirapuera pela Av. República do Líbano",
+    "Rua de comércio de bairro, cafés e restaurantes"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "Mais de 4.000 m²"
+    ],
+    [
+     "Torres",
+     "2 × 26 pavimentos"
+    ],
+    [
+     "Imagens",
+     "Perspectivas ilustradas da incorporadora"
+    ],
+    [
+     "Status",
+     "Lançamento"
+    ]
+   ],
+   "img": {
+    "capa": "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DA%20FACHADA.webp",
+    "par": [
+     [
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DO%20LOBBY%20DA%20TORRE%201.webp",
+      "Lobby · torre 1"
+     ],
+     [
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DO%20LIVING%20TORRE%202%20FINAL%202%20-%20345M%C2%B2.webp",
+      "Living · 345 m²"
+     ]
+    ],
+    "voo": "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DO%20LAZER%202%C2%BA%20PAVIMENTO.webp",
+    "lazer": [
+     [
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DA%20PISCINA%20COBERTA%20COM%20RAIA%20DE%2025M.webp",
+      "Piscina coberta"
+     ],
+     [
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DA%20PISCINA%20DESCOBERTA.webp",
+      "Piscina descoberta"
+     ],
+     [
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DA%20QUADRA%20DE%20T%C3%8ANIS.webp",
+      "Quadra de tênis"
+     ],
+     [
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DO%20GOURMET.webp",
+      "Espaço gourmet"
+     ],
+     [
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DO%20PORT%20COCHERE%20INTERNO.webp",
+      "Port-cochère"
+     ],
+     [
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DA%20SU%C3%8DTE%20M%C3%81STER%20FINAL%201%20TORRE%201%20-%20416M2.webp",
+      "Suíte master · 416 m²"
+     ]
+    ]
+   }
+  }
+ },
+ {
   "slug": "agami-park-residences",
   "nome": "Agami Park Residences",
   "bairro": "Moema",
@@ -3100,7 +3257,7 @@
  },
  {
   "slug": "villa-versace-home",
-  "nome": "Villa Versace Home",
+  "nome": "Villa Ibirapuera · Versace Home",
   "bairro": "Moema",
   "bairro_slug": "moema",
   "status": "Pronto",
@@ -3115,162 +3272,163 @@
    "vagas": "3 e 4 Vagas"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/644037cb5f7255e46368c870_02.png",
+  "img": "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/3_-_foto_da_fachada_6_.webp",
   "categorias": [
    "alto-padrao",
    "studios"
   ],
   "ficha": {
-   "tagline": "Viva o estilo de vida dos seus sonhos. Descubra o que te espera.",
-   "conceito": "Duas torres em condomínios totalmente independentes, com lazer enriquecido pelo design da Versace Home.",
-   "endereco": "Av. Agami · Moema",
+   "tagline": "O primeiro endereço Versace Home da América Latina, já de chaves na mão.",
+   "conceito": "Escolhemos o Villa porque ele resolve uma pergunta rara em Moema: onde morar com assinatura de grife sem esperar obra. São duas torres no mesmo terreno: a Residences, com apenas 100 apartamentos de 149 a 221 m² e coberturas duplex de até 418 m², e a Studios, voltada a quem quer investir em Moema Pássaros. Os interiores das áreas comuns trazem papéis de parede, iluminação e mobiliário produzidos na Itália, na paleta branco, preto, azul e dourado da Versace Home.",
+   "endereco": "Av. Agami, 364 · Moema Pássaros",
    "entrega": "Pronto para morar",
-   "faixa": "149 a 291 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "faixa": "28 a 418 m²",
+   "plantas_tit": "do studio à cobertura duplex.",
    "assinaturas": [
     [
-     "Incorporação",
-     "Lavvi"
+     "Design de interiores",
+     "Milano Lifestyle by Versace Home"
     ],
     [
-     "Participação",
-     "Cyrela"
+     "Arquitetura",
+     "Aflalo & Gasperini"
     ],
     [
      "Paisagismo",
      "Benedito Abbud"
     ],
     [
-     "Arquitetura",
-     "Aflalo & Gasperini"
+     "Incorporação",
+     "Lavvi"
     ]
    ],
    "destaques": [
     [
-     "300",
-     "residências"
+     "100",
+     "residências na torre Residences"
     ],
     [
-     "2",
-     "torres"
+     "418 m²",
+     "cobertura duplex"
     ],
     [
-     "26",
-     "pavimentos"
+     "3",
+     "suítes em todas as plantas"
     ],
     [
-     "291 m²",
-     "maior planta"
+     "4",
+     "vagas nas maiores unidades"
     ]
    ],
    "plantas": [
     [
-     "3 dorm.",
+     "Studio",
+     "28 a 32 m²",
+     "—",
+     "Sem vaga"
+    ],
+    [
+     "Tipo",
      "149 m²",
      "3 suítes",
      "2 vagas"
     ],
     [
-     "3 dorm.",
-     "150 m²",
+     "Tipo",
+     "221 m²",
      "3 suítes",
      "3 vagas"
     ],
     [
-     "3 dorm.",
-     "150 m²",
-     "2 suítes",
-     "2 vagas"
-    ],
-    [
-     "3 dorm.",
-     "150 m²",
+     "Cobertura duplex",
+     "291 m²",
      "3 suítes",
      "4 vagas"
     ],
     [
-     "3 dorm.",
-     "216 m²",
-     "3 suítes",
-     "3 vagas"
-    ],
-    [
-     "3 dorm.",
-     "291 m²",
-     "3 suítes",
+     "Cobertura duplex",
+     "418 m²",
+     "Sob consulta",
      "4 vagas"
     ]
    ],
    "lazer": [
-    "Piscina adulto",
-    "Piscina infantil",
-    "Deck molhado",
+    "Piscina coberta",
+    "Piscina descoberta",
     "Spa",
+    "Sauna seca e úmida",
     "Fitness",
     "Salão de festas",
     "Praça central",
-    "Bar",
-    "Solarium"
+    "Solarium",
+    "Brinquedoteca",
+    "Playground",
+    "Rooftop com piscina (torre Studios)"
    ],
    "local": [
-    "Primeiro lançamento com assinatura Versace Home da América Latina",
-    "Áreas de lazer com design da Versace Home",
-    "Residencial e studios em condomínios independentes"
+    "Moema Pássaros, fora da rota dos aviões",
+    "Cerca de 1 km do Parque Ibirapuera",
+    "Entre a Av. Agami e a Av. Min. Gabriel de Rezende Passos"
    ],
    "tecnica": [
     [
      "Terreno",
-     "4.366 m²"
+     "4.846 m²"
     ],
     [
-     "Unidades",
-     "300"
+     "Torre Residences",
+     "100 unidades"
     ],
     [
-     "Entrega",
-     "Entregue em set/2025"
+     "Torre Studios",
+     "343 unidades"
     ],
     [
      "Status",
      "Pronto para morar"
+    ],
+    [
+     "Observação",
+     "Residences 100% vendido pela incorporadora: disponibilidade via revenda"
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/644037cb5f7255e46368c870_02.png",
+    "capa": "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/3_-_foto_da_fachada_6_.webp",
     "par": [
      [
-      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-condominio-1.jpg",
-      "Áreas comuns"
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/20_-_foto_do_hall_de_entrada.webp",
+      "Hall de entrada"
      ],
      [
-      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-apartamento-1.jpg",
-      "Residência"
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/16_-_foto_do_detalhe_da_fachada.webp",
+      "Detalhe da fachada"
      ]
     ],
+    "voo": "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/1_-_foto_da_area_de_lazer.webp",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-condominio-2.jpg",
-      "Lazer"
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/10_-_foto_da_piscina_coberta.webp",
+      "Piscina coberta"
      ],
      [
-      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-condominio-3.jpg",
-      "Lazer"
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/12_-_foto_da_piscina_descoberta.webp",
+      "Piscina descoberta"
      ],
      [
-      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-condominio-4.jpg",
-      "Lazer"
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/26_-_foto_do_spa.webp",
+      "Spa"
      ],
      [
-      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-condominio-5.jpg",
-      "Lazer"
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/23_-_foto_do_sal_ao_de_festas.webp",
+      "Salão de festas"
      ],
      [
-      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-condominio-6.jpg",
-      "Lazer"
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/14_-_foto_da_praca_central.webp",
+      "Praça central"
      ],
      [
-      "https://api.apto.vc/images/realties/3338/villa-residence-milano-lifestyle-by-versace-home-condominio-7.jpg",
-      "Lazer"
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-studios/imagens/galeria/3_-_foto_do_piscina_do_rooftop.webp",
+      "Piscina do rooftop · Studios"
      ]
     ]
    }
@@ -4707,21 +4865,21 @@
    "vagas": "3 e 4 Vagas"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/JUR_02_Fachada_Frontal_EF3_ajustada_1.png",
+  "img": "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2025-08/Cyrela_Moema_22mai2025-01_0.jpeg.webp",
   "categorias": [
    "alto-padrao"
   ],
   "ficha": {
-   "tagline": "Desvende um novo jeito de viver em Moema. Design inovador e exclusividade em uma torre única.",
-   "conceito": "Arquitetura contemporânea de linhas retas e interiores assinados pela YOO.",
-   "endereco": "Av. dos Imarés · Moema",
+   "tagline": "Design YOO, plantas de casa e fotos reais: o prédio já existe.",
+   "conceito": "Selecionamos o Moema by YOO para quem quer o padrão de design internacional sem a espera da planta. É um dos poucos prontos de Moema com apartamentos acima de 250 m², hall privativo e lazer distribuído em três pavimentos, com ambientes assinados pela YOO, o estúdio britânico fundado por John Hitchcox e Philippe Starck. As imagens desta ficha são fotos reais do edifício entregue.",
+   "endereco": "Al. dos Jurupis · Moema",
    "entrega": "Pronto para morar",
-   "faixa": "252 a 269 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "faixa": "252 a 273 m²",
+   "plantas_tit": "três ou quatro suítes, hall privativo.",
    "assinaturas": [
     [
-     "Incorporação",
-     "Cyrela"
+     "Design de interiores",
+     "YOO"
     ],
     [
      "Arquitetura",
@@ -4732,76 +4890,74 @@
      "Benedito Abbud"
     ],
     [
-     "Decoração",
-     "YOO"
+     "Incorporação",
+     "Cyrela"
     ]
    ],
    "destaques": [
     [
-     "52",
-     "residências"
-    ],
-    [
-     "2",
-     "torres"
-    ],
-    [
-     "13",
-     "pavimentos"
-    ],
-    [
-     "269 m²",
+     "273 m²",
      "maior planta"
+    ],
+    [
+     "4",
+     "suítes"
+    ],
+    [
+     "4",
+     "vagas"
+    ],
+    [
+     "3",
+     "pavimentos de lazer"
     ]
    ],
    "plantas": [
     [
-     "4 dorm.",
+     "Tipo",
      "252 m²",
      "4 suítes",
+     "3 a 4 vagas"
+    ],
+    [
+     "Tipo · opção",
+     "269,5 m²",
+     "3 suítes, closet e cozinha ampliados",
+     "3 a 4 vagas"
+    ],
+    [
+     "Tipo",
+     "273 m²",
+     "4 suítes",
      "4 vagas"
-    ],
-    [
-     "4 dorm.",
-     "264 m²",
-     "4 suítes",
-     "3 vagas"
-    ],
-    [
-     "4 dorm.",
-     "269 m²",
-     "4 suítes",
-     "3 vagas"
     ]
    ],
    "lazer": [
-    "The blue bar",
-    "Sky lounge",
-    "Piscina",
-    "Gazebo",
-    "Deck molhado",
-    "Fitness",
+    "Piscina coberta com raia",
+    "Piscina descoberta",
+    "Blue Bar",
     "Spa",
     "Sauna",
-    "Kids place"
+    "Fitness e yoga",
+    "Quadra de tênis",
+    "Salão de festas",
+    "Espaço gourmet",
+    "Brinquedoteca",
+    "Hall privativo"
    ],
    "local": [
-    "Design de interiores by YOO",
-    "Jardim com irrigação automatizada nos apartamentos",
-    "Elevador social com controle de acesso"
+    "Moema Índios, perto do Shopping Ibirapuera",
+    "Caminho curto para o Parque Ibirapuera",
+    "Ruas arborizadas e silenciosas do miolo do bairro"
    ],
    "tecnica": [
     [
-     "Terreno",
-     "5.900 m²"
+     "Apartamento decorado",
+     "273 m², com tour 360°"
     ],
     [
-     "Unidades",
-     "52"
-    ],
-    [
-     "Entrega",
-     "Entregue em jan/2025"
+     "Imagens",
+     "Fotos reais do empreendimento entregue"
     ],
     [
      "Status",
@@ -4809,41 +4965,42 @@
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/JUR_02_Fachada_Frontal_EF3_ajustada_1.png",
+    "capa": "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2025-08/Cyrela_Moema_22mai2025-01_0.jpeg.webp",
     "par": [
      [
-      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-condominio-1.jpg",
-      "Áreas comuns"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2025-08/Cyrela_Moema_22mai2025-18_0.jpeg.webp",
+      "Lobby"
      ],
      [
-      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-apartamento-1.jpg",
-      "Residência"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2025-08/Cyrela_Moema_22mai2025-32_0.jpeg.webp",
+      "Blue Bar"
      ]
     ],
+    "voo": "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2025-08/Cyrela_Moema_22mai2025-21_0.jpeg.webp",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-condominio-2.jpg",
-      "Lazer"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2025-08/Cyrela_Moema_22mai2025-23_0.jpeg.webp",
+      "Piscina descoberta"
      ],
      [
-      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-condominio-3.jpg",
-      "Lazer"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2025-08/Cyrela_Moema_22mai2025-07_0.jpeg.webp",
+      "Sauna"
      ],
      [
-      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-condominio-4.jpg",
-      "Lazer"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2025-08/Cyrela_Moema_22mai2025-11_0.jpeg.webp",
+      "Fitness e yoga"
      ],
      [
-      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-condominio-5.jpg",
-      "Lazer"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2025-08/Cyrela_Moema_22mai2025-39_0.jpeg.webp",
+      "Blue Bar"
      ],
      [
-      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-condominio-6.jpg",
-      "Lazer"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2025-08/Cyrela_Moema_22mai2025-26_0.jpeg.webp",
+      "Brinquedoteca"
      ],
      [
-      "https://api.apto.vc/images/realties/3501/cyrela-moema-by-yoo-condominio-7.jpg",
-      "Lazer"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2025-08/Cyrela_Moema_22mai2025-44_0.jpeg.webp",
+      "Lobby"
      ]
     ]
    }
@@ -4851,7 +5008,7 @@
  },
  {
   "slug": "lis-moema",
-  "nome": "LIS Moema",
+  "nome": "LIS Moema · Île Saint-Louis",
   "bairro": "Moema",
   "bairro_slug": "moema",
   "status": "Em obras",
@@ -4865,99 +5022,102 @@
    "vagas": "2 e 3 Vagas"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/CTV_01_Fachada_T1e2_A_EF2_v2-1.png",
+  "img": "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2023-03/CTV_01_Fachada_T1e2_A_EF2_v2.png.webp",
   "categorias": [
    "alto-padrao"
   ],
   "ficha": {
-   "tagline": "Descubra um novo lar em Moema, onde sofisticação e natureza se encontram.",
-   "conceito": "3 torres com 114 residências em terreno de 6.157 m², na Alameda dos Arapanés, em Moema.",
-   "endereco": "Alameda dos Arapanés · Moema",
-   "entrega": "Previsão: nov/2026",
-   "faixa": "174 a 256 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "tagline": "Paris como referência, Moema como endereço, um terreno de mais de 6 mil m².",
+   "conceito": "O LIS entrou na nossa seleção pelo terreno: mais de 6 mil m² na Alameda dos Arapanés, algo cada vez mais raro no miolo de Moema. A Cyrela se inspirou na Île Saint-Louis, a ilha residencial de Paris, para criar um conjunto com galeria de entrada, wine lounge, quadra de tênis e piscina coberta. As plantas vão de 170 a 253 m², todas com hall privativo, e o projeto busca a certificação AQUA-HQE de construção sustentável.",
+   "endereco": "Al. dos Arapanés, 1335 · Moema",
+   "entrega": "Em obras",
+   "faixa": "170 a 253 m²",
+   "plantas_tit": "três ou quatro suítes, hall privativo.",
    "assinaturas": [
     [
      "Incorporação",
      "Cyrela"
+    ],
+    [
+     "Conceito",
+     "Île Saint-Louis, Paris"
+    ],
+    [
+     "Terreno",
+     "Mais de 6 mil m²"
+    ],
+    [
+     "Sustentabilidade",
+     "AQUA-HQE"
     ]
    ],
    "destaques": [
     [
-     "114",
-     "residências"
+     "6 mil m²",
+     "de terreno"
     ],
     [
-     "3",
-     "torres"
-    ],
-    [
-     "15",
-     "pavimentos"
-    ],
-    [
-     "256 m²",
+     "253 m²",
      "maior planta"
+    ],
+    [
+     "4",
+     "suítes"
+    ],
+    [
+     "Tênis",
+     "quadra no condomínio"
     ]
    ],
    "plantas": [
     [
-     "3 dorm.",
+     "Tipo",
      "170 m²",
      "3 suítes",
      "2 vagas"
     ],
     [
-     "3 dorm.",
-     "174 m²",
+     "Tipo · opção",
+     "180 m²",
      "3 suítes",
      "2 vagas"
     ],
     [
-     "3 dorm.",
-     "185 m²",
-     "3 suítes",
-     "2 vagas"
-    ],
-    [
-     "3 dorm.",
-     "213 m²",
+     "Tipo · opção",
+     "210 m²",
      "3 suítes",
      "3 vagas"
     ],
     [
-     "4 dorm.",
-     "256 m²",
+     "Tipo",
+     "253 m²",
      "4 suítes",
      "3 vagas"
     ]
    ],
    "lazer": [
-    "Piscina descoberta",
+    "The Entrance Gallery",
+    "Lobby",
+    "Quadra de tênis",
+    "Wine lounge",
     "Piscina coberta",
-    "Deck molhado",
-    "Salão de festas",
-    "Espaço gourmet",
-    "Bar",
-    "Solarium",
+    "Party lounge",
     "Fitness",
-    "Brinquedoteca"
+    "The Kids Place"
    ],
    "local": [
-    "Alameda dos Arapanés, Moema"
+    "Miolo de Moema, na Alameda dos Arapanés",
+    "Perto do Shopping Ibirapuera",
+    "Acesso rápido à Av. Ibirapuera e à Av. Rubem Berta"
    ],
    "tecnica": [
     [
      "Terreno",
-     "6.157 m²"
+     "Mais de 6.000 m²"
     ],
     [
-     "Unidades",
-     "114"
-    ],
-    [
-     "Entrega",
-     "Previsão: nov/2026"
+     "Imagens",
+     "Perspectivas ilustradas da incorporadora"
     ],
     [
      "Status",
@@ -4965,41 +5125,42 @@
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/CTV_01_Fachada_T1e2_A_EF2_v2-1.png",
+    "capa": "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2023-03/CTV_01_Fachada_T1e2_A_EF2_v2.png.webp",
     "par": [
      [
-      "https://api.apto.vc/images/realties/6208/lis-moema-condominio-1.jpg",
-      "Áreas comuns"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2023-03/CTV_02_Portaria_T1e2_EF.png.webp",
+      "The Entrance Gallery"
      ],
      [
-      "https://api.apto.vc/images/realties/6208/lis-moema-apartamento-1.jpg",
-      "Residência"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2023-03/CTV_11_Apto_250m_Living_T1e2_EF2.png.webp",
+      "Living · 250 m²"
      ]
     ],
+    "voo": "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2023-03/CTV_04_Quadra_Tenis_EF.png.webp",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/6208/lis-moema-condominio-2.jpg",
-      "Lazer"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2023-03/CTV_07_Piscina_Coberta_T1e2_EF2.png.webp",
+      "Piscina coberta"
      ],
      [
-      "https://api.apto.vc/images/realties/6208/lis-moema-condominio-3.jpg",
-      "Lazer"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2023-03/CTV_19_WineLounge_T1e2_EF_v2.png.webp",
+      "Wine lounge"
      ],
      [
-      "https://api.apto.vc/images/realties/6208/lis-moema-condominio-4.jpg",
-      "Lazer"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2023-03/CTV_05_Lobby_T1e2_A_EF_v2.png.webp",
+      "Lobby"
      ],
      [
-      "https://api.apto.vc/images/realties/6208/lis-moema-condominio-5.jpg",
-      "Lazer"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2023-03/CTV_06_Festas_T1e2_A_EF.png.webp",
+      "Party lounge"
      ],
      [
-      "https://api.apto.vc/images/realties/6208/lis-moema-condominio-6.jpg",
-      "Lazer"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2023-03/CTV_08_Fitness_3oPav_T1e2_EF_v2B.png.webp",
+      "Fitness"
      ],
      [
-      "https://api.apto.vc/images/realties/6208/lis-moema-condominio-7.jpg",
-      "Lazer"
+      "https://www.cyrela.com.br/sites/default/files/styles/webp/public/2023-03/CTV_09_Brinquedoteca_T1e2_EF.png.webp",
+      "Kids place"
      ]
     ]
    }
