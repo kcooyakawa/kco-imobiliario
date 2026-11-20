@@ -1478,27 +1478,23 @@
   ],
   "frase": "Descubra um conceito único de moradia em São Paulo, com design moderno e áreas exclusivas.",
   "resumo": {
-   "tipologias": "1 e 2 dormitórios",
-   "metragem": "27 a 69 m²",
-   "vagas": ""
+   "tipologias": "Studio, 1 e 2 dorms.",
+   "metragem": "27 a 43 m²",
+   "vagas": "Sem vaga"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/nhamb.jpg",
+  "img": "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-fachada.jpg",
   "categorias": [
    "apartamentos"
   ],
   "ficha": {
-   "tagline": "Descubra um conceito único de moradia em São Paulo, com design moderno e áreas exclusivas.",
-   "conceito": "Torre única com 285 residências em terreno de 1.579 m², na Alameda dos Nhambiquaras, em Moema.",
-   "endereco": "Alameda dos Nhambiquaras · Moema",
+   "tagline": "Prático, entregue e a cinco minutos a pé do Shopping Ibirapuera.",
+   "conceito": "Para quem compra para morar sozinho, para um filho que vai estudar ou para alugar, o Nex One Nhambiquaras é dos produtos compactos mais bem localizados de Moema Índios: 7 minutos a pé da estação Eucaliptos e 5 do Shopping Ibirapuera. Está entregue, com piscina, coworking, lavanderia e espaço pet, o que pesa muito na locação.",
+   "endereco": "Al. dos Nhambiquaras, 1.990 · Moema",
    "entrega": "Pronto para morar",
-   "faixa": "39 a 43 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "faixa": "27 a 43 m²",
+   "plantas_tit": "studio, 1 e 2 dormitórios.",
    "assinaturas": [
-    [
-     "Incorporação",
-     "One Innovation"
-    ],
     [
      "Arquitetura",
      "Marchi Arquitetura"
@@ -1510,129 +1506,111 @@
     [
      "Paisagismo",
      "Marcelo Vassalo"
+    ],
+    [
+     "Incorporação",
+     "One Innovation"
     ]
    ],
    "destaques": [
     [
-     "285",
-     "residências"
+     "7 min",
+     "a pé do metrô Eucaliptos"
     ],
     [
-     "1",
-     "torre"
-    ],
-    [
-     "15",
-     "pavimentos"
+     "5 min",
+     "a pé do Shopping Ibirapuera"
     ],
     [
      "43 m²",
      "maior planta"
+    ],
+    [
+     "Entregue",
+     "pronto para locar"
     ]
    ],
    "plantas": [
     [
-     "1 dorm.",
+     "Studio",
      "27 m²",
      "—",
      "Sem vaga"
     ],
     [
      "1 dorm.",
-     "28 m²",
+     "27 e 33 m²",
      "—",
      "Sem vaga"
     ],
     [
-     "2 dorm.",
-     "39 m²",
-     "—",
-     "Sem vaga"
-    ],
-    [
-     "2 dorm.",
-     "40 m²",
-     "—",
-     "Sem vaga"
-    ],
-    [
-     "2 dorm.",
-     "43 m²",
-     "—",
-     "Sem vaga"
-    ],
-    [
-     "2 dorm.",
-     "61 m²",
+     "2 dorms.",
+     "40 e 43 m²",
      "—",
      "Sem vaga"
     ]
    ],
    "lazer": [
-    "Piscina com solarium",
-    "Salão de festas gourmet",
-    "Fitness",
+    "Piscina",
     "Coworking",
+    "Fitness",
+    "Salão de festas",
+    "Churrasqueira",
     "Lavanderia",
+    "Espaço pet",
     "Espaço delivery"
    ],
    "local": [
-    "Alameda dos Nhambiquaras, Moema"
+    "7 min a pé da estação Eucaliptos",
+    "5 min a pé do Shopping Ibirapuera",
+    "Acesso rápido a Congonhas"
    ],
    "tecnica": [
     [
-     "Terreno",
-     "1.579 m²"
-    ],
-    [
-     "Unidades",
-     "285"
-    ],
-    [
-     "Entrega",
-     "Entregue em dez/2024"
+     "Perfil",
+     "Morar ou investir para locação"
     ],
     [
      "Status",
-     "Pronto para morar"
+     "Entregue"
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/nhamb.jpg",
+    "capa": "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-fachada.jpg",
     "par": [
      [
-      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-1.jpg",
-      "Áreas comuns"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-lobby.jpg",
+      "Lobby"
      ],
      [
-      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-2.jpg",
-      "Áreas comuns"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-acesso.jpg",
+      "Acesso"
      ]
     ],
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-2.jpg",
-      "Lazer"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-piscina.jpg",
+      "Piscina"
      ],
      [
-      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-3.jpg",
-      "Lazer"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-coworking.jpg",
+      "Coworking"
      ],
      [
-      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-4.jpg",
-      "Lazer"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-fitness.jpg",
+      "Fitness"
      ],
      [
-      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-5.jpg",
-      "Lazer"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-salao-festas.jpg",
+      "Salão de festas"
      ],
      [
-      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-6.jpg",
-      "Lazer"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-churrasqueira.jpg",
+      "Churrasqueira"
      ],
      [
-      "https://api.apto.vc/images/realties/4353/nex-one-nhambiquaras-condominio-7.jpg",
-      "Lazer"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-lavanderia.jpg",
+      "Lavanderia"
      ]
     ]
    }
@@ -1650,28 +1628,24 @@
   ],
   "frase": "Moradia inovadora e exclusiva para quem busca sofisticação e qualidade de vida.",
   "resumo": {
-   "tipologias": "Studio, 1 e 2 dormitórios",
-   "metragem": "29 e 47 m²",
-   "vagas": "1 Vaga"
+   "tipologias": "Studio, 1 e 2 dorms.",
+   "metragem": "25 a 55 m²",
+   "vagas": "Com vaga em algumas plantas"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/nex-one-juru.jpg",
+  "img": "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/FACHADA-7.jpg",
   "categorias": [
    "apartamentos",
    "studios"
   ],
   "ficha": {
-   "tagline": "Moradia inovadora e exclusiva para quem busca sofisticação e qualidade de vida.",
-   "conceito": "2 torres com 412 residências em terreno de 2.280 m², na Alameda dos Jurupis, em Moema.",
-   "endereco": "Alameda dos Jurupis · Moema",
+   "tagline": "A três minutos a pé do metrô, com floreiras em todos os terraços.",
+   "conceito": "O Nex One Jurupis tem o que mais valoriza um compacto: metrô na porta. São três minutos a pé até a estação Eucaliptos e três até o Shopping Ibirapuera. As duas torres foram entregues com floreiras nos terraços, spa com solário, coworking e um lazer completo. Algumas plantas têm vaga, o que é raro nessa metragem em Moema.",
+   "endereco": "Al. dos Jurupis, 1.821 · Moema",
    "entrega": "Pronto para morar",
-   "faixa": "30 a 39 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "faixa": "25 a 55 m²",
+   "plantas_tit": "studio, 1 e 2 dormitórios.",
    "assinaturas": [
-    [
-     "Incorporação",
-     "One Innovation"
-    ],
     [
      "Arquitetura",
      "Rodrigo Sobreiro Arquitetos"
@@ -1683,132 +1657,116 @@
     [
      "Paisagismo",
      "Marcelo Vassalo"
+    ],
+    [
+     "Incorporação",
+     "One Innovation"
     ]
    ],
    "destaques": [
     [
-     "412",
-     "residências"
+     "3 min",
+     "a pé do metrô Eucaliptos"
     ],
     [
      "2",
      "torres"
     ],
     [
-     "17",
-     "pavimentos"
+     "55 m²",
+     "maior planta"
     ],
     [
-     "39 m²",
-     "maior planta"
+     "Vaga",
+     "em algumas unidades"
     ]
    ],
    "plantas": [
     [
      "Studio",
-     "27 m²",
+     "25 a 45 m²",
      "—",
-     "Sem vaga"
-    ],
-    [
-     "Studio",
-     "28 m²",
-     "—",
-     "Sem vaga"
+     "Sob consulta"
     ],
     [
      "1 dorm.",
-     "30 m²",
+     "30 a 39 m²",
      "—",
-     "Sem vaga"
+     "Sob consulta"
     ],
     [
-     "2 dorm.",
-     "32 m²",
-     "1 suíte",
-     "Sem vaga"
-    ],
-    [
-     "1 dorm.",
-     "34 m²",
-     "1 suíte",
-     "Sem vaga"
-    ],
-    [
-     "1 dorm.",
-     "35 m²",
+     "2 dorms.",
+     "42 a 50 m²",
      "—",
-     "Sem vaga"
+     "Sob consulta"
     ]
    ],
    "lazer": [
-    "Coworking",
-    "Living space",
-    "Espaço gourmet",
+    "Spa e solário",
     "Fitness",
-    "Apoio funcional",
+    "Coworking",
+    "Salão de festas",
+    "Churrasqueira",
+    "Espaço pet",
     "Lavanderia",
-    "Pet place",
     "Bicicletário",
-    "Praça externa"
+    "Praça central"
    ],
    "local": [
-    "Alameda dos Jurupis, Moema"
+    "3 min a pé da estação Eucaliptos",
+    "3 min a pé do Shopping Ibirapuera",
+    "Acesso fácil a Congonhas e à Av. Rubem Berta"
    ],
    "tecnica": [
     [
-     "Terreno",
-     "2.280 m²"
+     "Torres",
+     "2"
     ],
     [
-     "Unidades",
-     "412"
-    ],
-    [
-     "Entrega",
-     "Entregue em jul/2026"
+     "Perfil",
+     "Morar ou investir para locação"
     ],
     [
      "Status",
-     "Pronto para morar"
+     "Entregue"
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/nex-one-juru.jpg",
+    "capa": "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/FACHADA-7.jpg",
     "par": [
      [
-      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-1.jpg",
-      "Áreas comuns"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/EMBASAMENTO-4-1.jpg",
+      "Embasamento"
      ],
      [
-      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-2.jpg",
-      "Áreas comuns"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/FACHADA-6-4.jpg",
+      "Fachada"
      ]
     ],
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-2.jpg",
-      "Lazer"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/SPA-E-SOLARIO-1.jpg-2.jpeg",
+      "Spa e solário"
      ],
      [
-      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-3.jpg",
-      "Lazer"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/ACADEMIA-1-1-1.jpg",
+      "Fitness"
      ],
      [
-      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-4.jpg",
-      "Lazer"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/COWORKING-2-2-1.jpg",
+      "Coworking"
      ],
      [
-      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-5.jpg",
-      "Lazer"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/SALAO-DE-FESTAS-3-1.jpg",
+      "Salão de festas"
      ],
      [
-      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-6.jpg",
-      "Lazer"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/CHURRASQUEIRA-2.jpg3_.jpeg",
+      "Churrasqueira"
      ],
      [
-      "https://api.apto.vc/images/realties/6639/nex-one-jurupis-condominio-7.jpg",
-      "Lazer"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/ESPACO-PET-1.jpg-2-.jpeg",
+      "Espaço pet"
      ]
     ]
    }
@@ -2817,22 +2775,22 @@
   ],
   "frase": "Descubra a experiência de morar em Moema: exclusividade, conforto e um toque de futuro.",
   "resumo": {
-   "tipologias": "3 e 4 Suítes",
-   "metragem": "160 a 292 m²",
-   "vagas": "2 e 3 Vagas + depósito"
+   "tipologias": "3 e 4 suítes, coberturas duplex",
+   "metragem": "160 a 345 m²",
+   "vagas": "2 e 3 vagas + depósito"
   },
   "torres": [],
-  "img": "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-1.jpg",
+  "img": "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-fachada.jpg",
   "categorias": [
    "alto-padrao"
   ],
   "ficha": {
-   "tagline": "24 residências, selo AQUA e três assinaturas.",
-   "conceito": "Arquitetura de Itamar Berezin, interiores de Fernanda Marques e paisagismo de Marcelo Vassalo num terreno de 1.700 m². Selo AQUA-HQE de construção sustentável.",
-   "endereco": "Av. Pavão, 464 · Moema",
+   "tagline": "Torre baixa, poucas unidades e atmosfera de casa em Moema Pássaros.",
+   "conceito": "O Atmos é a escolha para quem não quer morar em torre alta. São apenas oito andares e 24 residências, o que dá ao prédio uma escala rara no bairro, mais próxima de uma casa do que de um condomínio. Três nomes de peso assinam o projeto: Itamar Berezin na arquitetura, Fernanda Marques nos interiores e Marcelo Vassalo no paisagismo. O edifício tem certificação AQUA-HQE e já está entregue, com depósito privativo em todas as unidades.",
+   "endereco": "Av. Pavão, 464 · esquina com R. Inhambu · Moema",
    "entrega": "Pronto para morar",
    "faixa": "160 a 345 m²",
-   "plantas_tit": "de 160 m² a coberturas de 345 m².",
+   "plantas_tit": "três ou quatro suítes, coberturas duplex.",
    "assinaturas": [
     [
      "Arquitetura",
@@ -2862,11 +2820,11 @@
     ],
     [
      "345 m²",
-     "cobertura"
+     "cobertura duplex"
     ],
     [
      "AQUA",
-     "selo sustentável"
+     "certificação sustentável"
     ]
    ],
    "plantas": [
@@ -2874,31 +2832,34 @@
      "Tipo",
      "160 m²",
      "3 suítes",
-     "2 vagas"
+     "2 vagas + depósito"
     ],
     [
-     "Cobertura",
-     "305 m²",
-     "3 suítes",
-     "3 vagas"
-    ],
-    [
-     "Cobertura",
-     "345 m²",
+     "Tipo",
+     "189 m²",
      "4 suítes",
-     "3 vagas"
+     "3 vagas + depósito"
+    ],
+    [
+     "Cobertura duplex",
+     "305 a 345 m²",
+     "3 a 4 suítes",
+     "3 vagas + depósito"
     ]
    ],
    "lazer": [
     "Piscina",
-    "Fitness",
+    "Spa",
+    "Academia",
     "Salão de festas",
     "Espaço gourmet",
-    "Hall privativo"
+    "Lobby",
+    "Playground"
    ],
    "local": [
-    "Esquina Av. Pavão com Rua Inhambu",
-    "Moema Pássaros"
+    "Esquina da Av. Pavão com a Rua Inhambu, Moema Pássaros",
+    "Ruas residenciais e arborizadas",
+    "Perto do comércio da Av. Ibirapuera"
    ],
    "tecnica": [
     [
@@ -2907,45 +2868,50 @@
     ],
     [
      "Certificação",
-     "AQUA-HQE"
+     "AQUA-HQE Edifícios Residenciais"
     ],
     [
      "Status",
-     "Pronto para morar"
+     "Entregue"
     ]
    ],
    "img": {
-    "capa": "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-1.jpg",
+    "capa": "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-fachada.jpg",
     "par": [
      [
-      "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-2.jpg",
-      "Fachada"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-lobby-2.jpg",
+      "Lobby"
      ],
      [
-      "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-3.jpg",
-      "Interiores"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-portaria-2.jpg",
+      "Portaria"
      ]
     ],
+    "voo": "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-piscina.jpg",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-4.jpg",
-      "Áreas comuns"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-piscina-2.jpg",
+      "Piscina"
      ],
      [
-      "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-5.jpg",
-      "Áreas comuns"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-spa.jpg",
+      "Spa"
      ],
      [
-      "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-6.jpg",
-      "Áreas comuns"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-academia.jpg",
+      "Academia"
      ],
      [
-      "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-7.jpg",
-      "Áreas comuns"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-festas.jpg",
+      "Salão de festas"
      ],
      [
-      "https://api.apto.vc/images/realties/6459/atmos-moema-condominio-8.jpg",
-      "Áreas comuns"
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-gourmet.jpg",
+      "Espaço gourmet"
+     ],
+     [
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-fachada-2.jpg",
+      "Fachada"
      ]
     ]
    }
