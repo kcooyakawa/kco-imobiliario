@@ -549,6 +549,7 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .cafe-f .two label{margin-top:0}
 @media(max-width:900px){.cafe-f{justify-self:stretch;max-width:none;padding:22px!important}.cafe{padding:64px 0}}
 .terr video,.par-v video{will-change:transform}
+.pf-bar{scrollbar-width:none}.pf-bar::-webkit-scrollbar{display:none}
 """.replace('__F__', FONTS)
 
 ICON = {
