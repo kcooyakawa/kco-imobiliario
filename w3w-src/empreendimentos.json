@@ -1007,157 +1007,139 @@
   ],
   "frase": "Viva o conforto e a elegância no seu novo lar. Sua vida, seu estilo, sua felicidade.",
   "resumo": {
-   "tipologias": "Studios",
-   "metragem": "20 a 28 m²",
-   "vagas": ""
+   "tipologias": "Studios e gardens",
+   "metragem": "20 a 43 m²",
+   "vagas": "Sem vaga"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/ON-IMARES-10.jpg",
+  "img": "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/VITACON_IMARES_2.0_Fachada_v03.jpg",
   "categorias": [
    "studios"
   ],
   "ficha": {
-   "tagline": "Viva o conforto e a elegância no seu novo lar. Sua vida, seu estilo, sua felicidade.",
-   "conceito": "Torre única com 246 residências em terreno de 1.502 m², na Avenida dos Imarés, em Moema.",
-   "endereco": "Avenida dos Imarés · Moema",
+   "tagline": "Studios modulares para investir em Moema, com lazer funcional.",
+   "conceito": "O ON Imarés é um produto de renda: studios de 20 a 34 m² e gardens de até 43 m², todos já entregues com fechadura inteligente, ar-condicionado e aquecimento central. Ele atende bem o investidor que quer locação de curta ou média temporada em Moema Índios, perto do Shopping Ibirapuera e de Congonhas. Há studios NR, que permitem hospedagem.",
+   "endereco": "Av. dos Imarés, 318 · Moema",
    "entrega": "Pronto para morar",
-   "faixa": "20 a 42 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "faixa": "20 a 43 m²",
+   "plantas_tit": "studios, studios NR e gardens.",
    "assinaturas": [
+    [
+     "Arquitetura",
+     "ACIA Arquitetura"
+    ],
+    [
+     "Paisagismo e interiores",
+     "GAAZ Arquitetos"
+    ],
     [
      "Incorporação",
      "Vitacon"
     ],
     [
-     "Arquitetura",
-     "Acia Arquitetura"
-    ],
-    [
-     "Paisagismo e Decoração",
-     "Gaaz Arquitetos Associados"
+     "Perfil",
+     "Investimento e locação"
     ]
    ],
    "destaques": [
     [
-     "246",
-     "residências"
+     "20 m²",
+     "menor studio"
     ],
     [
-     "1",
-     "torre"
+     "43 m²",
+     "maior garden"
     ],
     [
-     "17",
-     "pavimentos"
+     "NR",
+     "studios para hospedagem"
     ],
     [
-     "42 m²",
-     "maior planta"
+     "Entregue",
+     "pronto para locar"
     ]
    ],
    "plantas": [
     [
      "Studio",
-     "20 m²",
+     "20 a 29 m²",
      "—",
      "Sem vaga"
     ],
     [
-     "Studio",
-     "22 m²",
+     "Studio NR",
+     "24 a 31 m²",
      "—",
      "Sem vaga"
     ],
     [
-     "Studio",
-     "24 m²",
-     "—",
-     "Sem vaga"
-    ],
-    [
-     "Studio",
-     "25 m²",
-     "—",
-     "Sem vaga"
-    ],
-    [
-     "Studio",
-     "27 m²",
-     "—",
-     "Sem vaga"
-    ],
-    [
-     "Studio",
-     "28 m²",
+     "Garden",
+     "24 a 43 m²",
      "—",
      "Sem vaga"
     ]
    ],
    "lazer": [
     "Coworking",
-    "Bicicletário",
+    "Lobby",
+    "Fresh up room",
     "Fitness",
-    "Lavanderia",
-    "Cozinha compartilhada",
-    "Salão de festas"
+    "Cokitchen",
+    "Laundry",
+    "Pet place",
+    "Bicicletário"
    ],
    "local": [
-    "Avenida dos Imarés, Moema"
+    "Moema Índios, perto do Shopping Ibirapuera",
+    "Acesso rápido a Congonhas",
+    "Metrô Eucaliptos nas proximidades"
    ],
    "tecnica": [
     [
-     "Terreno",
-     "1.502 m²"
-    ],
-    [
      "Unidades",
-     "246"
-    ],
-    [
-     "Entrega",
-     "Entregue em dez/2022"
+     "Fechadura inteligente, ar-condicionado, aquecimento central"
     ],
     [
      "Status",
-     "Pronto para morar"
+     "Pronto"
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/ON-IMARES-10.jpg",
+    "capa": "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/VITACON_IMARES_2.0_Fachada_v03.jpg",
     "par": [
      [
-      "https://api.apto.vc/images/realties/1966/on-imares-condominio-1.jpg",
-      "Áreas comuns"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/VITACON_IMARES_1.2_lobby_v03.jpg",
+      "Lobby"
      ],
      [
-      "https://api.apto.vc/images/realties/1966/on-imares-apartamento-1.jpg",
-      "Residência"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/ON-IMARES-8.jpg",
+      "Studio"
      ]
     ],
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/1966/on-imares-condominio-2.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/VITCON_IMARES_1.5_Coworking_v02.jpg",
+      "Coworking"
      ],
      [
-      "https://api.apto.vc/images/realties/1966/on-imares-condominio-3.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/VITACON_IMARES_1.9_Academia_V03.jpg",
+      "Fitness"
      ],
      [
-      "https://api.apto.vc/images/realties/1966/on-imares-condominio-4.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/VITACON_IMARES_1.7_Cokitchen_v03.jpg",
+      "Cokitchen"
      ],
      [
-      "https://api.apto.vc/images/realties/1966/on-imares-condominio-5.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/VITACON_IMARES_1.6_Lavanderia_V03.jpg",
+      "Laundry"
      ],
      [
-      "https://api.apto.vc/images/realties/1966/on-imares-condominio-6.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/VITACON_IMARES_backyard_v02.jpg",
+      "Backyard"
      ],
      [
-      "https://api.apto.vc/images/realties/1966/on-imares-condominio-7.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/ON-IMARES-10.jpg",
+      "Fachada"
      ]
     ]
    }
@@ -1175,117 +1157,131 @@
   "frase": "Bem-vindo ao seu novo lar de conforto e elegância. Viva a experiência completa.",
   "resumo": {
    "tipologias": "Studios",
-   "metragem": "24 e 29 m²",
-   "vagas": ""
+   "metragem": "20 a 34 m²",
+   "vagas": "Sem vaga"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/01-R00.jpg",
+  "img": "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/FACHADA-ON-MARACATINS.png",
   "categorias": [
    "studios"
   ],
   "ficha": {
-   "tagline": "Bem-vindo ao seu novo lar de conforto e elegância. Viva a experiência completa.",
-   "conceito": "Projeto, na Alameda dos Maracatins, em Moema.",
-   "endereco": "Alameda dos Maracatins · Moema",
+   "tagline": "Studios by Housi a cinco minutos a pé do metrô Moema.",
+   "conceito": "O ON Maracatins é um dos poucos compactos de Moema com interiores e operação Housi, o que facilita muito a locação. Está a cinco minutos a pé da estação Moema, tem sky bar, coworking e grab & go, e já está entregue: as imagens desta ficha são fotos reais do prédio. Há unidades NR, HIS-2 e R2V, então vale conversar com a gente para entender qual se encaixa no seu perfil.",
+   "endereco": "Al. dos Maracatins, 1424 · Moema",
    "entrega": "Pronto para morar",
-   "faixa": "24 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "faixa": "20 a 34 m²",
+   "plantas_tit": "studios NR, HIS-2 e R2V.",
    "assinaturas": [
+    [
+     "Arquitetura",
+     "IDE"
+    ],
+    [
+     "Interiores",
+     "Housi"
+    ],
     [
      "Incorporação",
      "Vitacon"
+    ],
+    [
+     "Perfil",
+     "Investimento e locação"
     ]
    ],
    "destaques": [
     [
-     "24 m²",
-     "maior planta"
+     "5 min",
+     "a pé do metrô Moema"
+    ],
+    [
+     "Housi",
+     "interiores e operação"
+    ],
+    [
+     "Sky bar",
+     "no topo"
+    ],
+    [
+     "Fotos",
+     "reais do prédio"
     ]
    ],
    "plantas": [
     [
      "Studio",
-     "24 m²",
-     "—",
-     "Sem vaga"
-    ],
-    [
-     "Studio",
-     "26 m²",
-     "—",
-     "Sem vaga"
-    ],
-    [
-     "Studio",
-     "29 m²",
-     "—",
-     "Sem vaga"
-    ],
-    [
-     "Studio",
-     "30 m²",
+     "20 a 34 m²",
      "—",
      "Sem vaga"
     ]
    ],
    "lazer": [
-    "Housi art",
-    "Housi market",
+    "Sky bar",
     "Coworking",
-    "Housi bar",
-    "Tool sharing",
-    "Bike sharing",
-    "Fitness"
+    "Lobby",
+    "Fresh up room",
+    "Fitness",
+    "Laundry",
+    "Grab & go",
+    "Pet place"
    ],
    "local": [
-    "Alameda dos Maracatins, Moema"
+    "5 min a pé da estação Moema",
+    "Perto do Parque Ibirapuera e de Congonhas",
+    "Comércio da Av. Ibirapuera"
    ],
    "tecnica": [
     [
-     "Entrega",
-     "Entregue em jul/2024"
+     "Tipologias",
+     "NR, HIS-2 e R2V"
+    ],
+    [
+     "Unidades",
+     "Fechadura inteligente, ar-condicionado"
     ],
     [
      "Status",
-     "Pronto para morar"
+     "Pronto"
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/01-R00.jpg",
+    "capa": "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/FACHADA-ON-MARACATINS.png",
     "par": [
      [
-      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-1.jpg",
-      "Áreas comuns"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/770A9363-HDR.jpg",
+      "Lobby lounge"
      ],
      [
-      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-2.jpg",
-      "Áreas comuns"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/LOUNGE-COWORKING_770A9355.jpg",
+      "Lounge e coworking"
      ]
     ],
+    "voo": "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/DJI_0076.jpg",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-2.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/770A9345-HDR.jpg",
+      "Coworking"
      ],
      [
-      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-3.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/770A9350-HDR.jpg",
+      "Fitness"
      ],
      [
-      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-4.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/770A9321-HDR.jpg",
+      "Bar"
      ],
      [
-      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-5.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/770A9368-HDR.jpg",
+      "Grab & go"
      ],
      [
-      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-6.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/0M7A3220.jpg",
+      "Fachada"
      ],
      [
-      "https://api.apto.vc/images/realties/3438/on-maracatins-condominio-7.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/DJI_0078.jpg",
+      "Vista aérea"
      ]
     ]
    }
@@ -1303,57 +1299,57 @@
   ],
   "frase": "Charme, modernidade conforto, segurança e lazer em um só lugar.",
   "resumo": {
-   "tipologias": "Studios e 3 dormitórios",
-   "metragem": "26 a 107 m²",
-   "vagas": "2 Vagas"
+   "tipologias": "Studios, duplex, 2 e 3 dorms.",
+   "metragem": "20 a 109 m²",
+   "vagas": "Até 2 vagas"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/DJI_1046.jpg",
+  "img": "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/DJI_1046.jpg",
   "categorias": [
    "apartamentos",
    "studios"
   ],
   "ficha": {
-   "tagline": "Charme, modernidade conforto, segurança e lazer em um só lugar.",
-   "conceito": "Torre única com 384 residências em terreno de 3.880 m², na Alameda dos Jurupis, em Moema.",
-   "endereco": "Alameda dos Jurupis · Moema",
+   "tagline": "Residencial, studios, gastronomia e hotel num só endereço de Moema.",
+   "conceito": "O ON Jurupis é um complexo de uso misto que reúne apartamentos residenciais de 2 e 3 dormitórios, studios, complexo gastronômico e hotel, a poucos passos da estação Moema. Para quem quer morar, há plantas de até 109 m² com gardens; para quem quer investir, studios de 20 a 26 m² num endereço com fluxo próprio. Está pronto, e as imagens desta ficha são fotos reais.",
+   "endereco": "Al. dos Jurupis, 700 · Moema",
    "entrega": "Pronto para morar",
-   "faixa": "26 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "faixa": "20 a 109 m²",
+   "plantas_tit": "studios, duplex, 2 e 3 dormitórios e gardens.",
    "assinaturas": [
     [
-     "Incorporação",
-     "Vitacon"
-    ],
-    [
      "Arquitetura",
-     "Agres Arquitetura, Ide Studio"
-    ],
-    [
-     "Decoração",
-     "Consuelo Jorge"
+     "Agres e Ide Studio"
     ],
     [
      "Paisagismo",
      "Beatriz Quinelato"
+    ],
+    [
+     "Interiores",
+     "Consuelo Jorge"
+    ],
+    [
+     "Incorporação",
+     "Vitacon"
     ]
    ],
    "destaques": [
     [
-     "384",
-     "residências"
+     "Mixed use",
+     "residencial, studios e hotel"
     ],
     [
-     "1",
-     "torre"
-    ],
-    [
-     "27",
-     "pavimentos"
-    ],
-    [
-     "26 m²",
+     "109 m²",
      "maior planta"
+    ],
+    [
+     "Garden",
+     "em algumas plantas"
+    ],
+    [
+     "Fotos",
+     "reais do prédio"
     ]
    ],
    "plantas": [
@@ -1364,104 +1360,102 @@
      "Sem vaga"
     ],
     [
-     "1 dorm.",
-     "26 m²",
+     "Studio garden",
+     "32 m²",
      "—",
      "Sem vaga"
     ],
     [
-     "2 dorm.",
+     "2 dorms.",
      "60 m²",
      "1 suíte",
      "1 vaga"
     ],
     [
-     "3 dorm.",
+     "2 dorms.",
      "85 m²",
      "1 suíte",
      "2 vagas"
     ],
     [
-     "3 dorm.",
-     "86 m²",
+     "2 dorms. garden",
+     "85 m²",
      "1 suíte",
-     "1 vaga"
+     "2 vagas"
     ],
     [
-     "3 dorm.",
-     "90 m²",
+     "3 dorms. garden",
+     "Até 109 m²",
      "1 suíte",
      "2 vagas"
     ]
    ],
    "lazer": [
     "Piscina",
-    "Deck",
-    "Pet play",
+    "Terraço",
+    "Coworking",
+    "Fitness",
+    "Cokitchen",
+    "Grab & go",
     "Pet place",
-    "Brinquedoteca",
-    "Playground",
-    "Churrasqueira",
-    "On party",
-    "Mega lounge"
+    "Bicicletário"
    ],
    "local": [
-    "Alameda dos Jurupis, Moema"
+    "Poucos passos da estação Moema",
+    "Complexo gastronômico no próprio endereço",
+    "Ruas arborizadas do miolo de Moema"
    ],
    "tecnica": [
     [
-     "Terreno",
-     "3.880 m²"
+     "Uso",
+     "Misto: residencial, studios, gastronomia e hotel"
     ],
     [
      "Unidades",
-     "384"
-    ],
-    [
-     "Entrega",
-     "Entregue em dez/2024"
+     "Fechadura inteligente, ar-condicionado"
     ],
     [
      "Status",
-     "Pronto para morar"
+     "Pronto"
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/12/DJI_1046.jpg",
+    "capa": "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/DJI_1046.jpg",
     "par": [
      [
-      "https://api.apto.vc/images/realties/2937/on-jurupis-condominio-1.jpg",
-      "Áreas comuns"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/MG_9835-HDR.jpg",
+      "Lobby"
      ],
      [
-      "https://api.apto.vc/images/realties/2937/on-jurupis-apartamento-1.jpg",
-      "Residência"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/MG_9887-HDR.jpg",
+      "Lounge"
      ]
     ],
+    "voo": "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/DJI_1118.jpg",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/2937/on-jurupis-condominio-2.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/MG_9874-HDR.jpg",
+      "Terraço"
      ],
      [
-      "https://api.apto.vc/images/realties/2937/on-jurupis-condominio-3.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/MG_9900-HDR.jpg",
+      "Fitness"
      ],
      [
-      "https://api.apto.vc/images/realties/2937/on-jurupis-condominio-4.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/MG_9855-HDR.jpg",
+      "Cokitchen"
      ],
      [
-      "https://api.apto.vc/images/realties/2937/on-jurupis-condominio-5.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/MG_9927-HDR.jpg",
+      "Laundry"
      ],
      [
-      "https://api.apto.vc/images/realties/2937/on-jurupis-condominio-6.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/MG_9890-HDR.jpg",
+      "Pet place"
      ],
      [
-      "https://api.apto.vc/images/realties/2937/on-jurupis-condominio-7.jpg",
-      "Lazer"
+      "https://sitestorage2023.blob.core.windows.net/site-wordpress/2023/03/MG_9877-HDR.jpg",
+      "Playground"
      ]
     ]
    }
