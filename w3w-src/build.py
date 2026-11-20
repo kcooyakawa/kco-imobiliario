@@ -697,7 +697,7 @@ def card(e):
     if r['metragem']: lis += f'<li>{ICON["met"]}{esc(r["metragem"])}</li>'
     if r['vagas']: lis += f'<li>{ICON["vag"]}{esc(r["vagas"])}</li>'
     return f'''<a class="card" href="{u('empreendimentos/'+e['slug'])}" data-tipos="{' '.join(e['tipos'])}" data-status="{e['status']}">
-<div class="ph"><img src="{e['img']}" alt="Fachada do {esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async"><span class="tag st">{selo(e)}</span><div class="tags-b">{tags}</div></div>
+<div class="ph"><img src="{th(e['img'])}" alt="Fachada do {esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async"><span class="tag st">{selo(e)}</span><div class="tags-b">{tags}</div></div>
 <div class="bd"><span class="eyebrow">{esc(e['bairro'])} · SP</span><h3>{esc(e['nome'])}</h3><ul>{lis}</ul><span class="btn">Ver empreendimento</span></div></a>'''
 
 def band():
@@ -718,13 +718,21 @@ ORG = {"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "W3
 VID = 'https://w3wlp.netlify.app/v'
 CATS = [('', 'Todos'), ('studios', 'Studios'), ('apartamentos', 'Apartamentos'), ('alto-padrao', 'Alto padrão')]
 
+def th(x):
+    """versão leve (760px) para cards e miniaturas"""
+    if not x: return x
+    for k in ('/w3w-img/', '/vp-cotovia/img/'):
+        if k in x:
+            a, b = x.rsplit('/', 1); return a + '/t/' + b
+    return x
+
 def strip(e):
     f = e.get('ficha') or {}
     im = (f.get('img') or {})
     xs = [x[0] for x in (im.get('par') or [])] + [x[0] for x in (im.get('lazer') or [])]
     xs = [x for x in xs if x and x != e['img']][:3]
     if not xs: return ''
-    return '<span class="sw">' + ''.join(f'<img src="{x}" alt="" loading="lazy" decoding="async">' for x in xs) + '</span><span class="sw-d">' + '<i></i>'*(len(xs)+1) + '</span>'
+    return '<span class="sw">' + ''.join(f'<img src="{th(x)}" alt="" loading="lazy" decoding="async">' for x in xs) + '</span><span class="sw-d">' + '<i></i>'*(len(xs)+1) + '</span>'
 
 def qidx(e):
     import unicodedata
@@ -741,7 +749,7 @@ def score(e):
 def gcard(e, i):
     r = e['resumo']
     return f"""<a class="g" href="{u('empreendimentos/'+e['slug'])}" data-q="{qidx(e)}" data-slug="{e['slug']}" data-cat="{' '.join(e['categorias'])}" data-b="{e['bairro_slug']}" data-st="{e['status']}">
-<div class="ph"><span class="pf-st st-{e['status'].split()[0].lower().replace('ç','c')}">{selo(e)}</span><span class="pf-ov"><em>{esc(e['nome'])}</em><small>Ver ficha →</small></span><img src="{e['img']}" alt="{esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async">{strip(e)}</div>
+<div class="ph"><span class="pf-st st-{e['status'].split()[0].lower().replace('ç','c')}">{selo(e)}</span><span class="pf-ov"><em>{esc(e['nome'])}</em><small>Ver ficha →</small></span><img src="{th(e['img'])}" alt="{esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async">{strip(e)}</div>
 <div class="gi"><span class="n" hidden>{i:02d}</span><h3>{esc(e['nome'])}</h3><p>{esc(e['bairro'])} · {esc(r['metragem'])}</p></div></a>"""
 
 STATUS = [('Lançamento', 'Lançamentos', 'Antes de todo mundo.'), ('Em obras', 'Em obras', 'Garanta na planta.'), ('Pronto', 'Prontos para morar', 'Chaves na mão.')]
@@ -791,7 +799,7 @@ def rich(e, h='h2'):
 def feat():
     fs = [e for e in E if e['bairro_slug']=='moema' and e['status']=='Lançamento' and e.get('ficha') and 'alto-padrao' in e['categorias']][:3]
     if len(fs) < 3: fs += [e for e in EM if e.get('ficha') and e not in fs and 'alto-padrao' in e['categorias']][:3-len(fs)]
-    cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e["slug"])}" data-slug="{e["slug"]}"><div class="ph"><img src="{e.get("vitrine") or e["img"]}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="vt-t"><small>{e["status"]} · {esc(e["bairro"])}</small><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
+    cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e["slug"])}" data-slug="{e["slug"]}"><div class="ph"><img src="{th(e.get("vitrine") or e["img"])}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="vt-t"><small>{e["status"]} · {esc(e["bairro"])}</small><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
     return f'<div class="pf-feat">{cards}</div>'
 
 def build_home():
