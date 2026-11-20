@@ -523,7 +523,7 @@
    "vagas": "4 Vagas"
   },
   "torres": [],
-  "img": "https://www.edificiocopa.com.br/images/fachada.webp",
+  "img": "https://www.edificiocopa.com.br/images/aerea_foto_insercao_2_mirror-copy.webp",
   "categorias": [
    "alto-padrao"
   ],
@@ -620,22 +620,22 @@
     ]
    ],
    "img": {
-    "capa": "https://www.edificiocopa.com.br/images/fachada.webp",
+    "capa": "https://www.edificiocopa.com.br/images/aerea_foto_insercao_2_mirror-copy.webp",
     "par": [
      [
       "https://www.edificiocopa.com.br/images/lobby_r2_dia.effectsResult-copy.webp",
       "Lobby"
      ],
      [
-      "https://www.edificiocopa.com.br/images/bosque_elev_noite.webp",
-      "Bosque privativo"
-     ]
-    ],
-    "voo": "https://www.edificiocopa.com.br/images/aerea_foto_insercao_2_mirror-copy.webp",
-    "lazer": [
-     [
       "https://www.edificiocopa.com.br/images/piscina_3_dia_r4.webp",
       "Piscina com raia de 25 m"
+     ]
+    ],
+    "voo": "https://www.edificiocopa.com.br/images/bosque_elev_noite.webp",
+    "lazer": [
+     [
+      "https://www.edificiocopa.com.br/images/lobby_r2_dia.effectsResult-copy.webp",
+      "Lobby"
      ],
      [
       "https://www.edificiocopa.com.br/images/spa_r2.effectsResult-copy.webp",
