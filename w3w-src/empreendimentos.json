@@ -5595,26 +5595,22 @@
   "frase": "Descubra tecnologias que vão revolucionar seu dia a dia. Prepare-se para uma experiência única.",
   "resumo": {
    "tipologias": "Studios",
-   "metragem": "26 m²",
-   "vagas": ""
+   "metragem": "26 e 27 m²",
+   "vagas": "Sem vaga"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada-2.jpg",
+  "img": "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-3-1.jpg",
   "categorias": [
    "studios"
   ],
   "ficha": {
-   "tagline": "Descubra tecnologias que vão revolucionar seu dia a dia. Prepare-se para uma experiência única.",
-   "conceito": "Torre única com 120 residências, na Avenida Cotovia, em Moema.",
-   "endereco": "Avenida Cotovia · Moema",
-   "entrega": "Previsão: dez/2027",
+   "tagline": "Studio nórdico a 150 metros da estação Eucaliptos.",
+   "conceito": "O NDK é um dos studios mais bem localizados de Moema para quem compra para alugar: fica a 150 metros da estação Eucaliptos. A AAM apostou numa fachada de inspiração nórdica, que se destaca no entorno, e num rooftop com piscina, spa, fitness e solarium. Os studios têm 27 m², e o térreo tem coworking integrado ao garden. A obra está praticamente concluída.",
+   "endereco": "Av. Cotovia · Moema",
+   "entrega": "Obra em fase final",
    "faixa": "26 e 27 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "plantas_tit": "studio de 27 m².",
    "assinaturas": [
-    [
-     "Realização",
-     "AAM Incorporadora"
-    ],
     [
      "Arquitetura",
      "Spol Architects"
@@ -5626,97 +5622,103 @@
     [
      "Paisagismo",
      "Soma Arquitetos"
+    ],
+    [
+     "Incorporação",
+     "AAM"
     ]
    ],
    "destaques": [
     [
-     "120",
-     "residências"
-    ],
-    [
-     "1",
-     "torre"
-    ],
-    [
-     "24",
-     "pavimentos"
+     "150 m",
+     "da estação Eucaliptos"
     ],
     [
      "27 m²",
-     "maior planta"
+     "studio"
+    ],
+    [
+     "Rooftop",
+     "com piscina e spa"
+    ],
+    [
+     "Coworking",
+     "com garden"
     ]
    ],
    "plantas": [
     [
      "Studio",
-     "26 m²",
-     "—",
-     "Sem vaga"
-    ],
-    [
-     "Studio",
-     "27 m²",
+     "26 e 27 m²",
      "—",
      "Sem vaga"
     ]
    ],
    "lazer": [
-    "Piscina na cobertura",
-    "Coworking",
-    "Fitness",
-    "Espaço delivery",
+    "Piscina e spa no rooftop",
+    "Fitness no rooftop",
+    "Solarium",
+    "Coworking com garden",
     "Sala de reunião",
-    "Lavanderia coletiva"
+    "Lavanderia coletiva",
+    "Sala de delivery"
    ],
    "local": [
-    "Avenida Cotovia, Moema"
+    "150 m da estação Eucaliptos",
+    "Perto do Shopping Ibirapuera",
+    "Av. Cotovia, Moema"
    ],
    "tecnica": [
     [
-     "Unidades",
-     "120"
+     "Segurança",
+     "Guarita com porta e vidros blindados"
     ],
     [
-     "Entrega",
-     "Previsão: dez/2027"
+     "Gerador",
+     "Áreas comuns e elevadores"
     ],
     [
      "Status",
-     "Em obras"
+     "Obra em fase final"
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada-2.jpg",
+    "capa": "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-3-1.jpg",
     "par": [
      [
-      "https://api.apto.vc/images/realties/7190/ndk-studios-moema-condominio-1.jpg",
-      "Áreas comuns"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam-ndkadrianoescanhuela-7-2.jpg",
+      "Acesso"
      ],
      [
-      "https://api.apto.vc/images/realties/7190/ndk-studios-moema-apartamento-1.jpg",
-      "Residência"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-21.jpg",
+      "Coworking"
      ]
     ],
+    "voo": "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-12.jpg",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/7190/ndk-studios-moema-condominio-2.jpg",
-      "Lazer"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-8.jpg",
+      "Piscina na cobertura"
      ],
      [
-      "https://api.apto.vc/images/realties/7190/ndk-studios-moema-condominio-3.jpg",
-      "Lazer"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-16.jpg",
+      "Piscina na cobertura"
      ],
      [
-      "https://api.apto.vc/images/realties/7190/ndk-studios-moema-condominio-4.jpg",
-      "Lazer"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-22.jpg",
+      "Coworking"
      ],
      [
-      "https://api.apto.vc/images/realties/7190/ndk-studios-moema-condominio-5.jpg",
-      "Lazer"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-5.jpg",
+      "Fachada"
      ],
      [
-      "https://api.apto.vc/images/realties/7190/ndk-studios-moema-condominio-6.jpg",
-      "Lazer"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-9.jpg",
+      "Rooftop"
+     ],
+     [
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-24.jpg",
+      "Áreas comuns"
      ]
     ]
    }
@@ -5733,104 +5735,105 @@
   ],
   "frase": "Explore um novo conceito em design e exclusividade. A experiência que você sempre quis, ao seu alcance.",
   "resumo": {
-   "tipologias": "3 Suítes",
-   "metragem": "121 m²",
-   "vagas": "2 Vagas"
+   "tipologias": "3 suítes",
+   "metragem": "121 a 148 m²",
+   "vagas": "2 vagas"
   },
   "torres": [],
-  "img": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada.jpg",
+  "img": "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-4.jpg",
   "categorias": [
    "alto-padrao",
    "apartamentos"
   ],
   "ficha": {
-   "tagline": "Explore um novo conceito em design e exclusividade. A experiência que você sempre quis, ao seu alcance.",
-   "conceito": "Torre única com 60 residências em terreno de 1.923 m², na Alameda dos Arapanés, em Moema.",
-   "endereco": "Alameda dos Arapanés · Moema",
+   "tagline": "Arquitetura nórdica e piscina no rooftop, na Alameda dos Arapanés.",
+   "conceito": "O Monogram é a nossa sugestão para quem busca três suítes em 121 m² com padrão construtivo acima da média do bairro. A AAM trouxe uma linguagem de arquitetura nórdica para Moema e colocou o lazer no topo: piscina coberta e piscina descoberta no rooftop, com solarium e espaço wellness. Tem gerador full para apartamentos e áreas comuns, inclusive o ar-condicionado, e pontos de recarga para carro elétrico. Pronto para morar.",
+   "endereco": "Al. dos Arapanés · Moema",
    "entrega": "Pronto para morar",
    "faixa": "121 a 148 m²",
-   "plantas_tit": "plantas disponíveis.",
+   "plantas_tit": "três suítes, living ampliado opcional.",
    "assinaturas": [
-    [
-     "Realização",
-     "AAM Incorporadora"
-    ],
     [
      "Arquitetura",
      "Spol Architects"
+    ],
+    [
+     "Decoração",
+     "Barbara & Purchio"
     ],
     [
      "Paisagismo",
      "Soma Arquitetos"
     ],
     [
-     "Decoração",
-     "Barbara & Purchio"
+     "Incorporação",
+     "AAM"
     ]
    ],
    "destaques": [
     [
-     "60",
-     "residências"
+     "3",
+     "suítes"
     ],
     [
-     "1",
-     "torre"
+     "Rooftop",
+     "com duas piscinas"
     ],
     [
-     "16",
-     "pavimentos"
+     "Full",
+     "gerador para as unidades"
     ],
     [
-     "148 m²",
-     "maior planta"
+     "2",
+     "vagas"
     ]
    ],
    "plantas": [
     [
-     "3 dorm.",
+     "Tipo",
      "121 m²",
      "3 suítes",
      "2 vagas"
     ],
     [
-     "2 dorm.",
+     "Tipo · living ampliado",
      "121 m²",
      "2 suítes",
      "2 vagas"
     ],
     [
-     "3 dorm.",
+     "Tipo",
      "148 m²",
      "3 suítes",
      "2 vagas"
     ]
    ],
    "lazer": [
-    "Salão de festas",
-    "Espaço gourmet",
-    "Pet place",
-    "Playground",
-    "Brinquedoteca",
+    "Piscina coberta no rooftop",
+    "Piscina descoberta no rooftop",
+    "Solarium",
+    "Espaço wellness",
+    "Sauna úmida",
+    "Fitness",
+    "Salão de festas e gourmet",
     "Salão de jogos",
-    "Espaço delivery",
-    "Fitness"
+    "Brinquedoteca",
+    "Playground",
+    "Pet place"
    ],
    "local": [
-    "Alameda dos Arapanés, Moema"
+    "Alameda dos Arapanés, miolo residencial de Moema",
+    "Perto do Shopping Ibirapuera",
+    "Metrô Eucaliptos nas proximidades"
    ],
    "tecnica": [
     [
-     "Terreno",
-     "1.923 m²"
+     "Elevadores",
+     "2 sociais e 2 de serviço"
     ],
     [
-     "Unidades",
-     "60"
-    ],
-    [
-     "Entrega",
-     "Entregue em ago/2026"
+     "Mobilidade",
+     "2 pontos de recarga para carro elétrico"
     ],
     [
      "Status",
@@ -5838,41 +5841,42 @@
     ]
    ],
    "img": {
-    "capa": "https://w3wimoveis.com.br/wp-content/uploads/2024/11/fachada.jpg",
+    "capa": "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-4.jpg",
     "par": [
      [
-      "https://api.apto.vc/images/realties/6923/monogram-moema-condominio-1.jpg",
-      "Áreas comuns"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-8.jpg",
+      "Lobby"
      ],
      [
-      "https://api.apto.vc/images/realties/6923/monogram-moema-apartamento-1.jpg",
-      "Residência"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-6.jpg",
+      "Pórtico"
      ]
     ],
+    "voo": "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-24.jpg",
     "lazer": [
      [
-      "https://api.apto.vc/images/realties/6923/monogram-moema-condominio-2.jpg",
-      "Lazer"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-26.jpg",
+      "Piscina coberta no rooftop"
      ],
      [
-      "https://api.apto.vc/images/realties/6923/monogram-moema-condominio-3.jpg",
-      "Lazer"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-18.jpg",
+      "Piscina descoberta"
      ],
      [
-      "https://api.apto.vc/images/realties/6923/monogram-moema-condominio-4.jpg",
-      "Lazer"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-27.jpg",
+      "Espaço wellness"
      ],
      [
-      "https://api.apto.vc/images/realties/6923/monogram-moema-condominio-5.jpg",
-      "Lazer"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-32.jpg",
+      "Fitness"
      ],
      [
-      "https://api.apto.vc/images/realties/6923/monogram-moema-condominio-6.jpg",
-      "Lazer"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-12.jpg",
+      "Salão de festas"
      ],
      [
-      "https://api.apto.vc/images/realties/6923/monogram-moema-condominio-7.jpg",
-      "Lazer"
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-1.jpg",
+      "Fachada noturna"
      ]
     ]
    }
