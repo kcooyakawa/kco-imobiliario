@@ -39,6 +39,7 @@ BAIRROS = {
 }
 
 CSS = r"""
+html,body{overflow-x:clip;max-width:100%;overscroll-behavior-x:none}@supports not (overflow-x:clip){body{overflow-x:hidden}}
 .pf-grid .g,.sc{content-visibility:auto;contain-intrinsic-size:auto 420px}
 @font-face{font-family:'PP Editorial New';src:url(__F__/ppeditorial-ultralight.woff2) format('woff2');font-weight:200 300;font-style:normal;font-display:swap}
 @font-face{font-family:'PP Editorial New';src:url(__F__/ppeditorial-ultralight-italic.woff2) format('woff2');font-weight:200 300;font-style:italic;font-display:swap}
