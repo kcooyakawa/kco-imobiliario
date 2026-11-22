@@ -1033,6 +1033,153 @@ def build_guia():
 <script>(function(){{var h=document.querySelector('.hd.over');function sc(){{h.classList.toggle('solid',scrollY>innerHeight*.5)}}addEventListener('scroll',sc,{{passive:true}});sc()}})();</script>'''
         pg += footer(); write(f"guia-moema/{p['slug']}/index.html", pg)
 
+
+GM_CSS = """
+.mg{background:#F3F1EC;color:var(--ink)}
+.mg ::selection{background:var(--ink);color:#F3F1EC}
+.mg-mast{padding:132px 0 0;border-bottom:1px solid var(--ink)}
+.mg-mast .wrap{display:grid;grid-template-columns:1fr auto;align-items:end;gap:24px}
+.mg-mast h1{font-family:var(--serif);font-weight:200;font-size:clamp(64px,13.5vw,196px);line-height:.82;letter-spacing:-.04em;margin:0}
+.mg-mast h1 em{font-style:italic;font-weight:200}
+.mg-col{font-size:11px;letter-spacing:.2em;text-transform:uppercase;line-height:1.9;text-align:right;padding-bottom:14px;color:var(--ink-2)}
+.mg-col b{display:block;color:var(--ink);font-weight:500}
+.mg-strip{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:12px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2)}
+.mg-cover{display:grid;grid-template-columns:7fr 5fr;gap:0;border-bottom:1px solid var(--ink)}
+.mg-cover a{display:contents}
+.mg-cover figure{margin:0;position:relative;overflow:hidden;aspect-ratio:4/5;border-right:1px solid var(--ink)}
+.mg-cover img{width:100%;height:100%;object-fit:cover;filter:saturate(.85);transition:transform 1.6s var(--ease)}
+.mg-cover a:hover img{transform:scale(1.03)}
+.mg-cv{padding:48px 0 48px 48px;display:flex;flex-direction:column;justify-content:space-between;gap:32px}
+.mg-cv h2{font-family:var(--serif);font-weight:200;font-size:clamp(44px,5.4vw,84px);line-height:.95;letter-spacing:-.03em;margin:0;text-wrap:balance}
+.mg-cv p{font-family:var(--serif);font-style:italic;font-weight:300;font-size:22px;line-height:1.35;color:var(--ink-2);max-width:30ch}
+.mg-tag{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2)}
+.mg-read{align-self:flex-start;font-size:12px;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:4px}
+.mg-sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));border-bottom:1px solid var(--ink)}
+.mg-sum div{padding:22px 16px 26px 0;border-right:1px solid var(--line)}.mg-sum div:last-child{border-right:0}
+.mg-sum div+div{padding-left:16px}
+.mg-sum strong{display:block;font-family:var(--serif);font-weight:300;font-size:22px;line-height:1.15;margin-top:8px}
+.mg-sum small{font-size:12.5px;color:var(--ink-2)}
+.mg-map{display:grid;grid-template-columns:5fr 7fr;gap:56px;padding:72px 0;border-bottom:1px solid var(--ink)}
+.mg-map h2{font-family:var(--serif);font-weight:200;font-size:clamp(36px,4vw,60px);line-height:1;letter-spacing:-.03em;margin:0 0 18px}
+.mg-map h2 em{font-style:italic}
+.mg-map p{color:var(--ink-2);max-width:42ch}
+.mg-svg{width:100%;height:auto;display:block}
+.mg-svg text{font-family:var(--sans);font-size:9px;letter-spacing:.14em;text-transform:uppercase;fill:var(--ink-2)}
+.mg-svg .pk{font-family:var(--serif);font-style:italic;font-size:15px;letter-spacing:0;text-transform:none;fill:#3d4a3a}
+.mg-svg .pin circle{fill:var(--ink)}.mg-svg .pin text{fill:#F3F1EC;font-size:9px;letter-spacing:0;font-weight:600}
+.mg-cap{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin-top:10px}
+.mg-carnet{list-style:none;margin:28px 0 0;padding:0;border-top:1px solid var(--ink)}
+.mg-carnet li{display:grid;grid-template-columns:28px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.mg-carnet .n{width:22px;height:22px;border-radius:50%;background:var(--ink);color:#F3F1EC;font-size:10px;font-weight:600;display:grid;place-items:center;margin-top:3px;font-variant-numeric:tabular-nums}
+.mg-carnet b{font-family:var(--serif);font-weight:300;font-size:21px;display:block;line-height:1.2}
+.mg-carnet span{font-size:13.5px;color:var(--ink-2)}
+.mg-carnet i{font-style:normal;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--slate);margin-right:8px}
+.mg-next{padding-block:56px 96px}
+.mg-next h3{font-family:var(--serif);font-weight:300;font-size:30px;margin:0 0 24px}
+.mg-next ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}
+.mg-next li{padding:18px 18px 18px 0;border-bottom:1px solid var(--line);font-family:var(--serif);font-weight:300;font-size:22px;display:flex;justify-content:space-between}
+.mg-next li small{font-family:var(--sans);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--slate);align-self:center}
+/* artigo */
+.ma-hd{padding:128px 0 0}
+.ma-hd .wrap{border-bottom:1px solid var(--ink);padding-bottom:28px}
+.ma-hd h1{font-family:var(--serif);font-weight:200;font-size:clamp(52px,9vw,140px);line-height:.88;letter-spacing:-.04em;margin:18px 0 22px;text-wrap:balance}
+.ma-hd p{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(20px,2vw,26px);line-height:1.35;color:var(--ink-2);max-width:40ch}
+.ma-meta{display:flex;gap:28px;flex-wrap:wrap;padding-block:14px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2)}
+.ma-hero{margin:0;aspect-ratio:21/9;overflow:hidden}.ma-hero img{width:100%;height:100%;object-fit:cover}
+.ma-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:72px;padding:64px 0 32px}
+.ma-body section{margin-bottom:48px}
+.ma-body h2{font-family:var(--serif);font-weight:300;font-size:clamp(28px,2.6vw,38px);line-height:1.1;letter-spacing:-.02em;margin:0 0 16px}
+.ma-body h2 span{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--slate);margin-bottom:10px}
+.ma-body p{font-size:18.5px;line-height:1.72;max-width:64ch;color:#2a2826}
+.ma-body section:first-child p::first-letter{font-family:var(--serif);font-weight:200;font-size:88px;float:left;line-height:.8;padding:8px 12px 0 0}
+.ma-fig{margin:36px 0 0}.ma-fig img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
+.ma-fig figcaption{font-size:12px;letter-spacing:.06em;color:var(--ink-2);padding-top:10px;border-top:1px solid var(--line);margin-top:10px;font-style:italic;font-family:var(--serif);font-size:15px}
+.ma-q{margin:56px 0;padding:28px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);font-family:var(--serif);font-weight:200;font-style:italic;font-size:clamp(30px,3.6vw,50px);line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
+.ma-side{position:sticky;top:96px;align-self:start}
+.ma-side h3{font-family:var(--serif);font-weight:300;font-size:26px;margin:0}
+.ma-side .mg-svg{margin-top:18px;border:1px solid var(--line);background:#EDEAE3}
+@media(max-width:960px){.mg-mast .wrap{grid-template-columns:1fr}.mg-col{text-align:left;padding-bottom:18px}
+.mg-cover{grid-template-columns:1fr}.mg-cover figure{border-right:0;aspect-ratio:4/3}.mg-cv{padding:32px 0}
+.mg-sum{grid-template-columns:1fr 1fr}.mg-sum div{border-bottom:1px solid var(--line)}.mg-sum div:nth-child(odd){padding-left:0}
+.mg-map{grid-template-columns:1fr;gap:32px;padding:48px 0}.mg-next ul{grid-template-columns:1fr}
+.ma-grid{grid-template-columns:1fr;gap:40px}.ma-side{position:static}.ma-hero{aspect-ratio:4/3}}
+"""
+
+def gm_map(pins, small=False):
+    P={1:(150,120),2:(250,215),3:(470,250),4:(330,175),5:(205,300),6:(395,330),7:(300,360)}
+    streets=[("Av. República do Líbano",(40,250,330,40)),("Av. Ibirapuera",(500,40,440,400)),("Av. Sabiá",(120,330,470,180)),("Av. Cotovia",(170,380,500,230)),("Av. Juriti",(90,270,330,150)),("Al. dos Jurupis",(220,410,480,300))]
+    sv=['<svg class="mg-svg" viewBox="0 0 600 430" role="img" aria-label="Mapa ilustrativo de Moema com os endereços citados">',
+        '<rect width="600" height="430" fill="#EDEAE3"/>',
+        '<path d="M0 0H300L250 60 170 110 60 200 0 230Z" fill="#cfd6c4"/>',
+        '<text class="pk" x="40" y="70">Parque Ibirapuera</text>']
+    for i,(nm,(x1,y1,x2,y2)) in enumerate(streets):
+        w=2.2 if 'Av.' in nm and i in (0,1) else 1
+        sv.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#1A1817" stroke-opacity=".55" stroke-width="{w}"/>')
+    sv.append('<line x1="500" y1="40" x2="440" y2="400" stroke="#8E6FA8" stroke-width="3" stroke-dasharray="1 6" stroke-linecap="round"/>')
+    for nm,y in (("Eucaliptos",110),("Moema",230),("AACD-Servidor",350)):
+        x=500-(y-40)*60/360
+        sv.append(f'<circle cx="{x:.0f}" cy="{y}" r="5" fill="#F3F1EC" stroke="#8E6FA8" stroke-width="2"/><text x="{x+10:.0f}" y="{y+3}">{nm}</text>')
+    for nm,(x1,y1,x2,y2) in streets:
+        sv.append(f'<text x="{(x1*.62+x2*.38):.0f}" y="{(y1*.62+y2*.38)-6:.0f}" transform="rotate({__import__("math").degrees(__import__("math").atan2(y2-y1,x2-x1)):.1f} {(x1*.62+x2*.38):.0f} {(y1*.62+y2*.38)-6:.0f})">{nm}</text>')
+    for c in pins:
+        x,y=P.get(c['n'],(270,215))
+        sv.append(f'<g class="pin"><circle cx="{x}" cy="{y}" r="11"/><text x="{x}" y="{y+3}" text-anchor="middle">{c["n"]}</text></g>')
+    sv.append('</svg>')
+    return ''.join(sv)
+
+def carnet(pins):
+    return '<ol class="mg-carnet">'+''.join(f'<li><span class="n">{c["n"]}</span><div><b>{esc(c["nome"])}</b><span><i>{esc(c["tempo"])}</i>{esc(c["nota"])}</span></div></li>' for c in pins)+'</ol>'
+
+def build_guia():
+    G = json.load(open(os.path.join(ROOT, 'guia.json'), encoding='utf-8'))
+    posts = sorted(G['posts'], key=lambda p: p['data'], reverse=True)
+    ed = G.get('edicao', {"numero": "01", "mes": ""})
+    def dt(d):
+        y, m, dd = d.split('-'); return f"{int(dd)} {MESES[int(m)-1]} {y}"
+    css = f'<style>{GM_CSS}</style>'
+    hdscript = "<script>(function(){var h=document.querySelector('.hd.over');if(!h)return;function sc(){h.classList.toggle('solid',scrollY>80)}addEventListener('scroll',sc,{passive:true});sc()})();</script>"
+    p0 = posts[0]; pins = p0.get('concierge', [])
+    pg = head('Guia Moema | W3W Imóveis', 'O guia da W3W Imóveis para viver Moema: mesa, parque, cultura e vida noturna, com curadoria de quem trabalha no bairro há mais de vinte anos.', 'guia-moema') + css
+    pg += header('guia-moema')
+    temps = []
+    for c in pins:
+        if c['tempo'] not in [t[0] for t in temps]: temps.append((c['tempo'], c))
+    summ = ''.join(f'<div><span class="mg-tag">{esc(t)}</span><strong>{esc(c["nome"])}</strong><small>{esc(c["nota"])}</small></div>' for t, c in temps[:6])
+    pg += f'''<main class="mg">
+<section class="mg-mast"><div class="wrap"><h1>Guia <em>Moema</em></h1><div class="mg-col"><b>Edição nº {ed["numero"]}</b>{esc(ed["mes"])}<br>Concierge W3W Imóveis</div></div>
+<div class="wrap mg-strip"><span>Mesa · Parque · Cultura · Noite</span><span>Curadoria de quem trabalha no bairro há mais de vinte anos</span></div></section>
+<section class="wrap"><div class="mg-cover"><a href="{u("guia-moema/"+p0["slug"])}"><figure><img src="{p0["capa"]}" alt="Vista aérea de Moema" decoding="async"></figure>
+<div class="mg-cv"><span class="mg-tag">Matéria de capa · {esc(p0["categoria"])}</span><div><h2>{esc(p0["titulo"])}</h2><p>{esc(p0["sub"])}</p></div><span class="mg-read">Ler a matéria · {p0["leitura"]}</span></div></a></div>
+{f'<div class="mg-sum">{summ}</div>' if summ else ''}</section>
+<section class="wrap"><div class="mg-map"><div><h2>O bairro em <em>um mapa</em></h2><p>Os endereços desta edição, do parque pela manhã ao jazz no fim da noite. Toque no WhatsApp e o concierge W3W indica o resto: reserva, horário, o melhor lugar da casa.</p>{carnet(pins)}</div>
+<div>{gm_map(pins)}<p class="mg-cap">Mapa ilustrativo, sem escala</p></div></div></section>
+<section class="wrap mg-next"><h3>Nas próximas edições</h3><ul>{''.join(f'<li>{esc(c)}<small>Em breve</small></li>' for c in G['categorias'] if c != p0['categoria'])}</ul></section>
+{band()}</main>'''
+    pg += footer(); write('guia-moema/index.html', pg)
+    for p in posts:
+        ld = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": p['titulo'], "datePublished": p['data'], "image": p['capa'], "author": {"@type": "Organization", "name": "W3W Imóveis"}}
+        pg = head(f"{p['titulo']} | Guia Moema · W3W", p['sub'], 'guia-moema/' + p['slug'], f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>') + css
+        pg += header('guia-moema')
+        ims = p.get('imagens') or []
+        body = ''
+        for i, (t, x) in enumerate(p['secoes']):
+            k = t.split(' · ')
+            h = f'<h2><span>{esc(k[0])}</span>{esc(k[1][:1].upper()+k[1][1:])}</h2>' if len(k) == 2 else (f'<h2>{esc(t)}</h2>' if i else '')
+            im = ims[i] if i < len(ims) else None
+            fig = f'<figure class="ma-fig"><img src="{im[0]}" alt="{esc(im[1])}" loading="lazy" decoding="async"><figcaption>{esc(im[1])}</figcaption></figure>' if im else ''
+            body += f'<section>{h}<p>{esc(x)}</p>{fig}</section>'
+            if i == 1 and p.get('citacao'): body += f'<blockquote class="ma-q">“{esc(p["citacao"])}”</blockquote>'
+        near = [e for e in EM if e['slug'] in p.get('imoveis', [])]
+        pins = p.get('concierge', [])
+        pg += f'''<main class="mg"><header class="ma-hd"><div class="wrap"><a class="mg-tag" href="{u('guia-moema')}">← Guia Moema · Edição nº {ed["numero"]}</a><h1>{esc(p["titulo"])}</h1><p>{esc(p["sub"])}</p></div>
+<div class="wrap ma-meta"><span>{esc(p["categoria"])}</span><span>{dt(p["data"])}</span><span>Leitura · {p["leitura"]}</span><span>Por W3W Imóveis</span></div></header>
+<div class="wrap"><figure class="ma-hero"><img src="{p["capa"]}" alt="Vista aérea de Moema" decoding="async"></figure>
+<div class="ma-grid"><article class="ma-body">{body}</article>
+{f'<aside class="ma-side"><h3>Carnet do concierge</h3>{gm_map(pins)}{carnet(pins)}</aside>' if pins else ''}</div></div>
+<section class="gm-near"><div class="wrap"><div class="sec-hd"><h2>Morar perto <em>daqui</em></h2><a href="{u('guia-moema')}">← Guia Moema</a></div>
+<div class="grid">{''.join(card(e) for e in near)}</div></div></section>{band()}</main>'''
+        pg += footer(); write(f"guia-moema/{p['slug']}/index.html", pg)
+
 if __name__ == '__main__':
     build()
     build_guia()
