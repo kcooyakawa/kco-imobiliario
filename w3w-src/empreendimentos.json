@@ -1,11 +1,687 @@
 [
  {
+  "slug": "grafik-moema",
+  "nome": "Grafik Moema",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Em obras",
+  "tipos": [
+   "Studio"
+  ],
+  "frase": "Studios e 1 dormitório na Av. Lavandisca, com piscina na cobertura.",
+  "resumo": {
+   "tipologias": "Studios e 1 dorm.",
+   "metragem": "24 a 63 m²",
+   "vagas": "Sem vaga"
+  },
+  "torres": [],
+  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/grafik-moema/capa.jpg",
+  "categorias": [
+   "studios"
+  ],
+  "ficha": {
+   "tagline": "Studios assinados para morar ou locar em Moema.",
+   "conceito": "O Grafik tem 132 unidades entre studios e 1 dormitório, de 24 a 63 m², na Av. Lavandisca. A cobertura concentra piscina com hidromassagem, solário e espaço gourmet; no 1º pavimento ficam fitness, coworking e lavanderia. Arquitetura SPOL, interiores Barbara & Purchio e paisagismo Marcelo Faisal. Bom para quem compra para alugar.",
+   "endereco": "Av. Lavandisca, 638 · Moema",
+   "entrega": "Jun/2029",
+   "faixa": "24 a 63 m²",
+   "plantas_tit": "studios e 1 dormitório.",
+   "assinaturas": [
+    [
+     "Arquitetura",
+     "SPOL"
+    ],
+    [
+     "Interiores",
+     "Barbara & Purchio"
+    ],
+    [
+     "Paisagismo",
+     "Marcelo Faisal"
+    ],
+    [
+     "Incorporação",
+     "AAM + ONNI"
+    ]
+   ],
+   "destaques": [
+    [
+     "132",
+     "unidades"
+    ],
+    [
+     "24 m²",
+     "studio a partir de"
+    ],
+    [
+     "10",
+     "unidades por andar"
+    ],
+    [
+     "Rooftop",
+     "piscina com hidromassagem"
+    ]
+   ],
+   "plantas": [
+    [
+     "Studio",
+     "24 a 29 m²",
+     "Studio",
+     "Sem vaga"
+    ],
+    [
+     "Studio e 1 dorm.",
+     "Até 63 m²",
+     "Sob consulta",
+     "Sob consulta"
+    ]
+   ],
+   "lazer": [
+    "Piscina com hidromassagem na cobertura",
+    "Solário",
+    "Espaço gourmet",
+    "Fitness",
+    "Coworking",
+    "Lavanderia",
+    "Lobby",
+    "Bicicletário",
+    "Delivery"
+   ],
+   "local": [
+    "Av. Lavandisca, Moema",
+    "Perto da Av. Ibirapuera e do metrô Moema"
+   ],
+   "tecnica": [
+    [
+     "Unidades",
+     "66 HIS 2, 36 HMP e 30 R2V"
+    ],
+    [
+     "Pavimentos-tipo",
+     "2º ao 12º"
+    ],
+    [
+     "Previsão de entrega",
+     "Jun/2029"
+    ],
+    [
+     "Status",
+     "Em obras"
+    ]
+   ],
+   "img": {
+    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/grafik-moema/capa.jpg",
+    "par": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/grafik-moema/par-1.jpg",
+      "Lobby"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/grafik-moema/par-2.jpg",
+      "Studio decorado"
+     ]
+    ],
+    "lazer": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/grafik-moema/lazer-1.jpg",
+      "Espaço gourmet"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/grafik-moema/lazer-2.jpg",
+      "Fitness"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/grafik-moema/lazer-3.jpg",
+      "Coworking"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/grafik-moema/lazer-4.jpg",
+      "Lavanderia"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/grafik-moema/lazer-5.jpg",
+      "Bicicletário"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "zen-cyrela-yoo",
+  "nome": "Zen Cyrela & YOO",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Lançamento",
+  "tipos": [
+   "Apartamento",
+   "Studio"
+  ],
+  "frase": "Cyrela e YOO a poucos passos do Ibirapuera: de 277 a 320 m², com studios na torre 3.",
+  "resumo": {
+   "tipologias": "3 e 4 suítes · studios",
+   "metragem": "30 a 320 m²",
+   "vagas": "Sob consulta"
+  },
+  "torres": [],
+  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/capa.jpg",
+  "categorias": [
+   "alto-padrao",
+   "studios"
+  ],
+  "ficha": {
+   "tagline": "À sombra do verde do Ibirapuera.",
+   "conceito": "O Zen une a Cyrela e o estúdio de design YOO num conjunto entre Moema, Jardins e Vila Nova Conceição, a poucos passos do Parque Ibirapuera. As torres 1 e 2 têm apartamentos de 320 e 277 m² com quatro suítes ou opções de três suítes com sala ampliada. Na torre 3, o Zen Apartments reúne studios e 1 dormitório de 30 a 36 m², com piscina no rooftop. Arquitetura LE Arquitetos, paisagismo Benedito Abbud e áreas comuns por Fernanda Marques.",
+   "endereco": "Rua Leopoldo de Bulhões, 40 · região do Ibirapuera",
+   "entrega": "Lançamento",
+   "faixa": "30 a 320 m²",
+   "plantas_tit": "277 e 320 m², e studios na torre 3.",
+   "assinaturas": [
+    [
+     "Design",
+     "YOO"
+    ],
+    [
+     "Arquitetura",
+     "LE Arquitetos"
+    ],
+    [
+     "Paisagismo",
+     "Benedito Abbud"
+    ],
+    [
+     "Incorporação",
+     "Cyrela"
+    ]
+   ],
+   "destaques": [
+    [
+     "320 m²",
+     "maior planta"
+    ],
+    [
+     "4",
+     "suítes"
+    ],
+    [
+     "3",
+     "torres"
+    ],
+    [
+     "Rooftop",
+     "piscina no Zen Apartments"
+    ]
+   ],
+   "plantas": [
+    [
+     "Torre 1",
+     "320,75 m²",
+     "4 suítes + sala íntima",
+     "Sob consulta"
+    ],
+    [
+     "Torre 1 · opção",
+     "320,75 m²",
+     "3 suítes, cozinha e sala ampliadas",
+     "Sob consulta"
+    ],
+    [
+     "Torre 2",
+     "277,10 m²",
+     "4 suítes",
+     "Sob consulta"
+    ],
+    [
+     "Torre 2 · opção",
+     "277,10 m²",
+     "3 suítes + sala íntima",
+     "Sob consulta"
+    ],
+    [
+     "Torre 3 · Zen Apartments",
+     "30 a 36 m²",
+     "Studio e 1 dorm.",
+     "Sem vaga"
+    ]
+   ],
+   "lazer": [
+    "Piscina coberta",
+    "Piscina descoberta",
+    "Fitness",
+    "Quadra de tênis",
+    "Quadra recreativa",
+    "Espaço gourmet",
+    "Brinquedoteca e playground",
+    "Lobby com pé-direito duplo",
+    "Rooftop com piscina e sauna (torre 3)"
+   ],
+   "local": [
+    "A poucos passos do Parque Ibirapuera",
+    "Entre Moema, Jardins e Vila Nova Conceição"
+   ],
+   "tecnica": [
+    [
+     "Torres",
+     "3 (torre 3: Zen Apartments)"
+    ],
+    [
+     "Sustentabilidade",
+     "Cyrela Empreendedor AQUA"
+    ],
+    [
+     "Torre 3",
+     "113 unidades HMP e 114 R2V"
+    ],
+    [
+     "Status",
+     "Lançamento"
+    ]
+   ],
+   "img": {
+    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/capa.jpg",
+    "par": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/par-1.jpg",
+      "Embasamento"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/par-2.jpg",
+      "Lobby"
+     ]
+    ],
+    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/voo.jpg",
+    "lazer": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/lazer-1.jpg",
+      "Piscina coberta"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/lazer-2.jpg",
+      "Piscina"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/lazer-3.jpg",
+      "Fitness"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/lazer-4.jpg",
+      "Quadra de tênis"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/lazer-5.jpg",
+      "Gourmet"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/ap-rooftop.jpg",
+      "Rooftop · Zen Apartments"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "panorama-ibirapuera",
+  "nome": "Panorama Ibirapuera",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Lançamento",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Só 28 apartamentos de 248 m², um por andar, perto do Ibirapuera.",
+  "resumo": {
+   "tipologias": "3 e 4 suítes",
+   "metragem": "248 a 293 m²",
+   "vagas": "4 vagas"
+  },
+  "torres": [],
+  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/panorama-ibirapuera/capa.jpg",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "Concreto, jardins verticais e o skyline do Ibirapuera.",
+   "conceito": "O Panorama é uma torre única e pequena: 28 apartamentos de 248 m² em 14 pavimentos, com elevador privativo chegando na sala, terraços ao longo do living e da suíte master e floreiras com irrigação automatizada. Os andares altos olham para o Parque Ibirapuera. Projeto da LE Arquitetos, paisagismo Benedito Abbud e interiores Felipe Caboclo.",
+   "endereco": "Av. Açocê, 808 · Moema",
+   "entrega": "Lançamento",
+   "faixa": "248 a 293 m²",
+   "plantas_tit": "248 m² com 3 ou 4 suítes.",
+   "assinaturas": [
+    [
+     "Arquitetura",
+     "LE Arquitetos"
+    ],
+    [
+     "Paisagismo",
+     "Benedito Abbud"
+    ],
+    [
+     "Interiores",
+     "Felipe Caboclo"
+    ],
+    [
+     "Torre",
+     "Única, 14 pavimentos"
+    ]
+   ],
+   "destaques": [
+    [
+     "28",
+     "apartamentos"
+    ],
+    [
+     "248 m²",
+     "planta tipo"
+    ],
+    [
+     "4",
+     "vagas"
+    ],
+    [
+     "20 m",
+     "raia na piscina"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "248,53 m²",
+     "4 suítes",
+     "4 vagas"
+    ],
+    [
+     "Tipo · opções",
+     "248,53 m²",
+     "3 suítes, sala ampliada",
+     "4 vagas"
+    ],
+    [
+     "1º pavimento · Tipo 1",
+     "292,88 m²",
+     "Sob consulta",
+     "4 vagas"
+    ],
+    [
+     "1º pavimento · Tipo 2",
+     "259,90 m²",
+     "Sob consulta",
+     "4 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina com raia de 20 m",
+    "Piscina infantil, deck molhado e prainha",
+    "Spa e gazebo",
+    "Solarium",
+    "Sauna úmida",
+    "Quadra de tênis",
+    "Academia",
+    "Pilates",
+    "Salão de festas",
+    "Brinquedoteca"
+   ],
+   "local": [
+    "Av. Açocê, Moema",
+    "Perto do Parque Ibirapuera, do Clube Monte Líbano e do Shopping Ibirapuera"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "2.120,60 m²"
+    ],
+    [
+     "Unidades",
+     "28, elevador privativo"
+    ],
+    [
+     "Gerador",
+     "Full, áreas comuns e apartamentos"
+    ],
+    [
+     "Status",
+     "Lançamento"
+    ]
+   ],
+   "img": {
+    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/panorama-ibirapuera/capa.jpg",
+    "par": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/panorama-ibirapuera/fachada.jpg",
+      "Fachada"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/panorama-ibirapuera/par-1.jpg",
+      "Lobby"
+     ]
+    ],
+    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/panorama-ibirapuera/voo.jpg",
+    "lazer": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/panorama-ibirapuera/lazer-1.jpg",
+      "Piscina"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/panorama-ibirapuera/lazer-2.jpg",
+      "Quadra de tênis"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/panorama-ibirapuera/lazer-3.jpg",
+      "Academia"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/panorama-ibirapuera/lazer-4.jpg",
+      "Salão de festas"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/panorama-ibirapuera/lazer-5.jpg",
+      "Brinquedoteca"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/panorama-ibirapuera/lazer-6.jpg",
+      "Living · 248 m²"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "edificio-adolpho-lindenberg",
+  "nome": "Edifício Adolpho Lindenberg",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Lançamento",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "O neoclássico Lindenberg em duas torres na Rua Canário.",
+  "resumo": {
+   "tipologias": "3 a 5 suítes, gardens e duplex",
+   "metragem": "331 a 894 m²",
+   "vagas": "4 a 6 vagas"
+  },
+  "torres": [],
+  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/edificio-adolpho-lindenberg/capa.jpg",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "Um sobrenome em forma de edifício.",
+   "conceito": "O lançamento que leva o nome do fundador da Lindenberg traz de volta o neoclássico que marcou a marca: simetria, colunas e porte-cochère, em duas torres sobre um terreno de mais de 5 mil m² na Rua Canário. São 75 apartamentos de 331 a 894 m², com gardens e duplex, quadra de tênis coberta de saibro, piscina coberta com raia de 25 m e um circuito completo de bem-estar. Arquitetura PSA, paisagismo Burle Marx e interiores Sig Bergamin.",
+   "endereco": "Rua Canário, 133 · Moema",
+   "entrega": "Lançamento",
+   "faixa": "331 a 894 m²",
+   "plantas_tit": "de 331 m² a duplex de 894 m².",
+   "assinaturas": [
+    [
+     "Arquitetura",
+     "PSA Arquitetura"
+    ],
+    [
+     "Paisagismo",
+     "Burle Marx"
+    ],
+    [
+     "Interiores",
+     "Sig Bergamin"
+    ],
+    [
+     "Incorporação e construção",
+     "Lindenberg"
+    ]
+   ],
+   "destaques": [
+    [
+     "75",
+     "apartamentos em 2 torres"
+    ],
+    [
+     "894 m²",
+     "duplex na Torre 1"
+    ],
+    [
+     "25 m",
+     "raia na piscina coberta"
+    ],
+    [
+     "Saibro",
+     "quadra de tênis coberta"
+    ]
+   ],
+   "plantas": [
+    [
+     "Torre 1 · Tipo I",
+     "474 m²",
+     "4 ou 5 suítes",
+     "5 vagas"
+    ],
+    [
+     "Torre 1 · Garden I",
+     "794 m²",
+     "Sob consulta",
+     "5 vagas"
+    ],
+    [
+     "Torre 1 · Duplex I",
+     "894 m²",
+     "Sob consulta",
+     "6 vagas"
+    ],
+    [
+     "Torre 2 · Tipo II",
+     "331 m²",
+     "Sob consulta",
+     "4 vagas"
+    ],
+    [
+     "Torre 2 · Tipo III",
+     "433 m²",
+     "Sob consulta",
+     "4 vagas"
+    ],
+    [
+     "Torre 2 · Gardens",
+     "379 a 697 m²",
+     "Sob consulta",
+     "5 vagas"
+    ],
+    [
+     "Torre 2 · Duplex II",
+     "590 m²",
+     "Sob consulta",
+     "6 vagas"
+    ]
+   ],
+   "lazer": [
+    "Piscina coberta com raia de 25 m",
+    "Piscina descoberta com infantil",
+    "Recovery pool e vitality pool",
+    "Saunas seca e úmida",
+    "Sala de massagem",
+    "Quadra de tênis coberta de saibro",
+    "Quadra de pickleball",
+    "Fitness e pilates",
+    "Espaço beauty",
+    "Espaço omakase",
+    "Bar",
+    "Salão de festas",
+    "Bosque",
+    "Brinquedoteca e playground",
+    "Pet place e pet care",
+    "Car wash"
+   ],
+   "local": [
+    "Rua Canário, em Moema Pássaros",
+    "Perto do Parque Ibirapuera e da Av. República do Líbano"
+   ],
+   "tecnica": [
+    [
+     "Terreno",
+     "5.159,94 m²"
+    ],
+    [
+     "Torres",
+     "2, com lobbies independentes"
+    ],
+    [
+     "Unidades",
+     "75"
+    ],
+    [
+     "Status",
+     "Lançamento"
+    ]
+   ],
+   "img": {
+    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/edificio-adolpho-lindenberg/capa.jpg",
+    "par": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/edificio-adolpho-lindenberg/par-1.jpg",
+      "Porte-cochère"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/edificio-adolpho-lindenberg/par-2.jpg",
+      "Galeria"
+     ]
+    ],
+    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/edificio-adolpho-lindenberg/voo.jpg",
+    "lazer": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/edificio-adolpho-lindenberg/lazer-1.jpg",
+      "Piscina coberta"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/edificio-adolpho-lindenberg/lazer-2.jpg",
+      "Tênis de saibro"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/edificio-adolpho-lindenberg/lazer-3.jpg",
+      "Omakase"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/edificio-adolpho-lindenberg/lazer-4.jpg",
+      "Espaço beauty"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/edificio-adolpho-lindenberg/lazer-5.jpg",
+      "Pickleball"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/edificio-adolpho-lindenberg/lazer-6.jpg",
+      "Living"
+     ]
+    ]
+   }
+  }
+ },
+ {
   "slug": "vp-cotovia",
   "nome": "VP Cotovia",
   "bairro": "Moema",
   "bairro_slug": "moema",
   "status": "Lançamento",
-  "tipos": "Studios, 1 e 2 dorms.",
+  "tipos": [
+   "Studio",
+   "Apartamento"
+  ],
   "frase": "Studios e 1 dormitório em Moema, para morar ou investir.",
   "resumo": {
    "tipologias": "Studio, 1 e 2 dorms. e gardens",
@@ -177,7 +853,7 @@
    "vagas": "3 e 4 vagas"
   },
   "torres": "2",
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/la-galerie-moema/card.jpg",
+  "img": "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DA%20FACHADA%20DA%20TORRE%201.webp",
   "categorias": [
    "alto-padrao"
   ],
@@ -279,47 +955,47 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/la-galerie-moema/card.jpg",
+    "capa": "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DA%20FACHADA%20DA%20TORRE%201.webp",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/la-galerie-moema/par-1.jpg",
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DO%20LOBBY%20DA%20TORRE%201.webp",
       "Lobby · torre 1"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/la-galerie-moema/par-2.jpg",
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DO%20LIVING%20TORRE%202%20FINAL%202%20-%20345M%C2%B2.webp",
       "Living · 345 m²"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/la-galerie-moema/voo.jpg",
+    "voo": "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DO%20LAZER%202%C2%BA%20PAVIMENTO.webp",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/la-galerie-moema/lazer-1.jpg",
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DA%20PISCINA%20COBERTA%20COM%20RAIA%20DE%2025M.webp",
       "Piscina coberta"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/la-galerie-moema/vitrine.jpg",
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DA%20PISCINA%20DESCOBERTA.webp",
       "Piscina descoberta"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/la-galerie-moema/lazer-3.jpg",
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DA%20QUADRA%20DE%20T%C3%8ANIS.webp",
       "Quadra de tênis"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/la-galerie-moema/lazer-4.jpg",
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DO%20GOURMET.webp",
       "Espaço gourmet"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/la-galerie-moema/lazer-5.jpg",
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DO%20PORT%20COCHERE%20INTERNO.webp",
       "Port-cochère"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/la-galerie-moema/lazer-6.jpg",
+      "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DA%20SU%C3%8DTE%20M%C3%81STER%20FINAL%201%20TORRE%201%20-%20416M2.webp",
       "Suíte master · 416 m²"
      ]
     ]
    }
   },
-  "vitrine": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/la-galerie-moema/vitrine.jpg"
+  "vitrine": "https://lagalerie.cyrela.com.br/galery/PERSPECTIVA%20ILUSTRADA%20DA%20PISCINA%20DESCOBERTA.webp"
  },
  {
   "slug": "agami-park-residences",
@@ -679,7 +1355,7 @@
    "vagas": "Sem vaga"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/composite-moema/card.jpg",
+  "img": "https://conx.com.br/wp-content/uploads/2023/05/1-2.png",
   "categorias": [
    "studios"
   ],
@@ -771,41 +1447,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/composite-moema/card.jpg",
+    "capa": "https://conx.com.br/wp-content/uploads/2023/05/1-2.png",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/composite-moema/par-1.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/05/3-1.png",
       "Lobby"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/composite-moema/par-2.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/05/17.png",
       "Studio"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/composite-moema/voo.jpg",
+    "voo": "https://conx.com.br/wp-content/uploads/2023/05/5.png",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/composite-moema/lazer-1.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/05/6.png",
       "Piscina"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/composite-moema/lazer-2.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/05/7.png",
       "Jardim"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/composite-moema/lazer-3.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/05/9-2.png",
       "Salão de festas"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/composite-moema/lazer-4.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/05/11.png",
       "Coworking"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/composite-moema/lazer-5.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/05/12.png",
       "Fitness"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/composite-moema/lazer-6.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/05/13.png",
       "Lavanderia"
      ]
     ]
@@ -828,7 +1504,7 @@
    "vagas": "1 vaga (residencial)"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/autoral-moema/card.jpg",
+  "img": "https://conx.com.br/wp-content/uploads/2023/06/FACHADA.png",
   "categorias": [
    "studios"
   ],
@@ -836,7 +1512,7 @@
    "tagline": "Duas torres na Rua dos Chanés: residencial com vaga e studios para investir.",
    "conceito": "O Autoral combina dois produtos num só terreno da Rua dos Chanés: uma torre residencial com 112 apartamentos de 83 a 89 m², todos com vaga, e uma torre não residencial com studios para quem quer investir. O projeto é de Jonas Birger, com paisagismo de Martha Gavião e decoração de Chris Silveira. Para casal ou família pequena, a planta de duas suítes com sala ampliada é das mais bem resolvidas nessa metragem em Moema.",
    "endereco": "Rua dos Chanés · Moema",
-   "entrega": "Dez/2026",
+   "entrega": "Em obras",
    "faixa": "83 a 89 m²",
    "plantas_tit": "2 suítes ou 3 dormitórios.",
    "assinaturas": [
@@ -933,41 +1609,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/autoral-moema/card.jpg",
+    "capa": "https://conx.com.br/wp-content/uploads/2023/06/FACHADA.png",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/autoral-moema/par-1.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/06/LOBBY.png",
       "Lobby"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/autoral-moema/par-2.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/06/2-SUITES-SALA-AMPLIADA-86M%C2%B2.png",
       "2 suítes · sala ampliada"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/autoral-moema/voo.jpg",
+    "voo": "https://conx.com.br/wp-content/uploads/2023/06/PISCINA-E-SOLARIUM.png",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/autoral-moema/lazer-1.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/06/FITNESS.png",
       "Fitness"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/autoral-moema/lazer-2.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/06/ESPACO-GOURMET.png",
       "Espaço gourmet"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/autoral-moema/lazer-3.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/06/CHURRASQUEIRA-1.png",
       "Churrasqueira"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/autoral-moema/lazer-4.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/06/COWORKING.png",
       "Coworking"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/autoral-moema/lazer-5.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/06/BRINQUEDOTECA.png",
       "Brinquedoteca"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/autoral-moema/lazer-6.jpg",
+      "https://conx.com.br/wp-content/uploads/2023/06/FACHADAA.png",
       "Fachada"
      ]
     ]
@@ -1456,7 +2132,7 @@
    "vagas": "Sem vaga"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-nhambiquaras/card.jpg",
+  "img": "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-fachada.jpg",
   "categorias": [
    "apartamentos"
   ],
@@ -1549,40 +2225,40 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-nhambiquaras/card.jpg",
+    "capa": "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-fachada.jpg",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-nhambiquaras/par-1.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-lobby.jpg",
       "Lobby"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-nhambiquaras/par-2.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-acesso.jpg",
       "Acesso"
      ]
     ],
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-nhambiquaras/lazer-1.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-piscina.jpg",
       "Piscina"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-nhambiquaras/lazer-2.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-coworking.jpg",
       "Coworking"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-nhambiquaras/lazer-3.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-fitness.jpg",
       "Fitness"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-nhambiquaras/lazer-4.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-salao-festas.jpg",
       "Salão de festas"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-nhambiquaras/lazer-5.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-churrasqueira.jpg",
       "Churrasqueira"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-nhambiquaras/lazer-6.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/04/apartamento-nex-one-nhambiquaras-sao-paulo-sp-galeria-lavanderia.jpg",
       "Lavanderia"
      ]
     ]
@@ -1606,7 +2282,7 @@
    "vagas": "Com vaga em algumas plantas"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-jurupis/card.jpg",
+  "img": "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/FACHADA-7.jpg",
   "categorias": [
    "apartamentos",
    "studios"
@@ -1705,40 +2381,40 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-jurupis/card.jpg",
+    "capa": "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/FACHADA-7.jpg",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-jurupis/par-1.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/EMBASAMENTO-4-1.jpg",
       "Embasamento"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-jurupis/par-2.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/FACHADA-6-4.jpg",
       "Fachada"
      ]
     ],
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-jurupis/lazer-1.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/SPA-E-SOLARIO-1.jpg-2.jpeg",
       "Spa e solário"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-jurupis/lazer-2.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/ACADEMIA-1-1-1.jpg",
       "Fitness"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-jurupis/lazer-3.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/COWORKING-2-2-1.jpg",
       "Coworking"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-jurupis/lazer-4.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/SALAO-DE-FESTAS-3-1.jpg",
       "Salão de festas"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-jurupis/lazer-5.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/CHURRASQUEIRA-2.jpg3_.jpeg",
       "Churrasqueira"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/nex-one-jurupis/lazer-6.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/07/ESPACO-PET-1.jpg-2-.jpeg",
       "Espaço pet"
      ]
     ]
@@ -1763,7 +2439,7 @@
    "vagas": "1 a 3 vagas"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/most-moema/card.jpg",
+  "img": "https://www.mpd.com.br/app/assets/images/upload/construction/big/131/fachada-diurna-23062025075426_compress.webp",
   "categorias": [
    "apartamentos",
    "studios"
@@ -1874,41 +2550,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/most-moema/card.jpg",
+    "capa": "https://www.mpd.com.br/app/assets/images/upload/construction/big/131/fachada-diurna-23062025075426_compress.webp",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/most-moema/par-1.jpg",
+      "https://www.mpd.com.br/app/assets/images/upload/construction/big/131/portaria-23062025073329_compress.webp",
       "Portaria"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/most-moema/par-2.jpg",
+      "https://www.mpd.com.br/app/assets/images/upload/construction/big/131/fachada-noturna-23062025073627_compress.webp",
       "Fachada noturna"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/most-moema/voo.jpg",
+    "voo": "https://www.mpd.com.br/app/assets/images/upload/construction/big/131/voo-lazer-23062025075627_compress.webp",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/most-moema/lazer-1.jpg",
+      "https://www.mpd.com.br/app/assets/images/upload/construction/big/131/piscina-23062025072927_compress.webp",
       "Piscina"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/most-moema/lazer-2.jpg",
+      "https://www.mpd.com.br/app/assets/images/upload/construction/big/131/lounge-piscina-23062025073028_compress.webp",
       "Lounge piscina"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/most-moema/lazer-3.jpg",
+      "https://www.mpd.com.br/app/assets/images/upload/construction/big/131/fitness-23062025072127_compress.webp",
       "Academia"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/most-moema/lazer-4.jpg",
+      "https://www.mpd.com.br/app/assets/images/upload/construction/big/131/festas-23062025070527_compress.webp",
       "Salão de festas"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/most-moema/lazer-5.jpg",
+      "https://www.mpd.com.br/app/assets/images/upload/construction/big/131/gourmet-23062025070428_compress.webp",
       "Espaço gourmet"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/most-moema/lazer-6.jpg",
+      "https://www.mpd.com.br/app/assets/images/upload/construction/big/131/coworking-23062025074026_compress.webp",
       "Coworking"
      ]
     ]
@@ -1933,7 +2609,7 @@
    "vagas": "1 a 2 vagas (residencial)"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/bem-moema/card.jpg",
+  "img": "https://stracctegra.blob.core.windows.net/assets/EmpreendimentoVitrine/336/Imagem/Tegra-Incorporadora-Perspectiva-Ilustrada-Area-Externa-Lazer-Apartamentos-Bem-Moema-Sao-Paulo-SP%20001-1715460274740.jpg",
   "categorias": [
    "alto-padrao",
    "apartamentos",
@@ -2044,41 +2720,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/bem-moema/card.jpg",
+    "capa": "https://stracctegra.blob.core.windows.net/assets/EmpreendimentoVitrine/336/Imagem/Tegra-Incorporadora-Perspectiva-Ilustrada-Area-Externa-Lazer-Apartamentos-Bem-Moema-Sao-Paulo-SP%20001-1715460274740.jpg",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/bem-moema/par-1.jpg",
+      "https://stracctegra.blob.core.windows.net/assets/EmpreendimentoVitrine/336/Imagem/Tegra-Incorporadora-Perspectiva-Ilustrada-Area-Externa-Lazer-Apartamentos-Bem-Moema-Sao-Paulo-SP%20013-1715460360248.jpg",
       "Lobby"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/bem-moema/par-2.jpg",
+      "https://stracctegra.blob.core.windows.net/assets/EmpreendimentoVitrine/336/Imagem/Tegra-Incorporadora-Perspectiva-Ilustrada-Area-Externa-Lazer-Apartamentos-Bem-Moema-Sao-Paulo-SP%20020-1715460378303.jpg",
       "Living · 123 m²"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/bem-moema/voo.jpg",
+    "voo": "https://stracctegra.blob.core.windows.net/assets/EmpreendimentoVitrine/336/Imagem/Tegra-Incorporadora-Perspectiva-Ilustrada-Area-Externa-Lazer-Apartamentos-Bem-Moema-Sao-Paulo-SP%20004-1715460274696.jpg",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/bem-moema/lazer-1.jpg",
+      "https://stracctegra.blob.core.windows.net/assets/EmpreendimentoVitrine/336/Imagem/Tegra-Incorporadora-Perspectiva-Ilustrada-Area-Externa-Lazer-Apartamentos-Bem-Moema-Sao-Paulo-SP%20005-1715460311683.jpg",
       "Piscina"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/bem-moema/lazer-2.jpg",
+      "https://stracctegra.blob.core.windows.net/assets/EmpreendimentoVitrine/336/Imagem/Tegra-Incorporadora-Perspectiva-Ilustrada-Area-Externa-Lazer-Apartamentos-Bem-Moema-Sao-Paulo-SP%20012-1715460334018.jpg",
       "Spa"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/bem-moema/lazer-3.jpg",
+      "https://stracctegra.blob.core.windows.net/assets/EmpreendimentoVitrine/336/Imagem/Tegra-Incorporadora-Perspectiva-Ilustrada-Area-Externa-Lazer-Apartamentos-Bem-Moema-Sao-Paulo-SP%20011-1715460333834.jpg",
       "Fitness"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/bem-moema/lazer-4.jpg",
+      "https://stracctegra.blob.core.windows.net/assets/EmpreendimentoVitrine/336/Imagem/Tegra-Incorporadora-Perspectiva-Ilustrada-Area-Externa-Lazer-Apartamentos-Bem-Moema-Sao-Paulo-SP%20007-1715460311519.jpg",
       "Salão de festas"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/bem-moema/lazer-5.jpg",
+      "https://stracctegra.blob.core.windows.net/assets/EmpreendimentoVitrine/336/Imagem/Tegra-Incorporadora-Perspectiva-Ilustrada-Area-Externa-Lazer-Apartamentos-Bem-Moema-Sao-Paulo-SP%20008-1715460311452.jpg",
       "Espaço gourmet"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/bem-moema/lazer-6.jpg",
+      "https://stracctegra.blob.core.windows.net/assets/EmpreendimentoVitrine/336/Imagem/Tegra-Incorporadora-Perspectiva-Ilustrada-Area-Externa-Lazer-Apartamentos-Bem-Moema-Sao-Paulo-SP%20017-1715460378251.jpg",
       "Rua Arapapi revitalizada"
      ]
     ]
@@ -2102,7 +2778,7 @@
    "vagas": "2 vagas (141 m²)"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moema-signature-by-you-inc/card.jpg",
+  "img": "https://younewback.youinc.com.br/wp-content/uploads/2022/11/03_YOU_GAI_ESQUINA_FINAL_2SCOPEOMEDIA-2.jpg",
   "categorias": [
    "apartamentos",
    "studios"
@@ -2207,41 +2883,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moema-signature-by-you-inc/card.jpg",
+    "capa": "https://younewback.youinc.com.br/wp-content/uploads/2022/11/03_YOU_GAI_ESQUINA_FINAL_2SCOPEOMEDIA-2.jpg",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moema-signature-by-you-inc/par-1.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/01_YOU_GAI_EMBASAMENTO_G_FINAL2SCOPEOMEDIA-2.jpg",
       "Embasamento"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moema-signature-by-you-inc/par-2.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/09-YOU_GAI_4DORM_FINALSCOPEOMEDIA-2.jpg",
       "Living · 141 m²"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moema-signature-by-you-inc/voo.jpg",
+    "voo": "https://younewback.youinc.com.br/wp-content/uploads/2022/11/04_YGV-VOO-PISCINA.jpg",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moema-signature-by-you-inc/lazer-1.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/09_YOU_GAI_PISCINA_ALTO_FINAL2SCOPEOMEDIA-1.jpg",
       "Piscina com solarium"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moema-signature-by-you-inc/lazer-2.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/05_YOU_GAI_SKY_BAR_FINALSCOPEOMEIDA-1.jpg",
       "Sky lounge"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moema-signature-by-you-inc/lazer-3.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/18_YOU_GAI_FITNESS_ALTO_FINALSCOPEOMEDIA-1.jpg",
       "Fitness"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moema-signature-by-you-inc/lazer-4.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/20_YOU_GAI_SPA_FINAL2.jpg",
       "Sala de massagem"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moema-signature-by-you-inc/lazer-5.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/16_YOU_GAI_FESTAS_ALTO_F2SCOPEOMEDIA.jpg",
       "Salão de festas"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moema-signature-by-you-inc/lazer-6.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2022/11/24_YOU_GAI_SUITE_FINALSCOPEOMEDIA-1.jpg",
       "Suíte master"
      ]
     ]
@@ -2265,7 +2941,7 @@
    "vagas": "3 e 4 Vagas (demarcadas)"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moma-moema/card.jpg",
+  "img": "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Fachada-Esquina.jpg",
   "categorias": [
    "alto-padrao",
    "studios"
@@ -2274,7 +2950,7 @@
    "tagline": "Um condomínio dentro de um clube de 4 mil m², a 350 m do metrô.",
    "conceito": "O MOMA entrou na seleção pela escala: um clube de 4 mil m² em pleno Moema Pássaros, com duas torres de 100 metros e apenas dois apartamentos por andar. A Aflalo & Gasperini desenhou um embasamento na altura das copas das árvores, com lojas na calçada, e um rooftop com piscina e vista 360° no topo da torre da Av. Ibirapuera. As varandas de esquina têm floreiras em toda a extensão, para que o verde da rua continue dentro de casa.",
    "endereco": "Av. Ibirapuera, 2.480 · Moema Pássaros",
-   "entrega": "Jun/2027",
+   "entrega": "Em obras",
    "faixa": "Studios a 194 m²",
    "plantas_tit": "dois apartamentos por andar, varandas de esquina.",
    "assinaturas": [
@@ -2370,41 +3046,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moma-moema/card.jpg",
+    "capa": "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Fachada-Esquina.jpg",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moma-moema/par-1.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Lobby.jpg",
       "Lobby"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moma-moema/par-2.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Living-Apartamento-194.jpg",
       "Living · 194 m²"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moma-moema/voo.jpg",
+    "voo": "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Rooftop-com-Piscina-e-Sky-Bar.jpg",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moma-moema/lazer-1.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Piscina-Coberta-com-Raia-de-25-m.jpg",
       "Piscina coberta"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moma-moema/lazer-2.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Voo-Lazer.jpg",
       "Clube de lazer"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moma-moema/lazer-3.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Quadra-de-Beach-Tennis.jpg",
       "Beach tennis"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moma-moema/lazer-4.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Fitness-Musculacao.jpg",
       "Fitness"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moma-moema/lazer-5.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Salao-de-Festas.jpg",
       "Salão de festas"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moma-moema/lazer-6.jpg",
+      "https://younewback.youinc.com.br/wp-content/uploads/2023/12/Suite-Master-Apartamento-194.jpg",
       "Suíte master · 194 m²"
      ]
     ]
@@ -2739,7 +3415,7 @@
    "vagas": "2 e 3 vagas + depósito"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/atmos-moema/card.jpg",
+  "img": "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-fachada.jpg",
   "categorias": [
    "alto-padrao"
   ],
@@ -2835,41 +3511,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/atmos-moema/card.jpg",
+    "capa": "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-fachada.jpg",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/atmos-moema/par-1.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-lobby-2.jpg",
       "Lobby"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/atmos-moema/par-2.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-portaria-2.jpg",
       "Portaria"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/atmos-moema/voo.jpg",
+    "voo": "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-piscina.jpg",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/atmos-moema/lazer-1.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-piscina-2.jpg",
       "Piscina"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/atmos-moema/lazer-2.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-spa.jpg",
       "Spa"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/atmos-moema/lazer-3.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-academia.jpg",
       "Academia"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/atmos-moema/lazer-4.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-festas.jpg",
       "Salão de festas"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/atmos-moema/lazer-5.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-gourmet.jpg",
       "Espaço gourmet"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/atmos-moema/lazer-6.jpg",
+      "https://api.oneinnovation.com.br/wp-content/uploads/2023/06/apartamento-atmos-moema-sao-paulo-sp-galeria-fachada-2.jpg",
       "Fachada"
      ]
     ]
@@ -3187,7 +3863,7 @@
    "vagas": "3 e 4 Vagas"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/villa-versace-home/par-2.jpg",
+  "img": "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/3_-_foto_da_fachada_6_.webp",
   "categorias": [
    "alto-padrao",
    "studios"
@@ -3308,41 +3984,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/villa-versace-home/par-2.jpg",
+    "capa": "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/3_-_foto_da_fachada_6_.webp",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/villa-versace-home/par-1.jpg",
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/20_-_foto_do_hall_de_entrada.webp",
       "Hall de entrada"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/villa-versace-home/par-2.jpg",
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/16_-_foto_do_detalhe_da_fachada.webp",
       "Detalhe da fachada"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/villa-versace-home/voo.jpg",
+    "voo": "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/1_-_foto_da_area_de_lazer.webp",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/villa-versace-home/lazer-1.jpg",
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/10_-_foto_da_piscina_coberta.webp",
       "Piscina coberta"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/villa-versace-home/lazer-2.jpg",
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/12_-_foto_da_piscina_descoberta.webp",
       "Piscina descoberta"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/villa-versace-home/lazer-3.jpg",
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/26_-_foto_do_spa.webp",
       "Spa"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/villa-versace-home/lazer-4.jpg",
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/23_-_foto_do_sal_ao_de_festas.webp",
       "Salão de festas"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/villa-versace-home/lazer-5.jpg",
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-residence/imagens/galeria/14_-_foto_da_praca_central.webp",
       "Praça central"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/villa-versace-home/lazer-6.jpg",
+      "https://lavvipublico.s3.us-east-1.amazonaws.com/lavvicombr/empreendimentos/villa-studios/imagens/galeria/3_-_foto_do_piscina_do_rooftop.webp",
       "Piscina do rooftop · Studios"
      ]
     ]
@@ -3542,7 +4218,7 @@
    "vagas": "2 a 3 vagas + depósito"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ibirapuera-park-houses/card.jpg",
+  "img": "https://gafisa.s3.sa-east-1.amazonaws.com/storage/517732c4f5830b3e1774fd60c2b12404_cropped_2021-05-05_20h45m24s.jpg",
   "categorias": [
    "alto-padrao"
   ],
@@ -3635,40 +4311,40 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ibirapuera-park-houses/card.jpg",
+    "capa": "https://gafisa.s3.sa-east-1.amazonaws.com/storage/517732c4f5830b3e1774fd60c2b12404_cropped_2021-05-05_20h45m24s.jpg",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ibirapuera-park-houses/par-1.jpg",
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/2fb0310b936024e9918b3f93e241a1cc_cropped_2021-05-05_20h45m42s.jpg",
       "Lobby"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ibirapuera-park-houses/par-2.jpg",
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/26a510dfa594cd0005bceef16ce18dae_cropped_2021-07-06_18h35m12s.jpg",
       "Decorado · 153 m²"
      ]
     ],
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ibirapuera-park-houses/lazer-1.jpg",
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/0c52bef203ff34673bd72b7d9a62476c_cropped_2021-05-05_20h47m33s.jpg",
       "Piscina coberta"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ibirapuera-park-houses/lazer-2.jpg",
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/7473fc78a56da0205d9a556cf8e43a33_cropped_2021-05-05_20h48m11s.jpg",
       "Piscina"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ibirapuera-park-houses/lazer-3.jpg",
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/6fe4ad62c60a06b5937c43046936757a_cropped_2021-05-20_14h11m59s.jpg",
       "Fitness"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ibirapuera-park-houses/lazer-4.jpg",
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/5e08e2ef97e312d89bbff5d08867321e_cropped_2021-05-05_20h49m29s.jpg",
       "Salão de festas"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ibirapuera-park-houses/lazer-5.jpg",
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/13d5155b45fd9165dedff42a491d1a84_cropped_2021-05-05_20h46m40s.jpg",
       "Living · cobertura 281 m²"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ibirapuera-park-houses/lazer-6.jpg",
+      "https://gafisa.s3.sa-east-1.amazonaws.com/storage/2529102b3129233f63fe28bacd2cc053_cropped_2021-07-06_18h34m10s.jpg",
       "Decorado · 153 m²"
      ]
     ]
@@ -3683,25 +4359,27 @@
   "bairro_slug": "moema",
   "status": "Pronto",
   "tipos": [
-   "Apartamento"
+   "Apartamento",
+   "Studio"
   ],
   "frase": "Exclusividade no seu espaço privado: privacidade transforma cada dia em conforto e sofisticação.",
   "resumo": {
-   "tipologias": "3 e 4 Suítes",
-   "metragem": "240 e 298 m²",
-   "vagas": "4 Vagas + depósito"
+   "tipologias": "3 e 4 suítes · studios",
+   "metragem": "22 a 579 m²",
+   "vagas": "0 a 6 vagas"
   },
   "torres": [],
   "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/park-avenue/card.jpg",
   "categorias": [
-   "alto-padrao"
+   "alto-padrao",
+   "studios"
   ],
   "ficha": {
    "tagline": "De frente para o Ibirapuera.",
-   "conceito": "Um raro terreno na Avenida República do Líbano, com vista para o Parque Ibirapuera. Torre de 102 metros, duas unidades por andar e um diálogo entre o contemporâneo e o natural em cada detalhe.",
+   "conceito": "Um raro terreno na Avenida República do Líbano, com vista para o Parque Ibirapuera. Torre de 102 metros, duas unidades por andar e um diálogo entre o contemporâneo e o natural em cada detalhe. Nos 2º e 3º andares, 46 studios de 22 a 23 m², sem vaga, para quem quer o endereço do Ibirapuera para investir.",
    "endereco": "Av. República do Líbano × Al. dos Arapanés · Moema",
    "entrega": "Pronto para morar",
-   "faixa": "240 e 298 m²",
+   "faixa": "22 a 579 m²",
    "assinaturas": [
     [
      "Incorporação",
@@ -3753,9 +4431,15 @@
     ],
     [
      "Cobertura duplex",
-     "Sob consulta",
+     "464 ou 579 m²",
      "4 suítes",
-     "Sob consulta"
+     "6 vagas + depósito"
+    ],
+    [
+     "Studios · 2º e 3º andar",
+     "22 a 23 m²",
+     "Studio",
+     "Sem vaga"
     ]
    ],
    "lazer": [
@@ -3787,16 +4471,12 @@
      "2.495 m²"
     ],
     [
-     "Torre",
-     "Única, 21 pavimentos tipo + cobertura"
-    ],
-    [
      "Unidades",
-     "44, duas por andar"
+     "44 apartamentos + 46 studios"
     ],
     [
-     "Altura",
-     "102 m"
+     "Pavimentos",
+     "21 tipo + cobertura duplex"
     ],
     [
      "Status",
@@ -3865,7 +4545,7 @@
    "vagas": "1 vaga (2 dorms.)"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/z-ibirapuera/card.jpg",
+  "img": "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_fachada.png",
   "categorias": [
    "studios"
   ],
@@ -3963,41 +4643,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/z-ibirapuera/card.jpg",
+    "capa": "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_fachada.png",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/z-ibirapuera/par-1.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_lobby_concierge.jpg",
       "Lobby com concierge"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/z-ibirapuera/par-2.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_living_do_apto_de_54m_final_6.jpg",
       "Living · 54 m²"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/z-ibirapuera/voo.jpg",
+    "voo": "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_hero.jpg",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/z-ibirapuera/lazer-1.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_coliving.jpg",
       "Coliving"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/z-ibirapuera/lazer-2.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_lavanderia_a.jpg",
       "Lavanderia"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/z-ibirapuera/lazer-3.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_portaria.jpg",
       "Portaria"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/z-ibirapuera/lazer-4.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_studio_de_24m_final_4.jpg",
       "Studio · 24 m²"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/z-ibirapuera/lazer-5.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_conceito.jpg",
       "Conceito"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/z-ibirapuera/lazer-6.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/z_ibirapuera_portaria_2.jpg",
       "Acesso"
      ]
     ]
@@ -4022,7 +4702,7 @@
    "vagas": "1 vaga (suítes)"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/chanes-street/card.jpg",
+  "img": "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_fachada.jpg",
   "categorias": [
    "apartamentos",
    "studios"
@@ -4129,41 +4809,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/chanes-street/card.jpg",
+    "capa": "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_fachada.jpg",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/chanes-street/par-1.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_lobby.jpg",
       "Lobby"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/chanes-street/par-2.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_1_living_do_apto_de_75m_com_sugestao_de_decoracao_final_16.jpg",
       "Living · 75 m²"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/chanes-street/voo.jpg",
+    "voo": "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_voo_coworking_17_pavimento_rooftop.jpg",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/chanes-street/lazer-1.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_coworking_17_pavimento_rooftop.jpg",
       "Coworking no rooftop"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/chanes-street/lazer-2.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_lounge.jpg",
       "Lounge"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/chanes-street/lazer-3.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_portaria.jpg",
       "Portaria"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/chanes-street/lazer-4.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_detalhe_da_fachada.jpg",
       "Detalhe da fachada"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/chanes-street/lazer-5.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_3_living_do_studio_de_29m_com_sugestao_de_decoracao_final_2.jpg",
       "Studio · 29 m²"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/chanes-street/lazer-6.jpg",
+      "https://hub.eztec.com.br/wp-content/uploads/2026/08/chanes_street_laundry-mini_market_17_pavimento_rooftop-scaled.jpg",
       "Laundry e mini market"
      ]
     ]
@@ -4187,7 +4867,7 @@
    "vagas": "3 e 4 Vagas"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/splend-moema/card.jpg",
+  "img": "https://www.exto.com.br/wp-content/uploads/2025/02/PERSPECTIVAS-SPLEND-DESKTOP-22.jpg",
   "categorias": [
    "alto-padrao"
   ],
@@ -4195,7 +4875,7 @@
    "tagline": "Metragem única de 258 m², quatro suítes e gerador para o apartamento inteiro.",
    "conceito": "O Splend está no lado de Moema Pássaros que mais procuramos para clientes de família: fora da rota dos aviões, na Alameda dos Arapanés. A Exto fez uma escolha que admiramos: uma única planta de 258 m², com quatro suítes, sala aberta de fachada a fachada e hall privativo com biometria. É dos poucos do bairro com gerador full, que mantém até o ar-condicionado das unidades em caso de queda de energia. Decoração de Débora Aguiar e quadra de tênis by Lisonda.",
    "endereco": "Al. dos Arapanés, 397 · Moema Pássaros",
-   "entrega": "Out/2027",
+   "entrega": "Previsão: out/2027",
    "faixa": "258 m²",
    "plantas_tit": "metragem única, quatro suítes.",
    "assinaturas": [
@@ -4282,41 +4962,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/splend-moema/card.jpg",
+    "capa": "https://www.exto.com.br/wp-content/uploads/2025/02/PERSPECTIVAS-SPLEND-DESKTOP-22.jpg",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/splend-moema/par-1.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2024/12/PERSPECTIVAS-SPLEND-DESKTOP-19-1920x1200_c.jpg",
       "Lobby"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/splend-moema/par-2.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2024/12/DECORADO-SPLEND-DESKTOP-1-1920x1200_c.jpg",
       "Living · decorado"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/splend-moema/voo.jpg",
+    "voo": "https://www.exto.com.br/wp-content/uploads/2024/12/PERSPECTIVAS-SPLEND-DESKTOP-1-1920x1200_c.jpg",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/splend-moema/lazer-1.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2024/12/PERSPECTIVAS-SPLEND-DESKTOP-3-1920x1200_c.jpg",
       "Piscina de 20 m"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/splend-moema/lazer-2.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2024/12/PERSPECTIVAS-SPLEND-DESKTOP-2-1920x1200_c.jpg",
       "Gourmet tennis view"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/splend-moema/lazer-3.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2024/12/PERSPECTIVAS-SPLEND-DESKTOP-10-1920x1200_c.jpg",
       "Wellness spa"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/splend-moema/lazer-4.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2024/12/PERSPECTIVAS-SPLEND-DESKTOP-8-1920x1200_c.jpg",
       "Fitness"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/splend-moema/lazer-5.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2024/12/PERSPECTIVAS-SPLEND-DESKTOP-14-1920x1200_c.jpg",
       "Lounge family"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/splend-moema/lazer-6.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2024/12/DECORADO-SPLEND-DESKTOP-11-1920x1200_c.jpg",
       "Suíte master"
      ]
     ]
@@ -4347,7 +5027,7 @@
    "tagline": "Torre única, 170 m² e lazer de clube na Alameda dos Maracatins.",
    "conceito": "Incluímos o The Selection porque ele preenche uma faixa que falta em Moema: 170 m² com padrão construtivo de alto luxo e lazer de clube. A Exto escolheu a Alameda dos Maracatins, fora da rota dos aviões, para uma torre única com quadra de tênis by Lisonda e piscina coberta com raia de 25 m. Os apartamentos têm hall privativo com biometria, gerador full e opção de 3 suítes ou 4 dormitórios.",
    "endereco": "Al. dos Maracatins, 857 · Moema",
-   "entrega": "Out/2028",
+   "entrega": "Em obras",
    "faixa": "170 m²",
    "plantas_tit": "três suítes ou quatro dormitórios.",
    "assinaturas": [
@@ -4435,41 +5115,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/the-selection-moema/card.jpg",
+    "capa": "https://www.exto.com.br/wp-content/uploads/2025/09/Fachada.jpg",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/the-selection-moema/par-1.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2025/09/Lobby-de-acesso-com-pe-direito-duplo-e-decoracao-de-alto-padrao-1920x1200_c.jpg",
       "Lobby com pé-direito duplo"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/the-selection-moema/par-2.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2025/10/The-Selection-Moema-Jantar-e-Living-1920x1200_c.jpg",
       "Living e jantar · decorado"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/the-selection-moema/voo.jpg",
+    "voo": "https://www.exto.com.br/wp-content/uploads/2025/02/Exto_Maracatins_07_Quadra-Tenis_R01_LR-1-1-1920x1200_c.jpg",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/the-selection-moema/lazer-1.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2025/09/Piscina-coberta-25m-com-raia-1920x1200_c.jpg",
       "Piscina coberta"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/the-selection-moema/lazer-2.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2025/09/Piscina-descoberta-com-deck-molhado-e-Solario-1920x1200_c.jpg",
       "Piscina descoberta"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/the-selection-moema/lazer-3.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2025/09/Gourmet-Tennis-1920x1200_c.jpg",
       "Gourmet tennis"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/the-selection-moema/lazer-4.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2025/09/Fitness-BY-LIFEFITNESS-1920x1200_c.jpg",
       "Fitness"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/the-selection-moema/lazer-5.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2025/09/Campo-Gramado-1920x1200_c.jpg",
       "Campo gramado"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/the-selection-moema/lazer-6.jpg",
+      "https://www.exto.com.br/wp-content/uploads/2025/10/The-Selection-Moema-Suite-Master-1920x1200_c.jpg",
       "Suíte master"
      ]
     ]
@@ -4493,7 +5173,7 @@
    "vagas": "4 e 5 vagas"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-sabia/card.jpg",
+  "img": "https://evenautoatendimento.blob.core.windows.net/site-container/6143ee7c-5bd5-4d4e-8004-15e1854295cb-08012025133133.png",
   "categorias": [
    "alto-padrao"
   ],
@@ -4501,7 +5181,7 @@
    "tagline": "Setenta casas suspensas e quatro duplex entre a Sabiá e a Arapanés.",
    "conceito": "Casa Sabiá entrou na seleção pelo tamanho do terreno e pela planta. São mais de 5,5 mil m² atravessando a quadra, da Av. Sabiá à Alameda dos Arapanés, para apenas 74 residências em duas torres. O apartamento tipo tem 317 m² e três suítes, com 4 vagas; no topo, quatro duplex de 625 m². O lazer é de clube: quadra de tênis, piscina coberta com raia de 25 m e spa. Arquitetura da Aflalo/Gasperini e decoração de Gui Mattos.",
    "endereco": "Av. Sabiá, 668 · Al. dos Arapanés, 522 · Moema",
-   "entrega": "Nov/2026",
+   "entrega": "Previsão: nov/2026",
    "faixa": "317 a 625 m²",
    "plantas_tit": "três suítes no tipo, quatro nos duplex.",
    "assinaturas": [
@@ -4596,41 +5276,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-sabia/capa.jpg",
+    "capa": "https://evenautoatendimento.blob.core.windows.net/site-container/6143ee7c-5bd5-4d4e-8004-15e1854295cb-08012025133133.png",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-sabia/par-1.jpg",
+      "https://evenautoatendimento.blob.core.windows.net/site-container/12aa3607-79e0-44d5-8738-8125bf8eb237-08012025133230.png",
       "Acesso do residencial"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-sabia/par-2.jpg",
+      "https://evenautoatendimento.blob.core.windows.net/site-container/11d1487d-c5c9-4d3c-9442-d96985ddbddb-15012024180802.jpg",
       "Living · decorado 317 m²"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-sabia/voo.jpg",
+    "voo": "https://evenautoatendimento.blob.core.windows.net/site-container/f67f89b1-1a14-49df-9886-e425e8e6a9c9-10112025134818.jpg",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-sabia/lazer-1.jpg",
+      "https://evenautoatendimento.blob.core.windows.net/site-container/edc1460c-ba21-4504-8290-ff5e7c47d287-08012025134334.png",
       "Piscina coberta"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-sabia/lazer-2.jpg",
+      "https://evenautoatendimento.blob.core.windows.net/site-container/26cbec29-bd31-420b-b876-5b9f47da613a-08012025133342.png",
       "Piscina adulto"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-sabia/lazer-3.jpg",
+      "https://evenautoatendimento.blob.core.windows.net/site-container/782f328f-0483-48a8-b6e4-36d6b4da105d-08012025133801.png",
       "Salão de festas"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-sabia/lazer-4.jpg",
+      "https://evenautoatendimento.blob.core.windows.net/site-container/cd04da3b-26b0-4f9f-9592-3befc157631e-08012025133926.png",
       "Espaço gourmet"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-sabia/lazer-5.jpg",
+      "https://evenautoatendimento.blob.core.windows.net/site-container/e00a1721-b6e3-4caf-9a9f-342394f0eb7c-08012025134235.png",
       "Sauna"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-sabia/lazer-6.jpg",
+      "https://evenautoatendimento.blob.core.windows.net/site-container/d1b19c94-5c2e-4192-a8d6-9c89ab62c6ef-15012024181731.jpg",
       "Suíte master"
      ]
     ]
@@ -4643,7 +5323,7 @@
   "nome": "Monã The Grand Lodge",
   "bairro": "Moema",
   "bairro_slug": "moema",
-  "status": "Pronto",
+  "status": "Em obras",
   "tipos": [
    "Apartamento"
   ],
@@ -4654,7 +5334,7 @@
    "vagas": "Sob consulta"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/mona-the-grand-lodge/card.jpg",
+  "img": "https://www.dialogo.com.br/estatico/2023/11/06/14/29/f46633e13c5a0efd06078d2a796bd5457a0722c7.webp",
   "categorias": [
    "alto-padrao"
   ],
@@ -4662,7 +5342,7 @@
    "tagline": "Um grand lodge com quadra de tênis oficial entre Moema e o Ibirapuera.",
    "conceito": "O Monã nos chamou atenção pela variedade rara num só endereço: são três torres na Av. Indianópolis com apartamentos de 172 a 284 m², duplex de até 562 m² e gardens de até 569 m², com jardim privativo. O conceito vem dos lodges de luxo internacionais, com quadra de tênis oficial, beach tennis, piscina coberta e aquecida, pilates e um fitness de 245 m². Baixa densidade, com duas unidades por andar.",
    "endereco": "Av. Indianópolis, 588 · Moema",
-   "entrega": "Pronto para morar",
+   "entrega": "Em obras",
    "faixa": "172 a 569 m²",
    "plantas_tit": "do tipo ao duplex e garden.",
    "assinaturas": [
@@ -4775,41 +5455,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/mona-the-grand-lodge/card.jpg",
+    "capa": "https://www.dialogo.com.br/estatico/2023/11/06/14/29/f46633e13c5a0efd06078d2a796bd5457a0722c7.webp",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/mona-the-grand-lodge/par-1.jpg",
+      "https://www.dialogo.com.br/estatico/2023/09/26/18/01/bfbbb9a36f913c425bd8d3315471cbe2df218cdd.jpg",
       "Living · 284 m²"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/mona-the-grand-lodge/par-2.jpg",
+      "https://www.dialogo.com.br/estatico/2023/09/26/18/01/11e131e6ed5eb1472b2d9d8b5339f2eec1d904c0.jpg",
       "Jardim do garden · 569 m²"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/mona-the-grand-lodge/voo.jpg",
+    "voo": "https://www.dialogo.com.br/estatico/2023/09/26/18/32/5fe417fcd636e04e72f4600b4fecf10f02fd5383.jpg",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/mona-the-grand-lodge/lazer-1.jpg",
+      "https://www.dialogo.com.br/estatico/2023/09/26/18/32/4b6309282bc1387bd900439b13cb7764902bde73.jpg",
       "Piscina coberta e aquecida"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/mona-the-grand-lodge/lazer-2.jpg",
+      "https://www.dialogo.com.br/estatico/2023/09/26/18/32/2d5ce142466d3c16da32a37ddf4475a6ae192ec9.jpg",
       "Piscinas"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/mona-the-grand-lodge/lazer-3.jpg",
+      "https://www.dialogo.com.br/estatico/2023/09/26/18/32/64643f9765b436f2c02e7a1420c4c965ce3e9fdd.jpg",
       "Beach tennis"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/mona-the-grand-lodge/lazer-4.jpg",
+      "https://www.dialogo.com.br/estatico/2023/09/26/18/32/ea28637b7ea0b06811ca22ac5c16f6cc4930c764.jpg",
       "Lounge da quadra de tênis"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/mona-the-grand-lodge/lazer-5.jpg",
+      "https://www.dialogo.com.br/estatico/2024/12/09/09/09/efcf184db81079f2528258320771b395215bf782.png",
       "Fitness de 245 m²"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/mona-the-grand-lodge/lazer-6.jpg",
+      "https://www.dialogo.com.br/estatico/2023/09/26/18/01/ad61f7c6e52f393c7bd27ed3a55554137ccd1bf6.jpg",
       "Duplex · 562 m²"
      ]
     ]
@@ -4965,7 +5645,7 @@
    "conceito": "Selecionamos o Moema by YOO para quem quer o padrão de design internacional sem a espera da planta. É um dos poucos prontos de Moema com apartamentos acima de 250 m², hall privativo e lazer distribuído em três pavimentos, com ambientes assinados pela YOO, o estúdio britânico fundado por John Hitchcox e Philippe Starck. As imagens desta ficha são fotos reais do edifício entregue.",
    "endereco": "Al. dos Jurupis · Moema",
    "entrega": "Pronto para morar",
-   "faixa": "252 a 273 m²",
+   "faixa": "252 a 291 m²",
    "plantas_tit": "três ou quatro suítes, hall privativo.",
    "assinaturas": [
     [
@@ -5008,19 +5688,31 @@
      "Tipo",
      "252 m²",
      "4 suítes",
-     "3 a 4 vagas"
+     "4 vagas"
     ],
     [
-     "Tipo · opção",
+     "Tipo",
+     "264,5 m²",
+     "Sob consulta",
+     "4 vagas"
+    ],
+    [
+     "Tipo",
      "269,5 m²",
      "3 suítes, closet e cozinha ampliados",
-     "3 a 4 vagas"
+     "4 vagas"
     ],
     [
      "Tipo",
      "273 m²",
      "4 suítes",
      "4 vagas"
+    ],
+    [
+     "Garden",
+     "281 a 291 m²",
+     "Sob consulta",
+     "Sob consulta"
     ]
    ],
    "lazer": [
@@ -5043,12 +5735,16 @@
    ],
    "tecnica": [
     [
-     "Apartamento decorado",
-     "273 m², com tour 360°"
+     "Unidades",
+     "52, 4 por andar"
     ],
     [
-     "Imagens",
-     "Fotos reais do empreendimento entregue"
+     "Torre",
+     "Única, 13 pavimentos"
+    ],
+    [
+     "Apartamento decorado",
+     "273 m², com tour 360°"
     ],
     [
      "Status",
@@ -5105,7 +5801,8 @@
   "bairro_slug": "moema",
   "status": "Em obras",
   "tipos": [
-   "Apartamento"
+   "Apartamento",
+   "Studio"
   ],
   "frase": "Descubra um novo lar em Moema, onde sofisticação e natureza se encontram.",
   "resumo": {
@@ -5116,11 +5813,12 @@
   "torres": [],
   "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lis-moema/card.jpg",
   "categorias": [
-   "alto-padrao"
+   "alto-padrao",
+   "studios"
   ],
   "ficha": {
    "tagline": "Paris como referência, Moema como endereço, um terreno de mais de 6 mil m².",
-   "conceito": "O LIS entrou na nossa seleção pelo terreno: mais de 6 mil m² na Alameda dos Arapanés, algo cada vez mais raro no miolo de Moema. A Cyrela se inspirou na Île Saint-Louis, a ilha residencial de Paris, para criar um conjunto com galeria de entrada, wine lounge, quadra de tênis e piscina coberta. As plantas vão de 170 a 253 m², todas com hall privativo, e o projeto busca a certificação AQUA-HQE de construção sustentável.",
+   "conceito": "O LIS entrou na nossa seleção pelo terreno: mais de 6 mil m² na Alameda dos Arapanés, algo cada vez mais raro no miolo de Moema. A Cyrela se inspirou na Île Saint-Louis, a ilha residencial de Paris, para criar um conjunto com galeria de entrada, wine lounge, quadra de tênis e piscina coberta. As plantas vão de 170 a 253 m², todas com hall privativo, e o projeto busca a certificação AQUA-HQE de construção sustentável. A torre 3, com acesso pela Av. Cotovia e condomínio independente, tem 240 studios de 27,5 a 42 m² e 6 gardens, com lazer próprio no 4º pavimento (piscina, fitness, coworking e churrasqueira).",
    "endereco": "Al. dos Arapanés, 1335 · Moema",
    "entrega": "Nov/2026",
    "faixa": "170 a 253 m²",
@@ -5185,6 +5883,12 @@
      "253 m²",
      "4 suítes",
      "3 vagas"
+    ],
+    [
+     "Torre 3 · Studios",
+     "27,5 a 42 m²",
+     "Studio (6 gardens até 89 m²)",
+     "Sem vaga"
     ]
    ],
    "lazer": [
@@ -5373,83 +6077,93 @@
   "tipos": [
    "Apartamento"
   ],
-  "frase": "Moema reinventada: luxo e exclusividade em um novo conceito. Descubra o que te espera.",
+  "frase": "Pronto para morar: só 30 apartamentos de 150 m² na Av. Moema.",
   "resumo": {
-   "tipologias": "3 e 4 Suítes",
-   "metragem": "150 a 290 m²",
-   "vagas": "2 e 3 Vagas (determinadas)"
+   "tipologias": "3 suítes · garden e cobertura",
+   "metragem": "150 a 295 m²",
+   "vagas": "2 vagas"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/fachada-ms.jpg",
+  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/capa.jpg",
   "categorias": [
    "alto-padrao"
   ],
   "ficha": {
-   "tagline": "Torre única, linguagem contemporânea na Av. Moema.",
-   "conceito": "Torre única com projeto da JNA Arquitetos, lazer completo e plantas de 140 a 295 m², pronta para morar.",
+   "tagline": "Puro residencial, só 30 unidades, pronto para morar.",
+   "conceito": "O Purity é um prédio pequeno e já entregue: 30 apartamentos de 150 m² com três suítes e duas vagas, hall social privativo e terraço, além de garden e coberturas de até 295 m². A piscina climatizada tem pé-direito duplo, e o salão de festas abre para o jardim central. As fotos desta ficha são do prédio pronto. Arquitetura JNA, paisagismo Neusa Nakata e decoração Barbara & Purchio.",
    "endereco": "Av. Moema, 756 · Moema",
    "entrega": "Pronto para morar",
-   "faixa": "140 a 295 m²",
-   "plantas_tit": "de 140 a 295 m².",
+   "faixa": "150 a 295 m²",
+   "plantas_tit": "150 m² com 3 suítes, garden e cobertura.",
    "assinaturas": [
     [
      "Arquitetura",
      "JNA Arquitetos"
     ],
     [
-     "Incorporação",
+     "Paisagismo",
+     "Neusa Nakata"
+    ],
+    [
+     "Decoração",
+     "Barbara & Purchio"
+    ],
+    [
+     "Realização",
      "Barbara · Luni"
-    ],
-    [
-     "Torre",
-     "Única"
-    ],
-    [
-     "Entrega",
-     "Dezembro de 2025"
     ]
    ],
    "destaques": [
     [
-     "1",
-     "torre"
+     "30",
+     "apartamentos"
+    ],
+    [
+     "150 m²",
+     "3 suítes"
     ],
     [
      "295 m²",
-     "maior planta"
+     "garden e cobertura"
     ],
     [
-     "3",
-     "suítes"
-    ],
-    [
-     "4",
-     "vagas"
+     "100%",
+     "pronto para morar"
     ]
    ],
    "plantas": [
     [
      "Tipo",
-     "140 a 150 m²",
+     "150 m²",
      "3 suítes",
      "2 vagas"
     ],
     [
-     "Amplo",
-     "Até 295 m²",
+     "Garden",
+     "295 m²",
+     "3 suítes",
+     "2 vagas"
+    ],
+    [
+     "Cobertura",
+     "290 m²",
      "Sob consulta",
-     "Até 4 vagas"
+     "Sob consulta"
     ]
    ],
    "lazer": [
-    "Piscina",
-    "Fitness",
-    "Quadra",
+    "Piscina climatizada com pé-direito duplo",
     "Sauna",
-    "Salão de festas",
-    "Espaço gourmet",
+    "Solário",
+    "Academia com terraço",
+    "Salão de festas com churrasqueira",
+    "Jardim central",
     "Brinquedoteca",
-    "Playground"
+    "Playground",
+    "Quadra recreativa",
+    "Pet place",
+    "Central delivery",
+    "Bicicletário"
    ],
    "local": [
     "Av. Moema",
@@ -5457,38 +6171,59 @@
    ],
    "tecnica": [
     [
+     "Torre",
+     "Única, somente residencial"
+    ],
+    [
+     "Apartamentos",
+     "Hall privativo, contrapiso acústico nas suítes"
+    ],
+    [
+     "Sustentabilidade",
+     "Reuso de água, recarga para carro elétrico"
+    ],
+    [
      "Status",
      "Pronto para morar"
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/fachada-ms.jpg",
+    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/capa.jpg",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/par-7.jpg",
-      "Portaria"
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/par-1.jpg",
+      "Jardim central"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/fachada-ms.jpg",
-      "Fachada"
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/par-2.jpg",
+      "Salão de festas"
      ]
     ],
+    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/voo.jpg",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/lz-2.jpg",
-      "Piscina"
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/lazer-1.jpg",
+      "Piscina climatizada"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/lz-3.jpg",
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/lazer-2.jpg",
+      "Sauna"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/lazer-3.jpg",
       "Academia"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/lz-4.jpg",
-      "Quadra"
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/lazer-4.jpg",
+      "Salão de festas"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/lz-6.jpg",
-      "Salão de festas"
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/lazer-5.jpg",
+      "Brinquedoteca"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/purity-moema/lazer-6.jpg",
+      "Playground"
      ]
     ]
    }
@@ -5511,7 +6246,7 @@
    "vagas": "Sem vaga"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ndk-studios-moema/card.jpg",
+  "img": "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-3-1.jpg",
   "categorias": [
    "studios"
   ],
@@ -5595,41 +6330,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ndk-studios-moema/card.jpg",
+    "capa": "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-3-1.jpg",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ndk-studios-moema/par-1.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam-ndkadrianoescanhuela-7-2.jpg",
       "Acesso"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ndk-studios-moema/par-2.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-21.jpg",
       "Coworking"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ndk-studios-moema/voo.jpg",
+    "voo": "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-12.jpg",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ndk-studios-moema/lazer-1.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-8.jpg",
       "Piscina na cobertura"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ndk-studios-moema/lazer-2.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-16.jpg",
       "Piscina na cobertura"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ndk-studios-moema/lazer-3.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-22.jpg",
       "Coworking"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ndk-studios-moema/lazer-4.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-5.jpg",
       "Fachada"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ndk-studios-moema/lazer-5.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-9.jpg",
       "Rooftop"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/ndk-studios-moema/lazer-6.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/10/aam.ndkadrianoescanhuela-24.jpg",
       "Áreas comuns"
      ]
     ]
@@ -5652,7 +6387,7 @@
    "vagas": "2 vagas"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/monogram/card.jpg",
+  "img": "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-4.jpg",
   "categorias": [
    "alto-padrao",
    "apartamentos"
@@ -5753,41 +6488,41 @@
     ]
    ],
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/monogram/card.jpg",
+    "capa": "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-4.jpg",
     "par": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/monogram/par-1.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-8.jpg",
       "Lobby"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/monogram/par-2.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-6.jpg",
       "Pórtico"
      ]
     ],
-    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/monogram/voo.jpg",
+    "voo": "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-24.jpg",
     "lazer": [
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/monogram/lazer-1.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-26.jpg",
       "Piscina coberta no rooftop"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/monogram/lazer-2.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-18.jpg",
       "Piscina descoberta"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/monogram/lazer-3.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-27.jpg",
       "Espaço wellness"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/monogram/lazer-4.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-32.jpg",
       "Fitness"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/monogram/lazer-5.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-12.jpg",
       "Salão de festas"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/monogram/lazer-6.jpg",
+      "https://aamincorporadora.com.br/wp-content/uploads/2023/03/aam.monogramadrianoescanhuela-1.jpg",
       "Fachada noturna"
      ]
     ]
@@ -6836,9 +7571,9 @@
   ],
   "frase": "A assinatura Lindenberg a 550 m do Parque Ibirapuera.",
   "resumo": {
-   "tipologias": "4 suítes",
-   "metragem": "293 a 488 m²",
-   "vagas": "4 vagas"
+   "tipologias": "4 suítes · duplex",
+   "metragem": "293 a 620 m²",
+   "vagas": "4 a 6 vagas"
   },
   "torres": [],
   "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/capa.jpg",
@@ -6848,31 +7583,43 @@
   "entrega": "Nov/2028",
   "ficha": {
    "tagline": "Tradição Lindenberg em Moema.",
-   "conceito": "Torre única com apartamentos de 293 e 373 m² e duplex de 488 m², todos com quatro suítes, quadra de tênis e um pavimento inteiro de bem-estar.",
-   "endereco": "Av. Juriti, 375 · Moema",
+   "conceito": "Torre única de 29 andares com apenas dois apartamentos por andar, num terreno de 3.400 m²: plantas de 293 e 373 m² com quatro suítes e duplex de 488 e 620 m². O projeto é voltado ao bem-estar, com piscina coberta com raia de 25 m, vitality e recovery pool, saunas e quadra de tênis. Arquitetura PSA, paisagismo Orsini e interiores Roberto Migotto.",
+   "endereco": "Rua Inhambu, 375 · Moema",
    "entrega": "Nov/2028",
    "assinaturas": [
     [
-     "Incorporação",
+     "Arquitetura",
+     "PSA Arquitetos"
+    ],
+    [
+     "Paisagismo",
+     "Orsini Paisagismo"
+    ],
+    [
+     "Interiores",
+     "Roberto Migotto"
+    ],
+    [
+     "Incorporação e construção",
      "Lindenberg"
     ]
    ],
    "destaques": [
     [
-     "4",
-     "suítes"
+     "60",
+     "apartamentos"
     ],
     [
-     "4",
-     "vagas"
+     "2",
+     "por andar"
     ],
     [
-     "550 m",
-     "do Parque Ibirapuera"
+     "620 m²",
+     "duplex superior"
     ],
     [
-     "Tênis",
-     "quadra no condomínio"
+     "25 m",
+     "raia na piscina coberta"
     ]
    ],
    "plantas": [
@@ -6889,35 +7636,47 @@
      "4 vagas"
     ],
     [
-     "Duplex",
+     "Duplex inferior",
      "488 m²",
-     "4 suítes",
-     "Sob consulta"
+     "Sob consulta",
+     "6 vagas"
+    ],
+    [
+     "Duplex superior",
+     "620 m²",
+     "Sob consulta",
+     "6 vagas"
     ]
    ],
    "lazer": [
-    "Piscina coberta",
-    "Piscina infantil",
-    "Sauna finlandesa e a vapor",
+    "Piscina coberta com raia de 25 m",
+    "Piscina infantil coberta",
+    "Vitality pool e recovery pool",
+    "Sauna a vapor e seca",
     "Sala de massagem",
-    "Espaço beauty",
+    "Beauty room",
     "Fitness",
     "Pilates",
     "Quadra de tênis",
+    "Espaço omakase",
+    "Salão de festas",
     "Brinquedoteca",
     "Playground",
-    "Salão de festas",
-    "Omakase",
-    "Sala de reunião"
+    "Sala de reunião",
+    "Sala de motoristas"
    ],
    "local": [
-    "550 m do Parque Ibirapuera",
-    "Na Av. Juriti, Moema Pássaros"
+    "Rua Inhambu, Moema Pássaros",
+    "A 550 m do Parque Ibirapuera"
    ],
    "tecnica": [
     [
+     "Terreno",
+     "3.400 m²"
+    ],
+    [
      "Torre",
-     "Única"
+     "Única, 29 pavimentos-tipo + duplex"
     ],
     [
      "Previsão de entrega",
@@ -6925,29 +7684,28 @@
     ]
    ],
    "galeria": [],
-   "faixa": "293 a 488 m²",
+   "faixa": "293 a 620 m²",
    "img": {
     "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/capa.jpg",
-    "fachada": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/fachada.jpg",
     "par": [
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/par-1.jpg",
-      "Embasamento"
+      "Porte-cochère"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/par-2.jpg",
-      "Living, 293 m²"
+      "Embasamento"
      ]
     ],
     "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/voo.jpg",
     "lazer": [
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/lazer-1.jpg",
-      "Quadra de tênis"
+      "Piscina coberta"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/lazer-2.jpg",
-      "Salão de festas"
+      "Quadra de tênis"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/lazer-3.jpg",
@@ -6955,15 +7713,15 @@
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/lazer-4.jpg",
-      "Hall"
+      "Salão de festas"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/lazer-5.jpg",
-      "Sauna finlandesa"
+      "Omakase"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/lazer-6.jpg",
-      "Suíte master"
+      "Living"
      ]
     ]
    }
