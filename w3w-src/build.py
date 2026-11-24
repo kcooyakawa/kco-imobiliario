@@ -1,3 +1,4 @@
+from urllib.parse import quote
 #!/usr/bin/env python3
 """Gera o site estático da W3W a partir de empreendimentos.json.
 Uso: python3 build.py  ->  escreve em ../site/
@@ -19,6 +20,7 @@ HERO = 'https://w3wimoveis.com.br/wp-content/uploads/2024/12/o-que-fazer-no-parq
 
 E = json.load(open(os.path.join(ROOT, 'empreendimentos.json'), encoding='utf-8'))
 E = [e for e in E if not e['slug'].startswith('on-')]  # Vitacon fora (nov/2026)
+E = [e for e in E if not e.get('esgotado')]  # sem estoque fora (pedido Yoko, nov/2026)
 EM = [e for e in E if e['bairro_slug'] == 'moema']  # vitrine pública: só Moema por enquanto
 LOGO = open(os.path.join(ROOT, 'logo.svg'), encoding='utf-8').read().strip()
 LOGO = LOGO.replace('aria-label="W3W Imóveis"', 'role="img" aria-label="W3W Imóveis"')
@@ -27,6 +29,31 @@ esc = html.escape
 import time
 VER = str(int(time.time()))
 def u(p=''): return f'{BASE}/{p}'.rstrip('/') + '/' if p and not p.endswith('.html') else f'{BASE}/{p}'
+def intent_form(px, E):
+    ints=['Comprar para morar','Investir','Studio para renda','Agendar visita','Vender meu imóvel']
+    chips=''.join(f'<label class="if-c"><input type="radio" name="intencao" value="{esc(i)}"{" checked" if n==0 else ""}><span>{esc(i)}</span></label>' for n,i in enumerate(ints))
+    vivos=[e for e in E if not e.get('esgotado')]
+    grp=''
+    for b in ('Moema','Vila Nova Conceição'):
+        grp+=f'<optgroup label="{b}">'+''.join(f'<option>{esc(e["nome"])}</option>' for e in sorted(vivos,key=lambda x:x['nome']) if e.get('bairro')==b)+'</optgroup>'
+    js=("event.preventDefault();var d=new FormData(this);"
+        "var m='Olá, sou '+d.get('nome')+'. Quero: '+d.get('intencao')+'.'"
+        "+(d.get('imovel')?' Imóvel: '+d.get('imovel')+'.':'')"
+        "+(d.get('quando')?' Prazo: '+d.get('quando')+'.':'')"
+        "+(d.get('mensagem')?' '+d.get('mensagem'):'');"
+        "if(window.W3WTrack)try{W3WTrack(m)}catch(e){};"
+        "window.open('https://wa.me/'+'"+WA+"'+'?text='+encodeURIComponent(m),'_blank')")
+    return f"""<form id="form" class="form cafe-f if-f" name="contato" method="POST" data-netlify="true" netlify-honeypot="empresa" onsubmit="{js}">
+<input type="hidden" name="form-name" value="contato"><p hidden><input name="empresa"></p>
+<fieldset class="if-s"><legend>O que você procura</legend><div class="if-cs">{chips}</div></fieldset>
+<div class="two"><div><label for="{px}-im">Imóvel ou região</label><select id="{px}-im" name="imovel"><option value="">Ainda não sei, quero indicação</option><option>Studio em Moema</option><option>Apartamento em Moema</option><option>Vila Nova Conceição</option>{grp}</select></div>
+<div><label for="{px}-q">Quando</label><select id="{px}-q" name="quando"><option value="">Sem pressa</option><option>Nos próximos 3 meses</option><option>Em até 1 ano</option><option>Só pesquisando</option></select></div></div>
+<div class="two"><div><label for="{px}-n">Nome</label><input id="{px}-n" name="nome" required autocomplete="name"></div><div><label for="{px}-t">WhatsApp</label><input id="{px}-t" name="telefone" type="tel" required autocomplete="tel"></div></div>
+<label for="{px}-m">Algo mais? (opcional)</label><textarea id="{px}-m" name="mensagem" rows="2" placeholder="Metragem, suítes, orçamento, bairro…"></textarea>
+<button class="btn" type="submit">Falar com um consultor →</button>
+<small>Resposta pessoal pelo WhatsApp. Ao enviar, você concorda com a nossa <a href="{u('politica-de-privacidade')}">Política de Privacidade</a>.</small></form>
+<script>(function(){{var q=new URLSearchParams(location.search).get('imovel');if(!q)return;var s=document.getElementById('{px}-im');for(var o of s.options)if(o.text===q){{s.value=q;break}}}})()</script>"""
+
 def wa(msg): return f'https://wa.me/{WA}?text=' + urllib.parse.quote(msg)
 
 BAIRROS = {
@@ -633,6 +660,13 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .gm-meta{display:flex;gap:18px;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0}
 .gm-near{padding:40px 0 90px}
 @media(max-width:700px){.gm-hero{padding:120px 0 24px}.gm-cover{height:70vh}.gm-cover .t{padding-bottom:36px}.gm-body{padding-top:40px}.gm-body p{font-size:17px}}
+
+.if-s{border:0;padding:0;margin:0 0 18px}.if-s legend{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.7;margin-bottom:10px}
+.if-cs{display:flex;flex-wrap:wrap;gap:8px}.if-c input{position:absolute;opacity:0;pointer-events:none}
+.if-c span{display:inline-block;padding:9px 16px;border:1px solid currentColor;border-radius:999px;font-size:14px;opacity:.6;cursor:pointer;transition:opacity .2s,background .2s,color .2s,transform .15s}
+.if-c:hover span{opacity:1}.if-c input:checked+span{opacity:1;background:currentColor}.if-c input:checked+span{color:inherit;background:rgba(255,255,255,.14)}
+.if-c:active span{transform:scale(.97)}.if-c input:focus-visible+span{outline:2px solid currentColor;outline-offset:2px}
+.if-f select{width:100%}
 """.replace('__F__', FONTS)
 
 ICON = {
@@ -866,13 +900,7 @@ def build_home():
 <div><span class="eyebrow">Contato</span><h2>Vamos tomar <em>um café?</em></h2>
 <p class="cafe-l">Conte o que você procura. Um consultor da W3W responde pessoalmente.</p>
 <ul class="cafe-r"><li><a href="{wa('Olá, quero falar com um consultor da W3W.')}" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:{EMAIL}">E-mail</a></li><li><a href="https://instagram.com/w3wimoveis" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://maps.google.com/?q=Moema+São+Paulo" target="_blank" rel="noopener">Moema · SP</a></li></ul></div>
-<form class="form cafe-f" name="contato" method="POST" data-netlify="true" netlify-honeypot="empresa" onsubmit="event.preventDefault();var d=new FormData(this);var m='Olá, sou '+d.get('nome')+' ('+(d.get('perfil')||'')+'). '+(d.get('mensagem')||'');window.open('https://wa.me/{WA}?text='+encodeURIComponent(m),'_blank')">
-<input type="hidden" name="form-name" value="contato"><p hidden><input name="empresa"></p>
-<div class="two"><div><label for="f-nome">Nome</label><input id="f-nome" name="nome" required autocomplete="name"></div><div><label for="f-tel">WhatsApp ou e-mail</label><input id="f-tel" name="contato" required></div></div>
-<label for="f-p">Você é</label><select id="f-p" name="perfil"><option>Comprador ou investidor</option><option>Incorporadora ou construtora</option><option>Imobiliária</option><option>Corretor</option></select>
-<label for="f-msg">Mensagem</label><textarea id="f-msg" name="mensagem" rows="2"></textarea>
-<button class="btn" type="submit">Enviar mensagem →</button>
-<small>Ao enviar, você concorda com a nossa <a href="{u('politica-de-privacidade')}">Política de Privacidade</a>.</small></form>
+{intent_form("h",E)}
 </div></section></main>
 {SHEET}
 {''.join(f'<template id="fx-{e[chr(115)+chr(108)+chr(117)+chr(103)]}">'+rich(e)+'</template>' for e in EM if e.get('ficha'))}
@@ -949,7 +977,7 @@ document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click
 <div class="fx-ph"><img src="{e['img']}" alt="Fachada do {esc(e['nome'])}, {esc(e['bairro'])}" decoding="async"><span class="tag st">{selo(e)}</span></div>
 <div class="fx-b"><div class="fx-t"><span class="eyebrow">{esc(e['bairro'])} · {selo(e)}</span><h1>{esc(e['nome'])}</h1>{f'<p class="fx-q">{esc(e["frase"])}</p>' if e['frase'] else ''}</div>
 <dl class="fx-s">{ficha}</dl></div>
-<div class="fx-c"><a class="btn solid" href="{wa(msg)}" target="_blank" rel="noopener">Quero a ficha completa</a><a class="btn" href="{wa('Olá, quero agendar uma visita ao ' + e['nome'] + '.')}" target="_blank" rel="noopener">Agendar visita</a></div>
+<div class="fx-c"><a class="btn solid" href="{wa(msg)}" target="_blank" rel="noopener">Quero a ficha completa</a><a class="btn" href="{wa('Olá, quero agendar uma visita ao ' + e['nome'] + '.')}" target="_blank" rel="noopener">Agendar visita</a><a class="btn" href="{u('contato')}?imovel={quote(e['nome'])}#form">Contar o que procuro</a></div>
 <p class="fx-n">Plantas, lazer, incorporadora e previsão de entrega: fale com um consultor.</p></div></section>
 ''') + f'''<section class="sec" style="padding-top:0"><div class="wrap"><div class="sec-hd"><h2>Também em {e['bairro']}</h2><a href="{u(e['bairro_slug'])}">Ver todos</a></div>
 <div class="grid">{''.join(card(x) for x in rel)}</div></div></section>{band()}</main>'''
@@ -980,15 +1008,7 @@ document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click
     pg += f'''<main><section class="pg-hd"><div class="wrap"><div class="crumbs"><a href="{BASE}/">Home</a> / Contato</div><h1>Fale conosco</h1>
 <p>Conte o que você procura e respondemos pessoalmente, pelo canal que preferir.</p></div></section>
 <section class="sec" style="padding-top:16px"><div class="wrap ct">
-<form class="form" name="contato" method="POST" data-netlify="true" netlify-honeypot="empresa" onsubmit="if(!this.hasAttribute('data-live')){{event.preventDefault();var d=new FormData(this);var m='Olá, sou '+d.get('nome')+'. '+(d.get('interesse')?'Interesse: '+d.get('interesse')+'. ':'')+(d.get('mensagem')||'');window.open('https://wa.me/{WA}?text='+encodeURIComponent(m),'_blank')}}">
-<input type="hidden" name="form-name" value="contato"><p hidden><input name="empresa"></p>
-<label for="f-nome">Nome</label><input id="f-nome" name="nome" required autocomplete="name">
-<label for="f-tel">WhatsApp</label><input id="f-tel" name="telefone" type="tel" required autocomplete="tel">
-<label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email">
-<label for="f-int">Interesse</label><select id="f-int" name="interesse"><option value="">Selecione (opcional)</option><option>Apartamento em Moema</option><option>Studio em Moema</option><option>Apartamento na Vila Nova Conceição</option><option>Investimento</option>{opts}</select>
-<label for="f-msg">Mensagem</label><textarea id="f-msg" name="mensagem" rows="4"></textarea>
-<button class="btn solid" type="submit">Enviar</button>
-<small>Ao enviar, você concorda com a nossa <a href="{u('politica-de-privacidade')}" style="border-bottom:1px solid">Política de Privacidade</a>.</small></form>
+'''+intent_form('c',E)+f'''
 <dl class="info"><dt>WhatsApp</dt><dd><a href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener">{TEL}</a></dd>
 <dt>E-mail</dt><dd><a href="mailto:{EMAIL}">{EMAIL}</a></dd><dt>Atendimento</dt><dd>Moema · São Paulo</dd><dt>Registro</dt><dd>{CRECI}</dd></dl>
 </div></section></main>'''

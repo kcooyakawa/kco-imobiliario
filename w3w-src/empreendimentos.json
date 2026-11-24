@@ -1486,7 +1486,8 @@
      ]
     ]
    }
-  }
+  },
+  "esgotado": true
  },
  {
   "slug": "autoral-moema",
@@ -7386,6 +7387,10 @@
     [
      "Status",
      "Breve lançamento"
+    ],
+    [
+     "Imagens",
+     "Perspectivas ilustradas · material preliminar sujeito a alteração"
     ]
    ],
    "galeria": [],
@@ -7396,18 +7401,22 @@
     "par": [
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/arborea-ibirapuera/par-1.jpg",
-      "Embasamento"
+      "Living com vista para o parque"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/arborea-ibirapuera/par-2.jpg",
-      "Living"
+      "Suíte master"
      ]
     ],
     "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/arborea-ibirapuera/voo.jpg",
     "lazer": [
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/arborea-ibirapuera/lazer-1.jpg",
-      "Interiores"
+      "Embasamento"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/arborea-ibirapuera/lazer-2.jpg",
+      "Torre"
      ]
     ]
    }
