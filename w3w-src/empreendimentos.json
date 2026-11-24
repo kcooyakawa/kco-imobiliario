@@ -7438,7 +7438,7 @@
    "vagas": "4 vagas"
   },
   "torres": [],
-  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/singular-ibirapuera/par-1.jpg",
+  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/singular-ibirapuera/capa.jpg",
   "categorias": [
    "alto-padrao"
   ],
@@ -7527,35 +7527,35 @@
    "galeria": [],
    "faixa": "317 m²",
    "img": {
-    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/singular-ibirapuera/par-1.jpg",
+    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/singular-ibirapuera/capa.jpg",
     "fachada": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/singular-ibirapuera/fachada.jpg",
     "par": [
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/singular-ibirapuera/par-1.jpg",
-      "Acesso"
+      "Lobby"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/singular-ibirapuera/par-2.jpg",
-      "Living ampliado"
+      "Living"
      ]
     ],
     "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/singular-ibirapuera/voo.jpg",
     "lazer": [
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/singular-ibirapuera/lazer-1.jpg",
-      "Piscina coberta"
+      "Piscina coberta aquecida"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/singular-ibirapuera/lazer-2.jpg",
-      "Piscina descoberta"
+      "Piscina"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/singular-ibirapuera/lazer-3.jpg",
-      "Lobby social"
+      "Fire pit"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/singular-ibirapuera/lazer-4.jpg",
-      "Gourmet"
+      "Salão de festas"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/singular-ibirapuera/lazer-5.jpg",
@@ -7563,7 +7563,7 @@
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/singular-ibirapuera/lazer-6.jpg",
-      "Academia"
+      "Banho master"
      ]
     ]
    }
@@ -7696,41 +7696,42 @@
    "faixa": "293 a 620 m²",
    "img": {
     "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/capa.jpg",
+    "fachada": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/fachada.jpg",
     "par": [
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/par-1.jpg",
-      "Porte-cochère"
+      "Suíte · 372,99 m²"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/par-2.jpg",
-      "Embasamento"
+      "Suíte master · 293,06 m²"
      ]
     ],
     "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/voo.jpg",
     "lazer": [
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/lazer-1.jpg",
-      "Piscina coberta"
+      "Hall social"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/lazer-2.jpg",
-      "Quadra de tênis"
+      "Piscina coberta"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/lazer-3.jpg",
-      "Fitness"
-     ],
-     [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/lazer-4.jpg",
       "Salão de festas"
      ],
      [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/lazer-4.jpg",
+      "Fitness"
+     ],
+     [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/lazer-5.jpg",
-      "Omakase"
+      "Porte-cochère"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/lazer-6.jpg",
-      "Living"
+      "Varandas"
      ]
     ]
    }
