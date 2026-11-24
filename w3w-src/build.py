@@ -667,6 +667,13 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .if-c:hover span{opacity:1}.if-c input:checked+span{opacity:1;background:currentColor}.if-c input:checked+span{color:inherit;background:rgba(255,255,255,.14)}
 .if-c:active span{transform:scale(.97)}.if-c input:focus-visible+span{outline:2px solid currentColor;outline-offset:2px}
 .if-f select{width:100%}
+
+.if-f .if-c{position:relative;display:inline-flex;margin:0;padding:0;font-size:inherit;letter-spacing:normal;text-transform:none;opacity:1;vertical-align:top}
+.if-f .if-c input{position:absolute;inset:0;width:1px;height:1px;margin:0;padding:0;border:0;opacity:0;clip-path:inset(50%)}
+.if-f .if-cs{align-items:center}
+.if-f .if-c span{font-size:13px;letter-spacing:.04em;text-transform:none;line-height:1;padding:11px 18px}
+.if-f .two{margin-top:6px}.if-f .two+.two{margin-top:18px}
+.cafe h2{text-wrap:balance}
 """.replace('__F__', FONTS)
 
 ICON = {
@@ -897,7 +904,7 @@ def build_home():
 <a class="btn light" href="{wa('Olá, quero conversar sobre uma parceria com a W3W.')}" target="_blank" rel="noopener">Propor uma parceria</a></div></section>
 
 <section class="cafe" id="contato"><div class="wrap cafe-g">
-<div><span class="eyebrow">Contato</span><h2>Vamos tomar <em>um café?</em></h2>
+<div><span class="eyebrow">Contato</span><h2>Vamos tomar<br><em>um café?</em></h2>
 <p class="cafe-l">Conte o que você procura. Um consultor da W3W responde pessoalmente.</p>
 <ul class="cafe-r"><li><a href="{wa('Olá, quero falar com um consultor da W3W.')}" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:{EMAIL}">E-mail</a></li><li><a href="https://instagram.com/w3wimoveis" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://maps.google.com/?q=Moema+São+Paulo" target="_blank" rel="noopener">Moema · SP</a></li></ul></div>
 {intent_form("h",E)}
