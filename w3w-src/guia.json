@@ -9,6 +9,117 @@
  ],
  "posts": [
   {
+   "slug": "roteiro-moema-para-quem-vem-de-fora",
+   "titulo": "Moema para quem vem de fora",
+   "sub": "Onde ficar, o que fazer e onde comer num bairro que é polo de mesa, compras e noite em São Paulo.",
+   "categoria": "Lazer e parques",
+   "data": "2026-11-24",
+   "leitura": "7 min",
+   "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/obelisco-aereo.jpg",
+   "secoes": [
+    [
+     "Por que ficar em Moema",
+     "São Paulo tem atrações espalhadas por toda a cidade, mas Moema é uma das bases mais práticas para quem chega. O bairro fica a poucos minutos do Aeroporto de Congonhas, encosta no Parque Ibirapuera e tem a Linha 5-Lilás do metrô, com as estações Eucaliptos, Moema e AACD-Servidor. É arborizado, residencial e, ao mesmo tempo, cheio de restaurantes, bares e comércio. Dá para fazer quase tudo a pé."
+    ],
+    [
+     "Onde se hospedar · hotéis",
+     "Há opções para vários bolsos. Na linha mais completa, o Meliá Ibirapuera e o Pullman São Paulo Ibirapuera ficam perto do Shopping Ibirapuera. O Mercure São Paulo Moema, na Av. Lavandisca, tem piscina e spa. Para quem prioriza custo-benefício, há o Slaviero Essential Moema, o ibis São Paulo Ibirapuera e o Intercity Ibirapuera. O Wyndham Ibirapuera Convention Plaza atende bem quem vem a trabalho. Vale comparar preços: novembro costuma ser o mês mais caro e o começo do ano, o mais barato."
+    ],
+    [
+     "Airbnb e locação por temporada",
+     "Moema tem muitos apartamentos e studios novos, e boa parte do mercado de locação curta da região está nesses prédios. Antes de reservar, confira se o condomínio permite esse tipo de uso: a Justiça já reconheceu que o condomínio pode proibir a locação de curtíssima duração na convenção, e vários prédios fazem isso. Studios em edifícios pensados para renda, com recepção e lavanderia, costumam ser a experiência mais tranquila. Para quem pensa em investir, esse é justamente o perfil de imóvel que mais procuramos na curadoria da W3W."
+    ],
+    [
+     "Manhã · Ibirapuera",
+     "Comece pelo parque, que fica a uma caminhada de boa parte do bairro. Corrida ou bicicleta pela manhã, depois a parte cultural: o MAM, a Oca e o Auditório Ibirapuera, com projeto de Oscar Niemeyer. Do lado de fora, o Obelisco e o Monumento às Bandeiras, de Victor Brecheret, valem a foto."
+    ],
+    [
+     "Tarde · compras e ruas",
+     "O Shopping Ibirapuera resolve compras de todo tipo. Para andar sem pressa, as avenidas e alamedas de nomes de pássaros, como Sabiá, Cotovia e Bem-te-vi, concentram cafés, padarias e lojas de bairro. A Av. Ibirapuera liga tudo e tem comércio o dia inteiro."
+    ],
+    [
+     "Noite · mesa e bares",
+     "Moema é um dos polos gastronômicos da zona sul: tem japonês, italiano, pizzaria clássica, bistrô e boteco. Casas tradicionais como a Galeteria Assados e o Bar do Alemão convivem com bares de mesa na calçada e música ao vivo, como o Bourbon Street Music Club, referência de jazz e blues. Nas próximas edições, cada um desses mundos ganha um capítulo próprio."
+    ],
+    [
+     "Dica do concierge",
+     "Fique perto de uma estação da Linha 5 e você chega à Paulista, aos Jardins ou à Vila Olímpia sem depender de carro. E, se Moema conquistar você, a gente conversa sobre morar aqui."
+    ]
+   ],
+   "imoveis": [
+    "agami-park-residences",
+    "grafik-moema",
+    "vp-cotovia"
+   ],
+   "imagens": [
+    null,
+    [
+     "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/caminho-ipes.jpg",
+     "Ruas arborizadas de Moema"
+    ],
+    null,
+    null,
+    [
+     "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/monumento-bandeiras.jpg",
+     "Monumento às Bandeiras"
+    ],
+    [
+     "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/av-ibirapuera.jpg",
+     "Av. Ibirapuera"
+    ],
+    [
+     "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/por-do-sol-lago.jpg",
+     "Fim de tarde no Ibirapuera"
+    ],
+    null
+   ],
+   "citacao": "Moema é uma das bases mais práticas para quem chega a São Paulo.",
+   "concierge": [
+    {
+     "n": 1,
+     "tempo": "Manhã",
+     "nome": "Parque Ibirapuera",
+     "nota": "Corrida, bicicleta ou café olhando o lago. A uma caminhada de boa parte do bairro."
+    },
+    {
+     "n": 2,
+     "tempo": "Manhã",
+     "nome": "Ciclofaixa de Moema",
+     "nota": "A primeira ciclofaixa permanente da cidade, de 2011."
+    },
+    {
+     "n": 3,
+     "tempo": "Tarde",
+     "nome": "Linha 5-Lilás",
+     "nota": "Estações Eucaliptos, Moema e AACD-Servidor, desde 2018."
+    },
+    {
+     "n": 4,
+     "tempo": "Noite",
+     "nome": "Galeteria Assados",
+     "nota": "Casa tradicional na Av. Cotovia."
+    },
+    {
+     "n": 5,
+     "tempo": "Noite",
+     "nome": "Bar do Alemão",
+     "nota": "Veio de Itu e fica na Av. Juriti."
+    },
+    {
+     "n": 6,
+     "tempo": "Noite",
+     "nome": "Bráz",
+     "nota": "Uma das pizzarias mais conhecidas de São Paulo."
+    },
+    {
+     "n": 7,
+     "tempo": "Fim de noite",
+     "nome": "Bourbon Street Music Club",
+     "nota": "Referência de jazz e blues na cidade."
+    }
+   ]
+  },
+  {
    "slug": "moema-em-cinco-tempos",
    "titulo": "Moema em cinco tempos",
    "sub": "Um primeiro passeio pelo bairro: da padaria de manhã ao chope no fim da noite.",
