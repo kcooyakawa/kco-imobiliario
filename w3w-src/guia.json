@@ -15,7 +15,7 @@
    "categoria": "Morar em Moema",
    "data": "2026-11-20",
    "leitura": "5 min",
-   "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/lindenberg-moema/voo.jpg",
+   "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/lago-skyline.jpg",
    "secoes": [
     [
      "Por que um guia",
@@ -50,20 +50,20 @@
    "imagens": [
     null,
     [
-     "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/agami-park-residences/voo.jpg",
-     "Agami Park Residences, Moema"
+     "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/lago-ponte.jpg",
+     "Manhã no lago do Ibirapuera"
     ],
     [
-     "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/panorama-ibirapuera/capa.jpg",
-     "Calçada arborizada, Av. Açocê"
+     "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/avenida-arborizada.jpg",
+     "Ruas arborizadas da região"
     ],
     [
-     "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/edificio-adolpho-lindenberg/lazer-3.jpg",
-     "A mesa como ritual"
+     "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/por-do-sol-lago.jpg",
+     "Fim de tarde no parque"
     ],
     [
-     "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/edificio-adolpho-lindenberg/fachada.jpg",
-     "Moema ao anoitecer"
+     "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/banco-lago.jpg",
+     "O lago ao anoitecer"
     ],
     null
    ],
@@ -117,5 +117,24 @@
  "edicao": {
   "numero": "01",
   "mes": "Novembro 2026"
+ },
+ "banco_imagens": {
+  "lago-ponte": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/lago-ponte.jpg",
+  "alameda-parque": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/alameda-parque.jpg",
+  "ibirapuera-panorama": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/ibirapuera-panorama.jpg",
+  "auditorio-ibirapuera": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/auditorio-ibirapuera.jpg",
+  "obelisco-entardecer": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/obelisco-entardecer.jpg",
+  "caminho-ipes": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/caminho-ipes.jpg",
+  "por-do-sol-lago": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/por-do-sol-lago.jpg",
+  "skyline-ibirapuera": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/skyline-ibirapuera.jpg",
+  "banco-lago": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/banco-lago.jpg",
+  "ibirapuera-aereo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/ibirapuera-aereo.jpg",
+  "ibirapuera-360": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/ibirapuera-360.jpg",
+  "lago-skyline": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/lago-skyline.jpg",
+  "monumento-bandeiras": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/monumento-bandeiras.jpg",
+  "obelisco-aereo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/obelisco-aereo.jpg",
+  "sombra-lago": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/sombra-lago.jpg",
+  "av-ibirapuera": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/av-ibirapuera.jpg",
+  "avenida-arborizada": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/guia/avenida-arborizada.jpg"
  }
 }

@@ -766,7 +766,9 @@ ORG = {"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "W3
        "address": {"@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR"},
        "identifier": CRECI}
 
-VID = 'https://w3wlp.netlify.app/v'
+_LOC = os.path.exists(os.path.join(ROOT, '..', 'w3w-img', 'site', 'v', 'torre.mp4'))
+SITE = 'https://kcooyakawa.github.io/kco-imobiliario/w3w-img/site' if _LOC else 'https://w3wlp.netlify.app'
+VID = SITE + '/v'
 CATS = [('', 'Todos'), ('studios', 'Studios'), ('apartamentos', 'Apartamentos'), ('alto-padrao', 'Alto padrão')]
 
 def th(x):
@@ -868,7 +870,7 @@ def build_home():
               'Studios, apartamentos e imóveis de alto padrão em Moema, com curadoria da W3W Imóveis: mais de 20 anos de mercado e atendimento direto com os sócios.', '',
               f'<script type="application/ld+json">{json.dumps(ORG, ensure_ascii=False)}</script>')
     pg += header('').replace('class="hd"', 'class="hd over"')
-    socio = lambda img, n, c, t: f'<div class="sc"><div class="sc-ph"><img src="https://w3wlp.netlify.app/img/{img}" alt="{n}" loading="lazy"></div><h3>{n}</h3><span class="eyebrow">{c}</span><p>{t}</p></div>'
+    socio = lambda img, n, c, t: f'<div class="sc"><div class="sc-ph"><img src="{SITE}/img/{img}" alt="{n}" loading="lazy"></div><h3>{n}</h3><span class="eyebrow">{c}</span><p>{t}</p></div>'
     pg += f"""<main>
 <section class="hlp" id="inicio"><div class="hlp-s" id="heroStick">
 <video autoplay muted loop playsinline preload="auto" poster="{VID}/cidade.jpg"><source src="{VID}/cidade.mp4" type="video/mp4"></video><div class="hlp-sh"></div>
@@ -1175,7 +1177,7 @@ def build_guia():
     pg += f'''<main class="mg">
 <section class="mg-mast"><div class="wrap"><h1>Guia <em>Moema</em></h1><div class="mg-col"><b>Edição nº {ed["numero"]}</b>{esc(ed["mes"])}<br>Concierge W3W Imóveis</div></div>
 <div class="wrap mg-strip"><span>Mesa · Parque · Cultura · Noite</span><span>Curadoria de quem trabalha no bairro há mais de vinte anos</span></div></section>
-<section class="wrap"><div class="mg-cover"><a href="{u("guia-moema/"+p0["slug"])}"><figure><img src="{p0["capa"]}" alt="Vista aérea de Moema" decoding="async"></figure>
+<section class="wrap"><div class="mg-cover"><a href="{u("guia-moema/"+p0["slug"])}"><figure><img src="{p0["capa"]}" alt="Parque Ibirapuera, vizinho de Moema" decoding="async"></figure>
 <div class="mg-cv"><span class="mg-tag">Matéria de capa · {esc(p0["categoria"])}</span><div><h2>{esc(p0["titulo"])}</h2><p>{esc(p0["sub"])}</p></div><span class="mg-read">Ler a matéria · {p0["leitura"]}</span></div></a></div>
 {f'<div class="mg-sum">{summ}</div>' if summ else ''}</section>
 <section class="wrap"><div class="mg-map"><div><h2>O bairro em <em>um mapa</em></h2><p>Os endereços desta edição, do parque pela manhã ao jazz no fim da noite. Toque no WhatsApp e o concierge W3W indica o resto: reserva, horário, o melhor lugar da casa.</p>{carnet(pins)}</div>
@@ -1200,7 +1202,7 @@ def build_guia():
         pins = p.get('concierge', [])
         pg += f'''<main class="mg"><header class="ma-hd"><div class="wrap"><a class="mg-tag" href="{u('guia-moema')}">← Guia Moema · Edição nº {ed["numero"]}</a><h1>{esc(p["titulo"])}</h1><p>{esc(p["sub"])}</p></div>
 <div class="wrap ma-meta"><span>{esc(p["categoria"])}</span><span>{dt(p["data"])}</span><span>Leitura · {p["leitura"]}</span><span>Por W3W Imóveis</span></div></header>
-<div class="wrap"><figure class="ma-hero"><img src="{p["capa"]}" alt="Vista aérea de Moema" decoding="async"></figure>
+<div class="wrap"><figure class="ma-hero"><img src="{p["capa"]}" alt="Parque Ibirapuera, vizinho de Moema" decoding="async"></figure>
 <div class="ma-grid"><article class="ma-body">{body}</article>
 {f'<aside class="ma-side"><h3>Carnet do concierge</h3>{gm_map(pins)}{carnet(pins)}</aside>' if pins else ''}</div></div>
 <section class="gm-near"><div class="wrap"><div class="sec-hd"><h2>Morar perto <em>daqui</em></h2><a href="{u('guia-moema')}">← Guia Moema</a></div>
