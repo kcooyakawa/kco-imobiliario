@@ -278,10 +278,11 @@
    ],
    "img": {
     "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/capa.jpg",
+    "fachada": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/fachada.jpg",
     "par": [
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/par-1.jpg",
-      "Embasamento"
+      "Acesso residencial"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/par-2.jpg",
@@ -296,23 +297,35 @@
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/lazer-2.jpg",
-      "Piscina"
+      "Quadra e lounge de tênis"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/lazer-3.jpg",
-      "Fitness"
+      "Salão de festas"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/lazer-4.jpg",
-      "Quadra de tênis"
+      "Private Pool House"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/lazer-5.jpg",
-      "Gourmet"
+      "Fitness"
      ],
      [
-      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/ap-rooftop.jpg",
-      "Rooftop · Zen Apartments"
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/lazer-6.jpg",
+      "Salão de festas B"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/lazer-7.jpg",
+      "Espaço teen"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/lazer-8.jpg",
+      "Brinquedoteca e playground"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/zen-cyrela-yoo/lazer-9.jpg",
+      "Quadra recreativa"
      ]
     ]
    }
