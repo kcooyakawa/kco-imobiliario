@@ -137,7 +137,7 @@ box-shadow:inset 0 1.5px 0 #fff,inset 0 -1px 1px rgba(255,255,255,.7),inset 0 0 
 @media (max-width:900px){.g2-cg{grid-template-columns:1fr}.g2-map{position:static}.g2-cg .g2-pins{grid-template-columns:1fr}}
 
 .g2-mapa{padding:6vh 0 4vh}
-.g2-mx{display:grid;grid-template-columns:1fr 1.1fr;gap:0;border-radius:32px;overflow:hidden;background:#0E1116;color:#F6F5F2;text-decoration:none;box-shadow:0 40px 80px -40px rgba(14,17,22,.45);transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.g2-mx{display:grid;grid-template-columns:1fr 1.1fr;gap:0;border-radius:32px;overflow:hidden;background:linear-gradient(160deg,#3A424F,#222831);color:#F3F2EF;text-decoration:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 40px 80px -40px rgba(14,17,22,.45);transition:transform .6s cubic-bezier(.16,1,.3,1)}
 .g2-mx:hover{transform:translateY(-4px)}
 .g2-mx .t{padding:clamp(32px,5vw,64px);display:flex;flex-direction:column;gap:22px;justify-content:center}
 .g2-mx .t .mono{color:#7FB0FF;display:flex;gap:10px;align-items:center}
@@ -145,10 +145,10 @@ box-shadow:inset 0 1.5px 0 #fff,inset 0 -1px 1px rgba(255,255,255,.7),inset 0 0 
 @keyframes g2pu{70%{box-shadow:0 0 0 10px rgba(61,220,151,0)}100%{box-shadow:0 0 0 0 rgba(61,220,151,0)}}
 .g2-mx h2{font:300 clamp(38px,4.6vw,64px)/.98 var(--sans);letter-spacing:-.04em;margin:0}
 .g2-mx h2 em{font-family:var(--serif);font-style:italic;color:#7FB0FF}
-.g2-mx p{color:#AEB6C2;font-size:16px;line-height:1.55;max-width:42ch;margin:0}
+.g2-mx p{color:#C5CBD4;font-size:16px;line-height:1.55;max-width:42ch;margin:0}
 .g2-mx dl{display:flex;gap:34px;margin:6px 0 0;flex-wrap:wrap}
-.g2-mx dt{font:300 34px/1 var(--sans);letter-spacing:-.03em}.g2-mx dd{margin:6px 0 0;font:500 10.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#7D8796}
-.g2-mx .go{align-self:flex-start;margin-top:8px;background:#F6F5F2;color:#0E1116;padding:15px 24px;border-radius:999px;font:500 15px var(--sans)}
+.g2-mx dt{font:300 34px/1 var(--sans);letter-spacing:-.03em}.g2-mx dd{margin:6px 0 0;font:500 10.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#8F98A6}
+.g2-mx .go{align-self:flex-start;margin-top:8px;background:#F3F2EF;color:#1C2129;padding:15px 24px;border-radius:999px;font:500 15px var(--sans)}
 .g2-mx .m{position:relative;min-height:440px;background:#EEEBE5}
 .g2-mx .m svg{position:absolute;inset:0;width:100%;height:100%}
 .g2-mx .pin{position:absolute;width:12px;height:12px;border-radius:50%;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.25);animation:g2pin 3.2s ease-in-out infinite}
