@@ -148,6 +148,23 @@ body:has(.mp) .hd,body:has(.mp) .ft{display:none!important}
 .maplibregl-ctrl-bottom-right{right:0!important;bottom:48%!important}
 }
 @media (prefers-reduced-motion:reduce){.mp *{animation:none!important;transition:none!important}}
+
+/* tema grafite W3W no painel e na lista */
+.mp-panel,.mp-grid{--tx:#F3F2EF;--tx2:#C5CBD4;--tx3:#8F98A6;--ln:rgba(255,255,255,.11);--ac:#8DB8FF;color:var(--tx)}
+.mp-panel.mp-glass,.mp-grid.mp-glass,.mp-panel,.mp-grid{background:linear-gradient(160deg,rgba(58,66,79,.94),rgba(34,40,49,.96))!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.12),inset 0 0 0 1px rgba(255,255,255,.06),0 30px 60px -30px rgba(10,14,20,.55)!important}
+.mp-panel button:not([aria-pressed=true]),.mp-grid button:not([aria-pressed=true]),.mp-panel input,.mp-grid input{background:rgba(255,255,255,.07)!important;color:var(--tx2)!important;box-shadow:inset 0 0 0 1px var(--ln)!important}
+.mp-panel input::placeholder{color:var(--tx3)}
+.mp-panel svg,.mp-grid svg{color:inherit}
+.mp-logo svg path,.mp-logo svg g{fill:#F3F2EF}
+.mp-panel a,.mp-grid a{color:var(--tx)}
+.mp-logo nav a{background:rgba(255,255,255,.08)!important;color:var(--tx2)!important}
+.mp-panel ::-webkit-scrollbar-thumb,.mp-grid ::-webkit-scrollbar-thumb{background:rgba(255,255,255,.2)}
+.mp-gnav{background:linear-gradient(rgba(40,46,56,.98) 70%,rgba(40,46,56,0))!important}
+.mp-gnav button[aria-pressed=true]{background:#F3F2EF!important;color:#1C2129!important}
+.mp-gnav button[aria-pressed=true] small{color:rgba(28,33,41,.55)!important}
+.mp-gc{background:rgba(255,255,255,.06)!important;box-shadow:inset 0 0 0 1px var(--ln)!important}
+.mp-gc:hover{background:rgba(255,255,255,.11)!important}
+.mp-gc *{border-color:var(--ln)}
 </style>
 """
 
