@@ -50,7 +50,7 @@ body:has(.mp){background:#EEEBE5}
 .mp-grp button{height:58px;border:0;border-radius:16px;background:rgba(255,255,255,.55);box-shadow:inset 0 0 0 1px var(--ln);font:500 11.5px/1.2 var(--sans);color:var(--tx2);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;transition:all .3s var(--e);padding:4px}
 .mp-grp button svg{width:18px;height:18px}
 .mp-grp button[aria-pressed=true]{background:linear-gradient(135deg,#2F6FD0,#1E4E9E);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 10px 22px -10px rgba(47,111,208,.7)}
-.mp-chips{display:flex;gap:6px;overflow-x:auto;padding:14px 24px;scrollbar-width:none;flex:none}
+.mp-chips{display:none!important;gap:6px;overflow-x:auto;padding:14px 24px;scrollbar-width:none;flex:none}
 .mp-chips::-webkit-scrollbar{display:none}
 .mp-chips button{flex:none;display:inline-flex;align-items:center;gap:8px;height:34px;padding:0 13px;border-radius:999px;border:0;font:500 12.5px var(--sans);color:var(--tx2);background:rgba(255,255,255,.6);box-shadow:inset 0 0 0 1px var(--ln);cursor:pointer;transition:all .25s}
 .mp-chips button b{width:8px;height:8px;border-radius:50%}
@@ -100,6 +100,9 @@ body:has(.mp){background:#EEEBE5}
 .mp-top button small{font:11px var(--mono);color:var(--tx3)}
 .mp-top button[aria-pressed=true]{background:var(--tx);color:#fff}.mp-top button[aria-pressed=true] small{color:rgba(255,255,255,.6)}
 .mp.lista .mp-top{display:none}
+.mp.lista .mp-panel{opacity:0;pointer-events:none;transform:translateX(-24px);transition:all .4s var(--e)}
+.mp.lista .mp-grid{left:20px}
+.mp-panel{transition:opacity .4s var(--e),transform .4s var(--e),height .5s var(--e)}
 .mp-gnav{position:sticky;top:0;z-index:2;display:flex;gap:6px;overflow-x:auto;padding:18px 0 14px;margin-bottom:6px;background:linear-gradient(#F4F1EC 75%,rgba(244,241,236,0));scrollbar-width:none}
 .mp-gnav::-webkit-scrollbar{display:none}
 .mp-gnav button{flex:none;height:38px;padding:0 15px;border-radius:999px;border:0;font:500 13px var(--sans);color:var(--tx2);background:rgba(255,255,255,.75);box-shadow:inset 0 0 0 1px var(--ln);cursor:pointer;display:inline-flex;align-items:center;gap:8px}
