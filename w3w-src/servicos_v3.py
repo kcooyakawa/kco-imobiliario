@@ -362,6 +362,56 @@ body:has(.z3) .ft .brand svg{opacity:.7;transform:scale(.85)}
 .z3-mt .w.on{opacity:1}
 .z3-mt em .w.on,.z3-mt em.w.on{color:var(--ac)}
 @media (max-width:900px){.z3-mg{grid-template-columns:1fr}.z3-mt span{padding-left:0!important}}
+
+.z3-orbs{position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.z3-orbs i{position:absolute;width:46vw;height:46vw;border-radius:50%;filter:blur(80px);opacity:.10;background:#9CCBFF}
+.z3-orbs i:nth-child(1){left:-12vw;top:120vh}.z3-orbs i:nth-child(2){right:-14vw;top:260vh;background:#7BE0B3;opacity:.06}.z3-orbs i:nth-child(3){left:20vw;top:420vh}
+.z3>section,.z3>div:not(.z3-orbs):not(.z3-glow){position:relative;z-index:1}
+
+/* liquid glass */
+.z3-btn{position:relative;overflow:hidden;isolation:isolate;backdrop-filter:blur(18px) saturate(1.8);-webkit-backdrop-filter:blur(18px) saturate(1.8);border:1px solid rgba(255,255,255,.22)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -1px 0 rgba(255,255,255,.06),0 10px 30px -12px rgba(0,0,0,.7);transition:transform .5s var(--e),box-shadow .4s,background .3s,color .3s}
+.z3-btn.s{background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.04));color:var(--tx)}
+.z3-btn.p{background:linear-gradient(180deg,rgba(255,255,255,.95),rgba(220,232,248,.82));color:#05070B;border-color:rgba(255,255,255,.6)!important}
+.z3-btn::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(120px 60px at var(--mx,50%) var(--my,0%),rgba(255,255,255,.55),transparent 70%);opacity:.0;transition:opacity .3s}
+.z3-btn:hover::before{opacity:1}
+.z3-btn::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;z-index:-1;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);animation:z3sh 4.5s 2s infinite}
+@keyframes z3sh{0%,70%{left:-60%}100%{left:130%}}
+.z3-btn:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 18px 40px -14px rgba(156,203,255,.45)}
+.z3-seg button,.z3-tg,.z3-ctl,.z3-sum,.z3-team>div{backdrop-filter:blur(14px) saturate(1.5);-webkit-backdrop-filter:blur(14px) saturate(1.5)}
+.z3-tg i{background:linear-gradient(180deg,#fff,rgba(220,232,248,.85));box-shadow:inset 0 1px 0 #fff,0 6px 18px -6px rgba(156,203,255,.6)}
+.z3-seg button[aria-pressed=true]{background:linear-gradient(180deg,#fff,rgba(220,232,248,.85));box-shadow:inset 0 1px 0 #fff,0 8px 22px -8px rgba(156,203,255,.6)}
+/* barra de progresso */
+.z3-pbar{position:fixed;left:0;top:0;height:2px;width:100%;z-index:60;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--ac),#fff)}
+/* títulos palavra por palavra */
+.z3-sp .wd{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}
+.z3-sp .wd>i{display:inline-block;font-style:inherit;transform:translateY(110%) rotate(4deg);transition:transform 1.1s var(--e)}
+.z3-sp.on .wd>i{transform:none}
+/* holofote nos cartões */
+.z3-team>div,.z3-ctl,.z3-sum,.z3-faq details,.z3-stage{position:relative}
+.z3-team>div::after,.z3-ctl::after,.z3-sum::after,.z3-stage::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(380px circle at var(--sx,50%) var(--sy,50%),rgba(156,203,255,.12),transparent 60%);opacity:0;transition:opacity .4s}
+.z3-team>div:hover::after,.z3-ctl:hover::after,.z3-sum:hover::after,.z3-stage:hover::after{opacity:1}
+/* mockups flutuando */
+.z3-st.on>*,.z3-mv>*{animation:z3fl 6s ease-in-out infinite}
+@keyframes z3fl{50%{translate:0 -10px}}
+.z3-st .z3-chip2{animation:z3fl 5s ease-in-out infinite reverse}
+/* linhas que se desenham */
+.z3-flow{border-top-color:transparent;position:relative}
+.z3-flow::after{content:"";position:absolute;left:0;top:-1px;height:1px;width:100%;background:var(--ln);transform-origin:left;transform:scaleX(var(--fl,0));transition:transform 1.6s var(--e)}
+.z3-flow.on::after{--fl:1}
+.z3-time{border-left-color:transparent}
+.z3-time::before{content:"";position:absolute;left:-1px;top:0;width:1px;height:100%;background:linear-gradient(var(--ac),var(--ln));transform-origin:top;transform:scaleY(0);transition:transform 1.8s var(--e)}
+.z3-time.on::before{transform:scaleY(1)}
+/* item ativo dos serviços */
+.z3-it h3{transition:transform .6s var(--e)}
+.z3-it.act h3{transform:translateX(8px)}
+.z3-it li{opacity:0;transform:translateY(10px);transition:opacity .5s var(--e),transform .5s var(--e)}
+.z3-it.act li,.z3-it.seen li{opacity:1;transform:none}
+.z3-it li:nth-child(2){transition-delay:.06s}.z3-it li:nth-child(3){transition-delay:.12s}.z3-it li:nth-child(4){transition-delay:.18s}
+@media (max-width:900px){.z3-it li{opacity:1;transform:none}}
+/* total animado */
+.z3-tot b{display:inline-block;transition:transform .4s var(--e)}
+.z3-tot.bump b{transform:scale(1.06)}
+@media (prefers-reduced-motion:reduce){.z3-btn::after{display:none}.z3-sp .wd>i{transform:none}.z3-st.on>*,.z3-mv>*{animation:none}}
 </style>
 """
 
@@ -395,6 +445,22 @@ $('#z3dos').onchange=calc;calc();
 requestAnimationFrame(()=>mv(tg.querySelector('[aria-pressed=true]')));addEventListener('resize',()=>mv(tg.querySelector('[aria-pressed=true]')));
 /* dash */
 $$('[data-to]').forEach(el=>{const to=+el.dataset.to,st=performance.now()+600;const k=t=>{const p=Math.min(Math.max((t-st)/1800,0),1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(k)};R?el.textContent=to:requestAnimationFrame(k)});
+/* efeitos extras */
+const pb=document.createElement('div');pb.className='z3-pbar';document.body.appendChild(pb);
+addEventListener('scroll',()=>{const h=document.documentElement;pb.style.transform=`scaleX(${h.scrollTop/(h.scrollHeight-innerHeight)})`},{passive:true});
+$$('.z3-sh h2,.z3-plh h2,.z3-dos h2,.z3-faq h2,.z3-end h2').forEach(h=>{const walk=n=>{[...n.childNodes].forEach(c=>{if(c.nodeType===3){const f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(t=>{if(!t)return;if(/^\s+$/.test(t)){f.append(t);return}const w=document.createElement('span');w.className='wd';const i=document.createElement('i');i.textContent=t;w.append(i);f.append(w)});c.replaceWith(f)}else if(c.nodeType===1&&c.tagName!=='BR')walk(c)})};walk(h);h.classList.add('z3-sp');h.querySelectorAll('.wd>i').forEach((i,k)=>i.style.transitionDelay=k*.05+'s');io.observe(h)});
+$$('.z3-flow,.z3-time').forEach(el=>io.observe(el));
+const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('seen')}),{threshold:.4});$$('.z3-it').forEach(el=>io2.observe(el));
+const fine=matchMedia('(hover:hover)').matches;
+if(fine&&!R){$$('.z3-btn').forEach(b=>{b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;b.style.setProperty('--mx',x+'px');b.style.setProperty('--my',y+'px');b.style.transform=`translate(${(x-r.width/2)*.15}px,${(y-r.height/2)*.25}px)`});b.addEventListener('pointerleave',()=>b.style.transform='')});
+$$('.z3-team>div,.z3-ctl,.z3-sum,.z3-stage').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--sx',e.clientX-r.left+'px');c.style.setProperty('--sy',e.clientY-r.top+'px')}));}
+const tot=$('#z3tot');new MutationObserver(()=>{tot.classList.add('bump');setTimeout(()=>tot.classList.remove('bump'),250)}).observe(tot,{childList:true});
+/* parallax em camadas */
+if(!R){const PX=[];const add=(sel,vy,vx=0)=>$$(sel).forEach((el,i)=>PX.push([el,vy,typeof vx==='function'?vx(i):vx]));
+add('.z3-sh,.z3-plh',-.08);add('.z3-mt span',0,i=>i%2?-.18:.14);add('.z3-mg aside',.12);add('.z3-stage',-.05);add('.z3-team>div',0,0);$$('.z3-team>div').forEach((el,i)=>PX.push([el,-.04*(i+1),0]));
+add('.z3-time',.06);add('.z3-sum',-.07);add('.z3-ctl',.03);add('.z3-flow li',0,0);$$('.z3-flow li').forEach((el,i)=>PX.push([el,-.03*(i%3+1),0]));add('.z3-faq .rv:first-child',.1);add('.z3-end h2',-.1);add('.z3-dash',.18);add('.z3-dcard',-.06);
+const orb=document.createElement('div');orb.className='z3-orbs';orb.innerHTML='<i></i><i></i><i></i>';$('.z3').prepend(orb);const ob=[...orb.children];
+const pl2=()=>{const vh=innerHeight;PX.forEach(([el,vy,vx])=>{const r=el.getBoundingClientRect(),c=(r.top+r.height/2-vh/2);if(r.bottom<-200||r.top>vh+200)return;el.style.translate=`${(c*vx*(innerWidth>900?1:.15)).toFixed(1)}px ${(c*vy).toFixed(1)}px`});const y=scrollY;ob.forEach((o,i)=>o.style.translate=`0 ${-(y*(.15+i*.12))}px`);requestAnimationFrame(pl2)};requestAnimationFrame(pl2)}
 /* palco dos serviços */
 const sts=$$('.z3-st'),stio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const i=e.target.dataset.i;sts.forEach(x=>x.classList.toggle('on',x.dataset.i===i));$$('.z3-it').forEach(x=>x.classList.toggle('act',x===e.target))}}),{rootMargin:'-45% 0px -45% 0px'});$$('.z3-it').forEach(el=>stio.observe(el));
 if(R){$$('.z3-mt .w').forEach(l=>l.classList.add('on'));return}
@@ -472,10 +538,10 @@ def render(wa, way, BASE, u):
 <div class="z3-scroll mono" aria-hidden="true">Role<i></i></div>
 </div></section>
 
-<section class="z3-man3" aria-label="Manifesto"><div class="z3-mg"><aside><span class="mono z3-ey">Manifesto</span><p>W3W Imóveis · Inteligência imobiliária · Moema, desde 2004</p></aside><p class="z3-mt"><span><i class="w" style="font-style:inherit">Imóvel</i> <i class="w" style="font-style:inherit">de</i> <i class="w" style="font-style:inherit">alto</i> <i class="w" style="font-style:inherit">padrão</i></span><span><em><i class="w" style="font-style:inherit">não</i> <i class="w" style="font-style:inherit">se</i> <i class="w" style="font-style:inherit">vende</i></em></span><span><i class="w" style="font-style:inherit">com</i> <i class="w" style="font-style:inherit">anúncio.</i> <i class="w" style="font-style:inherit">Vende-se</i></span><span><i class="w" style="font-style:inherit">com</i> <em><i class="w" style="font-style:inherit">inteligência.</i></em></span></p></div></section>
+<section class="z3-man3" aria-label="Manifesto"><div class="z3-mg"><aside><span class="mono z3-ey">Manifesto</span><p>W3W Imóveis · Inteligência imobiliária · Moema, desde 2004</p></aside><p class="z3-mt"><span><i class="w" style="font-style:inherit">Imóvel</i> <i class="w" style="font-style:inherit">de</i> <i class="w" style="font-style:inherit">alto</i> <i class="w" style="font-style:inherit">padrão</i></span><span><em><i class="w" style="font-style:inherit">não</i> <i class="w" style="font-style:inherit">se</i> <i class="w" style="font-style:inherit">vende</i></em></span><span><i class="w" style="font-style:inherit">com</i> <i class="w" style="font-style:inherit">anúncio.</i></span><span><i class="w" style="font-style:inherit">Vende-se</i> <i class="w" style="font-style:inherit">com</i> <em><i class="w" style="font-style:inherit">inteligência.</i></em></span></p></div></section>
 
 <section class="z3-sv" id="servicos"><div class="z3-in">
-<div class="z3-sh rv"><span class="mono z3-ey">01 · O que entregamos</span><h2>Tudo o que seu imóvel precisa <em>para vender.</em></h2></div>
+<div class="z3-sh rv"><span class="mono z3-ey">01 · O que entregamos</span><h2>Tudo para o seu imóvel <em>vender mais rápido.</em></h2></div>
 <div class="z3-svg"><div class="z3-stage" aria-hidden="true">{stage}</div><div class="z3-items">{items}</div></div>
 </div></section>
 
