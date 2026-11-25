@@ -1,0 +1,21 @@
+name: W3W mapa de Moema (robô)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * 1,5'   # segunda e sexta, 6h em Brasília
+permissions:
+  contents: write
+concurrency: { group: mapa-moema, cancel-in-progress: false }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: cd w3w-src && python mapa_robo.py && python build.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A w3w w3w-src/mapa
+          git diff --cached --quiet || (git commit -m "Mapa de Moema: lugares atualizados (automático)" && git pull --rebase -X theirs && git push)

@@ -1299,6 +1299,17 @@ def build_guia():
     pg += header('guia-moema') + guia_v2.render(G, p0, near, wa, u, dt, BASE, gm_map(p0.get('concierge', []))) + footer()
     write('guia-moema-v2/index.html', pg)
 
+def build_mapa():
+    import mapa_page
+    for f in ('maplibre-gl.js', 'maplibre-gl.css', 'LICENSE.txt'):
+        write('assets/maplibre/' + f, open(os.path.join(ROOT, 'mapa', f), encoding='utf-8').read())
+    write('mapa-moema/locais.json', open(os.path.join(ROOT, 'mapa', 'locais.json'), encoding='utf-8').read())
+    write('mapa-moema/mapa.js', mapa_page.JS)
+    cats = json.dumps(mapa_page.CATS, ensure_ascii=False)
+    pg = head('Mapa de Moema | Guia Moema · W3W Imóveis', 'Restaurantes, bares, cafés, docerias, farmácias e serviços 24 horas de Moema, com o que está aberto agora. Atualizado toda semana.', 'mapa-moema')
+    pg += header('guia-moema') + mapa_page.render(wa, cats) + footer()
+    write('mapa-moema/index.html', pg)
+
 def build_servicos():
     import servicos
     pg = head('Serviços W3W · Marketing imobiliário de alto padrão', 'Campanha por produto, criação assinada por Head of Art e Lead Dossiê: a W3W cria, anuncia e atende imóveis de alto padrão em Moema.', 'servicos')
@@ -1324,3 +1335,4 @@ if __name__ == '__main__':
     build()
     build_guia()
     build_servicos()
+    build_mapa()
