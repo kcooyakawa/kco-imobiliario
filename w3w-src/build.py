@@ -9,6 +9,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, '..', 'w3w')
 BASE = os.environ.get('W3W_BASE', '/kco-imobiliario/w3w')   # caminho base no GitHub Pages
 SITE = os.environ.get('W3W_SITE', 'https://kcooyakawa.github.io')
+ORIGIN = SITE  # domínio público (SITE é redefinido mais abaixo para mídia)
 FONTS = os.environ.get('W3W_FONTS', '/kco-imobiliario/w3w-fonts')
 WA = '5511940297871'
 EMAIL = 'w3wimoveis@gmail.com'
@@ -54,6 +55,8 @@ def intent_form(px, E):
 <small>Resposta pessoal pelo WhatsApp. Ao enviar, você concorda com a nossa <a href="{u('politica-de-privacidade')}">Política de Privacidade</a>.</small></form>
 <script>(function(){{var q=new URLSearchParams(location.search).get('imovel');if(!q)return;var s=document.getElementById('{px}-im');for(var o of s.options)if(o.text===q){{s.value=q;break}}}})()</script>"""
 
+def purl(e): return ORIGIN + u('empreendimentos/' + e.get('_page', e['slug']))
+def wamsg(e, extra=''): return f"Olá! Quero mais informações sobre o {e['nome']}{extra}.\n{purl(e)}"
 def wa(msg): return f'https://wa.me/{WA}?text=' + urllib.parse.quote(msg)
 
 BAIRROS = {
@@ -687,8 +690,8 @@ def ga_tag():
     if not GA: return ''
     return f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag("js",new Date());gtag("config","{GA}");</script>'
 
-def head(title, desc, path, extra=''):
-    url = SITE + u(path)
+def head(title, desc, path, extra='', og=None):
+    url = ORIGIN + u(path)
     return f'''<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}">
@@ -697,7 +700,7 @@ def head(title, desc, path, extra=''):
 <meta name="referrer" content="no-referrer">
 <meta property="og:type" content="website"><meta property="og:site_name" content="W3W Imóveis"><meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}">
-<meta property="og:image" content="{OG}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image" content="{og or OG}">{"" if og else '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'}
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="{FONTS}/ppeditorial-ultralight.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{FONTS}/ppneuemontreal-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -857,7 +860,7 @@ def gcard(e, i):
 STATUS = [('Lançamento', 'Lançamentos', 'Antes de todo mundo.'), ('Em obras', 'Em obras', 'Garanta na planta.'), ('Pronto', 'Prontos para morar', 'Chaves na mão.')]
 
 def ficha_data():
-    return [dict({k: e[k] for k in ('slug', 'nome', 'bairro', 'status', 'frase', 'img', 'resumo', 'categorias')}, selo=selo(e), bt=BAIRROS[e['bairro_slug']]['lead']) for e in expand(EM)]
+    return [dict({k: e[k] for k in ('slug', 'nome', 'bairro', 'status', 'frase', 'img', 'resumo', 'categorias')}, selo=selo(e), page=e.get('_page', e['slug']), bt=BAIRROS[e['bairro_slug']]['lead']) for e in expand(EM)]
 
 SHEET = r"""<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" hidden>
 <div class="sh-bg" data-close></div><div class="sh-p" tabindex="-1"><div class="sh-grab" aria-hidden="true"></div>
@@ -866,13 +869,13 @@ SHEET = r"""<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-l
 
 def rich(e, h='h2'):
     f = e['ficha']; r = e['resumo']; I = f.get('img', {})
-    msg = f"Olá, vi o {e['nome']} ({e['bairro']}) no site da W3W e quero receber a tabela e as plantas."
+    msg = wamsg(e)
     q = urllib.parse.quote(f"{f.get('endereco', e['nome'])} São Paulo")
     st = e['status'].split()[0].lower().replace('ç', 'c')
     fig = lambda src, cap, cls='': f'<figure class="bk-f {cls}"><img src="{src}" alt="{esc(cap)}" loading="lazy" decoding="async"><figcaption>{esc(cap)}</figcaption></figure>'
     nome = e['nome']
-    plantas = ''.join(f'<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td><td><a href="{wa(f"Olá, quero receber a planta de {b} ({a}) do {nome}.")}" target="_blank" rel="noopener">Receber planta</a></td></tr>' for a, b, c, d in f['plantas'])
-    _row = lambda rows: ''.join(f'<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td><td><a href="{wa(f"Olá, quero receber a planta de {b} ({a}) do {nome}.")}" target="_blank" rel="noopener">Receber planta</a></td></tr>' for a, b, c, d in rows)
+    plantas = ''.join(f'<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td><td><a href="{wa(wamsg(e, f" (planta {a}, {b})"))}" target="_blank" rel="noopener">Mais informações</a></td></tr>' for a, b, c, d in f['plantas'])
+    _row = lambda rows: ''.join(f'<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td><td><a href="{wa(wamsg(e, f" (planta {a}, {b})"))}" target="_blank" rel="noopener">Mais informações</a></td></tr>' for a, b, c, d in rows)
     _tb = lambda rows, hd='': (f'<h4 class="pl-g">{hd}</h4>' if hd else '') + f'<table class="lx-t"><thead><tr><th>Tipologia</th><th>Área</th><th>Suítes</th><th>Vagas</th><th></th></tr></thead><tbody>{_row(rows)}</tbody></table>'
     _st, _ap = split(e)
     tabs = (_tb(_ap, 'Apartamentos · ' + _rng(_ap)) + _tb(_st, 'Studios · ' + (_rng(_st) or 'sob consulta'))) if (_st and _ap) else _tb(f['plantas'])
@@ -894,10 +897,10 @@ def rich(e, h='h2'):
     if I.get('terraco'): out += fig(I['terraco'], I.get('terraco_cap', 'Terraço, duplex de 572 m²'), 'bk-full')
     out += f"""<section class="bk-txt bk-tec"><span class="eyebrow">Ficha técnica</span><dl>{''.join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in f['tecnica'] if not re.search(r'endere|localiza|terreno', a, re.I))}</dl>
 <p class="bk-note">Imagens: perspectivas ilustradas fornecidas pela incorporadora. Informações sujeitas a alteração.</p></section>
-<section class="lx-end"><span class="eyebrow">Tabela, plantas e condições</span><h3>Receba o material completo <em>do {esc(nome)}.</em></h3>
-<a class="btn light solid-l" href="{wa(msg)}" target="_blank" rel="noopener">Receber no WhatsApp</a></section>
-<div class="lx-bar"><span class="lx-bar-t"><small>{esc(nome)} · {selo(e)}</small><strong>Book completo, tabela e plantas <em>no seu WhatsApp.</em></strong></span>
-<a class="btn light solid-l lx-go" href="{wa("Olá, quero receber o book completo, a tabela e as plantas do " + nome + ".")}" target="_blank" rel="noopener">Quero receber <span aria-hidden="true">→</span></a></div></article>"""
+<section class="lx-end"><span class="eyebrow">Fale com a W3W</span><h3>Quer saber mais <em>sobre o {esc(nome)}?</em></h3>
+<a class="btn light solid-l" href="{wa(msg)}" target="_blank" rel="noopener">Quero mais informações</a></section>
+<div class="lx-bar"><span class="lx-bar-t"><small>{esc(nome)} · {selo(e)}</small><strong>Mais informações sobre este produto <em>no seu WhatsApp.</em></strong></span>
+<a class="btn light solid-l lx-go" href="{wa(msg)}" target="_blank" rel="noopener">Quero mais informações <span aria-hidden="true">→</span></a></div></article>"""
     return out
 
 def feat():
@@ -1017,7 +1020,7 @@ document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click
         desc = f"{e['nome']} em {e['bairro']}, São Paulo: {r['tipologias']}, {r['metragem']}. {e['status']}. Atendimento personalizado W3W Imóveis."
         rows = [('Tipologias', r['tipologias']), ('Metragem', r['metragem'])] + ([('Vagas', r['vagas'])] if r['vagas'] else []) + [('Bairro', f"{e['bairro']}, São Paulo")]
         ficha = ''.join(f'<div><dt>{k}</dt><dd>{esc(v)}</dd></div>' for k, v in rows)
-        msg = f"Olá, vi o {e['nome']} ({e['bairro']}) no site da W3W e quero mais informações."
+        msg = wamsg(e)
         ld = {"@context": "https://schema.org", "@type": "Residence", "name": e['nome'], "image": e['img'], "description": desc,
               "address": {"@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR", "streetAddress": e['bairro']}}
         bc = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -1026,7 +1029,7 @@ document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click
             {"@type": "ListItem", "position": 3, "name": e['nome'], "item": SITE + u('empreendimentos/' + e['slug'])}]}
         rel = [x for x in E if x['bairro_slug'] == e['bairro_slug'] and x['slug'] != e['slug']][:3]
         pg = head(f"{e['nome']} — {r['tipologias']} em {e['bairro']} | W3W Imóveis", desc, 'empreendimentos/' + e['slug'],
-                  f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script><script type="application/ld+json">{json.dumps(bc, ensure_ascii=False)}</script>')
+                  f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script><script type="application/ld+json">{json.dumps(bc, ensure_ascii=False)}</script>', og=e['img'])
         pg += header(e['bairro_slug'])
         pg += f'''<main><section class="pg-hd" style="padding-bottom:0"><div class="wrap"><div class="crumbs"><a class="back" href="{BASE}/#imoveis">← Voltar à galeria</a></div></div></section>
 <a class="pg-x" id="pgx" href="{BASE}/#imoveis" aria-label="Fechar e voltar à galeria (Esc)"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 5l14 14M19 5L5 19"/></svg></a><script>(function(){{var G='{BASE}/#imoveis';function go(){{if(document.referrer.indexOf(location.host)>-1&&history.length>1)history.back();else location.href=G}}document.getElementById('pgx').onclick=function(ev){{ev.preventDefault();go()}};addEventListener('keydown',function(ev){{if(ev.key==='Escape')go()}},true);var y0=null,dy=0,m=document.querySelector('main');addEventListener('touchstart',function(ev){{if(scrollY<=0){{y0=ev.touches[0].clientY;dy=0;m.style.transition='none'}}}},{{passive:true}});addEventListener('touchmove',function(ev){{if(y0===null)return;dy=ev.touches[0].clientY-y0;if(dy>0)m.style.transform='translateY('+Math.min(dy*.6,200)+'px)';else{{y0=null;m.style.transform=''}}}},{{passive:true}});addEventListener('touchend',function(){{m.style.transition='transform .3s';if(y0!==null&&dy>120)go();else m.style.transform='';y0=null}})}})();</script>
@@ -1034,7 +1037,7 @@ document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click
 <div class="fx-ph"><img src="{e['img']}" alt="Fachada do {esc(e['nome'])}, {esc(e['bairro'])}" decoding="async"><span class="tag st">{selo(e)}</span></div>
 <div class="fx-b"><div class="fx-t"><span class="eyebrow">{esc(e['bairro'])} · {selo(e)}</span><h1>{esc(e['nome'])}</h1>{f'<p class="fx-q">{esc(e["frase"])}</p>' if e['frase'] else ''}</div>
 <dl class="fx-s">{ficha}</dl></div>
-<div class="fx-c"><a class="btn solid" href="{wa(msg)}" target="_blank" rel="noopener">Quero a ficha completa</a><a class="btn" href="{wa('Olá, quero agendar uma visita ao ' + e['nome'] + '.')}" target="_blank" rel="noopener">Agendar visita</a><a class="btn" href="{u('contato')}?imovel={quote(e['nome'])}#form">Contar o que procuro</a></div>
+<div class="fx-c"><a class="btn solid" href="{wa(msg)}" target="_blank" rel="noopener">Quero mais informações</a><a class="btn" href="{wa('Olá, quero agendar uma visita ao ' + e['nome'] + '.')}" target="_blank" rel="noopener">Agendar visita</a><a class="btn" href="{u('contato')}?imovel={quote(e['nome'])}#form">Contar o que procuro</a></div>
 <p class="fx-n">Plantas, lazer, incorporadora e previsão de entrega: fale com um consultor.</p></div></section>
 ''') + f'''<section class="sec" style="padding-top:0"><div class="wrap"><div class="sec-hd"><h2>Também em {e['bairro']}</h2><a href="{u(e['bairro_slug'])}">Ver todos</a></div>
 <div class="grid">{''.join(card(x) for x in rel)}</div></div></section>{band()}</main>'''
