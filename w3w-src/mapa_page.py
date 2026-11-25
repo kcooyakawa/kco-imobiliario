@@ -30,8 +30,7 @@ body:has(.mp){background:#EEEBE5;overflow:hidden}
 body:has(.mp) .hd,body:has(.mp) .ft{display:none!important}
 .mp-logo{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;color:var(--tx);text-decoration:none}
 .mp-logo svg{height:30px;width:auto}
-.mp-logo span{font:500 10.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--tx3)}
-.mp-logo:hover span{color:var(--ac)}
+.mp-logo a{color:var(--tx);display:flex}.mp-logo nav{display:flex;gap:6px}.mp-logo nav a{font:500 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--tx2);padding:7px 10px;border-radius:999px;background:rgba(14,17,22,.05);text-decoration:none}.mp-logo nav a:hover{color:var(--ac)}
 .mp{height:100svh!important;--bg:#EEEBE5;--tx:#14171C;--tx2:#4F5662;--tx3:#8C93A0;--ln:rgba(20,23,28,.1);--ac:#2F6FD0;--ok:#1E9E6A;--mono:ui-monospace,'SF Mono',Menlo,monospace;--e:cubic-bezier(.16,1,.3,1);position:relative;height:calc(100svh - var(--hdh,96px));min-height:560px;overflow:hidden;color:var(--tx)}
 #mpMap{position:absolute;inset:0;background:#EEEBE5}
 .mp-glass{background:linear-gradient(135deg,rgba(255,255,255,.78),rgba(255,255,255,.52));backdrop-filter:blur(22px) saturate(1.7);-webkit-backdrop-filter:blur(22px) saturate(1.7);box-shadow:inset 0 1.5px 0 #fff,inset 0 0 0 1px rgba(20,23,28,.07),0 30px 60px -30px rgba(20,23,28,.45)}
@@ -159,7 +158,7 @@ def render(wa, cats_json, grupos_json='[]', logo='', base=''):
 <div id="mpMap" aria-label="Mapa de Moema"></div>
 <aside class="mp-panel mp-glass" id="mpPanel">
 <button class="mp-handle" aria-label="Expandir lista" id="mpHandle"></button>
-<div class="mp-hd"><a class="mp-logo" href="{base}/" aria-label="W3W Imóveis, voltar ao site">{logo}<span>← Site W3W</span></a><span class="ey">Guia Moema · Mapa vivo</span><h1>Moema <em>agora.</em></h1><p>Restaurantes, bares, cafés, docerias, farmácias e serviços 24 horas do bairro, com o que está aberto neste momento.</p></div>
+<div class="mp-hd"><div class="mp-logo"><a href="{base}/" aria-label="W3W Imóveis, voltar ao site">{logo}</a><nav><a href="{base}/guia-moema/">Guia Moema</a><a href="{base}/">← Site W3W</a></nav></div><span class="ey">Guia Moema · Mapa vivo</span><h1>Moema <em>agora.</em></h1><p>Restaurantes, bares, cafés, docerias, farmácias e serviços 24 horas do bairro, com o que está aberto neste momento.</p></div>
 <div class="mp-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="mpQ" type="search" placeholder="Buscar um lugar" aria-label="Buscar um lugar"></div>
 <div class="mp-tg"><button id="mpOpen" aria-pressed="false"><i></i>Aberto agora</button><button id="mp24" aria-pressed="false">24 horas</button></div>
 <div class="mp-grp" id="mpGrp" role="group" aria-label="O que você procura"></div><div class="mp-chips" id="mpChips" role="group" aria-label="Categorias"></div>

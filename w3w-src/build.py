@@ -1292,12 +1292,13 @@ def build_guia():
         pg += footer(); write(f"guia-moema/{p['slug']}/index.html", pg)
         if p is p0:  # a página do Guia abre direto na matéria de capa (pedido Kco, nov/2026)
             idx = pg.replace('<a class="mg-tag" href="' + u('guia-moema') + f'">← Guia Moema · Edição nº {ed["numero"]}</a>', f'<span class="mg-tag">Guia Moema · Edição nº {ed["numero"]} · Matéria de capa</span>')
-            write('guia-moema/index.html', idx)
+            write('guia-moema-v1/index.html', idx)  # v1 guardada (não linkada)
     import guia_v2
     near = ''.join(card(e) for e in EM if e['slug'] in p0.get('imoveis', []))
-    pg = head(f"{p0['titulo']} | Guia Moema · versão 2", p0['sub'], 'guia-moema-v2', f'<script type="application/ld+json">{json.dumps({"@context": "https://schema.org", "@type": "BlogPosting", "headline": p0['titulo'], "datePublished": p0['data'], "image": p0['capa']}, ensure_ascii=False)}</script>')
+    pg = head(f"{p0['titulo']} | Guia Moema · W3W", p0['sub'], 'guia-moema', f'<script type="application/ld+json">{json.dumps({"@context": "https://schema.org", "@type": "BlogPosting", "headline": p0['titulo'], "datePublished": p0['data'], "image": p0['capa']}, ensure_ascii=False)}</script>')
     pg += header('guia-moema') + guia_v2.render(G, p0, near, wa, u, dt, BASE, gm_map(p0.get('concierge', []))) + footer()
-    write('guia-moema-v2/index.html', pg)
+    write('guia-moema/index.html', pg)
+    write('guia-moema-v2/index.html', f'<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0;url={u("guia-moema")}"><link rel="canonical" href="{ORIGIN+u("guia-moema")}">')
 
 MP_PROMO_CSS = '''
 .mp-promo{padding:40px 0}

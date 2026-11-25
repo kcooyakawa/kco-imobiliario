@@ -135,6 +135,28 @@ box-shadow:inset 0 1.5px 0 #fff,inset 0 -1px 1px rgba(255,255,255,.7),inset 0 0 
 .g2-map svg{width:100%;height:auto;display:block}
 .g2-cg .g2-pins{margin-top:0;grid-template-columns:1fr 1fr}
 @media (max-width:900px){.g2-cg{grid-template-columns:1fr}.g2-map{position:static}.g2-cg .g2-pins{grid-template-columns:1fr}}
+
+.g2-mapa{padding:6vh 0 4vh}
+.g2-mx{display:grid;grid-template-columns:1fr 1.1fr;gap:0;border-radius:32px;overflow:hidden;background:#0E1116;color:#F6F5F2;text-decoration:none;box-shadow:0 40px 80px -40px rgba(14,17,22,.45);transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.g2-mx:hover{transform:translateY(-4px)}
+.g2-mx .t{padding:clamp(32px,5vw,64px);display:flex;flex-direction:column;gap:22px;justify-content:center}
+.g2-mx .t .mono{color:#7FB0FF;display:flex;gap:10px;align-items:center}
+.g2-mx .t .mono i{width:8px;height:8px;border-radius:50%;background:#3DDC97;box-shadow:0 0 0 0 rgba(61,220,151,.6);animation:g2pu 2s infinite}
+@keyframes g2pu{70%{box-shadow:0 0 0 10px rgba(61,220,151,0)}100%{box-shadow:0 0 0 0 rgba(61,220,151,0)}}
+.g2-mx h2{font:300 clamp(38px,4.6vw,64px)/.98 var(--sans);letter-spacing:-.04em;margin:0}
+.g2-mx h2 em{font-family:var(--serif);font-style:italic;color:#7FB0FF}
+.g2-mx p{color:#AEB6C2;font-size:16px;line-height:1.55;max-width:42ch;margin:0}
+.g2-mx dl{display:flex;gap:34px;margin:6px 0 0;flex-wrap:wrap}
+.g2-mx dt{font:300 34px/1 var(--sans);letter-spacing:-.03em}.g2-mx dd{margin:6px 0 0;font:500 10.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#7D8796}
+.g2-mx .go{align-self:flex-start;margin-top:8px;background:#F6F5F2;color:#0E1116;padding:15px 24px;border-radius:999px;font:500 15px var(--sans)}
+.g2-mx .m{position:relative;min-height:440px;background:#EEEBE5}
+.g2-mx .m svg{position:absolute;inset:0;width:100%;height:100%}
+.g2-mx .pin{position:absolute;width:12px;height:12px;border-radius:50%;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.25);animation:g2pin 3.2s ease-in-out infinite}
+@keyframes g2pin{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.g2-mx .tag{position:absolute;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);color:#0E1116;border-radius:14px;padding:10px 14px;font:500 13px var(--sans);box-shadow:0 10px 30px -10px rgba(0,0,0,.3)}
+.g2-mx .tag small{display:block;font:500 10px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#1E9E6A;margin-top:3px}
+@media(max-width:860px){.g2-mx{grid-template-columns:1fr}.g2-mx .m{min-height:300px;order:-1}}
+@media(prefers-reduced-motion:reduce){.g2-mx .pin,.g2-mx .t .mono i{animation:none}}
 </style>
 """
 
@@ -165,6 +187,9 @@ requestAnimationFrame(loop)};requestAnimationFrame(loop);
 
 
 def render(G, p0, near_html, wa, u, dt, BASE='', map_html=''):
+    import json as _j, os as _o
+    try: N_LUG=f"{_j.load(open(_o.path.join(_o.path.dirname(__file__),'mapa','locais.json')))['total']:,}".replace(',','.')
+    except Exception: N_LUG='+1.900'
     ed = G.get('edicao', {"numero": "01", "mes": ""})
     ims = p0.get('imagens') or []
     idx, body = '', ''
@@ -197,11 +222,13 @@ def render(G, p0, near_html, wa, u, dt, BASE='', map_html=''):
 <section class="g2-hero"><i class="g2-blob a"></i><i class="g2-blob b"></i><div class="g2-in">
 <div class="g2-top"><span class="mono g2-live"><i></i>Guia Moema · Edição nº {ed["numero"]} · {esc(ed["mes"])}</span><span class="mono">Matéria de capa · {esc(p0["categoria"])}</span></div>
 <h1>{esc(p0["titulo"])}</h1>
-<div class="g2-sub"><p>{esc(p0["sub"])}</p><div class="g2-cta"><a class="g2-btn p" href="#materia">Ler a matéria ↓</a><a class="g2-btn" href="{concierge}" target="_blank" rel="noopener">Falar com o concierge</a></div></div>
+<div class="g2-sub"><p>{esc(p0["sub"])}</p><div class="g2-cta"><a class="g2-btn p" href="#materia">Ler a matéria ↓</a><a class="g2-btn" href="{BASE}/mapa-moema/">Mapa de Moema</a></div></div>
 <div class="g2-meta"><span><b>{dt(p0["data"])}</b></span><span>Leitura · <b>{p0["leitura"]}</b></span><span>Por <b>W3W Imóveis</b></span><span>{len(pins)} endereços do concierge</span></div>
 </div></section>
 
 <div class="g2-cover rv"><figure><img src="{p0["capa"]}" alt="Moema vista do alto" decoding="async"><figcaption>Moema · São Paulo</figcaption></figure></div>
+
+<section class="g2-mapa"><div class="g2-in"><a class="g2-mx rv" href="{BASE}/mapa-moema/"><div class="t"><span class="mono g2-ey"><i></i>Novo · Mapa vivo de Moema</span><h2>O bairro inteiro, <em>aberto agora.</em></h2><p>Restaurantes, bares, cafés, farmácias, beleza, escolas e serviços 24 horas. Filtre pelo que está aberto neste momento e salve seus favoritos.</p><dl><div><dt>{N_LUG}</dt><dd>lugares</dd></div><div><dt>33</dt><dd>categorias</dd></div><div><dt>2×</dt><dd>atualizado por semana</dd></div></dl><span class="go">Abrir o mapa →</span></div><div class="m"><svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="400" fill="#EEEBE5"/><path d="M300 -10 C 280 120 340 220 420 260 L420 -10Z" fill="#CFE3C8"/><ellipse cx="350" cy="90" rx="34" ry="20" fill="#BFD8EE"/><g stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round"><path d="M-10 120 L410 90"/><path d="M-10 250 L410 230"/><path d="M90 -10 L120 410"/><path d="M230 -10 L250 410"/></g><g stroke="#fff" stroke-width="4" fill="none"><path d="M-10 60 L410 30"/><path d="M-10 180 L410 160"/><path d="M-10 320 L410 300"/><path d="M30 -10 L60 410"/><path d="M160 -10 L185 410"/><path d="M310 -10 L330 410"/></g></svg><i class="pin" style="left:22%;top:30%;background:#E5533D;animation-delay:0.0s"></i><i class="pin" style="left:38%;top:52%;background:#F08A24;animation-delay:0.3s"></i><i class="pin" style="left:55%;top:26%;background:#2F6FD0;animation-delay:0.6s"></i><i class="pin" style="left:68%;top:60%;background:#8E5BD8;animation-delay:0.9s"></i><i class="pin" style="left:30%;top:72%;background:#1E9E6A;animation-delay:1.2s"></i><i class="pin" style="left:78%;top:36%;background:#E5533D;animation-delay:1.5s"></i><i class="pin" style="left:48%;top:80%;background:#C2417A;animation-delay:1.8s"></i><i class="pin" style="left:62%;top:44%;background:#F08A24;animation-delay:2.1s"></i><i class="pin" style="left:14%;top:54%;background:#2F6FD0;animation-delay:2.4s"></i><i class="pin" style="left:84%;top:74%;background:#1E9E6A;animation-delay:2.7s"></i><span class="tag" style="left:8%;top:12%">Pizzaria em Moema<small>● Aberto agora</small></span><span class="tag" style="right:7%;bottom:12%">Farmácia 24 horas<small>● Aberto agora</small></span></div></a></div></section>
 
 <section class="g2-man" aria-label="Abertura"><div class="g2-mg"><aside><span class="mono g2-ey">Concierge W3W</span><p>A visão de quem trabalha no bairro há mais de vinte anos.</p></aside><p class="g2-mt">{W(q)}</p></div></section>
 
@@ -222,7 +249,6 @@ def render(G, p0, near_html, wa, u, dt, BASE='', map_html=''):
 <section class="g2-near"><div class="g2-in"><div class="g2-sh rv"><span class="mono g2-ey">Morar perto daqui</span><h2>Endereços para <em>viver Moema.</em></h2></div>
 <div class="grid">{near_html}</div></div></section>
 
-<section class="g2-in" style="padding-bottom:40px"><div class="mp-promo" style="padding:0"><a href="{BASE}/mapa-moema/"><span>Novo · Mapa vivo</span><strong>Mapa de Moema</strong><em>Restaurantes, serviços, beleza, escolas e o que está aberto agora no bairro.</em><b>Abrir o mapa →</b></a></div></section>
 
 <section class="g2-next"><div class="g2-in"><div class="g2-sh rv"><span class="mono g2-ey">Próximas edições</span><h2>O bairro, <em>uma página por vez.</em></h2></div><ul>{nxt}</ul></div></section>
 
