@@ -1293,6 +1293,11 @@ def build_guia():
         if p is p0:  # a página do Guia abre direto na matéria de capa (pedido Kco, nov/2026)
             idx = pg.replace('<a class="mg-tag" href="' + u('guia-moema') + f'">← Guia Moema · Edição nº {ed["numero"]}</a>', f'<span class="mg-tag">Guia Moema · Edição nº {ed["numero"]} · Matéria de capa</span>')
             write('guia-moema/index.html', idx)
+    import guia_v2
+    near = ''.join(card(e) for e in EM if e['slug'] in p0.get('imoveis', []))
+    pg = head(f"{p0['titulo']} | Guia Moema · versão 2", p0['sub'], 'guia-moema-v2', f'<script type="application/ld+json">{json.dumps({"@context": "https://schema.org", "@type": "BlogPosting", "headline": p0['titulo'], "datePublished": p0['data'], "image": p0['capa']}, ensure_ascii=False)}</script>')
+    pg += header('guia-moema') + guia_v2.render(G, p0, near, wa, u, dt, BASE) + footer()
+    write('guia-moema-v2/index.html', pg)
 
 def build_servicos():
     import servicos
