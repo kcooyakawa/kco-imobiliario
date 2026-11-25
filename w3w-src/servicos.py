@@ -1,182 +1,283 @@
-"""Página de serviços da W3W (marketing imobiliário). Chamado por build.py."""
+"""Página de serviços da W3W (marketing imobiliário) — versão high tech, escura. Chamado por build.py."""
+import json
 
 CSS = r"""
 <style>
-.sv{--gold:#8C7B62}
-.sv ::selection{background:var(--ink);color:var(--paper-2)}
-.sv section{padding:112px 0;border-bottom:1px solid var(--line)}
-.sv h2{font-family:var(--serif);font-weight:200;font-size:clamp(40px,5.2vw,76px);line-height:.98;letter-spacing:-.03em;margin:0;text-wrap:balance;max-width:16ch}
-.sv h2 em{font-style:italic}
-.sv p.lead{font-size:19px;line-height:1.55;color:var(--ink-2);max-width:56ch;margin-top:22px}
-.sv-hero{padding:150px 0 0!important;border-bottom:0!important}
-.sv-hero h1{font-family:var(--serif);font-weight:200;font-size:clamp(52px,8.4vw,128px);line-height:.92;letter-spacing:-.035em;margin:0;max-width:13ch;text-wrap:balance}
-.sv-hero h1 em{font-style:italic}
-.sv-hero .sub{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:end;margin-top:56px;padding-bottom:56px;border-bottom:1px solid var(--ink)}
-.sv-hero .sub p{font-size:20px;line-height:1.5;color:var(--ink-2);max-width:44ch;margin:0}
-.sv-cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
-.sv-strip{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}
-.sv-strip div{padding:26px 20px 30px 0;font-size:15px;line-height:1.45;color:var(--ink-2)}
-.sv-strip div+div{padding-left:20px;border-left:1px solid var(--line)}
-.sv-strip b{display:block;font-family:var(--serif);font-weight:300;font-size:26px;color:var(--ink);margin-bottom:6px;letter-spacing:-.01em}
-.sv-vs{display:grid;grid-template-columns:1fr 1fr;margin-top:64px;border-top:1px solid var(--ink)}
-.sv-vs>div{padding:32px 32px 8px 0}
-.sv-vs>div+div{padding-left:32px;border-left:1px solid var(--line)}
-.sv-vs h3{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--slate);margin:0 0 18px}
-.sv-vs .us h3{color:var(--ink)}
-.sv-vs li{list-style:none;padding:14px 0;border-bottom:1px solid var(--line);font-size:17px;line-height:1.4}
-.sv-vs .them li{color:var(--slate)}
-.sv-vs .us li{font-family:var(--serif);font-weight:300;font-size:22px}
-.sv-who{margin-top:56px;border-top:1px solid var(--ink)}
-.sv-who>div{display:grid;grid-template-columns:.9fr 1.4fr 1fr;gap:40px;padding:36px 0;border-bottom:1px solid var(--line);align-items:start}
-.sv-who h3{font-family:var(--serif);font-weight:300;font-size:34px;line-height:1.05;margin:0}
-.sv-who p{margin:0;font-size:17px;line-height:1.55;color:var(--ink-2)}
-.sv-who ul{list-style:none;margin:0;padding:0;font-size:15px}
-.sv-who li{padding:6px 0;border-bottom:1px solid var(--line)}
-.sv-flow{display:grid;grid-template-columns:repeat(5,1fr);margin-top:64px;position:relative}
-.sv-flow::before{content:"";position:absolute;left:0;right:0;top:9px;height:1px;background:var(--ink)}
-.sv-flow div{position:relative;padding:36px 20px 0 0}
-.sv-flow div::before{content:"";position:absolute;top:4px;left:0;width:11px;height:11px;border-radius:50%;background:var(--paper);border:1px solid var(--ink)}
-.sv-flow div:last-child::before{background:var(--ink)}
-.sv-flow b{display:block;font-family:var(--serif);font-weight:300;font-size:28px;margin-bottom:10px}
-.sv-flow p{margin:0;font-size:15px;line-height:1.5;color:var(--ink-2)}
-.sv-dark{background:var(--ink);color:#F1F2F4;border-bottom:0!important}
-.sv-dark h2{color:#F6F7F9}
-.sv-dark p.lead{color:rgba(241,242,244,.72)}
-.sv-dos{display:grid;grid-template-columns:1fr 1.05fr;gap:72px;align-items:start}
-.sv-doc{background:#F6F7F9;color:var(--ink);border-radius:18px;padding:30px 30px 26px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6);font-size:15px}
-.sv-doc header{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--ink);padding-bottom:14px;margin-bottom:6px}
-.sv-doc header b{font-family:var(--serif);font-weight:300;font-size:24px}
-.sv-doc header span{font-size:12px;color:var(--slate)}
-.sv-doc dl{margin:0;display:grid;grid-template-columns:150px 1fr}
-.sv-doc dt,.sv-doc dd{padding:11px 0;border-bottom:1px solid var(--line);margin:0}
-.sv-doc dt{color:var(--slate);font-size:13px}
-.sv-doc .score{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--ink);color:#fff;font-weight:500;margin-right:8px}
-.sv-doc blockquote{margin:16px 0 0;padding:16px 18px;background:var(--paper);border-radius:12px;font-family:var(--serif);font-weight:300;font-size:18px;line-height:1.4}
-.sv-doc small{display:block;margin-top:12px;color:var(--slate);font-size:12px}
-.sv-dos ul{list-style:none;padding:0;margin:36px 0 0;border-top:1px solid rgba(241,242,244,.25)}
-.sv-dos li{padding:16px 0;border-bottom:1px solid rgba(241,242,244,.18);font-size:17px;line-height:1.45;color:rgba(241,242,244,.86)}
-.sv-dos li b{color:#fff;font-weight:500}
-.sv-art{display:grid;grid-template-columns:1.2fr 1fr;gap:72px;align-items:end}
-.sv-art .cred{font-family:var(--serif);font-weight:200;font-size:clamp(30px,3.4vw,48px);line-height:1.12;letter-spacing:-.02em}
-.sv-art .cred em{font-style:italic}
-.sv-art ul{list-style:none;padding:0;margin:0;border-top:1px solid var(--ink)}
-.sv-art li{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:16px}
-.sv-art li span{color:var(--slate)}
-.sv-pl{margin-top:56px}
-.sv-seg{display:inline-flex;gap:2px;padding:3px;border-radius:11px;background:rgba(26,24,23,.07);margin-bottom:28px}
-.sv-seg button{border:0;background:transparent;font:500 14px/1 var(--sans);color:var(--ink-2);padding:11px 16px;border-radius:8px;cursor:pointer;transition:background .25s var(--ease),color .2s}
-.sv-seg button[aria-pressed=true]{background:#fff;color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08),0 3px 10px rgba(0,0,0,.06)}
-.sv-tb{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
-.sv-tb th{text-align:left;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--slate);padding:0 12px 14px 0;border-bottom:1px solid var(--ink)}
-.sv-tb td{padding:22px 12px 22px 0;border-bottom:1px solid var(--line);font-size:16px;vertical-align:top}
-.sv-tb td:first-child{font-family:var(--serif);font-weight:300;font-size:24px;width:34%}
-.sv-tb td small{display:block;font-family:var(--sans);font-size:14px;color:var(--ink-2);margin-top:6px;line-height:1.45}
-.sv-tb .pr{font-family:var(--serif);font-weight:300;font-size:30px;white-space:nowrap}
-.sv-tb .pr span{font-family:var(--sans);font-size:13px;color:var(--slate);margin-left:4px}
-.sv-note{margin-top:22px;font-size:14px;color:var(--ink-2);max-width:80ch;line-height:1.55}
-.sv-own{margin-top:64px;display:grid;grid-template-columns:1fr 1fr;gap:56px;padding:40px;background:var(--paper-2);border:1px solid var(--line);border-radius:18px}
-.sv-own h3{font-family:var(--serif);font-weight:300;font-size:36px;line-height:1.05;margin:0}
-.sv-own p{margin:0;font-size:17px;line-height:1.55;color:var(--ink-2)}
-.sv-faq{margin-top:48px;border-top:1px solid var(--ink)}
-.sv-faq details{border-bottom:1px solid var(--line)}
-.sv-faq summary{cursor:pointer;list-style:none;padding:22px 40px 22px 0;font-family:var(--serif);font-weight:300;font-size:24px;position:relative}
-.sv-faq summary::-webkit-details-marker{display:none}
-.sv-faq summary::after{content:"";position:absolute;right:6px;top:50%;width:12px;height:12px;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);transform:translateY(-70%) rotate(45deg);transition:transform .3s var(--ease)}
-.sv-faq details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
-.sv-faq details p{margin:0 0 24px;max-width:70ch;font-size:17px;line-height:1.6;color:var(--ink-2)}
-.sv-end{text-align:left}
-.sv-end h2{max-width:18ch}
-.sv .btn:focus-visible,.sv-seg button:focus-visible,.sv-faq summary:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
-@media(max-width:900px){.sv section{padding:80px 0}.sv-hero{padding-top:118px!important}.sv-hero .sub,.sv-dos,.sv-art,.sv-own,.sv-vs{grid-template-columns:1fr;gap:32px}.sv-cta{justify-content:flex-start}.sv-strip{grid-template-columns:1fr 1fr}.sv-strip div:nth-child(3){border-left:0;padding-left:0}.sv-who>div{grid-template-columns:1fr;gap:14px}.sv-flow{grid-template-columns:1fr;gap:0}.sv-flow::before{left:5px;right:auto;top:0;bottom:0;width:1px;height:auto}.sv-flow div{padding:0 0 30px 34px}.sv-vs>div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}.sv-tb thead{display:none}.sv-tb tr{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;padding:18px 0;border-bottom:1px solid var(--line)}.sv-tb td{border:0;padding:0}.sv-tb td:first-child{grid-column:1/-1;width:auto}.sv-own{padding:28px}.sv-doc dl{grid-template-columns:120px 1fr}}
+body:has(.sx){background:#070B12}
+.sx{--bg:#070B12;--bg2:#0C121D;--bg3:#111A28;--tx:#E8EEF6;--tx2:#9AA8BA;--tx3:#5F6D80;--ln:rgba(232,238,246,.09);--ln2:rgba(232,238,246,.18);--ac:#8FC2FF;--ac2:#3D7DD8;--ok:#7BE0B3;--mono:ui-monospace,'SF Mono','JetBrains Mono',Menlo,monospace;background:var(--bg);color:var(--tx);overflow:hidden}
+.sx ::selection{background:var(--ac);color:#06101E}
+.sx a{color:inherit}
+.sx .wrap{position:relative}
+.sx section{position:relative;padding:120px 0;border-top:1px solid var(--ln)}
+.sx .grid-bg{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--ln) 1px,transparent 1px),linear-gradient(90deg,var(--ln) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,#000 30%,transparent 80%);-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,#000 30%,transparent 80%);opacity:.7}
+.sx h1,.sx h2{font-family:var(--sans);font-weight:300;letter-spacing:-.035em;margin:0;text-wrap:balance}
+.sx h1{font-size:clamp(46px,7.2vw,112px);line-height:.95;max-width:14ch}
+.sx h2{font-size:clamp(36px,4.6vw,68px);line-height:1;max-width:17ch}
+.sx h1 em,.sx h2 em{font-family:var(--serif);font-style:italic;font-weight:200;color:var(--ac)}
+.sx .lead{font-size:19px;line-height:1.55;color:var(--tx2);max-width:54ch;margin-top:24px}
+.sx .tag{display:inline-flex;align-items:center;gap:8px;font:500 12px/1 var(--mono);letter-spacing:.06em;color:var(--tx2);padding:8px 12px;border:1px solid var(--ln2);border-radius:999px;background:rgba(143,194,255,.04)}
+.sx .tag i{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(123,224,179,.15);animation:sxp 2s infinite}
+@keyframes sxp{50%{box-shadow:0 0 0 7px rgba(123,224,179,0)}}
+.sx-btn{display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 24px;border-radius:12px;font:500 15px/1 var(--sans);text-decoration:none;transition:transform .2s var(--ease),background .25s,border-color .25s,box-shadow .3s}
+.sx-btn.pri{background:var(--ac);color:#06101E;box-shadow:0 10px 30px -10px rgba(143,194,255,.6)}
+.sx-btn.pri:hover{background:#B5D7FF;transform:translateY(-1px)}
+.sx-btn.sec{border:1px solid var(--ln2);color:var(--tx)}
+.sx-btn.sec:hover{border-color:var(--tx2)}
+.sx-btn:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.sx-btn svg{width:16px;height:16px}
+/* hero */
+.sx-hero{padding:150px 0 90px!important;border-top:0!important}
+.sx-hero .tag{margin-bottom:34px}
+.sx-hgrid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:start}
+.sx-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:40px}
+.sx-console{position:relative;background:linear-gradient(180deg,var(--bg2),var(--bg));border:1px solid var(--ln2);border-radius:20px;padding:0;overflow:hidden;box-shadow:0 40px 80px -40px rgba(0,0,0,.8),0 0 0 1px rgba(143,194,255,.04) inset}
+.sx-console .bar{display:flex;align-items:center;gap:8px;padding:14px 18px;border-bottom:1px solid var(--ln);font:12px var(--mono);color:var(--tx3)}
+.sx-console .bar b{width:9px;height:9px;border-radius:50%;background:var(--ln2)}
+.sx-console .bar span{margin-left:auto;color:var(--ok)}
+.sx-pipe{padding:22px 18px 8px}
+.sx-pipe svg{width:100%;height:auto;display:block}
+.sx-pipe .nd rect{fill:var(--bg3);stroke:var(--ln2)}
+.sx-pipe .nd text{fill:var(--tx);font:500 12px var(--sans)}
+.sx-pipe .nd .s{fill:var(--tx3);font:10px var(--mono)}
+.sx-pipe path.l{stroke:var(--ln2);fill:none;stroke-width:1.2}
+.sx-pipe circle.d{fill:var(--ac);filter:drop-shadow(0 0 6px rgba(143,194,255,.9))}
+.sx-feed{border-top:1px solid var(--ln);font:12.5px/1.5 var(--mono);height:178px;overflow:hidden;position:relative}
+.sx-feed::after{content:"";position:absolute;left:0;right:0;bottom:0;height:60px;background:linear-gradient(transparent,var(--bg))}
+.sx-feed div{display:grid;grid-template-columns:62px 1fr auto;gap:12px;padding:9px 18px;border-bottom:1px solid var(--ln);color:var(--tx2);animation:sxin .6s var(--ease)}
+.sx-feed div b{color:var(--tx);font-weight:500}
+.sx-feed .sc{color:#06101E;background:var(--ok);border-radius:5px;padding:0 7px;font-weight:600}
+.sx-feed .sc.b{background:var(--ac)}.sx-feed .sc.c{background:var(--tx3);color:var(--tx)}
+@keyframes sxin{from{opacity:0;transform:translateY(-8px);filter:blur(3px)}}
+.sx-console .ft{display:flex;justify-content:space-between;padding:12px 18px;border-top:1px solid var(--ln);font:11px var(--mono);color:var(--tx3)}
+.sx-kpis{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid var(--ln2)}
+.sx-kpis div{padding:24px 24px 0 0}
+.sx-kpis div+div{padding-left:24px;border-left:1px solid var(--ln)}
+.sx-kpis b{display:block;font:300 30px/1.1 var(--sans);letter-spacing:-.02em;margin-bottom:8px}
+.sx-kpis span{font-size:14px;color:var(--tx2);line-height:1.45}
+/* vs */
+.sx-vs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:64px}
+.sx-vs>div{border:1px solid var(--ln);border-radius:18px;padding:30px;background:var(--bg2)}
+.sx-vs .us{border-color:rgba(143,194,255,.35);background:linear-gradient(180deg,rgba(143,194,255,.07),var(--bg2) 60%)}
+.sx-vs h3{font:500 12px var(--mono);letter-spacing:.08em;color:var(--tx3);margin:0 0 18px;text-transform:uppercase}
+.sx-vs .us h3{color:var(--ac)}
+.sx-vs ul{list-style:none;margin:0;padding:0}
+.sx-vs li{display:flex;gap:12px;align-items:baseline;padding:13px 0;border-top:1px solid var(--ln);font-size:17px;line-height:1.4;color:var(--tx3)}
+.sx-vs .us li{color:var(--tx)}
+.sx-vs li svg{flex:none;width:14px;height:14px;transform:translateY(2px)}
+/* who */
+.sx-who{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:64px;background:var(--ln);border:1px solid var(--ln);border-radius:18px;overflow:hidden}
+.sx-who>div{background:var(--bg);padding:34px 30px 30px;transition:background .3s}
+.sx-who>div:hover{background:var(--bg2)}
+.sx-who h3{font:300 30px/1.05 var(--sans);letter-spacing:-.02em;margin:0 0 14px}
+.sx-who p{margin:0 0 22px;font-size:16px;line-height:1.55;color:var(--tx2)}
+.sx-who li{list-style:none;font:13px var(--mono);color:var(--tx2);padding:9px 0;border-top:1px solid var(--ln)}
+.sx-who li::before{content:"→ ";color:var(--ac)}
+.sx-who ul{margin:0;padding:0}
+/* dossie */
+.sx-dos{display:grid;grid-template-columns:1fr 1.05fr;gap:72px;align-items:center}
+.sx-doc{border:1px solid rgba(143,194,255,.3);border-radius:20px;background:var(--bg2);overflow:hidden;box-shadow:0 50px 90px -50px rgba(61,125,216,.55)}
+.sx-doc header{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--ln)}
+.sx-doc header b{font:400 20px var(--sans)}
+.sx-doc header span{font:11px var(--mono);color:var(--tx3)}
+.sx-doc dl{margin:0;padding:6px 22px}
+.sx-doc dl div{display:grid;grid-template-columns:130px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--ln);font-size:15px}
+.sx-doc dt{font:12px var(--mono);color:var(--tx3);padding-top:2px}
+.sx-doc dd{margin:0}
+.sx-meter{display:flex;align-items:center;gap:12px}
+.sx-meter i{flex:1;height:6px;border-radius:3px;background:var(--ln);overflow:hidden;position:relative}
+.sx-meter i::after{content:"";position:absolute;inset:0;width:var(--v,0%);background:linear-gradient(90deg,var(--ac2),var(--ok));border-radius:3px;transition:width 1.6s var(--ease)}
+.sx-meter b{font:600 13px var(--mono);color:#06101E;background:var(--ok);padding:3px 8px;border-radius:6px}
+.sx-doc .msg{margin:16px 22px 22px;padding:16px 18px;border-radius:14px 14px 14px 4px;background:#12324F;color:#EAF4FF;font-size:16px;line-height:1.45}
+.sx-doc .msg small{display:block;margin-top:8px;font:11px var(--mono);color:rgba(234,244,255,.55)}
+.sx-dos ul{list-style:none;margin:36px 0 0;padding:0}
+.sx-dos li{display:grid;grid-template-columns:36px 1fr;gap:14px;padding:16px 0;border-top:1px solid var(--ln);font-size:16.5px;line-height:1.5;color:var(--tx2)}
+.sx-dos li b{color:var(--tx);font-weight:500}
+.sx-dos li svg{width:20px;height:20px;color:var(--ac);margin-top:2px}
+/* flow */
+.sx-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:64px}
+.sx-flow div{border:1px solid var(--ln);border-radius:16px;padding:22px;background:var(--bg2);position:relative}
+.sx-flow code{font:12px var(--mono);color:var(--ac)}
+.sx-flow b{display:block;font:400 22px var(--sans);margin:14px 0 10px;letter-spacing:-.01em}
+.sx-flow p{margin:0;font-size:14.5px;line-height:1.5;color:var(--tx2)}
+/* art */
+.sx-art{display:grid;grid-template-columns:1.15fr 1fr;gap:72px;align-items:center}
+.sx-art .cred{font:300 clamp(26px,2.8vw,40px)/1.2 var(--sans);letter-spacing:-.02em;margin-top:28px;color:var(--tx2)}
+.sx-art .cred b{color:var(--tx);font-weight:300}
+.sx-logos{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--ln);border:1px solid var(--ln);border-radius:18px;overflow:hidden}
+.sx-logos div{background:var(--bg);padding:28px 24px;font:300 26px var(--sans);letter-spacing:-.01em}
+.sx-logos div span{display:block;font:11px var(--mono);color:var(--tx3);margin-top:8px;letter-spacing:.06em}
+.sx-svc{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.sx-svc span{font:13px var(--mono);color:var(--tx2);border:1px solid var(--ln2);border-radius:999px;padding:8px 14px}
+/* planos */
+.sx-seg{display:inline-flex;gap:4px;padding:4px;border-radius:12px;border:1px solid var(--ln2);background:var(--bg2);margin-top:44px}
+.sx-seg button{border:0;background:transparent;font:500 14px/1 var(--sans);color:var(--tx2);padding:12px 18px;border-radius:9px;cursor:pointer;transition:background .25s var(--ease),color .2s}
+.sx-seg button[aria-pressed=true]{background:var(--ac);color:#06101E}
+.sx-seg button:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.sx-seg em{font-style:normal;font:11px var(--mono);margin-left:6px;opacity:.75}
+.sx-plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.sx-plan{border:1px solid var(--ln);border-radius:20px;padding:30px;background:var(--bg2);display:flex;flex-direction:column}
+.sx-plan.hot{border-color:rgba(143,194,255,.5);background:linear-gradient(180deg,rgba(143,194,255,.09),var(--bg2) 55%);box-shadow:0 40px 80px -50px rgba(61,125,216,.6)}
+.sx-plan h3{font:500 13px var(--mono);letter-spacing:.06em;color:var(--tx2);margin:0;text-transform:uppercase}
+.sx-plan.hot h3{color:var(--ac)}
+.sx-plan .pr{font:300 54px/1 var(--sans);letter-spacing:-.04em;margin:22px 0 4px;font-variant-numeric:tabular-nums}
+.sx-plan .pr small{font:14px var(--sans);color:var(--tx3);letter-spacing:0;margin-left:4px}
+.sx-plan .un{font:12px var(--mono);color:var(--tx3)}
+.sx-plan ul{list-style:none;margin:24px 0 28px;padding:0;flex:1}
+.sx-plan li{padding:10px 0;border-top:1px solid var(--ln);font-size:15px;color:var(--tx2)}
+.sx-plan li::before{content:"✓";display:none}
+.sx-plan .sx-btn{justify-content:center}
+.sx-addon{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;margin-top:16px;border:1px dashed rgba(143,194,255,.4);border-radius:18px;padding:24px 28px;background:rgba(143,194,255,.04)}
+.sx-addon b{font:400 22px var(--sans)}
+.sx-addon p{margin:0;color:var(--tx2);font-size:15px;line-height:1.5}
+.sx-addon .pr{font:300 32px var(--sans);white-space:nowrap}
+.sx-addon .pr small{font:13px var(--sans);color:var(--tx3)}
+.sx-proj{margin-top:56px;border-top:1px solid var(--ln2)}
+.sx-proj div{display:grid;grid-template-columns:1fr 1.4fr auto;gap:28px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--ln)}
+.sx-proj b{font:400 20px var(--sans)}
+.sx-proj p{margin:0;color:var(--tx2);font-size:15px}
+.sx-proj span{font:300 22px var(--sans);white-space:nowrap;font-variant-numeric:tabular-nums}
+.sx-note{margin-top:20px;font:12.5px/1.6 var(--mono);color:var(--tx3);max-width:90ch}
+.sx-own{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;border-radius:20px;padding:40px;background:linear-gradient(120deg,#0F2238,#0B1626);border:1px solid rgba(143,194,255,.25)}
+.sx-own h3{font:300 36px/1.05 var(--sans);letter-spacing:-.02em;margin:0}
+.sx-own p{margin:0 0 20px;color:var(--tx2);font-size:16.5px;line-height:1.55}
+/* faq */
+.sx-faq{margin-top:48px;border-top:1px solid var(--ln2);max-width:900px}
+.sx-faq details{border-bottom:1px solid var(--ln)}
+.sx-faq summary{cursor:pointer;list-style:none;padding:24px 44px 24px 0;font:400 21px var(--sans);position:relative}
+.sx-faq summary::-webkit-details-marker{display:none}
+.sx-faq summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font:300 26px var(--sans);color:var(--ac);transition:transform .3s var(--ease)}
+.sx-faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.sx-faq summary:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.sx-faq details p{margin:0 0 24px;max-width:68ch;font-size:16.5px;line-height:1.6;color:var(--tx2)}
+.sx-end{text-align:center}
+.sx-end h2{margin:0 auto;max-width:16ch}
+.sx-end .sx-cta{justify-content:center}
+.sx .rv{opacity:0;transform:translateY(18px);filter:blur(6px);transition:opacity .9s var(--ease),transform .9s var(--ease),filter .9s var(--ease)}
+.sx .rv.in{opacity:1;transform:none;filter:none}
+@media(prefers-reduced-motion:reduce){.sx .rv{opacity:1;transform:none;filter:none}.sx-feed div{animation:none}}
+/* header escuro nesta página */
+body:has(.sx) .hd{background:rgba(7,11,18,.72)!important;border-bottom-color:rgba(232,238,246,.08)!important;color:#E8EEF6}
+body:has(.sx) .hd .brand svg,body:has(.sx) .hd .burger{color:#E8EEF6}
+body:has(.sx) .hd .creci{color:rgba(232,238,246,.55)}
+body:has(.sx) .hd .nav .btn{border-color:rgba(232,238,246,.4);color:#E8EEF6}
+@media(max-width:900px){body:has(.sx) .hd .nav{background:#0C121D;color:#E8EEF6}}
+@media(max-width:900px){.sx section{padding:84px 0}.sx-hero{padding-top:118px!important}.sx-hgrid,.sx-dos,.sx-art,.sx-own,.sx-vs{grid-template-columns:1fr;gap:36px}.sx-kpis{grid-template-columns:1fr 1fr;row-gap:24px}.sx-kpis div:nth-child(3){border-left:0;padding-left:0}.sx-who,.sx-plans{grid-template-columns:1fr}.sx-flow{grid-template-columns:1fr 1fr}.sx-addon,.sx-proj div{grid-template-columns:1fr;gap:8px}.sx-own{padding:28px}.sx-doc dl div{grid-template-columns:100px 1fr}}
 </style>"""
+
+CHK = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg>'
+XX = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 4l8 8M12 4l-8 8"/></svg>'
+ARW = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg>'
+IC = {
+    'user': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>',
+    'gauge': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a9 9 0 0118 0"/><path d="M12 15l4-5"/></svg>',
+    'msg': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5h16v11H9l-5 4z"/></svg>',
+    'card': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg>',
+}
 
 
 def render(wa, way, BASE, u):
     contato = wa('Olá! Vi a página de serviços da W3W e quero conversar sobre uma campanha.')
     prop = wa('Olá! Tenho um imóvel de alto padrão e quero saber como funciona a venda assistida da W3W.')
-    planos = {
-        'mensal': (1500, 1400, 1300),
-        'trimestral': (1350, 1250, 1150),
-        'semestral': (1200, 1100, 1000),
-    }
-    import json
+    planos = {'mensal': (1500, 1400, 1300), 'trimestral': (1350, 1250, 1150), 'semestral': (1200, 1100, 1000)}
     P = json.dumps(planos)
-    fm = lambda n: f"R$ {n:,.0f}".replace(',', '.')
+    fm = lambda n: f"{n:,.0f}".replace(',', '.')
     m = planos['mensal']
+    plan = lambda i, nome, txt, itens, hot=False: f'''<div class="sx-plan{' hot' if hot else ''} rv"><h3>{nome}</h3><div class="pr">R$ <span data-i="{i}">{fm(m[i])}</span><small>/mês</small></div><div class="un">por campanha · mídia à parte</div><ul>{''.join(f'<li>{x}</li>' for x in itens)}</ul><a class="sx-btn {'pri' if hot else 'sec'}" href="{wa('Olá! Quero contratar o plano ' + nome + ' da W3W.')}" target="_blank" rel="noopener">{txt}</a></div>'''
+    pipe = '''<svg viewBox="0 0 520 210" role="img" aria-label="Fluxo: campanha, lead, dossiê e corretor">
+<path class="l" id="p1" d="M100 52 C160 52 160 105 210 105"/><path class="l" id="p2" d="M100 158 C160 158 160 105 210 105"/><path class="l" id="p3" d="M310 105 L360 105"/><path class="l" id="p4" d="M460 105 L470 105"/>
+<g class="nd"><rect x="8" y="30" width="92" height="44" rx="10"/><text x="20" y="50">Meta Ads</text><text class="s" x="20" y="64">campanha 01</text></g>
+<g class="nd"><rect x="8" y="136" width="92" height="44" rx="10"/><text x="20" y="156">Google Ads</text><text class="s" x="20" y="170">campanha 02</text></g>
+<g class="nd"><rect x="210" y="80" width="100" height="50" rx="10"/><text x="222" y="102">Triagem</text><text class="s" x="222" y="117">site + WhatsApp</text></g>
+<g class="nd"><rect x="360" y="80" width="100" height="50" rx="10" style="stroke:rgba(143,194,255,.6)"/><text x="372" y="102">Lead Dossiê</text><text class="s" x="372" y="117">score · roteiro</text></g>
+<circle class="d" r="3.5"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion></circle>
+<circle class="d" r="3.5"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion></circle>
+<circle class="d" r="3.5"><animateMotion dur="1.2s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion></circle>
+</svg>'''
     return CSS + f'''
-<main class="sv">
-<section class="sv-hero"><div class="wrap">
-<h1>Imóvel de alto padrão <em>não se vende</em> como lead.</h1>
-<div class="sub"><p>A W3W cria, anuncia e atende. Uma campanha para cada produto, criação assinada por Head of Art e um dossiê de cada lead antes do primeiro contato. Com mais de 20 anos de mercado em Moema.</p>
-<div class="sv-cta"><a class="btn solid" href="{contato}" target="_blank" rel="noopener">Falar com a W3W</a><a class="btn" href="#planos">Ver planos e preços</a></div></div>
-<div class="sv-strip"><div><b>1 produto, 1 campanha</b>Estratégia, verba e criativos próprios.</div><div><b>Criação de agência</b>O mesmo padrão de FIFA™, Rio 2016 e Itaú.</div><div><b>Lead Dossiê</b>Perfil, prioridade e abordagem no WhatsApp.</div><div><b>Quem vende, anuncia</b>Corretores que conhecem o bairro.</div></div>
+<main class="sx">
+<section class="sx-hero"><div class="grid-bg"></div><div class="wrap">
+<div class="sx-hgrid">
+<div><h1>Do anúncio à chave, <em>com inteligência.</em></h1>
+<p class="lead">Campanha dedicada para cada produto, criação assinada por Head of Art e o Lead Dossiê: cada contato chega ao corretor com perfil, prioridade e o roteiro da primeira conversa.</p>
+<div class="sx-cta"><a class="sx-btn pri" href="{contato}" target="_blank" rel="noopener">Falar com a W3W {ARW}</a><a class="sx-btn sec" href="#planos">Ver planos</a></div></div>
+<div class="sx-console rv" aria-label="Simulação do fluxo de leads da W3W"><div class="bar"><b></b><b></b><b></b>w3w · operação de leads<span>● simulação ao vivo</span></div>
+<div class="sx-pipe">{pipe}</div>
+<div class="sx-feed" id="sxFeed" aria-hidden="true"></div>
+<div class="ft"><span>dados ilustrativos</span><span id="sxClock">--:--</span></div></div>
+</div>
+<div class="sx-kpis rv"><div><b>1 produto, 1 campanha</b><span>Estratégia, verba, público e criativos próprios.</span></div><div><b>Criação de agência</b><span>Padrão FIFA™, Rio 2016, Coca-Cola e Itaú.</span></div><div><b>Lead Dossiê</b><span>Score e roteiro no WhatsApp do corretor.</span></div><div><b>Desde 2004</b><span>Imobiliária que conhece Moema rua a rua.</span></div></div>
 </div></section>
 
 <section><div class="wrap">
-<h2>Agências entregam contatos. <em>Nós entregamos compradores.</em></h2>
-<p class="lead">A maioria das operações para no formulário. A W3W é uma imobiliária que domina mídia e criação, então a campanha continua até a visita e a proposta.</p>
-<div class="sv-vs"><div class="them"><h3>Agência de tráfego</h3><ul><li>Criativos de banco de imagem</li><li>Lead entregue frio, sem contexto</li><li>Relatório de cliques</li><li>Não conhece o produto nem o bairro</li><li>Termina no formulário</li></ul></div>
-<div class="us"><h3>W3W</h3><ul><li>Direção de arte, imagens tratadas, vídeo</li><li>Lead com dossiê e roteiro de abordagem</li><li>Relatório de visitas e propostas</li><li>Corretores de Moema desde 2004</li><li>Vai até a chave</li></ul></div></div>
+<h2 class="rv">Agências entregam contatos. <em>Nós entregamos compradores.</em></h2>
+<div class="sx-vs"><div class="rv"><h3>Agência de tráfego comum</h3><ul>
+<li>{XX}Criativo de banco de imagem</li><li>{XX}Lead frio, sem contexto</li><li>{XX}Relatório de cliques</li><li>{XX}Não conhece produto nem bairro</li><li>{XX}Para no formulário</li></ul></div>
+<div class="us rv"><h3>W3W</h3><ul>
+<li>{CHK}Direção de arte, imagem tratada e vídeo</li><li>{CHK}Lead com dossiê e roteiro de abordagem</li><li>{CHK}Relatório de visitas e propostas</li><li>{CHK}Corretores de Moema desde 2004</li><li>{CHK}Vai até a assinatura</li></ul></div></div>
+</div></section>
+
+<section class="sx-dark2"><div class="grid-bg" style="opacity:.4"></div><div class="wrap sx-dos">
+<div class="rv"><h2>Lead Dossiê <em>W3W.</em></h2>
+<p class="lead">Antes do primeiro "olá", o corretor já sabe o que a pessoa procura, quanto pretende investir, quando quer comprar e por onde começar.</p>
+<ul><li>{IC['user']}<span><b>Dados do próprio lead.</b> Faixa de investimento, objetivo e prazo, coletados na triagem. Sem compra de base, dentro da LGPD.</span></li>
+<li>{IC['gauge']}<span><b>Score A, B ou C</b> e prazo de retorno sugerido.</span></li>
+<li>{IC['msg']}<span><b>Roteiro de abordagem</b> com o texto certo do hub, pronto para copiar.</span></li>
+<li>{IC['card']}<span><b>Card do imóvel</b> e campanha de origem no mesmo WhatsApp.</span></li></ul></div>
+<div class="sx-doc rv" id="sxDoc"><header><b>Lead Dossiê</b><span>exemplo · dados fictícios</span></header>
+<dl><div><dt>lead</dt><dd>Mariana, 41</dd></div><div><dt>imóvel</dt><dd>Cobertura 1.184 m² · Moema</dd></div><div><dt>origem</dt><dd>Instagram · campanha Coberturas</dd></div><div><dt>investimento</dt><dd>Acima de R$ 20 milhões</dd></div><div><dt>objetivo</dt><dd>Morar · família com 2 filhos</dd></div><div><dt>prazo</dt><dd>Até 6 meses</dd></div>
+<div><dt>score</dt><dd><span class="sx-meter"><i style="--v:0%" data-v="92%"></i><b>A · 92</b></span></dd></div><div><dt>retorno</dt><dd>Em até 15 minutos</dd></div></dl>
+<div class="msg">"Mariana, vi que você quer morar perto do Ibirapuera com a família. Posso te mostrar a planta da cobertura e marcar uma visita privativa?"<small>roteiro sugerido · enviado ao corretor</small></div></div>
 </div></section>
 
 <section><div class="wrap">
-<h2>Três formas de <em>trabalhar com a W3W.</em></h2>
-<div class="sv-who">
-<div><h3>Incorporadoras</h3><p>Lançamento e estoque com campanha por produto, landing page própria, criativos e o hub de vendas para a equipe comercial.</p><ul><li>Campanha por empreendimento</li><li>Landing page e book</li><li>Lead Dossiê para o plantão</li></ul></div>
-<div><h3>Imobiliárias e corretores</h3><p>Leads qualificados do produto que você vende, com texto pronto para o primeiro contato e card do imóvel direto no WhatsApp.</p><ul><li>Tráfego por produto</li><li>Triagem no WhatsApp</li><li>Textos e fichas prontos</li></ul></div>
-<div><h3>Proprietários</h3><p>Venda assistida do seu imóvel: produção de imagens, campanha dedicada e atendimento da W3W, com o investimento abatido da comissão.</p><ul><li>Tratamento de imagem e vídeo</li><li>Campanha exclusiva do imóvel</li><li>Atendimento e negociação</li></ul></div>
+<h2 class="rv">Três formas de <em>trabalhar com a W3W.</em></h2>
+<div class="sx-who rv">
+<div><h3>Incorporadoras</h3><p>Lançamento e estoque com campanha por produto, landing page própria, criativos e hub de vendas para o time comercial.</p><ul><li>Campanha por empreendimento</li><li>Landing page e book</li><li>Lead Dossiê para o plantão</li></ul></div>
+<div><h3>Imobiliárias e corretores</h3><p>Leads do produto que você vende, com texto pronto para o primeiro contato e o card do imóvel direto no WhatsApp.</p><ul><li>Tráfego por produto</li><li>Triagem no WhatsApp</li><li>Textos e fichas no hub</li></ul></div>
+<div><h3>Proprietários</h3><p>Venda assistida: produção de imagem, campanha exclusiva e atendimento W3W, com o investimento abatido da comissão.</p><ul><li>Imagem tratada e vídeo</li><li>Campanha só do seu imóvel</li><li>Atendimento e negociação</li></ul></div>
 </div></div></section>
 
 <section><div class="wrap">
-<h2>Do produto <em>à proposta.</em></h2>
-<div class="sv-flow">
-<div><b>Produto</b><p>Entendemos público, praça, concorrência e o que torna o imóvel único.</p></div>
-<div><b>Criação</b><p>Identidade, imagens tratadas, carrosséis, vídeos e landing page.</p></div>
-<div><b>Campanha</b><p>Meta e Google Ads com verba, público e otimização próprios.</p></div>
-<div><b>Dossiê</b><p>Cada lead chega com perfil, prioridade e abordagem sugerida.</p></div>
-<div><b>Atendimento</b><p>Corretor W3W ou da sua equipe, com hub de textos e materiais.</p></div>
+<h2 class="rv">Do produto <em>à proposta.</em></h2>
+<div class="sx-flow">
+<div class="rv"><code>01 · produto</code><b>Diagnóstico</b><p>Público, praça, concorrência e o que torna o imóvel único.</p></div>
+<div class="rv"><code>02 · criação</code><b>Direção de arte</b><p>Identidade, imagens tratadas, carrosséis, vídeo e landing page.</p></div>
+<div class="rv"><code>03 · mídia</code><b>Campanha</b><p>Meta e Google Ads com verba, público e otimização próprios.</p></div>
+<div class="rv"><code>04 · dados</code><b>Dossiê</b><p>Triagem, score e roteiro de cada lead em tempo real.</p></div>
+<div class="rv"><code>05 · venda</code><b>Atendimento</b><p>Corretor W3W ou do seu time, com o hub de materiais.</p></div>
 </div></div></section>
 
-<section class="sv-dark"><div class="wrap sv-dos">
-<div><h2>Lead Dossiê <em>W3W.</em></h2>
-<p class="lead">Antes do primeiro "olá", o corretor já sabe quem está do outro lado: o que a pessoa procura, quanto pretende investir, quando quer comprar e por onde começar a conversa.</p>
-<ul><li><b>Dados declarados pelo próprio lead</b> na triagem: faixa de investimento, objetivo e prazo. Sem compra de base, dentro da LGPD.</li><li><b>Score A, B ou C</b> e prioridade de retorno.</li><li><b>Abordagem sugerida</b> com o texto certo do hub, pronto para copiar.</li><li><b>Card do produto</b> e origem da campanha no mesmo WhatsApp.</li></ul></div>
-<div class="sv-doc" aria-label="Exemplo de Lead Dossiê com dados fictícios"><header><b>Lead Dossiê</b><span>exemplo · dados fictícios</span></header>
-<dl><dt>Lead</dt><dd>Mariana, 41</dd><dt>Produto</dt><dd>Cobertura 1.184 m² · Moema</dd><dt>Origem</dt><dd>Instagram · campanha Coberturas</dd><dt>Investimento</dt><dd>Acima de R$ 20 milhões</dd><dt>Objetivo</dt><dd>Morar, família com dois filhos</dd><dt>Prazo</dt><dd>Até 6 meses</dd><dt>Prioridade</dt><dd><span class="score">A</span>Retornar em até 15 min</dd></dl>
-<blockquote>"Mariana, vi que você quer morar perto do Ibirapuera com a família. Posso te mostrar a planta da cobertura e agendar uma visita privativa?"</blockquote>
-<small>O dossiê chega no WhatsApp do corretor junto com o card do imóvel.</small></div>
+<section><div class="wrap sx-art">
+<div class="rv"><h2>Criação de agência, <em>não de template.</em></h2>
+<p class="cred"><b>Direção de arte de Kco Oyakawa</b>, Head of Art com mais de 20 anos em agências de publicidade.</p>
+<div class="sx-svc"><span>identidade e naming</span><span>book e ficha técnica</span><span>tratamento de imagem</span><span>carrosséis e reels</span><span>vídeo</span><span>landing page</span></div>
+<div class="sx-cta"><a class="sx-btn sec" href="https://kcooyakawa.github.io/kco-imobiliario/" target="_blank" rel="noopener">Ver portfólio imobiliário {ARW}</a></div></div>
+<div class="sx-logos rv"><div>FIFA™<span>COPA DO MUNDO 2014</span></div><div>Rio 2016<span>JOGOS OLÍMPICOS</span></div><div>Coca-Cola<span>CAMPANHAS</span></div><div>Itaú<span>CAMPANHAS</span></div></div>
 </div></section>
 
-<section><div class="wrap sv-art">
-<div><h2>Criação de <em>agência</em>, não de template.</h2>
-<p class="cred" style="margin-top:28px">Direção de arte de Kco Oyakawa, Head of Art com trabalhos para <em>FIFA™, Jogos Olímpicos 2016, Coca-Cola</em> e <em>Itaú.</em></p></div>
-<ul><li>Identidade e naming do empreendimento<span>marca</span></li><li>Book, ficha técnica e cards<span>vendas</span></li><li>Tratamento de imagem e perspectivas<span>visual</span></li><li>Carrosséis, reels e vídeo<span>mídia</span></li><li>Landing page e site<span>web</span></li><li><a href="https://kcooyakawa.github.io/kco-imobiliario/" target="_blank" rel="noopener" style="border-bottom:1px solid">Ver portfólio imobiliário</a><span>cases</span></li></ul>
+<section id="planos"><div class="grid-bg" style="opacity:.35"></div><div class="wrap">
+<h2 class="rv">Planos <em>transparentes.</em></h2>
+<p class="lead rv">Preço por campanha por mês. Mais produtos e mais tempo, menor o valor. A verba de mídia é paga direto ao Meta e ao Google.</p>
+<div class="sx-seg" role="group" aria-label="Período"><button type="button" data-p="mensal" aria-pressed="true">Mensal</button><button type="button" data-p="trimestral" aria-pressed="false">Trimestral<em>−10%</em></button><button type="button" data-p="semestral" aria-pressed="false">Semestral<em>−20%</em></button></div>
+<div class="sx-plans">
+{plan(0, '1 campanha', 'Começar com 1 produto', ['Estratégia e diagnóstico do produto', 'Meta e Google Ads', 'Públicos e otimização semanal', 'Relatório de leads e visitas'])}
+{plan(1, '2 campanhas', 'Escolher 2 campanhas', ['Tudo do plano 1 campanha', 'Verba e criativos por produto', 'Comparativo entre produtos', 'Reunião quinzenal de performance'], True)}
+{plan(2, '3 campanhas', 'Escolher 3 campanhas', ['Tudo do plano 2 campanhas', 'Prioridade de criação', 'Dashboard consolidado', 'A partir de 4: plano sob medida'])}
+</div>
+<div class="sx-addon rv"><b>+ Lead Dossiê</b><p>Triagem do lead, score A/B/C, roteiro de abordagem e entrega no WhatsApp do corretor. Opcional em qualquer plano.</p><div class="pr">R$ 390<small> /campanha/mês</small></div></div>
+<div class="sx-proj rv">
+<div><b>Criativos da campanha</b><p>Carrosséis, estáticos e reels com direção de arte, por ciclo mensal.</p><span>a partir de R$ 1.200/mês</span></div>
+<div><b>Landing page do produto</b><p>Página rápida, com card para WhatsApp e triagem do lead.</p><span>a partir de R$ 2.500</span></div>
+<div><b>Identidade e book</b><p>Marca, naming, book de vendas, ficha técnica e cards.</p><span>a partir de R$ 6.000</span></div>
+<div><b>Hub de vendas</b><p>Textos prontos, fichas, tabelas e imagens de cada produto para o time.</p><span>R$ 1.900 + R$ 290/mês</span></div>
+</div>
+<p class="sx-note">Trimestral e semestral contratados pelo período completo, em até 3x ou 6x. Valores por campanha/mês, sem a verba de mídia.</p>
+<div class="sx-own rv"><h3>Proprietário? <em style="font-family:var(--serif);font-style:italic;font-weight:200;color:var(--ac)">Venda assistida.</em></h3><div><p>Você investe antes na produção e na campanha do seu imóvel. Se vender com a W3W, o valor é descontado da comissão, que cai de até 6% para 5%.</p><a class="sx-btn pri" href="{prop}" target="_blank" rel="noopener">Quero saber mais {ARW}</a></div></div>
 </div></section>
-
-<section id="planos"><div class="wrap">
-<h2>Planos <em>claros.</em></h2>
-<p class="lead">Preço por campanha por mês. Quanto mais produtos e mais tempo, menor o valor. O investimento em mídia é pago direto às plataformas.</p>
-<div class="sv-pl">
-<div class="sv-seg" role="group" aria-label="Período"><button type="button" data-p="mensal" aria-pressed="true">Mensal</button><button type="button" data-p="trimestral" aria-pressed="false">Trimestral</button><button type="button" data-p="semestral" aria-pressed="false">Semestral</button></div>
-<table class="sv-tb"><thead><tr><th>Serviço</th><th>1 campanha</th><th>2 campanhas</th><th>3 campanhas</th></tr></thead><tbody>
-<tr><td>Tráfego por produto<small>Estratégia, Meta e Google Ads, públicos, otimização e relatório de visitas.</small></td><td class="pr" data-i="0">{fm(m[0])}<span>/mês</span></td><td class="pr" data-i="1">{fm(m[1])}<span>/mês</span></td><td class="pr" data-i="2">{fm(m[2])}<span>/mês</span></td></tr>
-<tr><td>Lead Dossiê W3W<small>Triagem, score, abordagem sugerida e entrega no WhatsApp. Opcional.</small></td><td class="pr" colspan="3">+ R$ 390<span>por campanha/mês</span></td></tr>
-</tbody></table>
-<p class="sv-note">Trimestral e semestral com pagamento do período completo, em até 3x ou 6x. A partir de 4 campanhas, plano sob medida.</p>
-
-<table class="sv-tb" style="margin-top:56px"><thead><tr><th>Projetos</th><th colspan="3">Investimento</th></tr></thead><tbody>
-<tr><td>Criativos da campanha<small>Carrosséis, estáticos e reels com direção de arte, por ciclo mensal.</small></td><td class="pr" colspan="3">a partir de R$ 1.200<span>/mês</span></td></tr>
-<tr><td>Landing page do produto<small>Página rápida, com card para WhatsApp e triagem do lead.</small></td><td class="pr" colspan="3">a partir de R$ 2.500</td></tr>
-<tr><td>Identidade e book<small>Marca, naming, book de vendas, ficha técnica e cards.</small></td><td class="pr" colspan="3">a partir de R$ 6.000</td></tr>
-<tr><td>Hub de vendas<small>Textos prontos, fichas, tabelas e imagens de cada produto para a equipe.</small></td><td class="pr" colspan="3">R$ 1.900 + R$ 290<span>/mês</span></td></tr>
-</tbody></table>
-
-<div class="sv-own"><h3>Proprietário: venda assistida.</h3><p>Você investe antes na produção e na campanha do seu imóvel. Se vender com a W3W, o valor pago é descontado da comissão, que cai de até 6% para 5%. <a href="{prop}" target="_blank" rel="noopener" style="border-bottom:1px solid">Quero saber mais</a></p></div>
-</div></div></section>
 
 <section><div class="wrap">
-<h2>Perguntas <em>frequentes.</em></h2>
-<div class="sv-faq">
+<h2 class="rv">Perguntas <em>frequentes.</em></h2>
+<div class="sx-faq">
 <details><summary>O valor da mídia está incluído?</summary><p>Não. A verba de anúncios é paga direto ao Meta e ao Google, no cartão do cliente. A W3W recomenda o valor ideal para cada produto.</p></details>
 <details><summary>Preciso ter corretor próprio?</summary><p>Não. Os leads podem ser atendidos pela equipe da W3W ou pela sua, que recebe o Lead Dossiê e o hub de textos para o primeiro contato.</p></details>
 <details><summary>O Lead Dossiê usa dados de terceiros?</summary><p>Não. Usamos o que o próprio lead informa na triagem e os dados da campanha de origem. Nada de compra de base ou estimativa de renda por fontes externas.</p></details>
@@ -184,10 +285,17 @@ def render(wa, way, BASE, u):
 <details><summary>Existe fidelidade?</summary><p>No plano mensal, não. Os planos trimestral e semestral têm desconto e são contratados pelo período completo.</p></details>
 </div></div></section>
 
-<section class="sv-end"><div class="wrap">
-<h2>Vamos vender o seu produto <em>do jeito certo?</em></h2>
-<div class="sv-cta" style="justify-content:flex-start;margin-top:36px"><a class="btn solid" href="{contato}" target="_blank" rel="noopener">Falar com a W3W no WhatsApp</a><a class="btn" href="{BASE}/">Ver a vitrine da W3W</a></div>
+<section class="sx-end"><div class="grid-bg"></div><div class="wrap">
+<h2 class="rv">Vamos colocar o seu produto <em>em movimento?</em></h2>
+<div class="sx-cta"><a class="sx-btn pri" href="{contato}" target="_blank" rel="noopener">Falar com a W3W no WhatsApp {ARW}</a><a class="sx-btn sec" href="{BASE}/">Ver a vitrine W3W</a></div>
 </div></section>
 </main>
-<script>(function(){{var P={P},f=function(n){{return 'R$ '+n.toLocaleString('pt-BR')}};document.querySelectorAll('.sv-seg button').forEach(function(b){{b.onclick=function(){{document.querySelectorAll('.sv-seg button').forEach(function(x){{x.setAttribute('aria-pressed',x===b)}});var v=P[b.dataset.p];document.querySelectorAll('.sv-tb .pr[data-i]').forEach(function(td){{td.innerHTML=f(v[+td.dataset.i])+'<span>/mês</span>'}})}}}})}})();</script>
+<script>(function(){{
+var P={P};document.querySelectorAll('.sx-seg button').forEach(function(b){{b.onclick=function(){{document.querySelectorAll('.sx-seg button').forEach(function(x){{x.setAttribute('aria-pressed',x===b)}});var v=P[b.dataset.p];document.querySelectorAll('.sx-plan [data-i]').forEach(function(s){{s.textContent=v[+s.dataset.i].toLocaleString('pt-BR')}})}}}});
+var io=new IntersectionObserver(function(es){{es.forEach(function(e){{if(e.isIntersecting){{e.target.classList.add('in');io.unobserve(e.target);if(e.target.id==='sxDoc'){{var m=e.target.querySelector('[data-v]');setTimeout(function(){{m.style.setProperty('--v',m.dataset.v)}},300)}}}}}})}},{{threshold:.15}});document.querySelectorAll('.sx .rv').forEach(function(el){{io.observe(el)}});
+var F=document.getElementById('sxFeed'),C=document.getElementById('sxClock'),L=[['Cobertura · Moema','A'],['Studio · Moema','B'],['Apto 258 m² · Moema','A'],['Casa · Brooklin','A'],['Apto 147 m² · Moema','B'],['Studio · investimento','C'],['Duplex 625 m² · Moema','A'],['Apto 170 m² · Moema','B']],N=['Mariana','Rafael','Helena','Pedro','Camila','Bruno','Lúcia','André'],k=0;
+function t(){{var d=new Date();return ('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2)+':'+('0'+d.getSeconds()).slice(-2)}}
+function add(){{var x=L[k%L.length],n=N[(k*3)%N.length],r=document.createElement('div');r.innerHTML='<span>'+t()+'</span><span><b>'+n+'</b> · '+x[0]+'</span><span class="sc '+(x[1]==='A'?'':x[1]==='B'?'b':'c')+'">'+x[1]+'</span>';F.insertBefore(r,F.firstChild);while(F.children.length>6)F.removeChild(F.lastChild);k++}}
+if(F){{for(var i=0;i<4;i++)add();if(!matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(add,2600);setInterval(function(){{C.textContent=t()}},1000);C.textContent=t()}}
+}})();</script>
 '''
