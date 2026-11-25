@@ -16,7 +16,7 @@ UA = os.environ.get('MAPA_UA', 'W3W-Mapa-Moema/1.0 (+https://kcooyakawa.github.i
 
 # Moema e entorno imediato (sul, oeste, norte, leste)
 BBOX = (-23.6180, -46.6820, -23.5860, -46.6450)
-ENDPOINTS = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter']
+ENDPOINTS = ['https://overpass-api.de/api/interpreter', 'https://overpass.private.coffee/api/interpreter', 'https://overpass.kumi.systems/api/interpreter']
 
 Q = f"""[out:json][timeout:90];
 (
