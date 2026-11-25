@@ -862,7 +862,7 @@
   "frase": "Um endereço pensado como obra de arte na Av. Sabiá.",
   "resumo": {
    "tipologias": "4 suítes",
-   "metragem": "283 a 416 m²",
+   "metragem": "283 a 770 m²",
    "vagas": "3 e 4 vagas"
   },
   "torres": "2",
@@ -931,6 +931,12 @@
      "416 m²",
      "4 suítes",
      "4 vagas"
+    ],
+    [
+     "Duplex e casas suspensas",
+     "Até 770 m²",
+     "4 suítes",
+     "Sob consulta"
     ]
    ],
    "lazer": [
@@ -1514,7 +1520,7 @@
   "frase": "Viva a experiência única de um lar que se conecta com a natureza e o bem-estar.",
   "resumo": {
    "tipologias": "2 suítes, 3 dorms. e studios NR",
-   "metragem": "83 a 89 m²",
+   "metragem": "24 a 164 m²",
    "vagas": "1 vaga (residencial)"
   },
   "torres": [],
@@ -1586,9 +1592,15 @@
     ],
     [
      "Studio NR",
-     "Sob consulta",
+     "24 a 43 m²",
      "—",
      "Sem vaga"
+    ],
+    [
+     "Garden e cobertura",
+     "Até 164 m²",
+     "Sob consulta",
+     "1 vaga"
     ]
    ],
    "lazer": [
@@ -2949,7 +2961,7 @@
   "frase": "Sofisticação, design exclusivo e localização privilegiada se unem para uma experiência única.",
   "resumo": {
    "tipologias": "Studios e 3 Suítes",
-   "metragem": "25 a 194 m²",
+   "metragem": "23 a 384 m²",
    "vagas": "3 e 4 Vagas (demarcadas)"
   },
   "torres": [],
@@ -3003,8 +3015,8 @@
    ],
    "plantas": [
     [
-     "Studio+ e 1 dorm.+",
-     "24 a 58 m²",
+     "Studios e 1 dorm.",
+     "23 a 30 m²",
      "—",
      "Sem vaga"
     ],
@@ -3019,6 +3031,12 @@
      "194 m²",
      "4 dorms. ou 3 suítes",
      "3 vagas"
+    ],
+    [
+     "Cobertura duplex",
+     "384 m²",
+     "Sob consulta",
+     "Sob consulta"
     ]
    ],
    "lazer": [
@@ -6152,7 +6170,7 @@
     ],
     [
      "Garden",
-     "295 m²",
+     "180 m²",
      "3 suítes",
      "2 vagas"
     ],
@@ -7320,7 +7338,7 @@
   "frase": "Coleção Arbórea da Benx, a poucos passos do Ibirapuera.",
   "resumo": {
    "tipologias": "4 e 5 suítes",
-   "metragem": "575 m²",
+   "metragem": "585 a 1.234 m²",
    "vagas": "Sob consulta"
   },
   "torres": [],
@@ -7372,9 +7390,9 @@
    "plantas": [
     [
      "Residência",
-     "575 m²",
-     "—",
-     "Sob consulta"
+     "585 a 1.234 m²",
+     "4 e 5 suítes",
+     "5 a 8 vagas"
     ]
    ],
    "lazer": [

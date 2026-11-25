@@ -804,6 +804,11 @@ def mt(e):
     return '', e['resumo']['metragem']
 
 import copy
+def _tier(rows, e):
+    ns=[n[0] for r in rows for n in _nums(r[1])]
+    lo=min(ns) if ns else 0
+    return ['alto-padrao'] if lo>=CORTE_AP else ['apartamentos']
+CORTE_AP=145  # alto padrão pela menor planta (Kco, nov/2026; ideal futuro: R$/m²)
 def expand(lst):
     """Separa prédios com studio e apartamento em dois itens de vitrine (pedido Kco, nov/2026)."""
     out=[]
@@ -814,10 +819,11 @@ def expand(lst):
             if e.get('ficha'):
                 if st and not ap and 'studios' not in cats: cats=['studios']+[c for c in cats if c!='apartamentos']
                 if ap and not st: cats=[c for c in cats if c!='studios'] or ['apartamentos']
+            if e.get('ficha') and ap and not st: cats=_tier(ap,e)
+            elif e.get('ficha') and st and not ap: cats=['studios']
             x['categorias']=cats; out.append(x); continue
         a=copy.deepcopy(e); a['ficha']['plantas']=ap
-        a['categorias']=[c for c in e['categorias'] if c!='studios'] or ['apartamentos']
-        if not any(c in a['categorias'] for c in ('apartamentos','alto-padrao')): a['categorias'].append('apartamentos')
+        a['categorias']=_tier(ap,e)
         a['resumo']['metragem']=_rng(ap) or e['resumo']['metragem']; a['ficha']['faixa']=a['resumo']['metragem']
         a['tipos']=['Apartamento']; out.append(a)
         b=copy.deepcopy(e); b['ficha']['plantas']=st; b['slug']=e['slug']+'-studios'; b['_page']=e['slug']
