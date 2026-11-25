@@ -3,7 +3,7 @@
 CATS = [
     ('restaurantes', 'Restaurantes', '#C2553D'), ('pizzarias', 'Pizzarias', '#D9822B'), ('churrascarias', 'Churrascarias', '#8E3B2E'),
     ('japoneses', 'Japoneses', '#B23A48'), ('hamburguerias', 'Hamburguerias', '#C9733A'), ('bares', 'Bares', '#7A4FB5'),
-    ('noite', 'Vida noturna', '#4B3BA8'), ('cafes', 'Cafés', '#8A6A4F'), ('docerias', 'Docerias', '#D46A9A'),
+    ('noite', 'Vida noturna', '#4B3BA8'), ('cafes', 'Cafés', '#8A6A4F'), ('docerias', 'Docerias', '#D46A9A'), ('sorveterias', 'Sorveterias', '#4FA3C7'),
     ('padarias', 'Padarias', '#B8893A'), ('mercados', 'Mercados', '#5D7F8C'), ('farmacias', 'Farmácias', '#2F8F83'),
     ('saude', 'Saúde', '#2F6FD0'), ('postos', 'Postos', '#5C677A'), ('cultura', 'Cultura', '#3D5A99'),
     ('parques', 'Parques', '#3F7F6A'), ('academias', 'Academias', '#6B7A3A'), ('hoteis', 'Hotéis', '#9A7B4F'),
@@ -61,7 +61,24 @@ body:has(.mp){background:#EEEBE5}
 .mp-btn{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 18px;border-radius:999px;font:500 14px var(--sans);text-decoration:none;color:var(--tx);background:linear-gradient(135deg,rgba(255,255,255,.85),rgba(255,255,255,.5));box-shadow:inset 0 1.5px 0 #fff,inset 0 0 0 1px rgba(20,23,28,.08),0 10px 24px -14px rgba(20,23,28,.4);transition:transform .4s var(--e)}
 .mp-btn.p{color:#fff;background:linear-gradient(135deg,#2F6FD0,#1E4E9E);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.5),0 14px 30px -12px rgba(47,111,208,.7)}
 .mp-btn:hover{transform:translateY(-2px)}
-.mp-upd{position:absolute;right:20px;top:20px;z-index:3;padding:10px 14px;border-radius:999px;font:500 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--tx2);display:flex;align-items:center;gap:8px}
+.mp-tools{position:absolute;right:20px;top:20px;z-index:4;display:flex;gap:8px;align-items:center}
+.mp-seg{display:flex;padding:4px;border-radius:999px}
+.mp-seg button{border:0;background:none;height:34px;padding:0 14px;border-radius:999px;font:500 12.5px var(--sans);color:var(--tx2);cursor:pointer;transition:all .3s var(--e)}
+.mp-seg button[aria-pressed=true]{background:var(--tx);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.2)}
+.mp-grid{position:absolute;left:420px;right:20px;top:76px;bottom:20px;z-index:3;border-radius:26px;overflow-y:auto;padding:28px;opacity:0;pointer-events:none;transform:translateY(16px);transition:all .5s var(--e)}
+.mp.lista .mp-grid{opacity:1;pointer-events:auto;transform:none}
+.mp.lista .mp-card,.mp.lista .mp-cta{display:none}
+.mp-grid h3{font:300 28px/1 var(--sans);letter-spacing:-.03em;margin:28px 0 14px;display:flex;align-items:center;gap:10px}
+.mp-grid h3:first-child{margin-top:0}
+.mp-grid h3 b{width:10px;height:10px;border-radius:50%}
+.mp-grid h3 small{font:11px var(--mono);color:var(--tx3)}
+.mp-gl{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.mp-gc{padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.7);box-shadow:inset 0 0 0 1px var(--ln);cursor:pointer;transition:transform .35s var(--e),box-shadow .3s}
+.mp-gc:hover{transform:translateY(-3px);box-shadow:inset 0 0 0 1px rgba(47,111,208,.3),0 16px 30px -20px rgba(20,23,28,.4)}
+.mp-gc strong{display:block;font:400 16px/1.25 var(--sans);margin-bottom:4px}
+.mp-gc span{display:block;font:12.5px var(--sans);color:var(--tx3);margin-bottom:10px}
+.mp-upd{padding:10px 14px;border-radius:999px;font:500 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--tx2);display:flex;align-items:center;gap:8px}
+.mp-upd{position:static!important}
 .mp-upd i{width:7px;height:7px;border-radius:50%;background:var(--ok);animation:mpp 2s infinite}
 @keyframes mpp{0%{box-shadow:0 0 0 0 rgba(30,158,106,.5)}70%{box-shadow:0 0 0 8px rgba(30,158,106,0)}}
 .mp-cta{position:absolute;left:420px;bottom:20px;z-index:2;padding:12px 16px;border-radius:18px;font:13px/1.4 var(--sans);color:var(--tx2);max-width:300px}
@@ -81,7 +98,7 @@ body:has(.mp){background:#EEEBE5}
 .mp-hd{padding:10px 20px 6px}.mp-hd h1{font-size:28px}.mp-hd p{display:none}
 .mp-search{margin:6px 20px 0}.mp-tg,.mp-chips{padding-left:20px;padding-right:20px}
 .mp-card{left:10px;right:10px;width:auto;bottom:10px;z-index:4}
-.mp-cta{display:none}.mp-upd{top:10px;right:10px}
+.mp-cta{display:none}.mp-tools{top:10px;right:10px;left:10px;justify-content:flex-end}.mp-upd{display:none}.mp-grid{left:10px;right:10px;top:62px;bottom:10px;padding:20px;z-index:5}
 .maplibregl-ctrl-bottom-right{right:0!important;bottom:48%!important}
 }
 @media (prefers-reduced-motion:reduce){.mp *{animation:none!important;transition:none!important}}
@@ -102,7 +119,8 @@ def render(wa, cats_json):
 <div class="mp-count"><span id="mpN">—</span><span id="mpNow"></span></div>
 <div class="mp-list" id="mpList"></div>
 </aside>
-<div class="mp-upd mp-glass"><i></i><span id="mpUpd">Atualizado toda semana</span></div>
+<div class="mp-tools"><div class="mp-seg mp-glass" role="group" aria-label="Visualização"><button id="mpV3" aria-pressed="true">3D</button><button id="mpV2" aria-pressed="false">2D</button></div><div class="mp-seg mp-glass" role="group" aria-label="Modo"><button id="mpMm" aria-pressed="true">Mapa</button><button id="mpMl" aria-pressed="false">Lista</button></div><div class="mp-upd mp-glass"><i></i><span id="mpUpd">Atualizado toda semana</span></div></div>
+<section class="mp-grid mp-glass" id="mpGrid" aria-label="Lista de lugares"></section>
 <div class="mp-cta mp-glass">Tem um negócio em Moema? <a href="{wa('Olá! Tenho um negócio em Moema e quero aparecer no Mapa de Moema da W3W.')}" target="_blank" rel="noopener">Apareça no mapa →</a></div>
 <article class="mp-card mp-glass" id="mpCard" aria-live="polite"></article>
 </main>
@@ -130,16 +148,20 @@ const nx=act(d).filter(([a])=>a>mn).sort((x,y)=>x[0]-y[0])[0];return{k:'c',t:nx?
 const fmt=m=>{m%=1440;const h=Math.floor(m/60),mi=m%60;return h+'h'+(mi?String(mi).padStart(2,'0'):'')};
 const human=h=>h==='24/7'?'Aberto 24 horas':h.replace(/Mo|Tu|We|Th|Fr|Sa|Su/g,x=>PT[x]).replace(/;\s*/g,'\n').replace(/off/g,'fechado').replace(/PH/g,'Feriados');
 /* estado */
-let ALL=[],F={cat:null,open:false,h24:false,q:''},sel=null,map;
+let ALL=[],F={cat:null,open:false,h24:false,q:''},sel=null,map;const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 fetch('locais.json?v='+Date.now()).then(r=>r.json()).then(d=>{ALL=d.locais.filter(l=>CM[l.cat]);if(d.atualizado){const t=new Date(d.atualizado);$('#mpUpd').textContent='Atualizado em '+t.toLocaleDateString('pt-BR',{day:'2-digit',month:'short'})}
 chips();draw()}).catch(()=>{$('#mpList').innerHTML='<p class="mp-empty">Não foi possível carregar os lugares agora.</p>'});
 function chips(){const n={};ALL.forEach(l=>n[l.cat]=(n[l.cat]||0)+1);$('#mpChips').innerHTML=`<button aria-pressed="${!F.cat}" data-c="">Todos <small>${ALL.length}</small></button>`+C.filter(c=>n[c[0]]).map(c=>`<button aria-pressed="${F.cat===c[0]}" data-c="${c[0]}"><b style="background:${c[2]}"></b>${c[1]} <small>${n[c[0]]}</small></button>`).join('');
 $('#mpChips').querySelectorAll('button').forEach(b=>b.onclick=()=>{F.cat=b.dataset.c||null;chips();draw(true)})}
-function list(){const q=F.q.toLowerCase();return ALL.map(l=>({...l,st:status(l.horario)})).filter(l=>(!F.cat||l.cat===F.cat)&&(!F.open||l.st.k==='o'||l.st.k==='h')&&(!F.h24||l.st.k==='h')&&(!q||l.nome.toLowerCase().includes(q)))}
+function list(ign){const q=norm(F.q);return ALL.map(l=>({...l,st:status(l.horario)})).filter(l=>(!F.cat||l.cat===F.cat)&&(ign||!F.open||l.st.k==='o'||l.st.k==='h')&&(ign||!F.h24||l.st.k==='h')&&(!q||norm(l.nome+' '+(l.end||'')+' '+CM[l.cat][1]).includes(q)))}
 function draw(fit){const L=list();$('#mpN').textContent=L.length+' lugares';$('#mpNow').textContent=new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
-$('#mpList').innerHTML=L.length?L.slice(0,300).map((l,i)=>`<div class="mp-it${sel===l.id?' on':''}" data-id="${l.id}" style="animation-delay:${Math.min(i,20)*18}ms"><b style="background:${CM[l.cat][2]}"></b><div><strong>${esc(l.nome)}${l.destaque?'<span class="mp-dest">W3W indica</span>':''}</strong><span>${CM[l.cat][1]}${l.end?' · '+esc(l.end):''}</span></div>${l.st.k!=='?'?`<span class="mp-st ${l.st.k}">${l.st.t}</span>`:''}</div>`).join(''):'<p class="mp-empty">Nenhum lugar com esses filtros.</p>';
+$('#mpList').innerHTML=L.length?L.slice(0,300).map((l,i)=>`<div class="mp-it${sel===l.id?' on':''}" data-id="${l.id}" style="animation-delay:${Math.min(i,20)*18}ms"><b style="background:${CM[l.cat][2]}"></b><div><strong>${esc(l.nome)}${l.destaque?'<span class="mp-dest">W3W indica</span>':''}</strong><span>${CM[l.cat][1]}${l.end?' · '+esc(l.end):''}</span></div>${l.st.k!=='?'?`<span class="mp-st ${l.st.k}">${l.st.t}</span>`:''}</div>`).join(''):empty();grid(L);
+const ab=$('#mpAll');if(ab)ab.onclick=()=>{F.open=F.h24=false;$('#mpOpen').setAttribute('aria-pressed',false);$('#mp24').setAttribute('aria-pressed',false);draw(true)};
 $('#mpList').querySelectorAll('.mp-it').forEach(el=>{el.onclick=()=>pick(el.dataset.id,true);el.onmouseenter=()=>hover(el.dataset.id)});
 if(map&&map.getSource('locais')){map.getSource('locais').setData(geo(L));if(fit&&L.length){const b=new maplibregl.LngLatBounds();L.forEach(l=>b.extend([l.lon,l.lat]));map.fitBounds(b,{padding:pad(),maxZoom:16,duration:R?0:1200})}}}
+function empty(){const all=list(true).length;return all&&(F.open||F.h24)?`<p class="mp-empty">Nada ${F.h24?'24 horas':'aberto agora'} com essa busca.<br><button class="mp-btn" id="mpAll" style="margin-top:14px">Ver os ${all} resultados</button></p>`:`<p class="mp-empty">Ainda não temos “${esc(F.q)}” no mapa.<br><a class="mp-btn" style="margin-top:14px" href="https://wa.me/5511940297871?text=${encodeURIComponent('Olá! Sugiro incluir no Mapa de Moema: '+F.q)}" target="_blank" rel="noopener">Sugerir este lugar</a></p>`}
+function grid(L){const g=$('#mpGrid');if(!g)return;const by={};L.forEach(l=>(by[l.cat]=by[l.cat]||[]).push(l));g.innerHTML=C.filter(c=>by[c[0]]).map(c=>`<h3><b style="background:${c[2]}"></b>${c[1]} <small>${by[c[0]].length}</small></h3><div class="mp-gl">${by[c[0]].map(l=>`<div class="mp-gc" data-id="${l.id}"><strong>${esc(l.nome)}</strong><span>${esc(l.end||CM[l.cat][1])}</span>${l.st.k!=='?'?`<em class="mp-st ${l.st.k}" style="font-style:normal">${l.st.t}</em>`:''}</div>`).join('')}</div>`).join('')||'<p class="mp-empty">Nenhum lugar com esses filtros.</p>';
+g.querySelectorAll('.mp-gc').forEach(el=>el.onclick=()=>{setMode(false);pick(el.dataset.id,true)})}
 const pad=()=>innerWidth>900?{left:420,right:60,top:80,bottom:80}:{left:30,right:30,top:60,bottom:innerHeight*.5};
 const geo=L=>({type:'FeatureCollection',features:L.map(l=>({type:'Feature',id:hash(l.id),properties:{id:l.id,nome:l.nome,cor:CM[l.cat][2],aberto:l.st.k==='o'||l.st.k==='h'?1:0,dest:l.destaque?1:0},geometry:{type:'Point',coordinates:[l.lon,l.lat]}}))});
 const hash=s=>{let h=0;for(const c of s)h=(h*31+c.charCodeAt(0))|0;return Math.abs(h)};
@@ -154,6 +176,9 @@ let pop;function hover(id){if(!map)return;const l=ALL.find(x=>x.id===id);if(!l)r
 $('#mpQ').oninput=e=>{F.q=e.target.value;draw()};
 $('#mpOpen').onclick=e=>{F.open=!F.open;e.currentTarget.setAttribute('aria-pressed',F.open);if(F.open){F.h24=false;$('#mp24').setAttribute('aria-pressed',false)}draw(true)};
 $('#mp24').onclick=e=>{F.h24=!F.h24;e.currentTarget.setAttribute('aria-pressed',F.h24);if(F.h24){F.open=false;$('#mpOpen').setAttribute('aria-pressed',false)}draw(true)};
+const setMode=l=>{$('.mp').classList.toggle('lista',l);$('#mpMl').setAttribute('aria-pressed',l);$('#mpMm').setAttribute('aria-pressed',!l)};$('#mpMl').onclick=()=>setMode(true);$('#mpMm').onclick=()=>setMode(false);
+const setView=d3=>{$('#mpV3').setAttribute('aria-pressed',d3);$('#mpV2').setAttribute('aria-pressed',!d3);if(!map)return;map.easeTo({pitch:d3?52:0,bearing:d3?-16:0,duration:R?0:1200});if(map.getLayer('bld'))map.setPaintProperty('bld','fill-extrusion-height',d3?['coalesce',['get','render_height'],8]:0)};
+$('#mpV3').onclick=()=>setView(true);$('#mpV2').onclick=()=>setView(false);
 $('#mpHandle').onclick=()=>$('#mpPanel').classList.toggle('min');
 setInterval(()=>draw(),60000);
 /* mapa com estilo próprio */

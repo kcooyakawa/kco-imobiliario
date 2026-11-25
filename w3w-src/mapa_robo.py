@@ -31,6 +31,13 @@ out center tags;"""
 def categoria(t):
     a, s, l, tu = t.get('amenity'), t.get('shop'), t.get('leisure'), t.get('tourism')
     cz = (t.get('cuisine') or '').lower()
+    nm = (t.get('name') or '').lower()
+    if a == 'ice_cream' or 'ice_cream' in cz or 'sorvet' in nm or 'gelat' in nm: return 'sorveterias'
+    if a in ('restaurant', 'fast_food', 'cafe', 'bakery') or s in ('bakery', 'confectionery', 'pastry'):
+        if 'pizz' in nm: return 'pizzarias'
+        if 'churrasc' in nm or 'steak' in nm: return 'churrascarias'
+        if 'padaria' in nm or 'panific' in nm: return 'padarias'
+        if any(k in nm for k in ('doce', 'confeit', 'brigadeir', 'chocolat', 'bolo')): return 'docerias'
     if a in ('restaurant', 'fast_food'):
         if 'pizza' in cz: return 'pizzarias'
         if any(k in cz for k in ('steak', 'barbecue', 'churrasc', 'brazilian_bbq')): return 'churrascarias'
@@ -40,7 +47,7 @@ def categoria(t):
     if a in ('bar', 'pub'): return 'bares'
     if a == 'nightclub': return 'noite'
     if a == 'cafe': return 'cafes'
-    if a == 'ice_cream' or s in ('confectionery', 'pastry', 'chocolate'): return 'docerias'
+    if s in ('confectionery', 'pastry', 'chocolate'): return 'docerias'
     if a == 'bakery' or s == 'bakery': return 'padarias'
     if a == 'pharmacy': return 'farmacias'
     if a in ('hospital', 'clinic'): return 'saude'
