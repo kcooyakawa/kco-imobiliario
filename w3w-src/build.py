@@ -22,7 +22,8 @@ HERO = 'https://w3wimoveis.com.br/wp-content/uploads/2024/12/o-que-fazer-no-parq
 
 E = json.load(open(os.path.join(ROOT, 'empreendimentos.json'), encoding='utf-8'))
 E = [e for e in E if not e['slug'].startswith('on-')]  # Vitacon fora (nov/2026)
-E = [e for e in E if not e.get('esgotado')]  # sem estoque fora (pedido Yoko, nov/2026)
+E = [e for e in E if not e.get('esgotado')]
+import sem_endereco; sem_endereco.aplicar(E)  # textos do site sem endereço  # sem estoque fora (pedido Yoko, nov/2026)
 EM = [e for e in E if e['bairro_slug'] == 'moema' or e.get('vitrine')]  # vitrine pública: só Moema por enquanto
 LOGO = open(os.path.join(ROOT, 'logo.svg'), encoding='utf-8').read().strip()
 LOGO = LOGO.replace('aria-label="W3W Imóveis"', 'role="img" aria-label="W3W Imóveis"')
