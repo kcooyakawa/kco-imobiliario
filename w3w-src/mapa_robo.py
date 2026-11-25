@@ -298,6 +298,18 @@ def horario_site(url):
     return ok, horario_jsonld(html) or horario_texto(html)
 
 
+ENFULL = {'monday': 'Mo', 'tuesday': 'Tu', 'wednesday': 'We', 'thursday': 'Th', 'friday': 'Fr', 'saturday': 'Sa', 'sunday': 'Su'}
+
+
+def normaliza_horario(h):
+    if not h: return ''
+    h = h.strip()
+    for k, v in ENFULL.items(): h = re.sub(k, v, h, flags=re.I)
+    h = re.sub(r'(\d{1,2}:\d{2})\s*[-–]\s*(\d{1,2}:\d{2})', r'\1-\2', h)
+    if re.fullmatch(r'00:00-23:59|00:00-24:00', h): h = '24/7'
+    return h
+
+
 def completar_horarios(locais):
     from concurrent.futures import ThreadPoolExecutor
     alvo = [l for l in locais if l.get('site')]
@@ -313,7 +325,70 @@ def completar_horarios(locais):
         return False
     with ThreadPoolExecutor(24) as ex:
         n = sum(ex.map(job, alvo))
+    # site de rede (mesmo domínio em 3+ lugares) costuma mostrar horário de escritório: descarta
+    import collections
+    dom = lambda u: re.sub(r'^https?://(www\.)?', '', u or '').split('/')[0]
+    cont = collections.Counter(dom(l.get('site')) for l in locais if l.get('site'))
+    for l in locais:
+        if l.get('fonte_horario') == 'site' and cont[dom(l.get('site'))] >= 3:
+            l['horario'] = ''; l['h24'] = False; l.pop('fonte_horario', None); n -= 1
+    for l in locais:
+        l['horario'] = normaliza_horario(l.get('horario')); l['h24'] = l['horario'] == '24/7'
     print('sites testados:', len(alvo), '| fora do ar removidos:', mortos[0], '| horários achados:', n)
+
+
+# ---------- limpeza de duplicados ----------
+STOP = {'restaurante', 'restaurant', 'parrillada', 'parrilla', 'unidade', 'moema', 'morma', 'loja', 'sp', 'sao', 'paulo', 'shopping', 'ibirapuera', 'filial', 'the', 'o', 'a', 'de', 'da', 'do', 'e', 'bar', 'cafe', 'cafeteria', 'pizzaria', 'lanchonete'}
+GENERICAS = {'lojas', 'restaurantes', 'cultura', 'saude', 'mercados'}
+
+
+def chave(nome):
+    t = unicodedata.normalize('NFD', (nome or '').lower())
+    t = ''.join(c for c in t if unicodedata.category(c) != 'Mn')
+    toks = [w for w in re.split(r'[^a-z0-9]+', t) if w and w not in STOP]
+    return ' '.join(toks)
+
+
+def nota(l):
+    return (4 if l.get('horario') else 0) + (1 if l.get('tel') else 0) + (1 if l.get('site') else 0) + (1 if l.get('end') else 0) + (3 if l.get('destaque') else 0)
+
+
+def parecidos(a, b):
+    ka, kb = chave(a['nome']), chave(b['nome'])
+    if not ka or not kb: return False
+    if ka == kb: return True
+    if min(len(ka), len(kb)) >= 5 and (ka in kb or kb in ka): return True
+    from difflib import SequenceMatcher
+    return SequenceMatcher(None, ka, kb).ratio() >= .88
+
+
+def deduplicar(locais):
+    """Mesmo lugar (nome parecido a menos de ~150 m): fica o registro mais completo, de preferência o que tem horário."""
+    locais.sort(key=nota, reverse=True)
+    fic = []
+    for l in locais:
+        par = None
+        for k in fic:
+            if abs(k['lat'] - l['lat']) < .0014 and abs(k['lon'] - l['lon']) < .0014 and parecidos(k, l):
+                par = k; break
+        if par:
+            for f in ('horario', 'tel', 'site', 'end', 'insta'):
+                if not par.get(f) and l.get(f): par[f] = l[f]
+            if par['cat'] in GENERICAS and l['cat'] not in GENERICAS: par['cat'] = l['cat']
+            if len(chave(l['nome'])) and len(l['nome']) < len(par['nome']) and chave(l['nome']) in chave(par['nome']): par['nome'] = l['nome']
+            par['h24'] = (par.get('horario') or '').strip() == '24/7'
+        else:
+            fic.append(l)
+    # mesma marca, mesma categoria
+    import collections
+    marcas = collections.defaultdict(list)
+    for l in fic: marcas[chave(l['nome'])].append(l)
+    for k, ls in marcas.items():
+        if len(ls) > 1 and k:
+            cat = collections.Counter(x['cat'] for x in ls).most_common(1)[0][0]
+            for x in ls: x['cat'] = cat
+    print('duplicados removidos:', len(locais) - len(fic))
+    return fic
 
 
 def main():
@@ -347,6 +422,7 @@ def main():
         except Exception as ex:
             print('foursquare indisponível', ex, file=sys.stderr)
     completar_horarios(locais)
+    locais = deduplicar(locais)
     if os.path.exists(CUR):  # curadoria W3W tem prioridade
         cur = json.load(open(CUR, encoding='utf-8'))
         porid = {c['id']: c for c in cur if c.get('id')}
