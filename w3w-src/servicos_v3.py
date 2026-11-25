@@ -709,7 +709,6 @@ def render(wa, way, BASE, u):
 <details><summary>Preciso ter corretor próprio?</summary><p>Não. O atendimento pode ser feito pela W3W ou pelo seu time, que recebe o hub com fichas, textos e imagens.</p></details>
 <details><summary>O Lead Dossiê é obrigatório?</summary><p>Não, é opcional. Ele usa só dados que o próprio lead informa, dentro da LGPD, sem compra de base.</p></details>
 <details><summary>Existe fidelidade?</summary><p>O mensal é pré-pago e sem permanência. Trimestral e semestral têm desconto e valem pelo período completo, em até 3x ou 6x.</p></details>
-<details><summary>Sou proprietário. Como funciona?</summary><p>Você investe na campanha do seu imóvel e, se vender com a W3W, o valor é descontado da comissão.</p></details>
 </div></div></section>
 
 <section class="z3-end"><div class="z3-endg"><h2 class="rv">Vamos<br>vender <em>do jeito certo.</em></h2>
