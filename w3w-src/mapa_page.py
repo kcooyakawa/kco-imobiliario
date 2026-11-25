@@ -214,6 +214,19 @@ body:has(.mp) .wa{top:auto!important;bottom:16px!important;transform:scale(.85);
 .mp-panel .mp-st.c,.mp-grid .mp-st.c{color:#9AA3B0;background:rgba(255,255,255,.07)}
 .mp-panel .mp-st.h,.mp-grid .mp-st.h{color:#9CC2FF;background:rgba(141,184,255,.14)}
 @media(max-width:900px){.mp-tools{align-items:center!important}.mp-tools .mp-seg button{padding:0 11px}.mp-grid{top:118px!important}}
+@media(max-width:900px){
+.mp-mob{justify-content:space-between;padding:8px 8px 8px 16px}
+.mp-mob .gm{flex:none;font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#F3F2EF;text-decoration:none;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.09)}
+.mp-msb{position:absolute;left:10px;right:78px;bottom:14px;z-index:6;padding:6px;border-radius:999px;background:linear-gradient(160deg,rgba(58,66,79,.96),rgba(34,40,49,.97));box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 16px 32px -16px rgba(10,14,20,.6)}
+.mp-msb .mp-search{margin:0}
+.mp-msb .mp-search input{height:44px;background:rgba(255,255,255,.08)!important;color:#F3F2EF!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)!important;font-size:16px;padding-left:40px}
+.mp-msb .mp-search input::placeholder{color:#8F98A6}
+.mp-msb .mp-search svg{top:14px;left:15px;color:#8F98A6}
+.mp:has(.mp-card.on) .mp-msb{opacity:0;pointer-events:none}
+.mp-grid{bottom:76px!important}
+.maplibregl-ctrl-bottom-left,.maplibregl-ctrl-bottom-right{bottom:70px!important}
+body:has(.mp) .wa{bottom:16px!important}
+}
 </style>
 """
 
@@ -309,7 +322,7 @@ $('#mpHandle').onclick=()=>$('#mpPanel').classList.toggle('min');
 $('.mp-hd').addEventListener('click',()=>{if($('#mpPanel').classList.contains('min'))$('#mpPanel').classList.remove('min')});
 $('#mpQ').addEventListener('focus',()=>$('#mpPanel').classList.remove('min'));
 if(window.maplibregl)setTimeout(()=>{if(map)map.on('dragstart',()=>{if(innerWidth<=900&&!$('#mpCard').classList.contains('on'))$('#mpPanel').classList.add('min')})},0);
-(()=>{if(!matchMedia('(max-width:900px)').matches)return;const m=document.createElement('div');m.className='mp-mob';const lg=document.querySelector('.mp-logo a');if(lg){const a=lg.cloneNode(true);a.className='lg';m.append(a)}m.append(document.querySelector('.mp-search'));document.querySelector('.mp').append(m);const tg=document.querySelector('.mp-tg');if(tg)document.querySelector('.mp-tools').append(tg)})();setInterval(()=>draw(),60000);new MutationObserver(()=>{const p=$('#mpPanel');if(p.classList.contains('min'))p.scrollTop=0}).observe($('#mpPanel'),{attributes:true,attributeFilter:['class']});
+(()=>{if(!matchMedia('(max-width:900px)').matches)return;const m=document.createElement('div');m.className='mp-mob';const lg=document.querySelector('.mp-logo a');if(lg){const a=lg.cloneNode(true);a.className='lg';m.append(a)}const gl=document.querySelector('.mp-logo nav a');if(gl){const g=gl.cloneNode(true);g.className='gm';m.append(g)}document.querySelector('.mp').append(m);const sb=document.createElement('div');sb.className='mp-msb';sb.append(document.querySelector('.mp-search'));document.querySelector('.mp').append(sb);const tg=document.querySelector('.mp-tg');if(tg)document.querySelector('.mp-tools').append(tg)})();setInterval(()=>draw(),60000);new MutationObserver(()=>{const p=$('#mpPanel');if(p.classList.contains('min'))p.scrollTop=0}).observe($('#mpPanel'),{attributes:true,attributeFilter:['class']});
 /* mapa com estilo próprio */
 if(!window.maplibregl)return;
 const T='https://tiles.openfreemap.org';
