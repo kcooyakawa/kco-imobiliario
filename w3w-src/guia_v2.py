@@ -118,6 +118,23 @@ box-shadow:inset 0 1.5px 0 #fff,inset 0 -1px 1px rgba(255,255,255,.7),inset 0 0 
 .g2-sec p{font-size:17px}
 }
 @media (prefers-reduced-motion:reduce){.g2 *{animation:none!important;transition:none!important}.g2 .rv,.g2-sp .wd>i{opacity:1;transform:none}.g2-mt .w{opacity:1}}
+
+.g2-walk{padding:16vh 0 12vh;border-top:1px solid var(--ln)}
+.g2-wks{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:56px clamp(20px,5vw,72px) 20px;scrollbar-width:none}
+.g2-wks::-webkit-scrollbar{display:none}
+.g2-wk{flex:0 0 min(78vw,420px);margin:0;scroll-snap-align:start}
+.g2-wk:nth-child(even){margin-top:60px}
+.g2-wk .im{border-radius:22px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -36px rgba(14,17,22,.5)}
+.g2-wk img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s var(--e)}
+.g2-wk:hover img{transform:scale(1.05)}
+.g2-wk figcaption{padding:18px 4px 0;color:var(--tx2);font-size:15px;line-height:1.5}
+.g2-wk figcaption span{display:block;font:200 34px/1 var(--serif);font-style:italic;color:var(--ac);margin-bottom:10px}
+.g2-wk figcaption b{display:block;font:400 22px/1.15 var(--sans);letter-spacing:-.02em;color:var(--tx);margin-bottom:6px}
+.g2-cg{position:relative;display:grid;grid-template-columns:1fr 1.2fr;gap:4vw;margin-top:64px;align-items:start}
+.g2-map{position:sticky;top:120px;padding:18px;border-radius:24px;background:rgba(255,255,255,.62);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px rgba(14,17,22,.06),0 24px 50px -30px rgba(14,17,22,.35)}
+.g2-map svg{width:100%;height:auto;display:block}
+.g2-cg .g2-pins{margin-top:0;grid-template-columns:1fr 1fr}
+@media (max-width:900px){.g2-cg{grid-template-columns:1fr}.g2-map{position:static}.g2-cg .g2-pins{grid-template-columns:1fr}}
 </style>
 """
 
@@ -147,7 +164,7 @@ requestAnimationFrame(loop)};requestAnimationFrame(loop);
 """
 
 
-def render(G, p0, near_html, wa, u, dt, BASE=''):
+def render(G, p0, near_html, wa, u, dt, BASE='', map_html=''):
     ed = G.get('edicao', {"numero": "01", "mes": ""})
     ims = p0.get('imagens') or []
     idx, body = '', ''
@@ -162,6 +179,14 @@ def render(G, p0, near_html, wa, u, dt, BASE=''):
         if i == 1 and p0.get('citacao'):
             body += f'<blockquote class="g2-q">“{esc(p0["citacao"])}”</blockquote>'
     pins = p0.get('concierge', [])
+    B = G.get('banco_imagens', {})
+    walk = [('Monumento às Bandeiras', 'O ponto de partida, na entrada pelo lado de Moema.', 'monumento-bandeiras'),
+            ('Obelisco', 'O marco mais alto do entorno, lindo no fim da tarde.', 'obelisco-entardecer'),
+            ('Alamedas', 'Caminhos arborizados para correr, pedalar ou só andar.', 'alameda-parque'),
+            ('Lago e ponte', 'O cartão-postal do parque, com a ponte sobre a água.', 'lago-ponte'),
+            ('Auditório', 'A marquise e o auditório desenhados por Niemeyer.', 'auditorio-ibirapuera'),
+            ('Pôr do sol no lago', 'O melhor horário para terminar o passeio.', 'por-do-sol-lago')]
+    walk_html = ''.join(f'<figure class="g2-wk"><div class="im"><img src="{B[k]}" alt="{esc(t)}" loading="lazy" decoding="async"></div><figcaption><span>{i+1:02d}</span><b>{esc(t)}</b>{esc(d)}</figcaption></figure>' for i, (t, d, k) in enumerate(walk) if k in B)
     pins_html = ''.join(f'<div class="g2-pin rv" style="transition-delay:{(j%3)*.08}s"><span class="t">{esc(c["tempo"])}</span><span class="n">{c.get("n", j+1):02d}</span><b>{esc(c["nome"])}</b><p>{esc(c["nota"])}</p></div>' for j, c in enumerate(pins))
     W = lambda t: ' '.join(f'<i class="w">{w}</i>' for w in t.split())
     q = 'Moema não é só um endereço. É um jeito de viver a cidade a pé, entre o parque, a mesa e a noite.'
@@ -185,9 +210,12 @@ def render(G, p0, near_html, wa, u, dt, BASE=''):
 <article class="g2-body">{body}</article>
 </div></section>
 
+<section class="g2-walk"><div class="g2-in"><div class="g2-sh rv"><span class="mono g2-ey">Roteiro ilustrado</span><h2>Um passeio <em>pelo Ibirapuera.</em></h2><p>Seis paradas para conhecer o parque a pé, saindo de Moema. Arraste para o lado.</p></div></div>
+<div class="g2-wks">{walk_html}</div></section>
+
 <section class="g2-con"><i class="g2-blob"></i><div class="g2-in">
 <div class="g2-sh rv"><span class="mono g2-ey">Carnet do concierge</span><h2>Do parque pela manhã <em>ao jazz da noite.</em></h2><p>Os endereços desta edição, na ordem do dia. Peça pelo WhatsApp e o concierge W3W indica o resto: reserva, horário e o melhor lugar da casa.</p></div>
-<div class="g2-pins">{pins_html}</div>
+<div class="g2-cg"><div class="g2-map rv">{map_html}<p class="mono" style="margin-top:12px">Mapa ilustrativo, sem escala</p></div><div class="g2-pins">{pins_html}</div></div>
 <div class="g2-cta"><a class="g2-btn p" href="{concierge}" target="_blank" rel="noopener">Pedir uma indicação →</a></div>
 </div></section>
 

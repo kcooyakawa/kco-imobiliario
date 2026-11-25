@@ -1296,7 +1296,7 @@ def build_guia():
     import guia_v2
     near = ''.join(card(e) for e in EM if e['slug'] in p0.get('imoveis', []))
     pg = head(f"{p0['titulo']} | Guia Moema · versão 2", p0['sub'], 'guia-moema-v2', f'<script type="application/ld+json">{json.dumps({"@context": "https://schema.org", "@type": "BlogPosting", "headline": p0['titulo'], "datePublished": p0['data'], "image": p0['capa']}, ensure_ascii=False)}</script>')
-    pg += header('guia-moema') + guia_v2.render(G, p0, near, wa, u, dt, BASE) + footer()
+    pg += header('guia-moema') + guia_v2.render(G, p0, near, wa, u, dt, BASE, gm_map(p0.get('concierge', []))) + footer()
     write('guia-moema-v2/index.html', pg)
 
 def build_servicos():
