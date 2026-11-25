@@ -26,8 +26,13 @@ GRUPOS = [
 
 CSS = r"""
 <style>
-body:has(.mp){background:#EEEBE5}
-.mp{--bg:#EEEBE5;--tx:#14171C;--tx2:#4F5662;--tx3:#8C93A0;--ln:rgba(20,23,28,.1);--ac:#2F6FD0;--ok:#1E9E6A;--mono:ui-monospace,'SF Mono',Menlo,monospace;--e:cubic-bezier(.16,1,.3,1);position:relative;height:calc(100svh - var(--hdh,96px));min-height:560px;overflow:hidden;color:var(--tx)}
+body:has(.mp){background:#EEEBE5;overflow:hidden}
+body:has(.mp) .hd,body:has(.mp) .ft{display:none!important}
+.mp-logo{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;color:var(--tx);text-decoration:none}
+.mp-logo svg{height:30px;width:auto}
+.mp-logo span{font:500 10.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--tx3)}
+.mp-logo:hover span{color:var(--ac)}
+.mp{height:100svh!important;--bg:#EEEBE5;--tx:#14171C;--tx2:#4F5662;--tx3:#8C93A0;--ln:rgba(20,23,28,.1);--ac:#2F6FD0;--ok:#1E9E6A;--mono:ui-monospace,'SF Mono',Menlo,monospace;--e:cubic-bezier(.16,1,.3,1);position:relative;height:calc(100svh - var(--hdh,96px));min-height:560px;overflow:hidden;color:var(--tx)}
 #mpMap{position:absolute;inset:0;background:#EEEBE5}
 .mp-glass{background:linear-gradient(135deg,rgba(255,255,255,.78),rgba(255,255,255,.52));backdrop-filter:blur(22px) saturate(1.7);-webkit-backdrop-filter:blur(22px) saturate(1.7);box-shadow:inset 0 1.5px 0 #fff,inset 0 0 0 1px rgba(20,23,28,.07),0 30px 60px -30px rgba(20,23,28,.45)}
 .mp-panel{position:absolute;left:20px;top:20px;bottom:20px;width:380px;border-radius:26px;display:flex;flex-direction:column;overflow:hidden;z-index:3;animation:mpin .9s var(--e) both}
@@ -135,7 +140,7 @@ body:has(.mp){background:#EEEBE5}
 .mp-grp{display:flex;overflow-x:auto;padding:12px 20px 0;scrollbar-width:none}.mp-grp button{flex:0 0 82px}
 .mp{height:calc(100svh - var(--hdh,80px))}
 .mp-panel{left:10px;right:10px;top:auto;bottom:10px;width:auto;height:46%;border-radius:24px;transition:height .5s var(--e)}
-.mp-panel.min{height:118px}.mp-panel.min .mp-hd{cursor:pointer}
+.mp-panel.min{height:132px}.mp-panel.min .mp-logo{display:none}.mp-panel.min .mp-hd{cursor:pointer}
 .mp-handle{display:block;width:64px;height:6px;padding:10px 0;background-clip:content-box!important;border-radius:5px;background:rgba(20,23,28,.18);margin:10px auto 0;border:0;cursor:pointer}
 .mp-hd{padding:10px 20px 6px}.mp-hd h1{font-size:28px}.mp-hd p{display:none}
 .mp-search{margin:6px 20px 0}.mp-tg,.mp-chips{padding-left:20px;padding-right:20px}
@@ -148,13 +153,13 @@ body:has(.mp){background:#EEEBE5}
 """
 
 
-def render(wa, cats_json, grupos_json='[]'):
+def render(wa, cats_json, grupos_json='[]', logo='', base=''):
     return CSS + f'''
 <main class="mp">
 <div id="mpMap" aria-label="Mapa de Moema"></div>
 <aside class="mp-panel mp-glass" id="mpPanel">
 <button class="mp-handle" aria-label="Expandir lista" id="mpHandle"></button>
-<div class="mp-hd"><span class="ey">Guia Moema · Mapa vivo</span><h1>Moema <em>agora.</em></h1><p>Restaurantes, bares, cafés, docerias, farmácias e serviços 24 horas do bairro, com o que está aberto neste momento.</p></div>
+<div class="mp-hd"><a class="mp-logo" href="{base}/" aria-label="W3W Imóveis, voltar ao site">{logo}<span>← Site W3W</span></a><span class="ey">Guia Moema · Mapa vivo</span><h1>Moema <em>agora.</em></h1><p>Restaurantes, bares, cafés, docerias, farmácias e serviços 24 horas do bairro, com o que está aberto neste momento.</p></div>
 <div class="mp-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="mpQ" type="search" placeholder="Buscar um lugar" aria-label="Buscar um lugar"></div>
 <div class="mp-tg"><button id="mpOpen" aria-pressed="false"><i></i>Aberto agora</button><button id="mp24" aria-pressed="false">24 horas</button></div>
 <div class="mp-grp" id="mpGrp" role="group" aria-label="O que você procura"></div><div class="mp-chips" id="mpChips" role="group" aria-label="Categorias"></div>
@@ -177,7 +182,7 @@ def render(wa, cats_json, grupos_json='[]'):
 JS = r"""
 (()=>{const $=s=>document.querySelector(s),C=window.MP_CATS,CM=Object.fromEntries(C.map(c=>[c[0],c]));
 const R=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const hd=document.querySelector('.hd');if(hd)document.querySelector('.mp').style.setProperty('--hdh',hd.offsetHeight+'px');
+
 /* horários (formato OpenStreetMap) */
 const DN=['Su','Mo','Tu','We','Th','Fr','Sa'],PT={Mo:'Seg',Tu:'Ter',We:'Qua',Th:'Qui',Fr:'Sex',Sa:'Sáb',Su:'Dom'};
 function days(spec){const out=new Set();spec.split(',').forEach(p=>{const m=p.trim().match(/^(Mo|Tu|We|Th|Fr|Sa|Su)(?:-(Mo|Tu|We|Th|Fr|Sa|Su))?$/);if(!m)return;let a=DN.indexOf(m[1]),b=m[2]?DN.indexOf(m[2]):a;for(let i=0;i<8;i++){out.add(a);if(a===b)break;a=(a+1)%7}});return out}

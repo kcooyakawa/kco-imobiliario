@@ -1,7 +1,7 @@
 
 (()=>{const $=s=>document.querySelector(s),C=window.MP_CATS,CM=Object.fromEntries(C.map(c=>[c[0],c]));
 const R=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const hd=document.querySelector('.hd');if(hd)document.querySelector('.mp').style.setProperty('--hdh',hd.offsetHeight+'px');
+
 /* horários (formato OpenStreetMap) */
 const DN=['Su','Mo','Tu','We','Th','Fr','Sa'],PT={Mo:'Seg',Tu:'Ter',We:'Qua',Th:'Qui',Fr:'Sex',Sa:'Sáb',Su:'Dom'};
 function days(spec){const out=new Set();spec.split(',').forEach(p=>{const m=p.trim().match(/^(Mo|Tu|We|Th|Fr|Sa|Su)(?:-(Mo|Tu|We|Th|Fr|Sa|Su))?$/);if(!m)return;let a=DN.indexOf(m[1]),b=m[2]?DN.indexOf(m[2]):a;for(let i=0;i<8;i++){out.add(a);if(a===b)break;a=(a+1)%7}});return out}
@@ -47,7 +47,7 @@ const geo=L=>({type:'FeatureCollection',features:L.map(l=>({type:'Feature',id:ha
 const hash=s=>{let h=0;for(const c of s)h=(h*31+c.charCodeAt(0))|0;return Math.abs(h)};
 const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function pick(id,fly){const l=ALL.find(x=>x.id===id);if(!l)return;sel=id;const st=status(l.horario),c=CM[l.cat];
-$('#mpCard').innerHTML=`<button class="x" aria-label="Fechar">✕</button><button class="fv${FAV.has(l.id)?' on':''}" aria-label="Favoritar" aria-pressed="${FAV.has(l.id)}">${FAV.has(l.id)?'♥':'♡'}</button><span class="cat" style="color:${c[2]}">${c[1]}${l.destaque?' · W3W indica':''}</span><h2>${esc(l.nome)}</h2>${st.k!=='?'?`<span class="mp-st ${st.k}">${st.t}</span>`:''}${l.nota?`<p>${esc(l.nota)}</p>`:''}${l.end?`<p>${esc(l.end)}</p>`:''}${l.horario?`<div class="hrs">${esc(human(l.horario))}</div>`:''}
+$('#mpCard').innerHTML=`<button class="x" aria-label="Fechar">✕</button><button class="fv${FAV.has(l.id)?' on':''}" aria-label="Favoritar" aria-pressed="${FAV.has(l.id)}">${FAV.has(l.id)?'♥':'♡'}</button><span class="cat" style="color:${c[2]}">${c[1]}${l.destaque?' · W3W indica':''}</span><h2>${esc(l.nome)}</h2>${st.k!=='?'?`<span class="mp-st ${st.k}">${st.t}</span>`:''}${l.nota?`<p>${esc(l.nota)}</p>`:''}${l.end?`<p>${esc(l.end)}</p>`:''}${l.horario?`<div class="hrs">${esc(human(l.horario))}${l.conferido?'<br><span style="color:#1E9E6A">✓ Confirmado pela W3W</span>':(l.fonte_horario==='site'?'<br><span style="opacity:.7">Conforme o site do estabelecimento</span>':'')}</div>`:''}
 <div class="acts"><a class="mp-btn p" href="https://www.google.com/maps/dir/?api=1&destination=${l.lat},${l.lon}" target="_blank" rel="noopener">Como chegar</a>${l.site?`<a class="mp-btn" href="${esc(l.site)}" target="_blank" rel="noopener">Site</a>`:''}${l.tel?`<a class="mp-btn" href="tel:${esc(l.tel.replace(/[^+\d]/g,''))}">Ligar</a>`:''}</div><a class="mp-fix" href="https://wa.me/5511940297871?text=${encodeURIComponent('Olá! Sou do '+l.nome+' e quero atualizar nosso horário no Mapa de Moema: ')}" target="_blank" rel="noopener">${l.horario?'Horário errado? Avise a W3W':'É o responsável? Informe o horário'} →</a>`;
 $('#mpCard').classList.add('on');$('#mpCard .fv').onclick=()=>{toggleFav(id);pick(id,false)};$('#mpCard .x').onclick=()=>{$('#mpCard').classList.remove('on');sel=null;pop&&pop.remove();$('#mpPanel').classList.remove('min');if(map)map.setFilter('sel',['==',['get','id'],'']);draw()};
 if(map){map.setFilter('sel',['==',['get','id'],id]);if(fly)map.flyTo({center:[l.lon,l.lat],zoom:Math.max(map.getZoom(),16.2),pitch:55,bearing:-18,padding:pad(),duration:R?0:1600,essential:true})}

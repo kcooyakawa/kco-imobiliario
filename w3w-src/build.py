@@ -1318,7 +1318,7 @@ def build_mapa():
     write('mapa-moema/mapa.js', mapa_page.JS)
     cats = json.dumps(mapa_page.CATS, ensure_ascii=False)
     pg = head('Mapa de Moema | Guia Moema · W3W Imóveis', 'Restaurantes, bares, cafés, docerias, farmácias e serviços 24 horas de Moema, com o que está aberto agora. Atualizado toda semana.', 'mapa-moema')
-    pg += header('guia-moema') + mapa_page.render(wa, cats, json.dumps(mapa_page.GRUPOS, ensure_ascii=False)) + footer()
+    pg += header('guia-moema') + mapa_page.render(wa, cats, json.dumps(mapa_page.GRUPOS, ensure_ascii=False), LOGO, BASE) + footer()
     write('mapa-moema/index.html', pg)
 
 def build_servicos():
