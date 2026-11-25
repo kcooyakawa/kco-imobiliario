@@ -721,7 +721,7 @@ def header(active=''):
 <a class="brand" href="{BASE}/" aria-label="W3W Imóveis, página inicial">{LOGO}<span class="creci">{CRECI}</span></a>
 <button class="burger" aria-label="Abrir menu" aria-expanded="false" onclick="var n=document.querySelector('.nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h16M4 16h16"/></svg></button>
 <nav class="nav" aria-label="Principal">
-<a href="{BASE}/#imoveis">Imóveis</a><a href="{BASE}/#territorio">Território</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Quem somos</a><a href="{u('servicos')}">Serviços</a>
+<a href="{BASE}/#imoveis">Imóveis</a><a href="{BASE}/#territorio">Território</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Quem somos</a>
 <a class="btn" href="{BASE}/#contato">Fale com um consultor</a></nav></div></header>'''
 
 def footer():
@@ -729,7 +729,7 @@ def footer():
     WA_MAP = json.dumps({e['nome']: u('empreendimentos/' + e['slug']) for e in EM}, ensure_ascii=False)
     return f"""<footer class="ft"><div class="wrap ft-t">
 <a class="brand ft-b" href="{BASE}/">{LOGO}<span class="creci">{CRECI}</span></a>
-<nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Quem somos</a><a href="{u('servicos')}">Serviços</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
+<nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Quem somos</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
 <div class="ft-c"><a href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener">{TEL}</a><a href="mailto:{EMAIL}">{EMAIL}</a></div>
 </div><div class="wrap ft-bot"><span>W3W Imóveis · Inteligência imobiliária · Desde 2004</span><span>{CRECI} · Moema, São Paulo</span></div><div class="wrap ft-kco"><a href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Produzido por KCO Studio</a></div></footer>
 <button class="wa" id="waBtn" type="button" aria-label="Falar no WhatsApp" aria-expanded="false" aria-controls="waBox">{WA_ICON}</button>
@@ -1305,7 +1305,10 @@ def build_servicos():
     write('servicos-v2/index.html', pg)
     import servicos_v3
     pg = head('Serviços W3W · versão 3', 'Campanha por produto, criação assinada por Head of Art e Lead Dossiê: a W3W cria, anuncia e atende imóveis de alto padrão em Moema.', 'servicos-v3')
-    pg += header('servicos') + servicos_v3.render(wa, way, BASE, u) + footer()
+    hd3 = f'<header class="hd z3-hd"><div class="wrap"><span class="brand">{LOGO}<span class="creci">W3W Performance</span></span><a class="z3-btn p z3-hcta" href="#planos">Montar meu plano</a></div></header>'
+    ft3 = f'<footer class="z3-ft"><div>{LOGO}</div><p>W3W Performance · Marketing e vendas para imóveis de alto padrão · {CRECI}</p><p>Produzido por KCO Studio</p></footer>'
+    pg = pg.replace('<head>', '<head><meta name="robots" content="noindex">', 1)
+    pg += hd3 + servicos_v3.render(wa, way, BASE, u) + ft3 + '</body></html>'
     write('servicos-v3/index.html', pg)
     import servicos_v4
     pg = head('Serviços W3W · versão 4', 'Campanha por produto, criação assinada por Head of Art e Lead Dossiê: a W3W cria, anuncia e atende imóveis de alto padrão em Moema.', 'servicos-v4')

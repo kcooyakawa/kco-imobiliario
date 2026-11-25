@@ -388,7 +388,7 @@ body:has(.z3) .ft .brand svg{opacity:.7;transform:scale(.85)}
 .z3-sp .wd>i{display:inline-block;font-style:inherit;transform:translateY(110%) rotate(4deg);transition:transform 1.1s var(--e)}
 .z3-sp.on .wd>i{transform:none}
 /* holofote nos cartões */
-.z3-team>div,.z3-ctl,.z3-sum,.z3-faq details,.z3-stage{position:relative}
+.z3-team>div,.z3-ctl,.z3-sum,.z3-faq details{position:relative}
 .z3-team>div::after,.z3-ctl::after,.z3-sum::after,.z3-stage::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(380px circle at var(--sx,50%) var(--sy,50%),rgba(156,203,255,.12),transparent 60%);opacity:0;transition:opacity .4s}
 .z3-team>div:hover::after,.z3-ctl:hover::after,.z3-sum:hover::after,.z3-stage:hover::after{opacity:1}
 /* mockups flutuando */
@@ -442,6 +442,39 @@ body:has(.z3) .ft .brand svg{opacity:.7;transform:scale(.85)}
 .z3-btn:hover::before{opacity:.9!important}
 .z3-btn:hover{transform:translateY(-2px) scale(1.02)}
 .z3-btn:active{transform:scale(.97)}
+
+.z3-con{margin-top:64px;border:1px solid rgba(156,203,255,.16);border-radius:22px;background:linear-gradient(180deg,rgba(11,15,23,.9),rgba(5,7,11,.9));overflow:hidden;box-shadow:0 40px 90px -40px #000}
+.z3-con .bar{display:flex;align-items:center;gap:8px;padding:14px 20px;border-bottom:1px solid var(--ln);font:12px var(--mono);color:var(--tx3)}
+.z3-con .bar b{width:9px;height:9px;border-radius:50%;background:rgba(238,242,248,.15)}
+.z3-con .bar span{margin-left:8px}.z3-con .bar em{margin-left:auto;font-style:normal;color:var(--ok)}
+.z3-pipe{padding:26px 20px 12px;overflow-x:auto}
+.z3-pipe svg{width:100%;min-width:620px;height:auto;display:block}
+.z3-pipe .nd rect{fill:#0E131D;stroke:rgba(238,242,248,.14)}
+.z3-pipe .nd.hi rect{stroke:rgba(156,203,255,.7);fill:rgba(156,203,255,.08)}
+.z3-pipe .nd.ok rect{stroke:rgba(123,224,179,.6);fill:rgba(123,224,179,.06)}
+.z3-pipe .nd text{fill:var(--tx);font:500 14px var(--sans)}
+.z3-pipe .nd .s{fill:var(--tx3);font:11px var(--mono)}
+.z3-pipe .ic.m{fill:#5B8DEF}.z3-pipe .ic.g{fill:#F2B84B}
+.z3-pipe path.l{stroke:rgba(238,242,248,.18);fill:none;stroke-width:1.4;stroke-dasharray:5 5;animation:z3da 1.2s linear infinite}
+@keyframes z3da{to{stroke-dashoffset:-20}}
+.z3-pipe circle.d{fill:var(--ac);filter:drop-shadow(0 0 7px rgba(156,203,255,.95))}
+.z3-pipe circle.d.g2{fill:var(--ok);filter:drop-shadow(0 0 7px rgba(123,224,179,.95))}
+.z3-feed{border-top:1px solid var(--ln);font:13px/1.5 var(--mono);height:200px;overflow:hidden;position:relative}
+.z3-feed::after{content:"";position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(transparent,#05070B)}
+.z3-feed div{display:grid;grid-template-columns:76px 1fr auto auto;gap:14px;align-items:center;padding:10px 20px;border-bottom:1px solid var(--ln);color:var(--tx2);animation:z3in .6s var(--e)}
+.z3-feed div b{color:var(--tx);font-weight:500}
+.z3-feed .sc{color:#06101E;background:var(--ok);border-radius:5px;padding:1px 8px;font-weight:600}
+.z3-feed .sc.b{background:var(--ac)}.z3-feed .sc.c{background:var(--tx3);color:var(--tx)}
+.z3-feed i{font-style:normal;color:var(--tx3)}
+@keyframes z3in{from{opacity:0;transform:translateY(-8px);filter:blur(3px)}}
+.z3-con .ft2{display:flex;justify-content:space-between;padding:12px 20px;border-top:1px solid var(--ln);font:11px var(--mono);color:var(--tx3)}
+@media (max-width:900px){.z3-feed div{grid-template-columns:60px 1fr auto}.z3-feed i{display:none}}
+/* cabeçalho e rodapé próprios */
+body:has(.z3) .z3-hd .wrap{display:flex;justify-content:space-between;align-items:center}
+.z3-hcta{height:44px!important;padding:0 20px!important;font-size:14px!important}
+.z3-ft{background:#05070B;color:#5C677A;text-align:center;padding:64px 20px 90px;border-top:1px solid rgba(238,242,248,.06);font:300 11px/1.8 var(--sans,sans-serif);letter-spacing:.18em;text-transform:uppercase}
+.z3-ft svg{width:110px;height:auto;color:#8A94A6;margin-bottom:18px}
+.z3-ft p{margin:4px 0}
 </style>
 """
 
@@ -489,10 +522,15 @@ $$('.z3-team>div,.z3-ctl,.z3-sum,.z3-stage').forEach(c=>c.addEventListener('poin
 const tot=$('#z3tot');new MutationObserver(()=>{tot.classList.add('bump');setTimeout(()=>tot.classList.remove('bump'),250)}).observe(tot,{childList:true});
 /* parallax em camadas */
 if(!R){const PX=[];const add=(sel,vy,vx=0)=>$$(sel).forEach((el,i)=>PX.push([el,vy,typeof vx==='function'?vx(i):vx]));
-add('.z3-sh,.z3-plh',-.08);add('.z3-mt span',0,i=>i%2?-.18:.14);add('.z3-mg aside',.12);add('.z3-stage',-.05);add('.z3-team>div',0,0);$$('.z3-team>div').forEach((el,i)=>PX.push([el,-.04*(i+1),0]));
+add('.z3-mg aside',.05);add('.z3-dcard',-.03);add('.z3-sum',-.02);
 add('.z3-time',.06);add('.z3-sum',-.07);add('.z3-ctl',.03);add('.z3-flow li',0,0);$$('.z3-flow li').forEach((el,i)=>PX.push([el,-.03*(i%3+1),0]));add('.z3-faq .rv:first-child',.1);add('.z3-end h2',-.1);add('.z3-dash',.18);add('.z3-dcard',-.06);
 const orb=document.createElement('div');orb.className='z3-orbs';orb.innerHTML='<i></i><i></i><i></i>';$('.z3').prepend(orb);const ob=[...orb.children];
 const pl2=()=>{const vh=innerHeight;PX.forEach(([el,vy,vx])=>{const r=el.getBoundingClientRect(),c=(r.top+r.height/2-vh/2);if(r.bottom<-200||r.top>vh+200)return;el.style.translate=`${(c*vx*(innerWidth>900?1:.15)).toFixed(1)}px ${(c*vy).toFixed(1)}px`});const y=scrollY;ob.forEach((o,i)=>o.style.translate=`0 ${-(y*(.15+i*.12))}px`);requestAnimationFrame(pl2)};requestAnimationFrame(pl2)}
+/* feed do fluxo */
+(()=>{const F=$('#z3Feed'),C=$('#z3Clock');if(!F)return;const L=[['Cobertura · Moema','A','Instagram'],['Studio · Moema','B','Google'],['Apto 258 m² · Moema','A','Instagram'],['Casa · Brooklin','A','Facebook'],['Apto 147 m² · Moema','B','Google'],['Studio · investimento','C','Instagram'],['Duplex 625 m² · Moema','A','Instagram'],['Apto 170 m² · Moema','B','Google']],N=['Mariana','Rafael','Helena','Pedro','Camila','Bruno','Lúcia','André'];let k=0;
+const t=()=>{const d=new Date();return[d.getHours(),d.getMinutes(),d.getSeconds()].map(x=>('0'+x).slice(-2)).join(':')};
+const add=()=>{const x=L[k%L.length],n=N[(k*3)%N.length],r=document.createElement('div');r.innerHTML=`<span>${t()}</span><span><b>${n}</b> · ${x[0]}</span><i>${x[2]}</i><span class="sc ${x[1]==='A'?'':x[1]==='B'?'b':'c'}">${x[1]}</span>`;F.prepend(r);while(F.children.length>6)F.lastChild.remove();k++};
+for(let i=0;i<4;i++)add();if(!R)setInterval(add,2600);setInterval(()=>C.textContent=t(),1000);C.textContent=t()})();
 /* palco dos serviços */
 const sts=$$('.z3-st'),stio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const i=e.target.dataset.i;sts.forEach(x=>x.classList.toggle('on',x.dataset.i===i));$$('.z3-it').forEach(x=>x.classList.toggle('act',x===e.target))}}),{rootMargin:'-45% 0px -45% 0px'});$$('.z3-it').forEach(el=>stio.observe(el));
 if(R){$$('.z3-mt .w').forEach(l=>l.classList.add('on'));return}
@@ -590,7 +628,21 @@ def render(wa, way, BASE, u):
 <li class="rv"><span>03</span><b>Dossiê</b><p>Montamos o perfil do lead com score A/B/C e um roteiro de abordagem.</p></li>
 <li class="rv"><span>04</span><b>Corretor</b><p>Tudo chega no WhatsApp do corretor com o card do imóvel, pronto para responder.</p></li>
 <li class="rv"><span>05</span><b>Visita e proposta</b><p>Atendimento rápido e preparado. Relatório semanal de leads, visitas e propostas.</p></li>
-</ol></div></section>
+</ol><div class="z3-con rv" aria-label="Simulação do fluxo de leads da W3W"><div class="bar"><b></b><b></b><b></b><span>w3w · operação de leads</span><em>● simulação ao vivo</em></div>
+<div class="z3-pipe"><svg viewBox="0 0 860 220" role="img" aria-label="Fluxo: Meta Ads e Google Ads, triagem, Lead Dossiê e corretor">
+<path class="l" id="q1" d="M150 55 C215 55 215 110 280 110"/><path class="l" id="q2" d="M150 165 C215 165 215 110 280 110"/><path class="l" id="q3" d="M420 110 L500 110"/><path class="l" id="q4" d="M640 110 L710 110"/>
+<g class="nd"><rect x="10" y="30" width="140" height="50" rx="12"/><circle cx="32" cy="55" r="7" class="ic m"/><text x="48" y="52">Meta Ads</text><text class="s" x="48" y="67">Instagram · Facebook</text></g>
+<g class="nd"><rect x="10" y="140" width="140" height="50" rx="12"/><circle cx="32" cy="165" r="7" class="ic g"/><text x="48" y="162">Google Ads</text><text class="s" x="48" y="177">pesquisa · display</text></g>
+<g class="nd"><rect x="280" y="82" width="140" height="56" rx="12"/><text x="298" y="106">Triagem</text><text class="s" x="298" y="122">site + WhatsApp</text></g>
+<g class="nd hi"><rect x="500" y="82" width="140" height="56" rx="12"/><text x="518" y="106">Lead Dossiê</text><text class="s" x="518" y="122">score · roteiro</text></g>
+<g class="nd ok"><rect x="710" y="82" width="140" height="56" rx="12"/><text x="728" y="106">Corretor</text><text class="s" x="728" y="122">WhatsApp · visita</text></g>
+<circle class="d" r="4"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#q1"/></animateMotion></circle>
+<circle class="d" r="4"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite"><mpath href="#q2"/></animateMotion></circle>
+<circle class="d" r="4"><animateMotion dur="1.3s" begin=".4s" repeatCount="indefinite"><mpath href="#q3"/></animateMotion></circle>
+<circle class="d g2" r="4"><animateMotion dur="1.3s" begin=".9s" repeatCount="indefinite"><mpath href="#q4"/></animateMotion></circle>
+</svg></div>
+<div class="z3-feed" id="z3Feed" aria-hidden="true"></div>
+<div class="ft2"><span>dados ilustrativos</span><span id="z3Clock">--:--</span></div></div></div></section>
 
 <section class="z3-dos">
 <div class="rv"><span class="mono z3-ey">O resultado · Lead Dossiê</span><h2>O corretor sabe quem é <em>antes do primeiro olá.</em></h2>
