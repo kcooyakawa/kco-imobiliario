@@ -1255,6 +1255,9 @@ def build_guia():
 <section class="gm-near"><div class="wrap"><div class="sec-hd"><h2>Morar perto <em>daqui</em></h2><a href="{u('guia-moema')}">← Guia Moema</a></div>
 <div class="grid">{''.join(card(e) for e in near)}</div></div></section>{band()}</main>'''
         pg += footer(); write(f"guia-moema/{p['slug']}/index.html", pg)
+        if p is p0:  # a página do Guia abre direto na matéria de capa (pedido Kco, nov/2026)
+            idx = pg.replace('<a class="mg-tag" href="' + u('guia-moema') + f'">← Guia Moema · Edição nº {ed["numero"]}</a>', f'<span class="mg-tag">Guia Moema · Edição nº {ed["numero"]} · Matéria de capa</span>')
+            write('guia-moema/index.html', idx)
 
 if __name__ == '__main__':
     build()
