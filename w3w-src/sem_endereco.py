@@ -48,7 +48,7 @@ def clean(t):
     t=re.sub(r"^(Esquina|Miolo de Moema),?\s*$","Moema",t)
     t=re.sub(r"^, ?","",t)
     if t and o and o[0].isupper() and t[0].islower(): t=t[0].upper()+t[1:]
-    return t
+    return t.replace(",.", ".")
 def aplicar(E):
     """Remove ruas/esquinas dos textos (só para o site; o hub usa o JSON completo)."""
     FIELDS=['frase']
