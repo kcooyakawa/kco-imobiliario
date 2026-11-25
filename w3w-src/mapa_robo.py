@@ -91,30 +91,54 @@ def fetch():
 
 
 # ---------- Foursquare (opcional, roda só com FSQ_TOKEN) ----------
+# ordem importa: do mais específico ao mais genérico; casamento por palavra inteira
 FSQ_MAP = [
-    ('sorvet', 'sorveterias'), ('ice cream', 'sorveterias'), ('gelat', 'sorveterias'),
-    ('pizza', 'pizzarias'), ('steak', 'churrascarias'), ('churrasc', 'churrascarias'), ('brazilian bbq', 'churrascarias'),
-    ('japanese', 'japoneses'), ('sushi', 'japoneses'), ('burger', 'hamburguerias'),
-    ('bakery', 'padarias'), ('padaria', 'padarias'), ('dessert', 'docerias'), ('pastry', 'docerias'), ('candy', 'docerias'), ('chocolate', 'docerias'),
-    ('coffee', 'cafes'), ('café', 'cafes'), ('cafe', 'cafes'), ('night', 'noite'), ('club', 'noite'),
-    ('bar', 'bares'), ('pub', 'bares'), ('brewery', 'bares'), ('restaurant', 'restaurantes'), ('food', 'restaurantes'),
-    ('supermarket', 'mercados'), ('grocery', 'mercados'), ('market', 'mercados'), ('florist', 'floriculturas'), ('flower', 'floriculturas'),
-    ('pet', 'pet'), ('veterinar', 'pet'), ('laundry', 'lavanderias'), ('dry clean', 'lavanderias'), ('car wash', 'lavarapido'),
-    ('locksmith', 'chaveiros'), ('tailor', 'costureiras'), ('seamstress', 'costureiras'), ('bank', 'bancos'), ('atm', 'bancos'),
-    ('hair', 'cabeleireiros'), ('barber', 'cabeleireiros'), ('nail', 'estetica'), ('beauty', 'estetica'), ('spa', 'estetica'),
-    ('pharmac', 'farmacias'), ('drugstore', 'farmacias'), ('hospital', 'saude'), ('clinic', 'saude'), ('dentist', 'saude'), ('doctor', 'saude'), ('medical', 'saude'),
-    ('dealership', 'concessionarias'), ('auto repair', 'oficinas'), ('mechanic', 'oficinas'), ('gas station', 'postos'), ('fuel', 'postos'),
-    ('university', 'faculdades'), ('college', 'faculdades'), ('school', 'escolas'), ('preschool', 'escolas'),
-    ('park', 'parques'), ('museum', 'cultura'), ('theater', 'cultura'), ('cinema', 'cultura'), ('art', 'cultura'),
-    ('gym', 'academias'), ('fitness', 'academias'), ('yoga', 'academias'), ('pilates', 'academias'), ('hotel', 'hoteis'), ('hostel', 'hoteis'),
-    ('store', 'lojas'), ('shop', 'lojas'),
+    (r'ice cream|gelato|frozen yogurt|sorvet', 'sorveterias'),
+    (r'pizz', 'pizzarias'),
+    (r'steakhouse|churrasc|brazilian steak|barbecue|bbq', 'churrascarias'),
+    (r'japanese|sushi|ramen|izakaya|temaki', 'japoneses'),
+    (r'burger', 'hamburguerias'),
+    (r'barbershop|barber|hair salon|hairdresser|salão de beleza|cabeleireir', 'cabeleireiros'),
+    (r'nail salon|manicure|beauty salon|beauty|cosmetic|spa|esthetic|estética|waxing|eyebrow|lash', 'estetica'),
+    (r'bakery|padaria|panificadora', 'padarias'),
+    (r'dessert|pastry|patisserie|confectioner|candy|chocolate|cake|doceria|brigadeir|donut', 'docerias'),
+    (r'coffee|café|cafe|cafeteria|tea room|juice', 'cafes'),
+    (r'night ?club|nightlife|dance club|karaoke|lounge', 'noite'),
+    (r'cocktail|wine bar|beer bar|beer garden|sports bar|pub|brewery|boteco|\bbar\b|\bbars\b', 'bares'),
+    (r'\bpet store|\bpet service|\bpet supplies|\bpet grooming|veterinar|animal shelter|\bpet\b', 'pet'),
+    (r'laundry|laundromat|dry clean|lavanderia', 'lavanderias'),
+    (r'car wash|lava[- ]?r[aá]pido', 'lavarapido'),
+    (r'locksmith|chaveir', 'chaveiros'),
+    (r'tailor|seamstress|alteration|costur', 'costureiras'),
+    (r'\bbank\b|\batm\b|credit union|banco', 'bancos'),
+    (r'pharmacy|drugstore|farm[aá]cia|drogaria', 'farmacias'),
+    (r'hospital|clinic|medical|doctor|dentist|dental|physiotherap|physical therap|laborator|diagnostic|health|psycholog|optometrist|chiropract|cl[ií]nica|consult[oó]rio', 'saude'),
+    (r'car dealer|auto dealer|dealership|concession[aá]ri', 'concessionarias'),
+    (r'auto repair|auto garage|mechanic|tire|car service|oficina', 'oficinas'),
+    (r'gas station|fuel|posto', 'postos'),
+    (r'university|college|faculdade', 'faculdades'),
+    (r'school|preschool|kindergarten|daycare|language school|col[eé]gio|escola', 'escolas'),
+    (r'gym|fitness|yoga|pilates|crossfit|martial arts|dance studio|academia', 'academias'),
+    (r'\bhotel\b|hostel|\bmotel\b|\binn\b|bed and breakfast|pousada', 'hoteis'),
+    (r'\bpark\b|garden|playground|plaza|square|praça', 'parques'),
+    (r'museum|art gallery|gallery|theater|theatre|cinema|movie|concert|cultural|library|performing arts|music venue', 'cultura'),
+    (r'florist|flower', 'floriculturas'),
+    (r'supermarket|grocery|convenience store|market|mercado|hortifruti|butcher|açougue|wine shop|liquor', 'mercados'),
+    (r'restaurant|diner|bistro|food court|food truck|steak|seafood|italian|french|arab|lebanese|mexican|peruvian|vegan|vegetarian|brazilian|chinese|thai|korean|indian|portuguese|spanish|mediterranean|poke|salad|sandwich|snack|eatery|cantina|lanchonete|restaurante', 'restaurantes'),
+    (r'clothing|shoe|jewelry|boutique|optical|eyewear|bookstore|book store|electronics|furniture|home decor|gift|toy|sporting goods|bicycle|cosmetics store|department store|shopping mall|\bstore\b|\bshop\b|loja', 'lojas'),
 ]
+FSQ_IGNORA = r'office|coworking|residential|apartment|building|condo|parking|bus stop|metro station|train station|government|church|cemetery|real estate|corporate|factory|warehouse|lawyer|accountant|bus line'
 
 
-def fsq_cat(names):
-    t = ' '.join(names).lower()
-    for k, c in FSQ_MAP:
-        if k in t: return c
+def fsq_cat(cats, nome=''):
+    t = ' | '.join(cats).lower()
+    if re.search(FSQ_IGNORA, t) and not re.search(r'restaurant|bar|caf|store|shop', t):
+        return None
+    for pat, c in FSQ_MAP:
+        if re.search(pat, t): return c
+    n = (nome or '').lower()  # nome só ajuda em comida
+    for pat, c in FSQ_MAP[:12]:
+        if re.search(pat, n): return c
     return None
 
 
@@ -155,7 +179,7 @@ def fsq_fetch(key):
                     lat2 = p.get('latitude') or (p.get('geocodes', {}).get('main', {}) or {}).get('latitude')
                     lon2 = p.get('longitude') or (p.get('geocodes', {}).get('main', {}) or {}).get('longitude')
                     cats = [c.get('name', '') for c in p.get('categories', [])]
-                    cat = fsq_cat(cats + [p.get('name', '')])
+                    cat = fsq_cat(cats, p.get('name', ''))
                     if lat2 is None or not cat: continue
                     loc = p.get('location', {})
                     out.append({'id': 'f' + pid, 'nome': p.get('name'), 'cat': cat, 'lat': round(lat2, 6), 'lon': round(lon2, 6),
@@ -189,6 +213,86 @@ def merge(base, extra):
     return novos
 
 
+# ---------- horários no site do próprio estabelecimento ----------
+DIAS = {'seg': 'Mo', 'segunda': 'Mo', 'ter': 'Tu', 'terça': 'Tu', 'terca': 'Tu', 'qua': 'We', 'quarta': 'We', 'qui': 'Th', 'quinta': 'Th',
+        'sex': 'Fr', 'sexta': 'Fr', 'sáb': 'Sa', 'sab': 'Sa', 'sábado': 'Sa', 'sabado': 'Sa', 'dom': 'Su', 'domingo': 'Su'}
+EN = {'monday': 'Mo', 'tuesday': 'Tu', 'wednesday': 'We', 'thursday': 'Th', 'friday': 'Fr', 'saturday': 'Sa', 'sunday': 'Su'}
+D = r'(segunda|terça|terca|quarta|quinta|sexta|sábado|sabado|domingo|seg|ter|qua|qui|sex|sáb|sab|dom)(?:-feira)?\.?'
+H = r'(\d{1,2})\s*(?:h|:)\s*(\d{2})?'
+RX = re.compile(D + r'(?:\s*(?:a|à|até|-|–)\s*' + D + r')?\s*[:\-–,]?\s*(?:das\s*)?' + H + r'\s*(?:h)?\s*(?:às|as|a|até|-|–)\s*' + H, re.I)
+
+
+def hh(h, m): return f"{int(h) % 24:02d}:{int(m or 0):02d}"
+
+
+def horario_jsonld(html):
+    for blk in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', html, re.S | re.I):
+        try: data = json.loads(blk.strip())
+        except Exception: continue
+        stack = data if isinstance(data, list) else [data]
+        while stack:
+            o = stack.pop()
+            if isinstance(o, list): stack += o; continue
+            if not isinstance(o, dict): continue
+            stack += [v for v in o.values() if isinstance(v, (dict, list))]
+            oh = o.get('openingHours')
+            if isinstance(oh, list): oh = '; '.join(oh)
+            if isinstance(oh, str) and re.search(r'\d{1,2}:\d{2}', oh): return oh.strip()
+            sp = o.get('openingHoursSpecification')
+            if sp:
+                sp = sp if isinstance(sp, list) else [sp]
+                parts = []
+                for x in sp:
+                    ds = x.get('dayOfWeek', [])
+                    ds = ds if isinstance(ds, list) else [ds]
+                    ds = [EN.get(str(d).split('/')[-1].lower()) for d in ds]
+                    ds = [d for d in ds if d]
+                    if ds and x.get('opens') and x.get('closes'):
+                        parts.append(f"{','.join(ds)} {x['opens'][:5]}-{x['closes'][:5]}")
+                if parts: return '; '.join(parts)
+    return ''
+
+
+def horario_texto(html):
+    txt = re.sub(r'<[^>]+>', ' ', re.sub(r'<(script|style)[^>]*>.*?</\1>', ' ', html, flags=re.S | re.I))
+    txt = re.sub(r'\s+', ' ', txt)
+    regras = []
+    for m in RX.finditer(txt):
+        d1, d2, h1, m1, h2, m2 = m.groups()
+        a, b = DIAS.get(d1.lower().rstrip('.')), DIAS.get((d2 or '').lower().rstrip('.'))
+        if not a: continue
+        dia = f'{a}-{b}' if b else a
+        r = f'{dia} {hh(h1, m1)}-{hh(h2, m2)}'
+        if r not in regras: regras.append(r)
+        if len(regras) >= 6: break
+    return '; '.join(regras)
+
+
+def horario_site(url):
+    if not url.startswith('http'): url = 'https://' + url
+    if re.search(r'instagram|facebook|ifood|wa\.me|whatsapp|linktr', url): return ''
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': 'text/html'})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            if 'html' not in (r.headers.get('Content-Type') or ''): return ''
+            html = r.read(600_000).decode('utf-8', 'ignore')
+    except Exception:
+        return ''
+    return horario_jsonld(html) or horario_texto(html)
+
+
+def completar_horarios(locais):
+    from concurrent.futures import ThreadPoolExecutor
+    alvo = [l for l in locais if not l.get('horario') and l.get('site')]
+    def job(l):
+        h = horario_site(l['site'])
+        if h: l['horario'] = h; l['h24'] = h.strip() == '24/7'; l['fonte_horario'] = 'site'
+        return bool(h)
+    with ThreadPoolExecutor(16) as ex:
+        n = sum(ex.map(job, alvo))
+    print('horários achados nos sites:', n, 'de', len(alvo))
+
+
 def main():
     data = fetch()
     locais, vistos = [], set()
@@ -219,6 +323,7 @@ def main():
             print('foursquare', len(extra), 'lugares;', merge(locais, extra), 'novos')
         except Exception as ex:
             print('foursquare indisponível', ex, file=sys.stderr)
+    completar_horarios(locais)
     if os.path.exists(CUR):  # curadoria W3W tem prioridade
         cur = json.load(open(CUR, encoding='utf-8'))
         porid = {c['id']: c for c in cur if c.get('id')}
@@ -227,6 +332,14 @@ def main():
         locais += [c for c in porid.values() if c.get('lat')]
         locais += [c for c in cur if not c.get('id') and c.get('lat')]
     locais.sort(key=lambda l: (not l.get('destaque'), l['cat'], l['nome']))
+    # lista de trabalho da curadoria: lugares sem horário que têm telefone ou site
+    pri = ['restaurantes','pizzarias','churrascarias','japoneses','hamburguerias','bares','cafes','docerias','sorveterias','padarias','farmacias','mercados','pet','lavanderias','chaveiros','cabeleireiros','estetica']
+    pend = [l for l in locais if not l.get('horario') and (l.get('tel') or l.get('site'))]
+    pend.sort(key=lambda l: (pri.index(l['cat']) if l['cat'] in pri else 99, l['nome'].lower()))
+    import csv
+    with open(os.path.join(ROOT, 'mapa', 'pendencias_horario.csv'), 'w', encoding='utf-8', newline='') as f:
+        w = csv.writer(f); w.writerow(['id', 'nome', 'categoria', 'endereco', 'telefone', 'site', 'horario_confirmado', 'nota_w3w'])
+        for l in pend: w.writerow([l['id'], l['nome'], l['cat'], l.get('end', ''), l.get('tel', ''), l.get('site', ''), '', ''])
     out = {'atualizado': datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-3))).isoformat(timespec='minutes'),
            'fonte': '© colaboradores do OpenStreetMap' + (' · Foursquare' if os.environ.get('FSQ_TOKEN') else ''), 'total': len(locais), 'locais': locais}
     json.dump(out, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)

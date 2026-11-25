@@ -76,6 +76,7 @@ body:has(.mp){background:#EEEBE5}
 .mp-card h2{font:300 30px/1.02 var(--sans);letter-spacing:-.035em;margin:10px 40px 10px 0}
 .mp-card p{margin:6px 0 0;font:14px/1.5 var(--sans);color:var(--tx2)}
 .mp-card .hrs{margin-top:14px;padding-top:14px;border-top:1px solid var(--ln);font:12px/1.6 var(--mono);color:var(--tx2);white-space:pre-line}
+.mp-fix{display:block;margin-top:14px;font:500 12px var(--sans);color:var(--ac);text-decoration:none}
 .mp-card .acts{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
 .mp-btn{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 18px;border-radius:999px;font:500 14px var(--sans);text-decoration:none;color:var(--tx);background:linear-gradient(135deg,rgba(255,255,255,.85),rgba(255,255,255,.5));box-shadow:inset 0 1.5px 0 #fff,inset 0 0 0 1px rgba(20,23,28,.08),0 10px 24px -14px rgba(20,23,28,.4);transition:transform .4s var(--e)}
 .mp-btn.p{color:#fff;background:linear-gradient(135deg,#2F6FD0,#1E4E9E);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.5),0 14px 30px -12px rgba(47,111,208,.7)}
@@ -193,7 +194,7 @@ const hash=s=>{let h=0;for(const c of s)h=(h*31+c.charCodeAt(0))|0;return Math.a
 const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function pick(id,fly){const l=ALL.find(x=>x.id===id);if(!l)return;sel=id;const st=status(l.horario),c=CM[l.cat];
 $('#mpCard').innerHTML=`<button class="x" aria-label="Fechar">✕</button><span class="cat" style="color:${c[2]}">${c[1]}${l.destaque?' · W3W indica':''}</span><h2>${esc(l.nome)}</h2>${st.k!=='?'?`<span class="mp-st ${st.k}">${st.t}</span>`:''}${l.nota?`<p>${esc(l.nota)}</p>`:''}${l.end?`<p>${esc(l.end)}</p>`:''}${l.horario?`<div class="hrs">${esc(human(l.horario))}</div>`:''}
-<div class="acts"><a class="mp-btn p" href="https://www.google.com/maps/dir/?api=1&destination=${l.lat},${l.lon}" target="_blank" rel="noopener">Como chegar</a>${l.site?`<a class="mp-btn" href="${esc(l.site)}" target="_blank" rel="noopener">Site</a>`:''}${l.tel?`<a class="mp-btn" href="tel:${esc(l.tel.replace(/[^+\d]/g,''))}">Ligar</a>`:''}</div>`;
+<div class="acts"><a class="mp-btn p" href="https://www.google.com/maps/dir/?api=1&destination=${l.lat},${l.lon}" target="_blank" rel="noopener">Como chegar</a>${l.site?`<a class="mp-btn" href="${esc(l.site)}" target="_blank" rel="noopener">Site</a>`:''}${l.tel?`<a class="mp-btn" href="tel:${esc(l.tel.replace(/[^+\d]/g,''))}">Ligar</a>`:''}</div><a class="mp-fix" href="https://wa.me/5511940297871?text=${encodeURIComponent('Olá! Sou do '+l.nome+' e quero atualizar nosso horário no Mapa de Moema: ')}" target="_blank" rel="noopener">${l.horario?'Horário errado? Avise a W3W':'É o responsável? Informe o horário'} →</a>`;
 $('#mpCard').classList.add('on');$('#mpCard .x').onclick=()=>{$('#mpCard').classList.remove('on');sel=null;draw()};
 if(map){map.setFilter('sel',['==',['get','id'],id]);if(fly)map.flyTo({center:[l.lon,l.lat],zoom:Math.max(map.getZoom(),16.2),pitch:55,bearing:-18,padding:pad(),duration:R?0:1600,essential:true})}
 document.querySelectorAll('.mp-it').forEach(e=>e.classList.toggle('on',e.dataset.id===id));if(innerWidth<=900)$('#mpPanel').classList.add('min')}
@@ -228,7 +229,7 @@ const style={version:8,glyphs:T+'/fonts/{fontstack}/{range}.pbf',sources:{om:{ty
 ]};
 map=new maplibregl.Map({container:'mpMap',style,center:[-46.664,-23.601],zoom:R?14.4:13.2,pitch:R?40:0,bearing:R?-14:0,attributionControl:false,maxBounds:[[-46.74,-23.66],[-46.59,-23.55]]});
 map.addControl(new maplibregl.NavigationControl({showCompass:true,visualizePitch:true}),'bottom-right');
-map.addControl(new maplibregl.AttributionControl({compact:true,customAttribution:'© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> · <a href="https://openfreemap.org" target="_blank">OpenFreeMap</a>'}),'bottom-left');
+map.addControl(new maplibregl.AttributionControl({compact:true,customAttribution:'© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> · Dados de lugares: <a href="https://foursquare.com" target="_blank">Foursquare</a> · <a href="https://openfreemap.org" target="_blank">OpenFreeMap</a>'}),'bottom-left');
 map.on('load',()=>{
 map.addSource('locais',{type:'geojson',data:geo(list())});
 map.addLayer({id:'halo',type:'circle',source:'locais',filter:['==',['get','aberto'],1],paint:{'circle-radius':['interpolate',['linear'],['zoom'],13,6,18,16],'circle-color':['get','cor'],'circle-opacity':.18,'circle-blur':.4}});
