@@ -63,7 +63,7 @@ $('#mpHandle').onclick=()=>$('#mpPanel').classList.toggle('min');
 $('.mp-hd').addEventListener('click',()=>{if($('#mpPanel').classList.contains('min'))$('#mpPanel').classList.remove('min')});
 $('#mpQ').addEventListener('focus',()=>$('#mpPanel').classList.remove('min'));
 if(window.maplibregl)setTimeout(()=>{if(map)map.on('dragstart',()=>{if(innerWidth<=900&&!$('#mpCard').classList.contains('on'))$('#mpPanel').classList.add('min')})},0);
-setInterval(()=>draw(),60000);new MutationObserver(()=>{const p=$('#mpPanel');if(p.classList.contains('min'))p.scrollTop=0}).observe($('#mpPanel'),{attributes:true,attributeFilter:['class']});
+(()=>{if(!matchMedia('(max-width:900px)').matches)return;const m=document.createElement('div');m.className='mp-mob';const lg=document.querySelector('.mp-logo a');if(lg){const a=lg.cloneNode(true);a.className='lg';m.append(a)}m.append(document.querySelector('.mp-search'));document.querySelector('.mp').append(m);const tg=document.querySelector('.mp-tg');if(tg)document.querySelector('.mp-tools').append(tg)})();setInterval(()=>draw(),60000);new MutationObserver(()=>{const p=$('#mpPanel');if(p.classList.contains('min'))p.scrollTop=0}).observe($('#mpPanel'),{attributes:true,attributeFilter:['class']});
 /* mapa com estilo próprio */
 if(!window.maplibregl)return;
 const T='https://tiles.openfreemap.org';
