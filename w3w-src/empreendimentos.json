@@ -2443,7 +2443,6 @@
   "bairro_slug": "moema",
   "status": "Pronto",
   "tipos": [
-   "Studio",
    "Apartamento"
   ],
   "frase": "Reinvente seu viver. Descubra um conceito inovador de moradia que transforma sua qualidade de vida.",
@@ -2455,8 +2454,7 @@
   "torres": [],
   "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/most-moema/x-e13cc58328.jpg",
   "categorias": [
-   "apartamentos",
-   "studios"
+   "apartamentos"
   ],
   "ficha": {
    "tagline": "Duas torres justapostas na esquina da Cotovia com a Pintassilgo.",
