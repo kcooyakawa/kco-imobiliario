@@ -59,10 +59,10 @@ def wa(msg): return f'https://wa.me/{WA}?text=' + urllib.parse.quote(msg)
 BAIRROS = {
  'moema': dict(nome='Moema', titulo='Imóveis novos em Moema',
    lead='Moema reúne ruas arborizadas, o Parque Ibirapuera a poucos minutos, metrô, boa gastronomia e alguns dos lançamentos mais disputados de São Paulo. Selecionamos aqui os empreendimentos que acompanhamos de perto, de studios a apartamentos de alto padrão.',
-   desc='Apartamentos e studios novos em Moema: lançamentos, imóveis em obras e prontos para morar, com curadoria de produtos novos da W3W Imóveis.'),
+   desc='Apartamentos e studios novos em Moema: lançamentos, imóveis em obras e prontos para morar, com a inteligência imobiliária da W3W Imóveis.'),
  'vila-nova-conceicao': dict(nome='Vila Nova Conceição', titulo='Imóveis novos na Vila Nova Conceição',
    lead='A Vila Nova Conceição é um dos endereços mais valorizados de São Paulo: vizinha do Ibirapuera, residencial, silenciosa e com projetos assinados por grandes incorporadoras. Aqui estão os empreendimentos que a W3W acompanha no bairro.',
-   desc='Apartamentos novos de alto padrão na Vila Nova Conceição: lançamentos, em obras e prontos, com curadoria de produtos novos da W3W Imóveis.'),
+   desc='Apartamentos novos de alto padrão na Vila Nova Conceição: lançamentos, em obras e prontos, com a inteligência imobiliária da W3W Imóveis.'),
 }
 
 CSS = r"""
@@ -722,7 +722,7 @@ def footer():
 <a class="brand ft-b" href="{BASE}/">{LOGO}<span class="creci">{CRECI}</span></a>
 <nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Quem somos</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
 <div class="ft-c"><a href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener">{TEL}</a><a href="mailto:{EMAIL}">{EMAIL}</a></div>
-</div><div class="wrap ft-bot"><span>W3W Imóveis · Curadoria de produtos novos · Desde 2004</span><span>{CRECI} · Moema, São Paulo</span></div><div class="wrap ft-kco"><a href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Produzido por KCO Studio</a></div></footer>
+</div><div class="wrap ft-bot"><span>W3W Imóveis · Inteligência imobiliária · Desde 2004</span><span>{CRECI} · Moema, São Paulo</span></div><div class="wrap ft-kco"><a href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Produzido por KCO Studio</a></div></footer>
 <a class="wa" href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">{WA_ICON}</a>
 <script src="{BASE}/assets/motion.js?v={VER}" defer></script>
 </body></html>"""
@@ -871,16 +871,16 @@ def build_home():
         rows += f"""<div class="row-s" data-st="{st}"><div class="row-hd"><div><span class="eyebrow">{sub}</span><h3>{tit} <sup class="rc"></sup></h3></div>
 <div class="arr"><button aria-label="Anterior" data-d="-1">←</button><button aria-label="Próximo" data-d="1">→</button></div></div>
 <div class="track">{''.join(gcard(e, i+1) for i, e in enumerate(lst))}</div></div>"""
-    pg = head('W3W Imóveis — Curadoria de produtos novos em Moema',
-              'Studios, apartamentos e imóveis de alto padrão em Moema, com curadoria de produtos novos da W3W Imóveis: mais de 20 anos de mercado e atendimento direto com os sócios.', '',
+    pg = head('W3W Imóveis — Inteligência imobiliária em Moema',
+              'Studios, apartamentos e imóveis de alto padrão em Moema, com a inteligência imobiliária da W3W Imóveis: mais de 20 anos de mercado e atendimento direto com os sócios.', '',
               f'<script type="application/ld+json">{json.dumps(ORG, ensure_ascii=False)}</script>')
     pg += header('').replace('class="hd"', 'class="hd over"')
     socio = lambda img, n, c, t: f'<div class="sc"><div class="sc-ph"><img src="{SITE}/img/{img}" alt="{n}" loading="lazy"></div><h3>{n}</h3><span class="eyebrow">{c}</span><p>{t}</p></div>'
     pg += f"""<main>
 <section class="hlp" id="inicio"><div class="hlp-s" id="heroStick">
 <video autoplay muted loop playsinline preload="auto" poster="{VID}/cidade.jpg"><source src="{VID}/cidade.mp4" type="video/mp4"></video><div class="hlp-sh"></div>
-<div class="wrap hlp-m"><span>W3W Imóveis</span><span>Curadoria de produtos novos</span><span>Moema · São Paulo</span><span>Desde 2004</span></div>
-<div class="wrap hlp-t"><h1><span class="ht1">Curadoria de</span><span class="ht2">produtos novos.</span></h1></div>
+<div class="wrap hlp-m"><span>W3W Imóveis</span><span>Inteligência imobiliária</span><span>Moema · São Paulo</span><span>Desde 2004</span></div>
+<div class="wrap hlp-t"><h1><span class="ht1">Inteligência</span><span class="ht2">imobiliária.</span></h1></div>
 <div class="wrap hlp-l"><span class="cue"><i></i>Role</span><p>Selecionamos os melhores imóveis nos endereços mais desejados de São Paulo.</p></div>
 </div></section>
 
@@ -1163,7 +1163,7 @@ def build_guia():
     css = f'<style>{GM_CSS}</style>'
     hdscript = "<script>(function(){var h=document.querySelector('.hd.over');if(!h)return;function sc(){h.classList.toggle('solid',scrollY>80)}addEventListener('scroll',sc,{passive:true});sc()})();</script>"
     p0 = posts[0]; pins = p0.get('concierge', [])
-    pg = head('Guia Moema | W3W Imóveis', 'O guia da W3W Imóveis para viver Moema: mesa, parque, cultura e vida noturna, com curadoria de quem trabalha no bairro há mais de vinte anos.', 'guia-moema') + css
+    pg = head('Guia Moema | W3W Imóveis', 'O guia da W3W Imóveis para viver Moema: mesa, parque, cultura e vida noturna, com a visão de quem trabalha no bairro há mais de vinte anos.', 'guia-moema') + css
     pg += header('guia-moema')
     temps = []
     for c in pins:
@@ -1171,7 +1171,7 @@ def build_guia():
     summ = ''.join(f'<div><span class="mg-tag">{esc(t)}</span><strong>{esc(c["nome"])}</strong><small>{esc(c["nota"])}</small></div>' for t, c in temps[:6])
     pg += f'''<main class="mg">
 <section class="mg-mast"><div class="wrap"><h1>Guia <em>Moema</em></h1><div class="mg-col"><b>Edição nº {ed["numero"]}</b>{esc(ed["mes"])}<br>Concierge W3W Imóveis</div></div>
-<div class="wrap mg-strip"><span>Mesa · Parque · Cultura · Noite</span><span>Curadoria de quem trabalha no bairro há mais de vinte anos</span></div></section>
+<div class="wrap mg-strip"><span>Mesa · Parque · Cultura · Noite</span><span>A visão de quem trabalha no bairro há mais de vinte anos</span></div></section>
 <section class="wrap"><div class="mg-cover"><a href="{u("guia-moema/"+p0["slug"])}"><figure><img src="{p0["capa"]}" alt="Parque Ibirapuera, vizinho de Moema" decoding="async"></figure>
 <div class="mg-cv"><span class="mg-tag">Matéria de capa · {esc(p0["categoria"])}</span><div><h2>{esc(p0["titulo"])}</h2><p>{esc(p0["sub"])}</p></div><span class="mg-read">Ler a matéria · {p0["leitura"]}</span></div></a></div>
 {f'<div class="mg-sum">{summ}</div>' if summ else ''}</section>
