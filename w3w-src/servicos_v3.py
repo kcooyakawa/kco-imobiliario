@@ -218,7 +218,7 @@ def render(wa, way, BASE, u):
 <section class="z3-hero"><div class="z3-stick"><div class="z3-bg"></div><div class="z3-grid"></div>
 <div class="z3-hin">
 <div class="z3-top"><span class="mono z3-live"><i></i>Agenda aberta · 2026</span><span class="mono">W3W Serviços · Marketing imobiliário de alto padrão</span></div>
-<h1><span class="ln"><span>Do anúncio</span></span><span class="ln"><span>à chave, <em>com</em></span></span><span class="ln"><span><em>inteligência.</em></span></span></h1>
+<h1><span class="ln"><span>Seu imóvel.</span></span><span class="ln"><span>Em <em>cartaz.</em></span></span></h1>
 <div class="z3-hsub"><p>Campanha dedicada para cada imóvel, criação assinada por Head of Art e um dossiê de cada lead antes do primeiro contato.</p>
 <div class="z3-cta"><a class="z3-btn p" href="{contato}" target="_blank" rel="noopener">Falar com a W3W →</a><a class="z3-btn s" href="#planos">Ver planos</a></div></div>
 </div>
