@@ -475,6 +475,10 @@ body:has(.z3) .z3-hd .wrap{display:flex;justify-content:space-between;align-item
 .z3-ft{background:#05070B;color:#5C677A;text-align:center;padding:64px 20px 90px;border-top:1px solid rgba(238,242,248,.06);font:300 11px/1.8 var(--sans,sans-serif);letter-spacing:.18em;text-transform:uppercase}
 .z3-ft svg{width:110px;height:auto;color:#8A94A6;margin-bottom:18px}
 .z3-ft p{margin:4px 0}
+
+.z3-pl,.z3-pl *{min-width:0}
+.z3-pl{overflow-x:clip}
+@media(max-width:360px){.z3-ctl,.z3-sum{padding:20px}.z3-seg{gap:6px}.z3-seg button{font-size:18px;height:50px}.z3-ctl .z3-tg{width:100%}.z3-ctl .z3-tg button{flex:1;padding:0 6px;font-size:12.5px;height:40px}.z3-sum li{font-size:13px}}
 </style>
 """
 
@@ -695,7 +699,7 @@ def render(wa, way, BASE, u):
 <div><span class="mono">Landing page</span><b>a partir de R$ 2.500</b></div>
 <div><span class="mono">Identidade e book</span><b>a partir de R$ 6.000</b></div>
 </div>
-<p class="z3-note">Proprietário? Invista na campanha e, se vender com a W3W, o valor é descontado da comissão. <a href="{prop}" target="_blank" rel="noopener" style="color:var(--ac)">Saiba mais →</a></p>
+<p class="z3-note"><b style="color:var(--tx);font-weight:500">É dono do imóvel que quer vender?</b> Você paga a campanha e, quando o imóvel for vendido pela W3W, devolvemos esse valor como desconto na comissão de venda. <a href="{prop}" target="_blank" rel="noopener" style="color:var(--ac)">Saiba mais →</a></p>
 </section>
 
 <section class="z3-faq"><div class="z3-in z3-fg">
