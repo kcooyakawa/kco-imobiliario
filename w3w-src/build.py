@@ -30,7 +30,7 @@ import time
 VER = str(int(time.time()))
 def u(p=''): return f'{BASE}/{p}'.rstrip('/') + '/' if p and not p.endswith('.html') else f'{BASE}/{p}'
 def intent_form(px, E):
-    ints=['Comprar para morar','Investir','Studio para renda','Agendar visita','Vender meu imóvel']
+    ints=['Comprar para morar','Investir','Studio para renda','Agendar visita']
     chips=''.join(f'<label class="if-c"><input type="radio" name="intencao" value="{esc(i)}"{" checked" if n==0 else ""}><span>{esc(i)}</span></label>' for n,i in enumerate(ints))
     vivos=[e for e in E if not e.get('esgotado')]
     grp=''
