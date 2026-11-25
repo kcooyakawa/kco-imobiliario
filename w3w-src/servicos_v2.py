@@ -163,7 +163,7 @@ def render(wa, way, BASE, u):
 <div><span class="lb">04 — Dados</span><b>Dossiê</b><span>Triagem, score e roteiro de cada lead.</span></div>
 <div><span class="lb">05 — Venda</span><b>Atendimento</b><span>Corretor W3W ou do seu time, com o hub de materiais.</span></div>
 </div>
-<div class="k2-nums rv"><div><span class="lb">Mercado</span><b>2004</b></div><div><span class="lb">Copa do Mundo</span><b>2014</b></div><div><span class="lb">Jogos Olímpicos</span><b>2016</b></div><div><span class="lb">Anos de criação</span><b>20+</b></div></div>
+
 </div></section>
 
 <section class="k2-sec" id="k2planos"><div class="wrap">

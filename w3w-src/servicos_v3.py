@@ -251,12 +251,6 @@ def render(wa, way, BASE, u):
 </div><p class="mono z3-fict">Exemplo com dados fictícios</p></div>
 </section>
 
-<div class="z3-num">
-<div><span class="mono">No mercado desde</span><b data-n="2004">2004</b></div>
-<div><span class="mono">Copa do Mundo</span><b data-n="2014">2014</b></div>
-<div><span class="mono">Jogos Olímpicos</span><b data-n="2016">2016</b></div>
-<div><span class="mono">Anos de criação</span><b data-n="20" data-s="+">20+</b></div>
-</div>
 
 <section class="z3-pl" id="planos" data-p='{json.dumps(planos)}'>
 <div class="z3-plh"><div><span class="mono">Planos</span><h2>Preço claro, <em>por campanha.</em></h2></div>
