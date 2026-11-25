@@ -106,7 +106,7 @@ box-shadow:inset 0 1.5px 0 #fff,inset 0 -1px 1px rgba(255,255,255,.7),inset 0 0 
 /* animações */
 .g2 .rv{opacity:0;transform:translateY(40px);transition:opacity 1s var(--e),transform 1s var(--e)}
 .g2 .rv.on{opacity:1;transform:none}
-.g2-sp .wd{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}
+.g2-sp .wd{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .16em .1em;margin:0 -.16em}
 .g2-sp .wd>i{display:inline-block;font-style:inherit;transform:translateY(110%) rotate(4deg);transition:transform 1.1s var(--e)}
 .g2-sp.on .wd>i{transform:none}
 .g2-pbar{position:fixed;left:0;top:0;height:2px;width:100%;z-index:60;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--ac),#7FB2FF)}

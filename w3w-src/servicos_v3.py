@@ -384,7 +384,7 @@ body:has(.z3) .ft .brand svg{opacity:.7;transform:scale(.85)}
 /* barra de progresso */
 .z3-pbar{position:fixed;left:0;top:0;height:2px;width:100%;z-index:60;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--ac),#fff)}
 /* títulos palavra por palavra */
-.z3-sp .wd{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}
+.z3-sp .wd{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .16em .1em;margin:0 -.16em}
 .z3-sp .wd>i{display:inline-block;font-style:inherit;transform:translateY(110%) rotate(4deg);transition:transform 1.1s var(--e)}
 .z3-sp.on .wd>i{transform:none}
 /* holofote nos cartões */

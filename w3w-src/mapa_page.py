@@ -169,6 +169,10 @@ body:has(.mp) .hd,body:has(.mp) .ft{display:none!important}
 .mp-top button{background:rgba(255,255,255,.07)!important;color:var(--tx2)!important}
 .mp-top button[aria-pressed=true]{background:#F3F2EF!important;color:#1C2129!important}
 .mp-top button[aria-pressed=true] small{color:rgba(28,33,41,.55)!important}
+.mp-tools .mp-glass{--tx2:#C5CBD4;background:linear-gradient(160deg,rgba(58,66,79,.94),rgba(34,40,49,.96))!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 16px 32px -20px rgba(10,14,20,.55)!important}
+.mp-tools .mp-seg button{color:#C5CBD4}
+.mp-tools .mp-seg button[aria-pressed=true]{background:#F3F2EF;color:#1C2129}
+.mp-tools .mp-upd{color:#C5CBD4}
 </style>
 """
 
