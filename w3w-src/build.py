@@ -729,16 +729,7 @@ def footer():
 
 MESES = ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez']
 def selo(e):
-    ent = (e.get('entrega') or (e.get('ficha') or {}).get('entrega') or '').lower()
-    if e.get('entrega') and 'breve' in ((e.get('ficha') or {}).get('entrega') or '').lower(): ent = 'breve ' + ent
-    m = re.search(r'(' + '|'.join(MESES) + r')[a-z]*\W*(\d{2,4})', ent)
-    quando = f" · entrega {m.group(1).upper()}/{m.group(2)[-2:]}" if m else ''
-    if e['status'] == 'Lançamento':
-        return ('Breve lançamento' if 'breve' in ent else 'Lançamento') + quando
-    if e['status'] == 'Em obras':
-        return 'Em obras' + quando
-    y = re.search(r'(20\d\d)', ent)
-    return f"Pronto · {y.group(1)}" if y else 'Pronto para morar'
+    return {'Lançamento':'Lançamento','Em obras':'Em obras','Pronto':'Pronto'}.get(e['status'], e['status'])
 
 def card(e):
     tags = ''.join(f'<span class="tag">{t}</span>' for t in e['tipos'])
