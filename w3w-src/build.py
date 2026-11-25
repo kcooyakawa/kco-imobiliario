@@ -803,6 +803,31 @@ def mt(e):
     if st: return e['resumo']['metragem'], ''
     return '', e['resumo']['metragem']
 
+import copy
+def expand(lst):
+    """Separa prédios com studio e apartamento em dois itens de vitrine (pedido Kco, nov/2026)."""
+    out=[]
+    for e in lst:
+        st,ap=split(e)
+        if not (e.get('ficha') and st and ap):
+            x=copy.deepcopy(e); cats=[c for c in x['categorias']]
+            if e.get('ficha'):
+                if st and not ap and 'studios' not in cats: cats=['studios']+[c for c in cats if c!='apartamentos']
+                if ap and not st: cats=[c for c in cats if c!='studios'] or ['apartamentos']
+            x['categorias']=cats; out.append(x); continue
+        a=copy.deepcopy(e); a['ficha']['plantas']=ap
+        a['categorias']=[c for c in e['categorias'] if c!='studios'] or ['apartamentos']
+        if not any(c in a['categorias'] for c in ('apartamentos','alto-padrao')): a['categorias'].append('apartamentos')
+        a['resumo']['metragem']=_rng(ap) or e['resumo']['metragem']; a['ficha']['faixa']=a['resumo']['metragem']
+        a['tipos']=['Apartamento']; out.append(a)
+        b=copy.deepcopy(e); b['ficha']['plantas']=st; b['slug']=e['slug']+'-studios'; b['_page']=e['slug']
+        b['nome']=e['nome'] if 'studio' in e['nome'].lower() else e['nome']+' · Studios'; b['categorias']=['studios']; b['tipos']=['Studio']
+        b['resumo']['metragem']=_rng(st) or 'Sob consulta'; b['ficha']['faixa']=b['resumo']['metragem']; b['ficha']['plantas_tit']='studios.'
+        b['resumo']['tipologias']='Studios'
+        b['ficha']['destaques']=[[b['resumo']['metragem'],'studios'],['Studio','tipologia']]+[d for d in e['ficha'].get('destaques',[]) if 'unidade' not in d[1].lower() and 'm²' not in d[0]][:2]
+        out.append(b)
+    return out
+
 def mmax(e):
     ms,ma=mt(e); ns=[float(x.replace('.','').replace(',','.')) for x in re.findall(r'\d[\d.]*(?:,\d+)?', ma or ms)]
     return max(ns) if ns else 0
@@ -819,14 +844,14 @@ def _old_score(e):
 def gcard(e, i):
     r = e['resumo']; ms, ma = mt(e)
     sub = f'<small class="gs">+ studios {esc(ms)}</small>' if ms and ma else ''
-    return f"""<a class="g" href="{u('empreendimentos/'+e['slug'])}" data-q="{qidx(e)}" data-slug="{e['slug']}" data-cat="{' '.join(e['categorias'])}" data-b="{e['bairro_slug']}" data-st="{e['status']}" data-ms="{esc(ms)}" data-ma="{esc(ma)}">
+    return f"""<a class="g" href="{u('empreendimentos/'+e.get('_page',e['slug']))}" data-q="{qidx(e)}" data-slug="{e['slug']}" data-cat="{' '.join(e['categorias'])}" data-b="{e['bairro_slug']}" data-st="{e['status']}" data-ms="{esc(ms)}" data-ma="{esc(ma)}">
 <div class="ph"><span class="pf-st st-{e['status'].split()[0].lower().replace('ç','c')}">{selo(e)}</span><span class="pf-ov"><em>{esc(e['nome'])}</em><small>Ver ficha →</small></span><img src="{th(e['img'])}" alt="{esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async">{strip(e)}</div>
 <div class="gi"><span class="n" hidden>{i:02d}</span><strong class="gm">{esc(ma or ms)}</strong>{sub}<h3>{esc(e['nome'])}</h3><p>{esc(e['bairro'])} · {esc(e['status'])}</p></div></a>"""
 
 STATUS = [('Lançamento', 'Lançamentos', 'Antes de todo mundo.'), ('Em obras', 'Em obras', 'Garanta na planta.'), ('Pronto', 'Prontos para morar', 'Chaves na mão.')]
 
 def ficha_data():
-    return [dict({k: e[k] for k in ('slug', 'nome', 'bairro', 'status', 'frase', 'img', 'resumo', 'categorias')}, selo=selo(e), bt=BAIRROS[e['bairro_slug']]['lead']) for e in EM]
+    return [dict({k: e[k] for k in ('slug', 'nome', 'bairro', 'status', 'frase', 'img', 'resumo', 'categorias')}, selo=selo(e), bt=BAIRROS[e['bairro_slug']]['lead']) for e in expand(EM)]
 
 SHEET = r"""<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" hidden>
 <div class="sh-bg" data-close></div><div class="sh-p" tabindex="-1"><div class="sh-grab" aria-hidden="true"></div>
@@ -870,17 +895,21 @@ def rich(e, h='h2'):
     return out
 
 def feat():
-    fs = [e for e in sorted(EM, key=score) if e.get('ficha')][:3]
-    cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e["slug"])}" data-slug="{e["slug"]}"><div class="ph"><img src="{th(e.get("vitrine") or e["img"])}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="vt-t"><small>{e["status"]} · {esc(e["bairro"])}</small><b class="vt-m">{esc(mt(e)[1] or mt(e)[0])}</b><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
+    global VIT
+    VIT = expand(EM)
+    fs = [e for e in sorted(VIT, key=score) if e.get('ficha') and 'studios' not in e['categorias']][:3]
+    cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e.get("_page",e["slug"]))}" data-slug="{e["slug"]}"><div class="ph"><img src="{th(e.get("vitrine") or e["img"])}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="vt-t"><small>{e["status"]} · {esc(e["bairro"])}</small><b class="vt-m">{esc(mt(e)[1] or mt(e)[0])}</b><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
     return f'<div class="pf-feat">{cards}</div>'
 
 def build_home():
+    global VIT
+    VIT = expand(EM)
     moema = [e for e in E if e['bairro_slug'] == 'moema']
     outros = [e for e in E if e['bairro_slug'] != 'moema']
     chips = ''.join(f'<button class="chip" data-v="{v}" aria-pressed="{"true" if v=="" else "false"}">{l}</button>' for v, l in CATS)
     rows = ''
     for st, tit, sub in STATUS:
-        lst = [e for e in EM if e['status'] == st]
+        lst = [e for e in VIT if e['status'] == st]
         lst = sorted(lst, key=score)
         rows += f"""<div class="row-s" data-st="{st}"><div class="row-hd"><div><span class="eyebrow">{sub}</span><h3>{tit} <sup class="rc"></sup></h3></div>
 <div class="arr"><button aria-label="Anterior" data-d="-1">←</button><button aria-label="Próximo" data-d="1">→</button></div></div>
@@ -901,7 +930,7 @@ def build_home():
 <section class="pf" id="imoveis"><div class="wrap">
 <div class="pf-hd2"><div><span class="eyebrow">Galeria W3W</span><h2>Imóveis <em>selecionados.</em></h2></div><span class="pf-n"></span></div>
 <div class="pf-bar"><div class="pf-bar-in"><label class="pf-q"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pfq" type="search" placeholder="Nome, rua ou construtora" autocomplete="off" aria-label="Buscar imóveis"></label><div class="seg" data-k="b" role="group"><button data-v="moema" aria-pressed="true">Moema</button></div>{''.join(['<div class="seg" data-k="c" role="group">']+[f'<button data-v="{v}" aria-pressed="{"true" if v=="" else "false"}">{l}</button>' for v,l in CATS]+['</div>'])}<div class="seg" data-k="s" role="group"><button data-v="" aria-pressed="true">Todas</button><button data-v="Lançamento" aria-pressed="false">Lançamento</button><button data-v="Em obras" aria-pressed="false">Em obras</button><button data-v="Pronto" aria-pressed="false">Pronto</button></div></div></div>
-{feat()}<div class="pf-grid">{''.join(gcard(e, i+1) for i, e in enumerate(sorted(EM, key=score)))}</div>
+{feat()}<div class="pf-grid">{''.join(gcard(e, i+1) for i, e in enumerate(sorted(VIT, key=score)))}</div>
 <div class="more"><button class="btn" id="more">Ver mais imóveis</button></div>
 </div></section>
 
@@ -925,7 +954,7 @@ def build_home():
 {intent_form("h",E)}
 </div></section></main>
 {SHEET}
-{''.join(f'<template id="fx-{e[chr(115)+chr(108)+chr(117)+chr(103)]}">'+rich(e)+'</template>' for e in EM if e.get('ficha'))}
+{''.join(f'<template id="fx-{e[chr(115)+chr(108)+chr(117)+chr(103)]}">'+rich(e)+'</template>' for e in VIT if e.get('ficha'))}
 <script>window.W3W={json.dumps(ficha_data(), ensure_ascii=False)};window.W3W_WA='{WA}';window.W3W_BASE='{BASE}';</script>
 <script src="{BASE}/assets/sheet.js?v={VER}" defer></script>
 <script>(function(){{var qq='',st={{b:'moema',c:'',s:''}},lim=9999,all=[].slice.call(document.querySelectorAll('.pf-grid .g')),more=document.getElementById('more'),num=document.querySelector('.pf-n');

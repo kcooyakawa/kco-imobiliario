@@ -16,7 +16,7 @@ return '<div class="fx-ph"><img src="'+e.img+'" alt="'+esc(e.nome)+'"><span clas
 '<div class="fx-x"><div><span class="eyebrow">Momento da obra</span><h4>'+esc(e.selo||e.status)+'</h4><p>'+(FASE[e.status]||'')+'</p></div>'+
 (ideal.length?'<div><span class="eyebrow">Ideal para</span><ul>'+ideal.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div>':'')+
 '<div><span class="eyebrow">O bairro</span><h4>'+esc(e.bairro)+'</h4><p>'+esc(e.bt||'')+'</p></div></div>'+
-'<div class="fx-map"><span class="eyebrow">Localização aproximada</span><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa '+esc(e.nome)+'" src="https://www.google.com/maps?q='+q+'&output=embed"></iframe></div>'+
+
 '<div class="fx-cta2"><div><span class="eyebrow">Ficha completa</span><h4>Plantas, tabela, incorporadora e previsão de entrega.</h4></div><a class="btn solid" target="_blank" rel="noopener" href="'+wa('Olá, quero receber a ficha completa do '+e.nome+' (plantas, tabela e entrega).')+'">Receber no WhatsApp</a></div>'+
 '<a class="fx-l" href="'+window.W3W_BASE+'/empreendimentos/'+e.slug+'/">Abrir página do empreendimento ↗</a>'}
 function open(slug,push){var e=data[slug];if(!e)return;last=document.activeElement;var tp=document.getElementById('fx-'+slug);IN.innerHTML=tp?tp.innerHTML:html(e);S.classList.toggle('rich',!!tp);S.hidden=false;P.style.transform='';P.scrollTop=0;
