@@ -1,5 +1,5 @@
 {
-"atualizado": "2026-11-25T04:56-03:00",
+"atualizado": "2026-11-25T05:12-03:00",
 "fonte": "© colaboradores do OpenStreetMap",
 "total": 428,
 "locais": [
@@ -615,19 +615,6 @@
 "insta": ""
 },
 {
-"id": "n4943034826",
-"nome": "Café e restaurante",
-"cat": "cafes",
-"lat": -23.589863,
-"lon": -46.673247,
-"horario": "Mo-Fr 07:00-16:00",
-"h24": false,
-"end": "Rua Doutor João Clímaco Pereira 62",
-"tel": "+55 11 3045 3440",
-"site": "http://www.cafetenerifferestaurante.com.br",
-"insta": ""
-},
-{
 "id": "n4719397439",
 "nome": "Cheesecakeria",
 "cat": "cafes",
@@ -675,32 +662,6 @@
 "horario": "",
 "h24": false,
 "end": "Avenida Jurema 359",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "n2577768703",
-"nome": "Fredisimo",
-"cat": "cafes",
-"lat": -23.606757,
-"lon": -46.655985,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "n4150329893",
-"nome": "Gold Stone",
-"cat": "cafes",
-"lat": -23.606665,
-"lon": -46.670695,
-"horario": "",
-"h24": false,
-"end": "Rua Gaivota",
 "tel": "",
 "site": "",
 "insta": ""
@@ -1213,6 +1174,19 @@
 "insta": ""
 },
 {
+"id": "n11810594906",
+"nome": "Alyah Sweets Doceria e Cozinha Libanesa",
+"cat": "docerias",
+"lat": -23.610546,
+"lon": -46.651324,
+"horario": "11:30-22:00",
+"h24": false,
+"end": "Avenida Indianópolis 1401",
+"tel": "+55 11 2371 2125",
+"site": "https://alyahsweets.com.br/",
+"insta": ""
+},
+{
 "id": "w1078000055",
 "nome": "BEIK",
 "cat": "docerias",
@@ -1221,19 +1195,6 @@
 "horario": "",
 "h24": false,
 "end": "Rua Santa Justina 470",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "n11425961938",
-"nome": "Bacio di Latte",
-"cat": "docerias",
-"lat": -23.586476,
-"lon": -46.659247,
-"horario": "",
-"h24": false,
-"end": "",
 "tel": "",
 "site": "",
 "insta": ""
@@ -1278,14 +1239,14 @@
 "insta": ""
 },
 {
-"id": "w439318729",
-"nome": "Gelato Borelli",
+"id": "w1383650065",
+"nome": "Iracema Pães e Doces",
 "cat": "docerias",
-"lat": -23.602885,
-"lon": -46.646836,
+"lat": -23.611787,
+"lon": -46.681646,
 "horario": "",
 "h24": false,
-"end": "",
+"end": "Rua Nova York 773",
 "tel": "",
 "site": "",
 "insta": ""
@@ -1299,19 +1260,6 @@
 "horario": "",
 "h24": false,
 "end": "Rua Santa Justina 464",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "w1107535724",
-"nome": "Jules",
-"cat": "docerias",
-"lat": -23.607742,
-"lon": -46.658733,
-"horario": "",
-"h24": false,
-"end": "Alameda dos Anapurús 970",
 "tel": "",
 "site": "",
 "insta": ""
@@ -1343,32 +1291,6 @@
 "insta": ""
 },
 {
-"id": "w1104123606",
-"nome": "Oggi",
-"cat": "docerias",
-"lat": -23.611667,
-"lon": -46.663938,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "w521402298",
-"nome": "Oggi Sorvetes",
-"cat": "docerias",
-"lat": -23.605157,
-"lon": -46.670318,
-"horario": "",
-"h24": false,
-"end": "Rua Canário 1189",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "n4726525339",
 "nome": "Petit Comité Rotisserie",
 "cat": "docerias",
@@ -1382,32 +1304,6 @@
 "insta": ""
 },
 {
-"id": "w521402166",
-"nome": "Rochinha Sorvetes",
-"cat": "docerias",
-"lat": -23.606868,
-"lon": -46.668128,
-"horario": "",
-"h24": false,
-"end": "Avenida Pavão 840",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "w521403702",
-"nome": "Royal Trudel",
-"cat": "docerias",
-"lat": -23.604234,
-"lon": -46.66997,
-"horario": "",
-"h24": false,
-"end": "Rua Canário 1094",
-"tel": "",
-"site": "https://royaltrudel.com.br/",
-"insta": ""
-},
-{
 "id": "w521402007",
 "nome": "Sodie Doces",
 "cat": "docerias",
@@ -1416,19 +1312,6 @@
 "horario": "Mo-Sa 10:30-18:30; Su 10:00-15:00",
 "h24": false,
 "end": "Rua Canário",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "w521403100",
-"nome": "Stuppendo",
-"cat": "docerias",
-"lat": -23.606072,
-"lon": -46.671183,
-"horario": "",
-"h24": false,
-"end": "Rua Canário 1321",
 "tel": "",
 "site": "",
 "insta": ""
@@ -1470,6 +1353,19 @@
 "end": "Rua Clodomiro Amazonas 1206",
 "tel": "",
 "site": "",
+"insta": ""
+},
+{
+"id": "w1168836720",
+"nome": "Vila Nova Pães e Doces",
+"cat": "docerias",
+"lat": -23.589638,
+"lon": -46.670211,
+"horario": "Mo-Sa 06:00-22:00; Su 06:30-22:00",
+"h24": false,
+"end": "Rua João Lourenço 622",
+"tel": "+55 11 3842-6524",
+"site": "https://paesedocesvilanova.com.br/",
 "insta": ""
 },
 {
@@ -2682,19 +2578,6 @@
 "insta": ""
 },
 {
-"id": "w1383650065",
-"nome": "Iracema Pães e Doces",
-"cat": "padarias",
-"lat": -23.611787,
-"lon": -46.681646,
-"horario": "",
-"h24": false,
-"end": "Rua Nova York 773",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "w1109635401",
 "nome": "Juriti Pães e Doçes",
 "cat": "padarias",
@@ -2861,19 +2744,6 @@
 "end": "Avenida dos Carinás 535",
 "tel": "",
 "site": "",
-"insta": ""
-},
-{
-"id": "w1168836720",
-"nome": "Vila Nova Pães e Doces",
-"cat": "padarias",
-"lat": -23.589638,
-"lon": -46.670211,
-"horario": "Mo-Sa 06:00-22:00; Su 06:30-22:00",
-"h24": false,
-"end": "Rua João Lourenço 622",
-"tel": "+55 11 3842-6524",
-"site": "https://paesedocesvilanova.com.br/",
 "insta": ""
 },
 {
@@ -3966,19 +3836,6 @@
 "end": "Rua Ministro Jesuíno Cardoso",
 "tel": "",
 "site": "",
-"insta": ""
-},
-{
-"id": "n11810594906",
-"nome": "Alyah Sweets Doceria e Cozinha Libanesa",
-"cat": "restaurantes",
-"lat": -23.610546,
-"lon": -46.651324,
-"horario": "11:30-22:00",
-"h24": false,
-"end": "Avenida Indianópolis 1401",
-"tel": "+55 11 2371 2125",
-"site": "https://alyahsweets.com.br/",
 "insta": ""
 },
 {
@@ -5563,6 +5420,149 @@
 "horario": "",
 "h24": false,
 "end": "Avenida República Do Líbano 631",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
+"id": "n11425961938",
+"nome": "Bacio di Latte",
+"cat": "sorveterias",
+"lat": -23.586476,
+"lon": -46.659247,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
+"id": "n4943034826",
+"nome": "Café e restaurante",
+"cat": "sorveterias",
+"lat": -23.589863,
+"lon": -46.673247,
+"horario": "Mo-Fr 07:00-16:00",
+"h24": false,
+"end": "Rua Doutor João Clímaco Pereira 62",
+"tel": "+55 11 3045 3440",
+"site": "http://www.cafetenerifferestaurante.com.br",
+"insta": ""
+},
+{
+"id": "n2577768703",
+"nome": "Fredisimo",
+"cat": "sorveterias",
+"lat": -23.606757,
+"lon": -46.655985,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
+"id": "w439318729",
+"nome": "Gelato Borelli",
+"cat": "sorveterias",
+"lat": -23.602885,
+"lon": -46.646836,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
+"id": "n4150329893",
+"nome": "Gold Stone",
+"cat": "sorveterias",
+"lat": -23.606665,
+"lon": -46.670695,
+"horario": "",
+"h24": false,
+"end": "Rua Gaivota",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
+"id": "w1107535724",
+"nome": "Jules",
+"cat": "sorveterias",
+"lat": -23.607742,
+"lon": -46.658733,
+"horario": "",
+"h24": false,
+"end": "Alameda dos Anapurús 970",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
+"id": "w1104123606",
+"nome": "Oggi",
+"cat": "sorveterias",
+"lat": -23.611667,
+"lon": -46.663938,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
+"id": "w521402298",
+"nome": "Oggi Sorvetes",
+"cat": "sorveterias",
+"lat": -23.605157,
+"lon": -46.670318,
+"horario": "",
+"h24": false,
+"end": "Rua Canário 1189",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
+"id": "w521402166",
+"nome": "Rochinha Sorvetes",
+"cat": "sorveterias",
+"lat": -23.606868,
+"lon": -46.668128,
+"horario": "",
+"h24": false,
+"end": "Avenida Pavão 840",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
+"id": "w521403702",
+"nome": "Royal Trudel",
+"cat": "sorveterias",
+"lat": -23.604234,
+"lon": -46.66997,
+"horario": "",
+"h24": false,
+"end": "Rua Canário 1094",
+"tel": "",
+"site": "https://royaltrudel.com.br/",
+"insta": ""
+},
+{
+"id": "w521403100",
+"nome": "Stuppendo",
+"cat": "sorveterias",
+"lat": -23.606072,
+"lon": -46.671183,
+"horario": "",
+"h24": false,
+"end": "Rua Canário 1321",
 "tel": "",
 "site": "",
 "insta": ""
