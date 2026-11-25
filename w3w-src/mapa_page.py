@@ -173,6 +173,21 @@ body:has(.mp) .hd,body:has(.mp) .ft{display:none!important}
 .mp-tools .mp-seg button{color:#C5CBD4}
 .mp-tools .mp-seg button[aria-pressed=true]{background:#F3F2EF;color:#1C2129}
 .mp-tools .mp-upd{color:#C5CBD4}
+
+@media(max-width:900px){
+.mp-panel{height:78%}
+.mp-panel>*{flex-shrink:0}
+.mp-panel:not(.min){overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.mp-panel.min{overflow:hidden}
+.mp-handle{position:sticky;top:0;z-index:5}
+.mp-panel .mp-list{flex:none;overflow:visible;padding-bottom:24px}
+.mp-hd p{display:none}
+.mp-hd h1{font-size:34px}
+.mp-grp{display:flex!important;overflow-x:auto;scrollbar-width:none;gap:8px}
+.mp-grp::-webkit-scrollbar{display:none}
+.mp-grp button{flex:none;width:86px}
+body:has(.mp) .wa{bottom:auto!important;top:150px!important;right:12px!important;transform:scale(.82);transform-origin:top right}
+}
 </style>
 """
 
@@ -268,7 +283,7 @@ $('#mpHandle').onclick=()=>$('#mpPanel').classList.toggle('min');
 $('.mp-hd').addEventListener('click',()=>{if($('#mpPanel').classList.contains('min'))$('#mpPanel').classList.remove('min')});
 $('#mpQ').addEventListener('focus',()=>$('#mpPanel').classList.remove('min'));
 if(window.maplibregl)setTimeout(()=>{if(map)map.on('dragstart',()=>{if(innerWidth<=900&&!$('#mpCard').classList.contains('on'))$('#mpPanel').classList.add('min')})},0);
-setInterval(()=>draw(),60000);
+setInterval(()=>draw(),60000);new MutationObserver(()=>{const p=$('#mpPanel');if(p.classList.contains('min'))p.scrollTop=0}).observe($('#mpPanel'),{attributes:true,attributeFilter:['class']});
 /* mapa com estilo próprio */
 if(!window.maplibregl)return;
 const T='https://tiles.openfreemap.org';
