@@ -89,6 +89,13 @@ body:has(.mp){background:#EEEBE5}
 .mp.lista .mp-grid{opacity:1;pointer-events:auto;transform:none}
 .mp.lista .mp-card,.mp.lista .mp-cta{display:none}
 .mp-grid{padding-top:0!important}
+.mp-top{position:absolute;left:420px;right:20px;top:76px;z-index:3;display:flex;gap:6px;overflow-x:auto;padding:8px;border-radius:999px;scrollbar-width:none;animation:mpin .9s .2s var(--e) both}
+.mp-top::-webkit-scrollbar{display:none}
+.mp-top button{flex:none;height:36px;padding:0 14px;border-radius:999px;border:0;font:500 12.5px var(--sans);color:var(--tx2);background:rgba(255,255,255,.6);cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:all .25s var(--e)}
+.mp-top button b{width:8px;height:8px;border-radius:50%}
+.mp-top button small{font:11px var(--mono);color:var(--tx3)}
+.mp-top button[aria-pressed=true]{background:var(--tx);color:#fff}.mp-top button[aria-pressed=true] small{color:rgba(255,255,255,.6)}
+.mp.lista .mp-top{display:none}
 .mp-gnav{position:sticky;top:0;z-index:2;display:flex;gap:6px;overflow-x:auto;padding:18px 0 14px;margin-bottom:6px;background:linear-gradient(#F4F1EC 75%,rgba(244,241,236,0));scrollbar-width:none}
 .mp-gnav::-webkit-scrollbar{display:none}
 .mp-gnav button{flex:none;height:38px;padding:0 15px;border-radius:999px;border:0;font:500 13px var(--sans);color:var(--tx2);background:rgba(255,255,255,.75);box-shadow:inset 0 0 0 1px var(--ln);cursor:pointer;display:inline-flex;align-items:center;gap:8px}
@@ -126,7 +133,7 @@ body:has(.mp){background:#EEEBE5}
 .mp-hd{padding:10px 20px 6px}.mp-hd h1{font-size:28px}.mp-hd p{display:none}
 .mp-search{margin:6px 20px 0}.mp-tg,.mp-chips{padding-left:20px;padding-right:20px}
 .mp-card{left:10px;right:10px;width:auto;bottom:10px;z-index:4}
-.mp-cta{display:none}.mp-tools{top:10px;right:10px;left:10px;justify-content:flex-end}.mp-upd{display:none}.mp-grid{left:10px;right:10px;top:62px;bottom:10px;padding:20px;z-index:5}
+.mp-cta{display:none}.mp-top{left:10px;right:10px;top:58px}.mp-tools{top:10px;right:10px;left:10px;justify-content:flex-end}.mp-upd{display:none}.mp-grid{left:10px;right:10px;top:62px;bottom:10px;padding:20px;z-index:5}
 .maplibregl-ctrl-bottom-right{right:0!important;bottom:48%!important}
 }
 @media (prefers-reduced-motion:reduce){.mp *{animation:none!important;transition:none!important}}
@@ -148,6 +155,7 @@ def render(wa, cats_json, grupos_json='[]'):
 <div class="mp-list" id="mpList"></div>
 </aside>
 <div class="mp-tools"><div class="mp-seg mp-glass" role="group" aria-label="Visualização"><button id="mpV3" aria-pressed="true">3D</button><button id="mpV2" aria-pressed="false">2D</button></div><div class="mp-seg mp-glass" role="group" aria-label="Modo"><button id="mpMm" aria-pressed="true">Mapa</button><button id="mpMl" aria-pressed="false">Lista</button></div><div class="mp-upd mp-glass"><i></i><span id="mpUpd">Atualizado toda semana</span></div></div>
+<nav class="mp-top mp-glass" id="mpTop" aria-label="Filtrar o mapa por setor"></nav>
 <section class="mp-grid mp-glass" aria-label="Lista de lugares"><nav class="mp-gnav" id="mpGnav" aria-label="Setores"></nav><div id="mpGrid"></div></section>
 <div class="mp-cta mp-glass">Tem um negócio em Moema? <a href="{wa('Olá! Tenho um negócio em Moema e quero aparecer no Mapa de Moema da W3W.')}" target="_blank" rel="noopener">Apareça no mapa →</a></div>
 <article class="mp-card mp-glass" id="mpCard" aria-live="polite"></article>
@@ -186,17 +194,19 @@ $('#mpGrp').querySelectorAll('button').forEach(b=>b.onclick=()=>{GS=GS===b.datas
 const inG=c=>!GS||G.find(g=>g[0]===GS)[2].includes(c);const tot=ALL.filter(l=>inG(l.cat)).length;
 $('#mpChips').innerHTML=`<button aria-pressed="${!F.cat}" data-c="">Todos <small>${tot}</small></button>`+C.filter(c=>n[c[0]]&&inG(c[0])).map(c=>`<button aria-pressed="${F.cat===c[0]}" data-c="${c[0]}"><b style="background:${c[2]}"></b>${c[1]} <small>${n[c[0]]}</small></button>`).join('');
 $('#mpChips').querySelectorAll('button').forEach(b=>b.onclick=()=>{F.cat=b.dataset.c||null;chips();draw(true)})}
-function list(ign){const q=norm(F.q);const gc=GS?G.find(g=>g[0]===GS)[2]:null;return ALL.map(l=>({...l,st:status(l.horario)})).filter(l=>(!gc||gc.includes(l.cat))&&(!F.cat||l.cat===F.cat)&&(ign||!F.open||l.st.k==='o'||l.st.k==='h')&&(ign||!F.h24||l.st.k==='h')&&(!q||norm(l.nome+' '+(l.end||'')+' '+CM[l.cat][1]).includes(q)))}
+function list(ign,noCat){const q=norm(F.q);const gc=GS?G.find(g=>g[0]===GS)[2]:null;return ALL.map(l=>({...l,st:status(l.horario)})).filter(l=>(!gc||gc.includes(l.cat))&&(noCat||!F.cat||l.cat===F.cat)&&(ign||!F.open||l.st.k==='o'||l.st.k==='h')&&(ign||!F.h24||l.st.k==='h')&&(!q||norm(l.nome+' '+(l.end||'')+' '+CM[l.cat][1]).includes(q)))}
 function draw(fit){const L=list();$('#mpN').textContent=L.length+' lugares';$('#mpNow').textContent=new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
-$('#mpList').innerHTML=L.length?L.slice(0,300).map((l,i)=>`<div class="mp-it${sel===l.id?' on':''}" data-id="${l.id}" style="animation-delay:${Math.min(i,20)*18}ms"><b style="background:${CM[l.cat][2]}"></b><div><strong>${esc(l.nome)}${l.destaque?'<span class="mp-dest">W3W indica</span>':''}</strong><span>${CM[l.cat][1]}${l.end?' · '+esc(l.end):''}</span></div>${l.st.k!=='?'?`<span class="mp-st ${l.st.k}">${l.st.t}</span>`:''}</div>`).join(''):empty();grid(L);
+$('#mpList').innerHTML=L.length?L.slice(0,300).map((l,i)=>`<div class="mp-it${sel===l.id?' on':''}" data-id="${l.id}" style="animation-delay:${Math.min(i,20)*18}ms"><b style="background:${CM[l.cat][2]}"></b><div><strong>${esc(l.nome)}${l.destaque?'<span class="mp-dest">W3W indica</span>':''}</strong><span>${CM[l.cat][1]}${l.end?' · '+esc(l.end):''}</span></div>${l.st.k!=='?'?`<span class="mp-st ${l.st.k}">${l.st.t}</span>`:''}</div>`).join(''):empty();grid(L);catbar($('#mpTop'));
 const ab=$('#mpAll');if(ab)ab.onclick=()=>{F.open=F.h24=false;$('#mpOpen').setAttribute('aria-pressed',false);$('#mp24').setAttribute('aria-pressed',false);draw(true)};
 $('#mpList').querySelectorAll('.mp-it').forEach(el=>{el.onclick=()=>pick(el.dataset.id,true);el.onmouseenter=()=>hover(el.dataset.id)});
 if(map&&map.getSource('locais')){map.getSource('locais').setData(geo(L));if(fit&&L.length){const b=new maplibregl.LngLatBounds();L.forEach(l=>b.extend([l.lon,l.lat]));map.fitBounds(b,{padding:pad(),maxZoom:16,duration:R?0:1200})}}}
 function empty(){const all=list(true).length;return all&&(F.open||F.h24)?`<p class="mp-empty">Nada ${F.h24?'24 horas':'aberto agora'} com essa busca.<br><button class="mp-btn" id="mpAll" style="margin-top:14px">Ver os ${all} resultados</button></p>`:`<p class="mp-empty">Ainda não temos “${esc(F.q)}” no mapa.<br><a class="mp-btn" style="margin-top:14px" href="https://wa.me/5511940297871?text=${encodeURIComponent('Olá! Sugiro incluir no Mapa de Moema: '+F.q)}" target="_blank" rel="noopener">Sugerir este lugar</a></p>`}
+function catbar(nv,L0){if(!nv)return;const base=list(false,true);const cnt={};base.forEach(l=>cnt[l.cat]=(cnt[l.cat]||0)+1);
+nv.innerHTML=`<button aria-pressed="${!F.cat}" data-c="">Todos <small>${base.length}</small></button>`+C.filter(c=>cnt[c[0]]).map(c=>`<button aria-pressed="${F.cat===c[0]}" data-c="${c[0]}"><b style="background:${c[2]}"></b>${c[1]} <small>${cnt[c[0]]}</small></button>`).join('');
+nv.querySelectorAll('button').forEach(b=>b.onclick=()=>{F.cat=b.dataset.c||null;chips();draw(true);const g=document.querySelector('.mp-grid');if(g)g.scrollTop=0});
+const on=nv.querySelector('[aria-pressed=true]');if(on&&F.cat)nv.scrollLeft=on.offsetLeft-nv.clientWidth/2+on.offsetWidth/2}
 function grid(L0){const g=$('#mpGrid');if(!g)return;const cnt={};L0.forEach(l=>cnt[l.cat]=(cnt[l.cat]||0)+1);
-const nv=$('#mpGnav');const gs=(window.GSEL&&cnt[window.GSEL])?window.GSEL:null;nv.innerHTML=`<button aria-pressed="${!gs}" data-c="">Todos <small>${L0.length}</small></button>`+C.filter(c=>cnt[c[0]]).map(c=>`<button aria-pressed="${gs===c[0]}" data-c="${c[0]}"><b style="background:${c[2]}"></b>${c[1]} <small>${cnt[c[0]]}</small></button>`).join('');
-nv.querySelectorAll('button').forEach(b=>b.onclick=()=>{window.GSEL=b.dataset.c||null;grid(L0);$('.mp-grid').scrollTop=0});
-const L=gs?L0.filter(l=>l.cat===gs):L0;const by={};L.forEach(l=>(by[l.cat]=by[l.cat]||[]).push(l));g.innerHTML=C.filter(c=>by[c[0]]).map(c=>`<h3><b style="background:${c[2]}"></b>${c[1]} <small>${by[c[0]].length}</small></h3><div class="mp-gl">${by[c[0]].map(l=>`<div class="mp-gc" data-id="${l.id}"><strong>${esc(l.nome)}</strong><span>${esc(l.end||CM[l.cat][1])}</span>${l.st.k!=='?'?`<em class="mp-st ${l.st.k}" style="font-style:normal">${l.st.t}</em>`:''}</div>`).join('')}</div>`).join('')||'<p class="mp-empty">Nenhum lugar com esses filtros.</p>';
+catbar($('#mpGnav'),L0);const gs=F.cat;const L=gs?L0.filter(l=>l.cat===gs):L0;const by={};L.forEach(l=>(by[l.cat]=by[l.cat]||[]).push(l));g.innerHTML=C.filter(c=>by[c[0]]).map(c=>`<h3><b style="background:${c[2]}"></b>${c[1]} <small>${by[c[0]].length}</small></h3><div class="mp-gl">${by[c[0]].map(l=>`<div class="mp-gc" data-id="${l.id}"><strong>${esc(l.nome)}</strong><span>${esc(l.end||CM[l.cat][1])}</span>${l.st.k!=='?'?`<em class="mp-st ${l.st.k}" style="font-style:normal">${l.st.t}</em>`:''}</div>`).join('')}</div>`).join('')||'<p class="mp-empty">Nenhum lugar com esses filtros.</p>';
 g.querySelectorAll('.mp-gc').forEach(el=>el.onclick=()=>{setMode(false);pick(el.dataset.id,true)})}
 const pad=()=>innerWidth>900?{left:420,right:60,top:80,bottom:80}:{left:30,right:30,top:60,bottom:innerHeight*.5};
 const geo=L=>({type:'FeatureCollection',features:L.map(l=>({type:'Feature',id:hash(l.id),properties:{id:l.id,nome:l.nome,cor:CM[l.cat][2],aberto:l.st.k==='o'||l.st.k==='h'?1:0,dest:l.destaque?1:0},geometry:{type:'Point',coordinates:[l.lon,l.lat]}}))});
