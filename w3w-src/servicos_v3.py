@@ -54,7 +54,7 @@ body:has(.z3){background:#05070B}
 .z3-mq div{display:inline-flex;gap:56px;animation:z3m 38s linear infinite;font:300 clamp(28px,3.4vw,52px)/1 var(--sans);letter-spacing:-.03em}
 .z3-mq div span:nth-child(even){font-family:var(--serif);font-style:italic;font-weight:200;color:var(--ac)}
 @keyframes z3m{to{transform:translateX(-50%)}}
-/* manifesto */
+/* manifesto (css) */
 .z3-man{padding:22vh clamp(20px,5vw,72px)}
 .z3-man p{font:300 clamp(32px,5vw,84px)/1.06 var(--sans);letter-spacing:-.04em;margin:0;max-width:20ch}
 .z3-man .w{opacity:.14;transition:opacity .25s}
@@ -116,7 +116,7 @@ body:has(.z3){background:#05070B}
 .z3-pr small{font-size:15px;color:var(--tx2);letter-spacing:0}
 .z3-plan ul{list-style:none;padding:0;margin:26px 0 30px;display:grid;gap:10px;color:var(--tx2);font-size:15px}
 .z3-plan li::before{content:"→ ";color:var(--ac)}
-.z3-extra{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:16px}
+.z3-extra{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
 .z3-extra div{padding:22px;border-radius:18px;border:1px solid var(--ln)}
 .z3-extra b{display:block;font:300 24px var(--sans);margin-top:12px}
 .z3-note{margin-top:22px;color:var(--tx3);font-size:13px}
@@ -127,7 +127,7 @@ body:has(.z3){background:#05070B}
 .rv{opacity:0;transform:translateY(40px);transition:opacity 1s var(--e),transform 1s var(--e)}
 .rv.on{opacity:1;transform:none}
 @media (max-width:900px){
-.z3-hud{display:none}
+.z3-hud{display:none}.z3-scroll{display:none!important}
 .z3-dos{grid-template-columns:1fr}
 .z3-num{grid-template-columns:1fr 1fr}.z3-num div:nth-child(2){border-right:0}.z3-num div:nth-child(-n+2){border-bottom:1px solid var(--ln)}
 .z3-plans,.z3-extra{grid-template-columns:1fr}
@@ -202,6 +202,69 @@ body:has(.z3) .ft .brand svg{opacity:.7;transform:scale(.85)}
 .z3-end li{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--ln);color:var(--tx2);font-size:15px}
 .z3-end li span{font:500 11px var(--mono);color:var(--ac);padding-top:3px}
 @media (max-width:900px){.z3-endg{grid-template-columns:1fr}}
+.z3-h1b{font-size:clamp(46px,8.4vw,150px)!important;max-width:13ch}
+.z3-proof{display:flex;gap:28px;flex-wrap:wrap;margin-top:4vh;padding-top:22px;border-top:1px solid var(--ln);opacity:0;animation:z3f 1s .9s var(--e) forwards}
+.z3-proof span{font:13px var(--sans);color:var(--tx2)}
+.z3-proof b{color:var(--tx);font-weight:400}
+.z3-ey{display:block;color:var(--ac)!important;margin-bottom:14px}
+.z3-in{padding:0 clamp(20px,5vw,72px)}
+.z3-sh h2,.z3-faq h2{font:300 clamp(40px,5.2vw,88px)/.98 var(--sans);letter-spacing:-.045em;margin:0;max-width:16ch}
+.z3-lead{color:var(--tx2);font-size:18px;line-height:1.55;max-width:56ch;margin:24px 0 0}
+.z3-como{padding:20vh 0 4vh;border-top:1px solid var(--ln)}
+.z3-flow{list-style:none;padding:0;margin:64px 0 0;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--ln)}
+.z3-flow li{padding:28px 22px 0 0;position:relative}
+.z3-flow li::before{content:"";position:absolute;top:-4px;left:0;width:7px;height:7px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 5px rgba(156,203,255,.12)}
+.z3-flow span{font:500 11px var(--mono);color:var(--tx3);letter-spacing:.12em}
+.z3-flow b{display:block;font:400 clamp(22px,1.9vw,30px)/1.1 var(--sans);letter-spacing:-.02em;margin:14px 0 10px}
+.z3-flow p{color:var(--tx2);font-size:15px;line-height:1.5;margin:0}
+.z3-flow li:nth-child(2){transition-delay:.08s}.z3-flow li:nth-child(3){transition-delay:.16s}.z3-flow li:nth-child(4){transition-delay:.24s}.z3-flow li:nth-child(5){transition-delay:.32s}
+.z3-quem{padding:20vh 0;border-top:1px solid var(--ln)}
+.z3-qg{display:grid;grid-template-columns:1fr 1fr;gap:5vw;margin-top:64px}
+.z3-team{display:grid;gap:12px}
+.z3-team>div{padding:26px 28px;border:1px solid var(--ln);border-radius:20px;background:var(--bg2);transition:border-color .4s}
+.z3-team>div:hover{border-color:rgba(156,203,255,.35)}
+.z3-team b{display:block;font:400 26px/1.1 var(--sans);letter-spacing:-.02em;margin:10px 0 8px}
+.z3-team p{color:var(--tx2);margin:0;font-size:15px;line-height:1.5}
+.z3-time{position:relative;padding-left:28px;border-left:1px solid var(--ln)}
+.z3-time>div{position:relative;padding:22px 0 26px}
+.z3-time>div::before{content:"";position:absolute;left:-32px;top:30px;width:7px;height:7px;border-radius:50%;background:var(--tx);box-shadow:0 0 0 5px var(--bg)}
+.z3-time i{font:500 11px var(--mono);font-style:normal;color:var(--ac);letter-spacing:.12em;text-transform:uppercase}
+.z3-time b{display:block;font:400 22px/1.15 var(--sans);margin:8px 0 6px}
+.z3-time p{color:var(--tx2);margin:0;font-size:15px}
+.z3-cfg{display:grid;grid-template-columns:1.25fr 1fr;gap:16px}
+.z3-ctl{display:grid;gap:34px;padding:36px;border:1px solid var(--ln);border-radius:24px;background:var(--bg2)}
+.z3-hint{color:var(--tx3);font-size:13px;line-height:1.45;margin:8px 0 0}
+.z3-seg{display:flex;gap:8px;margin-top:14px}
+.z3-seg button{flex:1;height:56px;border-radius:14px;border:1px solid var(--ln);background:none;color:var(--tx);font:300 22px var(--sans);cursor:pointer;transition:background .3s,color .3s,border-color .3s}
+.z3-seg button[aria-pressed=true]{background:var(--tx);color:#05070B;border-color:var(--tx)}
+.z3-seg button:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.z3-ctl .z3-tg{margin-top:14px}
+.z3-sw{display:flex;gap:16px;align-items:flex-start;cursor:pointer;position:relative}
+.z3-sw input{position:absolute;opacity:0}
+.z3-sw>span{flex:none;width:48px;height:28px;border-radius:999px;background:rgba(238,242,248,.14);position:relative;transition:background .3s;margin-top:2px}
+.z3-sw>span::after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:var(--tx);transition:transform .4s var(--e)}
+.z3-sw input:checked+span{background:var(--ac)}
+.z3-sw input:checked+span::after{transform:translateX(20px);background:#05070B}
+.z3-sw input:focus-visible+span{outline:2px solid var(--ac);outline-offset:3px}
+.z3-sw b{font:400 18px var(--sans)}
+.z3-sum{padding:36px;border-radius:24px;background:linear-gradient(170deg,rgba(156,203,255,.16),var(--bg2) 60%);border:1px solid rgba(156,203,255,.35);display:flex;flex-direction:column}
+.z3-tot{display:flex;align-items:baseline;gap:8px;margin:18px 0 22px}
+.z3-tot b{font:200 clamp(56px,6vw,92px)/1 var(--sans);letter-spacing:-.05em}
+.z3-tot small{color:var(--tx2);font-size:16px}
+.z3-sum ul{list-style:none;padding:0;margin:0 0 28px;border-top:1px solid var(--ln)}
+.z3-sum li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--ln);font-size:14px;color:var(--tx2)}
+.z3-sum li b{color:var(--tx);font-weight:400}
+.z3-sum .z3-btn{justify-content:center;margin-top:auto}
+.z3-faq{padding:18vh 0;border-top:1px solid var(--ln)}
+.z3-fg{display:grid;grid-template-columns:1fr 1.3fr;gap:6vw}
+.z3-faq details{border-bottom:1px solid var(--ln);padding:22px 0}
+.z3-faq details:first-child{border-top:1px solid var(--ln)}
+.z3-faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font:400 19px var(--sans)}
+.z3-faq summary::-webkit-details-marker{display:none}
+.z3-faq summary::after{content:"+";color:var(--ac);font-weight:300;transition:transform .3s}
+.z3-faq details[open] summary::after{transform:rotate(45deg)}
+.z3-faq details p{color:var(--tx2);line-height:1.55;margin:14px 0 0;max-width:60ch}
+@media (max-width:900px){.z3-flow{grid-template-columns:1fr;border-top:0;border-left:1px solid var(--ln);margin-left:4px}.z3-flow li{padding:0 0 30px 26px}.z3-flow li::before{left:-4px;top:4px}.z3-qg,.z3-cfg,.z3-fg{grid-template-columns:1fr}.z3-ctl,.z3-sum{padding:26px}.z3-proof{gap:14px 22px}}
 </style>
 """
 
@@ -220,27 +283,31 @@ if(!R&&matchMedia('(hover:hover)').matches){dc.addEventListener('mousemove',e=>{
 /* números */
 $$('.z3-num b').forEach(b=>{new IntersectionObserver((es,o)=>{if(!es[0].isIntersecting)return;o.disconnect();const to=+b.dataset.n,suf=b.dataset.s||'',st=performance.now(),fr=to>1000?to-40:0;
 const k=t=>{const p=Math.min((t-st)/1600,1),v=Math.round(fr+(to-fr)*(1-Math.pow(1-p,4)));b.textContent=v+suf;if(p<1)requestAnimationFrame(k)};R?b.textContent=to+suf:requestAnimationFrame(k)},{threshold:.5}).observe(b)});
-/* manifesto */
-const ws=$$('.z3-man .w');
-/* planos */
-const P=JSON.parse($('.z3-pl').dataset.p),tg=$('.z3-tg'),pill=tg.querySelector('i');
+/* configurador */
+const pl=$('.z3-pl'),P=JSON.parse(pl.dataset.p),WA=pl.dataset.wa,tg=$('.z3-tg'),pill=tg.querySelector('i');let N=1,K='mensal';
+const fm=n=>n.toLocaleString('pt-BR');const PH={mensal:'Pré-pago, sem permanência.',trimestral:'Período completo, em até 3x.',semestral:'Período completo, em até 6x.'};
 const mv=b=>{pill.style.width=b.offsetWidth+'px';pill.style.transform=`translateX(${b.offsetLeft-5}px)`};
-tg.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{tg.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));mv(b);
-$$('.z3-pr span').forEach(s=>s.textContent=P[b.dataset.k][+s.dataset.i].toLocaleString('pt-BR'))}));
+const calc=()=>{const d=$('#z3dos').checked,tot=$('#z3tot'),lin=$('#z3lin'),go=$('#z3go');$('#z3ph').textContent=PH[K];
+if(N>3){tot.innerHTML='<b style="font-size:.6em">Sob medida</b>';lin.innerHTML='<li><span>4 ou mais campanhas</span><b>proposta personalizada</b></li>';go.textContent='Falar com a W3W →';go.href=WA+encodeURIComponent('Olá! Quero um plano W3W com 4 ou mais campanhas.');return}
+const u=P[K][N-1],t=u*N+(d?390*N:0);tot.innerHTML=`<small>R$</small><b>${fm(t)}</b><small>/mês</small>`;
+lin.innerHTML=`<li><span>${N} campanha${N>1?'s':''} × R$ ${fm(u)}</span><b>R$ ${fm(u*N)}</b></li>`+(d?`<li><span>Lead Dossiê × ${N}</span><b>R$ ${fm(390*N)}</b></li>`:'')+`<li><span>Período</span><b>${K[0].toUpperCase()+K.slice(1)}</b></li>`;
+go.textContent='Quero este plano →';go.href=WA+encodeURIComponent(`Olá! Quero contratar a W3W: ${N} campanha(s), plano ${K}${d?', com Lead Dossiê':''}. Total R$ ${fm(t)}/mês.`)};
+$$('.z3-seg button').forEach(b=>b.onclick=()=>{$$('.z3-seg button').forEach(x=>x.setAttribute('aria-pressed',x===b));N=+b.dataset.v;calc()});
+tg.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{tg.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));mv(b);K=b.dataset.k;calc()}));
+$('#z3dos').onchange=calc;calc();
 requestAnimationFrame(()=>mv(tg.querySelector('[aria-pressed=true]')));addEventListener('resize',()=>mv(tg.querySelector('[aria-pressed=true]')));
-if(R){ws.forEach(w=>w.classList.add('on'));return}
+if(R)return;
 /* cursor */
 const g=$('.z3-glow');let gx=-999,gy=-999,cx=-999,cy=-999;
 if(matchMedia('(hover:hover)').matches)addEventListener('pointermove',e=>{gx=e.clientX;gy=e.clientY});
 /* scroll loop */
-const hero=$('.z3-hero'),bg=$('.z3-bg'),hin=$('.z3-hin'),hud=$('.z3-hud'),hz=$('.z3-hz'),tr=$('.z3-track'),pg=$('.z3-prog i'),man=$('.z3-man'),imgs=[];
+const hero=$('.z3-hero'),bg=$('.z3-bg'),hin=$('.z3-hin'),hud=$('.z3-hud'),hz=$('.z3-hz'),tr=$('.z3-track'),pg=$('.z3-prog i'),imgs=[];
 const size=()=>{hz.style.height=(tr.scrollWidth-innerWidth+innerHeight)+'px'};size();addEventListener('resize',size);
 const loop=()=>{const vh=innerHeight;
 let r=hero.getBoundingClientRect(),p=Math.min(Math.max(-r.top/(r.height-vh),0),1);
 bg.style.transform=`scale(${1.15-p*.12}) translateY(${p*6}%)`;hin.style.transform=`translateY(${-p*120}px)`;hin.style.opacity=1-p*1.1;hud.style.transform=`translateY(${-p*260}px)`;
 r=hz.getBoundingClientRect();p=Math.min(Math.max(-r.top/(r.height-vh),0),1);const d=tr.scrollWidth-innerWidth;tr.style.transform=`translateX(${-p*d}px)`;pg.style.transform=`scaleX(${p})`;
 imgs.forEach((im,i)=>{const b=im.parentNode.getBoundingClientRect(),q=(b.left+b.width/2)/innerWidth-.5;im.style.transform=`translateX(${-q*12-8}%)`});
-r=man.getBoundingClientRect();p=Math.min(Math.max((vh*.85-r.top)/(r.height*.8),0),1);const n=Math.floor(p*ws.length);ws.forEach((w,i)=>w.classList.toggle('on',i<n));
 
 cx+=(gx-cx)*.12;cy+=(gy-cy)*.12;g.style.transform=`translate3d(${cx}px,${cy}px,0)`;
 requestAnimationFrame(loop)};requestAnimationFrame(loop);
@@ -284,26 +351,33 @@ def render(wa, way, BASE, u):
 <div class="z3-glow" aria-hidden="true"></div>
 <section class="z3-hero"><div class="z3-stick"><div class="z3-bg"></div><div class="z3-grid"></div>
 <div class="z3-hin">
-<div class="z3-top"><span class="mono z3-live"><i></i>Agenda aberta · 2026</span><span class="mono">W3W Serviços · Marketing imobiliário de alto padrão</span></div>
-<h1><span class="ln"><span>Seu imóvel.</span></span><span class="ln"><span>Em <em>cartaz.</em></span></span></h1>
-<div class="z3-hsub"><p>Campanha dedicada para cada imóvel, criação assinada por Head of Art e um dossiê de cada lead antes do primeiro contato.</p>
-<div class="z3-cta"><a class="z3-btn p" href="{contato}" target="_blank" rel="noopener">Falar com a W3W →</a><a class="z3-btn s" href="#planos">Ver planos</a></div></div>
+<div class="z3-top"><span class="mono z3-live"><i></i>Agenda aberta · 2026</span><span class="mono">W3W Performance · Marketing imobiliário de alto padrão</span></div>
+<h1 class="z3-h1b"><span class="ln"><span>Não entregamos contatos.</span></span><span class="ln"><span>Entregamos <em>compradores.</em></span></span></h1>
+<div class="z3-hsub"><p><b style="color:var(--tx);font-weight:400">Seu imóvel em cartaz.</b> Campanha própria no Meta e no Google, criação assinada por Head of Art e um dossiê de cada lead entregue no WhatsApp do corretor.</p>
+<div class="z3-cta"><a class="z3-btn p" href="#planos">Montar meu plano →</a><a class="z3-btn s" href="{contato}" target="_blank" rel="noopener">Falar no WhatsApp</a></div></div>
+<div class="z3-proof"><span><b>1 imóvel</b> = 1 campanha</span><span><b>15 min</b> meta de retorno</span><span><b>A partir de R$ 1.000</b> por campanha</span></div>
 </div>
 <div class="z3-hud" aria-hidden="true"><div class="z3-chip"><b>A</b>Lead · Cobertura 1.184 m²<span>agora</span></div><div class="z3-chip"><b class="b">B</b>Lead · Studio Moema<span>2 min</span></div><div class="z3-chip"><b>A</b>Visita agendada · sábado<span>5 min</span></div></div>
 <div class="z3-scroll mono" aria-hidden="true">Role<i></i></div>
 </div></section>
 
-<div class="z3-mq" aria-hidden="true"><div>{mq}</div></div>
-
-<section class="z3-man"><p class="mono" style="font-size:11px;margin-bottom:40px;letter-spacing:.14em">Manifesto</p><p>{man_html}</p></section>
-
 <section class="z3-hz" aria-label="Serviços"><div class="z3-stick">
-<div class="z3-hzh"><h2>Quatro frentes,<br><em>um só olhar.</em></h2><div class="z3-prog"><i></i></div></div>
+<div class="z3-hzh"><div><span class="mono z3-ey">01 · O que entregamos</span><h2>Quatro serviços,<br><em>um objetivo: vender.</em></h2></div><div class="z3-prog"><i></i></div></div>
 <div class="z3-track">{cards_html}</div>
 </div></section>
 
+<section class="z3-como" id="como"><div class="z3-in">
+<div class="z3-sh rv"><span class="mono z3-ey">02 · Como funciona</span><h2>Do anúncio à visita, <em>em cinco passos.</em></h2></div>
+<ol class="z3-flow">
+<li class="rv"><span>01</span><b>Anúncio</b><p>Campanha do seu imóvel no Instagram, Facebook e Google, para o público certo de Moema e região.</p></li>
+<li class="rv"><span>02</span><b>Triagem</b><p>O interessado responde 3 perguntas rápidas: objetivo, prazo e faixa de investimento.</p></li>
+<li class="rv"><span>03</span><b>Dossiê</b><p>Montamos o perfil do lead com score A/B/C e um roteiro de abordagem.</p></li>
+<li class="rv"><span>04</span><b>Corretor</b><p>Tudo chega no WhatsApp do corretor com o card do imóvel, pronto para responder.</p></li>
+<li class="rv"><span>05</span><b>Visita e proposta</b><p>Atendimento rápido e preparado. Relatório semanal de leads, visitas e propostas.</p></li>
+</ol></div></section>
+
 <section class="z3-dos">
-<div class="rv"><span class="mono">Lead Dossiê W3W</span><h2>O corretor sabe quem é <em>antes do primeiro olá.</em></h2>
+<div class="rv"><span class="mono z3-ey">O resultado · Lead Dossiê</span><h2>O corretor sabe quem é <em>antes do primeiro olá.</em></h2>
 <p class="t">Dados informados pelo próprio lead na triagem, cruzados com a campanha de origem. Sem compra de base, dentro da LGPD.</p></div>
 <div><div class="z3-dcard">
 <div class="z3-dh"><span class="mono">Dossiê #0412</span><span class="mono" style="color:var(--ok)">● Prioridade A</span></div>
@@ -319,22 +393,52 @@ def render(wa, way, BASE, u):
 </section>
 
 
-<section class="z3-pl" id="planos" data-p='{json.dumps(planos)}'>
-<div class="z3-plh"><div><span class="mono">Planos</span><h2>Preço claro, <em>por campanha.</em></h2></div>
-<div class="z3-tg" role="group" aria-label="Período"><i></i><button data-k="mensal" aria-pressed="true">Mensal</button><button data-k="trimestral" aria-pressed="false">Trimestral</button><button data-k="semestral" aria-pressed="false">Semestral</button></div></div>
-<div class="z3-plans">
-{plan(0, '1 campanha', ['Estratégia e públicos', 'Meta e Google Ads', 'Otimização semanal', 'Relatório de visitas'])}
-{plan(1, '2 campanhas', ['Tudo do plano anterior', 'Testes cruzados entre produtos', 'Reunião quinzenal', 'Relatório comparativo'], True)}
-{plan(2, '3 campanhas', ['Tudo do plano anterior', 'Prioridade de criação', 'Reunião semanal', 'Painel de resultados'])}
+<section class="z3-quem"><div class="z3-in">
+<div class="z3-sh rv"><span class="mono z3-ey">03 · Quem implementa</span><h2>Uma imobiliária <em>que faz marketing.</em></h2><p class="z3-lead">Não terceirizamos. Quem cria a campanha conhece o produto, e quem atende o lead vende em Moema há mais de 20 anos.</p></div>
+<div class="z3-qg">
+<div class="z3-team rv">
+<div><span class="mono">Sócio-diretor · CRECI 69.228</span><b>Wilson Rodrigues</b><p>Estratégia comercial, captação e negociação.</p></div>
+<div><span class="mono">Sócia · CRECI 81.771</span><b>Marli Setsuko</b><p>Atendimento, carteira de investidores e retaguarda.</p></div>
+<div><span class="mono">Sócio · Head of Art</span><b>Kco Oyakawa</b><p>Direção de arte, campanha e dados. Mais de 20 anos em agências, com FIFA™ e Rio 2016.</p></div>
+</div>
+<div class="z3-time rv"><span class="mono">Implantação</span>
+<div><i>Semana 1</i><b>Diagnóstico e briefing</b><p>Produto, público, concorrência, verba e metas.</p></div>
+<div><i>Semana 2</i><b>Criação e página</b><p>Peças, textos, landing page e triagem configurados.</p></div>
+<div><i>Semana 3</i><b>Campanha no ar</b><p>Anúncios publicados e dossiês chegando ao corretor.</p></div>
+<div><i>Toda semana</i><b>Otimização e relatório</b><p>Ajuste de público e verba, com leads, visitas e propostas.</p></div>
+</div></div></div></section>
+
+<section class="z3-pl" id="planos" data-p='{json.dumps(planos)}' data-wa="{wa('')}">
+<div class="z3-plh"><div><span class="mono z3-ey">04 · Quanto custa</span><h2>Preço claro, <em>por campanha.</em></h2></div></div>
+<div class="z3-cfg rv">
+<div class="z3-ctl">
+<div><span class="mono">Quantas campanhas?</span><p class="z3-hint">Cada imóvel ou empreendimento é uma campanha.</p><div class="z3-seg"><button aria-pressed="true" data-v="1">1</button><button aria-pressed="false" data-v="2">2</button><button aria-pressed="false" data-v="3">3</button><button aria-pressed="false" data-v="4">4+</button></div></div>
+<div><span class="mono">Período</span><div class="z3-tg" role="group" aria-label="Período"><i></i><button data-k="mensal" aria-pressed="true">Mensal</button><button data-k="trimestral" aria-pressed="false">Trimestral</button><button data-k="semestral" aria-pressed="false">Semestral</button></div><p class="z3-hint" id="z3ph">Pré-pago, sem permanência.</p></div>
+<label class="z3-sw"><input type="checkbox" id="z3dos"><span></span><div><b>Adicionar Lead Dossiê</b><p class="z3-hint">Score, perfil e roteiro de cada lead no WhatsApp. +R$ 390 por campanha/mês.</p></div></label>
+</div>
+<div class="z3-sum"><span class="mono">Seu plano</span>
+<div class="z3-tot" id="z3tot"><small>R$</small><b>1.500</b><small>/mês</small></div>
+<ul id="z3lin"></ul>
+<a class="z3-btn p" id="z3go" href="#" target="_blank" rel="noopener">Quero este plano →</a>
+<p class="z3-hint">Verba de mídia não inclusa, paga direto ao Meta e ao Google.</p></div>
 </div>
 <div class="z3-extra rv">
-<div><span class="mono">+ Lead Dossiê</span><b>R$ 390/mês</b></div>
-<div><span class="mono">Criativos</span><b>a partir de R$ 1.200</b></div>
+<div><span class="mono">Avulso · Criativos</span><b>a partir de R$ 1.200</b></div>
 <div><span class="mono">Landing page</span><b>a partir de R$ 2.500</b></div>
 <div><span class="mono">Identidade e book</span><b>a partir de R$ 6.000</b></div>
 </div>
-<p class="z3-note">Verba de mídia paga direto ao Meta e ao Google. Proprietário: invista na campanha e, se vender com a W3W, o valor é descontado da comissão. <a href="{prop}" target="_blank" rel="noopener" style="color:var(--ac)">Saiba mais →</a></p>
+<p class="z3-note">Proprietário? Invista na campanha e, se vender com a W3W, o valor é descontado da comissão. <a href="{prop}" target="_blank" rel="noopener" style="color:var(--ac)">Saiba mais →</a></p>
 </section>
+
+<section class="z3-faq"><div class="z3-in z3-fg">
+<div class="rv"><span class="mono z3-ey">Dúvidas</span><h2>Antes de <em>começar.</em></h2></div>
+<div class="rv">
+<details><summary>A verba de mídia está incluída?</summary><p>Não. Ela é paga direto ao Meta e ao Google, no seu cartão, com total transparência. Indicamos o valor ideal no diagnóstico.</p></details>
+<details><summary>Preciso ter corretor próprio?</summary><p>Não. O atendimento pode ser feito pela W3W ou pelo seu time, que recebe o hub com fichas, textos e imagens.</p></details>
+<details><summary>O Lead Dossiê é obrigatório?</summary><p>Não, é opcional. Ele usa só dados que o próprio lead informa, dentro da LGPD, sem compra de base.</p></details>
+<details><summary>Existe fidelidade?</summary><p>O mensal é pré-pago e sem permanência. Trimestral e semestral têm desconto e valem pelo período completo, em até 3x ou 6x.</p></details>
+<details><summary>Sou proprietário. Como funciona?</summary><p>Você investe na campanha do seu imóvel e, se vender com a W3W, o valor é descontado da comissão.</p></details>
+</div></div></section>
 
 <section class="z3-end"><div class="z3-endg"><h2 class="rv">Vamos<br>vender <em>do jeito certo.</em></h2>
 <div class="rv"><ul><li><span>01</span>Campanha própria para o seu imóvel</li><li><span>02</span>Criação assinada por Head of Art</li><li><span>03</span>Atendimento de quem conhece Moema</li></ul>
