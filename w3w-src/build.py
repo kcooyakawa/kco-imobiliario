@@ -902,7 +902,7 @@ def build_home():
 <div class="qsh-t"><p class="qsh-l">Nossa trajetória de mais de 20 anos de experiência no mercado imobiliário nos permitiu construir uma rede sólida de relacionamentos e adquirir um profundo conhecimento das dinâmicas deste setor.</p>
 <p class="qsh-s">Nosso foco é proporcionar agilidade e eficiência nas negociações, aproveitando nossa expertise para identificar as melhores oportunidades de negócios para nossos clientes. Oferecemos serviços que priorizam a confiança e a satisfação.</p>
 <div class="qsh-p"><div><h3>Wilson Rodrigues</h3><span class="eyebrow">Sócio-diretor · CRECI 69.228</span></div>
-<div><h3>Yoko</h3><span class="eyebrow">Sócia · CRECI 42.877</span></div></div></div></div></div></section>
+<div><h3>Yoko</h3><span class="eyebrow">Sócia · CRECI 81.771</span></div></div></div></div></div></section>
 
 <section class="cafe" id="contato"><div class="wrap cafe-g">
 <div><span class="eyebrow">Contato</span><h2>Vamos tomar<br><em>um café?</em></h2>
@@ -999,7 +999,7 @@ document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click
 <section class="sec qs" style="padding-top:16px"><div class="wrap">
 <p>Nossa trajetória de mais de 20 anos de experiência no mercado imobiliário nos permitiu construir uma rede sólida de relacionamentos e adquirir um profundo conhecimento das dinâmicas deste setor.</p>
 <p>Nosso foco é proporcionar agilidade e eficiência nas negociações, aproveitando nossa expertise para identificar as melhores oportunidades de negócios para nossos clientes. Oferecemos serviços que priorizam a confiança e a satisfação.</p>
-<div class="team"><div class="c"><h4>Wilson Rodrigues</h4><p>Sócio-diretor · CRECI 69.228</p></div><div class="c"><h4>Yoko</h4><p>Sócia · CRECI 42.877</p></div></div>
+<div class="team"><div class="c"><h4>Wilson Rodrigues</h4><p>Sócio-diretor · CRECI 69.228</p></div><div class="c"><h4>Yoko</h4><p>Sócia · CRECI 81.771</p></div></div>
 </div></section>
 {band()}</main>'''
     pg += footer()
