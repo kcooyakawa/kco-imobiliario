@@ -699,7 +699,7 @@ def render(wa, way, BASE, u):
 <div><span class="mono">Landing page</span><b>a partir de R$ 2.500</b></div>
 <div><span class="mono">Identidade e book</span><b>a partir de R$ 6.000</b></div>
 </div>
-<p class="z3-note"><b style="color:var(--tx);font-weight:500">É dono do imóvel que quer vender?</b> Você paga a campanha e, quando o imóvel for vendido pela W3W, devolvemos esse valor como desconto na comissão de venda. <a href="{prop}" target="_blank" rel="noopener" style="color:var(--ac)">Saiba mais →</a></p>
+
 </section>
 
 <section class="z3-faq"><div class="z3-in z3-fg">
