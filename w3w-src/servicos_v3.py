@@ -69,8 +69,6 @@ body:has(.z3){background:#05070B}
 .z3-prog i{position:absolute;inset:0;background:var(--tx);transform-origin:left;transform:scaleX(0)}
 .z3-track{display:flex;gap:2vw;padding:0 clamp(20px,5vw,72px);will-change:transform}
 .z3-card{position:relative;flex:0 0 min(78vw,620px);height:min(64svh,620px);border-radius:24px;overflow:hidden;background:var(--bg2);border:1px solid var(--ln)}
-.z3-card img{position:absolute;inset:0;width:120%;height:100%;object-fit:cover;filter:saturate(.7) brightness(.5);transition:filter .8s var(--e),transform .8s var(--e);will-change:transform}
-.z3-card:hover img{filter:saturate(1) brightness(.62)}
 .z3-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(5,7,11,.95))}
 .z3-cin{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(22px,3vw,40px)}
 .z3-cin .n{font:200 clamp(80px,10vw,150px)/.8 var(--serif);font-style:italic;color:var(--ac);opacity:.85}
@@ -124,7 +122,6 @@ body:has(.z3){background:#05070B}
 .z3-note{margin-top:22px;color:var(--tx3);font-size:13px}
 /* final */
 .z3-end{position:relative;padding:24vh clamp(20px,5vw,72px);overflow:hidden;text-align:center}
-.z3-end .big{font:300 clamp(64px,15vw,260px)/.82 var(--sans);letter-spacing:-.06em;background:url("%I/la-galerie-moema/voo.jpg") center/cover;-webkit-background-clip:text;background-clip:text;color:transparent;margin:0;will-change:background-position}
 .z3-end p{color:var(--tx2);font-size:19px;margin:34px auto 38px;max-width:46ch}
 .z3-end .z3-cta{justify-content:center}
 .rv{opacity:0;transform:translateY(40px);transition:opacity 1s var(--e),transform 1s var(--e)}
@@ -142,6 +139,69 @@ body:has(.z3){background:#05070B}
 .z3 h1 .ln>span,.z3-hsub,.rv,.z3-row,.z3-chip{transform:none;opacity:1}
 .z3-man .w{opacity:1}
 }
+
+/* header e rodapé escuros nesta página */
+body:has(.z3) .hd svg,body:has(.z3) .hd svg *{fill:#EEF2F8!important;color:#EEF2F8!important}
+body:has(.z3) .hd .brand *{color:#8A94A6!important}
+body:has(.z3) .hd{background:rgba(10,12,16,.82);border-bottom:1px solid rgba(238,242,248,.08);color:#EEF2F8}
+body:has(.z3) .hd a,body:has(.z3) .hd button,body:has(.z3) .hd .brand{color:#EEF2F8}
+body:has(.z3) .hd [class*=cta],body:has(.z3) .hd a[class*=btn]{border-color:rgba(238,242,248,.35)!important;color:#EEF2F8!important;background:transparent!important}
+body:has(.z3) .hd span,body:has(.z3) .hd small{color:#8A94A6}
+body:has(.z3) .hd button span,body:has(.z3) .hd button i{background:#EEF2F8}
+body:has(.z3) .ft{background:#05070B;border-top:1px solid rgba(238,242,248,.06)}
+body:has(.z3) .ft-n a{font-size:10.5px!important;font-weight:300!important;letter-spacing:.22em!important;color:#8A94A6!important}
+body:has(.z3) .ft-n a:hover{color:#EEF2F8!important}
+body:has(.z3) .ft-c a{font-size:13px!important;font-weight:300!important;letter-spacing:.04em!important;color:#8A94A6!important}
+body:has(.z3) .ft-bot{font-size:9px!important;font-weight:300;letter-spacing:.2em!important;opacity:.6}
+body:has(.z3) .ft-kco{font-size:9px!important;opacity:.45}
+body:has(.z3) .ft .brand svg{opacity:.7;transform:scale(.85)}
+/* mockups dos serviços */
+.z3-card{background:radial-gradient(120% 80% at 70% 0%,rgba(156,203,255,.12),transparent 60%),#0A0E15}
+.z3-card::after{display:none}
+.z3-cin{justify-content:flex-end}
+.z3-k{position:absolute;top:clamp(20px,2.6vw,32px);left:clamp(22px,3vw,40px);z-index:3;font:500 11px var(--mono);letter-spacing:.14em;color:var(--ac)}
+.z3-vis{position:absolute;left:0;right:0;top:0;height:58%;display:grid;place-items:center;pointer-events:none}
+.z3-vis img{position:static;width:100%;height:100%;object-fit:cover;filter:none;transform:none!important}
+.z3-ph{width:min(46%,210px);aspect-ratio:9/17;border-radius:26px;border:1px solid rgba(238,242,248,.18);background:#0d1118;padding:8px;box-shadow:0 30px 60px -20px #000;transform:rotate(-4deg) translateY(12%)}
+.z3-ph .sc{border-radius:19px;overflow:hidden;height:100%;background:#fff;display:flex;flex-direction:column;color:#111;font:11px var(--sans)}
+.z3-ph .tp{display:flex;align-items:center;gap:6px;padding:8px}
+.z3-ph .tp i{width:18px;height:18px;border-radius:50%;background:#111}
+.z3-ph .tp small{display:block;color:#888;font-size:9px}
+.z3-ph .im{flex:1;overflow:hidden}
+.z3-ph .bt{display:flex;justify-content:space-between;padding:8px;background:#1D6FE8;color:#fff;font-weight:500}
+.z3-chip2{position:absolute;padding:8px 11px;border-radius:10px;background:rgba(11,15,23,.85);border:1px solid var(--ln);font:500 10px var(--mono);letter-spacing:.06em;color:var(--tx2);backdrop-filter:blur(8px)}
+.z3-chip2 b{color:var(--ok);font-weight:500}
+.z3-wa{width:min(80%,330px);display:grid;gap:8px;transform:translateY(8%)}
+.z3-wa .m{background:#13221c;border:1px solid rgba(123,224,179,.2);border-radius:14px 14px 14px 4px;padding:12px 14px;font:13px/1.45 var(--sans);color:#d8efe5}
+.z3-wa .m b{color:#7BE0B3;font:500 10px var(--mono);letter-spacing:.1em;display:block;margin-bottom:6px}
+.z3-wa .m.c{display:grid;grid-template-columns:62px 1fr;gap:10px;align-items:center}
+.z3-wa .m.c img{width:62px;height:62px;border-radius:8px}
+.z3-wa time{font:10px var(--mono);color:var(--tx3);justify-self:end}
+.z3-fan{position:relative;width:70%;height:78%}
+.z3-fan div{position:absolute;top:10%;width:52%;aspect-ratio:4/5;border-radius:12px;overflow:hidden;box-shadow:0 24px 50px -16px #000;border:1px solid rgba(238,242,248,.12)}
+.z3-fan div:nth-child(1){left:0;transform:rotate(-9deg)}
+.z3-fan div:nth-child(2){left:24%;transform:translateY(-6%);z-index:2}
+.z3-fan div:nth-child(3){left:48%;transform:rotate(9deg)}
+.z3-fan span{position:absolute;left:10px;right:10px;bottom:10px;font:300 15px/1.05 var(--serif);font-style:italic;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.z3-br{width:min(84%,400px);border-radius:12px;overflow:hidden;border:1px solid rgba(238,242,248,.16);background:#0d1118;box-shadow:0 30px 60px -20px #000;transform:perspective(900px) rotateX(8deg) translateY(10%)}
+.z3-br .bar{display:flex;gap:5px;align-items:center;padding:9px 12px;border-bottom:1px solid var(--ln)}
+.z3-br .bar i{width:7px;height:7px;border-radius:50%;background:rgba(238,242,248,.2)}
+.z3-br .bar span{margin-left:10px;font:10px var(--mono);color:var(--tx3)}
+.z3-br .hero{height:120px;position:relative}
+.z3-br .hero b{position:absolute;left:14px;bottom:12px;font:300 20px/1 var(--sans);color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+.z3-br .bd{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;gap:10px}
+.z3-br .bd small{font:10px var(--mono);color:var(--tx2)}
+.z3-br .bd em{font:500 11px var(--sans);font-style:normal;color:#05070B;background:var(--tx);padding:7px 11px;border-radius:999px}
+/* final */
+.z3-end{padding:16vh clamp(20px,5vw,72px) 14vh!important;text-align:left!important;border-top:1px solid var(--ln)}
+.z3-end::before{content:"";position:absolute;right:-10%;top:-30%;width:70vw;height:70vw;border-radius:50%;background:radial-gradient(circle,rgba(156,203,255,.12),transparent 60%);pointer-events:none}
+.z3-endg{position:relative;display:grid;grid-template-columns:1.4fr 1fr;gap:6vw;align-items:end}
+.z3-end h2{font:300 clamp(56px,9vw,150px)/.9 var(--sans)!important;letter-spacing:-.05em!important;margin:0!important;color:var(--tx)}
+.z3-end h2 em{display:block}
+.z3-end ul{list-style:none;padding:0;margin:0 0 30px;display:grid;gap:0;border-top:1px solid var(--ln)}
+.z3-end li{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--ln);color:var(--tx2);font-size:15px}
+.z3-end li span{font:500 11px var(--mono);color:var(--ac);padding-top:3px}
+@media (max-width:900px){.z3-endg{grid-template-columns:1fr}}
 </style>
 """
 
@@ -173,7 +233,7 @@ if(R){ws.forEach(w=>w.classList.add('on'));return}
 const g=$('.z3-glow');let gx=-999,gy=-999,cx=-999,cy=-999;
 if(matchMedia('(hover:hover)').matches)addEventListener('pointermove',e=>{gx=e.clientX;gy=e.clientY});
 /* scroll loop */
-const hero=$('.z3-hero'),bg=$('.z3-bg'),hin=$('.z3-hin'),hud=$('.z3-hud'),hz=$('.z3-hz'),tr=$('.z3-track'),pg=$('.z3-prog i'),man=$('.z3-man'),end=$('.z3-end .big'),imgs=$$('.z3-card img');
+const hero=$('.z3-hero'),bg=$('.z3-bg'),hin=$('.z3-hin'),hud=$('.z3-hud'),hz=$('.z3-hz'),tr=$('.z3-track'),pg=$('.z3-prog i'),man=$('.z3-man'),imgs=[];
 const size=()=>{hz.style.height=(tr.scrollWidth-innerWidth+innerHeight)+'px'};size();addEventListener('resize',size);
 const loop=()=>{const vh=innerHeight;
 let r=hero.getBoundingClientRect(),p=Math.min(Math.max(-r.top/(r.height-vh),0),1);
@@ -181,7 +241,7 @@ bg.style.transform=`scale(${1.15-p*.12}) translateY(${p*6}%)`;hin.style.transfor
 r=hz.getBoundingClientRect();p=Math.min(Math.max(-r.top/(r.height-vh),0),1);const d=tr.scrollWidth-innerWidth;tr.style.transform=`translateX(${-p*d}px)`;pg.style.transform=`scaleX(${p})`;
 imgs.forEach((im,i)=>{const b=im.parentNode.getBoundingClientRect(),q=(b.left+b.width/2)/innerWidth-.5;im.style.transform=`translateX(${-q*12-8}%)`});
 r=man.getBoundingClientRect();p=Math.min(Math.max((vh*.85-r.top)/(r.height*.8),0),1);const n=Math.floor(p*ws.length);ws.forEach((w,i)=>w.classList.toggle('on',i<n));
-r=end.getBoundingClientRect();end.style.backgroundPosition=`center ${50+(r.top/vh-.5)*40}%`;
+
 cx+=(gx-cx)*.12;cy+=(gy-cy)*.12;g.style.transform=`translate3d(${cx}px,${cy}px,0)`;
 requestAnimationFrame(loop)};requestAnimationFrame(loop);
 })();
@@ -202,13 +262,20 @@ def render(wa, way, BASE, u):
         a = w.startswith('*')
         words.append(f'<span class="w{" a" if a else ""}">{w.strip("*")}</span>')
     man_html = ' '.join(words)
+    I = IMG
+    vis = {
+        '01': f"""<div class="z3-ph"><div class="sc"><div class="tp"><i></i><div><b>w3wimoveis</b><small>Patrocinado</small></div></div><div class="im"><img src="{I}/agami-park-residences/fachada.jpg" alt=""></div><div class="bt">Quero mais informações<span>›</span></div></div></div><div class="z3-chip2" style="left:8%;top:22%">Público · <b>Moema + 5 km</b></div><div class="z3-chip2" style="right:8%;top:52%">Verba · <b>por produto</b></div>""",
+        '02': f"""<div class="z3-wa"><div class="m"><b>NOVO LEAD · PRIORIDADE A</b>Mariana, 41 · quer morar com a família · decide em até 6 meses.</div><div class="m c"><img src="{I}/agami-park-residences/terraco.jpg" alt=""><div>Cobertura 1.184 m²<br><small style="color:#8fb9a6">Veio do Instagram · Coberturas</small></div></div><time>agora</time></div>""",
+        '03': f"""<div class="z3-fan"><div><img src="{I}/la-galerie-moema/lazer-1.jpg" alt=""></div><div><img src="{I}/agami-park-residences/lobby.jpg" alt=""><span>Viver acima<br>do comum.</span></div><div><img src="{I}/agami-park-residences/par-2.jpg" alt=""></div></div>""",
+        '04': f"""<div class="z3-br"><div class="bar"><i></i><i></i><i></i><span>w3w.imb/agami</span></div><div class="hero"><img src="{I}/agami-park-residences/voo.jpg" alt=""><b>Agami Park Residences</b></div><div class="bd"><small>Studios a coberturas · Moema</small><em>Quero mais informações</em></div></div>""",
+    }
     cards = [
-        ('01', 'Tráfego por produto', 'Meta e Google Ads com estratégia, públicos, verba e otimização próprios para cada empreendimento.', ['Meta Ads', 'Google Ads', 'Relatório de visitas'], 'agami-park-residences/fachada.jpg'),
-        ('02', 'Lead Dossiê', 'Triagem, score e roteiro de abordagem de cada lead, entregues no WhatsApp do corretor com o card do imóvel.', ['Score A/B/C', 'Roteiro', 'LGPD'], 'agami-park-residences/lobby.jpg'),
-        ('03', 'Direção de arte', 'Identidade, naming, book, tratamento de imagem, carrosséis, reels e vídeo com padrão de agência.', ['Identidade', 'Book', 'Vídeo'], 'la-galerie-moema/lazer-1.jpg'),
-        ('04', 'Landing page e hub', 'Página do produto com triagem e card para WhatsApp, e o hub com textos, fichas e imagens para o time.', ['Landing page', 'Triagem', 'Hub de vendas'], 'agami-park-residences/terraco.jpg'),
+        ('01', 'Mídia', 'Tráfego por produto', 'Meta e Google Ads com estratégia, públicos, verba e otimização próprios para cada empreendimento.', ['Meta Ads', 'Google Ads', 'Relatório de visitas']),
+        ('02', 'Dados', 'Lead Dossiê', 'Triagem, score e roteiro de abordagem de cada lead, entregues no WhatsApp do corretor com o card do imóvel.', ['Score A/B/C', 'Roteiro', 'LGPD']),
+        ('03', 'Criação', 'Direção de arte', 'Identidade, naming, book, tratamento de imagem, carrosséis, reels e vídeo com padrão de agência.', ['Identidade', 'Book', 'Vídeo']),
+        ('04', 'Plataforma', 'Landing page e hub', 'Página do produto com triagem e card para WhatsApp, e o hub com textos, fichas e imagens para o time.', ['Landing page', 'Triagem', 'Hub de vendas']),
     ]
-    cards_html = ''.join(f'''<article class="z3-card"><img src="{IMG}/{img}" alt="" loading="lazy" decoding="async"><div class="z3-cin"><div class="n">{n}</div><div><h3>{t}</h3><p>{d}</p><div class="z3-tags">{''.join(f'<span>{x}</span>' for x in tg)}</div></div></div></article>''' for n, t, d, tg, img in cards)
+    cards_html = ''.join(f'''<article class="z3-card"><span class="z3-k">{n} — {k}</span><div class="z3-vis" aria-hidden="true">{vis[n]}</div><div class="z3-cin"><div><h3>{t}</h3><p>{d}</p><div class="z3-tags">{''.join(f'<span>{x}</span>' for x in tg)}</div></div></div></article>''' for n, k, t, d, tg in cards)
     plan = lambda i, nome, itens, hot=False: f'''<div class="z3-plan{' hot' if hot else ''} rv"><h3>{nome}</h3><div class="z3-pr">R$ <span data-i="{i}">{fm(m[i])}</span><small> /mês por campanha</small></div><ul>{''.join(f'<li>{x}</li>' for x in itens)}</ul><a class="z3-btn {'p' if hot else 's'}" href="{wa('Olá! Quero contratar o plano ' + nome + ' da W3W.')}" target="_blank" rel="noopener">Quero este plano</a></div>'''
     mq = ''.join(f'<span>{x}</span>' for x in ['Tráfego', 'por produto', 'Direção de arte', 'assinada', 'Lead Dossiê', 'antes do olá', 'Moema', 'desde 2004'] * 2)
     css = CSS.replace('%I', IMG)
@@ -269,7 +336,8 @@ def render(wa, way, BASE, u):
 <p class="z3-note">Verba de mídia paga direto ao Meta e ao Google. Proprietário: invista na campanha e, se vender com a W3W, o valor é descontado da comissão. <a href="{prop}" target="_blank" rel="noopener" style="color:var(--ac)">Saiba mais →</a></p>
 </section>
 
-<section class="z3-end"><h2 class="big">Vamos<br>vender.</h2><p>Do jeito certo: campanha própria, criação assinada e atendimento de quem conhece Moema.</p>
-<div class="z3-cta"><a class="z3-btn p" href="{contato}" target="_blank" rel="noopener">Falar com a W3W →</a><a class="z3-btn s" href="{BASE}/#imoveis">Ver a vitrine</a></div></section>
+<section class="z3-end"><div class="z3-endg"><h2 class="rv">Vamos<br>vender <em>do jeito certo.</em></h2>
+<div class="rv"><ul><li><span>01</span>Campanha própria para o seu imóvel</li><li><span>02</span>Criação assinada por Head of Art</li><li><span>03</span>Atendimento de quem conhece Moema</li></ul>
+<div class="z3-cta"><a class="z3-btn p" href="{contato}" target="_blank" rel="noopener">Falar com a W3W →</a><a class="z3-btn s" href="{BASE}/#imoveis">Ver a vitrine</a></div></div></div></section>
 </main>
 ''' + JS
