@@ -902,8 +902,7 @@ def build_home():
 <div class="qsh-t"><p class="qsh-l">Nossa trajetória de mais de 20 anos de experiência no mercado imobiliário nos permitiu construir uma rede sólida de relacionamentos e adquirir um profundo conhecimento das dinâmicas deste setor.</p>
 <p class="qsh-s">Nosso foco é proporcionar agilidade e eficiência nas negociações, aproveitando nossa expertise para identificar as melhores oportunidades de negócios para nossos clientes. Oferecemos serviços que priorizam a confiança e a satisfação.</p>
 <div class="qsh-p"><div><h3>Wilson Rodrigues</h3><span class="eyebrow">Sócio-diretor · CRECI 69.228</span></div>
-<div><h3>Marli Oyakawa (Yoko)</h3><span class="eyebrow">Sócia · CRECI 42.877</span></div></div>
-<a class="btn light" href="{u('quem-somos')}">Missão, visão e valores</a></div></div></div></section>
+<div><h3>Marli Oyakawa (Yoko)</h3><span class="eyebrow">Sócia · CRECI 42.877</span></div></div></div></div></div></section>
 
 <section class="cafe" id="contato"><div class="wrap cafe-g">
 <div><span class="eyebrow">Contato</span><h2>Vamos tomar<br><em>um café?</em></h2>
@@ -1002,11 +1001,7 @@ document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click
 <p>Nosso foco é proporcionar agilidade e eficiência nas negociações, aproveitando nossa expertise para identificar as melhores oportunidades de negócios para nossos clientes. Oferecemos serviços que priorizam a confiança e a satisfação.</p>
 <div class="team"><div class="c"><h4>Wilson Rodrigues</h4><p>Sócio-diretor · CRECI 69.228</p></div><div class="c"><h4>Marli Oyakawa (Yoko)</h4><p>Sócia · CRECI 42.877</p></div></div>
 </div></section>
-<section class="sec" style="padding-top:0"><div class="wrap"><div class="sec-hd"><h2>Missão, Visão e Valores</h2></div><div class="mvv">
-<div class="c"><h3>Missão</h3><p>Entender as necessidades dos nossos clientes para apresentar oportunidades de negócios personalizadas que superem suas expectativas, proporcionando decisões informadas e seguras.</p></div>
-<div class="c"><h3>Visão</h3><p>Ser reconhecida como uma empresa que torna o processo de compra e venda de imóveis uma experiência gratificante e memorável.</p></div>
-<div class="c full"><h3>Valores</h3><ul><li>Clareza e Honestidade: mantemos uma comunicação transparente em todas as etapas do nosso processo de atendimento, construindo relacionamentos de confiança.</li><li>Foco na Satisfação do Cliente: buscamos maneiras de exceder suas expectativas.</li><li>Ética em Nossos Relacionamentos: agimos com integridade, respeitando todos os envolvidos nas negociações.</li><li>Respeito às Diferenças Sociais: tratamos clientes e parceiros com dignidade.</li></ul></div>
-</div></div></section>{band()}</main>'''
+{band()}</main>'''
     pg += footer()
     write('quem-somos/index.html', pg)
 
