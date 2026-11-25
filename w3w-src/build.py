@@ -646,7 +646,7 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .pf-q input{border:0;background:transparent;font:500 13px var(--sans);color:var(--ink);width:100%;outline:0}
 .pf-q:focus-within{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.08),0 3px 10px rgba(0,0,0,.06)}
 .pf-empty{grid-column:1/-1;padding:40px 0;color:var(--ink-2);font-size:15px}
-@media(max-width:767px){.pf-q{flex:0 0 220px}}
+@media(max-width:767px){.pf-q{flex:0 0 190px!important;max-width:190px!important}}
 
 /* Guia Moema */
 .gm-hero{padding:150px 0 40px}.gm-hero h1{font-family:var(--serif);font-weight:200;font-size:clamp(44px,7vw,96px);line-height:1;letter-spacing:-.02em;margin:14px 0 18px}.gm-hero h1 em{font-style:italic}
@@ -782,7 +782,7 @@ ORG = {"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "W3
 _LOC = os.path.exists(os.path.join(ROOT, '..', 'w3w-img', 'site', 'v', 'torre.mp4'))
 SITE = 'https://kcooyakawa.github.io/kco-imobiliario/w3w-img/site' if _LOC else 'https://w3wlp.netlify.app'
 VID = SITE + '/v'
-CATS = [('', 'Todos'), ('casas', 'Casas'), ('studios', 'Studios'), ('apartamentos', 'Apartamentos'), ('alto-padrao', 'Alto padrão')]
+CATS = [('', 'Todos'), ('studios', 'Studios'), ('apartamentos', 'Apartamentos'), ('alto-padrao', 'Alto padrão'), ('coberturas', 'Coberturas'), ('casas', 'Casas')]
 
 def th(x):
     """versão leve (760px) para cards e miniaturas"""
@@ -854,6 +854,20 @@ def expand(lst):
         b['resumo']['tipologias']='Studios'
         b['ficha']['destaques']=[[b['resumo']['metragem'],'studios'],['Studio','tipologia']]+[d for d in e['ficha'].get('destaques',[]) if 'unidade' not in d[1].lower() and 'm²' not in d[0]][:2]
         out.append(b)
+    return out + coberturas(lst)
+
+def coberturas(lst):
+    out=[]
+    for e in lst:
+        rows=[r for r in ((e.get('ficha') or {}).get('plantas') or []) if re.search(r'cobert|penthouse|triplex|duplex', r[0], re.I) and not re.search(r'garden', r[0], re.I)]
+        if not rows: continue
+        c=copy.deepcopy(e); c['ficha']['plantas']=rows; c['slug']=e['slug']+'-coberturas'; c['_page']=e['slug']; c['_only']='coberturas'
+        c['nome']=e['nome']+' · '+('Coberturas' if len(rows)>1 else 'Cobertura'); c['categorias']=['coberturas']
+        c['resumo']['metragem']=_rng(rows) or rows[0][1]; c['ficha']['faixa']=c['resumo']['metragem']; c['ficha']['plantas_tit']='coberturas e duplex.'
+        su=[r[2] for r in rows if r[2] and r[2]!='Sob consulta']; vg=[r[3] for r in rows if r[3] and r[3]!='Sob consulta']
+        c['resumo']['tipologias']=(su[0] if su else 'Cobertura'); c['resumo']['vagas']=(vg[0] if vg else '')
+        c['ficha']['destaques']=[[c['resumo']['metragem'],'cobertura']]+([[su[0],'suítes']] if su else [])+([[vg[0],'vagas']] if vg else [])+[[str(len(rows)),'tipologia(s) de cobertura']]
+        out.append(c)
     return out
 
 def mmax(e):
@@ -872,7 +886,7 @@ def _old_score(e):
 def gcard(e, i):
     r = e['resumo']; ms, ma = mt(e)
     sub = f'<small class="gs">+ studios {esc(ms)}</small>' if ms and ma else ''
-    return f"""<a class="g" href="{u('empreendimentos/'+e.get('_page',e['slug']))}" data-q="{qidx(e)}" data-slug="{e['slug']}" data-cat="{' '.join(e['categorias'])}" data-b="{'moema' if e.get('vitrine') else e['bairro_slug']}" data-st="{e['status']}" data-ms="{esc(ms)}" data-ma="{esc(ma)}">
+    return f"""<a class="g" href="{u('empreendimentos/'+e.get('_page',e['slug']))}" data-q="{qidx(e)}" data-slug="{e['slug']}" data-cat="{' '.join(e['categorias'])}" data-b="{e['bairro_slug']}"{f' data-only="{e["_only"]}"' if e.get('_only') else ''} data-st="{e['status']}" data-ms="{esc(ms)}" data-ma="{esc(ma)}">
 <div class="ph"><span class="pf-st st-{e['status'].split()[0].lower().replace('ç','c')}">{selo(e)}</span><span class="pf-ov"><em>{esc(e['nome'])}</em><small>Ver ficha →</small></span><img src="{th(e['img'])}" alt="{esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async">{strip(e)}</div>
 <div class="gi"><span class="n" hidden>{i:02d}</span><strong class="gm">{esc(ma or ms)}</strong>{sub}<h3>{esc(e['nome'])}</h3><p>{esc(e['bairro'])} · {esc(e['status'])}</p></div></a>"""
 
@@ -925,7 +939,7 @@ def rich(e, h='h2'):
 def feat():
     global VIT
     VIT = expand(EM)
-    fs = [e for e in sorted(VIT, key=score) if e.get('ficha') and 'studios' not in e['categorias']][:3]
+    fs = [e for e in sorted(VIT, key=score) if e.get('ficha') and 'studios' not in e['categorias'] and not e.get('_only')][:3]
     cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e.get("_page",e["slug"]))}" data-slug="{e["slug"]}"><div class="ph"><img src="{th(e.get("vitrine") or e["img"])}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="vt-t"><small>{e["status"]} · {esc(e["bairro"])}</small><b class="vt-m">{esc(mt(e)[1] or mt(e)[0])}</b><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
     return f'<div class="pf-feat">{cards}</div>'
 
@@ -957,7 +971,7 @@ def build_home():
 
 <section class="pf" id="imoveis"><div class="wrap">
 <div class="pf-hd2"><div><span class="eyebrow">Galeria W3W</span><h2>Imóveis <em>selecionados.</em></h2></div><span class="pf-n"></span></div>
-<div class="pf-bar"><div class="pf-bar-in"><label class="pf-q"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pfq" type="search" placeholder="Nome, bairro ou construtora" autocomplete="off" aria-label="Buscar imóveis"></label><div class="seg" data-k="b" role="group"><button data-v="moema" aria-pressed="true">Moema</button></div>{''.join(['<div class="seg" data-k="c" role="group">']+[f'<button data-v="{v}" aria-pressed="{"true" if v=="" else "false"}">{l}</button>' for v,l in CATS]+['</div>'])}<div class="seg" data-k="s" role="group"><button data-v="" aria-pressed="true">Todas</button><button data-v="Lançamento" aria-pressed="false">Lançamento</button><button data-v="Em obras" aria-pressed="false">Em obras</button><button data-v="Pronto" aria-pressed="false">Pronto</button></div></div></div>
+<div class="pf-bar"><div class="pf-bar-in"><label class="pf-q"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pfq" type="search" placeholder="Nome, bairro ou construtora" autocomplete="off" aria-label="Buscar imóveis"></label><div class="seg" data-k="b" role="group"><button data-v="" aria-pressed="true">Todos</button><button data-v="moema" aria-pressed="false">Moema</button></div>{''.join(['<div class="seg" data-k="c" role="group">']+[f'<button data-v="{v}" aria-pressed="{"true" if v=="" else "false"}">{l}</button>' for v,l in CATS]+['</div>'])}<div class="seg" data-k="s" role="group"><button data-v="" aria-pressed="true">Todas</button><button data-v="Lançamento" aria-pressed="false">Lançamento</button><button data-v="Em obras" aria-pressed="false">Em obras</button><button data-v="Pronto" aria-pressed="false">Pronto</button></div></div></div>
 {feat()}<div class="pf-grid">{''.join(gcard(e, i+1) for i, e in enumerate(sorted(VIT, key=score)))}</div>
 <div class="more"><button class="btn" id="more">Ver mais imóveis</button></div>
 </div></section>
@@ -985,8 +999,8 @@ def build_home():
 {''.join(f'<template id="fx-{e[chr(115)+chr(108)+chr(117)+chr(103)]}">'+rich(e)+'</template>' for e in VIT if e.get('ficha'))}
 <script>window.W3W={json.dumps(ficha_data(), ensure_ascii=False)};window.W3W_WA='{WA}';window.W3W_YOKO='{WA_YOKO}';window.W3W_BASE='{BASE}';</script>
 <script src="{BASE}/assets/sheet.js?v={VER}" defer></script>
-<script>(function(){{var qq='',st={{b:'moema',c:'',s:''}},lim=9999,all=[].slice.call(document.querySelectorAll('.pf-grid .g')),more=document.getElementById('more'),num=document.querySelector('.pf-n');
-function ap(){{var v=all.filter(function(g){{return (!st.b||(st.b==='moema'?g.dataset.b==='moema':g.dataset.b!=='moema'))&&(!st.c||g.dataset.cat.split(' ').indexOf(st.c)>-1)&&(!st.s||g.dataset.st===st.s)&&(!qq||qq.split(' ').every(function(w){{return g.dataset.q.indexOf(w)>-1}}))}});all.forEach(function(g){{g.hidden=true}});all.forEach(function(g){{var m=g.querySelector('.gm'),x=g.querySelector('.gs'),S=g.dataset.ms,A=g.dataset.ma;if(!m)return;if(st.c==='studios'&&S){{m.textContent=S;if(x)x.hidden=true}}else if((st.c==='apartamentos'||st.c==='alto-padrao')&&A){{m.textContent=A;if(x)x.hidden=true}}else{{m.textContent=A||S;if(x)x.hidden=false}}}});v.forEach(function(g,i){{g.hidden=i>=lim;g.querySelector('.n').textContent=String(i+1).padStart(2,'0')}});num.textContent=v.length+(v.length===1?' imóvel':' imóveis');more.parentNode.hidden=v.length<=lim}}
+<script>(function(){{var qq='',st={{b:'',c:'',s:''}},lim=9999,all=[].slice.call(document.querySelectorAll('.pf-grid .g')),more=document.getElementById('more'),num=document.querySelector('.pf-n');
+function ap(){{var v=all.filter(function(g){{return (!g.dataset.only||st.c===g.dataset.only)&&(!st.b||g.dataset.b===st.b)&&(!st.c||g.dataset.cat.split(' ').indexOf(st.c)>-1)&&(!st.s||g.dataset.st===st.s)&&(!qq||qq.split(' ').every(function(w){{return g.dataset.q.indexOf(w)>-1}}))}});all.forEach(function(g){{g.hidden=true}});all.forEach(function(g){{var m=g.querySelector('.gm'),x=g.querySelector('.gs'),S=g.dataset.ms,A=g.dataset.ma;if(!m)return;if(st.c==='studios'&&S){{m.textContent=S;if(x)x.hidden=true}}else if((st.c==='apartamentos'||st.c==='alto-padrao')&&A){{m.textContent=A;if(x)x.hidden=true}}else{{m.textContent=A||S;if(x)x.hidden=false}}}});v.forEach(function(g,i){{g.hidden=i>=lim;g.querySelector('.n').textContent=String(i+1).padStart(2,'0')}});num.textContent=v.length+(v.length===1?' imóvel':' imóveis');more.parentNode.hidden=v.length<=lim}}
 document.querySelectorAll('.pf-bar .seg').forEach(function(gr){{gr.querySelectorAll('button').forEach(function(b){{b.onclick=function(){{gr.querySelectorAll('button').forEach(function(x){{x.setAttribute('aria-pressed','false')}});b.setAttribute('aria-pressed','true');st[gr.dataset.k]=b.dataset.v;ap()}}}})}});
 more.onclick=function(){{lim+=16;ap()}};var qi=document.getElementById('pfq');qi.oninput=function(){{qq=qi.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();if(qq){{st.b='';}}else{{st.b=document.querySelector('.seg[data-k=b] [aria-pressed=true]').dataset.v}};ap()}};ap();
 var h=document.querySelector('.hd.over');function sc(){{h.classList.toggle('solid',scrollY>window.innerHeight*.6)}}addEventListener('scroll',sc,{{passive:true}});sc();
