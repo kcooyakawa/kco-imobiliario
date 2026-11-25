@@ -1,8 +1,786 @@
 {
-"atualizado": "2026-11-25T06:15-03:00",
+"atualizado": "2026-11-25T06:34-03:00",
 "fonte": "© colaboradores do OpenStreetMap · Foursquare",
-"total": 2038,
+"total": 1940,
 "locais": [
+{
+"id": "n4214261189",
+"nome": "Bar do Juarez",
+"cat": "bares",
+"lat": -23.590001,
+"lon": -46.680388,
+"horario": "Mo-Su 12:00-01:00",
+"h24": false,
+"end": "Av. Pres. Juscelino Kubitschek, 1164",
+"tel": "(11) 3078-3458",
+"site": "https://www.bardojuarez.com.br",
+"insta": "",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f50808fd0e4b0134247d7055b",
+"nome": "Bardega",
+"cat": "bares",
+"lat": -23.590473,
+"lon": -46.674421,
+"horario": "Tu,We,Th,Fr,Sa 18:30-01:00",
+"h24": false,
+"end": "R. Dr. Alceu de Campos Rodrigues, 218",
+"tel": "(11) 2691-7578",
+"site": "https://bardega.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "n9969076355",
+"nome": "Bourbon Street Music Club",
+"cat": "bares",
+"lat": -23.612653,
+"lon": -46.668951,
+"horario": "Tu-Su 19:30-02:00",
+"h24": false,
+"end": "Rua dos Chanés 127",
+"tel": "+55 11 5095 6100",
+"site": "https://www.bourbonstreet.com.br",
+"insta": "",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f5442d69e498eb4249672d239",
+"nome": "La Fraternité",
+"cat": "bares",
+"lat": -23.60813,
+"lon": -46.670027,
+"horario": "Tu-Fr 17:00-20:00; Sa 14:00-16:00; Tu-Fr 17:00-00:00; Sa 14:00-00:30",
+"h24": false,
+"end": "Al. Jauaperi, 1413",
+"tel": "(11) 99878-8606",
+"site": "https://www.lafraternite.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f4beedc262c082d7f58ff3042",
+"nome": "Saint Vin Saint",
+"cat": "bares",
+"lat": -23.594374,
+"lon": -46.679059,
+"horario": "Mo-Fr 12:00-15:00; Mo-Sa 19:00-00:00",
+"h24": false,
+"end": "Rua Professor Atílio Innocenti, 811",
+"tel": "(11) 3846-0384",
+"site": "https://www.saintvinsaint.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f4bc6606251b376b008881b6f",
+"nome": "Sí Señor! El Auténtico",
+"cat": "bares",
+"lat": -23.602591,
+"lon": -46.665122,
+"horario": "Mo,Tu,We,Th 12:15-15:00; Mo,Tu,We,Th 17:00-23:00; Fr 12:00-15:00; Fr 17:00-00:00; Sa 12:00-00:00; Su 12:00-23:00",
+"h24": false,
+"end": "Al. Jauaperi, 626",
+"tel": "(11) 3476-4650",
+"site": "https://www.sisenor.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f530d0215498eb63e492780a7",
+"nome": "Bolo ao Forno",
+"cat": "cafes",
+"lat": -23.595563,
+"lon": -46.668485,
+"horario": "Mo-Fr 08:00-18:00; Sa 08:30-14:00",
+"h24": false,
+"end": "Rua Afonso Braz, 493A",
+"tel": "(11) 3564-0547",
+"site": "https://boloaoforno.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "w1107535725",
+"nome": "Café Journal",
+"cat": "cafes",
+"lat": -23.608953,
+"lon": -46.659476,
+"horario": "Mo-Sa 12:00-00:00",
+"h24": false,
+"end": "Alameda dos Anapurús",
+"tel": "(11) 5055-9454",
+"site": "https://www.cafejournal.com.br",
+"insta": "",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "n12750164559",
+"nome": "Le Pain Quotidien",
+"cat": "cafes",
+"lat": -23.5948,
+"lon": -46.671887,
+"horario": "Mo-Su 07:00-22:00",
+"h24": false,
+"end": "Rua Jacques Felix 752",
+"tel": "+55 11 38490835",
+"site": "https://www.lepainquotidien.com/br/pt",
+"insta": "",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f4ebc503a30f88739f46f8e79",
+"nome": "Piadina Tree",
+"cat": "cafes",
+"lat": -23.601383,
+"lon": -46.662151,
+"horario": "Su 11:00-23:00",
+"h24": false,
+"end": "Av. Juriti, 629",
+"tel": "(11) 3628-7316",
+"site": "https://www.piadinatree.com",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f4b508a3bf964a5208b2627e3",
+"nome": "Bárbaro",
+"cat": "churrascarias",
+"lat": -23.592263,
+"lon": -46.675055,
+"horario": "Mo-Sa 12:00-23:00",
+"h24": false,
+"end": "R. Dr. Sodré, 241",
+"tel": "(11) 3845-7743",
+"site": "https://chebarbaro.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f51619fe0e4b067ab39bd4248",
+"nome": "Emporio San Martin",
+"cat": "churrascarias",
+"lat": -23.612814,
+"lon": -46.663246,
+"horario": "Su 11:30-17:00; Tu 11:30-16:00; Tu 18:30-22:30; We 11:30-16:00; We 18:30-22:30; Th 11:30-16:00; Th 18:30-22:30; Fr 11:30-22:30; Sa 11:30-22:30",
+"h24": false,
+"end": "Al. dos Anapurus, 1705",
+"tel": "(11) 2548-8572",
+"site": "https://www.emporiosanmartin.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f68cec45c997e9c633214414d",
+"nome": "Jardim Churrascada",
+"cat": "churrascarias",
+"lat": -23.590762,
+"lon": -46.664127,
+"horario": "Mo,Tu,We,Th,Fr,Sa,Su 12:00-23:00",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "https://www.fazendachurrascada.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "n7131903485",
+"nome": "NB Steak",
+"cat": "churrascarias",
+"lat": -23.589297,
+"lon": -46.677381,
+"horario": "Mo-Fr 11:30-15:30; Su 11:30-21:30; Mo-Th 12:00-15:30; Fr 12:00-15:30; Sa 12:00-23:00; Mo-Th 11:30-15:00",
+"h24": false,
+"end": "Avenida Presidente Juscelino Kubitschek",
+"tel": "(11) 3078-0999",
+"site": "https://www.nbsteak.com.br",
+"insta": "",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "n11810594906",
+"nome": "Alyah Sweets Doceria e Cozinha Libanesa",
+"cat": "docerias",
+"lat": -23.610546,
+"lon": -46.651324,
+"horario": "11:30-22:00",
+"h24": false,
+"end": "Avenida Indianópolis 1401",
+"tel": "+55 11 2371 2125",
+"site": "https://alyahsweets.com.br",
+"insta": "",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f4c746244db52b1f7190776dc",
+"nome": "Amor aos Pedaços",
+"cat": "docerias",
+"lat": -23.611019,
+"lon": -46.666309,
+"horario": "Tu-Th 12:00-20:00; Sa 10:00-22:00; Su 10:00-16:00; Mo-Sa 08:00-20:00; Su 09:00-19:00; Mo-Fr 08:00-17:00",
+"h24": false,
+"end": "Shopping Ibirapuera",
+"tel": "(11) 5093-2225",
+"site": "https://amoraospedacos.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f53fa6d4d498e573ad19706d2",
+"nome": "Ms. Pop",
+"cat": "docerias",
+"lat": -23.606195,
+"lon": -46.671787,
+"horario": "Su 14:00-18:00; Tu 10:30-18:00; We 10:30-18:00; Th 10:30-18:00; Fr 10:30-18:00; Sa 10:00-18:30",
+"h24": false,
+"end": "R. Canário, 1368",
+"tel": "(11) 3368-9864",
+"site": "https://www.mspop.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "w521402007",
+"nome": "Sodie Doces",
+"cat": "docerias",
+"lat": -23.604715,
+"lon": -46.669949,
+"horario": "Mo-Sa 10:30-18:30; Su 10:00-15:00",
+"h24": false,
+"end": "Rua Canário",
+"tel": "",
+"site": "",
+"insta": "",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f519ba195498ede1bb53b5bad",
+"nome": "Tchocolath",
+"cat": "docerias",
+"lat": -23.589416,
+"lon": -46.680726,
+"horario": "Mo-Sa 08:00-19:00; Su 08:00-18:00",
+"h24": false,
+"end": "R. Prof. Atílio Innocenti, 249",
+"tel": "(11) 3078-4129",
+"site": "https://www.tchocolath.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "n4150329895",
+"nome": "Lanchonete da Cidade",
+"cat": "hamburguerias",
+"lat": -23.603162,
+"lon": -46.667094,
+"horario": "Mo 12:00-15:00,18:00-23:00; Tu-Th 12:00-15:00,18:00-00:00; Fr 12:00-15:00,18:00-01:00; Sa 12:00-01:00; Su 12:00-23:00",
+"h24": false,
+"end": "Avenida Macuco 355",
+"tel": "+55 11 3569 8252",
+"site": "https://www.lanchonetedacidade.com.br",
+"insta": "lanchonetedacidade",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f53d5eff1498ee27b94b2d86f",
+"nome": "Djapa",
+"cat": "japoneses",
+"lat": -23.598476,
+"lon": -46.6629,
+"horario": "Mo-Th 12:00-15:00; Fr 12:00-15:00; Sa 12:00-00:00; Su 12:00-22:00; Tu-Th 12:00-15:00",
+"h24": false,
+"end": "R. Gaivota, 168",
+"tel": "(11) 2691-2003",
+"site": "https://www.djapa.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "n4987007322",
+"nome": "Hitô",
+"cat": "japoneses",
+"lat": -23.601024,
+"lon": -46.668349,
+"horario": "Mo,Tu,We,Th 12:00-15:00; Mo,Tu,We,Th 18:00-22:00; Fr 12:00-15:00; Fr 18:00-23:00; Sa 12:00-23:00; Su 12:00-22:00",
+"h24": false,
+"end": "Avenida Jacutinga 193",
+"tel": "(11) 5055-7077",
+"site": "https://hitosushi.com.br",
+"insta": "",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f4b9fad38f964a520fc3337e3",
+"nome": "Kinoshita",
+"cat": "japoneses",
+"lat": -23.591867,
+"lon": -46.671326,
+"horario": "Mo-Th 12:00-15:00; Fr 12:00-15:00; Sa 12:00-16:00",
+"h24": false,
+"end": "R. Jacques Félix, 405",
+"tel": "(11) 3846-7327",
+"site": "https://restaurantekinoshita.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f4bdca807f1499c744e7638f3",
+"nome": "Yakitori",
+"cat": "japoneses",
+"lat": -23.611668,
+"lon": -46.668576,
+"horario": "Mo-Fr 12:00-14:30; Mo-Th 18:00-22:00; Sa 18:00-23:00; Su 18:00-21:00",
+"h24": false,
+"end": "Av. dos Carinás, 93",
+"tel": "(11) 5044-7809",
+"site": "https://yakitori.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "w732230691",
+"nome": "Boston Bakery",
+"cat": "padarias",
+"lat": -23.591445,
+"lon": -46.678075,
+"horario": "24/7",
+"h24": true,
+"end": "Rua Clodomiro Amazonas 816",
+"tel": "+55 11 3845 1638",
+"site": "https://bostonbakery.com.br",
+"insta": "",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "w1115497422",
+"nome": "Padaria Pingo Doce",
+"cat": "padarias",
+"lat": -23.604392,
+"lon": -46.670701,
+"horario": "Mo-Su 06:00-22:00",
+"h24": false,
+"end": "Avenida Pavão 465",
+"tel": "",
+"site": "",
+"insta": "",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "w521400165",
+"nome": "Padoca di Napoli",
+"cat": "padarias",
+"lat": -23.602023,
+"lon": -46.672327,
+"horario": "Mo-Su,PH 06:00-22:00",
+"h24": false,
+"end": "Rua Pintassilgo 264",
+"tel": "(11) 2507-3764",
+"site": "https://padocadinapoli.com.br",
+"insta": "",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f5359a5bf498ec1bc4d42be4e",
+"nome": "Casale di Pizza",
+"cat": "pizzarias",
+"lat": -23.609564,
+"lon": -46.657496,
+"horario": "Mo,Tu,We,Th,Fr,Sa,Su 09:00-17:00",
+"h24": false,
+"end": "567 Alameda dos Tupiniquins",
+"tel": "(11) 5055-2222",
+"site": "https://www.casaledipizza.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f4b81ccf3f964a520d2be30e3",
+"nome": "Pizzaria Speranza",
+"cat": "pizzarias",
+"lat": -23.602769,
+"lon": -46.662659,
+"horario": "Mo-Sa 18:00-00:00",
+"h24": false,
+"end": "Av. Sabiá, 786",
+"tel": "(11) 5051-1229",
+"site": "https://www.pizzaria.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f4bd07e4fa8b3a59301f7635f",
+"nome": "Badejo",
+"cat": "restaurantes",
+"lat": -23.605982,
+"lon": -46.661389,
+"horario": "Tu 12:00-15:00; We-Fr 12:00-15:00; Sa 12:00-22:00; Su 12:00-17:00",
+"h24": false,
+"end": "Al. dos Jurupis, 813",
+"tel": "(11) 5055-0238",
+"site": "https://badejosp.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "n6418727765",
+"nome": "Brodo",
+"cat": "restaurantes",
+"lat": -23.592997,
+"lon": -46.675363,
+"horario": "Mo-We 12:00-15:00; Th-Sa 12:00-15:30, 19:30-23:00",
+"h24": false,
+"end": "Rua Comendador Miguel Calfat 295",
+"tel": "+55 11 2892 2001",
+"site": "https://www.brodo.com.br",
+"insta": "",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f55229ca3498e53cb58aed236",
+"nome": "DiBaco  - Carnes e Vinhos- Vila Nova Conceição",
+"cat": "restaurantes",
+"lat": -23.591463,
+"lon": -46.671205,
+"horario": "Tu-Fr 12:00-15:30",
+"h24": false,
+"end": "Rua Jaques Félix, 365",
+"tel": "(11) 2385-7618",
+"site": "http://www.dibaco.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f4b3e341ff964a520829925e3",
+"nome": "Don Pepe Di Napoli",
+"cat": "restaurantes",
+"lat": -23.605803,
+"lon": -46.666092,
+"horario": "Sa 12:00-00:00; Sa 12:00-01:00",
+"h24": false,
+"end": "Al. dos Arapanés, 955",
+"tel": "(11) 5055-6626",
+"site": "http://www.donpepedinapoli.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "w1148905649",
+"nome": "Doryo Sushi Bar",
+"cat": "restaurantes",
+"lat": -23.590107,
+"lon": -46.678503,
+"horario": "Ter - Sab | das 12h às 15h e das 18h às 00h",
+"h24": false,
+"end": "Rua Clodomiro Amazonas 660",
+"tel": "+55 11 91182 7941",
+"site": "https://doryosushibar.com.br",
+"insta": "",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f61914f15800382111caff85c",
+"nome": "Fuego Celeste",
+"cat": "restaurantes",
+"lat": -23.601966,
+"lon": -46.666877,
+"horario": "",
+"h24": false,
+"end": "Avenida Jacutinga 365",
+"tel": "(11) 5051-7575",
+"site": "",
+"insta": "",
+"fonte": "fsq",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "w521402703",
+"nome": "Gajos",
+"cat": "restaurantes",
+"lat": -23.608159,
+"lon": -46.668229,
+"horario": "Mo-Th 12:00-15:30; Fr 12:00-15:30; Sa 12:00-00:00",
+"h24": false,
+"end": "Avenida Bem-te-vi 280",
+"tel": "(11) 5543-9749",
+"site": "https://gajos.com.br",
+"insta": "",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "n4726512848",
+"nome": "Giardino",
+"cat": "restaurantes",
+"lat": -23.601512,
+"lon": -46.665575,
+"horario": "Mo 12:00-15:00; Tu 12:00-15:00; We 12:00-15:00; Th 12:00-15:00",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "https://vejasp.abril.com.br/estabelecimento/giardino",
+"insta": "",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "w1116105536",
+"nome": "La Nonna di Lucca",
+"cat": "restaurantes",
+"lat": -23.602414,
+"lon": -46.666278,
+"horario": "Mo 12:00-15:00; Tu 12:00-15:00; Th 12:00-15:00; Fr 12:00-15:00; Sa 12:00-17:00; Su 12:00-17:00",
+"h24": false,
+"end": "Rua Gaivota 689",
+"tel": "(11) 5051-6193",
+"site": "https://www.lanonnadilucca.com.br",
+"insta": "",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f4bad4ae1f964a520d6423be3",
+"nome": "La Piadina Cucina Italiana",
+"cat": "restaurantes",
+"lat": -23.595249,
+"lon": -46.678685,
+"horario": "Fr 11:00-15:30",
+"h24": false,
+"end": "R. Prof. Atilio Innocenti, 911",
+"tel": "(11) 3926-5427",
+"site": "https://www.lapiadina.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f4ccae6dd33d3721ef8d02c8b",
+"nome": "La Ventana Parilla Porteña",
+"cat": "restaurantes",
+"lat": -23.597927,
+"lon": -46.667108,
+"horario": "Mo-Fr 12:00-16:00; Su 12:00-23:00; Mo-Fr 11:30-16:00",
+"h24": false,
+"end": "R. Tuim, 61",
+"tel": "(11) 5051-8237",
+"site": "https://laventanaparrilla.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "n2156869834",
+"nome": "Los 3 Amigos",
+"cat": "restaurantes",
+"lat": -23.604205,
+"lon": -46.666224,
+"horario": "Tu-Su 18:00-01:00",
+"h24": false,
+"end": "Alameda Jauaperi",
+"tel": "",
+"site": "",
+"insta": "",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f5a92e851f62e0945c193627a",
+"nome": "Moema Natural",
+"cat": "restaurantes",
+"lat": -23.606895,
+"lon": -46.670871,
+"horario": "Mo 11:30-15:00; Tu 11:30-15:00; We 11:30-15:00; Th 11:30-15:00; Fr 11:30-15:00; Sa 11:30-16:00",
+"h24": false,
+"end": "R. Gaivota, 1339",
+"tel": "(11) 5049-0372",
+"site": "https://naturaldasanas.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "n6856423709",
+"nome": "Piazza Di Martini",
+"cat": "restaurantes",
+"lat": -23.592985,
+"lon": -46.67507,
+"horario": "Su-Fr 11:30-15:00, Sa 10:15-15:45",
+"h24": false,
+"end": "Rua João Cachoeira 1463",
+"tel": "+55 11 30490959",
+"site": "",
+"insta": "",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "w222065667",
+"nome": "Praça São Lourenço",
+"cat": "restaurantes",
+"lat": -23.598446,
+"lon": -46.679198,
+"horario": "Mo-Fr 12:00-15:00;Mo-Th 19:00-23:30;Fr-Sa 19:00-24:30;PH Sa-Su 12:00-17:00",
+"h24": false,
+"end": "Rua Casa do Ator 608",
+"tel": "(11) 3053-9300",
+"site": "https://www.pracasaolourenco.com.br",
+"insta": "https://www.instagram.com/pracasaolourenco/",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f561d2a6b498ee7909dcd79d1",
+"nome": "Rong He",
+"cat": "restaurantes",
+"lat": -23.604519,
+"lon": -46.662954,
+"horario": "Mo-Fr 11:30-15:00; Su 11:30-16:00",
+"h24": false,
+"end": "Av. Ibirapuera, 2343",
+"tel": "(11) 5052-0530",
+"site": "https://www.ronghe.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "f62842a9da3bf540a7193dd02",
+"nome": "Selvagem",
+"cat": "restaurantes",
+"lat": -23.59215,
+"lon": -46.657192,
+"horario": "Mo 12:00-16:00; Tu-Th 12:00-16:00; Fr 12:00-00:00; Sa 11:30-00:00; Su 11:30-18:00; Mo-Th 10:00-19:00",
+"h24": false,
+"end": "Pq. Ibirapuera",
+"tel": "(11) 5198-0844",
+"site": "https://selvagemibirapuera.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "w732230696",
+"nome": "Torta no Quintal",
+"cat": "restaurantes",
+"lat": -23.593902,
+"lon": -46.678474,
+"horario": "Mo 11:00-15:00, Tu-Fr 11:00-18:00, Sa 11:30-15:45",
+"h24": false,
+"end": "Rua Comendador Miguel Calfat 625",
+"tel": "+55 11 3044 2160",
+"site": "https://www.tortanoquintal.com.br",
+"insta": "",
+"destaque": true,
+"nota": ""
+},
+{
+"id": "w596585888",
+"nome": "Vaca Verde",
+"cat": "restaurantes",
+"lat": -23.603572,
+"lon": -46.679434,
+"horario": "Mo-Fr 11:30-15:30; Sa 12:00-16:00",
+"h24": false,
+"end": "Rua Alvorada 457",
+"tel": "(11) 4329-8500",
+"site": "",
+"insta": "",
+"destaque": true,
+"nota": ""
+},
 {
 "id": "f4e7be1f67d8be48066063888",
 "nome": "Academia Arte do Corpo - Krav Maga Moema",
@@ -232,19 +1010,6 @@
 "fonte_horario": "site"
 },
 {
-"id": "n4726516628",
-"nome": "Smart Fit",
-"cat": "academias",
-"lat": -23.601132,
-"lon": -46.66547,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "https://www.smartfit.com.br",
-"insta": ""
-},
-{
 "id": "f520aa6e411d20e73572f136c",
 "nome": "Smart Fit",
 "cat": "academias",
@@ -257,6 +1022,19 @@
 "site": "https://www.smartfit.com.br",
 "insta": "",
 "fonte": "fsq"
+},
+{
+"id": "n4726516628",
+"nome": "Smart Fit",
+"cat": "academias",
+"lat": -23.601132,
+"lon": -46.66547,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "https://www.smartfit.com.br",
+"insta": ""
 },
 {
 "id": "n11874162770",
@@ -299,14 +1077,14 @@
 "fonte": "fsq"
 },
 {
-"id": "n4150312892",
+"id": "n5750314487",
 "nome": "Banco Santander",
 "cat": "bancos",
-"lat": -23.595574,
-"lon": -46.668527,
+"lat": -23.611684,
+"lon": -46.651404,
 "horario": "",
 "h24": false,
-"end": "Rua Afonso Brás",
+"end": "",
 "tel": "",
 "site": "",
 "insta": ""
@@ -364,14 +1142,14 @@
 "insta": ""
 },
 {
-"id": "w1095423380",
+"id": "n4150312892",
 "nome": "Santander",
 "cat": "bancos",
-"lat": -23.604819,
-"lon": -46.662897,
+"lat": -23.59555,
+"lon": -46.668512,
 "horario": "",
 "h24": false,
-"end": "Avenida Ibirapuera 2359",
+"end": "Rua Afonso Brás",
 "tel": "",
 "site": "",
 "insta": ""
@@ -415,6 +1193,20 @@
 "end": "Cotovia 484",
 "tel": "(11) 5042-0942",
 "site": "https://buffetactuel.com.br",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f4b5b1038f964a52094e128e3",
+"nome": "Alemão SP",
+"cat": "bares",
+"lat": -23.601821,
+"lon": -46.661968,
+"horario": "",
+"h24": false,
+"end": "Av. Juriti, 651",
+"tel": "(11) 5052-8333",
+"site": "https://alemaosp.com.br",
 "insta": "",
 "fonte": "fsq"
 },
@@ -503,19 +1295,6 @@
 "fonte": "fsq"
 },
 {
-"id": "n5283668423",
-"nome": "Badejo",
-"cat": "bares",
-"lat": -23.604625,
-"lon": -46.658293,
-"horario": "",
-"h24": false,
-"end": "Avenida Moema 265",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f520ae91411d25fbed510fa56",
 "nome": "Bananal",
 "cat": "bares",
@@ -525,7 +1304,7 @@
 "h24": false,
 "end": "Parque Ibirapuera",
 "tel": "(11) 5574-5177",
-"site": "http://parqueibirapuera.org",
+"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -668,20 +1447,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4e406d5ffa7697d3df7c929c",
-"nome": "Bar Unidade 8",
-"cat": "bares",
-"lat": -23.591701,
-"lon": -46.651509,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "n7372266996",
 "nome": "Bar da Onze",
 "cat": "bares",
@@ -708,17 +1473,18 @@
 "insta": ""
 },
 {
-"id": "w1110389452",
-"nome": "Bar do Alemão",
+"id": "f4d693c639bd6a143af715cdf",
+"nome": "Bar da Villa",
 "cat": "bares",
-"lat": -23.601774,
-"lon": -46.661843,
+"lat": -23.610384,
+"lon": -46.665341,
 "horario": "",
 "h24": false,
-"end": "Avenida Juriti 651",
-"tel": "",
+"end": "Al. dos Jurupis, 1451",
+"tel": "(11) 98820-8019",
 "site": "",
-"insta": ""
+"insta": "",
+"fonte": "fsq"
 },
 {
 "id": "f4c65e5b2f7a80f4794c09c7a",
@@ -786,20 +1552,6 @@
 "tel": "",
 "site": "",
 "insta": ""
-},
-{
-"id": "n4214261189",
-"nome": "Bar do Juarez",
-"cat": "bares",
-"lat": -23.590001,
-"lon": -46.680388,
-"horario": "Mo-Su 12:00-01:00",
-"h24": false,
-"end": "Av. Pres. Juscelino Kubitschek, 1164",
-"tel": "(11) 3078-3458",
-"site": "https://www.bardojuarez.com.br",
-"insta": "",
-"fonte_horario": "site"
 },
 {
 "id": "f4b7f1974f964a520601630e3",
@@ -872,19 +1624,6 @@
 "insta": ""
 },
 {
-"id": "n5139974821",
-"nome": "Bar dois irmãos",
-"cat": "bares",
-"lat": -23.613271,
-"lon": -46.677523,
-"horario": "",
-"h24": false,
-"end": "Rua Demóstenes 55",
-"tel": "+55 11 5096 1927",
-"site": "",
-"insta": ""
-},
-{
 "id": "f555e7318498e69da43177816",
 "nome": "Bar e Lanchonete VL",
 "cat": "bares",
@@ -911,21 +1650,6 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "f50808fd0e4b0134247d7055b",
-"nome": "Bardega",
-"cat": "bares",
-"lat": -23.590473,
-"lon": -46.674421,
-"horario": "Tu,We,Th,Fr,Sa 18:30-01:00",
-"h24": false,
-"end": "R. Dr. Alceu de Campos Rodrigues, 218",
-"tel": "(11) 2691-7578",
-"site": "https://bardega.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
 },
 {
 "id": "f5b5a4ba8e07550002cc145e6",
@@ -983,22 +1707,8 @@
 "fonte": "fsq"
 },
 {
-"id": "f4b1923d8f964a5206cd823e3",
-"nome": "Boteco São Bento",
-"cat": "bares",
-"lat": -23.587152,
-"lon": -46.677221,
-"horario": "",
-"h24": false,
-"end": "R. Leopoldo Couto de Magalhães Jr., 474",
-"tel": "(11) 3167-7774",
-"site": "http://www.botecosaobento.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "w304375141",
-"nome": "Boteco São Bento Itaim",
+"nome": "Boteco São Bento",
 "cat": "bares",
 "lat": -23.587162,
 "lon": -46.677211,
@@ -1007,19 +1717,6 @@
 "end": "Rua Leopoldo Couto de Magalhães Júnior 480",
 "tel": "+55 11 3074-4389",
 "site": "http://botecosaobento.com.br",
-"insta": ""
-},
-{
-"id": "n9969076355",
-"nome": "Bourbon Street Music Club",
-"cat": "bares",
-"lat": -23.612653,
-"lon": -46.668951,
-"horario": "Tu-Su 19:30-02:00",
-"h24": false,
-"end": "Rua dos Chanés 127",
-"tel": "+55 11 5095 6100",
-"site": "https://www.bourbonstreet.com.br",
 "insta": ""
 },
 {
@@ -1106,20 +1803,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4ce6968ae1eeb60cb0b897ae",
-"nome": "Calhandra Chopperia",
-"cat": "bares",
-"lat": -23.617599,
-"lon": -46.677684,
-"horario": "",
-"h24": false,
-"end": "R. Vieira De Moraes, 282",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4f79f1a8e4b0d6936b6c8da2",
 "nome": "Cartolas",
 "cat": "bares",
@@ -1162,16 +1845,16 @@
 "fonte_horario": "site"
 },
 {
-"id": "f51aa5432498ebb2ef0ad551a",
+"id": "f4e7376012271391c70598e6c",
 "nome": "Chica Boa",
 "cat": "bares",
-"lat": -23.59549,
-"lon": -46.666142,
+"lat": -23.59576,
+"lon": -46.666325,
 "horario": "",
 "h24": false,
-"end": "Rua Afonso Brás, 265",
-"tel": "",
-"site": "",
+"end": "R Afonso Braz, 265",
+"tel": "(11) 3842-0806",
+"site": "https://clop.com.br",
 "insta": "",
 "fonte": "fsq"
 },
@@ -1479,19 +2162,6 @@
 "insta": ""
 },
 {
-"id": "w427350632",
-"nome": "Jaboti Frutos do Mar",
-"cat": "bares",
-"lat": -23.588401,
-"lon": -46.647915,
-"horario": "",
-"h24": false,
-"end": "Avenida Conselheiro Rodrigues Alves 1315",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4bc2177f4cdfc9b638879521",
 "nome": "Jabuti",
 "cat": "bares",
@@ -1511,6 +2181,19 @@
 "cat": "bares",
 "lat": -23.600711,
 "lon": -46.679613,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
+"id": "n6450705850",
+"nome": "João",
+"cat": "bares",
+"lat": -23.58962,
+"lon": -46.647058,
 "horario": "",
 "h24": false,
 "end": "",
@@ -1559,34 +2242,6 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "f5442d69e498eb4249672d239",
-"nome": "La Fraternité",
-"cat": "bares",
-"lat": -23.60813,
-"lon": -46.670027,
-"horario": "Tu-Fr 17:00-20:00; Sa 14:00-16:00; Tu-Fr 17:00-00:00; Sa 14:00-00:30",
-"h24": false,
-"end": "Al. Jauaperi, 1413",
-"tel": "(11) 99878-8606",
-"site": "https://www.lafraternite.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
-"id": "w521404010",
-"nome": "La Fraternité Beer Shop",
-"cat": "bares",
-"lat": -23.608172,
-"lon": -46.669927,
-"horario": "",
-"h24": false,
-"end": "Alameda Jauaperi 1413",
-"tel": "",
-"site": "",
-"insta": ""
 },
 {
 "id": "n6392136281",
@@ -1890,7 +2545,7 @@
 "h24": false,
 "end": "Parque Ibirapuera",
 "tel": "",
-"site": "https://parqueibirapuera.org/as-pracas-do-parque-ibirapuera",
+"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -1961,21 +2616,6 @@
 "tel": "",
 "site": "",
 "insta": ""
-},
-{
-"id": "f4beedc262c082d7f58ff3042",
-"nome": "Saint Vin Saint",
-"cat": "bares",
-"lat": -23.594374,
-"lon": -46.679059,
-"horario": "Mo-Fr 12:00-15:00; Mo-Sa 19:00-00:00",
-"h24": false,
-"end": "Rua Professor Atílio Innocenti, 811",
-"tel": "(11) 3846-0384",
-"site": "https://www.saintvinsaint.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
 },
 {
 "id": "f595d76d1f79faa623f506412",
@@ -2090,21 +2730,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4bc6606251b376b008881b6f",
-"nome": "Sí Señor! El Auténtico",
-"cat": "bares",
-"lat": -23.602591,
-"lon": -46.665122,
-"horario": "Mo,Tu,We,Th 12:15-15:00; Mo,Tu,We,Th 17:00-23:00; Fr 12:00-15:00; Fr 17:00-00:00; Sa 12:00-00:00; Su 12:00-23:00",
-"h24": false,
-"end": "Al. Jauaperi, 626",
-"tel": "(11) 3476-4650",
-"site": "https://www.sisenor.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
 "id": "f5808da2738fab9ca5d3192c0",
 "nome": "Terra Fruta",
 "cat": "bares",
@@ -2161,21 +2786,8 @@
 "fonte": "fsq"
 },
 {
-"id": "w1104689515",
-"nome": "Viana Bar",
-"cat": "bares",
-"lat": -23.613017,
-"lon": -46.661728,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4d5e960f5c39b1f7466eed49",
-"nome": "Viana Bar & Grill",
+"nome": "Viana Bar",
 "cat": "bares",
 "lat": -23.613053,
 "lon": -46.661843,
@@ -2350,19 +2962,6 @@
 "insta": ""
 },
 {
-"id": "n6450705850",
-"nome": "João",
-"cat": "cabeleireiros",
-"lat": -23.58962,
-"lon": -46.647058,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "w1279485031",
 "nome": "Stylebar",
 "cat": "cabeleireiros",
@@ -2500,20 +3099,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4f3c0ae6e4b09bd6279dc724",
-"nome": "Bela Vista Bar",
-"cat": "cafes",
-"lat": -23.609705,
-"lon": -46.652603,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4bb0f6e9f964a5205c6e3ce3",
 "nome": "Bis Bar Cafe",
 "cat": "cafes",
@@ -2542,21 +3127,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f530d0215498eb63e492780a7",
-"nome": "Bolo ao Forno",
-"cat": "cafes",
-"lat": -23.595563,
-"lon": -46.668485,
-"horario": "Mo-Fr 08:00-18:00; Sa 08:30-14:00",
-"h24": false,
-"end": "Rua Afonso Braz, 493A",
-"tel": "(11) 3564-0547",
-"site": "https://boloaoforno.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
 "id": "f545a40ac498eddc2597cdf9a",
 "nome": "Boloccino",
 "cat": "cafes",
@@ -2582,20 +3152,6 @@
 "tel": "+55 11 2893-7703",
 "site": "",
 "insta": ""
-},
-{
-"id": "f4f0879f0e4b07c8f8c216ddd",
-"nome": "Cafe St. Marché",
-"cat": "cafes",
-"lat": -23.603175,
-"lon": -46.675582,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
 },
 {
 "id": "f5577414d498ef7e249811ba7",
@@ -2724,20 +3280,6 @@
 "fonte": "fsq"
 },
 {
-"id": "w1107535725",
-"nome": "Café Journal",
-"cat": "cafes",
-"lat": -23.608953,
-"lon": -46.659476,
-"horario": "Mo-Sa 12:00-00:00",
-"h24": false,
-"end": "Alameda dos Anapurús",
-"tel": "(11) 5055-9454",
-"site": "https://www.cafejournal.com.br",
-"insta": "",
-"fonte_horario": "site"
-},
-{
 "id": "f56435add498e608b0fde1bbf",
 "nome": "Café com Charme",
 "cat": "cafes",
@@ -2747,7 +3289,7 @@
 "h24": false,
 "end": "Avenida Moema, 334",
 "tel": "(11) 3729-5507",
-"site": "http://www.dancafe.com.br",
+"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -2794,15 +3336,15 @@
 "fonte": "fsq"
 },
 {
-"id": "f5220d7f511d2d57eeb6a296b",
+"id": "f4b712fdff964a520e83b2de3",
 "nome": "Casa do Pão de Queijo",
 "cat": "cafes",
-"lat": -23.608208,
-"lon": -46.670811,
+"lat": -23.590679,
+"lon": -46.674563,
 "horario": "",
 "h24": false,
-"end": "R. Normandia, 75",
-"tel": "(11) 5077-6712",
+"end": "R. Dr. Alceu de Campos Rodrigues, 174",
+"tel": "(11) 3045-7380",
 "site": "https://www.casadopaodequeijo.com.br",
 "insta": "",
 "fonte": "fsq"
@@ -2817,20 +3359,6 @@
 "h24": false,
 "end": "R. Dr. Haberbeck Brandão, 136-178",
 "tel": "",
-"site": "https://www.casadopaodequeijo.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4b712fdff964a520e83b2de3",
-"nome": "Casa do Pão de Queijo",
-"cat": "cafes",
-"lat": -23.590679,
-"lon": -46.674563,
-"horario": "",
-"h24": false,
-"end": "R. Dr. Alceu de Campos Rodrigues, 174",
-"tel": "(11) 3045-7380",
 "site": "https://www.casadopaodequeijo.com.br",
 "insta": "",
 "fonte": "fsq"
@@ -2859,6 +3387,19 @@
 "h24": false,
 "end": "R. Canário, 499",
 "tel": "(11) 4117-0400",
+"site": "",
+"insta": ""
+},
+{
+"id": "w521401871",
+"nome": "Cheesecakeria",
+"cat": "cafes",
+"lat": -23.606198,
+"lon": -46.67247,
+"horario": "",
+"h24": false,
+"end": "Avenida Cotovia 350",
+"tel": "",
 "site": "",
 "insta": ""
 },
@@ -3003,6 +3544,20 @@
 "fonte": "fsq"
 },
 {
+"id": "f51f7e812498eb6d6c1520a4c",
+"nome": "EVS - Espaço Vida Saudável Herbalife",
+"cat": "cafes",
+"lat": -23.587815,
+"lon": -46.673616,
+"horario": "",
+"h24": false,
+"end": "R. Salvador Longo, 37",
+"tel": "",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "f5d9397e44a72d8000871d4a5",
 "nome": "Empório da Roça, Sô!",
 "cat": "cafes",
@@ -3031,17 +3586,18 @@
 "fonte": "fsq"
 },
 {
-"id": "n2421036957",
+"id": "f4b326a40f964a5200f0b25e3",
 "nome": "Fran's Café",
 "cat": "cafes",
-"lat": -23.604397,
-"lon": -46.659051,
+"lat": -23.605046,
+"lon": -46.661503,
 "horario": "",
 "h24": false,
-"end": "Avenida Moema 170",
-"tel": "",
-"site": "",
-"insta": ""
+"end": "Av. Jamaris, 100",
+"tel": "(11) 5051-1150",
+"site": "https://www.franscafe.com.br",
+"insta": "",
+"fonte": "fsq"
 },
 {
 "id": "f4e68f39581dcaba7ccc7bb4c",
@@ -3058,18 +3614,17 @@
 "fonte": "fsq"
 },
 {
-"id": "f4b326a40f964a5200f0b25e3",
+"id": "n2421036957",
 "nome": "Fran's Café",
 "cat": "cafes",
-"lat": -23.605046,
-"lon": -46.661503,
+"lat": -23.604397,
+"lon": -46.659051,
 "horario": "",
 "h24": false,
-"end": "Av. Jamaris, 100",
-"tel": "(11) 5051-1150",
-"site": "https://www.franscafe.com.br",
-"insta": "",
-"fonte": "fsq"
+"end": "Avenida Moema 170",
+"tel": "",
+"site": "",
+"insta": ""
 },
 {
 "id": "w1101494392",
@@ -3168,47 +3723,6 @@
 "fonte": "fsq"
 },
 {
-"id": "n9348675204",
-"nome": "Kopenhagen",
-"cat": "cafes",
-"lat": -23.586999,
-"lon": -46.679512,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "f63c18a688cc3d31e8908bb21",
-"nome": "Kopenhagen",
-"cat": "cafes",
-"lat": -23.608509,
-"lon": -46.64683,
-"horario": "",
-"h24": false,
-"end": "Avenida Jose Maria Whitaker",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4f16f583e4b0d59e256cc6e8",
-"nome": "Kopenhagen",
-"cat": "cafes",
-"lat": -23.586697,
-"lon": -46.67221,
-"horario": "",
-"h24": false,
-"end": "Av. Jose Maria Da Silva Paranhos, 31, Vila Suzana, São Paulo",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f5728cae1498e651d51b2a0c5",
 "nome": "LO Café Thé Ria",
 "cat": "cafes",
@@ -3223,14 +3737,14 @@
 "fonte": "fsq"
 },
 {
-"id": "f4f882f64e4b002b90a0ae5cc",
+"id": "f4fd8c588e4b000c41759ec2f",
 "nome": "Lanchonete Hospital Edmundo Vasconcelos",
 "cat": "cafes",
-"lat": -23.595514,
-"lon": -46.652003,
+"lat": -23.595589,
+"lon": -46.651782,
 "horario": "",
 "h24": false,
-"end": "",
+"end": "Rua Borges Lagoa, 1450",
 "tel": "",
 "site": "",
 "insta": "",
@@ -3265,17 +3779,19 @@
 "fonte": "fsq"
 },
 {
-"id": "n12750164559",
+"id": "f560c100c498edb41b52f03c5",
 "nome": "Le Pain Quotidien",
 "cat": "cafes",
-"lat": -23.5948,
-"lon": -46.671887,
-"horario": "Mo-Su 07:00-22:00",
+"lat": -23.595462,
+"lon": -46.670283,
+"horario": "Mo 07:00-20:30; Tu 07:00-20:30; We 07:00-20:30; Th 07:00-20:30; Fr 07:00-20:30; Sa 07:00-19:30",
 "h24": false,
-"end": "Rua Jacques Felix 752",
-"tel": "+55 11 38490835",
-"site": "https://www.lepainquotidien.com/br/pt",
-"insta": ""
+"end": "R. Afonso Braz, 657",
+"tel": "(11) 3849-0835",
+"site": "https://www.lepainquotidien.com/br/pt/locations/vila_nova_conceicao/r.-afonso-braz,-657",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site"
 },
 {
 "id": "n4560440189",
@@ -3359,19 +3875,6 @@
 "fonte": "fsq"
 },
 {
-"id": "n9873034965",
-"nome": "Nostro Incontro Café & Eatery",
-"cat": "cafes",
-"lat": -23.594563,
-"lon": -46.677378,
-"horario": "",
-"h24": false,
-"end": "Rua Silva Correia 51",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f65ad1a7dde97d44d7e5310f8",
 "nome": "O Jardim - Café e Brunch",
 "cat": "cafes",
@@ -3384,21 +3887,6 @@
 "site": "https://lnk.bio/ojardimsp",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "f4ebc503a30f88739f46f8e79",
-"nome": "Piadina Tree",
-"cat": "cafes",
-"lat": -23.601383,
-"lon": -46.662151,
-"horario": "Su 11:00-23:00",
-"h24": false,
-"end": "Av. Juriti, 629",
-"tel": "(11) 3628-7316",
-"site": "https://www.piadinatree.com",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
 },
 {
 "id": "f57a60005498e213efa242357",
@@ -3424,6 +3912,20 @@
 "h24": false,
 "end": "R. Araguari, 68",
 "tel": "(11) 5093-5934",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f4dea7860c65be8091da6e734",
+"nome": "Praça Moema",
+"cat": "cafes",
+"lat": -23.600596,
+"lon": -46.659249,
+"horario": "",
+"h24": false,
+"end": "Pç. Moema",
+"tel": "",
 "site": "",
 "insta": "",
 "fonte": "fsq"
@@ -3624,15 +4126,15 @@
 "fonte": "fsq"
 },
 {
-"id": "f593079bc59fe5c39510e440d",
-"nome": "Vista Café",
+"id": "f5ab6ea32c97f2864fb6e6de7",
+"nome": "Vista",
 "cat": "cafes",
-"lat": -23.589236,
-"lon": -46.651468,
+"lat": -23.589123,
+"lon": -46.65096,
 "horario": "",
 "h24": false,
 "end": "MAC-USP",
-"tel": "(11) 5505-1013",
+"tel": "(11) 2658-3188",
 "site": "https://vistasaopaulo.com.br",
 "insta": "",
 "fonte": "fsq"
@@ -3663,34 +4165,6 @@
 "tel": "",
 "site": "https://www.instagram.com/zelattecafe",
 "insta": ""
-},
-{
-"id": "f57ae4c40498e89e356804240",
-"nome": "cafe normandia",
-"cat": "cafes",
-"lat": -23.60798,
-"lon": -46.670754,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "(11) 3586-0006",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f54620b80498ea3b16cf4a13d",
-"nome": "feira livre guatas 583",
-"cat": "cafes",
-"lat": -23.614718,
-"lon": -46.643891,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
 },
 {
 "id": "f51111306e4b07d0a226af529",
@@ -3804,23 +4278,8 @@
 "fonte": "fsq"
 },
 {
-"id": "f4b508a3bf964a5208b2627e3",
-"nome": "Bárbaro",
-"cat": "churrascarias",
-"lat": -23.592263,
-"lon": -46.675055,
-"horario": "Mo-Sa 12:00-23:00",
-"h24": false,
-"end": "R. Dr. Sodré, 241",
-"tel": "(11) 3845-7743",
-"site": "https://chebarbaro.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
 "id": "f4bdc52633904a59383a14d9e",
-"nome": "Calhandra Restaurante",
+"nome": "Calhandra",
 "cat": "churrascarias",
 "lat": -23.617162,
 "lon": -46.677671,
@@ -3890,7 +4349,7 @@
 },
 {
 "id": "f4f75ddb0e4b07c4ad81601c2",
-"nome": "Costelaria Moema",
+"nome": "Costelaria",
 "cat": "churrascarias",
 "lat": -23.614918,
 "lon": -46.66308,
@@ -3911,35 +4370,6 @@
 "horario": "",
 "h24": false,
 "end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f51619fe0e4b067ab39bd4248",
-"nome": "Emporio San Martin",
-"cat": "churrascarias",
-"lat": -23.612814,
-"lon": -46.663246,
-"horario": "Su 11:30-17:00; Tu 11:30-16:00; Tu 18:30-22:30; We 11:30-16:00; We 18:30-22:30; Th 11:30-16:00; Th 18:30-22:30; Fr 11:30-22:30; Sa 11:30-22:30",
-"h24": false,
-"end": "Al. dos Anapurus, 1705",
-"tel": "(11) 2548-8572",
-"site": "https://www.emporiosanmartin.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
-"id": "f5b81978e237dee002c52bc12",
-"nome": "Empório Bar E Restaurante",
-"cat": "churrascarias",
-"lat": -23.606344,
-"lon": -46.672511,
-"horario": "",
-"h24": false,
-"end": "Avenida Cotovia, 364",
 "tel": "",
 "site": "",
 "insta": "",
@@ -3974,21 +4404,8 @@
 "fonte": "fsq"
 },
 {
-"id": "w1104087238",
-"nome": "Fogo de Chão",
-"cat": "churrascarias",
-"lat": -23.614187,
-"lon": -46.659208,
-"horario": "",
-"h24": false,
-"end": "Avenida Moreira Guimarães 964",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4b8fd208f964a520f36333e3",
-"nome": "Fogo de Chão Moema",
+"nome": "Fogo de Chão",
 "cat": "churrascarias",
 "lat": -23.614222,
 "lon": -46.659012,
@@ -4028,21 +4445,6 @@
 "site": "https://fritoseassados.com.br",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "f68cec45c997e9c633214414d",
-"nome": "Jardim Churrascada",
-"cat": "churrascarias",
-"lat": -23.590762,
-"lon": -46.664127,
-"horario": "Mo,Tu,We,Th,Fr,Sa,Su 12:00-23:00",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "https://www.fazendachurrascada.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
 },
 {
 "id": "f4bb52a9bf562ef3b9f992e97",
@@ -4130,26 +4532,12 @@
 "fonte": "fsq"
 },
 {
-"id": "n7131903485",
-"nome": "NB Steak",
-"cat": "churrascarias",
-"lat": -23.589297,
-"lon": -46.677381,
-"horario": "Mo-Th 12:00-15:30; Fr 12:00-15:30; Sa 12:00-23:00; Fr 12:00-16:00; Sa 12:00-23:30; Mo-Th 12:00-15:00",
-"h24": false,
-"end": "Avenida Presidente Juscelino Kubitschek",
-"tel": "(11) 3078-0999",
-"site": "https://www.nbsteak.com.br",
-"insta": "",
-"fonte_horario": "site"
-},
-{
 "id": "f5212544711d241bfc8268180",
 "nome": "NB Steak",
 "cat": "churrascarias",
 "lat": -23.614812,
 "lon": -46.67272,
-"horario": "Mo-Th 11:30-15:00; Sa 11:30-23:30; Mo-Fr 11:30-15:30; Su 11:30-21:30; Mo-Th 12:00-15:30; Fr 12:00-15:30",
+"horario": "Mo-Th 11:30-15:00; Sa 11:30-23:30; Mo-Th 12:00-15:30; Fr 12:00-15:30; Sa 12:00-23:00; Fr 12:00-16:00",
 "h24": false,
 "end": "Av. Ver. José Diniz, 3864",
 "tel": "(11) 5093-6006",
@@ -4212,6 +4600,20 @@
 "tel": "+55 11 5096 7713",
 "site": "https://www.outback.com.br",
 "insta": ""
+},
+{
+"id": "f5206775d11d2e01992d8a72f",
+"nome": "Quintal do Espeto",
+"cat": "churrascarias",
+"lat": -23.608869,
+"lon": -46.670287,
+"horario": "",
+"h24": false,
+"end": "Av. Pavão, 872",
+"tel": "(11) 3854-7218",
+"site": "https://quintaldoespeto.com.br",
+"insta": "",
+"fonte": "fsq"
 },
 {
 "id": "w521402078",
@@ -4526,20 +4928,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f54f0736b498ef304a86bed9a",
-"nome": "Jeep Sinal",
-"cat": "concessionarias",
-"lat": -23.617172,
-"lon": -46.649187,
-"horario": "",
-"h24": false,
-"end": "Av. Indianópolis, 2200",
-"tel": "(11) 5070-3000",
-"site": "https://www.gruposinal.com.br/jeep",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f5769c426498e91a050edea26",
 "nome": "Kawasaki ONE",
 "cat": "concessionarias",
@@ -4567,11 +4955,11 @@
 "insta": ""
 },
 {
-"id": "n14318543472",
+"id": "w1103674846",
 "nome": "MF Motors",
 "cat": "concessionarias",
-"lat": -23.612274,
-"lon": -46.659601,
+"lat": -23.612326,
+"lon": -46.659628,
 "horario": "",
 "h24": false,
 "end": "Alameda dos Tupiniquins 957",
@@ -4702,17 +5090,18 @@
 "fonte": "fsq"
 },
 {
-"id": "w1582917343",
+"id": "f54f0736b498ef304a86bed9a",
 "nome": "Sinal",
 "cat": "concessionarias",
-"lat": -23.617261,
-"lon": -46.649262,
+"lat": -23.617172,
+"lon": -46.649187,
 "horario": "",
 "h24": false,
-"end": "Avenida Indianópolis 2200",
-"tel": "",
-"site": "",
-"insta": ""
+"end": "Av. Indianópolis, 2200",
+"tel": "(11) 5070-3000",
+"site": "https://www.gruposinal.com.br/jeep",
+"insta": "",
+"fonte": "fsq"
 },
 {
 "id": "f4cf3bf05e3b9a093a34f4b53",
@@ -4933,20 +5322,6 @@
 "fonte": "fsq"
 },
 {
-"id": "n4726504735",
-"nome": "Atelier Hideko Honma",
-"cat": "cultura",
-"lat": -23.602486,
-"lon": -46.666525,
-"horario": "Mo-Fr 09:00-17:30; Sa 09:00-16:30",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "https://hidekohonma.com.br",
-"insta": "",
-"fonte_horario": "site"
-},
-{
 "id": "f4b524237f964a520407327e3",
 "nome": "Auditório Ibirapuera Oscar Niemeyer",
 "cat": "cultura",
@@ -4989,38 +5364,11 @@
 "fonte": "fsq"
 },
 {
-"id": "n4153849696",
-"nome": "Bienal - São Paulo",
-"cat": "cultura",
-"lat": -23.587955,
-"lon": -46.653846,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f5012f329e4b0c3d59112e762",
 "nome": "Biruta Filmes",
 "cat": "cultura",
 "lat": -23.607009,
 "lon": -46.654304,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4e99b33f9a52ceeb884d9698",
-"nome": "Casa de Arte",
-"cat": "cultura",
-"lat": -23.611237,
-"lon": -46.678495,
 "horario": "",
 "h24": false,
 "end": "",
@@ -5261,19 +5609,6 @@
 "fonte": "fsq"
 },
 {
-"id": "r2738162",
-"nome": "Marquise",
-"cat": "cultura",
-"lat": -23.586384,
-"lon": -46.657275,
-"horario": "closed",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4b23cd09f964a520035a24e3",
 "nome": "Museu Afro Brasil",
 "cat": "cultura",
@@ -5297,7 +5632,7 @@
 "h24": false,
 "end": "Av. Pedro Álvares Cabral, 1301",
 "tel": "(11) 2648-0254",
-"site": "https://www.mac.usp.br",
+"site": "https://mac.usp.br",
 "insta": "",
 "fonte": "fsq"
 },
@@ -5309,25 +5644,10 @@
 "lon": -46.655484,
 "horario": "Tu-Su 10:00-18:00",
 "h24": false,
-"end": "",
+"end": "Pq. Ibirapuera",
 "tel": "+55 11 5085 1300",
 "site": "https://www.mam.org.br",
 "insta": ""
-},
-{
-"id": "f4bb1d583f964a52061a53ce3",
-"nome": "Museu de Arte Moderna de São Paulo (MAM)",
-"cat": "cultura",
-"lat": -23.587626,
-"lon": -46.65571,
-"horario": "Tu-Su 10:00-18:00",
-"h24": false,
-"end": "Pq. Ibirapuera",
-"tel": "(11) 5085-1300",
-"site": "https://www.mam.org.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
 },
 {
 "id": "f4e03231fe4cdbd9a517657bd",
@@ -5379,21 +5699,8 @@
 "horario": "05:00-24:00",
 "h24": false,
 "end": "Avenida Pedro Álvares Cabral",
-"tel": "+55 11 3889 3000;+55 11 5574 5045",
+"tel": "+55 11 5574-5045",
 "site": "https://prefeitura.sp.gov.br/web/meio_ambiente/w/parques/regiao_sul/14062",
-"insta": ""
-},
-{
-"id": "w27030314",
-"nome": "Pavilhão Bienal - São Paulo",
-"cat": "cultura",
-"lat": -23.588464,
-"lon": -46.654591,
-"horario": "Tu-Su 10:00-21:00",
-"h24": false,
-"end": "",
-"tel": "+55 11 5573 9932",
-"site": "",
 "insta": ""
 },
 {
@@ -5657,19 +5964,6 @@
 "insta": ""
 },
 {
-"id": "n11810594906",
-"nome": "Alyah Sweets Doceria e Cozinha Libanesa",
-"cat": "docerias",
-"lat": -23.610546,
-"lon": -46.651324,
-"horario": "11:30-22:00",
-"h24": false,
-"end": "Avenida Indianópolis 1401",
-"tel": "+55 11 2371 2125",
-"site": "https://alyahsweets.com.br",
-"insta": ""
-},
-{
 "id": "f4ba557c8f964a520f2fc38e3",
 "nome": "Amor Aos Pedaços",
 "cat": "docerias",
@@ -5680,21 +5974,6 @@
 "end": "R. Dr. Jesuino Maciel, 646",
 "tel": "(11) 5543-4534",
 "site": "https://www.amoraospedacos.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
-"id": "f4c746244db52b1f7190776dc",
-"nome": "Amor aos Pedaços",
-"cat": "docerias",
-"lat": -23.611019,
-"lon": -46.666309,
-"horario": "Tu-Th 12:00-20:00; Sa 10:00-22:00; Su 10:00-16:00; Mo-Sa 08:00-20:00; Su 09:00-19:00; Mo-Fr 08:00-17:00",
-"h24": false,
-"end": "Shopping Ibirapuera",
-"tel": "(11) 5093-2225",
-"site": "https://amoraospedacos.com.br",
 "insta": "",
 "fonte": "fsq",
 "fonte_horario": "site"
@@ -5865,19 +6144,6 @@
 "insta": ""
 },
 {
-"id": "w521401871",
-"nome": "Cheesecakeria",
-"cat": "docerias",
-"lat": -23.606198,
-"lon": -46.67247,
-"horario": "",
-"h24": false,
-"end": "Avenida Cotovia 350",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4e295e75d164bfc24f2bbb3c",
 "nome": "Coffee Land Cafeteria",
 "cat": "docerias",
@@ -5990,16 +6256,30 @@
 "fonte": "fsq"
 },
 {
-"id": "f4fc0e76ae4b0fddecad4f41e",
-"nome": "Fôrma de Pudim",
+"id": "f4c30e09409a99c74a02a0b2a",
+"nome": "Happy Donuts",
 "cat": "docerias",
-"lat": -23.608142,
-"lon": -46.671277,
+"lat": -23.6102,
+"lon": -46.667411,
 "horario": "",
 "h24": false,
-"end": "R. Normandia, 102",
-"tel": "(11) 2309-2030",
+"end": "Shopping Ibirapuera",
+"tel": "",
 "site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f50be218ae4b027c60bfd0816",
+"nome": "Havanna Café",
+"cat": "docerias",
+"lat": -23.609619,
+"lon": -46.667021,
+"horario": "",
+"h24": false,
+"end": "Shopping Ibirapuera",
+"tel": "(11) 2059-2827",
+"site": "https://www.havanna.com.br",
 "insta": "",
 "fonte": "fsq"
 },
@@ -6099,20 +6379,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4df3e46bae609e69dd9b69d0",
-"nome": "Kopenhagen",
-"cat": "docerias",
-"lat": -23.603648,
-"lon": -46.659907,
-"horario": "",
-"h24": false,
-"end": "Al. dos Jurupis, 494-590",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4c30e31a7cc0c9b6f901ee9a",
 "nome": "Kopenhagen",
 "cat": "docerias",
@@ -6122,34 +6388,6 @@
 "h24": false,
 "end": "Al. dos Nhambiquaras, 340",
 "tel": "(11) 5051-5187",
-"site": "https://www.kopenhagen.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f5ffdd176d85c9a288b4cbd1b",
-"nome": "Kopenhagen",
-"cat": "docerias",
-"lat": -23.596557,
-"lon": -46.647392,
-"horario": "",
-"h24": false,
-"end": "Rua Borges Lagoa, 1118",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4fd933a3e4b071d9bd31f238",
-"nome": "Kopenhagen",
-"cat": "docerias",
-"lat": -23.590545,
-"lon": -46.673636,
-"horario": "",
-"h24": false,
-"end": "Hospital Maternidade São Luiz",
-"tel": "",
 "site": "https://www.kopenhagen.com.br",
 "insta": "",
 "fonte": "fsq"
@@ -6181,6 +6419,89 @@
 "site": "https://www.kopenhagen.com.br",
 "insta": "",
 "fonte": "fsq"
+},
+{
+"id": "f4fd933a3e4b071d9bd31f238",
+"nome": "Kopenhagen",
+"cat": "docerias",
+"lat": -23.590545,
+"lon": -46.673636,
+"horario": "",
+"h24": false,
+"end": "Hospital Maternidade São Luiz",
+"tel": "",
+"site": "https://www.kopenhagen.com.br",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f4df3e46bae609e69dd9b69d0",
+"nome": "Kopenhagen",
+"cat": "docerias",
+"lat": -23.603648,
+"lon": -46.659907,
+"horario": "",
+"h24": false,
+"end": "Al. dos Jurupis, 494-590",
+"tel": "",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f63c18a688cc3d31e8908bb21",
+"nome": "Kopenhagen",
+"cat": "docerias",
+"lat": -23.608509,
+"lon": -46.64683,
+"horario": "",
+"h24": false,
+"end": "Avenida Jose Maria Whitaker",
+"tel": "",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f5ffdd176d85c9a288b4cbd1b",
+"nome": "Kopenhagen",
+"cat": "docerias",
+"lat": -23.596557,
+"lon": -46.647392,
+"horario": "",
+"h24": false,
+"end": "Rua Borges Lagoa, 1118",
+"tel": "",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f4f16f583e4b0d59e256cc6e8",
+"nome": "Kopenhagen",
+"cat": "docerias",
+"lat": -23.586697,
+"lon": -46.67221,
+"horario": "",
+"h24": false,
+"end": "Av. Jose Maria Da Silva Paranhos, 31, Vila Suzana, São Paulo",
+"tel": "",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "n9348675204",
+"nome": "Kopenhagen",
+"cat": "docerias",
+"lat": -23.586999,
+"lon": -46.679512,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": ""
 },
 {
 "id": "f67fffc1032083e4e21b9c5c6",
@@ -6305,8 +6626,8 @@
 "horario": "",
 "h24": false,
 "end": "Rua Gaivota 1409",
-"tel": "(11) 5052-2002",
-"site": "https://www.mariabolo.com.br",
+"tel": "",
+"site": "",
 "insta": ""
 },
 {
@@ -6324,21 +6645,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f53fa6d4d498e573ad19706d2",
-"nome": "Ms. Pop",
-"cat": "docerias",
-"lat": -23.606195,
-"lon": -46.671787,
-"horario": "Su 14:00-18:00; Tu 10:30-18:00; We 10:30-18:00; Th 10:30-18:00; Fr 10:30-18:00; Sa 10:00-18:30",
-"h24": false,
-"end": "R. Canário, 1368",
-"tel": "(11) 3368-9864",
-"site": "https://www.mspop.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
 "id": "f4bb4c514a70595213fa51bce",
 "nome": "Munik Chocolates",
 "cat": "docerias",
@@ -6353,19 +6659,18 @@
 "fonte": "fsq"
 },
 {
-"id": "f4b7dcda6f964a520a3d52fe3",
+"id": "f4e9b21d09adf277db7f4dc26",
 "nome": "Ofner",
 "cat": "docerias",
-"lat": -23.611025,
-"lon": -46.6663,
-"horario": "Mo-Th 09:00-18:00; Fr 09:00-17:00",
+"lat": -23.61103,
+"lon": -46.666321,
+"horario": "",
 "h24": false,
 "end": "Shopping Ibirapuera",
-"tel": "(11) 5561-9722",
+"tel": "(11) 5097-9931",
 "site": "https://www.ofner.com.br",
 "insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
+"fonte": "fsq"
 },
 {
 "id": "f4b4a5053f964a5207b8326e3",
@@ -6373,29 +6678,13 @@
 "cat": "docerias",
 "lat": -23.602481,
 "lon": -46.661013,
-"horario": "Mo-Th 09:00-18:00; Fr 09:00-17:00",
+"horario": "",
 "h24": false,
 "end": "Av. Ibirapuera, 2033",
 "tel": "(11) 5051-8976",
 "site": "https://www.ofner.com.br",
 "insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
-"id": "f4e9b21d09adf277db7f4dc26",
-"nome": "Ofner Express",
-"cat": "docerias",
-"lat": -23.61103,
-"lon": -46.666321,
-"horario": "Mo-Th 09:00-18:00; Fr 09:00-17:00",
-"h24": false,
-"end": "Shopping Ibirapuera",
-"tel": "(11) 5097-9931",
-"site": "https://www.ofner.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
+"fonte": "fsq"
 },
 {
 "id": "n4726525339",
@@ -6423,19 +6712,6 @@
 "site": "https://www.senhorpudim.com",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "w521402007",
-"nome": "Sodie Doces",
-"cat": "docerias",
-"lat": -23.604715,
-"lon": -46.669949,
-"horario": "Mo-Sa 10:30-18:30; Su 10:00-15:00",
-"h24": false,
-"end": "Rua Canário",
-"tel": "",
-"site": "",
-"insta": ""
 },
 {
 "id": "f4f0b4d54e4b071c578678c2e",
@@ -6504,21 +6780,6 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "f519ba195498ede1bb53b5bad",
-"nome": "Tchocolath",
-"cat": "docerias",
-"lat": -23.589416,
-"lon": -46.680726,
-"horario": "Mo-Sa 08:00-19:00; Su 08:00-18:00",
-"h24": false,
-"end": "R. Prof. Atílio Innocenti, 249",
-"tel": "(11) 3078-4129",
-"site": "https://www.tchocolath.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
 },
 {
 "id": "f4d626139865a224b863ec185",
@@ -6894,20 +7155,6 @@
 "insta": ""
 },
 {
-"id": "f5110cb20e4b0e52d0d50d42c",
-"nome": "Colégio Martin Francisco",
-"cat": "escolas",
-"lat": -23.592802,
-"lon": -46.670819,
-"horario": "",
-"h24": false,
-"end": "Rua Domingues Fernandes",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4bcdc2bdb6c49c74f6d79591",
 "nome": "Colégio Móbile",
 "cat": "escolas",
@@ -7147,19 +7394,6 @@
 "insta": ""
 },
 {
-"id": "w684648373",
-"nome": "Escola Estadual Cesar Martinez",
-"cat": "escolas",
-"lat": -23.601476,
-"lon": -46.65785,
-"horario": "",
-"h24": false,
-"end": "Alameda Iraé 155",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4e7e4169108148acc63f3e32",
 "nome": "Escola Estadual Paulo Rossi",
 "cat": "escolas",
@@ -7309,20 +7543,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4d6d71e1edc26dcb26cbc9a4",
-"nome": "Wise Up",
-"cat": "escolas",
-"lat": -23.604811,
-"lon": -46.670799,
-"horario": "",
-"h24": false,
-"end": "R. Pavão, 498",
-"tel": "(11) 3467-5232",
-"site": "http://www.wiseup.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4e457aa21f6e29f10d98bb36",
 "nome": "Alessandro Brasil",
 "cat": "estetica",
@@ -7429,20 +7649,6 @@
 "end": "Rua Grauna",
 "tel": "(11) 5563-6370",
 "site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4bbdfd7ea0a0c9b6f3441c0f",
-"nome": "Drogaria Onofre",
-"cat": "estetica",
-"lat": -23.603547,
-"lon": -46.65593,
-"horario": "",
-"h24": false,
-"end": "Al. dos Nhambiquaras, 393 - Moema",
-"tel": "(11) 5052-4447",
-"site": "https://www.onofre.com.br",
 "insta": "",
 "fonte": "fsq"
 },
@@ -7611,20 +7817,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4cdef63b94c3b60c9ecb68ea",
-"nome": "L'Occitane en Provence",
-"cat": "estetica",
-"lat": -23.607499,
-"lon": -46.670651,
-"horario": "",
-"h24": false,
-"end": "R. Normandia, 18",
-"tel": "(11) 5093-8656",
-"site": "https://br.loccitane.com",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "w521404086",
 "nome": "La Lima Esthetic",
 "cat": "estetica",
@@ -7773,20 +7965,6 @@
 "fonte_horario": "site"
 },
 {
-"id": "f4e428c5bfa7630be84013ebc",
-"nome": "O Boticário",
-"cat": "estetica",
-"lat": -23.618186,
-"lon": -46.670527,
-"horario": "",
-"h24": false,
-"end": "Vieira de Moraes",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4e2ee68ab61c88c3a79241d5",
 "nome": "O Boticário",
 "cat": "estetica",
@@ -7796,6 +7974,20 @@
 "h24": false,
 "end": "Av. Moema, 107",
 "tel": "(11) 5051-3903",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f4e428c5bfa7630be84013ebc",
+"nome": "O Boticário",
+"cat": "estetica",
+"lat": -23.618186,
+"lon": -46.670527,
+"horario": "",
+"h24": false,
+"end": "Vieira de Moraes",
+"tel": "",
 "site": "",
 "insta": "",
 "fonte": "fsq"
@@ -7852,6 +8044,20 @@
 "tel": "",
 "site": "",
 "insta": ""
+},
+{
+"id": "f64dd83bcbcebf57325a8f6ca",
+"nome": "Sephora",
+"cat": "estetica",
+"lat": -23.610377,
+"lon": -46.66666,
+"horario": "",
+"h24": false,
+"end": "Shopping Ibirapuera",
+"tel": "(11) 5090-1220",
+"site": "https://www.sephora.com.br",
+"insta": "",
+"fonte": "fsq"
 },
 {
 "id": "f58b95db7f16bb5281a0a2801",
@@ -8002,6 +8208,20 @@
 "fonte": "fsq"
 },
 {
+"id": "f5282589511d23138aa961c06",
+"nome": "quem disse, berenice?",
+"cat": "estetica",
+"lat": -23.609923,
+"lon": -46.667261,
+"horario": "",
+"h24": false,
+"end": "Shopping Ibirapuera",
+"tel": "(11) 5049-1604",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "w1069532642",
 "nome": "DeRose Method Moema",
 "cat": "faculdades",
@@ -8089,7 +8309,7 @@
 "h24": false,
 "end": "Avenida Pedro Álvares Cabral 1301",
 "tel": "+55 11 2648-0254",
-"site": "http://mac.usp.br",
+"site": "https://www.mac.usp.br",
 "insta": ""
 },
 {
@@ -8133,26 +8353,13 @@
 },
 {
 "id": "w373981515",
-"nome": "Universidade Anhembi Morumbi - Unidade 6",
+"nome": "Universidade Anhembi-Morumbi",
 "cat": "faculdades",
 "lat": -23.60016,
 "lon": -46.676735,
 "horario": "",
 "h24": false,
 "end": "Rua Casa do Ator 175",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "n1202472822",
-"nome": "Universidade Anhembi-Morumbi",
-"cat": "faculdades",
-"lat": -23.599918,
-"lon": -46.676332,
-"horario": "",
-"h24": false,
-"end": "",
 "tel": "",
 "site": "",
 "insta": ""
@@ -8225,20 +8432,6 @@
 "insta": ""
 },
 {
-"id": "f4bae5bd0f964a5207ba73be3",
-"nome": "Droga Raia",
-"cat": "farmacias",
-"lat": -23.612368,
-"lon": -46.679184,
-"horario": "",
-"h24": false,
-"end": "R. Nebraska, 105",
-"tel": "(11) 5535-2061",
-"site": "https://www.drogaraia.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4b3cec69f964a520a78925e3",
 "nome": "Droga Raia",
 "cat": "farmacias",
@@ -8249,20 +8442,6 @@
 "end": "Av. Ver. José Diniz, 3540",
 "tel": "(11) 5543-0548",
 "site": "https://www.drogaraia.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f618015a8cdd4410e190f1b55",
-"nome": "Droga Raia",
-"cat": "farmacias",
-"lat": -23.617374,
-"lon": -46.672321,
-"horario": "",
-"h24": false,
-"end": "R. Demóstenes, 755",
-"tel": "(11) 94273-2200",
-"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -8323,20 +8502,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f5868fd2f98f8aa281b216215",
-"nome": "Droga Raia",
-"cat": "farmacias",
-"lat": -23.606732,
-"lon": -46.648154,
-"horario": "",
-"h24": false,
-"end": "Av. José Maria Whitaker, 669",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4ea60a949adf05b8d01ca660",
 "nome": "Droga Raia",
 "cat": "farmacias",
@@ -8393,6 +8558,34 @@
 "fonte": "fsq"
 },
 {
+"id": "f618015a8cdd4410e190f1b55",
+"nome": "Droga Raia",
+"cat": "farmacias",
+"lat": -23.617374,
+"lon": -46.672321,
+"horario": "",
+"h24": false,
+"end": "R. Demóstenes, 755",
+"tel": "(11) 94273-2200",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f5868fd2f98f8aa281b216215",
+"nome": "Droga Raia",
+"cat": "farmacias",
+"lat": -23.606732,
+"lon": -46.648154,
+"horario": "",
+"h24": false,
+"end": "Av. José Maria Whitaker, 669",
+"tel": "",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "f619b9386fe977f5a11c62c5c",
 "nome": "Droga Raia",
 "cat": "farmacias",
@@ -8421,13 +8614,27 @@
 "fonte": "fsq"
 },
 {
+"id": "f4bbdfd7ea0a0c9b6f3441c0f",
+"nome": "Drogaria Onofre",
+"cat": "farmacias",
+"lat": -23.603547,
+"lon": -46.65593,
+"horario": "",
+"h24": false,
+"end": "Al. dos Nhambiquaras, 393 - Moema",
+"tel": "(11) 5052-4447",
+"site": "https://www.onofre.com.br",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "n13141920201",
 "nome": "Drogaria Sao Paulo",
 "cat": "farmacias",
 "lat": -23.599792,
 "lon": -46.668288,
-"horario": "00:00 - 23:59",
-"h24": false,
+"horario": "24/7",
+"h24": true,
 "end": "Av. Lavandisca 116",
 "tel": "",
 "site": "https://drogariasaopaulo.com.br",
@@ -8461,20 +8668,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f599248fd59fe5c558915b773",
-"nome": "Drogaria São Paulo",
-"cat": "farmacias",
-"lat": -23.616744,
-"lon": -46.670034,
-"horario": "",
-"h24": false,
-"end": "R. Otávio Tarquínio de Souza, 1321",
-"tel": "(11) 5093-4176",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4d98f21cb188721ef6513437",
 "nome": "Drogaria São Paulo",
 "cat": "farmacias",
@@ -8498,20 +8691,6 @@
 "h24": false,
 "end": "Al. dos Maracatins, 539",
 "tel": "(11) 5051-5815",
-"site": "https://www.drogariasaopaulo.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f5213c13111d2dc4c5ec3d7a5",
-"nome": "Drogaria São Paulo",
-"cat": "farmacias",
-"lat": -23.6051,
-"lon": -46.657703,
-"horario": "",
-"h24": false,
-"end": "Av. Moema, 321",
-"tel": "(11) 5051-2775",
 "site": "https://www.drogariasaopaulo.com.br",
 "insta": "",
 "fonte": "fsq"
@@ -8559,6 +8738,20 @@
 "fonte": "fsq"
 },
 {
+"id": "f599248fd59fe5c558915b773",
+"nome": "Drogaria São Paulo",
+"cat": "farmacias",
+"lat": -23.616744,
+"lon": -46.670034,
+"horario": "",
+"h24": false,
+"end": "R. Otávio Tarquínio de Souza, 1321",
+"tel": "(11) 5093-4176",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "n4528876497",
 "nome": "Drogasil",
 "cat": "farmacias",
@@ -8596,48 +8789,6 @@
 "end": "Av. Sto. Amaro, 3784",
 "tel": "(11) 5041-2510",
 "site": "https://www.drogasil.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f663ac0f7b6bd5400f858f539",
-"nome": "Drogasil",
-"cat": "farmacias",
-"lat": -23.613547,
-"lon": -46.682934,
-"horario": "",
-"h24": false,
-"end": "Rua Nova York 528",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4e595cf7ae6099fc00c7563b",
-"nome": "Drogasil",
-"cat": "farmacias",
-"lat": -23.612405,
-"lon": -46.657302,
-"horario": "",
-"h24": false,
-"end": "Avenida Moreira Guimarães, 700",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f564a6a30498efe73983764bf",
-"nome": "Drogasil",
-"cat": "farmacias",
-"lat": -23.601034,
-"lon": -46.679279,
-"horario": "",
-"h24": false,
-"end": "Av Dr Cardoso De Melo 510",
-"tel": "(11) 3841-9542",
-"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -8684,34 +8835,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f54875a86498e74856d704380",
-"nome": "Drogasil",
-"cat": "farmacias",
-"lat": -23.607739,
-"lon": -46.659958,
-"horario": "",
-"h24": false,
-"end": "Rua Nhambiquaras",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f573de2a8498e2a2f3fe0ae7e",
-"nome": "Drogasil",
-"cat": "farmacias",
-"lat": -23.603262,
-"lon": -46.657209,
-"horario": "",
-"h24": false,
-"end": "Avenida Açocê, 368",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4b9fb6b5f964a520983737e3",
 "nome": "Drogasil",
 "cat": "farmacias",
@@ -8740,20 +8863,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f5be871de78782c002ca0f0eb",
-"nome": "Drogasil",
-"cat": "farmacias",
-"lat": -23.602604,
-"lon": -46.644635,
-"horario": "",
-"h24": false,
-"end": "Av. Dr. Altino Arantes",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4d87d5d1401a224bfe236d18",
 "nome": "Drogasil",
 "cat": "farmacias",
@@ -8768,6 +8877,20 @@
 "fonte": "fsq"
 },
 {
+"id": "f564a6a30498efe73983764bf",
+"nome": "Drogasil",
+"cat": "farmacias",
+"lat": -23.601034,
+"lon": -46.679279,
+"horario": "",
+"h24": false,
+"end": "Av Dr Cardoso De Melo 510",
+"tel": "(11) 3841-9542",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "f54e1212f498e31d8fdaaefb0",
 "nome": "Drogasil",
 "cat": "farmacias",
@@ -8778,6 +8901,76 @@
 "end": "Av. Sto. Amaro,  407",
 "tel": "",
 "site": "https://www.drogasil.com.br",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f663ac0f7b6bd5400f858f539",
+"nome": "Drogasil",
+"cat": "farmacias",
+"lat": -23.613547,
+"lon": -46.682934,
+"horario": "",
+"h24": false,
+"end": "Rua Nova York 528",
+"tel": "",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f4e595cf7ae6099fc00c7563b",
+"nome": "Drogasil",
+"cat": "farmacias",
+"lat": -23.612405,
+"lon": -46.657302,
+"horario": "",
+"h24": false,
+"end": "Avenida Moreira Guimarães, 700",
+"tel": "",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f54875a86498e74856d704380",
+"nome": "Drogasil",
+"cat": "farmacias",
+"lat": -23.607739,
+"lon": -46.659958,
+"horario": "",
+"h24": false,
+"end": "Rua Nhambiquaras",
+"tel": "",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f573de2a8498e2a2f3fe0ae7e",
+"nome": "Drogasil",
+"cat": "farmacias",
+"lat": -23.603262,
+"lon": -46.657209,
+"horario": "",
+"h24": false,
+"end": "Avenida Açocê, 368",
+"tel": "",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f5be871de78782c002ca0f0eb",
+"nome": "Drogasil",
+"cat": "farmacias",
+"lat": -23.602604,
+"lon": -46.644635,
+"horario": "",
+"h24": false,
+"end": "Av. Dr. Altino Arantes",
+"tel": "",
+"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -8845,20 +9038,6 @@
 "end": "Av. Santa Catarina, 1669",
 "tel": "(11) 5564-7242",
 "site": "https://www.farmais.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4bae5aaff964a520dea63be3",
-"nome": "Farmácia Pague Menos",
-"cat": "farmacias",
-"lat": -23.613596,
-"lon": -46.680645,
-"horario": "",
-"h24": false,
-"end": "Av. Portugal, 526",
-"tel": "(11) 5042-1857",
-"site": "https://www.paguemenos.com.br",
 "insta": "",
 "fonte": "fsq"
 },
@@ -8934,35 +9113,8 @@
 "fonte_horario": "site"
 },
 {
-"id": "w1279485036",
-"nome": "Manifarma",
-"cat": "farmacias",
-"lat": -23.607158,
-"lon": -46.671213,
-"horario": "",
-"h24": false,
-"end": "Avenida Cotovia 514",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "f4ee9c723b634ea5579a5ae08",
-"nome": "Natrium",
-"cat": "farmacias",
-"lat": -23.614875,
-"lon": -46.66155,
-"horario": "",
-"h24": false,
-"end": "Rua Miruna - Moema",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "w1104737851",
-"nome": "Natrium Farmacia de Manipulação",
+"nome": "Natrium",
 "cat": "farmacias",
 "lat": -23.614837,
 "lon": -46.661626,
@@ -8974,17 +9126,18 @@
 "insta": ""
 },
 {
-"id": "n1793048356",
+"id": "f4bae5aaff964a520dea63be3",
 "nome": "Pague Menos",
 "cat": "farmacias",
-"lat": -23.613579,
-"lon": -46.68057,
+"lat": -23.613596,
+"lon": -46.680645,
 "horario": "",
 "h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
+"end": "Av. Portugal, 526",
+"tel": "(11) 5042-1857",
+"site": "https://www.paguemenos.com.br",
+"insta": "",
+"fonte": "fsq"
 },
 {
 "id": "f5a3ea2f4b6eedb5d7081e27d",
@@ -9044,19 +9197,6 @@
 "insta": ""
 },
 {
-"id": "w1104737848",
-"nome": "Weleda Farmácia",
-"cat": "farmacias",
-"lat": -23.611868,
-"lon": -46.663625,
-"horario": "",
-"h24": false,
-"end": "Avenida Moaci 492",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "w1106124651",
 "nome": "Floricultura Moema Gardem",
 "cat": "floriculturas",
@@ -9080,20 +9220,6 @@
 "end": "Rua Cabo Verde 521 Vila Olímpia",
 "tel": "(11) 3045-1132",
 "site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4d2b0f15ebacb1f770b50850",
-"nome": "Ibirapuera Garden",
-"cat": "floriculturas",
-"lat": -23.604911,
-"lon": -46.659007,
-"horario": "",
-"h24": false,
-"end": "Al. Maracatins 414",
-"tel": "(11) 5051-7465",
-"site": "https://www.ibirapueragarden.com.br",
 "insta": "",
 "fonte": "fsq"
 },
@@ -9237,19 +9363,6 @@
 "fonte": "fsq"
 },
 {
-"id": "n4690480189",
-"nome": "Bullger",
-"cat": "hamburguerias",
-"lat": -23.597067,
-"lon": -46.667867,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f5506eeac498e2883360e7b7d",
 "nome": "Bullguer",
 "cat": "hamburguerias",
@@ -9274,19 +9387,6 @@
 "end": "Avenida Cotovia",
 "tel": "",
 "site": "",
-"insta": ""
-},
-{
-"id": "n10861125495",
-"nome": "Burger King",
-"cat": "hamburguerias",
-"lat": -23.605482,
-"lon": -46.64954,
-"horario": "10:00-23:00",
-"h24": false,
-"end": "Av. José Maria Whitaker, 418",
-"tel": "",
-"site": "https://www.burgerking.com.br",
 "insta": ""
 },
 {
@@ -9526,19 +9626,6 @@
 "fonte": "fsq"
 },
 {
-"id": "n4150329895",
-"nome": "Lanchonete da Cidade",
-"cat": "hamburguerias",
-"lat": -23.603162,
-"lon": -46.667094,
-"horario": "Mo 12:00-15:00,18:00-23:00; Tu-Th 12:00-15:00,18:00-00:00; Fr 12:00-15:00,18:00-01:00; Sa 12:00-01:00; Su 12:00-23:00",
-"h24": false,
-"end": "Avenida Macuco 355",
-"tel": "+55 11 3569 8252",
-"site": "https://www.lanchonetedacidade.com.br",
-"insta": "lanchonetedacidade"
-},
-{
 "id": "f6753916a71f7f364bf12e592",
 "nome": "Madero Burger",
 "cat": "hamburguerias",
@@ -9551,32 +9638,6 @@
 "site": "https://www.restaurantemadero.com.br/pt",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "n14104417344",
-"nome": "Mais Burguinho",
-"cat": "hamburguerias",
-"lat": -23.614794,
-"lon": -46.665031,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "w733616785",
-"nome": "Mc Donald´s",
-"cat": "hamburguerias",
-"lat": -23.590611,
-"lon": -46.680593,
-"horario": "",
-"h24": false,
-"end": "Av. Pres. Juscelino Kubitschek, 1201",
-"tel": "",
-"site": "https://www.mcdonalds.com.br",
-"insta": ""
 },
 {
 "id": "w125998728",
@@ -9592,6 +9653,34 @@
 "insta": ""
 },
 {
+"id": "f4b1aa0c5f964a520cded23e3",
+"nome": "McDonald's",
+"cat": "hamburguerias",
+"lat": -23.589402,
+"lon": -46.681451,
+"horario": "",
+"h24": false,
+"end": "Av. Brig. Faria Lima, 3805",
+"tel": "(11) 5561-9911",
+"site": "https://www.mcdonalds.com.br",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f6101644c02c44b5f622f189e",
+"nome": "McDonald's",
+"cat": "hamburguerias",
+"lat": -23.606618,
+"lon": -46.664902,
+"horario": "",
+"h24": false,
+"end": "Av. Ibirapuera, 2645",
+"tel": "",
+"site": "https://mcdonalds.com.br",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "f5f63c37f638738533f4c490f",
 "nome": "Milk & Mellow",
 "cat": "hamburguerias",
@@ -9605,20 +9694,6 @@
 "insta": "",
 "fonte": "fsq",
 "fonte_horario": "site"
-},
-{
-"id": "f4dfbca691495135fefd44aaa",
-"nome": "One Burguer",
-"cat": "hamburguerias",
-"lat": -23.615026,
-"lon": -46.661441,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
 },
 {
 "id": "f4b1eaab3f964a520831d24e3",
@@ -9851,19 +9926,6 @@
 "insta": ""
 },
 {
-"id": "w428746271",
-"nome": "Grand Mercure São Paulo Ibirapuera",
-"cat": "hoteis",
-"lat": -23.592752,
-"lon": -46.649347,
-"horario": "",
-"h24": false,
-"end": "Rua José Ferreira Pinto",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "w1376174641",
 "nome": "Hotel Bienal Ibirapuera",
 "cat": "hoteis",
@@ -9872,19 +9934,6 @@
 "horario": "",
 "h24": false,
 "end": "Rua Sena Madureira 1225",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "n10200469018",
-"nome": "Hotel Mercure Vila Olímpia",
-"cat": "hoteis",
-"lat": -23.594544,
-"lon": -46.674944,
-"horario": "",
-"h24": false,
-"end": "Rua João Cachoeira",
 "tel": "",
 "site": "",
 "insta": ""
@@ -9981,19 +10030,6 @@
 "insta": ""
 },
 {
-"id": "w1117619089",
-"nome": "Transamérica Executive (The Special)",
-"cat": "hoteis",
-"lat": -23.597872,
-"lon": -46.667161,
-"horario": "",
-"h24": false,
-"end": "Avenida Juriti 50",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "w1116688410",
 "nome": "Travel Inn Ritz",
 "cat": "hoteis",
@@ -10076,34 +10112,6 @@
 "fonte": "fsq"
 },
 {
-"id": "w521405155",
-"nome": "Djapa",
-"cat": "japoneses",
-"lat": -23.598519,
-"lon": -46.663141,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "f53d5eff1498ee27b94b2d86f",
-"nome": "Djapa Restaurante",
-"cat": "japoneses",
-"lat": -23.598476,
-"lon": -46.6629,
-"horario": "Mo-Th 12:00-15:00; Fr 12:00-15:00; Sa 12:00-00:00; Su 12:00-22:00; Tu-Th 12:00-15:00",
-"h24": false,
-"end": "R. Gaivota, 168",
-"tel": "(11) 2691-2003",
-"site": "https://www.djapa.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
 "id": "w1124715699",
 "nome": "Eat Sushi Bar",
 "cat": "japoneses",
@@ -10145,18 +10153,18 @@
 "fonte": "fsq"
 },
 {
-"id": "n4987007322",
-"nome": "Hitô",
+"id": "f4b5a0eb2f964a52089aa28e3",
+"nome": "Huto",
 "cat": "japoneses",
-"lat": -23.601024,
-"lon": -46.668349,
-"horario": "Mo,Tu,We,Th 12:00-15:00; Mo,Tu,We,Th 18:00-22:00; Fr 12:00-15:00; Fr 18:00-23:00; Sa 12:00-23:00; Su 12:00-22:00",
+"lat": -23.6097,
+"lon": -46.659064,
+"horario": "",
 "h24": false,
-"end": "Avenida Jacutinga 193",
-"tel": "(11) 5055-7077",
-"site": "https://hitosushi.com.br",
+"end": "Av. Jandira, 677",
+"tel": "(11) 5052-6804",
+"site": "",
 "insta": "",
-"fonte_horario": "site"
+"fonte": "fsq"
 },
 {
 "id": "f56958796498e49e6d0d41c53",
@@ -10182,20 +10190,6 @@
 "h24": false,
 "end": "Rua Leopoldo Couto Magalhães Júnior , 741",
 "tel": "(11) 3071-3765",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4b5a0eb2f964a52089aa28e3",
-"nome": "Huto Restaurante",
-"cat": "japoneses",
-"lat": -23.6097,
-"lon": -46.659064,
-"horario": "",
-"h24": false,
-"end": "Av. Jandira, 677",
-"tel": "(11) 5052-6804",
 "site": "",
 "insta": "",
 "fonte": "fsq"
@@ -10296,21 +10290,6 @@
 "site": "http://www.kenddo.com",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "f4b9fad38f964a520fc3337e3",
-"nome": "Kinoshita",
-"cat": "japoneses",
-"lat": -23.591867,
-"lon": -46.671326,
-"horario": "Mo-Th 12:00-15:00; Fr 12:00-15:00; Sa 12:00-16:00",
-"h24": false,
-"end": "R. Jacques Félix, 405",
-"tel": "(11) 3846-7327",
-"site": "https://restaurantekinoshita.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
 },
 {
 "id": "f578d2030cd10d60b1a3aeeb9",
@@ -10574,7 +10553,7 @@
 "h24": false,
 "end": "Av. Sto. Amaro, 1645",
 "tel": "",
-"site": "",
+"site": "https://www.sukiya-brasil.com.br",
 "insta": "",
 "fonte": "fsq"
 },
@@ -10758,19 +10737,6 @@
 "fonte": "fsq"
 },
 {
-"id": "n14318571080",
-"nome": "Temali Fry",
-"cat": "japoneses",
-"lat": -23.614879,
-"lon": -46.658775,
-"horario": "",
-"h24": false,
-"end": "Avenida Moreira Guimarães 979",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f5a73666a2347245a2ea21a9e",
 "nome": "Tessen Lounge",
 "cat": "japoneses",
@@ -10810,21 +10776,6 @@
 "tel": "",
 "site": "",
 "insta": ""
-},
-{
-"id": "f4bdca807f1499c744e7638f3",
-"nome": "Yakitori",
-"cat": "japoneses",
-"lat": -23.611668,
-"lon": -46.668576,
-"horario": "Mo-Fr 12:00-14:30; Mo-Th 18:00-22:00; Sa 18:00-23:00; Su 18:00-21:00",
-"h24": false,
-"end": "Av. dos Carinás, 93",
-"tel": "(11) 5044-7809",
-"site": "https://yakitori.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
 },
 {
 "id": "w521402163",
@@ -10913,19 +10864,6 @@
 "horario": "",
 "h24": false,
 "end": "Alameda dos Anapurús 1483",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "w1103907445",
-"nome": "Estitica Aratãs",
-"cat": "lavarapido",
-"lat": -23.61277,
-"lon": -46.659045,
-"horario": "",
-"h24": false,
-"end": "Avenida Aratãs 908",
 "tel": "",
 "site": "",
 "insta": ""
@@ -11265,6 +11203,20 @@
 "fonte": "fsq"
 },
 {
+"id": "f4ec95bc5be7ba4fc70ad2450",
+"nome": "Artex",
+"cat": "lojas",
+"lat": -23.610059,
+"lon": -46.667402,
+"horario": "",
+"h24": false,
+"end": "Shopping Ibirapuera",
+"tel": "(11) 5096-1282",
+"site": "https://www.artex.com.br",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "f4cd9370cb97060fc55fef37b",
 "nome": "Assoalhos Monet",
 "cat": "lojas",
@@ -11294,6 +11246,20 @@
 "fonte_horario": "site"
 },
 {
+"id": "n4726504735",
+"nome": "Atelier Hideko Honma",
+"cat": "lojas",
+"lat": -23.602486,
+"lon": -46.666525,
+"horario": "Mo-Fr 09:00-17:30; Sa 09:00-16:30",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "https://hidekohonma.com.br",
+"insta": "",
+"fonte_horario": "site"
+},
+{
 "id": "f4e8b5a4cb63423c02113654d",
 "nome": "Aza",
 "cat": "lojas",
@@ -11317,6 +11283,20 @@
 "h24": false,
 "end": "R. Leopoldo Couto de Magalhães Jr.",
 "tel": "(11) 3071-0777",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f4e7e03d85c5c9ea144a1502d",
+"nome": "Ballet Do Centro",
+"cat": "lojas",
+"lat": -23.609536,
+"lon": -46.666236,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "(11) 5543-9550",
 "site": "",
 "insta": "",
 "fonte": "fsq"
@@ -11730,6 +11710,20 @@
 "insta": ""
 },
 {
+"id": "f4da9dd226a2303012effe87d",
+"nome": "Cinerama",
+"cat": "lojas",
+"lat": -23.608292,
+"lon": -46.667011,
+"horario": "",
+"h24": false,
+"end": "Av. Ibirapuera, 2920",
+"tel": "(11) 5092-2979",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "f51f1307e498ea76eba222b81",
 "nome": "Clinica De Olhos Agenor Melo",
 "cat": "lojas",
@@ -11781,20 +11775,6 @@
 "h24": false,
 "end": "",
 "tel": "(11) 96068-4990",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f517dd73819a9d8c7961015dd",
-"nome": "Clube Melissa",
-"cat": "lojas",
-"lat": -23.607255,
-"lon": -46.671016,
-"horario": "",
-"h24": false,
-"end": "R. Gaivota, 1415",
-"tel": "(11) 5042-1193",
 "site": "",
 "insta": "",
 "fonte": "fsq"
@@ -12573,20 +12553,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4c4c8ad4c668e21ee187aafb",
-"nome": "Jorge Alex",
-"cat": "lojas",
-"lat": -23.605358,
-"lon": -46.670924,
-"horario": "",
-"h24": false,
-"end": "R. Canário, 1270",
-"tel": "(11) 2827-7000",
-"site": "https://www.jorgealex.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4df13bcc1f6e818dadf6ea80",
 "nome": "Junior santaella",
 "cat": "lojas",
@@ -12667,6 +12633,20 @@
 "end": "",
 "tel": "(11) 3887-8865",
 "site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f4cb8a7c023a4199c65eaec89",
+"nome": "Khelf",
+"cat": "lojas",
+"lat": -23.609947,
+"lon": -46.666615,
+"horario": "",
+"h24": false,
+"end": "Shopping Ibirapuera",
+"tel": "(11) 5561-9583",
+"site": "https://www.khelf.com.br",
 "insta": "",
 "fonte": "fsq"
 },
@@ -13091,20 +13071,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f524f0433498e198a8ecf0c8e",
-"nome": "Matsumoto Festas",
-"cat": "lojas",
-"lat": -23.607598,
-"lon": -46.661812,
-"horario": "",
-"h24": false,
-"end": "Av. Jandira, 326",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4df3a63c6284fefe8fc3153b",
 "nome": "Meiamania",
 "cat": "lojas",
@@ -13278,20 +13244,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4b2f858af964a52004ec24e3",
-"nome": "Oba Hortifruti",
-"cat": "lojas",
-"lat": -23.604885,
-"lon": -46.664922,
-"horario": "",
-"h24": false,
-"end": "Av. Macuco, 655 A",
-"tel": "(11) 5054-5040",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4d0e5a1e1f6bf04de52a8231",
 "nome": "Obra de Arte",
 "cat": "lojas",
@@ -13305,20 +13257,6 @@
 "insta": "",
 "fonte": "fsq",
 "fonte_horario": "site"
-},
-{
-"id": "f515f42b8498ea7a8f936ebc7",
-"nome": "Ocean Six Peixaria",
-"cat": "lojas",
-"lat": -23.613536,
-"lon": -46.668267,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
 },
 {
 "id": "f4e5942b9483b865169dca190",
@@ -13586,20 +13524,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4deeb74681dcfb51be403ce2",
-"nome": "Reciclamundo Moema",
-"cat": "lojas",
-"lat": -23.605654,
-"lon": -46.670965,
-"horario": "",
-"h24": false,
-"end": "Rua Canário, 1.291",
-"tel": "(11) 5093-4326",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4f4690c0e4b00ed04a7787a8",
 "nome": "Regatta tecidos",
 "cat": "lojas",
@@ -13626,6 +13550,21 @@
 "site": "https://www.rihappy.com.br",
 "insta": "",
 "fonte": "fsq"
+},
+{
+"id": "f4cc8afcc7151721e456f6237",
+"nome": "Richards",
+"cat": "lojas",
+"lat": -23.609339,
+"lon": -46.667286,
+"horario": "Mo-Th 08:30-18:00; Fr 08:30-17:00; Sa 09:00-12:00",
+"h24": false,
+"end": "Shopping Ibirapuera",
+"tel": "(11) 5561-9771",
+"site": "https://www.richards.com.br",
+"insta": "",
+"fonte": "fsq",
+"fonte_horario": "site"
 },
 {
 "id": "f67268f76273d0e2a2124b2eb",
@@ -13709,20 +13648,6 @@
 "end": "Jurucê, 322",
 "tel": "(11) 3434-0400",
 "site": "https://www.sandice.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f51b616a2498ebff25a29809a",
-"nome": "Sandice Digital Print",
-"cat": "lojas",
-"lat": -23.608374,
-"lon": -46.662502,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -14053,6 +13978,20 @@
 "fonte": "fsq"
 },
 {
+"id": "f5be76df7340a58002cab8431",
+"nome": "Uniso",
+"cat": "lojas",
+"lat": -23.609787,
+"lon": -46.666381,
+"horario": "",
+"h24": false,
+"end": "Shopping Ibirapuera",
+"tel": "(11) 5049-0255",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "f4d9db1ccc99fb60c7258cc8b",
 "nome": "Unna Móveis Planejados",
 "cat": "lojas",
@@ -14153,6 +14092,20 @@
 "fonte_horario": "site"
 },
 {
+"id": "f516de538e4b067d57656102c",
+"nome": "Vintage World",
+"cat": "lojas",
+"lat": -23.608338,
+"lon": -46.668449,
+"horario": "",
+"h24": false,
+"end": "Alameda dos Arapanes 1325",
+"tel": "(11) 5051-1950",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "f4b808675f964a520fb7930e3",
 "nome": "Vintage World - Loja Matriz",
 "cat": "lojas",
@@ -14161,20 +14114,6 @@
 "horario": "",
 "h24": false,
 "end": "Al. Jauaperi, 196",
-"tel": "(11) 5051-1950",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f516de538e4b067d57656102c",
-"nome": "Vintage World - Moema",
-"cat": "lojas",
-"lat": -23.608338,
-"lon": -46.668449,
-"horario": "",
-"h24": false,
-"end": "Alameda dos Arapanes 1325",
 "tel": "(11) 5051-1950",
 "site": "",
 "insta": "",
@@ -14293,19 +14232,6 @@
 "fonte": "fsq"
 },
 {
-"id": "w521402010",
-"nome": "Óticas Carol",
-"cat": "lojas",
-"lat": -23.60485,
-"lon": -46.670086,
-"horario": "",
-"h24": false,
-"end": "Rua Canário 1149",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4cf905d0de096dcbe7f68b79",
 "nome": "Óticas Carol",
 "cat": "lojas",
@@ -14318,6 +14244,19 @@
 "site": "https://www.oticascarol.com.br",
 "insta": "",
 "fonte": "fsq"
+},
+{
+"id": "w521402010",
+"nome": "Óticas Carol",
+"cat": "lojas",
+"lat": -23.60485,
+"lon": -46.670086,
+"horario": "",
+"h24": false,
+"end": "Rua Canário 1149",
+"tel": "",
+"site": "",
+"insta": ""
 },
 {
 "id": "f4d7b83b0cf3f37044eea3c40",
@@ -14460,11 +14399,11 @@
 "fonte": "fsq"
 },
 {
-"id": "f53ef8e12498ef43ed733bb2d",
-"nome": "Café Indianopolis",
+"id": "f4f0879f0e4b07c8f8c216ddd",
+"nome": "Cafe St. Marché",
 "cat": "mercados",
-"lat": -23.607052,
-"lon": -46.653489,
+"lat": -23.603175,
+"lon": -46.675582,
 "horario": "",
 "h24": false,
 "end": "",
@@ -14500,20 +14439,6 @@
 "insta": ""
 },
 {
-"id": "f55de1df5498e2957bdb670f9",
-"nome": "Carrefour Express",
-"cat": "mercados",
-"lat": -23.618512,
-"lon": -46.675997,
-"horario": "",
-"h24": false,
-"end": "Av. Ver. José Diniz, 3340",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f55e764ed498eaee2946501e2",
 "nome": "Carrefour Express",
 "cat": "mercados",
@@ -14524,6 +14449,20 @@
 "end": "Av. Pe. Antônio José dos Santos, 255",
 "tel": "",
 "site": "https://www.carrefour.com.br",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f55de1df5498e2957bdb670f9",
+"nome": "Carrefour Express",
+"cat": "mercados",
+"lat": -23.618512,
+"lon": -46.675997,
+"horario": "",
+"h24": false,
+"end": "Av. Ver. José Diniz, 3340",
+"tel": "",
+"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -14542,19 +14481,6 @@
 "fonte": "fsq"
 },
 {
-"id": "w1097996982",
-"nome": "Carrefour Market",
-"cat": "mercados",
-"lat": -23.607429,
-"lon": -46.654647,
-"horario": "",
-"h24": false,
-"end": "Avenida Moema 735",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f5a29543cff0306732bb9020b",
 "nome": "Carrefour Market",
 "cat": "mercados",
@@ -14567,6 +14493,19 @@
 "site": "https://www.carrefour.com.br",
 "insta": "",
 "fonte": "fsq"
+},
+{
+"id": "w1097996982",
+"nome": "Carrefour Market",
+"cat": "mercados",
+"lat": -23.607429,
+"lon": -46.654647,
+"horario": "",
+"h24": false,
+"end": "Avenida Moema 735",
+"tel": "",
+"site": "",
+"insta": ""
 },
 {
 "id": "f4d6d6866183a236a8240603a",
@@ -14611,17 +14550,18 @@
 "fonte": "fsq"
 },
 {
-"id": "n2424531867",
-"nome": "Copenhagen",
+"id": "f4d12724e9844b60c3880bbd4",
+"nome": "DIA Supermercado",
 "cat": "mercados",
-"lat": -23.60309,
-"lon": -46.655824,
+"lat": -23.603403,
+"lon": -46.644462,
 "horario": "",
 "h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
+"end": "R. Napoleão de Barros, 1375",
+"tel": "(11) 95589-6356",
+"site": "https://dia.com.br",
+"insta": "",
+"fonte": "fsq"
 },
 {
 "id": "f4c8bc31f5e38b1f7f1de2af9",
@@ -14652,20 +14592,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4d12724e9844b60c3880bbd4",
-"nome": "DIA Supermercado",
-"cat": "mercados",
-"lat": -23.603403,
-"lon": -46.644462,
-"horario": "",
-"h24": false,
-"end": "R. Napoleão de Barros, 1375",
-"tel": "(11) 95589-6356",
-"site": "https://dia.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "n1424656798",
 "nome": "Dia",
 "cat": "mercados",
@@ -14692,19 +14618,6 @@
 "insta": ""
 },
 {
-"id": "w1099631232",
-"nome": "Emporio da Papinha",
-"cat": "mercados",
-"lat": -23.61066,
-"lon": -46.664676,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "w1098686766",
 "nome": "Emporium São Paulo",
 "cat": "mercados",
@@ -14714,7 +14627,7 @@
 "h24": false,
 "end": "Avenida Jurema 259",
 "tel": "(11) 5054-8000",
-"site": "https://www.emporiumsaopaulo.com.br",
+"site": "",
 "insta": ""
 },
 {
@@ -14727,7 +14640,7 @@
 "h24": false,
 "end": "Av. Cotovia, 159",
 "tel": "(11) 5538-4600",
-"site": "https://www.emporiumsaopaulo.com.br",
+"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -14741,7 +14654,7 @@
 "h24": false,
 "end": "Al. dos Maracatins, 217",
 "tel": "(11) 3053-3310",
-"site": "https://www.emporiumsaopaulo.com.br",
+"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -14755,9 +14668,22 @@
 "h24": false,
 "end": "R. Afonso Braz, 431",
 "tel": "(11) 3848-3700",
-"site": "https://www.emporiumsaopaulo.com.br",
+"site": "",
 "insta": "",
 "fonte": "fsq"
+},
+{
+"id": "w398401303",
+"nome": "Empório",
+"cat": "mercados",
+"lat": -23.60114,
+"lon": -46.681578,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": ""
 },
 {
 "id": "w521406095",
@@ -15038,6 +14964,20 @@
 "fonte": "fsq"
 },
 {
+"id": "f54956fc4498ecb80c5d8f621",
+"nome": "Feira livre Ibirapuera",
+"cat": "mercados",
+"lat": -23.593322,
+"lon": -46.665785,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "n12581644639",
 "nome": "Hirota Food",
 "cat": "mercados",
@@ -15092,21 +15032,8 @@
 "fonte": "fsq"
 },
 {
-"id": "n6631713170",
-"nome": "Mambo",
-"cat": "mercados",
-"lat": -23.599653,
-"lon": -46.665558,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f566042f4498e288f3c09f09d",
-"nome": "Mambo Supermercado",
+"nome": "Mambo",
 "cat": "mercados",
 "lat": -23.599691,
 "lon": -46.665532,
@@ -15175,19 +15102,6 @@
 "fonte": "fsq"
 },
 {
-"id": "w1097562679",
-"nome": "Mini Extra",
-"cat": "mercados",
-"lat": -23.605175,
-"lon": -46.658739,
-"horario": "",
-"h24": false,
-"end": "Alameda dos Maracatins 417",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4c44c76236d6a593dbf66aa8",
 "nome": "Mini Extra",
 "cat": "mercados",
@@ -15200,6 +15114,19 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
+},
+{
+"id": "w1097562679",
+"nome": "Mini Extra",
+"cat": "mercados",
+"lat": -23.605175,
+"lon": -46.658739,
+"horario": "",
+"h24": false,
+"end": "Alameda dos Maracatins 417",
+"tel": "",
+"site": "",
+"insta": ""
 },
 {
 "id": "f4d84f359f1e56ea822eb7f8a",
@@ -15243,16 +15170,30 @@
 "insta": ""
 },
 {
-"id": "f56128ea1498ec4c170144d79",
-"nome": "Minuto Pão de Açucar",
+"id": "f5616d3c3498e18305c551a0a",
+"nome": "Minuto Pão de Açúcar",
 "cat": "mercados",
-"lat": -23.603655,
-"lon": -46.664467,
+"lat": -23.601101,
+"lon": -46.678864,
 "horario": "",
 "h24": false,
-"end": "Alameda Do Arapanés 685",
-"tel": "",
-"site": "",
+"end": "Av. Dr. Cardoso de Melo, 482",
+"tel": "(11) 3552-6194",
+"site": "https://www.paodeacucar.com",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f54b6f2f9498e0018015c517d",
+"nome": "Minuto Pão de Açúcar",
+"cat": "mercados",
+"lat": -23.590419,
+"lon": -46.673902,
+"horario": "",
+"h24": false,
+"end": "R. Dr. Alceu de Campos Rodrigues, 174",
+"tel": "(11) 3552-2610",
+"site": "https://www.paodeacucar.com",
 "insta": "",
 "fonte": "fsq"
 },
@@ -15271,20 +15212,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f5616d3c3498e18305c551a0a",
-"nome": "Minuto Pão de Açúcar",
-"cat": "mercados",
-"lat": -23.601101,
-"lon": -46.678864,
-"horario": "",
-"h24": false,
-"end": "Av. Dr. Cardoso de Melo, 482",
-"tel": "(11) 3552-6194",
-"site": "https://www.paodeacucar.com",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f549f3587498ee538a0995f5b",
 "nome": "Minuto Pão de Açúcar",
 "cat": "mercados",
@@ -15295,20 +15222,6 @@
 "end": "Avenida Hélio Pellegrino",
 "tel": "",
 "site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f54b6f2f9498e0018015c517d",
-"nome": "Minuto Pão de Açúcar",
-"cat": "mercados",
-"lat": -23.590419,
-"lon": -46.673902,
-"horario": "",
-"h24": false,
-"end": "R. Dr. Alceu de Campos Rodrigues, 174",
-"tel": "(11) 3552-2610",
-"site": "https://www.paodeacucar.com",
 "insta": "",
 "fonte": "fsq"
 },
@@ -15381,6 +15294,20 @@
 "fonte": "fsq"
 },
 {
+"id": "f4b2f858af964a52004ec24e3",
+"nome": "Oba Hortifruti",
+"cat": "mercados",
+"lat": -23.604885,
+"lon": -46.664922,
+"horario": "",
+"h24": false,
+"end": "Av. Macuco, 655 A",
+"tel": "(11) 5054-5040",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "f6931fe98adf5d11d9547f313",
 "nome": "Oba Hortifruti",
 "cat": "mercados",
@@ -15421,19 +15348,6 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "w1565324556",
-"nome": "Oxxo",
-"cat": "mercados",
-"lat": -23.615648,
-"lon": -46.676791,
-"horario": "",
-"h24": false,
-"end": "Rua Princesa Isabel 1295",
-"tel": "",
-"site": "",
-"insta": ""
 },
 {
 "id": "f4d7c0f652b732c0f46378bf5",
@@ -15487,20 +15401,6 @@
 "end": "Av. Ibirapuera, 1770",
 "tel": "(11) 5051-1428",
 "site": "https://www.paodeacucar.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f543d5688498e48b8d472de0b",
-"nome": "Pão de Açúcar",
-"cat": "mercados",
-"lat": -23.603961,
-"lon": -46.664518,
-"horario": "",
-"h24": false,
-"end": "Al. dos Arapanés 685",
-"tel": "",
-"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -15571,6 +15471,20 @@
 "end": "Av. Santo Amaro, 1001",
 "tel": "",
 "site": "https://www.paodeacucar.com.br",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f543d5688498e48b8d472de0b",
+"nome": "Pão de Açúcar",
+"cat": "mercados",
+"lat": -23.603961,
+"lon": -46.664518,
+"horario": "",
+"h24": false,
+"end": "Al. dos Arapanés 685",
+"tel": "",
+"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -15689,14 +15603,13 @@
 "cat": "mercados",
 "lat": -23.609944,
 "lon": -46.660562,
-"horario": "Mo-Fr 07:00-19:00; Mo-Fr 09:00-18:00",
+"horario": "",
 "h24": false,
 "end": "Av. Jurucê, 616",
 "tel": "",
 "site": "https://www.swift.com.br",
 "insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
+"fonte": "fsq"
 },
 {
 "id": "f53ade9e8498eb151220e89cd",
@@ -15704,14 +15617,13 @@
 "cat": "mercados",
 "lat": -23.602591,
 "lon": -46.671542,
-"horario": "Mo-Fr 07:00-19:00; Mo-Fr 09:00-18:00",
+"horario": "",
 "h24": false,
 "end": "Av. Rouxinol, 328",
 "tel": "",
 "site": "https://www.swift.com.br",
 "insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
+"fonte": "fsq"
 },
 {
 "id": "f5884a7278ab03f56f4aee6e4",
@@ -15719,14 +15631,13 @@
 "cat": "mercados",
 "lat": -23.605722,
 "lon": -46.649049,
-"horario": "Mo-Fr 07:00-19:00; Mo-Fr 09:00-18:00",
+"horario": "",
 "h24": false,
 "end": "Av. José Maria Whitaker, 521",
 "tel": "",
 "site": "https://www.swift.com.br",
 "insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
+"fonte": "fsq"
 },
 {
 "id": "r17551477",
@@ -15835,21 +15746,22 @@
 "fonte": "fsq"
 },
 {
-"id": "w124962727",
-"nome": "Boogie",
+"id": "f4e406d5ffa7697d3df7c929c",
+"nome": "Bar Unidade 8",
 "cat": "noite",
-"lat": -23.603259,
-"lon": -46.679681,
+"lat": -23.591701,
+"lon": -46.651509,
 "horario": "",
 "h24": false,
-"end": "Rua Alvorada 515",
-"tel": "+55 11 3168 8872;+55 11 3168 4475",
+"end": "",
+"tel": "",
 "site": "",
-"insta": ""
+"insta": "",
+"fonte": "fsq"
 },
 {
 "id": "f4c0b010035ac9c7444b885f7",
-"nome": "Boogie Disco",
+"nome": "Boogie",
 "cat": "noite",
 "lat": -23.603435,
 "lon": -46.679775,
@@ -15885,20 +15797,6 @@
 "end": "R. Tuim, 1041",
 "tel": "(11) 5042-0200",
 "site": "http://www.buffetdellorso.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4d863e9be83fa143a2c18ba1",
-"nome": "Buffet Wood",
-"cat": "noite",
-"lat": -23.605537,
-"lon": -46.670535,
-"horario": "",
-"h24": false,
-"end": "R. Canário, 1227",
-"tel": "(11) 2387-8925",
-"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -15986,14 +15884,14 @@
 "fonte": "fsq"
 },
 {
-"id": "f4d127c79058fa35d9f2f279f",
-"nome": "Dharma Eventos",
+"id": "f5017f6c5e4b0a04d2e1a20d6",
+"nome": "Dharma Restaurante",
 "cat": "noite",
-"lat": -23.603389,
-"lon": -46.660046,
+"lat": -23.604786,
+"lon": -46.658804,
 "horario": "",
 "h24": false,
-"end": "Av. Moema, 54",
+"end": "Al. Maracatins 392",
 "tel": "",
 "site": "",
 "insta": "",
@@ -16070,21 +15968,8 @@
 "fonte": "fsq"
 },
 {
-"id": "w449874121",
-"nome": "Manifesto Bar",
-"cat": "noite",
-"lat": -23.58592,
-"lon": -46.681136,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4b0588c7f964a520c0d922e3",
-"nome": "Manifesto Rock Bar",
+"nome": "Manifesto Bar",
 "cat": "noite",
 "lat": -23.585965,
 "lon": -46.681182,
@@ -16513,33 +16398,6 @@
 "insta": ""
 },
 {
-"id": "f5815c7a8d67cd352ea2b76c0",
-"nome": "Bella São Paulo Pães e Doces",
-"cat": "padarias",
-"lat": -23.606216,
-"lon": -46.660103,
-"horario": "",
-"h24": false,
-"end": "Al. dos Maracatins, 635",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "w732230691",
-"nome": "Boston Bakery",
-"cat": "padarias",
-"lat": -23.591445,
-"lon": -46.678075,
-"horario": "24/7",
-"h24": true,
-"end": "Rua Clodomiro Amazonas 816",
-"tel": "+55 11 3845 1638",
-"site": "https://bostonbakery.com.br",
-"insta": ""
-},
-{
 "id": "f4b6f0d33f964a520b7d92ce3",
 "nome": "Boulangerie Grand Mercure",
 "cat": "padarias",
@@ -16573,7 +16431,7 @@
 "cat": "padarias",
 "lat": -23.619199,
 "lon": -46.650349,
-"horario": "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-17:00",
+"horario": "Mo,Tu,We,Th,Fr,Sa,Su 09:00-17:00",
 "h24": false,
 "end": "Avenida Afonso Mariano Fagundes, 1350 - Planalto Paulista",
 "tel": "(11) 94714-3249",
@@ -16595,19 +16453,6 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "w1108162799",
-"nome": "Della Maris Pães e Doçes",
-"cat": "padarias",
-"lat": -23.607517,
-"lon": -46.655135,
-"horario": "",
-"h24": false,
-"end": "Avenida Moema 720",
-"tel": "",
-"site": "",
-"insta": ""
 },
 {
 "id": "f4bf9535f8d30d13a2afd0118",
@@ -16727,8 +16572,8 @@
 "lon": -46.645932,
 "horario": "Mo-Su,PH 06:00-22:00",
 "h24": false,
-"end": "",
-"tel": "",
+"end": "R. Tangará, 281. Vila Mariana",
+"tel": "(11) 5579-3980",
 "site": "",
 "insta": ""
 },
@@ -16748,7 +16593,7 @@
 },
 {
 "id": "f59ce6a732105c3413d3e4dba",
-"nome": "Jules L'Art du Pain",
+"nome": "Jules",
 "cat": "padarias",
 "lat": -23.607548,
 "lon": -46.658391,
@@ -16817,21 +16662,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f560c100c498edb41b52f03c5",
-"nome": "Le Pain Quotidien",
-"cat": "padarias",
-"lat": -23.595462,
-"lon": -46.670283,
-"horario": "Mo 07:00-20:30; Tu 07:00-20:30; We 07:00-20:30; Th 07:00-20:30; Fr 07:00-20:30; Sa 07:00-19:30",
-"h24": false,
-"end": "R. Afonso Braz, 657",
-"tel": "(11) 3849-0835",
-"site": "https://www.lepainquotidien.com/br/pt/locations/vila_nova_conceicao/r.-afonso-braz,-657",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
 "id": "w521400269",
 "nome": "Maria Philó",
 "cat": "padarias",
@@ -16840,8 +16670,8 @@
 "horario": "",
 "h24": false,
 "end": "Avenida dos Eucaliptos 683",
-"tel": "",
-"site": "",
+"tel": "(11) 5535-1200",
+"site": "http://mariaphilo.com.br",
 "insta": ""
 },
 {
@@ -16969,35 +16799,8 @@
 "fonte": "fsq"
 },
 {
-"id": "f4bccbf1b0687ef3b9fd2dfcc",
-"nome": "Padaria Gêmel",
-"cat": "padarias",
-"lat": -23.590025,
-"lon": -46.645951,
-"horario": "",
-"h24": false,
-"end": "R. Tangará, 281. Vila Mariana",
-"tel": "(11) 5579-3980",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "w1013315054",
-"nome": "Padaria Jesbell",
-"cat": "padarias",
-"lat": -23.588677,
-"lon": -46.673757,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4b73f54ef964a52099c12de3",
-"nome": "Padaria Jesbell Pães, Doces, Restaurante e Grill",
+"nome": "Padaria Jesbell",
 "cat": "padarias",
 "lat": -23.588485,
 "lon": -46.673955,
@@ -17079,19 +16882,6 @@
 "fonte": "fsq"
 },
 {
-"id": "w1115497422",
-"nome": "Padaria Pingo Doce",
-"cat": "padarias",
-"lat": -23.604392,
-"lon": -46.670701,
-"horario": "Mo-Su 06:00-22:00",
-"h24": false,
-"end": "Avenida Pavão 465",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4f099aefe4b09d21f7bd813d",
 "nome": "Padaria Rainha da Industrial",
 "cat": "padarias",
@@ -17147,19 +16937,6 @@
 "fonte": "fsq"
 },
 {
-"id": "w521400165",
-"nome": "Padoca di Napoli",
-"cat": "padarias",
-"lat": -23.602023,
-"lon": -46.672327,
-"horario": "Mo-Su,PH 06:00-22:00",
-"h24": false,
-"end": "Rua Pintassilgo 264",
-"tel": "(11) 2507-3764",
-"site": "https://padocadinapoli.com.br",
-"insta": ""
-},
-{
 "id": "f4cea84c6e888f04dac9b4d6b",
 "nome": "Panificadora Nhandu",
 "cat": "padarias",
@@ -17188,19 +16965,6 @@
 "fonte": "fsq"
 },
 {
-"id": "w1362732673",
-"nome": "Panificadora Ouro Pão",
-"cat": "padarias",
-"lat": -23.596531,
-"lon": -46.647943,
-"horario": "",
-"h24": false,
-"end": "Rua Doutor Bacelar 268",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4dca85f02271a5cb224cd200",
 "nome": "Pao Italiano",
 "cat": "padarias",
@@ -17210,20 +16974,6 @@
 "h24": false,
 "end": "rua dos chanes 649",
 "tel": "5542-9991",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4bd4c0725631c9b6b112a330",
-"nome": "Pingo Doce - Pães e Doces",
-"cat": "padarias",
-"lat": -23.604408,
-"lon": -46.670719,
-"horario": "",
-"h24": false,
-"end": "Av. Pavão, 465",
-"tel": "(11) 5533-7574",
 "site": "",
 "insta": "",
 "fonte": "fsq"
@@ -17339,20 +17089,6 @@
 "fonte_horario": "site"
 },
 {
-"id": "f51a9f8d9498e9bb8310d5e16",
-"nome": "Agua De Coco Do Cesinha",
-"cat": "parques",
-"lat": -23.590972,
-"lon": -46.66378,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4e6e851552b1ebdc1f4fa331",
 "nome": "Bambuzal",
 "cat": "parques",
@@ -17365,6 +17101,32 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
+},
+{
+"id": "n1769540780",
+"nome": "Bar da Piscina",
+"cat": "parques",
+"lat": -23.594702,
+"lon": -46.652233,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
+"id": "w27030314",
+"nome": "Bienal -São Paulo",
+"cat": "parques",
+"lat": -23.588464,
+"lon": -46.654591,
+"horario": "Tu-Su 10:00-21:00",
+"h24": false,
+"end": "",
+"tel": "+55 11 5573 9932",
+"site": "",
+"insta": ""
 },
 {
 "id": "f4dcf43adfa7664b7c6be3776",
@@ -17478,6 +17240,19 @@
 "fonte": "fsq"
 },
 {
+"id": "w439430913",
+"nome": "Café Indianopolis",
+"cat": "parques",
+"lat": -23.607751,
+"lon": -46.652521,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
 "id": "f4fb95634e4b0f73e4478150d",
 "nome": "Carrefor",
 "cat": "parques",
@@ -17548,20 +17323,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f54956fc4498ecb80c5d8f621",
-"nome": "Feira livre Ibirapuera",
-"cat": "parques",
-"lat": -23.593322,
-"lon": -46.665785,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f534af57f498e43524506d54a",
 "nome": "Fora de órbita",
 "cat": "parques",
@@ -17576,6 +17337,20 @@
 "fonte": "fsq"
 },
 {
+"id": "f4d2b0f15ebacb1f770b50850",
+"nome": "Ibirapuera Garden",
+"cat": "parques",
+"lat": -23.604911,
+"lon": -46.659007,
+"horario": "",
+"h24": false,
+"end": "Al. Maracatins 414",
+"tel": "(11) 5051-7465",
+"site": "https://www.ibirapueragarden.com.br",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "f4b0588c7f964a520d9d922e3",
 "nome": "Ibirapuera Park (Parque Ibirapuera)",
 "cat": "parques",
@@ -17585,7 +17360,7 @@
 "h24": false,
 "end": "Av. Pedro Álvares Cabral, s/n",
 "tel": "(11) 5574-5045",
-"site": "http://www.parqueibirapuera.org",
+"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -17741,45 +17516,17 @@
 "fonte": "fsq"
 },
 {
-"id": "w675436118",
-"nome": "Maremonti Garden",
+"id": "r2738162",
+"nome": "Marquise",
 "cat": "parques",
-"lat": -23.594631,
-"lon": -46.681333,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "f4cc0a889f4448cfa70675198",
-"nome": "Marquise José Ermírio de Moraes",
-"cat": "parques",
-"lat": -23.586449,
-"lon": -46.65665,
-"horario": "",
+"lat": -23.586384,
+"lon": -46.657275,
+"horario": "closed",
 "h24": false,
 "end": "Pq. Ibirapuera",
 "tel": "",
 "site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4dded2bad4c01aeee90660a2",
-"nome": "Moema Garden Floricultura",
-"cat": "parques",
-"lat": -23.603874,
-"lon": -46.657839,
-"horario": "",
-"h24": false,
-"end": "R. Chibaras 364",
-"tel": "(11) 5051-6918",
-"site": "",
-"insta": "",
-"fonte": "fsq"
+"insta": ""
 },
 {
 "id": "f4c3d06b87d002d7f3b4daf18",
@@ -17878,20 +17625,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f501e6618e4b0f873f8910683",
-"nome": "Piscina SESC Vila Mariana",
-"cat": "parques",
-"lat": -23.593735,
-"lon": -46.652994,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4eb91e4193ad236571b31818",
 "nome": "Play 3",
 "cat": "parques",
@@ -17970,20 +17703,6 @@
 "horario": "",
 "h24": false,
 "end": "Pq. Ibirapuera",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f52e50961498e87609e003223",
-"nome": "Portão 8",
-"cat": "parques",
-"lat": -23.587865,
-"lon": -46.663251,
-"horario": "",
-"h24": false,
-"end": "",
 "tel": "",
 "site": "",
 "insta": "",
@@ -18376,19 +18095,6 @@
 "insta": ""
 },
 {
-"id": "w183017619",
-"nome": "Praça Juca Mulato",
-"cat": "parques",
-"lat": -23.599894,
-"lon": -46.651863,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4bd701536798ef3b98fb658d",
 "nome": "Praça Juca Mulato",
 "cat": "parques",
@@ -18401,6 +18107,19 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
+},
+{
+"id": "w183017619",
+"nome": "Praça Juca Mulato",
+"cat": "parques",
+"lat": -23.599894,
+"lon": -46.651863,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": ""
 },
 {
 "id": "w33998954",
@@ -18428,19 +18147,6 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "w439430913",
-"nome": "Praça Lions Clube Indianópolis",
-"cat": "parques",
-"lat": -23.607751,
-"lon": -46.652521,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
 },
 {
 "id": "w125451030",
@@ -18547,14 +18253,14 @@
 "insta": ""
 },
 {
-"id": "f4dea7860c65be8091da6e734",
-"nome": "Praça Moema",
+"id": "f4c4b2135c668e21ea1f0a5f9",
+"nome": "Praça Mokiti Okada",
 "cat": "parques",
-"lat": -23.600596,
-"lon": -46.659249,
+"lat": -23.593526,
+"lon": -46.647577,
 "horario": "",
 "h24": false,
-"end": "Pç. Moema",
+"end": "Praça Mokiti Okada",
 "tel": "",
 "site": "",
 "insta": "",
@@ -18572,20 +18278,6 @@
 "tel": "",
 "site": "",
 "insta": ""
-},
-{
-"id": "f4c4b2135c668e21ea1f0a5f9",
-"nome": "Praça Mokiti Okada",
-"cat": "parques",
-"lat": -23.593526,
-"lon": -46.647577,
-"horario": "",
-"h24": false,
-"end": "Praça Mokiti Okada",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
 },
 {
 "id": "w126139357",
@@ -18809,20 +18501,6 @@
 "insta": ""
 },
 {
-"id": "f4cab674ed971b1f752be2ae1",
-"nome": "Praça da Paz",
-"cat": "parques",
-"lat": -23.58923,
-"lon": -46.661107,
-"horario": "",
-"h24": false,
-"end": "Pq. Ibirapuera",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "w126139359",
 "nome": "Praça do Pombo",
 "cat": "parques",
@@ -18891,20 +18569,6 @@
 "insta": ""
 },
 {
-"id": "f519d3e7c498e4156f8d1bb24",
-"nome": "Rampa da Bienal",
-"cat": "parques",
-"lat": -23.588593,
-"lon": -46.654794,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f54e8db42498e871837fe8598",
 "nome": "Shopping Garden",
 "cat": "parques",
@@ -18925,14 +18589,13 @@
 "cat": "parques",
 "lat": -23.59198,
 "lon": -46.663054,
-"horario": "Fr 07:00-17:00",
+"horario": "",
 "h24": false,
 "end": "Parque Ibirapuera",
 "tel": "(11) 5574-5045",
-"site": "https://parqueibirapuera.org/equipamentos-parque-ibirapuera/viveiro-manequinho-lopes",
+"site": "",
 "insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
+"fonte": "fsq"
 },
 {
 "id": "f5015c146e4b034c3e0cae15d",
@@ -19207,7 +18870,7 @@
 "h24": false,
 "end": "Alameda dos Nhambiquaras 1077",
 "tel": "(11) 5055-8294",
-"site": "",
+"site": "http://ibirapueradogs.com.br",
 "insta": ""
 },
 {
@@ -19234,20 +18897,6 @@
 "h24": false,
 "end": "",
 "tel": "(11) 5071-1792",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f5000c060e4b077654e52dbde",
-"nome": "Lar Dogs Pet & Clínica",
-"cat": "pet",
-"lat": -23.602164,
-"lon": -46.648554,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
 "site": "",
 "insta": "",
 "fonte": "fsq"
@@ -19648,7 +19297,7 @@
 "h24": false,
 "end": "",
 "tel": "",
-"site": "",
+"site": "https://www.zomato.com/pt/sao-paulo-sp/pizzaria-adesso-moema",
 "insta": ""
 },
 {
@@ -19720,21 +19369,6 @@
 "insta": ""
 },
 {
-"id": "f5359a5bf498ec1bc4d42be4e",
-"nome": "Casale di Pizza",
-"cat": "pizzarias",
-"lat": -23.609564,
-"lon": -46.657496,
-"horario": "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-17:00",
-"h24": false,
-"end": "567 Alameda dos Tupiniquins",
-"tel": "(11) 5055-2222",
-"site": "https://www.casaledipizza.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
 "id": "f4d27b93eebacb1f7b031ea4f",
 "nome": "Come Fa Pizzeria",
 "cat": "pizzarias",
@@ -19788,19 +19422,6 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "w398401303",
-"nome": "Empório",
-"cat": "pizzarias",
-"lat": -23.60114,
-"lon": -46.681578,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
 },
 {
 "id": "f6248f622e0f3174016144199",
@@ -19933,14 +19554,13 @@
 "cat": "pizzarias",
 "lat": -23.618379,
 "lon": -46.653357,
-"horario": "Su 18:00-23:30; Sa 18:00-23:40",
+"horario": "",
 "h24": false,
 "end": "Al. dos Guaicanãs, 1129 - Saúde",
 "tel": "(11) 5051-6761",
 "site": "https://laricaspizzas.blogspot.com.br/2011/12/pizzaria-laricas.html",
 "insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
+"fonte": "fsq"
 },
 {
 "id": "f4b47a527f964a520d43826e3",
@@ -20188,14 +19808,13 @@
 "cat": "pizzarias",
 "lat": -23.59008,
 "lon": -46.648917,
-"horario": "Su 18:00-23:00",
+"horario": "",
 "h24": false,
 "end": "R. França Pinto, 1347",
 "tel": "(11) 5572-2552",
-"site": "https://www.pizzariacarlitos.com.br",
+"site": "",
 "insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
+"fonte": "fsq"
 },
 {
 "id": "f4c101ed281e976b017a90eeb",
@@ -20238,21 +19857,6 @@
 "site": "https://www.pizzariapaulino.com.br",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "f4b81ccf3f964a520d2be30e3",
-"nome": "Pizzaria Speranza",
-"cat": "pizzarias",
-"lat": -23.602769,
-"lon": -46.662659,
-"horario": "Mo-Sa 18:00-00:00",
-"h24": false,
-"end": "Av. Sabiá, 786",
-"tel": "(11) 5051-1229",
-"site": "https://www.pizzaria.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
 },
 {
 "id": "w521402351",
@@ -20421,27 +20025,27 @@
 "fonte": "fsq"
 },
 {
-"id": "w377208365",
-"nome": "BR",
-"cat": "postos",
-"lat": -23.610149,
-"lon": -46.655383,
-"horario": "",
-"h24": false,
-"end": "Avenida Jamaris 990",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "w377208355",
-"nome": "Campeão",
+"nome": "Auto Posto Casa Grande Ltda",
 "cat": "postos",
 "lat": -23.614564,
 "lon": -46.658639,
 "horario": "",
 "h24": false,
 "end": "Avenida Iraí 1080",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
+"id": "w377811581",
+"nome": "BR",
+"cat": "postos",
+"lat": -23.604917,
+"lon": -46.670578,
+"horario": "",
+"h24": false,
+"end": "Rua Canário 1186",
 "tel": "",
 "site": "",
 "insta": ""
@@ -20499,19 +20103,6 @@
 "insta": ""
 },
 {
-"id": "w377208354",
-"nome": "Posto De Serviços Normandi Ltda",
-"cat": "postos",
-"lat": -23.614929,
-"lon": -46.659071,
-"horario": "",
-"h24": false,
-"end": "Avenida Moreira Guimarães 1019",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "w685287068",
 "nome": "Posto Girassol",
 "cat": "postos",
@@ -20559,6 +20150,19 @@
 "horario": "",
 "h24": false,
 "end": "Avenida Moreira Guimarães 718",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
+"id": "w377208354",
+"nome": "Posto Shell - Posto De Serv Normandi Ltda",
+"cat": "postos",
+"lat": -23.614929,
+"lon": -46.659071,
+"horario": "",
+"h24": false,
+"end": "Avenida Moreira Guimarães 1019",
 "tel": "",
 "site": "",
 "insta": ""
@@ -20715,20 +20319,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4b5b1038f964a52094e128e3",
-"nome": "Alemão SP",
-"cat": "restaurantes",
-"lat": -23.601821,
-"lon": -46.661968,
-"horario": "",
-"h24": false,
-"end": "Av. Juriti, 651",
-"tel": "(11) 5052-8333",
-"site": "https://alemaosp.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "n3904615259",
 "nome": "Allegrini",
 "cat": "restaurantes",
@@ -20752,20 +20342,6 @@
 "end": "R. Alvorada, 1251",
 "tel": "(11) 3849-5283",
 "site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f5dd55a482c3a7a0008ff8910",
-"nome": "Alyah Sweets Doceria & Cozinha Libanesa",
-"cat": "restaurantes",
-"lat": -23.610647,
-"lon": -46.651372,
-"horario": "",
-"h24": false,
-"end": "Avenida Indianópolis, 1401 - Indianópolis",
-"tel": "(11) 97838-9297",
-"site": "https://alyahsweets.com",
 "insta": "",
 "fonte": "fsq"
 },
@@ -20947,19 +20523,31 @@
 "fonte": "fsq"
 },
 {
-"id": "f4bd07e4fa8b3a59301f7635f",
+"id": "f4c423bb73735be9a29ba19a4",
+"nome": "Bac's",
+"cat": "restaurantes",
+"lat": -23.610155,
+"lon": -46.667433,
+"horario": "",
+"h24": false,
+"end": "Shopping Ibirapuera",
+"tel": "(11) 5561-2875",
+"site": "http://www.bacs.com.br",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "n5283668423",
 "nome": "Badejo",
 "cat": "restaurantes",
-"lat": -23.605982,
-"lon": -46.661389,
-"horario": "Tu 12:00-15:00; We-Fr 12:00-15:00; Sa 12:00-22:00; Su 12:00-17:00",
+"lat": -23.604625,
+"lon": -46.658293,
+"horario": "",
 "h24": false,
-"end": "Al. dos Jurupis, 813",
-"tel": "(11) 5055-0238",
-"site": "https://badejosp.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
+"end": "Avenida Moema 265",
+"tel": "",
+"site": "",
+"insta": ""
 },
 {
 "id": "f4ce2a6193644a093d297639f",
@@ -21041,33 +20629,6 @@
 "h24": false,
 "end": "Av. Afonso Mariano Fagundes, 665",
 "tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "n1769540780",
-"nome": "Bar da Piscina",
-"cat": "restaurantes",
-"lat": -23.594702,
-"lon": -46.652233,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "f4d693c639bd6a143af715cdf",
-"nome": "Bar da Villa",
-"cat": "restaurantes",
-"lat": -23.610384,
-"lon": -46.665341,
-"horario": "",
-"h24": false,
-"end": "Al. dos Jurupis, 1451",
-"tel": "(11) 98820-8019",
 "site": "",
 "insta": "",
 "fonte": "fsq"
@@ -21213,6 +20774,20 @@
 "fonte": "fsq"
 },
 {
+"id": "f4f3c0ae6e4b09bd6279dc724",
+"nome": "Bela Vista Bar",
+"cat": "restaurantes",
+"lat": -23.609705,
+"lon": -46.652603,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "f5618ff0b498e8d9df8532f77",
 "nome": "Beyti Restaurante",
 "cat": "restaurantes",
@@ -21264,20 +20839,6 @@
 "h24": false,
 "end": "R. Antonio de Macedo Soares 1683",
 "tel": "(11) 2309-9515",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f562c0a84498e54d25772bb4d",
-"nome": "Bistrô Utopia",
-"cat": "restaurantes",
-"lat": -23.607056,
-"lon": -46.671096,
-"horario": "",
-"h24": false,
-"end": "Av Cotovia, 514",
-"tel": "(11) 4564-9100",
 "site": "",
 "insta": "",
 "fonte": "fsq"
@@ -21377,19 +20938,6 @@
 "fonte": "fsq"
 },
 {
-"id": "w521401843",
-"nome": "Bourbon Street Music Club",
-"cat": "restaurantes",
-"lat": -23.612647,
-"lon": -46.668915,
-"horario": "Tu-Su 19:30-02:00",
-"h24": false,
-"end": "Rua dos Chanés 127",
-"tel": "+55 11 5095 6100",
-"site": "https://www.bourbonstreet.com.br",
-"insta": ""
-},
-{
 "id": "w521401355",
 "nome": "Boxixo Carioca",
 "cat": "restaurantes",
@@ -21459,32 +21007,17 @@
 "fonte": "fsq"
 },
 {
-"id": "n6418727765",
-"nome": "Brodo",
+"id": "n10861125495",
+"nome": "Burger King",
 "cat": "restaurantes",
-"lat": -23.592997,
-"lon": -46.675363,
-"horario": "Mo-We 12:00-15:00; Th-Sa 12:00-15:30, 19:30-23:00",
+"lat": -23.605482,
+"lon": -46.64954,
+"horario": "10:00-23:00",
 "h24": false,
-"end": "Rua Comendador Miguel Calfat 295",
-"tel": "+55 11 2892 2001",
-"site": "https://www.brodo.com.br",
+"end": "Av. José Maria Whitaker, 418",
+"tel": "",
+"site": "https://www.burgerking.com.br",
 "insta": ""
-},
-{
-"id": "f51cf3285498e00f5060bcc1f",
-"nome": "Brodo Rosticceria",
-"cat": "restaurantes",
-"lat": -23.592989,
-"lon": -46.675487,
-"horario": "Mo-Fr 11:30-15:30; We-Fr 18:00-23:00",
-"h24": false,
-"end": "R. Miguel Calfat, 295",
-"tel": "(11) 2892-2002",
-"site": "https://brodo.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
 },
 {
 "id": "f4b17e465f964a52054c923e3",
@@ -21528,19 +21061,6 @@
 "insta": ""
 },
 {
-"id": "n12581644640",
-"nome": "Calhandra",
-"cat": "restaurantes",
-"lat": -23.617484,
-"lon": -46.677352,
-"horario": "",
-"h24": false,
-"end": "Rua Vieira de Morais 282",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "n4527197091",
 "nome": "Camarões",
 "cat": "restaurantes",
@@ -21568,20 +21088,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4d43fb162e326ea8e93adfa6",
-"nome": "Cantina do Marinheiro",
-"cat": "restaurantes",
-"lat": -23.615992,
-"lon": -46.664457,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4c433f9dd7fad13af5420ada",
 "nome": "Cantina do Marinheiro",
 "cat": "restaurantes",
@@ -21591,6 +21097,20 @@
 "h24": false,
 "end": "R. Tuim, 971",
 "tel": "(11) 5092-5652",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f4d43fb162e326ea8e93adfa6",
+"nome": "Cantina do Marinheiro",
+"cat": "restaurantes",
+"lat": -23.615992,
+"lon": -46.664457,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
 "site": "",
 "insta": "",
 "fonte": "fsq"
@@ -21674,20 +21194,6 @@
 "end": "Av. Jurucê, 776",
 "tel": "(11) 5041-5276",
 "site": "http://chiadorestaurante.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4e7376012271391c70598e6c",
-"nome": "Chica Boa Bar e Cafe",
-"cat": "restaurantes",
-"lat": -23.59576,
-"lon": -46.666325,
-"horario": "",
-"h24": false,
-"end": "R Afonso Braz, 265",
-"tel": "(11) 3842-0806",
-"site": "https://clop.com.br",
 "insta": "",
 "fonte": "fsq"
 },
@@ -21829,19 +21335,6 @@
 "insta": ""
 },
 {
-"id": "w1105076394",
-"nome": "Costelaria",
-"cat": "restaurantes",
-"lat": -23.614938,
-"lon": -46.663239,
-"horario": "",
-"h24": false,
-"end": "Avenida dos Imarés 740",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4d779f6d9ee9a35dbc7cb5f8",
 "nome": "Cozinha & Companhia",
 "cat": "restaurantes",
@@ -21939,20 +21432,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f5017f6c5e4b0a04d2e1a20d6",
-"nome": "Dharma Restaurante",
-"cat": "restaurantes",
-"lat": -23.604786,
-"lon": -46.658804,
-"horario": "",
-"h24": false,
-"end": "Al. Maracatins 392",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f5991d32e1108ba4e3267f24a",
 "nome": "Di Paolo",
 "cat": "restaurantes",
@@ -21965,34 +21444,6 @@
 "site": "https://dipaolo.com.br",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "n11777048224",
-"nome": "Di Paolo grill",
-"cat": "restaurantes",
-"lat": -23.6048,
-"lon": -46.679107,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "f55229ca3498e53cb58aed236",
-"nome": "DiBaco  - Carnes e Vinhos- Vila Nova Conceição",
-"cat": "restaurantes",
-"lat": -23.591463,
-"lon": -46.671205,
-"horario": "Tu-Fr 12:00-15:30",
-"h24": false,
-"end": "Rua Jaques Félix, 365",
-"tel": "(11) 2385-7618",
-"site": "http://www.dibaco.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
 },
 {
 "id": "f4b7fffdaf964a520d34930e3",
@@ -22009,20 +21460,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4c1ba4cdb9f876b0c58f7a46",
-"nome": "Dib Especialidades Árabes",
-"cat": "restaurantes",
-"lat": -23.606929,
-"lon": -46.659379,
-"horario": "",
-"h24": false,
-"end": "Al. Nhambiquaras,  907",
-"tel": "(11) 5052-9120",
-"site": "https://dibarabe.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4bf8544f5efe2d7f40996a34",
 "nome": "Don Pancho",
 "cat": "restaurantes",
@@ -22035,21 +21472,6 @@
 "site": "http://www.donpancho.com.br",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "f4b3e341ff964a520829925e3",
-"nome": "Don Pepe Di Napoli",
-"cat": "restaurantes",
-"lat": -23.605803,
-"lon": -46.666092,
-"horario": "Sa 12:00-00:00; Sa 12:00-01:00",
-"h24": false,
-"end": "Al. dos Arapanés, 955",
-"tel": "(11) 5055-6626",
-"site": "http://www.donpepedinapoli.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
 },
 {
 "id": "f4ec70a5d6c251306caf3af56",
@@ -22103,33 +21525,6 @@
 "horario": "",
 "h24": false,
 "end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "w1148905649",
-"nome": "Doryo Sushi Bar",
-"cat": "restaurantes",
-"lat": -23.590107,
-"lon": -46.678503,
-"horario": "Tu-Sa 12:00-15:00,18:00-24:00",
-"h24": false,
-"end": "Rua Clodomiro Amazonas 660",
-"tel": "+55 11 91182 7941",
-"site": "https://doryosushibar.com.br",
-"insta": ""
-},
-{
-"id": "f51f7e812498eb6d6c1520a4c",
-"nome": "EVS - Espaço Vida Saudável Herbalife",
-"cat": "restaurantes",
-"lat": -23.587815,
-"lon": -46.673616,
-"horario": "",
-"h24": false,
-"end": "R. Salvador Longo, 37",
 "tel": "",
 "site": "",
 "insta": "",
@@ -22205,19 +21600,6 @@
 "fonte": "fsq"
 },
 {
-"id": "w521402893",
-"nome": "Empório Bar & Restaurante",
-"cat": "restaurantes",
-"lat": -23.606284,
-"lon": -46.672339,
-"horario": "",
-"h24": false,
-"end": "Avenida Cotovia 364",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "n4367701912",
 "nome": "Empório Frutaria",
 "cat": "restaurantes",
@@ -22282,6 +21664,20 @@
 "tel": "",
 "site": "",
 "insta": ""
+},
+{
+"id": "f52eef7c0498e0c442b777659",
+"nome": "Espetinhos Chico's Grill",
+"cat": "restaurantes",
+"lat": -23.610549,
+"lon": -46.668382,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": "",
+"fonte": "fsq"
 },
 {
 "id": "f4c433de6cc410f479ee9ad61",
@@ -22463,33 +21859,6 @@
 "fonte": "fsq"
 },
 {
-"id": "w284153902",
-"nome": "Frutaria São Paulo",
-"cat": "restaurantes",
-"lat": -23.597288,
-"lon": -46.667128,
-"horario": "",
-"h24": false,
-"end": "Av. Hélio Pellegrino, 100",
-"tel": "(11) 3846-1124",
-"site": "http://frutariasaopaulo.com.br",
-"insta": ""
-},
-{
-"id": "f61914f15800382111caff85c",
-"nome": "Fuego Celeste",
-"cat": "restaurantes",
-"lat": -23.601966,
-"lon": -46.666877,
-"horario": "",
-"h24": false,
-"end": "Avenida Jacutinga 365",
-"tel": "(11) 5051-7575",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4cf7b7290a71224b7ae72493",
 "nome": "Fã Conveniências",
 "cat": "restaurantes",
@@ -22502,20 +21871,6 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "w521402703",
-"nome": "Gajos",
-"cat": "restaurantes",
-"lat": -23.608159,
-"lon": -46.668229,
-"horario": "Mo-Th 12:00-15:30; Fr 12:00-15:30; Sa 12:00-00:00",
-"h24": false,
-"end": "Avenida Bem-te-vi 280",
-"tel": "(11) 5543-9749",
-"site": "https://gajos.com.br",
-"insta": "",
-"fonte_horario": "site"
 },
 {
 "id": "w1106918131",
@@ -22545,17 +21900,18 @@
 "fonte": "fsq"
 },
 {
-"id": "w521400109",
+"id": "f4b7bfc1ef964a52011772fe3",
 "nome": "Gauleses",
 "cat": "restaurantes",
-"lat": -23.602733,
-"lon": -46.671066,
+"lat": -23.602708,
+"lon": -46.671271,
 "horario": "",
 "h24": false,
-"end": "",
-"tel": "",
+"end": "Av. Tuim, 709",
+"tel": "(11) 5561-2453",
 "site": "",
-"insta": ""
+"insta": "",
+"fonte": "fsq"
 },
 {
 "id": "f5d0bb4e7b8c9a20023696a16",
@@ -22585,20 +21941,6 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "n4726512848",
-"nome": "Giardino",
-"cat": "restaurantes",
-"lat": -23.601512,
-"lon": -46.665575,
-"horario": "Mo 12:00-15:00; Tu 12:00-15:00; We 12:00-15:00; Th 12:00-15:00",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "https://vejasp.abril.com.br/estabelecimento/giardino",
-"insta": "",
-"fonte_horario": "site"
 },
 {
 "id": "f4fd0e239e4b0da17b05959cc",
@@ -22689,13 +22031,12 @@
 "cat": "restaurantes",
 "lat": -23.595233,
 "lon": -46.669447,
-"horario": "Su 11:00-23:30",
+"horario": "",
 "h24": false,
 "end": "Rua Afonso Brás 586",
 "tel": "+55 11 3842-2440",
 "site": "https://www.habibs.com.br",
-"insta": "",
-"fonte_horario": "site"
+"insta": ""
 },
 {
 "id": "f5acdf3c56fa81f479105ddf4",
@@ -22703,7 +22044,7 @@
 "cat": "restaurantes",
 "lat": -23.593762,
 "lon": -46.679374,
-"horario": "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-17:00",
+"horario": "Mo,Tu,We,Th,Fr,Sa,Su 09:00-17:00",
 "h24": false,
 "end": "R. Prof. Atílio Innocenti, 693",
 "tel": "(11) 99192-0657",
@@ -22754,19 +22095,6 @@
 "fonte": "fsq"
 },
 {
-"id": "n5709932921",
-"nome": "Hidden 2nd Floor",
-"cat": "restaurantes",
-"lat": -23.607235,
-"lon": -46.659326,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "w521401509",
 "nome": "Hocca Bar",
 "cat": "restaurantes",
@@ -22777,19 +22105,6 @@
 "end": "Alameda Jauaperi 1487",
 "tel": "(11) 4327-2582",
 "site": "http://www.hoccabar.com.br",
-"insta": ""
-},
-{
-"id": "n4528895693",
-"nome": "Huto",
-"cat": "restaurantes",
-"lat": -23.60958,
-"lon": -46.659048,
-"horario": "",
-"h24": false,
-"end": "Avenida Jandira 677",
-"tel": "",
-"site": "",
 "insta": ""
 },
 {
@@ -22987,18 +22302,17 @@
 "fonte": "fsq"
 },
 {
-"id": "f5ab29b5216fa047cff0e3f37",
+"id": "w521402011",
 "nome": "Khadije",
 "cat": "restaurantes",
-"lat": -23.604934,
-"lon": -46.670222,
+"lat": -23.604888,
+"lon": -46.670117,
 "horario": "",
 "h24": false,
-"end": "Canário 1159",
+"end": "Rua Canário 1159",
 "tel": "",
 "site": "",
-"insta": "",
-"fonte": "fsq"
+"insta": ""
 },
 {
 "id": "f4bdb82b23904a59350e24a9e",
@@ -23097,20 +22411,6 @@
 "fonte": "fsq"
 },
 {
-"id": "w1116105536",
-"nome": "La Nonna di Lucca",
-"cat": "restaurantes",
-"lat": -23.602414,
-"lon": -46.666278,
-"horario": "Mo 12:00-15:00; Tu 12:00-15:00; Th 12:00-15:00; Fr 12:00-15:00; Sa 12:00-17:00; Su 12:00-17:00",
-"h24": false,
-"end": "Rua Gaivota 689",
-"tel": "(11) 5051-6193",
-"site": "https://www.lanonnadilucca.com.br",
-"insta": "",
-"fonte_horario": "site"
-},
-{
 "id": "f4cfd03670df3236ad6e601aa",
 "nome": "La Nouba Bistrot",
 "cat": "restaurantes",
@@ -23139,20 +22439,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f601aca02bb6f2803b8d8190a",
-"nome": "La Pasta & Pizza",
-"cat": "restaurantes",
-"lat": -23.591352,
-"lon": -46.683399,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4b2d59baf964a520dbd424e3",
 "nome": "La Pasta Gialla",
 "cat": "restaurantes",
@@ -23165,21 +22451,6 @@
 "site": "https://www.lapastagialla.com.br",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "f4bad4ae1f964a520d6423be3",
-"nome": "La Piadina Cucina Italiana",
-"cat": "restaurantes",
-"lat": -23.595249,
-"lon": -46.678685,
-"horario": "Fr 11:00-15:30",
-"h24": false,
-"end": "R. Prof. Atilio Innocenti, 911",
-"tel": "(11) 3926-5427",
-"site": "https://www.lapiadina.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
 },
 {
 "id": "f555b9ec8498ea0e92f472fdb",
@@ -23223,21 +22494,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4ccae6dd33d3721ef8d02c8b",
-"nome": "La Ventana Parilla Porteña",
-"cat": "restaurantes",
-"lat": -23.597927,
-"lon": -46.667108,
-"horario": "Mo-Fr 12:00-16:00; Su 12:00-23:00; Mo-Fr 11:30-16:00",
-"h24": false,
-"end": "R. Tuim, 61",
-"tel": "(11) 5051-8237",
-"site": "https://laventanaparrilla.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
 "id": "n4719397440",
 "nome": "La Vera Pasta",
 "cat": "restaurantes",
@@ -23249,20 +22505,6 @@
 "tel": "(11) 5051-3912",
 "site": "https://www.laverapasta.com.br",
 "insta": ""
-},
-{
-"id": "f4b083ad2f964a520de0623e3",
-"nome": "Ladrillo",
-"cat": "restaurantes",
-"lat": -23.604306,
-"lon": -46.671027,
-"horario": "",
-"h24": false,
-"end": "Av. Pavão, 454",
-"tel": "(11) 3562-6499",
-"site": "",
-"insta": "",
-"fonte": "fsq"
 },
 {
 "id": "f4c5d85dc857ca5936304cdcb",
@@ -23458,19 +22700,6 @@
 "insta": ""
 },
 {
-"id": "n2156869834",
-"nome": "Los 3 Amigos",
-"cat": "restaurantes",
-"lat": -23.604205,
-"lon": -46.666224,
-"horario": "Tu-Su 18:00-01:00",
-"h24": false,
-"end": "Alameda Jauaperi",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f555dfee7498e3f77dc78053d",
 "nome": "MPB - Massa Pratos & Burguer",
 "cat": "restaurantes",
@@ -23539,19 +22768,6 @@
 "insta": ""
 },
 {
-"id": "n14266192527",
-"nome": "Mana Poke",
-"cat": "restaurantes",
-"lat": -23.60939,
-"lon": -46.664834,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4b4b47cef964a5205d9626e3",
 "nome": "Manáh Restaurante",
 "cat": "restaurantes",
@@ -23608,35 +22824,8 @@
 "fonte": "fsq"
 },
 {
-"id": "f4b1aa0c5f964a520cded23e3",
-"nome": "McDonald's",
-"cat": "restaurantes",
-"lat": -23.589402,
-"lon": -46.681451,
-"horario": "",
-"h24": false,
-"end": "Av. Brig. Faria Lima, 3805",
-"tel": "(11) 5561-9911",
-"site": "https://www.mcdonalds.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "w521399533",
-"nome": "Mendoza",
-"cat": "restaurantes",
-"lat": -23.601839,
-"lon": -46.669148,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "n11208667137",
-"nome": "Mendoza Parrilla e Bar",
+"nome": "Mendoza",
 "cat": "restaurantes",
 "lat": -23.601824,
 "lon": -46.669015,
@@ -23732,20 +22921,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4b6c5222f964a5207b302ce3",
-"nome": "Moema Natural",
-"cat": "restaurantes",
-"lat": -23.607369,
-"lon": -46.66972,
-"horario": "",
-"h24": false,
-"end": "Al. Jauaperi, 1332",
-"tel": "(11) 5542-8399",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f509efc00e4b03075378c6888",
 "nome": "Mostarda com mel",
 "cat": "restaurantes",
@@ -23827,21 +23002,6 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "f5a92e851f62e0945c193627a",
-"nome": "Natural das Anas",
-"cat": "restaurantes",
-"lat": -23.606895,
-"lon": -46.670871,
-"horario": "Mo 11:30-15:00; Tu 11:30-15:00; We 11:30-15:00; Th 11:30-15:00; Fr 11:30-15:00; Sa 11:30-16:00",
-"h24": false,
-"end": "R. Gaivota, 1339",
-"tel": "(11) 5049-0372",
-"site": "https://naturaldasanas.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
 },
 {
 "id": "f60a003d5da0dfb3d9f17f9d1",
@@ -23984,20 +23144,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4b7bfc1ef964a52011772fe3",
-"nome": "Os Gauleses",
-"cat": "restaurantes",
-"lat": -23.602708,
-"lon": -46.671271,
-"horario": "",
-"h24": false,
-"end": "Av. Tuim, 709",
-"tel": "(11) 5561-2453",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "n2421036968",
 "nome": "Os Gaúchos",
 "cat": "restaurantes",
@@ -24051,19 +23197,6 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "n13764104402",
-"nome": "Parrillada Fuego Celeste - Unidade Morma",
-"cat": "restaurantes",
-"lat": -23.602002,
-"lon": -46.666722,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
 },
 {
 "id": "n6450705851",
@@ -24135,21 +23268,8 @@
 "fonte": "fsq"
 },
 {
-"id": "w521400657",
-"nome": "Philippe",
-"cat": "restaurantes",
-"lat": -23.608357,
-"lon": -46.670992,
-"horario": "",
-"h24": false,
-"end": "Rua Normandia 103",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4b7740b3f964a520f68b2ee3",
-"nome": "Philippe Bistrô",
+"nome": "Philippe",
 "cat": "restaurantes",
 "lat": -23.608278,
 "lon": -46.67114,
@@ -24160,32 +23280,6 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "w1109635405",
-"nome": "Piadinha Tree",
-"cat": "restaurantes",
-"lat": -23.60157,
-"lon": -46.662042,
-"horario": "",
-"h24": false,
-"end": "Avenida Juriti 629",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "n6856423709",
-"nome": "Piazza Di Martini",
-"cat": "restaurantes",
-"lat": -23.592985,
-"lon": -46.67507,
-"horario": "Su-Fr 11:30-15:00, Sa 10:15-15:45",
-"h24": false,
-"end": "Rua João Cachoeira 1463",
-"tel": "+55 11 30490959",
-"site": "",
-"insta": ""
 },
 {
 "id": "f50ec2e76e4b0510138c06811",
@@ -24214,19 +23308,6 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "n11425954073",
-"nome": "Pipocado parque",
-"cat": "restaurantes",
-"lat": -23.586428,
-"lon": -46.659044,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
 },
 {
 "id": "n696177760",
@@ -24270,31 +23351,18 @@
 "fonte": "fsq"
 },
 {
-"id": "f50f41ebee4b029f6ba51ae60",
-"nome": "Prato Pronto",
+"id": "f4cab674ed971b1f752be2ae1",
+"nome": "Praça da Paz",
 "cat": "restaurantes",
-"lat": -23.603763,
-"lon": -46.670716,
+"lat": -23.58923,
+"lon": -46.661107,
 "horario": "",
 "h24": false,
-"end": "",
-"tel": "(11) 5055-2672",
+"end": "Pq. Ibirapuera",
+"tel": "",
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "w222065667",
-"nome": "Praça São Lourenço",
-"cat": "restaurantes",
-"lat": -23.598446,
-"lon": -46.679198,
-"horario": "Mo-Fr 12:00-15:00;Mo-Th 19:00-23:30;Fr-Sa 19:00-24:30;PH Sa-Su 12:00-17:00",
-"h24": false,
-"end": "Rua Casa do Ator 608",
-"tel": "(11) 3053-9300",
-"site": "https://www.pracasaolourenco.com.br",
-"insta": "https://www.instagram.com/pracasaolourenco/"
 },
 {
 "id": "f5849ec4fe7f1cf64e9452f38",
@@ -24575,34 +23643,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f4e9722ece5fa60039ef80e49",
-"nome": "Restaurante Eucaliptos",
-"cat": "restaurantes",
-"lat": -23.606267,
-"lon": -46.673601,
-"horario": "",
-"h24": false,
-"end": "Av. dos Eucaliptos, 204",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4fd8c588e4b000c41759ec2f",
-"nome": "Restaurante Hospital Edmundo Vasconcelos",
-"cat": "restaurantes",
-"lat": -23.595589,
-"lon": -46.651782,
-"horario": "",
-"h24": false,
-"end": "Rua Borges Lagoa, 1450",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4f5a2d2be4b04e4608200e64",
 "nome": "Restaurante Majó",
 "cat": "restaurantes",
@@ -24673,20 +23713,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f52348b8211d2867ae26af02f",
-"nome": "Restaurante Rustico",
-"cat": "restaurantes",
-"lat": -23.610741,
-"lon": -46.680629,
-"horario": "",
-"h24": false,
-"end": "Rua Nova York, 931",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4dadbac94df0522cc56097dc",
 "nome": "Restaurante Sabor Tropical Grill",
 "cat": "restaurantes",
@@ -24701,19 +23727,6 @@
 "fonte": "fsq"
 },
 {
-"id": "n10969885713",
-"nome": "Restaurante Selvagem",
-"cat": "restaurantes",
-"lat": -23.591731,
-"lon": -46.657002,
-"horario": "Mo off; Tu-Sa 12:00-16:00,19:00-23:30; Su 12:00-17:00",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "https://selvagemibirapuera.com.br",
-"insta": ""
-},
-{
 "id": "f4d24904bdaa93704a57ec681",
 "nome": "Restaurante Trivial Moema",
 "cat": "restaurantes",
@@ -24726,19 +23739,6 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
-},
-{
-"id": "w596585888",
-"nome": "Restaurante Vegano Vaca Verde",
-"cat": "restaurantes",
-"lat": -23.603572,
-"lon": -46.679434,
-"horario": "Mo-Fr 11:30-15:30; Sa 12:00-16:00",
-"h24": false,
-"end": "Rua Alvorada 457",
-"tel": "",
-"site": "",
-"insta": ""
 },
 {
 "id": "f515eff66e4b0ed1bda8a560d",
@@ -24839,34 +23839,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f561d2a6b498ee7909dcd79d1",
-"nome": "Rong He",
-"cat": "restaurantes",
-"lat": -23.604519,
-"lon": -46.662954,
-"horario": "Mo-Fr 11:30-15:00; Su 11:30-16:00",
-"h24": false,
-"end": "Av. Ibirapuera, 2343",
-"tel": "(11) 5052-0530",
-"site": "https://www.ronghe.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
-"id": "w1095423381",
-"nome": "Rong He Massa Chinesa",
-"cat": "restaurantes",
-"lat": -23.604698,
-"lon": -46.662811,
-"horario": "",
-"h24": false,
-"end": "Avenida Ibirapuera 2339",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4ef5d9a2a69dea74f96a5415",
 "nome": "Rotisserie Ceci",
 "cat": "restaurantes",
@@ -24881,23 +23853,8 @@
 "fonte": "fsq"
 },
 {
-"id": "f4b22d477f964a5205a4e24e3",
-"nome": "Ruella",
-"cat": "restaurantes",
-"lat": -23.593423,
-"lon": -46.674789,
-"horario": "Tu-Sa 19:00-00:00; Mo-Sa 19:00-23:00",
-"h24": false,
-"end": "R. João Cachoeira, 1507",
-"tel": "(11) 3842-7177",
-"site": "https://www.ruella.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
 "id": "w685336152",
-"nome": "Ruella Bistrô",
+"nome": "Ruella",
 "cat": "restaurantes",
 "lat": -23.593467,
 "lon": -46.674798,
@@ -24909,14 +23866,14 @@
 "insta": ""
 },
 {
-"id": "f4bed79b06e8c20a16c667061",
+"id": "f52348b8211d2867ae26af02f",
 "nome": "Rustico",
 "cat": "restaurantes",
-"lat": -23.610793,
-"lon": -46.680733,
+"lat": -23.610741,
+"lon": -46.680629,
 "horario": "",
 "h24": false,
-"end": "R. Nova York 931",
+"end": "Rua Nova York, 931",
 "tel": "",
 "site": "",
 "insta": "",
@@ -25047,21 +24004,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f62842a9da3bf540a7193dd02",
-"nome": "Selvagem",
-"cat": "restaurantes",
-"lat": -23.59215,
-"lon": -46.657192,
-"horario": "Mo 12:00-16:00; Tu-Th 12:00-16:00; Fr 12:00-00:00; Sa 11:30-00:00; Su 11:30-18:00; Mo-Th 10:00-19:00",
-"h24": false,
-"end": "Pq. Ibirapuera",
-"tel": "(11) 5198-0844",
-"site": "https://selvagemibirapuera.com.br",
-"insta": "",
-"fonte": "fsq",
-"fonte_horario": "site"
-},
-{
 "id": "f4bba0c981261d13a9724ea98",
 "nome": "Sesame Grill & Salad",
 "cat": "restaurantes",
@@ -25171,19 +24113,6 @@
 "insta": ""
 },
 {
-"id": "n4103937789",
-"nome": "Subway",
-"cat": "restaurantes",
-"lat": -23.590395,
-"lon": -46.679111,
-"horario": "",
-"h24": false,
-"end": "Avenida Presidente Juscelino Kubitschek",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4c04047939d476b028e430a7",
 "nome": "Subway",
 "cat": "restaurantes",
@@ -25193,6 +24122,20 @@
 "h24": false,
 "end": "Av. Moreira Guimarães, 991",
 "tel": "(11) 5051-5468",
+"site": "https://www.subway.com.br",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f5388c042498e34b97acb5d7b",
+"nome": "Subway",
+"cat": "restaurantes",
+"lat": -23.603967,
+"lon": -46.649019,
+"horario": "",
+"h24": false,
+"end": "R. Luis Gois, 2176",
+"tel": "(11) 2925-3340",
 "site": "https://www.subway.com.br",
 "insta": "",
 "fonte": "fsq"
@@ -25212,18 +24155,17 @@
 "fonte": "fsq"
 },
 {
-"id": "f5388c042498e34b97acb5d7b",
+"id": "n4103937789",
 "nome": "Subway",
 "cat": "restaurantes",
-"lat": -23.603967,
-"lon": -46.649019,
+"lat": -23.590395,
+"lon": -46.679111,
 "horario": "",
 "h24": false,
-"end": "R. Luis Gois, 2176",
-"tel": "(11) 2925-3340",
-"site": "https://www.subway.com.br",
-"insta": "",
-"fonte": "fsq"
+"end": "Avenida Presidente Juscelino Kubitschek",
+"tel": "",
+"site": "",
+"insta": ""
 },
 {
 "id": "f4dd6fca5fa76ad96d119f00f",
@@ -25310,21 +24252,8 @@
 "fonte": "fsq"
 },
 {
-"id": "w1013315591",
-"nome": "Taberna da",
-"cat": "restaurantes",
-"lat": -23.586642,
-"lon": -46.675163,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "n4804394122",
-"nome": "Taberna da esquina",
+"nome": "Taberna da",
 "cat": "restaurantes",
 "lat": -23.586637,
 "lon": -46.675164,
@@ -25420,19 +24349,6 @@
 "fonte": "fsq"
 },
 {
-"id": "w732230696",
-"nome": "Torta no Quintal",
-"cat": "restaurantes",
-"lat": -23.593902,
-"lon": -46.678474,
-"horario": "Mo 11:00-15:00, Tu-Fr 11:00-18:00, Sa 11:30-15:45",
-"h24": false,
-"end": "Rua Comendador Miguel Calfat 625",
-"tel": "+55 11 3044 2160",
-"site": "https://www.tortanoquintal.com.br",
-"insta": ""
-},
-{
 "id": "f4b93e74df964a520b45834e3",
 "nome": "Totò",
 "cat": "restaurantes",
@@ -25489,6 +24405,20 @@
 "fonte": "fsq"
 },
 {
+"id": "f5571de81498ed29efa11354a",
+"nome": "Tá na Geladeira",
+"cat": "restaurantes",
+"lat": -23.608115,
+"lon": -46.668221,
+"horario": "",
+"h24": false,
+"end": "Alameda dos Arapanés, 1252",
+"tel": "(11) 3564-8792",
+"site": "",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "n1793086589",
 "nome": "Uffizi",
 "cat": "restaurantes",
@@ -25511,20 +24441,6 @@
 "h24": false,
 "end": "R. Min. Jesuino Cardoso, 473",
 "tel": "(11) 2579-3044",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f596cdde9a9fe12520f919b38",
-"nome": "Vaca Verde",
-"cat": "restaurantes",
-"lat": -23.603563,
-"lon": -46.679381,
-"horario": "",
-"h24": false,
-"end": "Rua Alvorada, 457",
-"tel": "(11) 4329-8500",
 "site": "",
 "insta": "",
 "fonte": "fsq"
@@ -25656,20 +24572,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f5ab6ea32c97f2864fb6e6de7",
-"nome": "Vista",
-"cat": "restaurantes",
-"lat": -23.589123,
-"lon": -46.65096,
-"horario": "",
-"h24": false,
-"end": "MAC-USP",
-"tel": "(11) 2658-3188",
-"site": "https://vistasaopaulo.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "n2421036975",
 "nome": "Vitória Régia",
 "cat": "restaurantes",
@@ -25691,7 +24593,7 @@
 "horario": "",
 "h24": false,
 "end": "Avenida Cotovia",
-"tel": "",
+"tel": "(11) 5041-0276",
 "site": "",
 "insta": ""
 },
@@ -25845,19 +24747,6 @@
 "fonte": "fsq"
 },
 {
-"id": "w521402011",
-"nome": "khadije comida arabe",
-"cat": "restaurantes",
-"lat": -23.604888,
-"lon": -46.670117,
-"horario": "",
-"h24": false,
-"end": "Rua Canário 1159",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f55ce20d4498e50d5a334e382",
 "nome": "nhoc nhoc food truck",
 "cat": "restaurantes",
@@ -25936,20 +24825,6 @@
 "h24": false,
 "end": "Alameda dos maracatins,1217, 9 andar",
 "tel": "(11) 2369-4321",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f4f4e6f34e4b03933880f9e53",
-"nome": "Ambulatório Neuroftalmologia HSPE",
-"cat": "saude",
-"lat": -23.596592,
-"lon": -46.65339,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
 "site": "",
 "insta": "",
 "fonte": "fsq"
@@ -26130,20 +25005,6 @@
 "horario": "",
 "h24": false,
 "end": "46 Rua Doutor Alceu de Campos Rodrigues",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f571532a6498e06ca8b32ba50",
-"nome": "Centro de Diagnosticos Hospital Moriah",
-"cat": "saude",
-"lat": -23.615175,
-"lon": -46.660414,
-"horario": "",
-"h24": false,
-"end": "",
 "tel": "",
 "site": "",
 "insta": "",
@@ -26512,6 +25373,19 @@
 "fonte": "fsq"
 },
 {
+"id": "w1099631232",
+"nome": "Emporio da Papinha",
+"cat": "saude",
+"lat": -23.61066,
+"lon": -46.664676,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": ""
+},
+{
 "id": "f55608abd498efbaa5faebb1f",
 "nome": "Empório da Papinha",
 "cat": "saude",
@@ -26583,16 +25457,16 @@
 "fonte": "fsq"
 },
 {
-"id": "f52ac507d498e15ecb2023b8e",
+"id": "f543fd87a498e61defb1c53b2",
 "nome": "Fleury",
 "cat": "saude",
-"lat": -23.589016,
-"lon": -46.664736,
+"lat": -23.588501,
+"lon": -46.664194,
 "horario": "",
 "h24": false,
-"end": "Av. República do Líbano, 990",
+"end": "Avenida República do Líbano, 990",
 "tel": "(11) 3179-0822",
-"site": "",
+"site": "https://www.fleury.com.br",
 "insta": "",
 "fonte": "fsq"
 },
@@ -26724,14 +25598,14 @@
 "id": "w1072912608",
 "nome": "Hospital Moriah",
 "cat": "saude",
-"lat": -23.615008,
-"lon": -46.660282,
+"lat": -23.615044,
+"lon": -46.660241,
 "horario": "",
 "h24": false,
 "end": "Avenida Moaci 974",
-"tel": "+55 11 5080 7800;+55 11 2620 6970",
+"tel": "+55 11 5080 7800",
 "site": "https://www.hospitalmoriah.com.br",
-"insta": "https://www.instagram.com/hospitalmoriah/"
+"insta": ""
 },
 {
 "id": "f4b728671f964a520377d2de3",
@@ -27026,34 +25900,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f543fd87a498e61defb1c53b2",
-"nome": "Laboratório Fleury",
-"cat": "saude",
-"lat": -23.588501,
-"lon": -46.664194,
-"horario": "",
-"h24": false,
-"end": "Avenida República do Líbano, 990",
-"tel": "(11) 3179-0822",
-"site": "https://www.fleury.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f50c60c47f136071a9cdae613",
-"nome": "Lanchinho Fleury",
-"cat": "saude",
-"lat": -23.586412,
-"lon": -46.663518,
-"horario": "",
-"h24": false,
-"end": "Av. República do Líbano, 635",
-"tel": "(11) 3179-0822",
-"site": "https://www.fleury.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f4e184e66483b5cfa49c8bc59",
 "nome": "Luiz e Matheus",
 "cat": "saude",
@@ -27234,11 +26080,11 @@
 "fonte": "fsq"
 },
 {
-"id": "f4fbf93c7e4b0d6b351e228fb",
+"id": "f4f4e6f34e4b03933880f9e53",
 "nome": "Oftalmologia HSPE",
 "cat": "saude",
-"lat": -23.596927,
-"lon": -46.654479,
+"lat": -23.596592,
+"lon": -46.65339,
 "horario": "",
 "h24": false,
 "end": "",
@@ -27401,19 +26247,6 @@
 "insta": ""
 },
 {
-"id": "w1098637741",
-"nome": "Salomão Zoppi Diagnóstico",
-"cat": "saude",
-"lat": -23.609411,
-"lon": -46.654769,
-"horario": "",
-"h24": false,
-"end": "Avenida Divino Salvador 856",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f4e11bad518a84f0f0315fd8e",
 "nome": "SalomãoZoppi Diagnósticos",
 "cat": "saude",
@@ -27538,20 +26371,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f5319c6f8498edcb62b8911b4",
-"nome": "UTI - Hospital do Servidor Público Estadual",
-"cat": "saude",
-"lat": -23.596613,
-"lon": -46.654083,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f556907f1498e690bf8d591dd",
 "nome": "UTI Hospital Sao Luiz",
 "cat": "saude",
@@ -27602,20 +26421,6 @@
 "horario": "",
 "h24": false,
 "end": "Rua Barão do Triunfo, 1756",
-"tel": "",
-"site": "",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f50a77817e4b02dc98cbe4929",
-"nome": "Vila Da Saúde Fleury - Unidade Infantil",
-"cat": "saude",
-"lat": -23.586622,
-"lon": -46.663587,
-"horario": "",
-"h24": false,
-"end": "",
 "tel": "",
 "site": "",
 "insta": "",
@@ -27676,17 +26481,18 @@
 "fonte": "fsq"
 },
 {
-"id": "n10231044693",
+"id": "f50c60c47f136071a9cdae613",
 "nome": "fleury",
 "cat": "saude",
-"lat": -23.586263,
-"lon": -46.663626,
+"lat": -23.586412,
+"lon": -46.663518,
 "horario": "",
 "h24": false,
-"end": "Avenida República Do Líbano 631",
-"tel": "",
-"site": "",
-"insta": ""
+"end": "Av. República do Líbano, 635",
+"tel": "(11) 3179-0822",
+"site": "https://www.fleury.com.br",
+"insta": "",
+"fonte": "fsq"
 },
 {
 "id": "f5f739ffa54acdb4d42072a2e",
@@ -27717,19 +26523,6 @@
 "fonte": "fsq"
 },
 {
-"id": "n11425961938",
-"nome": "Bacio di Latte",
-"cat": "sorveterias",
-"lat": -23.586476,
-"lon": -46.659247,
-"horario": "",
-"h24": false,
-"end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
 "id": "f523a2de60493afa47f08e1d4",
 "nome": "Bacio di Latte",
 "cat": "sorveterias",
@@ -27758,34 +26551,6 @@
 "fonte": "fsq"
 },
 {
-"id": "f67edaec9379e5f3fc1920bdc",
-"nome": "Bacio di Latte",
-"cat": "sorveterias",
-"lat": -23.602532,
-"lon": -46.664751,
-"horario": "",
-"h24": false,
-"end": "Al. Jauaperi, 597",
-"tel": "",
-"site": "https://baciodilatte.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f5b2dafe6eaf49a002c4d05df",
-"nome": "Bacio di Latte",
-"cat": "sorveterias",
-"lat": -23.601298,
-"lon": -46.665571,
-"horario": "",
-"h24": false,
-"end": "R. Gaivota, 544",
-"tel": "",
-"site": "https://baciodilatte.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "f54352a10498e3a3f03791992",
 "nome": "Bacio di Latte",
 "cat": "sorveterias",
@@ -27796,20 +26561,6 @@
 "end": "Al. dos Anapurus, 623",
 "tel": "(11) 4031-7695",
 "site": "https://www.baciodilatte.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
-"id": "f67841840b13a7529057d5e45",
-"nome": "Bacio di Latte",
-"cat": "sorveterias",
-"lat": -23.595598,
-"lon": -46.665451,
-"horario": "",
-"h24": false,
-"end": "Av. Quarto Centenário, 1539",
-"tel": "",
-"site": "https://baciodilatte.com.br",
 "insta": "",
 "fonte": "fsq"
 },
@@ -27828,6 +26579,34 @@
 "fonte": "fsq"
 },
 {
+"id": "f67edaec9379e5f3fc1920bdc",
+"nome": "Bacio di Latte",
+"cat": "sorveterias",
+"lat": -23.602532,
+"lon": -46.664751,
+"horario": "",
+"h24": false,
+"end": "Al. Jauaperi, 597",
+"tel": "",
+"site": "https://baciodilatte.com.br",
+"insta": "",
+"fonte": "fsq"
+},
+{
+"id": "f67841840b13a7529057d5e45",
+"nome": "Bacio di Latte",
+"cat": "sorveterias",
+"lat": -23.595598,
+"lon": -46.665451,
+"horario": "",
+"h24": false,
+"end": "Av. Quarto Centenário, 1539",
+"tel": "",
+"site": "https://baciodilatte.com.br",
+"insta": "",
+"fonte": "fsq"
+},
+{
 "id": "f60fb23414dc1fe4615e7ff75",
 "nome": "Bacio di Latte",
 "cat": "sorveterias",
@@ -27840,6 +26619,19 @@
 "site": "https://baciodilatte.com.br",
 "insta": "",
 "fonte": "fsq"
+},
+{
+"id": "n11425961938",
+"nome": "Bacio di Latte",
+"cat": "sorveterias",
+"lat": -23.586476,
+"lon": -46.659247,
+"horario": "",
+"h24": false,
+"end": "",
+"tel": "",
+"site": "",
+"insta": ""
 },
 {
 "id": "n4943034826",
@@ -27864,7 +26656,7 @@
 "h24": false,
 "end": "R. Lourenço de Almeida, 819",
 "tel": "(11) 3044-2624",
-"site": "https://delicari.com.br",
+"site": "",
 "insta": "",
 "fonte": "fsq"
 },
@@ -27936,33 +26728,6 @@
 "insta": ""
 },
 {
-"id": "w1107535724",
-"nome": "Jules",
-"cat": "sorveterias",
-"lat": -23.607742,
-"lon": -46.658733,
-"horario": "",
-"h24": false,
-"end": "Alameda dos Anapurús 970",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "f6101644c02c44b5f622f189e",
-"nome": "McDonald's",
-"cat": "sorveterias",
-"lat": -23.606618,
-"lon": -46.664902,
-"horario": "",
-"h24": false,
-"end": "Av. Ibirapuera, 2645",
-"tel": "",
-"site": "https://mcdonalds.com.br",
-"insta": "",
-"fonte": "fsq"
-},
-{
 "id": "w1104123606",
 "nome": "Oggi",
 "cat": "sorveterias",
@@ -27971,19 +26736,6 @@
 "horario": "",
 "h24": false,
 "end": "",
-"tel": "",
-"site": "",
-"insta": ""
-},
-{
-"id": "w521402298",
-"nome": "Oggi Sorvetes",
-"cat": "sorveterias",
-"lat": -23.605157,
-"lon": -46.670318,
-"horario": "",
-"h24": false,
-"end": "Rua Canário 1189",
 "tel": "",
 "site": "",
 "insta": ""
@@ -28001,6 +26753,19 @@
 "site": "",
 "insta": "",
 "fonte": "fsq"
+},
+{
+"id": "w521402298",
+"nome": "Oggi Sorvetes",
+"cat": "sorveterias",
+"lat": -23.605157,
+"lon": -46.670318,
+"horario": "",
+"h24": false,
+"end": "Rua Canário 1189",
+"tel": "",
+"site": "",
+"insta": ""
 },
 {
 "id": "f54cd2023498ed74155d32235",
