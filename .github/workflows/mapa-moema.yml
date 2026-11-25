@@ -14,6 +14,8 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - run: cd w3w-src && python mapa_robo.py && python build.py
+        env:
+          FSQ_TOKEN: ${{ secrets.FSQ_TOKEN }}
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
