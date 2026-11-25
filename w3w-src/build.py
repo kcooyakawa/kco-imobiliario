@@ -12,6 +12,7 @@ SITE = os.environ.get('W3W_SITE', 'https://kcooyakawa.github.io')
 ORIGIN = SITE  # domínio público (SITE é redefinido mais abaixo para mídia)
 FONTS = os.environ.get('W3W_FONTS', '/kco-imobiliario/w3w-fonts')
 WA = '5511940297871'
+WA_YOKO = '5511978786777'  # dúvidas de produto (Kco, nov/2026)
 EMAIL = 'w3wimoveis@gmail.com'
 TEL = '+55 (11) 94029-7871'
 CRECI = 'CRECI 047467-J'
@@ -57,7 +58,8 @@ def intent_form(px, E):
 
 def purl(e): return ORIGIN + u('empreendimentos/' + e.get('_page', e['slug']))
 def wamsg(e, extra=''): return f"Olá! Quero mais informações sobre o {e['nome']}{extra}.\n{purl(e)}"
-def wa(msg): return f'https://wa.me/{WA}?text=' + urllib.parse.quote(msg)
+def wa(msg, n=None): return f'https://wa.me/{n or WA}?text=' + urllib.parse.quote(msg)
+def way(msg): return wa(msg, WA_YOKO)
 
 BAIRROS = {
  'moema': dict(nome='Moema', titulo='Imóveis novos em Moema',
@@ -565,7 +567,7 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .pf-grid{gap:44px 24px}
 .pf-grid .g .ph{border-radius:14px;aspect-ratio:4/5}
 .pf-grid .g .ph img{will-change:transform;transition:filter .5s}
-.pf-grid .gi{display:block;margin-top:14px;padding:0;border:0}.pl-g{font-family:var(--serif);font-weight:300;font-size:24px;margin:36px 0 12px}.pf-grid .gi .gs{display:block;font-size:12px;letter-spacing:.02em;color:var(--ink-2);margin:-2px 0 8px}.pf-grid>.g{min-width:0}.pf-grid .ph img{max-width:100%}@media(max-width:767px){.pf-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}@media(min-width:768px) and (max-width:900px){.pf-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}@media(min-width:901px) and (max-width:1499px){.pf-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}}@media(min-width:1500px){.pf-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important}}.qsh{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start}.qsh h2{color:#F6F7F9}.qsh-l{font-family:var(--serif);font-weight:300;font-size:30px;line-height:1.25;color:#F6F7F9;margin-bottom:24px}.qsh-s{color:rgba(246,247,249,.8);line-height:1.6;margin-bottom:44px}.qsh-p{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:40px}.qsh-p>div{border-top:1px solid rgba(246,247,249,.3);padding-top:22px}.qsh-p h3{font-family:var(--serif);font-weight:300;font-size:19px;color:#F6F7F9;margin-bottom:8px}.qsh-p .eyebrow{color:rgba(246,247,249,.6)}@media(max-width:900px){.qsh,.qsh-p{grid-template-columns:1fr;gap:32px}.qsh-l{font-size:23px}}.pf-grid .gi .gm{display:block;font-family:var(--serif);font-weight:300;font-size:34px;line-height:1;letter-spacing:-.02em;margin-bottom:8px;color:var(--ink)}.pf-grid .gi h3{font-size:15px!important;font-family:var(--sans)!important;font-weight:500!important;letter-spacing:.02em}.vt-t .vt-m{display:block;font-family:var(--serif);font-weight:300;font-size:44px;line-height:1;letter-spacing:-.02em;margin-bottom:10px}@media(max-width:767px){.pf-grid .gi .gm{font-size:24px}.vt-t .vt-m{font-size:32px}}
+.pf-grid .gi{display:block;margin-top:14px;padding:0;border:0}.wa{border:0;cursor:pointer}.wa-box{position:fixed;right:22px;bottom:90px;z-index:61;width:min(320px,calc(100vw - 32px));background:#F6F7F9;color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:22px 20px 20px;box-shadow:0 18px 50px -18px rgba(0,0,0,.35)}.wa-x{position:absolute;top:8px;right:10px;border:0;background:none;font-size:22px;line-height:1;cursor:pointer;color:var(--ink-2);width:36px;height:36px}.wa-h{font-family:var(--serif);font-weight:300;font-size:24px;margin:0 0 14px}.wa-s{display:grid;gap:8px}.wa-s[hidden],.wa-box[hidden]{display:none}.wa-o,.wa-go{font:500 13px/1.2 var(--sans);text-align:left;padding:14px 16px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}.wa-o:hover{border-color:var(--ink)}.wa-go{background:#25D366;border-color:#25D366;color:#fff;text-align:center}.wa-l{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}.wa-s input{font:16px var(--sans);padding:12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}.pl-g{font-family:var(--serif);font-weight:300;font-size:24px;margin:36px 0 12px}.pf-grid .gi .gs{display:block;font-size:12px;letter-spacing:.02em;color:var(--ink-2);margin:-2px 0 8px}.pf-grid>.g{min-width:0}.pf-grid .ph img{max-width:100%}@media(max-width:767px){.pf-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}@media(min-width:768px) and (max-width:900px){.pf-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}@media(min-width:901px) and (max-width:1499px){.pf-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}}@media(min-width:1500px){.pf-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important}}.qsh{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start}.qsh h2{color:#F6F7F9}.qsh-l{font-family:var(--serif);font-weight:300;font-size:30px;line-height:1.25;color:#F6F7F9;margin-bottom:24px}.qsh-s{color:rgba(246,247,249,.8);line-height:1.6;margin-bottom:44px}.qsh-p{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:40px}.qsh-p>div{border-top:1px solid rgba(246,247,249,.3);padding-top:22px}.qsh-p h3{font-family:var(--serif);font-weight:300;font-size:19px;color:#F6F7F9;margin-bottom:8px}.qsh-p .eyebrow{color:rgba(246,247,249,.6)}@media(max-width:900px){.qsh,.qsh-p{grid-template-columns:1fr;gap:32px}.qsh-l{font-size:23px}}.pf-grid .gi .gm{display:block;font-family:var(--serif);font-weight:300;font-size:34px;line-height:1;letter-spacing:-.02em;margin-bottom:8px;color:var(--ink)}.pf-grid .gi h3{font-size:15px!important;font-family:var(--sans)!important;font-weight:500!important;letter-spacing:.02em}.vt-t .vt-m{display:block;font-family:var(--serif);font-weight:300;font-size:44px;line-height:1;letter-spacing:-.02em;margin-bottom:10px}@media(max-width:767px){.pf-grid .gi .gm{font-size:24px}.vt-t .vt-m{font-size:32px}}
 .pf-grid .gi h3{font-family:var(--serif);font-weight:300;font-size:22px;letter-spacing:-.015em;line-height:1.15}
 .pf-grid .gi p{font:400 13px/1.4 var(--sans);color:var(--ink-2);margin-top:4px}
 .pf-st{border-radius:999px;top:12px;left:12px;padding:6px 10px;font-size:9.5px;background:rgba(26,24,23,.72)}
@@ -721,12 +723,28 @@ def header(active=''):
 <a class="btn" href="{BASE}/#contato">Fale com um consultor</a></nav></div></header>'''
 
 def footer():
+    WA_LIST = ''.join(f'<option value="{esc(e["nome"])}">' for e in sorted(EM, key=lambda x: x['nome']))
+    WA_MAP = json.dumps({e['nome']: u('empreendimentos/' + e['slug']) for e in EM}, ensure_ascii=False)
     return f"""<footer class="ft"><div class="wrap ft-t">
 <a class="brand ft-b" href="{BASE}/">{LOGO}<span class="creci">{CRECI}</span></a>
 <nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Quem somos</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
 <div class="ft-c"><a href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener">{TEL}</a><a href="mailto:{EMAIL}">{EMAIL}</a></div>
 </div><div class="wrap ft-bot"><span>W3W Imóveis · Inteligência imobiliária · Desde 2004</span><span>{CRECI} · Moema, São Paulo</span></div><div class="wrap ft-kco"><a href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Produzido por KCO Studio</a></div></footer>
-<a class="wa" href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">{WA_ICON}</a>
+<button class="wa" id="waBtn" type="button" aria-label="Falar no WhatsApp" aria-expanded="false" aria-controls="waBox">{WA_ICON}</button>
+<div class="wa-box" id="waBox" hidden role="dialog" aria-label="Como podemos ajudar?"><button class="wa-x" type="button" aria-label="Fechar">×</button>
+<p class="wa-h">Como podemos ajudar?</p>
+<div class="wa-s" data-s="1"><button type="button" class="wa-o" data-go="prod">Tenho interesse em um imóvel</button><button type="button" class="wa-o" data-go="geral">Outros assuntos</button></div>
+<div class="wa-s" data-s="prod" hidden><label class="wa-l" for="waQ">Qual empreendimento?</label><input id="waQ" list="waL" placeholder="Digite o nome ou deixe em branco" autocomplete="off"><datalist id="waL">{WA_LIST}</datalist><button type="button" class="wa-go" data-send="yoko">Falar com a consultora</button></div>
+</div>
+<script>(function(){{var B=document.getElementById('waBtn'),X=document.getElementById('waBox');if(!B)return;var Y='{WA_YOKO}',W='{WA}',P={WA_MAP};
+function open(u){{window.open(u,'_blank','noopener')}}function wl(n,t){{return 'https://wa.me/'+n+'?text='+encodeURIComponent(t)}}
+function prod(nm){{var k=(nm||'').trim(),u=P[k];return 'Olá! Quero mais informações sobre '+(k?'o '+k:'um imóvel do site da W3W')+'.'+(u?'\\n'+location.origin+u:'')}}
+B.onclick=function(){{var h1=document.querySelector('.bk-cover h1,.fx-t h1');if(h1&&location.pathname.indexOf('/empreendimentos/')>-1){{open(wl(Y,'Olá! Quero mais informações sobre o '+h1.textContent.trim()+'.\\n'+location.href.split('#')[0]));return}}
+var o=X.hidden;X.hidden=!o;B.setAttribute('aria-expanded',o);X.querySelectorAll('.wa-s').forEach(function(s){{s.hidden=s.dataset.s!=='1'}})}};
+X.querySelector('.wa-x').onclick=function(){{X.hidden=true;B.setAttribute('aria-expanded',false)}};
+X.querySelectorAll('[data-go]').forEach(function(b){{b.onclick=function(){{if(b.dataset.go==='geral'){{open(wl(W,'Olá, visitei o site da W3W e tenho uma dúvida.'));X.hidden=true;return}}X.querySelectorAll('.wa-s').forEach(function(s){{s.hidden=s.dataset.s!=='prod'}});setTimeout(function(){{document.getElementById('waQ').focus()}},50)}}}});
+X.querySelector('[data-send]').onclick=function(){{open(wl(Y,prod(document.getElementById('waQ').value)));X.hidden=true}};
+}})();</script>
 <script src="{BASE}/assets/motion.js?v={VER}" defer></script>
 </body></html>"""
 
@@ -874,8 +892,8 @@ def rich(e, h='h2'):
     st = e['status'].split()[0].lower().replace('ç', 'c')
     fig = lambda src, cap, cls='': f'<figure class="bk-f {cls}"><img src="{src}" alt="{esc(cap)}" loading="lazy" decoding="async"><figcaption>{esc(cap)}</figcaption></figure>'
     nome = e['nome']
-    plantas = ''.join(f'<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td><td><a href="{wa(wamsg(e, f" (planta {a}, {b})"))}" target="_blank" rel="noopener">Mais informações</a></td></tr>' for a, b, c, d in f['plantas'])
-    _row = lambda rows: ''.join(f'<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td><td><a href="{wa(wamsg(e, f" (planta {a}, {b})"))}" target="_blank" rel="noopener">Mais informações</a></td></tr>' for a, b, c, d in rows)
+    plantas = ''.join(f'<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td><td><a href="{way(wamsg(e, f" (planta {a}, {b})"))}" target="_blank" rel="noopener">Mais informações</a></td></tr>' for a, b, c, d in f['plantas'])
+    _row = lambda rows: ''.join(f'<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td><td><a href="{way(wamsg(e, f" (planta {a}, {b})"))}" target="_blank" rel="noopener">Mais informações</a></td></tr>' for a, b, c, d in rows)
     _tb = lambda rows, hd='': (f'<h4 class="pl-g">{hd}</h4>' if hd else '') + f'<table class="lx-t"><thead><tr><th>Tipologia</th><th>Área</th><th>Suítes</th><th>Vagas</th><th></th></tr></thead><tbody>{_row(rows)}</tbody></table>'
     _st, _ap = split(e)
     tabs = (_tb(_ap, 'Apartamentos · ' + _rng(_ap)) + _tb(_st, 'Studios · ' + (_rng(_st) or 'sob consulta'))) if (_st and _ap) else _tb(f['plantas'])
@@ -898,9 +916,9 @@ def rich(e, h='h2'):
     out += f"""<section class="bk-txt bk-tec"><span class="eyebrow">Ficha técnica</span><dl>{''.join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in f['tecnica'] if not re.search(r'endere|localiza|terreno', a, re.I))}</dl>
 <p class="bk-note">Imagens: perspectivas ilustradas fornecidas pela incorporadora. Informações sujeitas a alteração.</p></section>
 <section class="lx-end"><span class="eyebrow">Fale com a W3W</span><h3>Quer saber mais <em>sobre o {esc(nome)}?</em></h3>
-<a class="btn light solid-l" href="{wa(msg)}" target="_blank" rel="noopener">Quero mais informações</a></section>
+<a class="btn light solid-l" href="{way(msg)}" target="_blank" rel="noopener">Quero mais informações</a></section>
 <div class="lx-bar"><span class="lx-bar-t"><small>{esc(nome)} · {selo(e)}</small><strong>Mais informações sobre este produto <em>no seu WhatsApp.</em></strong></span>
-<a class="btn light solid-l lx-go" href="{wa(msg)}" target="_blank" rel="noopener">Quero mais informações <span aria-hidden="true">→</span></a></div></article>"""
+<a class="btn light solid-l lx-go" href="{way(msg)}" target="_blank" rel="noopener">Quero mais informações <span aria-hidden="true">→</span></a></div></article>"""
     return out
 
 def feat():
@@ -964,7 +982,7 @@ def build_home():
 </div></section></main>
 {SHEET}
 {''.join(f'<template id="fx-{e[chr(115)+chr(108)+chr(117)+chr(103)]}">'+rich(e)+'</template>' for e in VIT if e.get('ficha'))}
-<script>window.W3W={json.dumps(ficha_data(), ensure_ascii=False)};window.W3W_WA='{WA}';window.W3W_BASE='{BASE}';</script>
+<script>window.W3W={json.dumps(ficha_data(), ensure_ascii=False)};window.W3W_WA='{WA}';window.W3W_YOKO='{WA_YOKO}';window.W3W_BASE='{BASE}';</script>
 <script src="{BASE}/assets/sheet.js?v={VER}" defer></script>
 <script>(function(){{var qq='',st={{b:'moema',c:'',s:''}},lim=9999,all=[].slice.call(document.querySelectorAll('.pf-grid .g')),more=document.getElementById('more'),num=document.querySelector('.pf-n');
 function ap(){{var v=all.filter(function(g){{return (!st.b||(st.b==='moema'?g.dataset.b==='moema':g.dataset.b!=='moema'))&&(!st.c||g.dataset.cat.split(' ').indexOf(st.c)>-1)&&(!st.s||g.dataset.st===st.s)&&(!qq||qq.split(' ').every(function(w){{return g.dataset.q.indexOf(w)>-1}}))}});all.forEach(function(g){{g.hidden=true}});all.forEach(function(g){{var m=g.querySelector('.gm'),x=g.querySelector('.gs'),S=g.dataset.ms,A=g.dataset.ma;if(!m)return;if(st.c==='studios'&&S){{m.textContent=S;if(x)x.hidden=true}}else if((st.c==='apartamentos'||st.c==='alto-padrao')&&A){{m.textContent=A;if(x)x.hidden=true}}else{{m.textContent=A||S;if(x)x.hidden=false}}}});v.forEach(function(g,i){{g.hidden=i>=lim;g.querySelector('.n').textContent=String(i+1).padStart(2,'0')}});num.textContent=v.length+(v.length===1?' imóvel':' imóveis');more.parentNode.hidden=v.length<=lim}}
@@ -1037,7 +1055,7 @@ document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click
 <div class="fx-ph"><img src="{e['img']}" alt="Fachada do {esc(e['nome'])}, {esc(e['bairro'])}" decoding="async"><span class="tag st">{selo(e)}</span></div>
 <div class="fx-b"><div class="fx-t"><span class="eyebrow">{esc(e['bairro'])} · {selo(e)}</span><h1>{esc(e['nome'])}</h1>{f'<p class="fx-q">{esc(e["frase"])}</p>' if e['frase'] else ''}</div>
 <dl class="fx-s">{ficha}</dl></div>
-<div class="fx-c"><a class="btn solid" href="{wa(msg)}" target="_blank" rel="noopener">Quero mais informações</a><a class="btn" href="{wa('Olá, quero agendar uma visita ao ' + e['nome'] + '.')}" target="_blank" rel="noopener">Agendar visita</a><a class="btn" href="{u('contato')}?imovel={quote(e['nome'])}#form">Contar o que procuro</a></div>
+<div class="fx-c"><a class="btn solid" href="{way(msg)}" target="_blank" rel="noopener">Quero mais informações</a><a class="btn" href="{wa('Olá, quero agendar uma visita ao ' + e['nome'] + '.')}" target="_blank" rel="noopener">Agendar visita</a><a class="btn" href="{u('contato')}?imovel={quote(e['nome'])}#form">Contar o que procuro</a></div>
 <p class="fx-n">Plantas, lazer, incorporadora e previsão de entrega: fale com um consultor.</p></div></section>
 ''') + f'''<section class="sec" style="padding-top:0"><div class="wrap"><div class="sec-hd"><h2>Também em {e['bairro']}</h2><a href="{u(e['bairro_slug'])}">Ver todos</a></div>
 <div class="grid">{''.join(card(x) for x in rel)}</div></div></section>{band()}</main>'''

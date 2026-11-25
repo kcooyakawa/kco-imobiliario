@@ -3,6 +3,7 @@ var S=document.getElementById('sheet');if(!S)return;var P=S.querySelector('.sh-p
 (window.W3W||[]).forEach(function(e){data[e.slug]=e});
 function pu(e){return location.origin+window.W3W_BASE+'/empreendimentos/'+(e.page||e.slug)+'/'}
 function wm(e){return 'Olá! Quero mais informações sobre o '+e.nome+'.\n'+pu(e)}
+function way(m){return 'https://wa.me/'+window.W3W_YOKO+'?text='+encodeURIComponent(m)}
 function wa(m){return 'https://wa.me/'+window.W3W_WA+'?text='+encodeURIComponent(m)}
 function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 var IDEAL={'studios':['Investimento para renda','Primeiro imóvel','Pied-à-terre em São Paulo'],'apartamentos':['Casais e famílias pequenas','Quem quer morar perto do Ibirapuera'],'alto-padrao':['Famílias que buscam espaço','Patrimônio de longo prazo']};
@@ -13,13 +14,13 @@ var q=encodeURIComponent(e.nome+' '+e.bairro+' São Paulo');
 return '<div class="fx-ph"><img src="'+e.img+'" alt="'+esc(e.nome)+'"><span class="tag st">'+esc(e.selo||e.status)+'</span></div>'+
 '<div class="fx-b"><div class="fx-t"><span class="eyebrow">'+esc(e.bairro)+' · '+esc(e.selo||e.status)+'</span><h2 id="sh-t">'+esc(e.nome)+'</h2>'+(e.frase?'<p class="fx-q">'+esc(e.frase)+'</p>':'')+'</div>'+
 '<dl class="fx-s">'+specs.map(function(x){return '<div><dt>'+x[0]+'</dt><dd>'+esc(x[1])+'</dd></div>'}).join('')+'</dl></div>'+
-'<div class="fx-c"><a class="btn solid" target="_blank" rel="noopener" href="'+wa(wm(e))+'">Quero mais informações</a>'+
+'<div class="fx-c"><a class="btn solid" target="_blank" rel="noopener" href="'+way(wm(e))+'">Quero mais informações</a>'+
 '<a class="btn" target="_blank" rel="noopener" href="'+wa('Olá, quero agendar uma visita ao '+e.nome+'.')+'">Agendar visita</a><a class="btn" href="'+(window.W3W_BASE||'')+'/contato/?imovel='+encodeURIComponent(e.nome)+'#form">Contar o que procuro</a></div>'+
 '<div class="fx-x"><div><span class="eyebrow">Momento da obra</span><h4>'+esc(e.selo||e.status)+'</h4><p>'+(FASE[e.status]||'')+'</p></div>'+
 (ideal.length?'<div><span class="eyebrow">Ideal para</span><ul>'+ideal.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div>':'')+
 '<div><span class="eyebrow">O bairro</span><h4>'+esc(e.bairro)+'</h4><p>'+esc(e.bt||'')+'</p></div></div>'+
 
-'<div class="fx-cta2"><div><span class="eyebrow">Fale com a W3W</span><h4>Quer saber mais sobre este produto?</h4></div><a class="btn solid" target="_blank" rel="noopener" href="'+wa(wm(e))+'">Quero mais informações</a></div>'+
+'<div class="fx-cta2"><div><span class="eyebrow">Fale com a W3W</span><h4>Quer saber mais sobre este produto?</h4></div><a class="btn solid" target="_blank" rel="noopener" href="'+way(wm(e))+'">Quero mais informações</a></div>'+
 '<a class="fx-l" href="'+window.W3W_BASE+'/empreendimentos/'+e.slug+'/">Abrir página do empreendimento ↗</a>'}
 function open(slug,push){var e=data[slug];if(!e)return;last=document.activeElement;var tp=document.getElementById('fx-'+slug);IN.innerHTML=tp?tp.innerHTML:html(e);S.classList.toggle('rich',!!tp);S.hidden=false;P.style.transform='';P.scrollTop=0;
 document.documentElement.classList.add('lock');requestAnimationFrame(function(){S.classList.add('on')});if(tp&&window.W3WMotion)window.W3WMotion(IN.querySelector('.lx'));P.focus();if(push)history.pushState({sheet:slug},'','#'+slug)}
