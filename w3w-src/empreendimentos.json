@@ -8,7 +8,7 @@
   "tipos": [
    "Studio"
   ],
-  "frase": "Studios e 1 dormitório na Av. Lavandisca, com piscina na cobertura.",
+  "frase": "Studios e 1 dormitório, com piscina na cobertura.",
   "resumo": {
    "tipologias": "Studios e 1 dorm.",
    "metragem": "24 a 63 m²",
@@ -21,7 +21,7 @@
   ],
   "ficha": {
    "tagline": "Studios assinados para morar ou locar em Moema.",
-   "conceito": "O Grafik tem 132 unidades entre studios e 1 dormitório, de 24 a 63 m², na Av. Lavandisca. A cobertura concentra piscina com hidromassagem, solário e espaço gourmet; no 1º pavimento ficam fitness, coworking e lavanderia. Arquitetura SPOL, interiores Barbara & Purchio e paisagismo Marcelo Faisal. Bom para quem compra para alugar.",
+   "conceito": "O Grafik tem 132 unidades entre studios e 1 dormitório, de 24 a 63 m². A cobertura concentra piscina com hidromassagem, solário e espaço gourmet; no 1º pavimento ficam fitness, coworking e lavanderia. Arquitetura SPOL, interiores Barbara & Purchio e paisagismo Marcelo Faisal. Bom para quem compra para alugar.",
    "endereco": "Av. Lavandisca, 638 · Moema",
    "entrega": "Jun/2029",
    "faixa": "24 a 63 m²",
@@ -88,8 +88,7 @@
     "Delivery"
    ],
    "local": [
-    "Av. Lavandisca, Moema",
-    "Perto da Av. Ibirapuera e do metrô Moema"
+    "Perto do metrô Moema"
    ],
    "tecnica": [
     [
@@ -433,7 +432,6 @@
     "Brinquedoteca"
    ],
    "local": [
-    "Av. Açocê, Moema",
     "Perto do Parque Ibirapuera, do Clube Monte Líbano e do Shopping Ibirapuera"
    ],
    "tecnica": [
@@ -505,7 +503,7 @@
   "tipos": [
    "Apartamento"
   ],
-  "frase": "O neoclássico Lindenberg em duas torres na Rua Canário.",
+  "frase": "O neoclássico Lindenberg em duas torres.",
   "resumo": {
    "tipologias": "3 a 5 suítes, gardens e duplex",
    "metragem": "331 a 894 m²",
@@ -518,7 +516,7 @@
   ],
   "ficha": {
    "tagline": "Um sobrenome em forma de edifício.",
-   "conceito": "O lançamento que leva o nome do fundador da Lindenberg traz de volta o neoclássico que marcou a marca: simetria, colunas e porte-cochère, em duas torres sobre um terreno de mais de 5 mil m² na Rua Canário. São 75 apartamentos de 331 a 894 m², com gardens e duplex, quadra de tênis coberta de saibro, piscina coberta com raia de 25 m e um circuito completo de bem-estar. Arquitetura PSA, paisagismo Burle Marx e interiores Sig Bergamin.",
+   "conceito": "O lançamento que leva o nome do fundador da Lindenberg traz de volta o neoclássico que marcou a marca: simetria, colunas e porte-cochère, em duas torres sobre um terreno de mais de 5 mil m². São 75 apartamentos de 331 a 894 m², com gardens e duplex, quadra de tênis coberta de saibro, piscina coberta com raia de 25 m e um circuito completo de bem-estar. Arquitetura PSA, paisagismo Burle Marx e interiores Sig Bergamin.",
    "endereco": "Rua Canário, 133 · Moema",
    "entrega": "Lançamento",
    "faixa": "331 a 894 m²",
@@ -622,8 +620,8 @@
     "Car wash"
    ],
    "local": [
-    "Rua Canário, em Moema Pássaros",
-    "Perto do Parque Ibirapuera e da Av. República do Líbano"
+    "Em Moema Pássaros",
+    "Perto do Parque Ibirapuera"
    ],
    "tecnica": [
     [
@@ -859,7 +857,7 @@
   "bairro_slug": "moema",
   "status": "Lançamento",
   "tipos": "Apartamentos 4 suítes",
-  "frase": "Um endereço pensado como obra de arte na Av. Sabiá.",
+  "frase": "Um endereço pensado como obra de arte.",
   "resumo": {
    "tipologias": "4 suítes",
    "metragem": "283 a 770 m²",
@@ -871,8 +869,8 @@
    "alto-padrao"
   ],
   "ficha": {
-   "tagline": "Arquitetura e arte no mesmo endereço: o lançamento mais aguardado da Av. Sabiá.",
-   "conceito": "La Galerie é o lançamento de alto padrão que mais nos chamou atenção em Moema este ano. Cyrela e Nortis ocupam um terreno de mais de 4 mil m² na Av. Sabiá com duas torres e apenas 68 residências, de 283 a 416 m², todas com quatro suítes possíveis. A proposta é tratar o prédio como uma galeria: curadoria de arte nas áreas comuns, port-cochère interno e plantas com ventilação cruzada e luz natural.",
+   "tagline": "Arquitetura e arte no mesmo endereço: o lançamento mais aguardado.",
+   "conceito": "La Galerie é o lançamento de alto padrão que mais nos chamou atenção em Moema este ano. Cyrela e Nortis ocupam um terreno de mais de 4 mil m² com duas torres e apenas 68 residências, de 283 a 416 m², todas com quatro suítes possíveis. A proposta é tratar o prédio como uma galeria: curadoria de arte nas áreas comuns, port-cochère interno e plantas com ventilação cruzada e luz natural.",
    "endereco": "Av. Sabiá, 418 · Moema Pássaros",
    "entrega": "Lançamento",
    "faixa": "283 a 416 m²",
@@ -951,8 +949,8 @@
     "Lobby independente por torre"
    ],
    "local": [
-    "Av. Sabiá, uma das quadras mais tradicionais de Moema Pássaros",
-    "Caminho a pé até o Parque Ibirapuera pela Av. República do Líbano",
+    "Uma das quadras mais tradicionais de Moema Pássaros",
+    "Caminho a pé até o Parque Ibirapuera",
     "Rua de comércio de bairro, cafés e restaurantes"
    ],
    "tecnica": [
@@ -1447,8 +1445,7 @@
     "Bicicletário"
    ],
    "local": [
-    "Av. dos Carinás, Moema Índios",
-    "Perto do Shopping Ibirapuera e da Av. Ibirapuera",
+    "Perto do Shopping Ibirapuera",
     "Metrô Eucaliptos nas proximidades"
    ],
    "tecnica": [
@@ -1529,8 +1526,8 @@
    "studios"
   ],
   "ficha": {
-   "tagline": "Duas torres na Rua dos Chanés: residencial com vaga e studios para investir.",
-   "conceito": "O Autoral combina dois produtos num só terreno da Rua dos Chanés: uma torre residencial com 112 apartamentos de 83 a 89 m², todos com vaga, e uma torre não residencial com studios para quem quer investir. O projeto é de Jonas Birger, com paisagismo de Martha Gavião e decoração de Chris Silveira. Para casal ou família pequena, a planta de duas suítes com sala ampliada é das mais bem resolvidas nessa metragem em Moema.",
+   "tagline": "Duas torres: residencial com vaga e studios para investir.",
+   "conceito": "O Autoral combina dois produtos num só terreno: uma torre residencial com 112 apartamentos de 83 a 89 m², todos com vaga, e uma torre não residencial com studios para quem quer investir. O projeto é de Jonas Birger, com paisagismo de Martha Gavião e decoração de Chris Silveira. Para casal ou família pequena, a planta de duas suítes com sala ampliada é das mais bem resolvidas nessa metragem em Moema.",
    "endereco": "Rua dos Chanés · Moema",
    "entrega": "Em obras",
    "faixa": "83 a 89 m²",
@@ -1616,7 +1613,7 @@
     "Lobby"
    ],
    "local": [
-    "Rua dos Chanés, perto do Shopping Ibirapuera",
+    "Perto do Shopping Ibirapuera",
     "Metrô Eucaliptos nas proximidades",
     "Moema Índios, comércio de bairro"
    ],
@@ -1910,7 +1907,7 @@
    "local": [
     "5 min a pé da estação Moema",
     "Perto do Parque Ibirapuera e de Congonhas",
-    "Comércio da Av. Ibirapuera"
+    "Comércio e serviços de Moema"
    ],
    "tecnica": [
     [
@@ -2390,7 +2387,7 @@
    "local": [
     "3 min a pé da estação Eucaliptos",
     "3 min a pé do Shopping Ibirapuera",
-    "Acesso fácil a Congonhas e à Av. Rubem Berta"
+    "Acesso fácil a Congonhas"
    ],
    "tecnica": [
     [
@@ -2469,7 +2466,7 @@
    "apartamentos"
   ],
   "ficha": {
-   "tagline": "Duas torres justapostas na esquina da Cotovia com a Pintassilgo.",
+   "tagline": "Duas torres justapostas numa esquina de Moema.",
    "conceito": "O Most Moema Home é a nossa indicação para família que quer pronto, bem localizado e com lazer completo. São duas torres justapostas, com entradas e lazer independentes: de um lado os apartamentos de 80 a 147 m², do outro os studios. No topo, coberturas duplex de 185 a 300 m² com até quatro suítes. Entregue com lavabo em mármore, persianas motorizadas nos dormitórios e terraço preparado para churrasqueira.",
    "endereco": "Av. Cotovia, 107 · esquina com R. Pintassilgo · Moema",
    "entrega": "Pronto para morar",
@@ -2555,7 +2552,7 @@
     "Mini mercado"
    ],
    "local": [
-    "Esquina da Av. Cotovia com a Rua Pintassilgo",
+    "Numa esquina de Moema",
     "Moema Pássaros, comércio e restaurantes a pé",
     "Perto do Parque Ibirapuera"
    ],
@@ -2640,8 +2637,8 @@
    "studios"
   ],
   "ficha": {
-   "tagline": "Design biofílico e uma calçada nova para a Rua Arapapi.",
-   "conceito": "O Bem Moema é um conjunto de uso misto da Tegra, já entregue, com residencial de 80 a 148 m², studios de 26 e 36 m² e loja no térreo, em acessos totalmente independentes. Gostamos do projeto pela gentileza urbana: a Tegra revitalizou e alargou a calçada da Rua Arapapi, o que valoriza o entorno. O lazer é completo, com piscina, spa e praça, e o desenho biofílico traz verde para dentro das áreas comuns.",
+   "tagline": "Design biofílico e calçada revitalizada no entorno.",
+   "conceito": "O Bem Moema é um conjunto de uso misto da Tegra, já entregue, com residencial de 80 a 148 m², studios de 26 e 36 m² e loja no térreo, em acessos totalmente independentes. Gostamos do projeto pela gentileza urbana: a Tegra revitalizou e alargou a calçada, o que valoriza o entorno. O lazer é completo, com piscina, spa e praça, e o desenho biofílico traz verde para dentro das áreas comuns.",
    "endereco": "Av. Bem-te-vi, 221 · Moema",
    "entrega": "Pronto para morar",
    "faixa": "26 a 148 m²",
@@ -2725,8 +2722,7 @@
     "Bicicletário"
    ],
    "local": [
-    "Av. Bem-te-vi, Moema Pássaros",
-    "Calçada revitalizada da Rua Arapapi",
+    "Calçada revitalizada",
     "Comércio e restaurantes a pé"
    ],
    "tecnica": [
@@ -2779,7 +2775,7 @@
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/bem-moema/x-845a892c62.jpg",
-      "Rua Arapapi revitalizada"
+      "Calçada revitalizada"
      ]
     ]
    }
@@ -2808,8 +2804,8 @@
    "studios"
   ],
   "ficha": {
-   "tagline": "A esquina da Sabiá com a Gaivota, a 850 m do Ibirapuera.",
-   "conceito": "Selecionamos o Moema Signature pela esquina: Av. Sabiá com Rua Gaivota, a 850 metros a pé do Parque Ibirapuera e a 450 metros do metrô. A Perkins&Will desenhou um edifício de uso misto, com loja no térreo e fachada de brises, que foge da torre convencional do bairro. Os apartamentos de 141 m² têm três suítes e hall privativo; os studios atendem quem compra para investir. O prédio está pronto, com piscina em L de 25 m e sky lounge.",
+   "tagline": "Uma esquina de Moema, a 850 m do Ibirapuera.",
+   "conceito": "Selecionamos o Moema Signature pela localização: a 850 metros a pé do Parque Ibirapuera e a 450 metros do metrô. A Perkins&Will desenhou um edifício de uso misto, com loja no térreo e fachada de brises, que foge da torre convencional do bairro. Os apartamentos de 141 m² têm três suítes e hall privativo; os studios atendem quem compra para investir. O prédio está pronto, com piscina em L de 25 m e sky lounge.",
    "endereco": "Av. Sabiá, 476 · esquina com R. Gaivota · Moema",
    "entrega": "Pronto para morar",
    "faixa": "21 a 141 m²",
@@ -2886,7 +2882,7 @@
    "local": [
     "850 m a pé do Parque Ibirapuera",
     "450 m da estação Moema do metrô",
-    "Esquina da Av. Sabiá, comércio de bairro e restaurantes"
+    "Comércio de bairro e restaurantes"
    ],
    "tecnica": [
     [
@@ -2972,7 +2968,7 @@
   ],
   "ficha": {
    "tagline": "Um condomínio dentro de um clube de 4 mil m², a 350 m do metrô.",
-   "conceito": "O MOMA entrou na seleção pela escala: um clube de 4 mil m² em pleno Moema Pássaros, com duas torres de 100 metros e apenas dois apartamentos por andar. A Aflalo & Gasperini desenhou um embasamento na altura das copas das árvores, com lojas na calçada, e um rooftop com piscina e vista 360° no topo da torre da Av. Ibirapuera. As varandas de esquina têm floreiras em toda a extensão, para que o verde da rua continue dentro de casa.",
+   "conceito": "O MOMA entrou na seleção pela escala: um clube de 4 mil m² em pleno Moema Pássaros, com duas torres de 100 metros e apenas dois apartamentos por andar. A Aflalo & Gasperini desenhou um embasamento na altura das copas das árvores, com lojas na calçada, e um rooftop com piscina e vista 360° no topo da torre. As varandas de esquina têm floreiras em toda a extensão, para que o verde da rua continue dentro de casa.",
    "endereco": "Av. Ibirapuera, 2.480 · Moema Pássaros",
    "entrega": "Em obras",
    "faixa": "Studios a 194 m²",
@@ -3054,8 +3050,7 @@
    ],
    "local": [
     "350 m da estação Moema do metrô",
-    "Cerca de 10 min de bike até o Parque Ibirapuera",
-    "Frentes para a Av. Ibirapuera e a Av. Macuco"
+    "Cerca de 10 min de bike até o Parque Ibirapuera"
    ],
    "tecnica": [
     [
@@ -3221,7 +3216,7 @@
    "local": [
     "Em frente ao Clube Monte Líbano",
     "Poucos minutos do Parque Ibirapuera",
-    "Na Av. República do Líbano, entre Moema e Ibirapuera"
+    "Entre Moema e o Ibirapuera"
    ],
    "tecnica": [
     [
@@ -3314,7 +3309,7 @@
   ],
   "ficha": {
    "tagline": "Descubra um novo conceito de moradia que vai transformar sua vida com sofisticação e exclusividade.",
-   "conceito": "Torre única com 48 residências em terreno de 750 m², na Av. Sabiá, em Moema.",
+   "conceito": "Torre única com 48 residências em terreno de 750 m², em Moema.",
    "endereco": "Av. Sabiá · Moema",
    "entrega": "Pronto para morar",
    "faixa": "68 e 135 m²",
@@ -3400,9 +3395,7 @@
     "Salão de festas",
     "Espaço gourmet"
    ],
-   "local": [
-    "Av. Sabiá, Moema"
-   ],
+   "local": [],
    "tecnica": [
     [
      "Terreno",
@@ -3522,9 +3515,8 @@
     "Playground"
    ],
    "local": [
-    "Esquina da Av. Pavão com a Rua Inhambu, Moema Pássaros",
     "Ruas residenciais e arborizadas",
-    "Perto do comércio da Av. Ibirapuera"
+    "Perto do comércio"
    ],
    "tecnica": [
     [
@@ -3607,7 +3599,7 @@
   ],
   "ficha": {
    "tagline": "Studios e apartamentos a 2 minutos da Estação Eucaliptos.",
-   "conceito": "Duas torres na esquina da Av. Cotovia com a Al. dos Arapanés, com piscina no rooftop, coworking e fitness, a dois minutos a pé do metrô.",
+   "conceito": "Duas torres numa esquina de Moema, com piscina no rooftop, coworking e fitness, a dois minutos a pé do metrô.",
    "endereco": "Av. Cotovia, 756 · Moema",
    "entrega": "Breve lançamento",
    "faixa": "20 a 38,5 m²",
@@ -3680,12 +3672,12 @@
    ],
    "local": [
     "2 minutos a pé da Estação Eucaliptos",
-    "Perto do Ibirapuera Shopping e da Av. Ibirapuera"
+    "Perto do Ibirapuera Shopping"
    ],
    "tecnica": [
     [
      "Torres",
-     "Cotovia e Arapanés"
+     "Moema"
     ],
     [
      "Status",
@@ -3755,7 +3747,7 @@
   ],
   "ficha": {
    "tagline": "Novo jeito de viver: design inovador e experiência única. Empreendimento que redefine a qualidade de vida.",
-   "conceito": "Torre única com 43 residências, na Alameda Jauaperi, em Moema.",
+   "conceito": "Torre única com 43 residências, em Moema.",
    "endereco": "Alameda Jauaperi · Moema",
    "entrega": "Pronto para morar",
    "faixa": "66 e 80 m²",
@@ -3826,9 +3818,7 @@
     "Brinquedoteca",
     "Bicicletário"
    ],
-   "local": [
-    "Alameda Jauaperi, Moema"
-   ],
+   "local": [],
    "tecnica": [
     [
      "Unidades",
@@ -3988,8 +3978,7 @@
    ],
    "local": [
     "Moema Pássaros, fora da rota dos aviões",
-    "Cerca de 1 km do Parque Ibirapuera",
-    "Entre a Av. Agami e a Av. Min. Gabriel de Rezende Passos"
+    "Cerca de 1 km do Parque Ibirapuera"
    ],
    "tecnica": [
     [
@@ -4254,7 +4243,7 @@
   ],
   "ficha": {
    "tagline": "Três suítes, depósito privativo e o Ibirapuera a poucas quadras.",
-   "conceito": "O Ibirapuera Park Houses é uma das plantas mais eficientes de três suítes em Moema: 153 m² com depósito privativo, duas vagas e infraestrutura de ar-condicionado em todos os ambientes. A torre única, desenhada pela Königsberger Vannucchi na Alameda Jauaperi, tem piscina coberta e entradas social e de serviço separadas. No topo, coberturas duplex de 281 m². Pronto para morar.",
+   "conceito": "O Ibirapuera Park Houses é uma das plantas mais eficientes de três suítes em Moema: 153 m² com depósito privativo, duas vagas e infraestrutura de ar-condicionado em todos os ambientes. A torre única, desenhada pela Königsberger Vannucchi, tem piscina coberta e entradas social e de serviço separadas. No topo, coberturas duplex de 281 m². Pronto para morar.",
    "endereco": "Al. Jauaperi, 185 · Moema",
    "entrega": "Pronto para morar",
    "faixa": "153 a 281 m²",
@@ -4323,8 +4312,8 @@
    ],
    "local": [
     "Moema, próximo ao Parque Ibirapuera",
-    "Alameda Jauaperi, rua residencial",
-    "Comércio da Av. Ibirapuera e de Moema Pássaros"
+    "Rua residencial de Moema",
+    "Comércio de Moema Pássaros"
    ],
    "tecnica": [
     [
@@ -4406,7 +4395,7 @@
   ],
   "ficha": {
    "tagline": "De frente para o Ibirapuera.",
-   "conceito": "Um raro terreno na Avenida República do Líbano, com vista para o Parque Ibirapuera. Torre de 102 metros, duas unidades por andar e um diálogo entre o contemporâneo e o natural em cada detalhe. Nos 2º e 3º andares, 46 studios de 22 a 23 m², sem vaga, para quem quer o endereço do Ibirapuera para investir.",
+   "conceito": "Um raro terreno, com vista para o Parque Ibirapuera. Torre de 102 metros, duas unidades por andar e um diálogo entre o contemporâneo e o natural em cada detalhe. Nos 2º e 3º andares, 46 studios de 22 a 23 m², sem vaga, para quem quer o endereço do Ibirapuera para investir.",
    "endereco": "Av. República do Líbano × Al. dos Arapanés · Moema",
    "entrega": "Pronto para morar",
    "faixa": "22 a 579 m²",
@@ -4903,7 +4892,7 @@
   ],
   "ficha": {
    "tagline": "Metragem única de 258 m², quatro suítes e gerador para o apartamento inteiro.",
-   "conceito": "O Splend está no lado de Moema Pássaros que mais procuramos para clientes de família: fora da rota dos aviões, na Alameda dos Arapanés. A Exto fez uma escolha que admiramos: uma única planta de 258 m², com quatro suítes, sala aberta de fachada a fachada e hall privativo com biometria. É dos poucos do bairro com gerador full, que mantém até o ar-condicionado das unidades em caso de queda de energia. Decoração de Débora Aguiar e quadra de tênis by Lisonda.",
+   "conceito": "O Splend está no lado de Moema Pássaros que mais procuramos para clientes de família: fora da rota dos aviões. A Exto fez uma escolha que admiramos: uma única planta de 258 m², com quatro suítes, sala aberta de fachada a fachada e hall privativo com biometria. É dos poucos do bairro com gerador full, que mantém até o ar-condicionado das unidades em caso de queda de energia. Decoração de Débora Aguiar e quadra de tênis by Lisonda.",
    "endereco": "Al. dos Arapanés, 397 · Moema Pássaros",
    "entrega": "Previsão: out/2027",
    "faixa": "258 m²",
@@ -4970,7 +4959,7 @@
    ],
    "local": [
     "Moema Pássaros, fora da rota dos aviões",
-    "Alameda dos Arapanés, miolo residencial do bairro",
+    "Miolo residencial do bairro",
     "Perto do Shopping Ibirapuera e do Parque Ibirapuera"
    ],
    "tecnica": [
@@ -5054,8 +5043,8 @@
    "apartamentos"
   ],
   "ficha": {
-   "tagline": "Torre única, 170 m² e lazer de clube na Alameda dos Maracatins.",
-   "conceito": "Incluímos o The Selection porque ele preenche uma faixa que falta em Moema: 170 m² com padrão construtivo de alto luxo e lazer de clube. A Exto escolheu a Alameda dos Maracatins, fora da rota dos aviões, para uma torre única com quadra de tênis by Lisonda e piscina coberta com raia de 25 m. Os apartamentos têm hall privativo com biometria, gerador full e opção de 3 suítes ou 4 dormitórios.",
+   "tagline": "Torre única, 170 m² e lazer de clube.",
+   "conceito": "Incluímos o The Selection porque ele preenche uma faixa que falta em Moema: 170 m² com padrão construtivo de alto luxo e lazer de clube. A Exto escolheu a, fora da rota dos aviões, para uma torre única com quadra de tênis by Lisonda e piscina coberta com raia de 25 m. Os apartamentos têm hall privativo com biometria, gerador full e opção de 3 suítes ou 4 dormitórios.",
    "endereco": "Al. dos Maracatins, 857 · Moema",
    "entrega": "Em obras",
    "faixa": "170 m²",
@@ -5127,7 +5116,7 @@
    ],
    "local": [
     "Moema, fora da rota dos aviões",
-    "Alameda dos Maracatins, perto do comércio da Av. Ibirapuera",
+    "Perto do comércio",
     "Áreas comuns entregues decoradas"
    ],
    "tecnica": [
@@ -5208,8 +5197,8 @@
    "alto-padrao"
   ],
   "ficha": {
-   "tagline": "Setenta casas suspensas e quatro duplex entre a Sabiá e a Arapanés.",
-   "conceito": "Casa Sabiá entrou na seleção pelo tamanho do terreno e pela planta. São mais de 5,5 mil m² atravessando a quadra, da Av. Sabiá à Alameda dos Arapanés, para apenas 74 residências em duas torres. O apartamento tipo tem 317 m² e três suítes, com 4 vagas; no topo, quatro duplex de 625 m². O lazer é de clube: quadra de tênis, piscina coberta com raia de 25 m e spa. Arquitetura da Aflalo/Gasperini e decoração de Gui Mattos.",
+   "tagline": "Setenta casas suspensas e quatro duplex.",
+   "conceito": "Casa entrou na seleção pelo tamanho do terreno e pela planta. São mais de 5,5 mil m², para apenas 74 residências em duas torres. O apartamento tipo tem 317 m² e três suítes, com 4 vagas; no topo, quatro duplex de 625 m². O lazer é de clube: quadra de tênis, piscina coberta com raia de 25 m e spa. Arquitetura da Aflalo/Gasperini e decoração de Gui Mattos.",
    "endereco": "Av. Sabiá, 668 · Al. dos Arapanés, 522 · Moema",
    "entrega": "Previsão: nov/2026",
    "faixa": "317 a 625 m²",
@@ -5279,7 +5268,7 @@
     "Playground"
    ],
    "local": [
-    "Atravessa a quadra entre a Av. Sabiá e a Alameda dos Arapanés",
+    "Terreno que atravessa a quadra",
     "Cerca de 5 min do Parque Ibirapuera",
     "Ruas arborizadas de Moema Pássaros, restaurantes a pé"
    ],
@@ -5370,7 +5359,7 @@
   ],
   "ficha": {
    "tagline": "Um grand lodge com quadra de tênis oficial entre Moema e o Ibirapuera.",
-   "conceito": "O Monã nos chamou atenção pela variedade rara num só endereço: são três torres na Av. Indianópolis com apartamentos de 172 a 284 m², duplex de até 562 m² e gardens de até 569 m², com jardim privativo. O conceito vem dos lodges de luxo internacionais, com quadra de tênis oficial, beach tennis, piscina coberta e aquecida, pilates e um fitness de 245 m². Baixa densidade, com duas unidades por andar.",
+   "conceito": "O Monã nos chamou atenção pela variedade rara num só endereço: são três torres com apartamentos de 172 a 284 m², duplex de até 562 m² e gardens de até 569 m², com jardim privativo. O conceito vem dos lodges de luxo internacionais, com quadra de tênis oficial, beach tennis, piscina coberta e aquecida, pilates e um fitness de 245 m². Baixa densidade, com duas unidades por andar.",
    "endereco": "Av. Indianópolis, 588 · Moema",
    "entrega": "Em obras",
    "faixa": "172 a 569 m²",
@@ -5467,8 +5456,7 @@
    ],
    "local": [
     "Entre Moema e o Parque Ibirapuera",
-    "Av. Indianópolis, com saída rápida para a 23 de Maio",
-    "Frentes para as ruas Açocê e dos Aicás"
+    "Com saída rápida para a 23 de Maio"
    ],
    "tecnica": [
     [
@@ -5549,7 +5537,7 @@
   ],
   "ficha": {
    "tagline": "Moema te espera! Novo jeito de viver com espaços inteligentes e conectados ao seu estilo.",
-   "conceito": "Torre única com 314 residências, na Alameda dos Arapanés, em Moema.",
+   "conceito": "Torre única com 314 residências, em Moema.",
    "endereco": "Alameda dos Arapanés · Moema",
    "entrega": "Pronto para morar",
    "faixa": "29 a 73 m²",
@@ -5626,9 +5614,7 @@
     "Lavanderia",
     "Coworking"
    ],
-   "local": [
-    "Alameda dos Arapanés, Moema"
-   ],
+   "local": [],
    "tecnica": [
     [
      "Unidades",
@@ -5848,7 +5834,7 @@
   ],
   "ficha": {
    "tagline": "Paris como referência, Moema como endereço, um terreno de mais de 6 mil m².",
-   "conceito": "O LIS entrou na nossa seleção pelo terreno: mais de 6 mil m² na Alameda dos Arapanés, algo cada vez mais raro no miolo de Moema. A Cyrela se inspirou na Île Saint-Louis, a ilha residencial de Paris, para criar um conjunto com galeria de entrada, wine lounge, quadra de tênis e piscina coberta. As plantas vão de 170 a 253 m², todas com hall privativo, e o projeto busca a certificação AQUA-HQE de construção sustentável. A torre 3, com acesso pela Av. Cotovia e condomínio independente, tem 240 studios de 27,5 a 42 m² e 6 gardens, com lazer próprio no 4º pavimento (piscina, fitness, coworking e churrasqueira).",
+   "conceito": "O LIS entrou na nossa seleção pelo terreno: mais de 6 mil m², algo cada vez mais raro no miolo de Moema. A Cyrela se inspirou na Île Saint-Louis, a ilha residencial de Paris, para criar um conjunto com galeria de entrada, wine lounge, quadra de tênis e piscina coberta. As plantas vão de 170 a 253 m², todas com hall privativo, e o projeto busca a certificação AQUA-HQE de construção sustentável. A torre 3 e condomínio independente, tem 240 studios de 27,5 a 42 m² e 6 gardens, com lazer próprio no 4º pavimento (piscina, fitness, coworking e churrasqueira).",
    "endereco": "Al. dos Arapanés, 1335 · Moema",
    "entrega": "Nov/2026",
    "faixa": "170 a 253 m²",
@@ -5932,9 +5918,8 @@
     "The Kids Place"
    ],
    "local": [
-    "Miolo de Moema, na Alameda dos Arapanés",
     "Perto do Shopping Ibirapuera",
-    "Acesso rápido à Av. Ibirapuera e à Av. Rubem Berta"
+    "Acesso rápido às principais avenidas de Moema"
    ],
    "tecnica": [
     [
@@ -6072,7 +6057,6 @@
     "Jardim"
    ],
    "local": [
-    "Avenida Sabiá, Moema Pássaros",
     "Caminho do Parque Ibirapuera"
    ],
    "tecnica": [
@@ -6107,7 +6091,7 @@
   "tipos": [
    "Apartamento"
   ],
-  "frase": "Pronto para morar: só 30 apartamentos de 150 m² na Av. Moema.",
+  "frase": "Pronto para morar: só 30 apartamentos de 150 m².",
   "resumo": {
    "tipologias": "3 suítes · garden e cobertura",
    "metragem": "150 a 295 m²",
@@ -6196,7 +6180,6 @@
     "Bicicletário"
    ],
    "local": [
-    "Av. Moema",
     "Perto do Ibirapuera Shopping"
    ],
    "tecnica": [
@@ -6342,8 +6325,7 @@
    ],
    "local": [
     "150 m da estação Eucaliptos",
-    "Perto do Shopping Ibirapuera",
-    "Av. Cotovia, Moema"
+    "Perto do Shopping Ibirapuera"
    ],
    "tecnica": [
     [
@@ -6423,7 +6405,7 @@
    "apartamentos"
   ],
   "ficha": {
-   "tagline": "Arquitetura nórdica e piscina no rooftop, na Alameda dos Arapanés.",
+   "tagline": "Arquitetura nórdica e piscina no rooftop.",
    "conceito": "O Monogram é a nossa sugestão para quem busca três suítes em 121 m² com padrão construtivo acima da média do bairro. A AAM trouxe uma linguagem de arquitetura nórdica para Moema e colocou o lazer no topo: piscina coberta e piscina descoberta no rooftop, com solarium e espaço wellness. Tem gerador full para apartamentos e áreas comuns, inclusive o ar-condicionado, e pontos de recarga para carro elétrico. Pronto para morar.",
    "endereco": "Al. dos Arapanés · Moema",
    "entrega": "Pronto para morar",
@@ -6499,7 +6481,7 @@
     "Pet place"
    ],
    "local": [
-    "Alameda dos Arapanés, miolo residencial de Moema",
+    "Miolo residencial de Moema",
     "Perto do Shopping Ibirapuera",
     "Metrô Eucaliptos nas proximidades"
    ],
@@ -7061,7 +7043,7 @@
   "tipos": [
    "Apartamento"
   ],
-  "frase": "Torre única na República do Líbano, a poucos passos do Parque Ibirapuera.",
+  "frase": "Torre única, a poucos passos do Parque Ibirapuera.",
   "resumo": {
    "tipologias": "3, 4 e 5 suítes",
    "metragem": "373 a 1.184 m²",
@@ -7075,7 +7057,7 @@
   "entrega": "Jun/2028",
   "ficha": {
    "tagline": "Ao lado do Ibirapuera.",
-   "conceito": "Torre única em terreno de 2.530 m² na Avenida República do Líbano, com apenas dois apartamentos por andar e 40 unidades no total.",
+   "conceito": "Torre única em terreno de 2.530 m², com apenas dois apartamentos por andar e 40 unidades no total.",
    "endereco": "Av. República do Líbano, 2112 · Moema",
    "entrega": "Jun/2028",
    "assinaturas": [
@@ -7152,7 +7134,7 @@
     "Pet place"
    ],
    "local": [
-    "Na Av. República do Líbano, vizinho ao Parque Ibirapuera",
+    "Vizinho ao Parque Ibirapuera",
     "Perto do Clube Monte Líbano",
     "Acesso às avenidas Ibirapuera e Santo Amaro"
    ],
@@ -7228,7 +7210,7 @@
   "tipos": [
    "Apartamento"
   ],
-  "frase": "Um clássico contemporâneo na Avenida República do Líbano.",
+  "frase": "Um clássico contemporâneo.",
   "resumo": {
    "tipologias": "3 e 4 suítes",
    "metragem": "336 e 431 m²",
@@ -7242,7 +7224,7 @@
   "entrega": "Dez/2029",
   "ficha": {
    "tagline": "Um clássico contemporâneo.",
-   "conceito": "Arquitetura da Perkins&Will, paisagismo de Alex Hanazaki e interiores pensados para atravessar gerações, na Avenida República do Líbano.",
+   "conceito": "Arquitetura da Perkins&Will, paisagismo de Alex Hanazaki e interiores pensados para atravessar gerações.",
    "endereco": "Av. República do Líbano, 2248 · Moema",
    "entrega": "Dez/2029",
    "assinaturas": [
@@ -7299,7 +7281,7 @@
     "Lazer completo (material detalhado sob consulta)"
    ],
    "local": [
-    "Na Av. República do Líbano, perto do Parque Ibirapuera",
+    "Perto do Parque Ibirapuera",
     "Vizinho ao Clube Monte Líbano"
    ],
    "tecnica": [
@@ -7348,7 +7330,7 @@
   ],
   "ficha": {
    "tagline": "Pausa e respiro ao lado do parque.",
-   "conceito": "Torre única com 25 residências de 575 m², na esquina da República do Líbano com a Alameda Jauaperi. Linhas contínuas que dialogam com o verde do Ibirapuera.",
+   "conceito": "Torre única com 25 residências de 575 m² numa esquina de Moema. Linhas contínuas que dialogam com o verde do Ibirapuera.",
    "endereco": "Av. República do Líbano, 2168 · Moema",
    "entrega": "Breve lançamento",
    "assinaturas": [
@@ -7401,7 +7383,6 @@
     "Fitness by Technogym"
    ],
    "local": [
-    "Esquina da Av. República do Líbano com a Al. Jauaperi",
     "A poucos passos do Parque Ibirapuera"
    ],
    "tecnica": [
@@ -7704,7 +7685,6 @@
     "Sala de motoristas"
    ],
    "local": [
-    "Rua Inhambu, Moema Pássaros",
     "A 550 m do Parque Ibirapuera"
    ],
    "tecnica": [
@@ -8142,8 +8122,7 @@
     "Salão de festas"
    ],
    "local": [
-    "1,5 km do Parque Ibirapuera",
-    "Esquina da Av. Indianópolis com a Al. dos Anapurus"
+    "1,5 km do Parque Ibirapuera"
    ],
    "tecnica": [
     [
@@ -8227,7 +8206,7 @@
   "entrega": "Ago/2030",
   "ficha": {
    "tagline": "Quando o bem-estar começa na arquitetura.",
-   "conceito": "Edifício de esquina na Alameda dos Jurupis, com implantação que equilibra conexão com a cidade e privacidade, e experiência wellness assinada por Tania Ginjas.",
+   "conceito": "Edifício de esquina, com implantação que equilibra conexão com a cidade e privacidade, e experiência wellness assinada por Tania Ginjas.",
    "endereco": "Al. dos Jurupis, 543 · Moema",
    "entrega": "Breve lançamento",
    "assinaturas": [
@@ -8267,7 +8246,7 @@
     ],
     [
      "Esquina",
-     "na Al. dos Jurupis"
+     "em Moema"
     ]
    ],
    "plantas": [
