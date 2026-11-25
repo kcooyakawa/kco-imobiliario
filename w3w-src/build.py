@@ -23,7 +23,7 @@ HERO = 'https://w3wimoveis.com.br/wp-content/uploads/2024/12/o-que-fazer-no-parq
 E = json.load(open(os.path.join(ROOT, 'empreendimentos.json'), encoding='utf-8'))
 E = [e for e in E if not e['slug'].startswith('on-')]  # Vitacon fora (nov/2026)
 E = [e for e in E if not e.get('esgotado')]  # sem estoque fora (pedido Yoko, nov/2026)
-EM = [e for e in E if e['bairro_slug'] == 'moema']  # vitrine pública: só Moema por enquanto
+EM = [e for e in E if e['bairro_slug'] == 'moema' or e.get('vitrine')]  # vitrine pública: só Moema por enquanto
 LOGO = open(os.path.join(ROOT, 'logo.svg'), encoding='utf-8').read().strip()
 LOGO = LOGO.replace('aria-label="W3W Imóveis"', 'role="img" aria-label="W3W Imóveis"')
 
@@ -65,6 +65,7 @@ BAIRROS = {
  'moema': dict(nome='Moema', titulo='Imóveis novos em Moema',
    lead='Moema reúne ruas arborizadas, o Parque Ibirapuera a poucos minutos, metrô, boa gastronomia e alguns dos lançamentos mais disputados de São Paulo. Selecionamos aqui os empreendimentos que acompanhamos de perto, de studios a apartamentos de alto padrão.',
    desc='Apartamentos e studios novos em Moema: lançamentos, imóveis em obras e prontos para morar, com a inteligência imobiliária da W3W Imóveis.'),
+ 'brooklin': dict(nome='Brooklin', titulo='Imóveis no Brooklin', lead='No Brooklin, a W3W acompanha casas em condomínio e projetos selecionados, sob consulta.', desc='Imóveis selecionados no Brooklin, sob consulta, com a inteligência imobiliária da W3W Imóveis.'),
  'vila-nova-conceicao': dict(nome='Vila Nova Conceição', titulo='Imóveis novos na Vila Nova Conceição',
    lead='A Vila Nova Conceição é um dos endereços mais valorizados de São Paulo: vizinha do Ibirapuera, residencial, silenciosa e com projetos assinados por grandes incorporadoras. Aqui estão os empreendimentos que a W3W acompanha no bairro.',
    desc='Apartamentos novos de alto padrão na Vila Nova Conceição: lançamentos, em obras e prontos, com a inteligência imobiliária da W3W Imóveis.'),
@@ -781,7 +782,7 @@ ORG = {"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "W3
 _LOC = os.path.exists(os.path.join(ROOT, '..', 'w3w-img', 'site', 'v', 'torre.mp4'))
 SITE = 'https://kcooyakawa.github.io/kco-imobiliario/w3w-img/site' if _LOC else 'https://w3wlp.netlify.app'
 VID = SITE + '/v'
-CATS = [('', 'Todos'), ('studios', 'Studios'), ('apartamentos', 'Apartamentos'), ('alto-padrao', 'Alto padrão')]
+CATS = [('', 'Todos'), ('casas', 'Casas'), ('studios', 'Studios'), ('apartamentos', 'Apartamentos'), ('alto-padrao', 'Alto padrão')]
 
 def th(x):
     """versão leve (760px) para cards e miniaturas"""
@@ -840,7 +841,7 @@ def expand(lst):
             if e.get('ficha'):
                 if st and not ap and 'studios' not in cats: cats=['studios']+[c for c in cats if c!='apartamentos']
                 if ap and not st: cats=[c for c in cats if c!='studios'] or ['apartamentos']
-            if e.get('ficha') and ap and not st: cats=_tier(ap,e)
+            if e.get('ficha') and ap and not st: cats=(['casas'] if 'Casa' in (e.get('tipos') or []) else [])+_tier(ap,e)
             elif e.get('ficha') and st and not ap: cats=['studios']
             x['categorias']=cats; out.append(x); continue
         a=copy.deepcopy(e); a['ficha']['plantas']=ap
@@ -871,7 +872,7 @@ def _old_score(e):
 def gcard(e, i):
     r = e['resumo']; ms, ma = mt(e)
     sub = f'<small class="gs">+ studios {esc(ms)}</small>' if ms and ma else ''
-    return f"""<a class="g" href="{u('empreendimentos/'+e.get('_page',e['slug']))}" data-q="{qidx(e)}" data-slug="{e['slug']}" data-cat="{' '.join(e['categorias'])}" data-b="{e['bairro_slug']}" data-st="{e['status']}" data-ms="{esc(ms)}" data-ma="{esc(ma)}">
+    return f"""<a class="g" href="{u('empreendimentos/'+e.get('_page',e['slug']))}" data-q="{qidx(e)}" data-slug="{e['slug']}" data-cat="{' '.join(e['categorias'])}" data-b="{'moema' if e.get('vitrine') else e['bairro_slug']}" data-st="{e['status']}" data-ms="{esc(ms)}" data-ma="{esc(ma)}">
 <div class="ph"><span class="pf-st st-{e['status'].split()[0].lower().replace('ç','c')}">{selo(e)}</span><span class="pf-ov"><em>{esc(e['nome'])}</em><small>Ver ficha →</small></span><img src="{th(e['img'])}" alt="{esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async">{strip(e)}</div>
 <div class="gi"><span class="n" hidden>{i:02d}</span><strong class="gm">{esc(ma or ms)}</strong>{sub}<h3>{esc(e['nome'])}</h3><p>{esc(e['bairro'])} · {esc(e['status'])}</p></div></a>"""
 
@@ -956,7 +957,7 @@ def build_home():
 
 <section class="pf" id="imoveis"><div class="wrap">
 <div class="pf-hd2"><div><span class="eyebrow">Galeria W3W</span><h2>Imóveis <em>selecionados.</em></h2></div><span class="pf-n"></span></div>
-<div class="pf-bar"><div class="pf-bar-in"><label class="pf-q"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pfq" type="search" placeholder="Nome, rua ou construtora" autocomplete="off" aria-label="Buscar imóveis"></label><div class="seg" data-k="b" role="group"><button data-v="moema" aria-pressed="true">Moema</button></div>{''.join(['<div class="seg" data-k="c" role="group">']+[f'<button data-v="{v}" aria-pressed="{"true" if v=="" else "false"}">{l}</button>' for v,l in CATS]+['</div>'])}<div class="seg" data-k="s" role="group"><button data-v="" aria-pressed="true">Todas</button><button data-v="Lançamento" aria-pressed="false">Lançamento</button><button data-v="Em obras" aria-pressed="false">Em obras</button><button data-v="Pronto" aria-pressed="false">Pronto</button></div></div></div>
+<div class="pf-bar"><div class="pf-bar-in"><label class="pf-q"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pfq" type="search" placeholder="Nome, bairro ou construtora" autocomplete="off" aria-label="Buscar imóveis"></label><div class="seg" data-k="b" role="group"><button data-v="moema" aria-pressed="true">Moema</button></div>{''.join(['<div class="seg" data-k="c" role="group">']+[f'<button data-v="{v}" aria-pressed="{"true" if v=="" else "false"}">{l}</button>' for v,l in CATS]+['</div>'])}<div class="seg" data-k="s" role="group"><button data-v="" aria-pressed="true">Todas</button><button data-v="Lançamento" aria-pressed="false">Lançamento</button><button data-v="Em obras" aria-pressed="false">Em obras</button><button data-v="Pronto" aria-pressed="false">Pronto</button></div></div></div>
 {feat()}<div class="pf-grid">{''.join(gcard(e, i+1) for i, e in enumerate(sorted(VIT, key=score)))}</div>
 <div class="more"><button class="btn" id="more">Ver mais imóveis</button></div>
 </div></section>
@@ -965,7 +966,7 @@ def build_home():
 <div class="wrap terr-in"><span class="eyebrow">Território</span><h2>Nossa casa é <em>Moema.</em></h2>
 <p>A W3W nasceu e trabalha em Moema. Conhecemos cada rua, cada lançamento e cada mudança do bairro. Quando a oportunidade certa está ao lado, também acompanhamos de perto Vila Nova Conceição, Itaim Bibi, Brooklin e Paraíso.</p>
 <div class="terr-b"><a href="{u('moema')}"><strong>Moema</strong><span>{len(moema)} empreendimentos</span></a>
-<a href="#contato"><strong>Vila Nova Conceição · Itaim · Paraíso</strong><span>Sob consulta</span></a></div></div></section>
+<a href="#contato"><strong>Vila Nova Conceição · Itaim · Paraíso · Brooklin</strong><span>Sob consulta</span></a></div></div></section>
 
 <section class="socx" id="socios"><div class="wrap">
 <div class="qsh"><div><span class="eyebrow">Quem somos</span><h2>Mais de 20 anos <em>de mercado.</em></h2></div>

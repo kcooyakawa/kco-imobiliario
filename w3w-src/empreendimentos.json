@@ -8500,5 +8500,107 @@
     ]
    }
   }
+ },
+ {
+  "slug": "casa-jardim-petrella",
+  "nome": "Casa Jardim Petrella",
+  "bairro": "Brooklin",
+  "bairro_slug": "brooklin",
+  "vitrine": true,
+  "status": "Em obras",
+  "tipos": [
+   "Casa"
+  ],
+  "frase": "Condomínio fechado com 18 casas no Brooklin, com jardim e rooftop privativos.",
+  "resumo": {
+   "tipologias": "Casas de 3 ou 4 suítes",
+   "metragem": "485 a 618 m²",
+   "vagas": "4 vagas"
+  },
+  "torres": [],
+  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-jardim-petrella/capa.jpg",
+  "categorias": [
+   "casas",
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "Casas em condomínio fechado, com jardim e rooftop privativos.",
+   "conceito": "Condomínio fechado com 18 casas no Brooklin, de 485 a 618 m², com 3 ou 4 suítes e 4 vagas. São quatro pavimentos: subsolo, térreo, 1º pavimento e rooftop com piscina e espaço para churrasqueira. Arquitetura de Gui Mattos e obras aceleradas.",
+   "endereco": "Rua Pascoal Pais, 270 · Brooklin",
+   "entrega": "Ago/2027",
+   "assinaturas": [
+    [
+     "Arquitetura",
+     "Gui Mattos"
+    ]
+   ],
+   "destaques": [
+    [
+     "18",
+     "casas no condomínio"
+    ],
+    [
+     "485 m²",
+     "casa a partir de"
+    ],
+    [
+     "4",
+     "pavimentos com rooftop"
+    ],
+    [
+     "24h",
+     "portaria e guarita blindada"
+    ]
+   ],
+   "plantas": [
+    [
+     "Casa",
+     "485 a 618 m²",
+     "3 ou 4 suítes",
+     "4 vagas"
+    ]
+   ],
+   "lazer": [
+    "Rooftop privativo com piscina e espaço para churrasqueira",
+    "Jardim integrado ao living",
+    "Academia equipada",
+    "Espaço kids",
+    "Pet place"
+   ],
+   "local": [
+    "Brooklin, Zona Sul de São Paulo"
+   ],
+   "tecnica": [
+    [
+     "Casas",
+     "18"
+    ],
+    [
+     "Pavimentos",
+     "Subsolo, térreo, 1º pavimento e rooftop"
+    ],
+    [
+     "Vagas",
+     "4 por casa, uma com ponto para carro elétrico"
+    ],
+    [
+     "Segurança",
+     "Portaria 24h e guarita blindada"
+    ]
+   ],
+   "faixa": "485 a 618 m²",
+   "plantas_tit": "casas de 3 ou 4 suítes.",
+   "img": {
+    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-jardim-petrella/capa.jpg",
+    "fachada": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-jardim-petrella/capa.jpg",
+    "fachada_cap": "Fachada · Perspectiva ilustrada",
+    "par": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-jardim-petrella/implantacao.jpg",
+      "Implantação do condomínio"
+     ]
+    ]
+   }
+  }
  }
 ]

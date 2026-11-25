@@ -7,7 +7,7 @@ OUT = os.path.join(ROOT, '..', 'hub-w3w', 'produtos.js')
 SITE = 'https://kcooyakawa.github.io/kco-imobiliario/w3w'
 
 E = json.load(open(os.path.join(ROOT, 'empreendimentos.json'), encoding='utf-8'))
-E = [e for e in E if not e['slug'].startswith('on-') and not e.get('esgotado')]
+E = [e for e in E if not e['slug'].startswith('on-') and not e.get('esgotado') and e['slug'] != 'casa-jardim-petrella']  # Petrella tem página própria no hub
 
 
 def nums(t):
