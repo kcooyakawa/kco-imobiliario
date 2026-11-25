@@ -238,7 +238,8 @@ body:has(.z3) .ft .brand svg{opacity:.7;transform:scale(.85)}
 .z3-seg button{flex:1;height:56px;border-radius:14px;border:1px solid var(--ln);background:none;color:var(--tx);font:300 22px var(--sans);cursor:pointer;transition:background .3s,color .3s,border-color .3s}
 .z3-seg button[aria-pressed=true]{background:var(--tx);color:#05070B;border-color:var(--tx)}
 .z3-seg button:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
-.z3-ctl .z3-tg{margin-top:14px}
+.z3-ctl .z3-tg{margin-top:14px;display:flex;width:max-content;max-width:100%}
+.z3-ctl>div>.mono{display:block}
 .z3-sw{display:flex;gap:16px;align-items:flex-start;cursor:pointer;position:relative}
 .z3-sw input{position:absolute;opacity:0}
 .z3-sw>span{flex:none;width:48px;height:28px;border-radius:999px;background:rgba(238,242,248,.14);position:relative;transition:background .3s;margin-top:2px}
