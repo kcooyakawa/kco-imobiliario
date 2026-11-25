@@ -721,7 +721,7 @@ def header(active=''):
 <a class="brand" href="{BASE}/" aria-label="W3W Imóveis, página inicial">{LOGO}<span class="creci">{CRECI}</span></a>
 <button class="burger" aria-label="Abrir menu" aria-expanded="false" onclick="var n=document.querySelector('.nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h16M4 16h16"/></svg></button>
 <nav class="nav" aria-label="Principal">
-<a href="{BASE}/#imoveis">Imóveis</a><a href="{BASE}/#territorio">Território</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Quem somos</a>
+<a href="{BASE}/#imoveis">Imóveis</a><a href="{BASE}/#territorio">Território</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{u('mapa-moema')}">Mapa de Moema</a><a href="{BASE}/#socios">Quem somos</a>
 <a class="btn" href="{BASE}/#contato">Fale com um consultor</a></nav></div></header>'''
 
 def footer():
@@ -729,7 +729,7 @@ def footer():
     WA_MAP = json.dumps({e['nome']: u('empreendimentos/' + e['slug']) for e in EM}, ensure_ascii=False)
     return f"""<footer class="ft"><div class="wrap ft-t">
 <a class="brand ft-b" href="{BASE}/">{LOGO}<span class="creci">{CRECI}</span></a>
-<nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Quem somos</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
+<nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{u('mapa-moema')}">Mapa de Moema</a><a href="{BASE}/#socios">Quem somos</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
 <div class="ft-c"><a href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener">{TEL}</a><a href="mailto:{EMAIL}">{EMAIL}</a></div>
 </div><div class="wrap ft-bot"><span>W3W Imóveis · Inteligência imobiliária · Desde 2004</span><span>{CRECI} · Moema, São Paulo</span></div><div class="wrap ft-kco"><a href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Produzido por KCO Studio</a></div></footer>
 <button class="wa" id="waBtn" type="button" aria-label="Falar no WhatsApp" aria-expanded="false" aria-controls="waBox">{WA_ICON}</button>
@@ -1015,7 +1015,7 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches){{var px=[].slice.cal
 
 def build():
     if os.path.isdir(OUT): shutil.rmtree(OUT)
-    write('assets/site.css', CSS)
+    write('assets/site.css', CSS + MP_PROMO_CSS)
     write('assets/motion.js', open(os.path.join(ROOT,'motion.js'),encoding='utf-8').read())
     write('assets/track.js', open(os.path.join(ROOT,'track.js'),encoding='utf-8').read())
     write('assets/sheet.js', open(os.path.join(ROOT,'sheet.js'),encoding='utf-8').read())
@@ -1288,7 +1288,7 @@ def build_guia():
 <div class="ma-grid"><article class="ma-body">{body}</article>
 {f'<aside class="ma-side"><h3>Carnet do concierge</h3>{gm_map(pins)}{carnet(pins)}</aside>' if pins else ''}</div></div>
 <section class="gm-near"><div class="wrap"><div class="sec-hd"><h2>Morar perto <em>daqui</em></h2><a href="{u('guia-moema')}">← Guia Moema</a></div>
-<div class="grid">{''.join(card(e) for e in near)}</div></div></section>{band()}</main>'''
+<div class="grid">{''.join(card(e) for e in near)}</div></div></section><section class="mp-promo"><div class="wrap"><a href="{u('mapa-moema')}"><span>Novo · Mapa vivo</span><strong>Mapa de Moema</strong><em>Restaurantes, serviços, beleza, escolas e o que está aberto agora no bairro.</em><b>Abrir o mapa →</b></a></div></section>{band()}</main>'''
         pg += footer(); write(f"guia-moema/{p['slug']}/index.html", pg)
         if p is p0:  # a página do Guia abre direto na matéria de capa (pedido Kco, nov/2026)
             idx = pg.replace('<a class="mg-tag" href="' + u('guia-moema') + f'">← Guia Moema · Edição nº {ed["numero"]}</a>', f'<span class="mg-tag">Guia Moema · Edição nº {ed["numero"]} · Matéria de capa</span>')
@@ -1298,6 +1298,17 @@ def build_guia():
     pg = head(f"{p0['titulo']} | Guia Moema · versão 2", p0['sub'], 'guia-moema-v2', f'<script type="application/ld+json">{json.dumps({"@context": "https://schema.org", "@type": "BlogPosting", "headline": p0['titulo'], "datePublished": p0['data'], "image": p0['capa']}, ensure_ascii=False)}</script>')
     pg += header('guia-moema') + guia_v2.render(G, p0, near, wa, u, dt, BASE, gm_map(p0.get('concierge', []))) + footer()
     write('guia-moema-v2/index.html', pg)
+
+MP_PROMO_CSS = '''
+.mp-promo{padding:40px 0}
+.mp-promo a{display:grid;grid-template-columns:auto 1fr auto;grid-template-areas:'t s b' 'n e b';gap:6px 28px;align-items:center;padding:30px 34px;border-radius:24px;text-decoration:none;color:#14171C;background:linear-gradient(135deg,#E9EEF6,#F6F3EE);box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px rgba(20,23,28,.08);transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.mp-promo a:hover{transform:translateY(-3px)}
+.mp-promo span{grid-area:t;font:500 10.5px ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#2F6FD0}
+.mp-promo strong{grid-area:n;font:300 34px/1 var(--sans);letter-spacing:-.03em}
+.mp-promo em{grid-area:e;font-style:normal;color:#4F5662;font-size:15px}
+.mp-promo b{grid-area:b;font:500 14px var(--sans);color:#fff;background:#2F6FD0;padding:14px 20px;border-radius:999px}
+@media (max-width:700px){.mp-promo a{grid-template-columns:1fr;grid-template-areas:'t' 'n' 'e' 'b'}.mp-promo b{justify-self:start;margin-top:10px}}
+'''
 
 def build_mapa():
     import mapa_page

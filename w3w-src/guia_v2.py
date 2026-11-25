@@ -222,6 +222,8 @@ def render(G, p0, near_html, wa, u, dt, BASE='', map_html=''):
 <section class="g2-near"><div class="g2-in"><div class="g2-sh rv"><span class="mono g2-ey">Morar perto daqui</span><h2>Endereços para <em>viver Moema.</em></h2></div>
 <div class="grid">{near_html}</div></div></section>
 
+<section class="g2-in" style="padding-bottom:40px"><div class="mp-promo" style="padding:0"><a href="{BASE}/mapa-moema/"><span>Novo · Mapa vivo</span><strong>Mapa de Moema</strong><em>Restaurantes, serviços, beleza, escolas e o que está aberto agora no bairro.</em><b>Abrir o mapa →</b></a></div></section>
+
 <section class="g2-next"><div class="g2-in"><div class="g2-sh rv"><span class="mono g2-ey">Próximas edições</span><h2>O bairro, <em>uma página por vez.</em></h2></div><ul>{nxt}</ul></div></section>
 
 <section class="g2-end"><i class="g2-blob"></i><h2 class="rv">Quer morar <em>em Moema?</em></h2>
