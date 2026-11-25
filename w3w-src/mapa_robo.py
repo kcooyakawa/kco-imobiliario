@@ -268,29 +268,52 @@ def horario_texto(html):
     return '; '.join(regras)
 
 
+def abrir(url):
+    """Testa variações do endereço (https/http, com e sem www). Devolve (url que abre, html) ou ('', '')."""
+    u = re.sub(r'^https?://', '', url.strip()).rstrip('/')
+    if not u: return '', ''
+    host, _, path = u.partition('/')
+    hosts = [host] + ([host[4:]] if host.startswith('www.') else ['www.' + host])
+    for h in hosts:
+        for sch in ('https://', 'http://'):
+            cand = sch + h + ('/' + path if path else '')
+            try:
+                req = urllib.request.Request(cand, headers={'User-Agent': 'Mozilla/5.0 (compatible; ' + UA + ')', 'Accept': 'text/html'})
+                with urllib.request.urlopen(req, timeout=8) as r:
+                    if r.status >= 400: continue
+                    ct = r.headers.get('Content-Type') or ''
+                    html = r.read(600_000).decode('utf-8', 'ignore') if 'html' in ct else ''
+                    return cand, html
+            except urllib.error.HTTPError as e:
+                if e.code in (401, 403, 405, 429): return cand, ''  # existe, só bloqueia robôs
+            except Exception:
+                continue
+    return '', ''
+
+
 def horario_site(url):
-    if not url.startswith('http'): url = 'https://' + url
-    if re.search(r'instagram|facebook|ifood|wa\.me|whatsapp|linktr', url): return ''
-    try:
-        req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': 'text/html'})
-        with urllib.request.urlopen(req, timeout=10) as r:
-            if 'html' not in (r.headers.get('Content-Type') or ''): return ''
-            html = r.read(600_000).decode('utf-8', 'ignore')
-    except Exception:
-        return ''
-    return horario_jsonld(html) or horario_texto(html)
+    ok, html = abrir(url)
+    if not ok: return None, ''
+    if not html or re.search(r'instagram|facebook|ifood|linktr', ok): return ok, ''
+    return ok, horario_jsonld(html) or horario_texto(html)
 
 
 def completar_horarios(locais):
     from concurrent.futures import ThreadPoolExecutor
-    alvo = [l for l in locais if not l.get('horario') and l.get('site')]
+    alvo = [l for l in locais if l.get('site')]
+    mortos = [0]
     def job(l):
-        h = horario_site(l['site'])
-        if h: l['horario'] = h; l['h24'] = h.strip() == '24/7'; l['fonte_horario'] = 'site'
-        return bool(h)
-    with ThreadPoolExecutor(16) as ex:
+        if re.search(r'wa\.me|whatsapp', l['site']): return False
+        ok, h = horario_site(l['site'])
+        if ok is None:
+            l['site'] = ''; mortos[0] += 1; return False  # site fora do ar: some o botão
+        l['site'] = ok
+        if h and not l.get('horario'):
+            l['horario'] = h; l['h24'] = h.strip() == '24/7'; l['fonte_horario'] = 'site'; return True
+        return False
+    with ThreadPoolExecutor(24) as ex:
         n = sum(ex.map(job, alvo))
-    print('horários achados nos sites:', n, 'de', len(alvo))
+    print('sites testados:', len(alvo), '| fora do ar removidos:', mortos[0], '| horários achados:', n)
 
 
 def main():

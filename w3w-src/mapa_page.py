@@ -88,6 +88,13 @@ body:has(.mp){background:#EEEBE5}
 .mp-grid{position:absolute;left:420px;right:20px;top:76px;bottom:20px;z-index:3;border-radius:26px;overflow-y:auto;padding:28px;opacity:0;pointer-events:none;transform:translateY(16px);transition:all .5s var(--e)}
 .mp.lista .mp-grid{opacity:1;pointer-events:auto;transform:none}
 .mp.lista .mp-card,.mp.lista .mp-cta{display:none}
+.mp-grid{padding-top:0!important}
+.mp-gnav{position:sticky;top:0;z-index:2;display:flex;gap:6px;overflow-x:auto;padding:18px 0 14px;margin-bottom:6px;background:linear-gradient(#F4F1EC 75%,rgba(244,241,236,0));scrollbar-width:none}
+.mp-gnav::-webkit-scrollbar{display:none}
+.mp-gnav button{flex:none;height:38px;padding:0 15px;border-radius:999px;border:0;font:500 13px var(--sans);color:var(--tx2);background:rgba(255,255,255,.75);box-shadow:inset 0 0 0 1px var(--ln);cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.mp-gnav button b{width:8px;height:8px;border-radius:50%}
+.mp-gnav button small{font:11px var(--mono);color:var(--tx3)}
+.mp-gnav button[aria-pressed=true]{background:var(--tx);color:#fff}.mp-gnav button[aria-pressed=true] small{color:rgba(255,255,255,.6)}
 .mp-grid h3{font:300 28px/1 var(--sans);letter-spacing:-.03em;margin:28px 0 14px;display:flex;align-items:center;gap:10px}
 .mp-grid h3:first-child{margin-top:0}
 .mp-grid h3 b{width:10px;height:10px;border-radius:50%}
@@ -141,7 +148,7 @@ def render(wa, cats_json, grupos_json='[]'):
 <div class="mp-list" id="mpList"></div>
 </aside>
 <div class="mp-tools"><div class="mp-seg mp-glass" role="group" aria-label="Visualização"><button id="mpV3" aria-pressed="true">3D</button><button id="mpV2" aria-pressed="false">2D</button></div><div class="mp-seg mp-glass" role="group" aria-label="Modo"><button id="mpMm" aria-pressed="true">Mapa</button><button id="mpMl" aria-pressed="false">Lista</button></div><div class="mp-upd mp-glass"><i></i><span id="mpUpd">Atualizado toda semana</span></div></div>
-<section class="mp-grid mp-glass" id="mpGrid" aria-label="Lista de lugares"></section>
+<section class="mp-grid mp-glass" aria-label="Lista de lugares"><nav class="mp-gnav" id="mpGnav" aria-label="Setores"></nav><div id="mpGrid"></div></section>
 <div class="mp-cta mp-glass">Tem um negócio em Moema? <a href="{wa('Olá! Tenho um negócio em Moema e quero aparecer no Mapa de Moema da W3W.')}" target="_blank" rel="noopener">Apareça no mapa →</a></div>
 <article class="mp-card mp-glass" id="mpCard" aria-live="polite"></article>
 </main>
@@ -186,7 +193,10 @@ const ab=$('#mpAll');if(ab)ab.onclick=()=>{F.open=F.h24=false;$('#mpOpen').setAt
 $('#mpList').querySelectorAll('.mp-it').forEach(el=>{el.onclick=()=>pick(el.dataset.id,true);el.onmouseenter=()=>hover(el.dataset.id)});
 if(map&&map.getSource('locais')){map.getSource('locais').setData(geo(L));if(fit&&L.length){const b=new maplibregl.LngLatBounds();L.forEach(l=>b.extend([l.lon,l.lat]));map.fitBounds(b,{padding:pad(),maxZoom:16,duration:R?0:1200})}}}
 function empty(){const all=list(true).length;return all&&(F.open||F.h24)?`<p class="mp-empty">Nada ${F.h24?'24 horas':'aberto agora'} com essa busca.<br><button class="mp-btn" id="mpAll" style="margin-top:14px">Ver os ${all} resultados</button></p>`:`<p class="mp-empty">Ainda não temos “${esc(F.q)}” no mapa.<br><a class="mp-btn" style="margin-top:14px" href="https://wa.me/5511940297871?text=${encodeURIComponent('Olá! Sugiro incluir no Mapa de Moema: '+F.q)}" target="_blank" rel="noopener">Sugerir este lugar</a></p>`}
-function grid(L){const g=$('#mpGrid');if(!g)return;const by={};L.forEach(l=>(by[l.cat]=by[l.cat]||[]).push(l));g.innerHTML=C.filter(c=>by[c[0]]).map(c=>`<h3><b style="background:${c[2]}"></b>${c[1]} <small>${by[c[0]].length}</small></h3><div class="mp-gl">${by[c[0]].map(l=>`<div class="mp-gc" data-id="${l.id}"><strong>${esc(l.nome)}</strong><span>${esc(l.end||CM[l.cat][1])}</span>${l.st.k!=='?'?`<em class="mp-st ${l.st.k}" style="font-style:normal">${l.st.t}</em>`:''}</div>`).join('')}</div>`).join('')||'<p class="mp-empty">Nenhum lugar com esses filtros.</p>';
+function grid(L0){const g=$('#mpGrid');if(!g)return;const cnt={};L0.forEach(l=>cnt[l.cat]=(cnt[l.cat]||0)+1);
+const nv=$('#mpGnav');const gs=(window.GSEL&&cnt[window.GSEL])?window.GSEL:null;nv.innerHTML=`<button aria-pressed="${!gs}" data-c="">Todos <small>${L0.length}</small></button>`+C.filter(c=>cnt[c[0]]).map(c=>`<button aria-pressed="${gs===c[0]}" data-c="${c[0]}"><b style="background:${c[2]}"></b>${c[1]} <small>${cnt[c[0]]}</small></button>`).join('');
+nv.querySelectorAll('button').forEach(b=>b.onclick=()=>{window.GSEL=b.dataset.c||null;grid(L0);$('.mp-grid').scrollTop=0});
+const L=gs?L0.filter(l=>l.cat===gs):L0;const by={};L.forEach(l=>(by[l.cat]=by[l.cat]||[]).push(l));g.innerHTML=C.filter(c=>by[c[0]]).map(c=>`<h3><b style="background:${c[2]}"></b>${c[1]} <small>${by[c[0]].length}</small></h3><div class="mp-gl">${by[c[0]].map(l=>`<div class="mp-gc" data-id="${l.id}"><strong>${esc(l.nome)}</strong><span>${esc(l.end||CM[l.cat][1])}</span>${l.st.k!=='?'?`<em class="mp-st ${l.st.k}" style="font-style:normal">${l.st.t}</em>`:''}</div>`).join('')}</div>`).join('')||'<p class="mp-empty">Nenhum lugar com esses filtros.</p>';
 g.querySelectorAll('.mp-gc').forEach(el=>el.onclick=()=>{setMode(false);pick(el.dataset.id,true)})}
 const pad=()=>innerWidth>900?{left:420,right:60,top:80,bottom:80}:{left:30,right:30,top:60,bottom:innerHeight*.5};
 const geo=L=>({type:'FeatureCollection',features:L.map(l=>({type:'Feature',id:hash(l.id),properties:{id:l.id,nome:l.nome,cor:CM[l.cat][2],aberto:l.st.k==='o'||l.st.k==='h'?1:0,dest:l.destaque?1:0},geometry:{type:'Point',coordinates:[l.lon,l.lat]}}))});
