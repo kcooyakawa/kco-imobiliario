@@ -495,7 +495,7 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .pf-grid{gap:44px 24px}
 .pf-grid .g .ph{border-radius:14px;aspect-ratio:4/5}
 .pf-grid .g .ph img{will-change:transform;transition:filter .5s}
-.pf-grid .gi{display:block;margin-top:14px;padding:0;border:0}
+.pf-grid .gi{display:block;margin-top:14px;padding:0;border:0}.pf-grid .gi .gm{display:block;font-family:var(--serif);font-weight:300;font-size:34px;line-height:1;letter-spacing:-.02em;margin-bottom:8px;color:var(--ink)}.pf-grid .gi h3{font-size:15px!important;font-family:var(--sans)!important;font-weight:500!important;letter-spacing:.02em}.vt-t .vt-m{display:block;font-family:var(--serif);font-weight:300;font-size:44px;line-height:1;letter-spacing:-.02em;margin-bottom:10px}@media(max-width:767px){.pf-grid .gi .gm{font-size:24px}.vt-t .vt-m{font-size:32px}}
 .pf-grid .gi h3{font-family:var(--serif);font-weight:300;font-size:22px;letter-spacing:-.015em;line-height:1.15}
 .pf-grid .gi p{font:400 13px/1.4 var(--sans);color:var(--ink-2);margin-top:4px}
 .pf-st{border-radius:999px;top:12px;left:12px;padding:6px 10px;font-size:9.5px;background:rgba(26,24,23,.72)}

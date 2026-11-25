@@ -59,10 +59,10 @@ def wa(msg): return f'https://wa.me/{WA}?text=' + urllib.parse.quote(msg)
 BAIRROS = {
  'moema': dict(nome='Moema', titulo='Imóveis novos em Moema',
    lead='Moema reúne ruas arborizadas, o Parque Ibirapuera a poucos minutos, metrô, boa gastronomia e alguns dos lançamentos mais disputados de São Paulo. Selecionamos aqui os empreendimentos que acompanhamos de perto, de studios a apartamentos de alto padrão.',
-   desc='Apartamentos e studios novos em Moema: lançamentos, imóveis em obras e prontos para morar, com curadoria da W3W Imóveis.'),
+   desc='Apartamentos e studios novos em Moema: lançamentos, imóveis em obras e prontos para morar, com curadoria de produtos novos da W3W Imóveis.'),
  'vila-nova-conceicao': dict(nome='Vila Nova Conceição', titulo='Imóveis novos na Vila Nova Conceição',
    lead='A Vila Nova Conceição é um dos endereços mais valorizados de São Paulo: vizinha do Ibirapuera, residencial, silenciosa e com projetos assinados por grandes incorporadoras. Aqui estão os empreendimentos que a W3W acompanha no bairro.',
-   desc='Apartamentos novos de alto padrão na Vila Nova Conceição: lançamentos, em obras e prontos, com curadoria da W3W Imóveis.'),
+   desc='Apartamentos novos de alto padrão na Vila Nova Conceição: lançamentos, em obras e prontos, com curadoria de produtos novos da W3W Imóveis.'),
 }
 
 CSS = r"""
@@ -562,7 +562,7 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .pf-grid{gap:44px 24px}
 .pf-grid .g .ph{border-radius:14px;aspect-ratio:4/5}
 .pf-grid .g .ph img{will-change:transform;transition:filter .5s}
-.pf-grid .gi{display:block;margin-top:14px;padding:0;border:0}
+.pf-grid .gi{display:block;margin-top:14px;padding:0;border:0}.pf-grid .gi .gm{display:block;font-family:var(--serif);font-weight:300;font-size:34px;line-height:1;letter-spacing:-.02em;margin-bottom:8px;color:var(--ink)}.pf-grid .gi h3{font-size:15px!important;font-family:var(--sans)!important;font-weight:500!important;letter-spacing:.02em}.vt-t .vt-m{display:block;font-family:var(--serif);font-weight:300;font-size:44px;line-height:1;letter-spacing:-.02em;margin-bottom:10px}@media(max-width:767px){.pf-grid .gi .gm{font-size:24px}.vt-t .vt-m{font-size:32px}}
 .pf-grid .gi h3{font-family:var(--serif);font-weight:300;font-size:22px;letter-spacing:-.015em;line-height:1.15}
 .pf-grid .gi p{font:400 13px/1.4 var(--sans);color:var(--ink-2);margin-top:4px}
 .pf-st{border-radius:999px;top:12px;left:12px;padding:6px 10px;font-size:9.5px;background:rgba(26,24,23,.72)}
@@ -714,15 +714,15 @@ def header(active=''):
 <a class="brand" href="{BASE}/" aria-label="W3W Imóveis, página inicial">{LOGO}<span class="creci">{CRECI}</span></a>
 <button class="burger" aria-label="Abrir menu" aria-expanded="false" onclick="var n=document.querySelector('.nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h16M4 16h16"/></svg></button>
 <nav class="nav" aria-label="Principal">
-<a href="{BASE}/#imoveis">Imóveis</a><a href="{BASE}/#territorio">Território</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Sócios</a><a href="{BASE}/#parcerias">Parcerias</a>
+<a href="{BASE}/#imoveis">Imóveis</a><a href="{BASE}/#territorio">Território</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Sócios</a>
 <a class="btn" href="{BASE}/#contato">Fale com um consultor</a></nav></div></header>'''
 
 def footer():
     return f"""<footer class="ft"><div class="wrap ft-t">
 <a class="brand ft-b" href="{BASE}/">{LOGO}<span class="creci">{CRECI}</span></a>
-<nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Sócios</a><a href="{BASE}/#parcerias">Parcerias</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
+<nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Sócios</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
 <div class="ft-c"><a href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener">{TEL}</a><a href="mailto:{EMAIL}">{EMAIL}</a></div>
-</div><div class="wrap ft-bot"><span>W3W Imóveis · Curadoria imobiliária · Desde 2004</span><span>{CRECI} · Moema, São Paulo</span></div><div class="wrap ft-kco"><a href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Produzido por KCO Studio</a></div></footer>
+</div><div class="wrap ft-bot"><span>W3W Imóveis · Curadoria de produtos novos · Desde 2004</span><span>{CRECI} · Moema, São Paulo</span></div><div class="wrap ft-kco"><a href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Produzido por KCO Studio</a></div></footer>
 <a class="wa" href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">{WA_ICON}</a>
 <script src="{BASE}/assets/motion.js?v={VER}" defer></script>
 </body></html>"""
@@ -790,11 +790,19 @@ def strip(e):
 def qidx(e):
     import unicodedata
     f=e.get('ficha') or {}
-    parts=[e['nome'],e['bairro'],' '.join(e['tipos']) if isinstance(e.get('tipos'),list) else e.get('tipos',''),f.get('endereco',''),' '.join(v for k,v in f.get('assinaturas',[])),e['resumo'].get('metragem',''),e['status']]
+    parts=[e['nome'],e['bairro'],' '.join(e['tipos']) if isinstance(e.get('tipos'),list) else e.get('tipos',''),' '.join(v for k,v in f.get('assinaturas',[])),e['resumo'].get('metragem',''),e['status']]
     t=' '.join(parts).lower()
     return esc(''.join(c for c in unicodedata.normalize('NFD',t) if unicodedata.category(c)!='Mn'))
 
+def mmax(e):
+    ns=[float(x.replace('.','').replace(',','.')) for x in re.findall(r'\d[\d.]*(?:,\d+)?', e['resumo'].get('metragem',''))]
+    return max(ns) if ns else 0
+TOPO=['agami-park-residences','vista-parque-ibirapuera']  # destaque pedido por Kco (nov/2026)
 def score(e):
+    if e['slug'] in TOPO: return (-1, TOPO.index(e['slug']))
+    ns=[float(x.replace('.','').replace(',','.')) for x in re.findall(r'\d[\d.]*(?:,\d+)?', e['resumo'].get('metragem',''))]
+    return (0, (min(ns) if ns else 0) < 70, -mmax(e))
+def _old_score(e):
     sc={'Lançamento':0,'Em obras':1,'Pronto':2}[e['status']]
     tier=0 if 'alto-padrao' in e['categorias'] else (1 if 'apartamentos' in e['categorias'] else 2)
     return (e['bairro_slug']!='moema', e.get('ordem',99), tier, sc, 0 if e.get('ficha') else 1)
@@ -803,7 +811,7 @@ def gcard(e, i):
     r = e['resumo']
     return f"""<a class="g" href="{u('empreendimentos/'+e['slug'])}" data-q="{qidx(e)}" data-slug="{e['slug']}" data-cat="{' '.join(e['categorias'])}" data-b="{e['bairro_slug']}" data-st="{e['status']}">
 <div class="ph"><span class="pf-st st-{e['status'].split()[0].lower().replace('ç','c')}">{selo(e)}</span><span class="pf-ov"><em>{esc(e['nome'])}</em><small>Ver ficha →</small></span><img src="{th(e['img'])}" alt="{esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async">{strip(e)}</div>
-<div class="gi"><span class="n" hidden>{i:02d}</span><h3>{esc(e['nome'])}</h3><p>{esc(e['bairro'])} · {esc(r['metragem'])}</p></div></a>"""
+<div class="gi"><span class="n" hidden>{i:02d}</span><strong class="gm">{esc(r['metragem'])}</strong><h3>{esc(e['nome'])}</h3><p>{esc(e['bairro'])} · {esc(e['status'])}</p></div></a>"""
 
 STATUS = [('Lançamento', 'Lançamentos', 'Antes de todo mundo.'), ('Em obras', 'Em obras', 'Garanta na planta.'), ('Pronto', 'Prontos para morar', 'Chaves na mão.')]
 
@@ -827,7 +835,7 @@ def rich(e, h='h2'):
 <header class="bk-cover"><img src="{I.get('capa', e['img'])}" alt="{esc(nome)}"><div class="bk-sh"></div>
 <div class="bk-ct"><div class="bk-top"><span>{esc(e['bairro'])} · São Paulo</span><span class="lx-st st-{st}">{selo(e)}</span></div>
 <{h} id="sh-t">{esc(nome)}</{h}><p class="bk-tg">{esc(f['tagline'])}</p></div></header>
-<section class="bk-open"><div class="bk-meta"><span class="eyebrow">{esc(f['endereco'])}</span><span class="eyebrow">{esc(f['entrega']) if 'ronto' in f['entrega'] else 'Entrega ' + esc(f['entrega'])}</span></div>
+<section class="bk-open"><div class="bk-meta"><span class="eyebrow">{esc(e['bairro'])} · São Paulo</span><span class="eyebrow">{esc(f['entrega']) if 'ronto' in f['entrega'] else 'Entrega ' + esc(f['entrega'])}</span></div>
 <p class="bk-lead">{esc(f['conceito'])}</p>
 <dl class="bk-sig">{''.join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in f['assinaturas'])}</dl></section>"""
     if I.get('fachada'): out += fig(I['fachada'], I.get('fachada_cap', 'Fachada · Perspectiva ilustrada'), 'bk-full')
@@ -839,9 +847,7 @@ def rich(e, h='h2'):
     if I.get('lazer'): out += '<section class="bk-grid">' + ''.join(fig(s2, c2) for s2, c2 in I['lazer']) + '</section>'
     out += f'<section class="bk-txt bk-lz"><span class="eyebrow">Tudo o que o lazer oferece</span><ul class="bk-list">{"".join(f"<li>{esc(x)}</li>" for x in f["lazer"])}</ul></section>'
     if I.get('terraco'): out += fig(I['terraco'], I.get('terraco_cap', 'Terraço, duplex de 572 m²'), 'bk-full')
-    out += f"""<section class="bk-loc"><div><span class="eyebrow">O endereço</span><h3>{esc(f['endereco'])}</h3><ul>{''.join(f'<li>{esc(x)}</li>' for x in f['local'])}</ul></div>
-<iframe loading="lazy" title="Mapa {esc(nome)}" src="https://www.google.com/maps?q={q}&output=embed"></iframe></section>
-<section class="bk-txt bk-tec"><span class="eyebrow">Ficha técnica</span><dl>{''.join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in f['tecnica'])}</dl>
+    out += f"""<section class="bk-txt bk-tec"><span class="eyebrow">Ficha técnica</span><dl>{''.join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in f['tecnica'] if not re.search(r'endere|localiza|terreno', a, re.I))}</dl>
 <p class="bk-note">Imagens: perspectivas ilustradas fornecidas pela incorporadora. Informações sujeitas a alteração.</p></section>
 <section class="lx-end"><span class="eyebrow">Tabela, plantas e condições</span><h3>Receba o material completo <em>do {esc(nome)}.</em></h3>
 <a class="btn light solid-l" href="{wa(msg)}" target="_blank" rel="noopener">Receber no WhatsApp</a></section>
@@ -850,9 +856,8 @@ def rich(e, h='h2'):
     return out
 
 def feat():
-    fs = [e for e in E if e['bairro_slug']=='moema' and e['status']=='Lançamento' and e.get('ficha') and 'alto-padrao' in e['categorias']][:3]
-    if len(fs) < 3: fs += [e for e in EM if e.get('ficha') and e not in fs and 'alto-padrao' in e['categorias']][:3-len(fs)]
-    cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e["slug"])}" data-slug="{e["slug"]}"><div class="ph"><img src="{th(e.get("vitrine") or e["img"])}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="vt-t"><small>{e["status"]} · {esc(e["bairro"])}</small><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
+    fs = [e for e in sorted(EM, key=score) if e.get('ficha')][:3]
+    cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e["slug"])}" data-slug="{e["slug"]}"><div class="ph"><img src="{th(e.get("vitrine") or e["img"])}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="vt-t"><small>{e["status"]} · {esc(e["bairro"])}</small><b class="vt-m">{esc(e["resumo"]["metragem"])}</b><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
     return f'<div class="pf-feat">{cards}</div>'
 
 def build_home():
@@ -862,20 +867,20 @@ def build_home():
     rows = ''
     for st, tit, sub in STATUS:
         lst = [e for e in EM if e['status'] == st]
-        lst = sorted(lst, key=lambda e: (e['bairro_slug'] != 'moema', 'alto-padrao' not in e['categorias']))
+        lst = sorted(lst, key=score)
         rows += f"""<div class="row-s" data-st="{st}"><div class="row-hd"><div><span class="eyebrow">{sub}</span><h3>{tit} <sup class="rc"></sup></h3></div>
 <div class="arr"><button aria-label="Anterior" data-d="-1">←</button><button aria-label="Próximo" data-d="1">→</button></div></div>
 <div class="track">{''.join(gcard(e, i+1) for i, e in enumerate(lst))}</div></div>"""
-    pg = head('W3W Imóveis — Curadoria imobiliária em Moema',
-              'Studios, apartamentos e imóveis de alto padrão em Moema, com curadoria da W3W Imóveis: mais de 20 anos de mercado e atendimento direto com os sócios.', '',
+    pg = head('W3W Imóveis — Curadoria de produtos novos em Moema',
+              'Studios, apartamentos e imóveis de alto padrão em Moema, com curadoria de produtos novos da W3W Imóveis: mais de 20 anos de mercado e atendimento direto com os sócios.', '',
               f'<script type="application/ld+json">{json.dumps(ORG, ensure_ascii=False)}</script>')
     pg += header('').replace('class="hd"', 'class="hd over"')
     socio = lambda img, n, c, t: f'<div class="sc"><div class="sc-ph"><img src="{SITE}/img/{img}" alt="{n}" loading="lazy"></div><h3>{n}</h3><span class="eyebrow">{c}</span><p>{t}</p></div>'
     pg += f"""<main>
 <section class="hlp" id="inicio"><div class="hlp-s" id="heroStick">
 <video autoplay muted loop playsinline preload="auto" poster="{VID}/cidade.jpg"><source src="{VID}/cidade.mp4" type="video/mp4"></video><div class="hlp-sh"></div>
-<div class="wrap hlp-m"><span>W3W Imóveis</span><span>Boutique de curadoria imobiliária</span><span>Moema · São Paulo</span><span>Desde 2004</span></div>
-<div class="wrap hlp-t"><h1><span class="ht1">Curadoria</span><span class="ht2">imobiliária.</span></h1></div>
+<div class="wrap hlp-m"><span>W3W Imóveis</span><span>Curadoria de produtos novos</span><span>Moema · São Paulo</span><span>Desde 2004</span></div>
+<div class="wrap hlp-t"><h1><span class="ht1">Curadoria de</span><span class="ht2">produtos novos.</span></h1></div>
 <div class="wrap hlp-l"><span class="cue"><i></i>Role</span><p>Selecionamos os melhores imóveis nos endereços mais desejados de São Paulo.</p></div>
 </div></section>
 
@@ -890,20 +895,13 @@ def build_home():
 <div class="wrap terr-in"><span class="eyebrow">Território</span><h2>Nossa casa é <em>Moema.</em></h2>
 <p>A W3W nasceu e trabalha em Moema. Conhecemos cada rua, cada lançamento e cada mudança do bairro. Quando a oportunidade certa está ao lado, também acompanhamos de perto Vila Nova Conceição, Itaim Bibi, Brooklin e Paraíso.</p>
 <div class="terr-b"><a href="{u('moema')}"><strong>Moema</strong><span>{len(moema)} empreendimentos</span></a>
-<a href="#contato"><strong>Itaim · Brooklin · Paraíso</strong><span>Sob consulta</span></a></div></div></section>
+<a href="#contato"><strong>Vila Nova Conceição · Itaim · Paraíso</strong><span>Sob consulta</span></a></div></div></section>
 
 <section class="socx" id="socios"><div class="wrap">
 <div class="g-hd dk"><div><span class="eyebrow">Os sócios</span><h2>Quem decide, <em>atende.</em></h2></div><p>Três sócios à frente de cada negócio, da primeira conversa ao pós-venda.</p></div>
 <div class="scs">{socio('socio-wilson.jpg','Wilson Rodrigues','Fundador · Diretor · CRECI 69.228','No mercado imobiliário desde 2004, conduz a W3W e a relação com incorporadoras.')}
 {socio('socio-yoko.jpg','Yoko Rodrigues','Sócia · CRECI 42.877','Cuida do relacionamento com clientes investidores e dá suporte a cada negociação.')}
 {socio('socio-kco.jpg','Kco Oyakawa','Sócio · Comunicação','Head of Art, com trabalhos para FIFA™, Jogos Olímpicos 2016, Coca-Cola e Itaú.')}</div></div></section>
-
-<section class="par" id="parcerias"><div class="par-v"><video data-px=".14" autoplay muted loop playsinline preload="none" poster="{VID}/torre.jpg"><source src="{VID}/torre.mp4" type="video/mp4"></video></div>
-<div class="par-c"><span class="eyebrow">Modelos de parceria</span><h2>Para quem constrói <em>o mercado.</em></h2>
-<div class="mods"><div><span class="n">01</span><div><h3>Incorporadoras e construtoras</h3><p>Parceria de lançamento e venda, com inteligência de mercado, marketing e força comercial dedicada.</p></div></div>
-<div><span class="n">02</span><div><h3>Imobiliárias</h3><p>Co-corretagem com regras claras, acesso ao portfólio curado e materiais de apresentação de alto padrão.</p></div></div>
-<div><span class="n">03</span><div><h3>Corretores</h3><p>Estrutura, empreendimentos qualificados, suporte de marketing e uma marca que abre portas no alto padrão.</p></div></div></div>
-<a class="btn light" href="{wa('Olá, quero conversar sobre uma parceria com a W3W.')}" target="_blank" rel="noopener">Propor uma parceria</a></div></section>
 
 <section class="cafe" id="contato"><div class="wrap cafe-g">
 <div><span class="eyebrow">Contato</span><h2>Vamos tomar<br><em>um café?</em></h2>
