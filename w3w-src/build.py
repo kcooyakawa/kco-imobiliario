@@ -1299,6 +1299,10 @@ def build_servicos():
     pg = head('Serviços W3W · Marketing imobiliário de alto padrão', 'Campanha por produto, criação assinada por Head of Art e Lead Dossiê: a W3W cria, anuncia e atende imóveis de alto padrão em Moema.', 'servicos')
     pg += header('servicos') + servicos.render(wa, way, BASE, u) + footer()
     write('servicos/index.html', pg)
+    import servicos_v2
+    pg = head('Serviços W3W · versão 2', 'Campanha por produto, criação assinada por Head of Art e Lead Dossiê: a W3W cria, anuncia e atende imóveis de alto padrão em Moema.', 'servicos-v2')
+    pg += header('servicos') + servicos_v2.render(wa, way, BASE, u) + footer()
+    write('servicos-v2/index.html', pg)
 
 if __name__ == '__main__':
     build()
