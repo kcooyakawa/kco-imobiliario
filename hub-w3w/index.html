@@ -185,6 +185,17 @@ dialog img{width:100%;min-width:900px}
 .toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,16px);opacity:0;background:var(--noir);color:var(--marfim);border:1px solid var(--grafite);padding:12px 18px;font-size:15px;font-weight:400;z-index:60;pointer-events:none;transition:opacity .2s var(--ease),transform .2s var(--ease);max-width:92vw;text-align:center}
 .toast.on{opacity:1;transform:translate(-50%,0)}
 @media(prefers-reduced-motion:reduce){*{transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* produtos W3W (gerados) */
+.filt{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:26px 0 6px}
+.filt input{flex:1 1 220px;min-height:46px;padding:10px 14px;background:transparent;border:1px solid rgba(244,241,234,.3);color:var(--marfim);font:inherit;font-size:16px}
+.filt .seg button{color:var(--aco-claro)}
+.galeria .card .ct{position:absolute;top:16px;right:18px;z-index:2;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--aco-claro)}
+.pl{width:100%;border-collapse:collapse;margin-top:18px;font-size:15px}
+.pl th{text-align:left;font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--apoio);padding:10px 8px 10px 0;border-bottom:1px solid var(--tinta)}
+.pl td{padding:14px 8px 14px 0;border-bottom:1px solid var(--fio);vertical-align:middle}
+@media(max-width:700px){.pl thead{display:none}.pl tr{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px;padding:12px 0;border-bottom:1px solid var(--fio)}.pl td{border:0;padding:2px 0}.pl td:last-child{grid-column:1/-1;padding-top:8px}}
+.fl{margin-top:18px;columns:2 280px;column-gap:40px;list-style:none;padding:0}.fl li{break-inside:avoid;padding:10px 0;border-bottom:1px solid var(--fio);font-size:15px}
 </style>
 </head>
 <body>
@@ -205,6 +216,7 @@ dialog img{width:100%;min-width:900px}
 <main class="home" id="v-home">
   <h1>Tudo para ofertar, <span class="serif">num só lugar.</span></h1>
   <p class="sub">Textos prontos, fichas, tabelas, plantas e imagens de cada empreendimento. Escolha o produto e copie o que precisa.</p>
+  <div class="filt"><input id="busca" type="search" placeholder="Buscar produto" autocomplete="off" aria-label="Buscar produto"><div class="seg" role="group" aria-label="Categoria" id="fcat"><button type="button" data-fc="" aria-pressed="true">Todos</button><button type="button" data-fc="alto-padrao" aria-pressed="false">Alto padrão</button><button type="button" data-fc="apartamentos" aria-pressed="false">Apartamentos</button><button type="button" data-fc="studios" aria-pressed="false">Studios</button></div></div>
   <div class="galeria" id="galeria"></div>
 </main>
 
@@ -296,12 +308,22 @@ dialog img{width:100%;min-width:900px}
   </section>
 </main>
 
+<main class="claro" id="v-gen" hidden>
+  <div class="capa"><img id="g-img" src="" alt=""><div class="in"><a class="volta" href="#">Todos os produtos</a><h1 id="g-nome"></h1><div class="tarja" id="g-tarja"></div><div class="fatos" id="g-fatos"></div></div></div>
+  <nav class="nav" aria-label="Seções do produto"><button type="button" data-s="g-textos">Textos</button><button type="button" data-s="g-ficha">Ficha técnica</button><button type="button" data-s="g-plantas">Plantas</button><button type="button" data-s="g-imagens">Imagens</button><button type="button" data-s="g-links">Links</button></nav>
+  <section id="g-textos"><h2>Textos prontos</h2><p>Toque em copiar e cole no WhatsApp. Troque [nome] pelo nome do cliente.</p><div id="g-lista"></div></section>
+  <section id="g-ficha"><h2>Ficha técnica</h2><div class="acoes" style="margin-top:16px"><button class="btn cheio" type="button" id="g-ficha-txt">Copiar ficha em texto</button></div><ul class="fl" id="g-fl"></ul></section>
+  <section id="g-plantas"><h2>Plantas</h2><p>Tipologias informadas pela incorporadora. Confirme disponibilidade e valores antes de ofertar.</p><table class="pl"><thead><tr><th>Tipologia</th><th>Área</th><th>Suítes</th><th>Vagas</th><th></th></tr></thead><tbody id="g-pl"></tbody></table></section>
+  <section id="g-imagens"><h2>Imagens</h2><div class="imgs" id="g-imgs"></div></section>
+  <section id="g-links"><h2>Links</h2><div id="g-lks" style="margin-top:14px"></div></section>
+</main>
 <dialog id="dlg" aria-label="Planta ampliada">
   <div class="db"><span id="dlg-t"></span><span class="acoes"><button class="btn" type="button" id="dlg-dl">Baixar</button><button class="btn" type="button" id="dlg-x">Fechar</button></span></div>
   <div class="dv"><img id="dlg-img" alt=""></div>
 </dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+<script src="produtos.js"></script>
 <script>
 const LOGO='<svg xmlns="http://www.w3.org/2000/svg" viewBox="67.918 70.371 156.707 47" role="img" aria-label="W3W">__LOGO__</svg>';
 
@@ -457,12 +479,76 @@ document.addEventListener('click',e=>{
 });
 $('#dlg').addEventListener('click',e=>{if(e.target===$('#dlg'))$('#dlg').close()});
 
+
+/* ---- produtos W3W gerados (produtos.js) ---- */
+const PW=typeof W3W!=='undefined'?W3W:[];const PI={};PW.forEach(p=>PI[p.id]=p);
+const CATN={'alto-padrao':'Alto padrão','apartamentos':'Apartamentos','studios':'Studios'};
+let fc='',fq='',gp=null;
+const norm=t=>(t||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+function rGaleriaW(){
+  const v=PW.filter(p=>(!fc||p.cat.includes(fc))&&(!fq||norm(p.nome+' '+p.bairro).includes(fq)));
+  const pet=(!fc&&(!fq||norm('casa jardim petrella brooklin').includes(fq)))?PRODUTOS.filter(p=>p.ativo):[];
+  $('#galeria').innerHTML=pet.map(p=>`<a class="card dest" href="#${p.id}"><img src="${p.img}" alt=""><div class="tx"><div class="nome">${p.nome}</div><div class="onde">${p.onde}</div></div></a>`).join('')+
+   v.map(p=>`<a class="card" href="#p/${p.id}"><img loading="lazy" src="${p.img}" alt=""><span class="ct">${p.cat.map(c=>CATN[c]).join(' · ')}</span><div class="tx"><div class="nome">${esc(p.nome)}</div><div class="onde">${esc(p.bairro)} · ${esc(p.resumo.metragem)} · ${p.status}</div></div></a>`).join('')+
+   (!fc&&!fq?PRODUTOS.filter(p=>!p.ativo&&!PW.some(w=>norm(w.nome)===norm(p.nome))).map(p=>`<div class="card ${p.img?'':'vazio'}" aria-disabled="true">${p.img?`<img src="${p.img}" alt="" style="opacity:.45">`:''}<div class="st label">Em preparação</div><div class="tx"><div class="nome">${p.nome}</div><div class="onde">${p.onde}</div></div></div>`).join(''):'');
+}
+$('#busca').addEventListener('input',e=>{fq=norm(e.target.value.trim());rGaleriaW()});
+document.querySelectorAll('[data-fc]').forEach(b=>b.addEventListener('click',()=>{fc=b.dataset.fc;document.querySelectorAll('[data-fc]').forEach(x=>x.setAttribute('aria-pressed',x===b));rGaleriaW()}));
+const ent=p=>p.entrega?(/pronto/i.test(p.entrega)?p.entrega:'entrega '+p.entrega):'';
+function gTextos(p,q){
+  const r=p.resumo,lin=[];
+  if(r.tipologias)lin.push('• Tipologias: '+r.tipologias);if(r.metragem)lin.push('• Metragem: '+r.metragem);if(r.vagas)lin.push('• Vagas: '+r.vagas);
+  lin.push('• '+p.status+(ent(p)?' · '+ent(p):''));
+  const T=[{g:'Primeiro contato'},
+   {t:'Abertura',s:'Lead que pediu informações',x:`Olá, [nome]! Sou ${q.apres}, da W3W Imóveis, e atendo o ${p.nome}. Tudo bem?\n\nVocê solicitou informações, correto?`},
+   {t:'Captação',s:'Contato frio ou indicação',x:`Olá, [nome]! Sou ${q.apres}, da W3W Imóveis. Estou apresentando o *${p.nome}*, em ${p.bairro}: ${(r.tipologias||'').toLowerCase()}${r.metragem?', '+r.metragem:''}.\n\nPosso enviar mais informações?`},
+   {g:'Informações do produto'},
+   {t:'Apresentação',s:'Resumo do empreendimento',x:`*${p.nome} · ${p.bairro}*\n${p.tagline||p.frase||''}\n\n${p.conceito?p.conceito+'\n\n':''}${lin.join('\n')}`}];
+  if(p.plantas.length)T.push({t:'Plantas',s:'Tipologias e metragens',x:`*Plantas · ${p.nome}*\n`+p.plantas.map(a=>`• ${a[0]}: ${a[1]}${a[2]&&a[2]!=='—'?' · '+a[2]:''}${a[3]&&a[3]!=='—'?' · '+a[3]:''}`).join('\n')});
+  if(p.lazer.length)T.push({t:'Lazer',s:'',x:`*Lazer · ${p.nome}*\n`+p.lazer.map(x=>'• '+x).join('\n')});
+  if(p.endereco||p.local.length)T.push({t:'Localização',s:'Endereço e arredores',x:`*Localização*\n${p.endereco?p.endereco+'\n':''}${p.local.map(x=>'• '+x).join('\n')}`});
+  if(p.assinaturas.length)T.push({t:'Assinaturas',s:'Arquitetura, interiores, incorporação',x:`*Quem assina o ${p.nome}*\n`+p.assinaturas.map(a=>`• ${a[0]}: ${a[1]}`).join('\n')});
+  if(p.entrega)T.push({t:'Prazo de entrega',s:'',x:`*Prazo*\n${p.nome}: ${p.status.toLowerCase()}${ent(p)?', '+ent(p):''}.`});
+  T.push({t:'Link do produto',s:'Página no site da W3W',x:`Conheça o ${p.nome}:\n${p.url}`});
+  T.push({g:'Follow-up'},
+   {t:'Depois do material',s:'1 a 2 dias sem resposta',x:`Olá, [nome], tudo bem? Conseguiu ver o material do ${p.nome} que enviei?\n\nSe quiser, separo a planta e a condição que mais combinam com o que você procura.`},
+   {t:'Convite para visita',s:'',x:`[nome], vale conhecer o ${p.nome} de perto.\n\nTenho horários nesta semana para uma visita ao decorado ou ao estande. Qual dia fica melhor para você?`},
+   {t:'Retomada',s:'Lead parado há semanas',x:`Olá, [nome]. Faz um tempo que conversamos sobre o ${p.nome}.\n\nVocê segue buscando imóvel em ${p.bairro}? Se o momento mudou, me avise e eu ajusto a busca para você.`});
+  return T;
+}
+let GT=[];
+function fichaTxt(p){const L=[];p.destaques.forEach(d=>L.push(`${d[0]} ${d[1]}`));p.tecnica.forEach(d=>L.push(`${d[0]}: ${d[1]}`));if(p.resumo.metragem)L.unshift('Metragem: '+p.resumo.metragem);if(p.resumo.tipologias)L.unshift('Tipologias: '+p.resumo.tipologias);p.assinaturas.forEach(d=>L.push(`${d[0]}: ${d[1]}`));if(p.endereco)L.push('Endereço: '+p.endereco);return L}
+function rGen(){
+  const p=gp;if(!p)return;const q=QUEM[quem];
+  $('#g-img').src=p.img;$('#g-img').alt=p.nome;$('#g-nome').textContent=p.nome;
+  $('#g-tarja').textContent=p.status+(ent(p)?' · '+ent(p):'');
+  const F=[[p.resumo.metragem,'metragem'],[p.resumo.tipologias,p.bairro],[p.resumo.vagas,'vagas'],[p.cat.map(c=>CATN[c]).join(' · '),'categoria no site']].filter(x=>x[0]);
+  $('#g-fatos').innerHTML=F.map(([b,s])=>`<div><b>${esc(b)}</b><span>${esc(s)}</span></div>`).join('');
+  GT=gTextos(p,q);
+  $('#g-lista').innerHTML=GT.map((o,i)=>o.g?`<h3>${o.g}</h3>`:`<div class="txt"><div class="t">${o.t}${o.s?`<small>${o.s}</small>`:''}</div><pre>${esc(o.x)}</pre><button class="btn cheio" type="button" data-gt="${i}">Copiar</button></div>`).join('');
+  $('#g-fl').innerHTML=fichaTxt(p).map(x=>`<li>${esc(x)}</li>`).join('');
+  $('#g-pl').innerHTML=p.plantas.length?p.plantas.map((a,i)=>`<tr><td><b>${esc(a[0])}</b></td><td>${esc(a[1])}</td><td>${esc(a[2])}</td><td>${esc(a[3])}</td><td><button class="btn" type="button" data-gpl="${i}">Copiar</button></td></tr>`).join(''):'<tr><td colspan="5">Plantas ainda não cadastradas.</td></tr>';
+  $('#g-imgs').innerHTML=p.imgs.map(([s,l])=>`<figure><img loading="lazy" src="${s}" alt="${esc(l)}"><figcaption>${esc(l)}<button class="btn" type="button" data-dl="${s}">Baixar</button></figcaption></figure>`).join('');
+  const L=[['Página no site W3W',p.url,p.url]];
+  if(p.endereco)L.push(['Endereço',p.endereco,'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.endereco+' São Paulo')]);
+  L.push([`WhatsApp de ${q.nome}`,q.fone,'https://wa.me/55'+q.fone.replace(/\D/g,'')]);
+  $('#g-lks').innerHTML=L.map(([t,v,u],i)=>`<div class="lk"><div><b>${t}</b><span>${esc(v)}</span></div><div class="acoes"><button class="btn" type="button" data-cp="${esc(i===L.length-1?u:v)}">Copiar</button><a class="btn" href="${u}" target="_blank" rel="noopener">Abrir</a></div></div>`).join('');
+}
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||!gp)return;
+  if(b.dataset.gt){copiar(GT[b.dataset.gt].x,b)}
+  else if(b.dataset.gpl){const a=gp.plantas[b.dataset.gpl];copiar(`*${gp.nome} · ${a[0]}*\nÁrea: ${a[1]}\nSuítes: ${a[2]}\nVagas: ${a[3]}\n\n${gp.url}`,b)}
+  else if(b.id==='g-ficha-txt'){copiar(`*${gp.nome} · Ficha técnica*\n`+fichaTxt(gp).map(x=>'• '+x).join('\n'),b)}
+  else if(b.dataset.q){setTimeout(rGen,0)}
+  else if(b.dataset.s&&b.dataset.s.startsWith('g-')){document.getElementById(b.dataset.s).scrollIntoView()}
+});
 function rota(){
   const h=location.hash.replace('#','');
   const prod=h==='casa-jardim-petrella';
-  $('#v-home').hidden=prod;$('#v-prod').hidden=!prod;
-  document.body.style.background=prod?'var(--papel)':'var(--noir)';
-  document.title=prod?'Casa Jardim Petrella · Hub W3W':'Hub W3W';
+  gp=h.startsWith('p/')?PI[h.slice(2)]||null:null;
+  $('#v-home').hidden=prod||!!gp;$('#v-prod').hidden=!prod;$('#v-gen').hidden=!gp;
+  if(gp)rGen();
+  document.body.style.background=(prod||gp)?'var(--papel)':'var(--noir)';
+  document.title=prod?'Casa Jardim Petrella · Hub W3W':gp?gp.nome+' · Hub W3W':'Hub W3W';
   window.scrollTo(0,0);
 }
 window.addEventListener('hashchange',rota);
@@ -470,7 +556,7 @@ window.addEventListener('hashchange',rota);
 const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.s===en.target.id));const on=document.querySelector('#nav .on');if(on)on.scrollIntoView({block:'nearest',inline:'nearest'})}})},{rootMargin:'-120px 0px -60% 0px'});
 document.querySelectorAll('#v-prod section').forEach(s=>io.observe(s));
 
-rGaleria();rTabela();rCasas();rQuem();rota();
+rGaleriaW();rTabela();rCasas();rQuem();rota();
 </script>
 </body>
 </html>
