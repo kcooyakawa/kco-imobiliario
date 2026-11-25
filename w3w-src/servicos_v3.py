@@ -353,10 +353,11 @@ body:has(.z3) .ft .brand svg{opacity:.7;transform:scale(.85)}
 .z3-mg{position:relative;display:grid;grid-template-columns:1fr 3fr;gap:4vw}
 .z3-mg aside{border-top:1px solid var(--ln);padding-top:18px}
 .z3-mg aside p{color:var(--tx3);font-size:13px;line-height:1.6;margin:18px 0 0;max-width:24ch}
-.z3-mt{margin:0;font:300 clamp(40px,6.6vw,118px)/1.02 var(--sans);letter-spacing:-.05em}
+.z3-mt{margin:0;font:300 clamp(34px,5.4vw,100px)/1.04 var(--sans);letter-spacing:-.05em}
+@media (min-width:901px){.z3-mt span{white-space:nowrap}}
 .z3-mt span{display:block}
-.z3-mt span:nth-child(2){padding-left:12%}
-.z3-mt span:nth-child(3){padding-left:4%}
+.z3-mt span:nth-child(2){padding-left:8%}
+.z3-mt span:nth-child(3){padding-left:16%}
 .z3-mt span:nth-child(4){padding-left:22%}
 .z3-mt .w{opacity:.13;transition:opacity .3s,color .3s}
 .z3-mt .w.on{opacity:1}
@@ -412,6 +413,35 @@ body:has(.z3) .ft .brand svg{opacity:.7;transform:scale(.85)}
 .z3-tot b{display:inline-block;transition:transform .4s var(--e)}
 .z3-tot.bump b{transform:scale(1.06)}
 @media (prefers-reduced-motion:reduce){.z3-btn::after{display:none}.z3-sp .wd>i{transform:none}.z3-st.on>*,.z3-mv>*{animation:none}}
+
+.z3-blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;mix-blend-mode:screen;animation:z3bl 14s ease-in-out infinite alternate}
+.z3-blob.b1{width:42vw;height:42vw;right:-8vw;top:8vh;background:radial-gradient(circle,#3D7DD8,transparent 65%)}
+.z3-blob.b2{width:30vw;height:30vw;right:18vw;top:46vh;background:radial-gradient(circle,#7BE0B3,transparent 65%);opacity:.3;animation-duration:18s}
+.z3-blob.b3{width:26vw;height:26vw;left:30vw;bottom:-6vh;background:radial-gradient(circle,#9CCBFF,transparent 65%);opacity:.35;animation-duration:22s}
+@keyframes z3bl{0%{transform:translate(0,0) scale(1)}50%{transform:translate(-6vw,4vh) scale(1.15)}100%{transform:translate(4vw,-3vh) scale(.95)}}
+.z3-live2{padding:18vh 0;border-top:1px solid var(--ln)}
+.z3-lg{display:grid;grid-template-columns:.8fr 1.2fr;gap:5vw;align-items:center}
+.z3-live2 .z3-dash{position:static;width:auto;opacity:1}
+.z3-live2 .z3-dash>div{background:rgba(11,15,23,.7);border-color:rgba(156,203,255,.14)}
+.z3-live2 .dch svg{height:240px}
+.z3-dash .ln,.z3-dash .ar,.dbar p i{animation:none!important}
+.z3-dash .ln{stroke-dasharray:1200;stroke-dashoffset:1200;transition:stroke-dashoffset 2.6s var(--e)}
+.z3-dash .ar{opacity:0;transition:opacity 1.2s 1.6s}
+.dbar p i{width:0;transition:width 1.8s var(--e)}
+.z3-dash.go .ln{stroke-dashoffset:0}.z3-dash.go .ar{opacity:1}.z3-dash.go .dbar p i{width:var(--w)}
+.z3-dash .dot{fill:#fff;opacity:0;transition:opacity .4s 2.4s}.z3-dash.go .dot{opacity:1}
+.z3-dash .pulse{fill:none;stroke:#9CCBFF;opacity:0}.z3-dash.go .pulse{animation:z3pu 2s 2.6s infinite}
+@keyframes z3pu{0%{r:4;opacity:.8}100%{r:18;opacity:0}}
+.dk b.tick{color:var(--ok);transition:color .6s}
+@media (max-width:900px){.z3-lg{grid-template-columns:1fr}.z3-live2 .z3-dash{grid-template-columns:1fr 1fr}.z3-live2 .dch{grid-column:span 2}.z3-live2 .dk:nth-child(3){grid-column:span 2}}
+/* liquid glass de verdade */
+.z3-btn{background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.04) 45%,rgba(255,255,255,.10))!important;color:#fff!important;border:0!important;backdrop-filter:blur(22px) saturate(2) brightness(1.15)!important;-webkit-backdrop-filter:blur(22px) saturate(2) brightness(1.15)!important;box-shadow:inset 0 1.5px 0 rgba(255,255,255,.55),inset 0 -1px 1px rgba(255,255,255,.18),inset 0 0 0 1px rgba(255,255,255,.14),inset 0 -12px 24px -14px rgba(156,203,255,.55),0 16px 40px -16px rgba(0,0,0,.8)!important;text-shadow:0 1px 1px rgba(0,0,0,.25)}
+.z3-btn.p{background:linear-gradient(135deg,rgba(156,203,255,.55),rgba(61,125,216,.35) 50%,rgba(156,203,255,.45))!important;box-shadow:inset 0 1.5px 0 rgba(255,255,255,.75),inset 0 -1px 1px rgba(255,255,255,.3),inset 0 0 0 1px rgba(255,255,255,.28),inset 0 -14px 26px -12px rgba(255,255,255,.35),0 18px 44px -14px rgba(61,125,216,.75)!important}
+.z3-btn>*{position:relative}
+.z3-btn::before{inset:1px!important;border-radius:inherit;background:radial-gradient(140px 70px at var(--mx,30%) var(--my,0%),rgba(255,255,255,.6),transparent 70%)!important;opacity:.35!important;mix-blend-mode:overlay}
+.z3-btn:hover::before{opacity:.9!important}
+.z3-btn:hover{transform:translateY(-2px) scale(1.02)}
+.z3-btn:active{transform:scale(.97)}
 </style>
 """
 
@@ -444,7 +474,9 @@ tg.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{tg.quer
 $('#z3dos').onchange=calc;calc();
 requestAnimationFrame(()=>mv(tg.querySelector('[aria-pressed=true]')));addEventListener('resize',()=>mv(tg.querySelector('[aria-pressed=true]')));
 /* dash */
-$$('[data-to]').forEach(el=>{const to=+el.dataset.to,st=performance.now()+600;const k=t=>{const p=Math.min(Math.max((t-st)/1800,0),1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(k)};R?el.textContent=to:requestAnimationFrame(k)});
+const DS=$('#z3dash');const cnt=(el,to,d=1800)=>{const fr=+el.textContent.replace(/\D/g,'')||0,st=performance.now();const k=t=>{const p=Math.min((t-st)/d,1);el.textContent=Math.round(fr+(to-fr)*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(k)};requestAnimationFrame(k)};
+if(DS)new IntersectionObserver((es,o)=>{if(!es[0].isIntersecting)return;o.disconnect();DS.classList.add('go');$$('#z3dash [data-to]').forEach(el=>cnt(el,+el.dataset.to,R?1:2200));
+if(R)return;const lead=DS.querySelector('.dk b');let n=148;setInterval(()=>{n+=1+Math.round(Math.random()*2);cnt(lead,n,600);lead.classList.add('tick');setTimeout(()=>lead.classList.remove('tick'),700)},3200)},{threshold:.35}).observe(DS);
 /* efeitos extras */
 const pb=document.createElement('div');pb.className='z3-pbar';document.body.appendChild(pb);
 addEventListener('scroll',()=>{const h=document.documentElement;pb.style.transform=`scaleX(${h.scrollTop/(h.scrollHeight-innerHeight)})`},{passive:true});
@@ -516,17 +548,7 @@ def render(wa, way, BASE, u):
     return css + f'''
 <main class="z3">
 <div class="z3-glow" aria-hidden="true"></div>
-<section class="z3-hero"><div class="z3-stick"><div class="z3-bg" aria-hidden="true"><div class="z3-dash">
-<div class="dk"><span>Leads qualificados</span><b data-to="148">0</b><i>+32% no mês</i></div>
-<div class="dk"><span>Custo por lead</span><b>R$ <em data-to="38">0</em></b><i>−18%</i></div>
-<div class="dk"><span>Visitas agendadas</span><b data-to="27">0</b><i>+9 na semana</i></div>
-<div class="dch"><span>Leads por semana · campanha Coberturas</span><svg viewBox="0 0 600 220" preserveAspectRatio="none"><defs><linearGradient id="zg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9CCBFF" stop-opacity=".35"/><stop offset="1" stop-color="#9CCBFF" stop-opacity="0"/></linearGradient></defs>
-<g stroke="rgba(238,242,248,.07)"><line x1="0" y1="55" x2="600" y2="55"/><line x1="0" y1="110" x2="600" y2="110"/><line x1="0" y1="165" x2="600" y2="165"/></g>
-<path class="ar" d="M0 190 L60 175 L120 180 L180 150 L240 140 L300 120 L360 125 L420 90 L480 70 L540 60 L600 30 L600 220 L0 220Z" fill="url(#zg)"/>
-<path class="ln" d="M0 190 L60 175 L120 180 L180 150 L240 140 L300 120 L360 125 L420 90 L480 70 L540 60 L600 30" fill="none" stroke="#9CCBFF" stroke-width="2"/>
-<path class="ln2" d="M0 205 L60 200 L120 196 L180 190 L240 182 L300 178 L360 170 L420 160 L480 152 L540 148 L600 140" fill="none" stroke="rgba(238,242,248,.3)" stroke-width="1.5" stroke-dasharray="4 6"/></svg></div>
-<div class="dbar"><span>Origem dos leads</span><p><i style="--w:62%"></i><b>Instagram</b></p><p><i style="--w:24%"></i><b>Google</b></p><p><i style="--w:14%"></i><b>Facebook</b></p></div>
-</div></div><div class="z3-grid"></div>
+<section class="z3-hero"><div class="z3-stick"><div class="z3-bg" aria-hidden="true"><i class="z3-blob b1"></i><i class="z3-blob b2"></i><i class="z3-blob b3"></i></div><div class="z3-grid"></div>
 <div class="z3-hin">
 <div class="z3-top"><span class="mono z3-live"><i></i>Agenda aberta · 2026</span><span class="mono">Marketing e vendas para imóveis de alto padrão</span></div>
 <h1 class="z3-h1b"><span class="ln"><span>Não entregamos contatos.</span></span><span class="ln"><span>Entregamos <em>compradores.</em></span></span></h1>
@@ -538,7 +560,22 @@ def render(wa, way, BASE, u):
 <div class="z3-scroll mono" aria-hidden="true">Role<i></i></div>
 </div></section>
 
-<section class="z3-man3" aria-label="Manifesto"><div class="z3-mg"><aside><span class="mono z3-ey">Manifesto</span><p>W3W Imóveis · Inteligência imobiliária · Moema, desde 2004</p></aside><p class="z3-mt"><span><i class="w" style="font-style:inherit">Imóvel</i> <i class="w" style="font-style:inherit">de</i> <i class="w" style="font-style:inherit">alto</i> <i class="w" style="font-style:inherit">padrão</i></span><span><em><i class="w" style="font-style:inherit">não</i> <i class="w" style="font-style:inherit">se</i> <i class="w" style="font-style:inherit">vende</i></em></span><span><i class="w" style="font-style:inherit">com</i> <i class="w" style="font-style:inherit">anúncio.</i></span><span><i class="w" style="font-style:inherit">Vende-se</i> <i class="w" style="font-style:inherit">com</i> <em><i class="w" style="font-style:inherit">inteligência.</i></em></span></p></div></section>
+<section class="z3-live2"><div class="z3-in z3-lg">
+<div class="z3-sh rv"><span class="mono z3-ey">Resultado que você acompanha</span><h2>Cada lead, cada visita, <em>em tempo real.</em></h2><p class="z3-lead">Relatório semanal com leads, custo, visitas e propostas de cada campanha. Você sabe exatamente o que a verba está gerando.</p><p class="mono z3-fict" style="margin-top:22px">Painel ilustrativo</p></div>
+<div class="z3-dash" id="z3dash">
+<div class="dk"><span>Leads qualificados</span><b data-to="148">0</b><i>+32% no mês</i></div>
+<div class="dk"><span>Custo por lead</span><b>R$ <em data-to="38">0</em></b><i>−18%</i></div>
+<div class="dk"><span>Visitas agendadas</span><b data-to="27">0</b><i>+9 na semana</i></div>
+<div class="dch"><span>Leads por semana · campanha Coberturas</span><svg viewBox="0 0 600 220" preserveAspectRatio="none"><defs><linearGradient id="zg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9CCBFF" stop-opacity=".35"/><stop offset="1" stop-color="#9CCBFF" stop-opacity="0"/></linearGradient></defs>
+<g stroke="rgba(238,242,248,.07)"><line x1="0" y1="55" x2="600" y2="55"/><line x1="0" y1="110" x2="600" y2="110"/><line x1="0" y1="165" x2="600" y2="165"/></g>
+<path class="ar" d="M0 190 L60 175 L120 180 L180 150 L240 140 L300 120 L360 125 L420 90 L480 70 L540 60 L600 30 L600 220 L0 220Z" fill="url(#zg)"/>
+<path class="ln" d="M0 190 L60 175 L120 180 L180 150 L240 140 L300 120 L360 125 L420 90 L480 70 L540 60 L600 30" fill="none" stroke="#9CCBFF" stroke-width="2"/><circle class="pulse" cx="600" cy="30" r="4"/><circle class="dot" cx="600" cy="30" r="4"/>
+<path class="ln2" d="M0 205 L60 200 L120 196 L180 190 L240 182 L300 178 L360 170 L420 160 L480 152 L540 148 L600 140" fill="none" stroke="rgba(238,242,248,.3)" stroke-width="1.5" stroke-dasharray="4 6"/></svg></div>
+<div class="dbar"><span>Origem dos leads</span><p><i style="--w:62%"></i><b>Instagram</b></p><p><i style="--w:24%"></i><b>Google</b></p><p><i style="--w:14%"></i><b>Facebook</b></p></div>
+</div>
+</div></section>
+
+<section class="z3-man3" aria-label="Manifesto"><div class="z3-mg"><aside><span class="mono z3-ey">Manifesto</span><p>W3W Imóveis · Inteligência imobiliária · Moema, desde 2004</p></aside><p class="z3-mt"><span><i class="w" style="font-style:inherit">Imóvel</i> <i class="w" style="font-style:inherit">de</i> <i class="w" style="font-style:inherit">alto</i> <i class="w" style="font-style:inherit">padrão</i></span><span><em><i class="w" style="font-style:inherit">não</i> <i class="w" style="font-style:inherit">se</i> <i class="w" style="font-style:inherit">vende</i></em> <i class="w" style="font-style:inherit">com</i> <i class="w" style="font-style:inherit">anúncio.</i></span><span><i class="w" style="font-style:inherit">Vende-se</i> <i class="w" style="font-style:inherit">com</i> <em><i class="w" style="font-style:inherit">inteligência.</i></em></span></p></div></section>
 
 <section class="z3-sv" id="servicos"><div class="z3-in">
 <div class="z3-sh rv"><span class="mono z3-ey">01 · O que entregamos</span><h2>Tudo para o seu imóvel <em>vender mais rápido.</em></h2></div>
