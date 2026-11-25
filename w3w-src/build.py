@@ -562,7 +562,7 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .pf-grid{gap:44px 24px}
 .pf-grid .g .ph{border-radius:14px;aspect-ratio:4/5}
 .pf-grid .g .ph img{will-change:transform;transition:filter .5s}
-.pf-grid .gi{display:block;margin-top:14px;padding:0;border:0}.pf-grid>.g{min-width:0}.pf-grid .ph img{max-width:100%}@media(max-width:767px){.pf-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}@media(min-width:768px) and (max-width:900px){.pf-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}@media(min-width:901px) and (max-width:1499px){.pf-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}}@media(min-width:1500px){.pf-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important}}.qsh{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start}.qsh h2{color:#F6F7F9}.qsh-l{font-family:var(--serif);font-weight:300;font-size:30px;line-height:1.25;color:#F6F7F9;margin-bottom:24px}.qsh-s{color:rgba(246,247,249,.8);line-height:1.6;margin-bottom:44px}.qsh-p{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:40px}.qsh-p>div{border-top:1px solid rgba(246,247,249,.3);padding-top:22px}.qsh-p h3{font-family:var(--serif);font-weight:300;font-size:19px;color:#F6F7F9;margin-bottom:8px}.qsh-p .eyebrow{color:rgba(246,247,249,.6)}@media(max-width:900px){.qsh,.qsh-p{grid-template-columns:1fr;gap:32px}.qsh-l{font-size:23px}}.pf-grid .gi .gm{display:block;font-family:var(--serif);font-weight:300;font-size:34px;line-height:1;letter-spacing:-.02em;margin-bottom:8px;color:var(--ink)}.pf-grid .gi h3{font-size:15px!important;font-family:var(--sans)!important;font-weight:500!important;letter-spacing:.02em}.vt-t .vt-m{display:block;font-family:var(--serif);font-weight:300;font-size:44px;line-height:1;letter-spacing:-.02em;margin-bottom:10px}@media(max-width:767px){.pf-grid .gi .gm{font-size:24px}.vt-t .vt-m{font-size:32px}}
+.pf-grid .gi{display:block;margin-top:14px;padding:0;border:0}.pl-g{font-family:var(--serif);font-weight:300;font-size:24px;margin:36px 0 12px}.pf-grid .gi .gs{display:block;font-size:12px;letter-spacing:.02em;color:var(--ink-2);margin:-2px 0 8px}.pf-grid>.g{min-width:0}.pf-grid .ph img{max-width:100%}@media(max-width:767px){.pf-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}@media(min-width:768px) and (max-width:900px){.pf-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}@media(min-width:901px) and (max-width:1499px){.pf-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}}@media(min-width:1500px){.pf-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important}}.qsh{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start}.qsh h2{color:#F6F7F9}.qsh-l{font-family:var(--serif);font-weight:300;font-size:30px;line-height:1.25;color:#F6F7F9;margin-bottom:24px}.qsh-s{color:rgba(246,247,249,.8);line-height:1.6;margin-bottom:44px}.qsh-p{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:40px}.qsh-p>div{border-top:1px solid rgba(246,247,249,.3);padding-top:22px}.qsh-p h3{font-family:var(--serif);font-weight:300;font-size:19px;color:#F6F7F9;margin-bottom:8px}.qsh-p .eyebrow{color:rgba(246,247,249,.6)}@media(max-width:900px){.qsh,.qsh-p{grid-template-columns:1fr;gap:32px}.qsh-l{font-size:23px}}.pf-grid .gi .gm{display:block;font-family:var(--serif);font-weight:300;font-size:34px;line-height:1;letter-spacing:-.02em;margin-bottom:8px;color:var(--ink)}.pf-grid .gi h3{font-size:15px!important;font-family:var(--sans)!important;font-weight:500!important;letter-spacing:.02em}.vt-t .vt-m{display:block;font-family:var(--serif);font-weight:300;font-size:44px;line-height:1;letter-spacing:-.02em;margin-bottom:10px}@media(max-width:767px){.pf-grid .gi .gm{font-size:24px}.vt-t .vt-m{font-size:32px}}
 .pf-grid .gi h3{font-family:var(--serif);font-weight:300;font-size:22px;letter-spacing:-.015em;line-height:1.15}
 .pf-grid .gi p{font:400 13px/1.4 var(--sans);color:var(--ink-2);margin-top:4px}
 .pf-st{border-radius:999px;top:12px;left:12px;padding:6px 10px;font-size:9.5px;background:rgba(26,24,23,.72)}
@@ -785,13 +785,31 @@ def qidx(e):
     t=' '.join(parts).lower()
     return esc(''.join(c for c in unicodedata.normalize('NFD',t) if unicodedata.category(c)!='Mn'))
 
+
+def _isst(row): return 'studio' in (row[0]+' '+row[2]).lower()
+def _nums(txt): return [(float(x.replace('.','').replace(',','.')),x) for x in re.findall(r'\d[\d.]*(?:,\d+)?', txt)]
+def _rng(rows):
+    ns=[n for r in rows for n in _nums(r[1])]
+    if not ns: return ''
+    lo=min(ns);hi=max(ns)
+    fm=lambda n: f"{round(n[0]):,}".replace(',','.')
+    return f"{fm(lo)} m²" if round(lo[0])==round(hi[0]) else f"{fm(lo)} a {fm(hi)} m²"
+def split(e):
+    pl=(e.get('ficha') or {}).get('plantas') or []
+    return [r for r in pl if _isst(r)], [r for r in pl if not _isst(r)]
+def mt(e):
+    st,ap=split(e)
+    if st and ap: return _rng(st) or 'Sob consulta', _rng(ap) or e['resumo']['metragem']
+    if st: return e['resumo']['metragem'], ''
+    return '', e['resumo']['metragem']
+
 def mmax(e):
-    ns=[float(x.replace('.','').replace(',','.')) for x in re.findall(r'\d[\d.]*(?:,\d+)?', e['resumo'].get('metragem',''))]
+    ms,ma=mt(e); ns=[float(x.replace('.','').replace(',','.')) for x in re.findall(r'\d[\d.]*(?:,\d+)?', ma or ms)]
     return max(ns) if ns else 0
 TOPO=['agami-park-residences','vista-parque-ibirapuera']  # destaque pedido por Kco (nov/2026)
 def score(e):
     if e['slug'] in TOPO: return (-1, TOPO.index(e['slug']))
-    ns=[float(x.replace('.','').replace(',','.')) for x in re.findall(r'\d[\d.]*(?:,\d+)?', e['resumo'].get('metragem',''))]
+    ms,ma=mt(e); ns=[float(x.replace('.','').replace(',','.')) for x in re.findall(r'\d[\d.]*(?:,\d+)?', ma or ms)]
     return (0, (min(ns) if ns else 0) < 70, -mmax(e))
 def _old_score(e):
     sc={'Lançamento':0,'Em obras':1,'Pronto':2}[e['status']]
@@ -799,10 +817,11 @@ def _old_score(e):
     return (e['bairro_slug']!='moema', e.get('ordem',99), tier, sc, 0 if e.get('ficha') else 1)
 
 def gcard(e, i):
-    r = e['resumo']
-    return f"""<a class="g" href="{u('empreendimentos/'+e['slug'])}" data-q="{qidx(e)}" data-slug="{e['slug']}" data-cat="{' '.join(e['categorias'])}" data-b="{e['bairro_slug']}" data-st="{e['status']}">
+    r = e['resumo']; ms, ma = mt(e)
+    sub = f'<small class="gs">+ studios {esc(ms)}</small>' if ms and ma else ''
+    return f"""<a class="g" href="{u('empreendimentos/'+e['slug'])}" data-q="{qidx(e)}" data-slug="{e['slug']}" data-cat="{' '.join(e['categorias'])}" data-b="{e['bairro_slug']}" data-st="{e['status']}" data-ms="{esc(ms)}" data-ma="{esc(ma)}">
 <div class="ph"><span class="pf-st st-{e['status'].split()[0].lower().replace('ç','c')}">{selo(e)}</span><span class="pf-ov"><em>{esc(e['nome'])}</em><small>Ver ficha →</small></span><img src="{th(e['img'])}" alt="{esc(e['nome'])}, {esc(e['bairro'])}" loading="lazy" decoding="async">{strip(e)}</div>
-<div class="gi"><span class="n" hidden>{i:02d}</span><strong class="gm">{esc(r['metragem'])}</strong><h3>{esc(e['nome'])}</h3><p>{esc(e['bairro'])} · {esc(e['status'])}</p></div></a>"""
+<div class="gi"><span class="n" hidden>{i:02d}</span><strong class="gm">{esc(ma or ms)}</strong>{sub}<h3>{esc(e['nome'])}</h3><p>{esc(e['bairro'])} · {esc(e['status'])}</p></div></a>"""
 
 STATUS = [('Lançamento', 'Lançamentos', 'Antes de todo mundo.'), ('Em obras', 'Em obras', 'Garanta na planta.'), ('Pronto', 'Prontos para morar', 'Chaves na mão.')]
 
@@ -822,6 +841,10 @@ def rich(e, h='h2'):
     fig = lambda src, cap, cls='': f'<figure class="bk-f {cls}"><img src="{src}" alt="{esc(cap)}" loading="lazy" decoding="async"><figcaption>{esc(cap)}</figcaption></figure>'
     nome = e['nome']
     plantas = ''.join(f'<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td><td><a href="{wa(f"Olá, quero receber a planta de {b} ({a}) do {nome}.")}" target="_blank" rel="noopener">Receber planta</a></td></tr>' for a, b, c, d in f['plantas'])
+    _row = lambda rows: ''.join(f'<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td><td><a href="{wa(f"Olá, quero receber a planta de {b} ({a}) do {nome}.")}" target="_blank" rel="noopener">Receber planta</a></td></tr>' for a, b, c, d in rows)
+    _tb = lambda rows, hd='': (f'<h4 class="pl-g">{hd}</h4>' if hd else '') + f'<table class="lx-t"><thead><tr><th>Tipologia</th><th>Área</th><th>Suítes</th><th>Vagas</th><th></th></tr></thead><tbody>{_row(rows)}</tbody></table>'
+    _st, _ap = split(e)
+    tabs = (_tb(_ap, 'Apartamentos · ' + _rng(_ap)) + _tb(_st, 'Studios · ' + (_rng(_st) or 'sob consulta'))) if (_st and _ap) else _tb(f['plantas'])
     out = f"""<article class="lx bk">
 <header class="bk-cover"><img src="{I.get('capa', e['img'])}" alt="{esc(nome)}"><div class="bk-sh"></div>
 <div class="bk-ct"><div class="bk-top"><span>{esc(e['bairro'])} · São Paulo</span><span class="lx-st st-{st}">{selo(e)}</span></div>
@@ -833,7 +856,7 @@ def rich(e, h='h2'):
     out += f"""<section class="lx-num">{''.join(f'<div><strong>{a}</strong><span>{esc(b)}</span></div>' for a, b in f['destaques'])}</section>"""
     if I.get('par'): out += '<section class="bk-pair">' + ''.join(fig(s2, c2) for s2, c2 in I['par']) + '</section>'
     out += f"""<section class="bk-txt"><span class="eyebrow">As plantas</span><h3>{esc(f.get('faixa', r['metragem']))}, <em>{esc(f.get('plantas_tit', 'tipo, garden e duplex.'))}</em></h3>
-<table class="lx-t"><thead><tr><th>Tipologia</th><th>Área</th><th>Suítes</th><th>Vagas</th><th></th></tr></thead><tbody>{plantas}</tbody></table></section>"""
+{tabs}</section>"""
     if I.get('voo'): out += f'<section class="bk-voo"><img src="{I["voo"]}" alt="Lazer do {esc(nome)}" loading="lazy"><div class="bk-voo-t"><span class="eyebrow">O lazer</span><h3>Um clube <em>dentro de casa.</em></h3></div></section>'
     if I.get('lazer'): out += '<section class="bk-grid">' + ''.join(fig(s2, c2) for s2, c2 in I['lazer']) + '</section>'
     out += f'<section class="bk-txt bk-lz"><span class="eyebrow">Tudo o que o lazer oferece</span><ul class="bk-list">{"".join(f"<li>{esc(x)}</li>" for x in f["lazer"])}</ul></section>'
@@ -848,7 +871,7 @@ def rich(e, h='h2'):
 
 def feat():
     fs = [e for e in sorted(EM, key=score) if e.get('ficha')][:3]
-    cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e["slug"])}" data-slug="{e["slug"]}"><div class="ph"><img src="{th(e.get("vitrine") or e["img"])}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="vt-t"><small>{e["status"]} · {esc(e["bairro"])}</small><b class="vt-m">{esc(e["resumo"]["metragem"])}</b><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
+    cards = ''.join(f'<a class="g ft" href="{u("empreendimentos/"+e["slug"])}" data-slug="{e["slug"]}"><div class="ph"><img src="{th(e.get("vitrine") or e["img"])}" alt="{esc(e["nome"])}" loading="lazy" decoding="async"><span class="vt-t"><small>{e["status"]} · {esc(e["bairro"])}</small><b class="vt-m">{esc(mt(e)[1] or mt(e)[0])}</b><strong>{esc(e["nome"])}</strong><em>{esc((e["ficha"].get("tagline") or ""))}</em></span></div></a>' for e in fs)
     return f'<div class="pf-feat">{cards}</div>'
 
 def build_home():
@@ -906,7 +929,7 @@ def build_home():
 <script>window.W3W={json.dumps(ficha_data(), ensure_ascii=False)};window.W3W_WA='{WA}';window.W3W_BASE='{BASE}';</script>
 <script src="{BASE}/assets/sheet.js?v={VER}" defer></script>
 <script>(function(){{var qq='',st={{b:'moema',c:'',s:''}},lim=9999,all=[].slice.call(document.querySelectorAll('.pf-grid .g')),more=document.getElementById('more'),num=document.querySelector('.pf-n');
-function ap(){{var v=all.filter(function(g){{return (!st.b||(st.b==='moema'?g.dataset.b==='moema':g.dataset.b!=='moema'))&&(!st.c||g.dataset.cat.split(' ').indexOf(st.c)>-1)&&(!st.s||g.dataset.st===st.s)&&(!qq||qq.split(' ').every(function(w){{return g.dataset.q.indexOf(w)>-1}}))}});all.forEach(function(g){{g.hidden=true}});v.forEach(function(g,i){{g.hidden=i>=lim;g.querySelector('.n').textContent=String(i+1).padStart(2,'0')}});num.textContent=v.length+(v.length===1?' imóvel':' imóveis');more.parentNode.hidden=v.length<=lim}}
+function ap(){{var v=all.filter(function(g){{return (!st.b||(st.b==='moema'?g.dataset.b==='moema':g.dataset.b!=='moema'))&&(!st.c||g.dataset.cat.split(' ').indexOf(st.c)>-1)&&(!st.s||g.dataset.st===st.s)&&(!qq||qq.split(' ').every(function(w){{return g.dataset.q.indexOf(w)>-1}}))}});all.forEach(function(g){{g.hidden=true}});all.forEach(function(g){{var m=g.querySelector('.gm'),x=g.querySelector('.gs'),S=g.dataset.ms,A=g.dataset.ma;if(!m)return;if(st.c==='studios'&&S){{m.textContent=S;if(x)x.hidden=true}}else if((st.c==='apartamentos'||st.c==='alto-padrao')&&A){{m.textContent=A;if(x)x.hidden=true}}else{{m.textContent=A||S;if(x)x.hidden=false}}}});v.forEach(function(g,i){{g.hidden=i>=lim;g.querySelector('.n').textContent=String(i+1).padStart(2,'0')}});num.textContent=v.length+(v.length===1?' imóvel':' imóveis');more.parentNode.hidden=v.length<=lim}}
 document.querySelectorAll('.pf-bar .seg').forEach(function(gr){{gr.querySelectorAll('button').forEach(function(b){{b.onclick=function(){{gr.querySelectorAll('button').forEach(function(x){{x.setAttribute('aria-pressed','false')}});b.setAttribute('aria-pressed','true');st[gr.dataset.k]=b.dataset.v;ap()}}}})}});
 more.onclick=function(){{lim+=16;ap()}};var qi=document.getElementById('pfq');qi.oninput=function(){{qq=qi.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();if(qq){{st.b='';}}else{{st.b=document.querySelector('.seg[data-k=b] [aria-pressed=true]').dataset.v}};ap()}};ap();
 var h=document.querySelector('.hd.over');function sc(){{h.classList.toggle('solid',scrollY>window.innerHeight*.6)}}addEventListener('scroll',sc,{{passive:true}});sc();
