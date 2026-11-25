@@ -22,8 +22,8 @@ body:has(.z3){background:#05070B}
 /* hero */
 .z3-hero{position:relative;height:150svh}
 .z3-stick{position:sticky;top:0;height:100svh;overflow:hidden}
-.z3-bg{position:absolute;inset:-6%;background:url("%I/agami-park-residences/voo.jpg") center/cover;transform:scale(1.15);will-change:transform;filter:saturate(.75) brightness(.55)}
-.z3-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,7,11,.85) 0%,rgba(5,7,11,.2) 45%,#05070B 98%)}
+.z3-bg{position:absolute;inset:0;will-change:transform}
+.z3-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#05070B 0%,rgba(5,7,11,.75) 40%,rgba(5,7,11,.15) 100%),linear-gradient(180deg,transparent 60%,#05070B 100%)}
 .z3-grid{position:absolute;inset:0;background-image:linear-gradient(var(--ln) 1px,transparent 1px),linear-gradient(90deg,var(--ln) 1px,transparent 1px);background-size:96px 96px;mask-image:linear-gradient(180deg,#000,transparent 75%);-webkit-mask-image:linear-gradient(180deg,#000,transparent 75%);opacity:.5}
 .z3-hin{position:relative;z-index:2;padding:132px clamp(20px,5vw,72px) 0;will-change:transform,opacity}
 .z3-top{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:5vh}
@@ -294,6 +294,7 @@ body:has(.z3) .ft .brand svg{opacity:.7;transform:scale(.85)}
 .z3-buy{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:22px;border-top:1px solid var(--ln)}
 .z3-buy span{font:500 12px var(--mono);letter-spacing:.06em;color:var(--tx2)}
 .z3-buy .z3-btn{height:48px}
+.z3-lk{font:500 12px var(--mono);letter-spacing:.06em;color:var(--tx2)!important;text-decoration:none}.z3-lk:hover{color:var(--tx)!important}
 .z3-mv{display:none;position:relative}
 .z3-st img,.z3-mv img{width:100%;height:100%;object-fit:cover;display:block}
 .z3-wa .m.c img{width:62px!important;height:62px!important;border-radius:8px}
@@ -326,6 +327,41 @@ body:has(.z3) .ft .brand svg{opacity:.7;transform:scale(.85)}
 .z3-ml{white-space:normal;max-width:92vw}
 .z3-br .lp .hero{grid-template-columns:1fr 1fr;min-height:200px}
 }
+
+.z3-dash{position:absolute;right:clamp(20px,4vw,64px);top:190px;width:min(46vw,760px);display:grid;grid-template-columns:repeat(3,1fr);gap:14px;opacity:.9}
+.z3-dash>div{border:1px solid rgba(238,242,248,.09);border-radius:18px;background:rgba(11,15,23,.6);padding:18px 20px}
+.z3-dash span{font:500 10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--tx3)}
+.dk b{display:block;font:200 clamp(30px,3vw,52px)/1 var(--sans);letter-spacing:-.04em;margin:12px 0 8px;color:var(--tx)}
+.dk b em{font-style:normal}
+.dk i{font:500 11px var(--mono);font-style:normal;color:var(--ok)}
+.dch{grid-column:span 2}
+.dch svg{width:100%;height:200px;margin-top:12px;display:block}
+.dch .ln{stroke-dasharray:900;stroke-dashoffset:900;animation:z3ln 2.4s .5s var(--e) forwards}
+.dch .ar{opacity:0;animation:z3f 1.2s 1.4s forwards}
+@keyframes z3ln{to{stroke-dashoffset:0}}
+.dbar p{margin:16px 0 0;position:relative;height:30px;border-radius:8px;background:rgba(238,242,248,.04);overflow:hidden}
+.dbar p i{position:absolute;inset:0 auto 0 0;width:0;background:linear-gradient(90deg,rgba(156,203,255,.45),rgba(156,203,255,.15));animation:z3w 1.6s 1s var(--e) forwards}
+@keyframes z3w{to{width:var(--w)}}
+.dbar p b{position:relative;font:400 12px/30px var(--sans);padding-left:10px}
+.z3-hud{display:none!important}
+@media (max-width:900px){.z3-dash{width:150vw;right:-60vw;top:90px;opacity:.35}}
+/* quebras de título */
+.z3-sh h2 em,.z3-plh h2 em,.z3-dos h2 em,.z3-faq h2 em{display:block}
+/* manifesto tipográfico */
+.z3-man3{padding:24vh clamp(20px,5vw,72px);position:relative;overflow:hidden;border-top:1px solid var(--ln)}
+.z3-man3::before{content:"";position:absolute;left:50%;top:50%;width:80vw;height:80vw;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(156,203,255,.08),transparent 60%);pointer-events:none}
+.z3-mg{position:relative;display:grid;grid-template-columns:1fr 3fr;gap:4vw}
+.z3-mg aside{border-top:1px solid var(--ln);padding-top:18px}
+.z3-mg aside p{color:var(--tx3);font-size:13px;line-height:1.6;margin:18px 0 0;max-width:24ch}
+.z3-mt{margin:0;font:300 clamp(40px,6.6vw,118px)/1.02 var(--sans);letter-spacing:-.05em}
+.z3-mt span{display:block}
+.z3-mt span:nth-child(2){padding-left:12%}
+.z3-mt span:nth-child(3){padding-left:4%}
+.z3-mt span:nth-child(4){padding-left:22%}
+.z3-mt .w{opacity:.13;transition:opacity .3s,color .3s}
+.z3-mt .w.on{opacity:1}
+.z3-mt em .w.on,.z3-mt em.w.on{color:var(--ac)}
+@media (max-width:900px){.z3-mg{grid-template-columns:1fr}.z3-mt span{padding-left:0!important}}
 </style>
 """
 
@@ -357,18 +393,20 @@ $$('.z3-seg button').forEach(b=>b.onclick=()=>{$$('.z3-seg button').forEach(x=>x
 tg.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{tg.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));mv(b);K=b.dataset.k;calc()}));
 $('#z3dos').onchange=calc;calc();
 requestAnimationFrame(()=>mv(tg.querySelector('[aria-pressed=true]')));addEventListener('resize',()=>mv(tg.querySelector('[aria-pressed=true]')));
+/* dash */
+$$('[data-to]').forEach(el=>{const to=+el.dataset.to,st=performance.now()+600;const k=t=>{const p=Math.min(Math.max((t-st)/1800,0),1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(k)};R?el.textContent=to:requestAnimationFrame(k)});
 /* palco dos serviços */
 const sts=$$('.z3-st'),stio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const i=e.target.dataset.i;sts.forEach(x=>x.classList.toggle('on',x.dataset.i===i));$$('.z3-it').forEach(x=>x.classList.toggle('act',x===e.target))}}),{rootMargin:'-45% 0px -45% 0px'});$$('.z3-it').forEach(el=>stio.observe(el));
-if(R){$$('.z3-ml').forEach(l=>l.classList.add('on'));return}
+if(R){$$('.z3-mt .w').forEach(l=>l.classList.add('on'));return}
 /* cursor */
 const g=$('.z3-glow');let gx=-999,gy=-999,cx=-999,cy=-999;
 if(matchMedia('(hover:hover)').matches)addEventListener('pointermove',e=>{gx=e.clientX;gy=e.clientY});
 /* scroll loop */
-const hero=$('.z3-hero'),bg=$('.z3-bg'),hin=$('.z3-hin'),hud=$('.z3-hud'),imgs=[],mf=$('.z3-man2'),mls=$$('.z3-ml');
+const hero=$('.z3-hero'),bg=$('.z3-bg'),hin=$('.z3-hin'),hud=$('.z3-hud'),imgs=[],mf=$('.z3-man3'),mls=$$('.z3-mt .w');
 const loop=()=>{const vh=innerHeight;
 let r=hero.getBoundingClientRect(),p=Math.min(Math.max(-r.top/(r.height-vh),0),1);
 bg.style.transform=`scale(${1.15-p*.12}) translateY(${p*6}%)`;hin.style.transform=`translateY(${-p*120}px)`;hin.style.opacity=1-p*1.1;hud.style.transform=`translateY(${-p*260}px)`;
-r=mf.getBoundingClientRect();p=Math.min(Math.max(-r.top/(r.height-vh),0),1);mf.style.setProperty('--m',p);mls.forEach((l,i)=>l.classList.toggle('on',p>i*.15-.02));
+r=mf.getBoundingClientRect();p=Math.min(Math.max((vh*.8-r.top)/(r.height*.7),0),1);const nn=Math.floor(p*mls.length*1.05);mls.forEach((l,i)=>l.classList.toggle('on',i<nn));
 imgs.forEach((im,i)=>{const b=im.parentNode.getBoundingClientRect(),q=(b.left+b.width/2)/innerWidth-.5;im.style.transform=`translateX(${-q*12-8}%)`});
 
 cx+=(gx-cx)*.12;cy+=(gy-cy)*.12;g.style.transform=`translate3d(${cx}px,${cy}px,0)`;
@@ -405,14 +443,24 @@ def render(wa, way, BASE, u):
         ('04', 'Plataforma', 'Landing page e hub', 'Uma página só do seu imóvel, com formulário de triagem e botão de WhatsApp, e um hub com fichas, textos e imagens para o time vender.', ['Página do produto', 'Formulário de triagem', 'Card para WhatsApp', 'Hub de vendas'], 'a partir de R$ 2.500'),
     ]
     stage = ''.join(f'<div class="z3-st{" on" if i==0 else ""}" data-i="{i}">{vis[n]}</div>' for i,(n,*_) in enumerate(SV))
-    items = ''.join(f'''<article class="z3-it" data-i="{i}"><div class="z3-mv" aria-hidden="true">{vis[n]}</div><span class="mono z3-k2">{n} — {k}</span><h3>{t}</h3><p>{d}</p><ul>{''.join(f'<li>{x}</li>' for x in li)}</ul><div class="z3-buy"><span>{pr}</span><a class="z3-btn p" href="{wa('Olá! Quero contratar ' + t + ' com a W3W.')}" target="_blank" rel="noopener">Contratar</a></div></article>''' for i,(n,k,t,d,li,pr) in enumerate(SV))
+    items = ''.join(f'''<article class="z3-it" data-i="{i}"><div class="z3-mv" aria-hidden="true">{vis[n]}</div><span class="mono z3-k2">{n} — {k}</span><h3>{t}</h3><p>{d}</p><ul>{''.join(f'<li>{x}</li>' for x in li)}</ul><div class="z3-buy"><a class="z3-lk" href="#planos">Ver planos ↓</a><a class="z3-btn p" href="{wa('Olá! Quero contratar ' + t + ' com a W3W.')}" target="_blank" rel="noopener">Quero este serviço</a></div></article>''' for i,(n,k,t,d,li,pr) in enumerate(SV))
     plan = lambda i, nome, itens, hot=False: f'''<div class="z3-plan{' hot' if hot else ''} rv"><h3>{nome}</h3><div class="z3-pr">R$ <span data-i="{i}">{fm(m[i])}</span><small> /mês por campanha</small></div><ul>{''.join(f'<li>{x}</li>' for x in itens)}</ul><a class="z3-btn {'p' if hot else 's'}" href="{wa('Olá! Quero contratar o plano ' + nome + ' da W3W.')}" target="_blank" rel="noopener">Quero este plano</a></div>'''
     mq = ''.join(f'<span>{x}</span>' for x in ['Tráfego', 'por produto', 'Direção de arte', 'assinada', 'Lead Dossiê', 'antes do olá', 'Moema', 'desde 2004'] * 2)
     css = CSS.replace('%I', IMG)
     return css + f'''
 <main class="z3">
 <div class="z3-glow" aria-hidden="true"></div>
-<section class="z3-hero"><div class="z3-stick"><div class="z3-bg"></div><div class="z3-grid"></div>
+<section class="z3-hero"><div class="z3-stick"><div class="z3-bg" aria-hidden="true"><div class="z3-dash">
+<div class="dk"><span>Leads qualificados</span><b data-to="148">0</b><i>+32% no mês</i></div>
+<div class="dk"><span>Custo por lead</span><b>R$ <em data-to="38">0</em></b><i>−18%</i></div>
+<div class="dk"><span>Visitas agendadas</span><b data-to="27">0</b><i>+9 na semana</i></div>
+<div class="dch"><span>Leads por semana · campanha Coberturas</span><svg viewBox="0 0 600 220" preserveAspectRatio="none"><defs><linearGradient id="zg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9CCBFF" stop-opacity=".35"/><stop offset="1" stop-color="#9CCBFF" stop-opacity="0"/></linearGradient></defs>
+<g stroke="rgba(238,242,248,.07)"><line x1="0" y1="55" x2="600" y2="55"/><line x1="0" y1="110" x2="600" y2="110"/><line x1="0" y1="165" x2="600" y2="165"/></g>
+<path class="ar" d="M0 190 L60 175 L120 180 L180 150 L240 140 L300 120 L360 125 L420 90 L480 70 L540 60 L600 30 L600 220 L0 220Z" fill="url(#zg)"/>
+<path class="ln" d="M0 190 L60 175 L120 180 L180 150 L240 140 L300 120 L360 125 L420 90 L480 70 L540 60 L600 30" fill="none" stroke="#9CCBFF" stroke-width="2"/>
+<path class="ln2" d="M0 205 L60 200 L120 196 L180 190 L240 182 L300 178 L360 170 L420 160 L480 152 L540 148 L600 140" fill="none" stroke="rgba(238,242,248,.3)" stroke-width="1.5" stroke-dasharray="4 6"/></svg></div>
+<div class="dbar"><span>Origem dos leads</span><p><i style="--w:62%"></i><b>Instagram</b></p><p><i style="--w:24%"></i><b>Google</b></p><p><i style="--w:14%"></i><b>Facebook</b></p></div>
+</div></div><div class="z3-grid"></div>
 <div class="z3-hin">
 <div class="z3-top"><span class="mono z3-live"><i></i>Agenda aberta · 2026</span><span class="mono">Marketing e vendas para imóveis de alto padrão</span></div>
 <h1 class="z3-h1b"><span class="ln"><span>Não entregamos contatos.</span></span><span class="ln"><span>Entregamos <em>compradores.</em></span></span></h1>
@@ -424,9 +472,7 @@ def render(wa, way, BASE, u):
 <div class="z3-scroll mono" aria-hidden="true">Role<i></i></div>
 </div></section>
 
-<section class="z3-man2" aria-label="Manifesto"><div class="z3-mst"><figure class="z3-mimg"><img src="{IMG}/agami-park-residences/fachada.jpg" alt=""></figure>
-<p class="z3-ml l1">Imóvel de alto padrão</p><p class="z3-ml l2"><em>não se vende</em></p><p class="z3-ml l3">com anúncio.</p><p class="z3-ml l4">Vende-se com</p><p class="z3-ml l5"><em>inteligência.</em></p>
-<span class="mono z3-msig">Manifesto W3W</span></div></section>
+<section class="z3-man3" aria-label="Manifesto"><div class="z3-mg"><aside><span class="mono z3-ey">Manifesto</span><p>W3W Imóveis · Inteligência imobiliária · Moema, desde 2004</p></aside><p class="z3-mt"><span><i class="w" style="font-style:inherit">Imóvel</i> <i class="w" style="font-style:inherit">de</i> <i class="w" style="font-style:inherit">alto</i> <i class="w" style="font-style:inherit">padrão</i></span><span><em><i class="w" style="font-style:inherit">não</i> <i class="w" style="font-style:inherit">se</i> <i class="w" style="font-style:inherit">vende</i></em></span><span><i class="w" style="font-style:inherit">com</i> <i class="w" style="font-style:inherit">anúncio.</i> <i class="w" style="font-style:inherit">Vende-se</i></span><span><i class="w" style="font-style:inherit">com</i> <em><i class="w" style="font-style:inherit">inteligência.</i></em></span></p></div></section>
 
 <section class="z3-sv" id="servicos"><div class="z3-in">
 <div class="z3-sh rv"><span class="mono z3-ey">01 · O que entregamos</span><h2>Tudo o que seu imóvel precisa <em>para vender.</em></h2></div>
