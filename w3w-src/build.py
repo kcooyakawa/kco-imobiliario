@@ -562,7 +562,7 @@ body:has(.lx) .wa,.sheet.rich~.wa{display:none}
 .pf-grid{gap:44px 24px}
 .pf-grid .g .ph{border-radius:14px;aspect-ratio:4/5}
 .pf-grid .g .ph img{will-change:transform;transition:filter .5s}
-.pf-grid .gi{display:block;margin-top:14px;padding:0;border:0}.pf-grid .gi .gm{display:block;font-family:var(--serif);font-weight:300;font-size:34px;line-height:1;letter-spacing:-.02em;margin-bottom:8px;color:var(--ink)}.pf-grid .gi h3{font-size:15px!important;font-family:var(--sans)!important;font-weight:500!important;letter-spacing:.02em}.vt-t .vt-m{display:block;font-family:var(--serif);font-weight:300;font-size:44px;line-height:1;letter-spacing:-.02em;margin-bottom:10px}@media(max-width:767px){.pf-grid .gi .gm{font-size:24px}.vt-t .vt-m{font-size:32px}}
+.pf-grid .gi{display:block;margin-top:14px;padding:0;border:0}.qs{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start}.qs h2{color:#F6F7F9}.qs-l{font-family:var(--serif);font-weight:300;font-size:30px;line-height:1.25;color:#F6F7F9;margin-bottom:48px}.qs-p{display:grid;grid-template-columns:1fr 1fr;gap:40px}.qs-p>div{border-top:1px solid rgba(246,247,249,.3);padding-top:22px}.qs-p h3{font-family:var(--serif);font-weight:300;font-size:30px;color:#F6F7F9;margin-bottom:8px}.qs-p .eyebrow{color:rgba(246,247,249,.6)}.qs-p p{margin-top:16px;color:rgba(246,247,249,.8);line-height:1.6}@media(max-width:900px){.qs,.qs-p{grid-template-columns:1fr;gap:36px}.qs-l{font-size:23px;margin-bottom:32px}}.pf-grid .gi .gm{display:block;font-family:var(--serif);font-weight:300;font-size:34px;line-height:1;letter-spacing:-.02em;margin-bottom:8px;color:var(--ink)}.pf-grid .gi h3{font-size:15px!important;font-family:var(--sans)!important;font-weight:500!important;letter-spacing:.02em}.vt-t .vt-m{display:block;font-family:var(--serif);font-weight:300;font-size:44px;line-height:1;letter-spacing:-.02em;margin-bottom:10px}@media(max-width:767px){.pf-grid .gi .gm{font-size:24px}.vt-t .vt-m{font-size:32px}}
 .pf-grid .gi h3{font-family:var(--serif);font-weight:300;font-size:22px;letter-spacing:-.015em;line-height:1.15}
 .pf-grid .gi p{font:400 13px/1.4 var(--sans);color:var(--ink-2);margin-top:4px}
 .pf-st{border-radius:999px;top:12px;left:12px;padding:6px 10px;font-size:9.5px;background:rgba(26,24,23,.72)}
@@ -714,13 +714,13 @@ def header(active=''):
 <a class="brand" href="{BASE}/" aria-label="W3W Imóveis, página inicial">{LOGO}<span class="creci">{CRECI}</span></a>
 <button class="burger" aria-label="Abrir menu" aria-expanded="false" onclick="var n=document.querySelector('.nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h16M4 16h16"/></svg></button>
 <nav class="nav" aria-label="Principal">
-<a href="{BASE}/#imoveis">Imóveis</a><a href="{BASE}/#territorio">Território</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Sócios</a>
+<a href="{BASE}/#imoveis">Imóveis</a><a href="{BASE}/#territorio">Território</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Quem somos</a>
 <a class="btn" href="{BASE}/#contato">Fale com um consultor</a></nav></div></header>'''
 
 def footer():
     return f"""<footer class="ft"><div class="wrap ft-t">
 <a class="brand ft-b" href="{BASE}/">{LOGO}<span class="creci">{CRECI}</span></a>
-<nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Sócios</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
+<nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{BASE}/#socios">Quem somos</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
 <div class="ft-c"><a href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener">{TEL}</a><a href="mailto:{EMAIL}">{EMAIL}</a></div>
 </div><div class="wrap ft-bot"><span>W3W Imóveis · Curadoria de produtos novos · Desde 2004</span><span>{CRECI} · Moema, São Paulo</span></div><div class="wrap ft-kco"><a href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Produzido por KCO Studio</a></div></footer>
 <a class="wa" href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">{WA_ICON}</a>
@@ -898,10 +898,10 @@ def build_home():
 <a href="#contato"><strong>Vila Nova Conceição · Itaim · Paraíso</strong><span>Sob consulta</span></a></div></div></section>
 
 <section class="socx" id="socios"><div class="wrap">
-<div class="g-hd dk"><div><span class="eyebrow">Os sócios</span><h2>Quem decide, <em>atende.</em></h2></div><p>Três sócios à frente de cada negócio, da primeira conversa ao pós-venda.</p></div>
-<div class="scs">{socio('socio-wilson.jpg','Wilson Rodrigues','Fundador · Diretor · CRECI 69.228','No mercado imobiliário desde 2004, conduz a W3W e a relação com incorporadoras.')}
-{socio('socio-yoko.jpg','Yoko Rodrigues','Sócia · CRECI 42.877','Cuida do relacionamento com clientes investidores e dá suporte a cada negociação.')}
-{socio('socio-kco.jpg','Kco Oyakawa','Sócio · Comunicação','Head of Art, com trabalhos para FIFA™, Jogos Olímpicos 2016, Coca-Cola e Itaú.')}</div></div></section>
+<div class="qs"><div><span class="eyebrow">Quem somos</span><h2>Dois sócios, <em>um bairro.</em></h2></div>
+<div class="qs-t"><p class="qs-l">A W3W é uma boutique imobiliária de Moema, conduzida por dois sócios que atendem pessoalmente cada cliente, da primeira conversa ao pós-venda.</p>
+<div class="qs-p"><div><h3>Wilson Rodrigues</h3><span class="eyebrow">Fundador · Diretor · CRECI 69.228</span><p>No mercado imobiliário desde 2004, fundou a W3W e conduz a relação com as incorporadoras. Conhece Moema rua a rua e acompanha de perto cada lançamento do bairro.</p></div>
+<div><h3>Yoko Rodrigues</h3><span class="eyebrow">Sócia · CRECI 42.877</span><p>Cuida do relacionamento com clientes e investidores e dá suporte a cada negociação, para que a compra aconteça com segurança e sem ruído.</p></div></div></div></div></div></section>
 
 <section class="cafe" id="contato"><div class="wrap cafe-g">
 <div><span class="eyebrow">Contato</span><h2>Vamos tomar<br><em>um café?</em></h2>
