@@ -4,9 +4,24 @@ CATS = [
     ('restaurantes', 'Restaurantes', '#C2553D'), ('pizzarias', 'Pizzarias', '#D9822B'), ('churrascarias', 'Churrascarias', '#8E3B2E'),
     ('japoneses', 'Japoneses', '#B23A48'), ('hamburguerias', 'Hamburguerias', '#C9733A'), ('bares', 'Bares', '#7A4FB5'),
     ('noite', 'Vida noturna', '#4B3BA8'), ('cafes', 'Cafés', '#8A6A4F'), ('docerias', 'Docerias', '#D46A9A'), ('sorveterias', 'Sorveterias', '#4FA3C7'),
-    ('padarias', 'Padarias', '#B8893A'), ('mercados', 'Mercados', '#5D7F8C'), ('farmacias', 'Farmácias', '#2F8F83'),
-    ('saude', 'Saúde', '#2F6FD0'), ('postos', 'Postos', '#5C677A'), ('cultura', 'Cultura', '#3D5A99'),
-    ('parques', 'Parques', '#3F7F6A'), ('academias', 'Academias', '#6B7A3A'), ('hoteis', 'Hotéis', '#9A7B4F'),
+    ('padarias', 'Padarias', '#B8893A'), ('mercados', 'Mercados', '#5D7F8C'), ('floriculturas', 'Floriculturas', '#C25C8A'), ('lojas', 'Lojas', '#7D6B5A'),
+    ('pet', 'Pet e veterinário', '#C08A2E'), ('lavanderias', 'Lavanderias', '#4D8FB0'), ('chaveiros', 'Chaveiros', '#6B6F78'), ('costureiras', 'Costureiras', '#9C5E7A'), ('bancos', 'Bancos', '#3E5C7A'),
+    ('cabeleireiros', 'Cabeleireiros', '#B0607E'), ('estetica', 'Manicure e estética', '#D27FA0'),
+    ('farmacias', 'Farmácias', '#2F8F83'), ('saude', 'Saúde', '#2F6FD0'),
+    ('concessionarias', 'Concessionárias', '#2E3A4F'), ('oficinas', 'Oficinas', '#5A4A3A'), ('lavarapido', 'Lava-rápido', '#3F8FC0'), ('postos', 'Postos', '#5C677A'),
+    ('escolas', 'Escolas', '#5B6CC2'), ('faculdades', 'Faculdades', '#3D4FA8'),
+    ('parques', 'Parques', '#3F7F6A'), ('cultura', 'Cultura', '#3D5A99'), ('academias', 'Academias', '#6B7A3A'), ('hoteis', 'Hotéis', '#9A7B4F'),
+]
+
+GRUPOS = [
+    ('gastronomia', 'Gastronomia', ['restaurantes', 'pizzarias', 'churrascarias', 'japoneses', 'hamburguerias', 'cafes', 'docerias', 'sorveterias', 'padarias', 'bares', 'noite']),
+    ('servicos', 'Serviços', ['pet', 'lavanderias', 'chaveiros', 'costureiras', 'bancos', 'lavarapido', 'oficinas']),
+    ('beleza', 'Beleza', ['cabeleireiros', 'estetica']),
+    ('compras', 'Compras', ['mercados', 'floriculturas', 'lojas']),
+    ('saude', 'Saúde', ['farmacias', 'saude']),
+    ('carro', 'Carro', ['concessionarias', 'oficinas', 'lavarapido', 'postos']),
+    ('educacao', 'Educação', ['escolas', 'faculdades']),
+    ('lazer', 'Lazer e cultura', ['parques', 'cultura', 'academias', 'hoteis']),
 ]
 
 CSS = r"""
@@ -31,6 +46,10 @@ body:has(.mp){background:#EEEBE5}
 .mp-tg button i{width:7px;height:7px;border-radius:50%;background:var(--ok)}
 .mp-tg button[aria-pressed=true]{color:#fff;background:linear-gradient(135deg,#2F6FD0,#1E4E9E);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 10px 22px -10px rgba(47,111,208,.7)}
 .mp-tg button[aria-pressed=true] i{background:#7BE0B3;box-shadow:0 0 0 4px rgba(123,224,179,.25)}
+.mp-grp{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:14px 24px 0}
+.mp-grp button{height:58px;border:0;border-radius:16px;background:rgba(255,255,255,.55);box-shadow:inset 0 0 0 1px var(--ln);font:500 11.5px/1.2 var(--sans);color:var(--tx2);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;transition:all .3s var(--e);padding:4px}
+.mp-grp button svg{width:18px;height:18px}
+.mp-grp button[aria-pressed=true]{background:linear-gradient(135deg,#2F6FD0,#1E4E9E);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 10px 22px -10px rgba(47,111,208,.7)}
 .mp-chips{display:flex;gap:6px;overflow-x:auto;padding:14px 24px;scrollbar-width:none;flex:none}
 .mp-chips::-webkit-scrollbar{display:none}
 .mp-chips button{flex:none;display:inline-flex;align-items:center;gap:8px;height:34px;padding:0 13px;border-radius:999px;border:0;font:500 12.5px var(--sans);color:var(--tx2);background:rgba(255,255,255,.6);box-shadow:inset 0 0 0 1px var(--ln);cursor:pointer;transition:all .25s}
@@ -91,6 +110,7 @@ body:has(.mp){background:#EEEBE5}
 .maplibregl-popup-tip{display:none}
 .mp-handle{display:none}
 @media (max-width:900px){
+.mp-grp{display:flex;overflow-x:auto;padding:12px 20px 0;scrollbar-width:none}.mp-grp button{flex:0 0 82px}
 .mp{height:calc(100svh - var(--hdh,80px))}
 .mp-panel{left:10px;right:10px;top:auto;bottom:10px;width:auto;height:46%;border-radius:24px;transition:height .5s var(--e)}
 .mp-panel.min{height:132px}
@@ -106,7 +126,7 @@ body:has(.mp){background:#EEEBE5}
 """
 
 
-def render(wa, cats_json):
+def render(wa, cats_json, grupos_json='[]'):
     return CSS + f'''
 <main class="mp">
 <div id="mpMap" aria-label="Mapa de Moema"></div>
@@ -115,7 +135,7 @@ def render(wa, cats_json):
 <div class="mp-hd"><span class="ey">Guia Moema · Mapa vivo</span><h1>Moema <em>agora.</em></h1><p>Restaurantes, bares, cafés, docerias, farmácias e serviços 24 horas do bairro, com o que está aberto neste momento.</p></div>
 <div class="mp-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="mpQ" type="search" placeholder="Buscar um lugar" aria-label="Buscar um lugar"></div>
 <div class="mp-tg"><button id="mpOpen" aria-pressed="false"><i></i>Aberto agora</button><button id="mp24" aria-pressed="false">24 horas</button></div>
-<div class="mp-chips" id="mpChips" role="group" aria-label="Categorias"></div>
+<div class="mp-grp" id="mpGrp" role="group" aria-label="O que você procura"></div><div class="mp-chips" id="mpChips" role="group" aria-label="Categorias"></div>
 <div class="mp-count"><span id="mpN">—</span><span id="mpNow"></span></div>
 <div class="mp-list" id="mpList"></div>
 </aside>
@@ -126,7 +146,7 @@ def render(wa, cats_json):
 </main>
 <link rel="stylesheet" href="../assets/maplibre/maplibre-gl.css">
 <script src="../assets/maplibre/maplibre-gl.js"></script>
-<script>window.MP_CATS={cats_json};</script>
+<script>window.MP_CATS={cats_json};window.MP_GRP={grupos_json};</script>
 <script src="mapa.js"></script>
 '''
 
@@ -148,12 +168,17 @@ const nx=act(d).filter(([a])=>a>mn).sort((x,y)=>x[0]-y[0])[0];return{k:'c',t:nx?
 const fmt=m=>{m%=1440;const h=Math.floor(m/60),mi=m%60;return h+'h'+(mi?String(mi).padStart(2,'0'):'')};
 const human=h=>h==='24/7'?'Aberto 24 horas':h.replace(/Mo|Tu|We|Th|Fr|Sa|Su/g,x=>PT[x]).replace(/;\s*/g,'\n').replace(/off/g,'fechado').replace(/PH/g,'Feriados');
 /* estado */
-let ALL=[],F={cat:null,open:false,h24:false,q:''},sel=null,map;const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const G=window.MP_GRP||[],IC={gastronomia:'<path d="M7 3v8a2 2 0 0 0 2 2v8M11 3v8M3 3v8a2 2 0 0 0 2 2M17 21V3c2 1 4 4 4 8h-4"/>',servicos:'<path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/>',beleza:'<circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/>',compras:'<path d="M6 2 3 6v14h18V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/>',saude:'<path d="M12 21s-8-4.5-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 6.5-8 11-8 11z"/>',carro:'<path d="M5 17h14M5 17a2 2 0 1 1-4 0v-5l3-6h16l3 6v5a2 2 0 1 1-4 0M7 17a2 2 0 1 1-4 0"/>',educacao:'<path d="M22 10 12 5 2 10l10 5 10-5zM6 12v5c3 2 9 2 12 0v-5"/>',lazer:'<circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 0 1 0 18M3 12h18"/>'};
+let GS=null,ALL=[],F={cat:null,open:false,h24:false,q:''},sel=null,map;const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 fetch('locais.json?v='+Date.now()).then(r=>r.json()).then(d=>{ALL=d.locais.filter(l=>CM[l.cat]);if(d.atualizado){const t=new Date(d.atualizado);$('#mpUpd').textContent='Atualizado em '+t.toLocaleDateString('pt-BR',{day:'2-digit',month:'short'})}
 chips();draw()}).catch(()=>{$('#mpList').innerHTML='<p class="mp-empty">Não foi possível carregar os lugares agora.</p>'});
-function chips(){const n={};ALL.forEach(l=>n[l.cat]=(n[l.cat]||0)+1);$('#mpChips').innerHTML=`<button aria-pressed="${!F.cat}" data-c="">Todos <small>${ALL.length}</small></button>`+C.filter(c=>n[c[0]]).map(c=>`<button aria-pressed="${F.cat===c[0]}" data-c="${c[0]}"><b style="background:${c[2]}"></b>${c[1]} <small>${n[c[0]]}</small></button>`).join('');
+function chips(){const n={};ALL.forEach(l=>n[l.cat]=(n[l.cat]||0)+1);
+$('#mpGrp').innerHTML=G.map(g=>`<button aria-pressed="${GS===g[0]}" data-g="${g[0]}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${IC[g[0]]||''}</svg>${g[1]}</button>`).join('');
+$('#mpGrp').querySelectorAll('button').forEach(b=>b.onclick=()=>{GS=GS===b.dataset.g?null:b.dataset.g;F.cat=null;chips();draw(true)});
+const inG=c=>!GS||G.find(g=>g[0]===GS)[2].includes(c);const tot=ALL.filter(l=>inG(l.cat)).length;
+$('#mpChips').innerHTML=`<button aria-pressed="${!F.cat}" data-c="">Todos <small>${tot}</small></button>`+C.filter(c=>n[c[0]]&&inG(c[0])).map(c=>`<button aria-pressed="${F.cat===c[0]}" data-c="${c[0]}"><b style="background:${c[2]}"></b>${c[1]} <small>${n[c[0]]}</small></button>`).join('');
 $('#mpChips').querySelectorAll('button').forEach(b=>b.onclick=()=>{F.cat=b.dataset.c||null;chips();draw(true)})}
-function list(ign){const q=norm(F.q);return ALL.map(l=>({...l,st:status(l.horario)})).filter(l=>(!F.cat||l.cat===F.cat)&&(ign||!F.open||l.st.k==='o'||l.st.k==='h')&&(ign||!F.h24||l.st.k==='h')&&(!q||norm(l.nome+' '+(l.end||'')+' '+CM[l.cat][1]).includes(q)))}
+function list(ign){const q=norm(F.q);const gc=GS?G.find(g=>g[0]===GS)[2]:null;return ALL.map(l=>({...l,st:status(l.horario)})).filter(l=>(!gc||gc.includes(l.cat))&&(!F.cat||l.cat===F.cat)&&(ign||!F.open||l.st.k==='o'||l.st.k==='h')&&(ign||!F.h24||l.st.k==='h')&&(!q||norm(l.nome+' '+(l.end||'')+' '+CM[l.cat][1]).includes(q)))}
 function draw(fit){const L=list();$('#mpN').textContent=L.length+' lugares';$('#mpNow').textContent=new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
 $('#mpList').innerHTML=L.length?L.slice(0,300).map((l,i)=>`<div class="mp-it${sel===l.id?' on':''}" data-id="${l.id}" style="animation-delay:${Math.min(i,20)*18}ms"><b style="background:${CM[l.cat][2]}"></b><div><strong>${esc(l.nome)}${l.destaque?'<span class="mp-dest">W3W indica</span>':''}</strong><span>${CM[l.cat][1]}${l.end?' · '+esc(l.end):''}</span></div>${l.st.k!=='?'?`<span class="mp-st ${l.st.k}">${l.st.t}</span>`:''}</div>`).join(''):empty();grid(L);
 const ab=$('#mpAll');if(ab)ab.onclick=()=>{F.open=F.h24=false;$('#mpOpen').setAttribute('aria-pressed',false);$('#mp24').setAttribute('aria-pressed',false);draw(true)};

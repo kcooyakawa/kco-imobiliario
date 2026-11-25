@@ -20,8 +20,9 @@ ENDPOINTS = ['https://overpass-api.de/api/interpreter', 'https://overpass.privat
 
 Q = f"""[out:json][timeout:90];
 (
-  nwr["amenity"~"^(restaurant|bar|pub|cafe|ice_cream|fast_food|pharmacy|fuel|hospital|clinic|theatre|cinema|arts_centre|nightclub|bakery)$"]{BBOX};
-  nwr["shop"~"^(bakery|confectionery|pastry|chocolate|supermarket|wine|deli)$"]{BBOX};
+  nwr["amenity"~"^(restaurant|bar|pub|cafe|ice_cream|fast_food|pharmacy|fuel|hospital|clinic|dentist|veterinary|theatre|cinema|arts_centre|nightclub|bakery|car_wash|school|kindergarten|university|college|bank)$"]["name"]{BBOX};
+  nwr["shop"~"^(bakery|confectionery|pastry|chocolate|supermarket|convenience|wine|deli|pet|laundry|dry_cleaning|locksmith|hairdresser|beauty|florist|tailor|car|car_repair|optician|books|bicycle)$"]["name"]{BBOX};
+  nwr["craft"~"^(locksmith|tailor|dressmaker)$"]["name"]{BBOX};
   nwr["leisure"~"^(park|garden|fitness_centre)$"]["name"]{BBOX};
   nwr["tourism"~"^(museum|gallery|hotel|attraction)$"]{BBOX};
 );
@@ -44,6 +45,22 @@ def categoria(t):
         if any(k in cz for k in ('japanese', 'sushi', 'ramen')): return 'japoneses'
         if 'burger' in cz: return 'hamburguerias'
         return 'restaurantes'
+    c = t.get('craft')
+    if s == 'pet' or a == 'veterinary': return 'pet'
+    if s in ('laundry', 'dry_cleaning'): return 'lavanderias'
+    if a == 'car_wash': return 'lavarapido'
+    if s == 'locksmith' or c == 'locksmith': return 'chaveiros'
+    if s == 'tailor' or c in ('tailor', 'dressmaker'): return 'costureiras'
+    if s == 'hairdresser': return 'cabeleireiros'
+    if s == 'beauty': return 'estetica'
+    if s == 'florist': return 'floriculturas'
+    if s == 'car': return 'concessionarias'
+    if s == 'car_repair': return 'oficinas'
+    if a in ('school', 'kindergarten'): return 'escolas'
+    if a in ('university', 'college'): return 'faculdades'
+    if a == 'bank': return 'bancos'
+    if a == 'dentist': return 'saude'
+    if s in ('optician', 'books', 'bicycle'): return 'lojas'
     if a in ('bar', 'pub'): return 'bares'
     if a == 'nightclub': return 'noite'
     if a == 'cafe': return 'cafes'
@@ -52,7 +69,7 @@ def categoria(t):
     if a == 'pharmacy': return 'farmacias'
     if a in ('hospital', 'clinic'): return 'saude'
     if a == 'fuel': return 'postos'
-    if s in ('supermarket', 'wine', 'deli'): return 'mercados'
+    if s in ('supermarket', 'convenience', 'wine', 'deli'): return 'mercados'
     if a in ('theatre', 'cinema', 'arts_centre') or tu in ('museum', 'gallery', 'attraction'): return 'cultura'
     if l in ('park', 'garden'): return 'parques'
     if l == 'fitness_centre': return 'academias'
