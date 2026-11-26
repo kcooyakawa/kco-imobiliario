@@ -34,67 +34,58 @@ GR = [('Comer bem', 'gastronomia', ['restaurantes','pizzarias','japoneses','chur
       ('A noite', 'noite', ['bares','noite']),
       ('Viver o bairro', 'vida', ['parques','cultura','academias','hoteis']),
       ('Dia a dia', 'servicos', ['mercados','farmacias','saude','pet','estetica','cabeleireiros','escolas','faculdades','concessionarias','oficinas','postos'])]
-FOTO_EXTRA = {"churrascarias": "moema/locais/gm-29b554724b.jpg", "hamburguerias": "moema/locais/gm-f995dcf668.jpg", "cafes": "moema/locais/gm-a6bf41c9e3.jpg", "docerias": "moema/locais/gm-5e5dcc50f4.jpg", "bares": "moema/locais/gm-5654ef8c06.jpg", "noite": "moema/locais/gm-89cc7cf948.jpg", "restaurantes": "moema/locais/gm-e217c2d3ac.jpg"}
+FOTO_EXTRA = {"churrascarias": "moema/locais/gm-29b554724b.jpg", "hamburguerias": "moema/locais/k-burger.jpg", "cafes": "moema/locais/k-cafe.jpg", "docerias": "moema/locais/gm-5e5dcc50f4.jpg", "bares": "moema/locais/gm-5654ef8c06.jpg", "noite": "moema/locais/gm-89cc7cf948.jpg", "restaurantes": "moema/locais/gm-c71d70184b.jpg", "sorveterias": "moema/locais/k-bacio0.jpg"}
 FOTO = {'pizzarias':'moema/pizzarias.jpg','japoneses':'moema/japoneses.jpg','padarias':'moema/padarias.jpg','parques':'guia/alameda-parque.jpg','cultura':'guia/auditorio-ibirapuera.jpg'}
 FOTO.update(FOTO_EXTRA)
 
 def ico(k): return f'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="{P.get(k, "M12 4v16M4 12h16")}"/></svg>'
 
 CSS = r'''<style>
-.mx{--ink:#14171C;--ink2:#5A616D;--pp:#F4F1EB;--ac:#2F5FA8;--ln:rgba(20,23,28,.1);--e:cubic-bezier(.16,1,.3,1);background:var(--pp);color:var(--ink);overflow:clip}
-.mx .in{width:min(1280px,calc(100% - 40px));margin:0 auto}
-.mx-h{position:relative;min-height:min(88svh,820px);color:#fff;isolation:isolate;display:flex}
-.mx-h>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;animation:mxk 18s var(--e) both}
-@keyframes mxk{from{transform:scale(1.14)}to{transform:scale(1)}}
-.mx-h::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(12,14,18,.62),rgba(12,14,18,.15) 45%,rgba(12,14,18,.75))}
-.mx-h .in{padding:clamp(120px,14vw,170px) 0 60px;display:flex;flex-direction:column}
-.mx-ey{flex-wrap:wrap;font:500 11px var(--mono,monospace);letter-spacing:.18em;text-transform:uppercase;opacity:.8;display:flex;gap:10px}
-.mx-ey a{color:inherit;text-decoration:none}
-.mx h1{margin:26px 0 0;font:200 clamp(64px,11vw,180px)/.84 var(--sans,sans-serif);letter-spacing:-.06em}
-.mx h1 em{display:block;font-family:var(--serif,serif);font-style:italic;font-weight:200;letter-spacing:-.035em}
-.mx h1 span{display:block;overflow:hidden}.mx h1 span>i{display:block;font-style:inherit;animation:mxu 1.2s var(--e) both}.mx h1 span:nth-child(2)>i{animation-delay:.12s}
-@keyframes mxu{from{transform:translateY(105%)}}
-.mx-lead{max-width:46ch;font-size:clamp(17px,1.4vw,20px);line-height:1.55;margin:28px 0 0;opacity:.9;animation:mxf 1.2s .35s var(--e) both}
-@keyframes mxf{from{opacity:0;transform:translateY(16px)}}
-.mx-nums{margin-top:auto;padding-top:60px;display:flex;gap:clamp(28px,5vw,72px);border-top:1px solid rgba(255,255,255,.25);animation:mxf 1.2s .5s var(--e) both}
-.mx-nums div{padding-top:18px}.mx-nums b{display:block;font:200 clamp(38px,4vw,56px)/1 var(--sans,sans-serif);letter-spacing:-.04em}
-.mx-nums small{font:500 10.5px var(--mono,monospace);letter-spacing:.16em;text-transform:uppercase;opacity:.75}
-.mx-nums a{margin-left:auto;align-self:flex-end;color:#fff;text-decoration:none;font:500 14px var(--sans,sans-serif);padding:15px 24px;border:1px solid rgba(255,255,255,.5);border-radius:999px;transition:background .3s,color .3s}
-.mx-nums a:hover{background:#fff;color:var(--ink)}
-.mx-gr{padding:clamp(80px,10vw,140px) 0 0}
-.mx-gh{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:end;border-bottom:1px solid var(--ln);padding-bottom:20px;margin-bottom:28px}
-.mx-gh .n{font:500 11px var(--mono,monospace);letter-spacing:.16em;color:var(--ac)}
-.mx-gh h2{margin:0;font:200 clamp(40px,5.5vw,80px)/.9 var(--sans,sans-serif);letter-spacing:-.05em}
-.mx-gh h2 em{font-family:var(--serif,serif);font-style:italic;color:var(--ac)}
-.mx-gh small{font:500 11px var(--mono,monospace);letter-spacing:.14em;text-transform:uppercase;color:var(--ink2)}
-.mx-fe{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-bottom:14px}
-.mx-ph{position:relative;aspect-ratio:4/5;overflow:hidden;color:#fff;text-decoration:none;isolation:isolate;border-radius:4px}
+body:has(.mx){background:#fff}
+.mx{--ink:#111316;--ink2:#5A616D;--pp:#fff;--g1:#F1F3F6;--ac:#1F4FA0;--ln:#E5E9EF;--e:cubic-bezier(.16,1,.3,1);background:#fff;color:var(--ink);overflow:clip;font-family:var(--sans,sans-serif)}
+.mx .in{width:calc(100% - clamp(32px,5vw,96px));max-width:1600px;margin:0 auto}
+.mx h1,.mx h2,.mx h3{font-family:var(--sans,sans-serif);font-weight:300;margin:0}
+.mx-h{padding:clamp(110px,11vw,150px) 0 0}
+.mx-ey{display:flex;gap:10px;font-size:14px;color:var(--ink2)}.mx-ey a{color:inherit}
+.mx h1{font-size:clamp(76px,13vw,230px);line-height:.9;letter-spacing:-.035em;margin-top:18px;overflow:hidden}
+.mx h1 span{display:inline-block;animation:mxu 1.3s var(--e) both}
+@keyframes mxu{from{transform:translateY(100%)}}
+.mx-hg{display:grid;grid-template-columns:5fr 7fr;gap:clamp(24px,4vw,72px);margin-top:clamp(28px,3vw,48px);align-items:end}
+.mx-lead{font-size:clamp(18px,1.4vw,21px);line-height:1.75;max-width:40ch;margin:0;animation:mxf 1.1s .3s var(--e) both}
+@keyframes mxf{from{opacity:0;transform:translateY(22px)}}
+.mx-nums{display:flex;gap:clamp(24px,4vw,60px);align-items:flex-end;flex-wrap:wrap;animation:mxf 1.1s .45s var(--e) both}
+.mx-nums b{display:block;font-size:clamp(40px,4vw,60px);font-weight:300;letter-spacing:-.03em;line-height:1}
+.mx-nums small{font-size:14px;color:var(--ink2)}
+.mx-nums a{margin-left:auto;background:var(--ink);color:#fff;text-decoration:none;padding:17px 26px;font-size:15px;font-weight:500;transition:transform .35s var(--e)}.mx-nums a:hover{transform:translateY(-3px)}
+.mx-bd{position:relative;height:clamp(380px,70vh,800px);margin-top:clamp(40px,5vw,80px);overflow:hidden;background:var(--g1)}
+.mx-bd img{position:absolute;inset:-6% 0;width:100%;height:112%;object-fit:cover;animation:mxz 2.2s var(--e) both}
+@keyframes mxz{from{transform:scale(1.15);opacity:0}}
+.mx-gr{padding:clamp(150px,16vw,260px) 0 0}
+.mx-gh{margin-bottom:clamp(40px,5vw,72px);display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+.mx-gh h2{font-size:clamp(52px,7vw,118px);line-height:1;letter-spacing:-.03em}
+.mx-gh small{font-size:15px;color:var(--ink2)}
+.mx-fe{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-bottom:12px}
+.mx-ph{position:relative;aspect-ratio:4/5;overflow:hidden;color:#fff;text-decoration:none;isolation:isolate}
 .mx-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.4s var(--e)}
-.mx-ph::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,10,12,.1),transparent 40%,rgba(10,10,12,.8))}
-.mx-ph:hover img{transform:scale(1.06)}
-.mx-ph .top{position:absolute;top:18px;left:18px;right:18px;display:flex;justify-content:space-between;align-items:center}
-.mx-ph svg{width:22px;height:22px}
-.mx-ph .top small{font:500 10px var(--mono,monospace);letter-spacing:.16em;text-transform:uppercase}
-.mx-ph h3{position:absolute;left:20px;right:20px;bottom:20px;margin:0;font:200 clamp(34px,3vw,46px)/.95 var(--sans,sans-serif);letter-spacing:-.04em;display:flex;justify-content:space-between;align-items:flex-end}
-.mx-ph h3 i{font:500 18px var(--sans,sans-serif);font-style:normal;transform:translateX(-6px);opacity:0;transition:all .5s var(--e)}
-.mx-ph:hover h3 i{transform:none;opacity:1}
-.mx-ic{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:0;border-top:1px solid var(--ln);border-left:1px solid var(--ln)}
-.mx-ic a{border-right:1px solid var(--ln);border-bottom:1px solid var(--ln);position:relative;display:flex;flex-direction:column;gap:38px;padding:22px;background:var(--pp);color:var(--ink);text-decoration:none;overflow:hidden;transition:color .45s var(--e)}
-.mx-ic a::before{content:"";position:absolute;inset:0;background:var(--ink);transform:translateY(101%);transition:transform .55s var(--e);z-index:0}
-.mx-ic a:hover{color:#fff}.mx-ic a:hover::before{transform:none}
-.mx-ic a>*{position:relative;z-index:1}
-.mx-ic .r{display:flex;justify-content:space-between;align-items:flex-start}
-.mx-ic svg{width:30px;height:30px;color:var(--ac);transition:color .45s,transform .6s var(--e)}
-.mx-ic a:hover svg{color:#fff;transform:rotate(-8deg) scale(1.1)}
+.mx-ph::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 50%,rgba(10,10,12,.7))}
+.mx-ph:hover img{transform:scale(1.05)}
+.mx-ph .top{position:absolute;top:18px;left:18px}.mx-ph .top small{display:none}
+.mx-ph svg{width:24px;height:24px}
+.mx-ph h3{position:absolute;left:22px;right:22px;bottom:20px;font-size:clamp(32px,2.8vw,44px);letter-spacing:-.025em;display:flex;justify-content:space-between;align-items:flex-end}
+.mx-ph h3 i{font-style:normal;font-size:20px;opacity:0;transform:translateX(-6px);transition:all .5s var(--e)}.mx-ph:hover h3 i{opacity:1;transform:none}
+.mx-ic{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:4px}
+.mx-ic a{display:flex;flex-direction:column;gap:40px;padding:24px;background:var(--g1);color:var(--ink);text-decoration:none;transition:background .4s var(--e),color .4s}
+.mx-ic a:hover{background:var(--ink);color:#fff}
+.mx-ic .r{display:flex;justify-content:space-between}
+.mx-ic svg{width:30px;height:30px;transition:transform .6s var(--e)}.mx-ic a:hover svg{transform:rotate(-8deg) scale(1.1)}
 .mx svg path{fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
-.mx-ic small{font:500 11px var(--mono,monospace);color:var(--ink2);transition:color .45s}.mx-ic a:hover small{color:rgba(255,255,255,.6)}
-.mx-ic b{font:300 22px/1.1 var(--sans,sans-serif);letter-spacing:-.02em}
-.mx-rv{opacity:0;transform:translateY(30px);transition:opacity 1s var(--e),transform 1s var(--e)}
-.mx-rv.on{opacity:1;transform:none}
-.mx-end{margin:clamp(90px,11vw,150px) 0 clamp(60px,8vw,100px);display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;border-top:1px solid var(--ink);padding-top:30px}
-.mx-end h2{margin:0;font:200 clamp(40px,5.5vw,84px)/.92 var(--sans,sans-serif);letter-spacing:-.05em}.mx-end h2 em{font-family:var(--serif,serif);font-style:italic;color:var(--ac)}
-.mx-end a{background:var(--ink);color:#fff;text-decoration:none;padding:18px 28px;border-radius:999px;font:500 15px var(--sans,sans-serif)}
-@media(max-width:700px){.mx-gh{grid-template-columns:1fr}.mx-nums{flex-wrap:wrap}.mx-nums a{margin-left:0}.mx-end{grid-template-columns:1fr}.mx-ic{grid-template-columns:1fr 1fr}.mx-ic a{gap:26px;padding:18px}}
+.mx-ic small{font-size:14px;opacity:.6}
+.mx-ic b{font-size:23px;font-weight:300;letter-spacing:-.015em}
+.mx-rv{opacity:0;transform:translateY(28px);transition:opacity 1s var(--e),transform 1s var(--e)}.mx-rv.on{opacity:1;transform:none}
+.mx-end{margin:clamp(150px,16vw,260px) 0 clamp(80px,9vw,140px);display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}
+.mx-end h2{font-size:clamp(52px,7vw,118px);line-height:1;letter-spacing:-.03em}
+.mx-end a{background:var(--ac);color:#fff;text-decoration:none;padding:20px 30px;font-size:16px;font-weight:500}
+@media(max-width:860px){.mx-fe{grid-template-columns:1fr 1fr;gap:8px}.mx-ph h3{font-size:22px;left:14px;bottom:12px}.mx-hg,.mx-end{grid-template-columns:1fr}.mx-gh{flex-direction:column;align-items:flex-start}.mx-nums a{margin-left:0}.mx-ic{grid-template-columns:1fr 1fr}.mx-ic a{gap:26px;padding:18px}}
 @media(prefers-reduced-motion:reduce){.mx *{animation:none!important;transition:none!important}.mx-rv{opacity:1;transform:none}}
 </style>'''
 JS = '''<script>(()=>{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});document.querySelectorAll('.mx-rv').forEach((el,i)=>{el.style.transitionDelay=(el.dataset.d||0)+'ms';io.observe(el)})})()</script>'''
@@ -107,20 +98,19 @@ def render(L, cs, u, wa, img_base):
         if not ks: continue
         fe = [k for k in ks if k in FOTO]; ic = [k for k in ks if k not in FOTO]
         a, b = tit.split(' ', 1)
-        out += f'<section class="mx-gr"><div class="in"><div class="mx-gh mx-rv"><span class="n">0{gi+1}</span><h2>{esc(a)} <em>{esc(b)}.</em></h2><small>{sum(n[k][1] for k in ks)} lugares</small></div>'
+        out += f'<section class="mx-gr"><div class="in"><div class="mx-gh mx-rv"><h2>{esc(tit)}</h2><small>{sum(n[k][1] for k in ks)} lugares</small></div>'
         if fe:
             out += '<div class="mx-fe">' + ''.join(f'<a class="mx-ph mx-rv" data-d="{i*90}" href="{u("moema/"+k)}"><img src="{img_base}{FOTO[k]}" alt="{esc(n[k][0][1])} em Moema" loading="lazy"><div class="top">{ico(k)}<small>Seleção W3W</small></div><h3>{esc(n[k][0][1])}<i>→</i></h3></a>' for i, k in enumerate(fe)) + '</div>'
         if ic:
             out += '<div class="mx-ic mx-rv">' + ''.join(f'<a href="{u("moema/"+k)}"><div class="r">{ico(k)}<small>{n[k][1]:02d}</small></div><b>{esc(n[k][0][1])}</b></a>' for k in ic) + '</div>'
         out += '</div></section>'
     return (CSS + '<main class="mx">'
-        f'<section class="mx-h"><img src="{img_base}guia/avenida-arborizada.jpg" alt="Avenida arborizada em Moema, fim de tarde"><div class="in">'
-        f'<nav class="mx-ey"><a href="{u("guia-moema")}">Guia Moema</a><span>/</span><span>Moema por categoria</span></nav>'
-        f'<h1><span><i>Moema,</i></span><span><i><em>de perto.</em></i></span></h1>'
-        f'<p class="mx-lead">Onde comer, tomar um café, passear e resolver a vida no bairro. Cada lugar mapeado, e os melhores escolhidos pela W3W.</p>'
-        f'<div class="mx-nums"><div><b>{len(L)}</b><small>lugares</small></div><div><b>{len(cs)}</b><small>categorias</small></div><div><b>2×</b><small>atualizado por semana</small></div><a href="{u("mapa-moema")}">Abrir o mapa →</a></div>'
-        f'</div></section>{out}'
-        f'<div class="in"><div class="mx-end mx-rv"><h2>Gostou do bairro?<br><em>Venha morar nele.</em></h2><a href="{wa}" target="_blank" rel="noopener">Fale com a W3W →</a></div></div></main>' + JS)
+        f'<section class="mx-h"><div class="in"><nav class="mx-ey"><a href="{u("guia-moema")}">Guia Moema</a><span>/</span><span>Moema por categoria</span></nav>'
+        f'<h1><span>Moema, de perto</span></h1><div class="mx-hg"><p class="mx-lead">Onde comer, tomar um café, passear e resolver a vida no bairro. Cada lugar mapeado, e os melhores escolhidos pela W3W.</p>'
+        f'<div class="mx-nums"><div><b>{len(L)}</b><small>lugares</small></div><div><b>{len(cs)}</b><small>categorias</small></div><a href="{u("mapa-moema")}">Abrir o mapa</a></div></div></div>'
+        f'<div class="mx-bd"><img src="{img_base}guia/avenida-arborizada.jpg" alt="Avenida arborizada em Moema, fim de tarde"></div>'
+        f'</section>{out}'
+        f'<div class="in"><div class="mx-end mx-rv"><h2>Gostou do bairro? Venha morar nele.</h2><a href="{wa}" target="_blank" rel="noopener">Fale com a W3W</a></div></div></main>' + JS)
 
 
 # ---------- página de cada categoria ----------
@@ -204,5 +194,5 @@ def render_cat(cat, L, cs, u, wa, img_base, titulo, intro, ld):
         + f'<section class="mx-gr" id="lista"><div class="in"><div class="mx-gh mx-rv"><span class="n">0{2 if ind else 1}</span><h2>Todos de <em>Moema.</em></h2><small id="mxN">{len(resto)} lugares</small></div>'
         f'<input class="mx-q" id="mxQ" type="search" placeholder="Buscar pelo nome ou rua" aria-label="Buscar na lista"><div class="mx-ls">{ls}</div></div></section>'
         f'<section class="mx-gr"><div class="in"><div class="mx-gh mx-rv"><span class="n">→</span><h2>Mais de <em>Moema.</em></h2><small></small></div><div class="mx-ot mx-rv">{ot}</div></div></section>'
-        f'<div class="in"><div class="mx-end mx-rv"><h2>Gostou do bairro?<br><em>Venha morar nele.</em></h2><a href="{wa}" target="_blank" rel="noopener">Fale com a W3W →</a></div></div></main>'
+        f'<div class="in"><div class="mx-end mx-rv"><h2>Gostou do bairro? Venha morar nele.</h2><a href="{wa}" target="_blank" rel="noopener">Fale com a W3W</a></div></div></main>'
         + JS + '''<script>(()=>{const q=document.getElementById('mxQ');if(!q)return;const it=[...document.querySelectorAll('.mx-ls a')],n=document.getElementById('mxN'),nm=s=>s.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase();q.oninput=()=>{const t=nm(q.value);let c=0;it.forEach(a=>{const ok=!t||nm(a.textContent).includes(t);a.style.display=ok?'':'none';ok&&c++});n.textContent=c+' lugares'}})()</script>''')

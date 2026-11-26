@@ -270,5 +270,16 @@
   "id": "w1110314825",
   "remover": true,
   "nota": "Applebee's fechou em Moema"
+ },
+ {
+  "id": "w3w-bacio-jauaperi",
+  "nome": "Bacio di Latte",
+  "cat": "sorveterias",
+  "lat": -23.6025623,
+  "lon": -46.664714,
+  "end": "Alameda Jauaperi, 597",
+  "tel": "(11) 95470-6282",
+  "horario": "Mo-Su 12:00-22:00",
+  "destaque": true
  }
 ]

@@ -128,7 +128,7 @@ def render_cat(cat, L, cs, u, wa, img_base, titulo, intro, ld):
     com = [l for l in ind if FOTOS.get(l['nome'])]; sem = [l for l in ind if not FOTOS.get(l['nome'])]
     resto = sorted([l for l in it if not l.get('destaque')], key=lambda l: l['nome'].lower())
     HERO = {'restaurantes':'gps-cs-s/ANWiy9SdasrHy0tFBddBcznhCeSTsnYj4aP8S-0ONyrBI4Fi7IE0GWd6gx5fCo2drmrzkkJA4-in5_qnVeK3cJoV1wmDAHTwR9_O2f7F_0KmFuMXDCcrQ1joyQZvywtZhmEX-wFj7UHa'}
-    fotos = ([HERO[key]] if key in HERO else []) + ([FOTO[key]] if key in FOTO else []) + [(lambda f: f if f.startswith('gps') else LB + f + '.jpg')(FOTOS[l['nome']][-1]) for l in com]
+    fotos = ([FOTO[key]] if key in FOTO else []) + [(lambda f: f if f.startswith('gps') else LB + f + '.jpg')(FOTOS[l['nome']][-1]) for l in com]
     fotos = fotos[:3]
     H = lambda f: f'https://lh3.googleusercontent.com/{f}=w2000' if f.startswith('gps') else img_base + f
     bd = f'<div class="v3-bd"><img src="{H(fotos[0])}" alt="{esc(label)} em Moema" loading="eager"></div>' if fotos else f'<div class="v3-bd"><div class="ph">{ico(key)}</div></div>'
