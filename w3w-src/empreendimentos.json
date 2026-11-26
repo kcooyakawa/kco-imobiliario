@@ -9307,33 +9307,42 @@
    "img": {
     "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/capa.jpg",
     "fachada": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/fachada.jpg",
+    "fachada_cap": "Fachada · Perspectiva ilustrada",
     "par": [
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/par-1.jpg",
-      "Átrio lobby"
+      "Átrio central"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/par-2.jpg",
-      "Studio decorado"
+      "Studio · 24 m²"
      ]
     ],
     "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/voo.jpg",
     "lazer": [
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/lazer-1.jpg",
-      "Piscina"
+      "Átrio lobby"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/lazer-2.jpg",
-      "Átrio galeria"
+      "Piscina de 20 m"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/lazer-3.jpg",
-      "Espaço gourmet"
+      "Fitness aeróbico"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/lazer-4.jpg",
+      "Fitness musculação"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/lazer-5.jpg",
+      "Studio · 28 m²"
      ],
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/lazer-6.jpg",
-      "Lounge"
+      "1 dormitório · 34 m²"
      ]
     ]
    }
