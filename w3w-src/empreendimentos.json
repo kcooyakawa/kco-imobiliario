@@ -5355,8 +5355,7 @@
   "bairro_slug": "moema",
   "status": "Em obras",
   "tipos": [
-   "Apartamento",
-   "Studio"
+   "Apartamento"
   ],
   "frase": "Exclusividade e sofisticação te esperam em Moema. Descubra um refúgio com detalhes que surpreendem.",
   "resumo": {
@@ -5371,7 +5370,7 @@
   ],
   "ficha": {
    "tagline": "Um grand lodge com quadra de tênis oficial entre Moema e o Ibirapuera.",
-   "conceito": "O Monã nos chamou atenção pela variedade rara num só endereço: são três torres na Av. Indianópolis com apartamentos de 172 a 284 m², duplex de até 562 m² e gardens de até 569 m², com jardim privativo. O conceito vem dos lodges de luxo internacionais, com quadra de tênis oficial, beach tennis, piscina coberta e aquecida, pilates e um fitness de 245 m². Baixa densidade, com duas unidades por andar.",
+   "conceito": "O Monã nos chamou atenção pela variedade rara num só endereço: são três torres na Av. Indianópolis com apartamentos de 172 a 284 m², duplex de até 562 m² e gardens de até 569 m², com jardim privativo. O conceito vem dos lodges de luxo internacionais, com quadra de tênis oficial, beach tennis, piscina coberta e aquecida, pilates e um fitness de 245 m². Baixa densidade, com duas unidades por andar. O condomínio tem ainda uma torre de studios NR, com acesso e lazer próprios, uma opção de renda para quem compra no Monã.",
    "endereco": "Av. Indianópolis, 588 · Moema",
    "entrega": "Em obras",
    "faixa": "172 a 569 m²",
@@ -5457,12 +5456,6 @@
      "Duplex",
      "475 m²",
      "3 suítes",
-     "Sob consulta"
-    ],
-    [
-     "Studio NR",
-     "Sob consulta",
-     "Studio",
      "Sob consulta"
     ]
    ],
@@ -5563,6 +5556,10 @@
     [
      "Lazer",
      "Próprio, separado do lazer residencial"
+    ],
+    [
+     "Perfil",
+     "Investimento e renda, opção para quem compra no Monã"
     ],
     [
      "Metragem",
