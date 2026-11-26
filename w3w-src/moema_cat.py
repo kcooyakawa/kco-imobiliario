@@ -214,6 +214,8 @@ def render(cat, L, CATS, u, wa, img_base='', img_ok=None):
         f'</div></main>' + JS)
 
 def render_index(L, CATS, u, wa, img_base='', img_ok=None):
+    import moema_idx
+    return moema_idx.render(L, cats_validas(L, CATS), u, wa, img_base)
     cs = cats_validas(L, CATS)
     tiles = ''.join(f'<a href="{u("moema/" + c[0])}" style="--c:{c[2]}"><i></i>{esc(c[1])}<small>{n}</small></a>' for c, n in cs)
     mq = ''.join(f'<span>{esc(c[1])}</span>' for c, n in cs) * 2
