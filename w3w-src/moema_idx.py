@@ -34,7 +34,9 @@ GR = [('Comer bem', 'gastronomia', ['restaurantes','pizzarias','japoneses','chur
       ('A noite', 'noite', ['bares','noite']),
       ('Viver o bairro', 'vida', ['parques','cultura','academias','hoteis']),
       ('Dia a dia', 'servicos', ['mercados','farmacias','saude','pet','estetica','cabeleireiros','escolas','faculdades','concessionarias','oficinas','postos'])]
+FOTO_EXTRA = {"churrascarias": "moema/locais/gm-29b554724b.jpg", "hamburguerias": "moema/locais/gm-f995dcf668.jpg", "cafes": "moema/locais/gm-a6bf41c9e3.jpg", "docerias": "moema/locais/gm-5e5dcc50f4.jpg", "bares": "moema/locais/gm-5654ef8c06.jpg", "noite": "moema/locais/gm-89cc7cf948.jpg", "restaurantes": "moema/locais/gm-e217c2d3ac.jpg"}
 FOTO = {'pizzarias':'moema/pizzarias.jpg','japoneses':'moema/japoneses.jpg','padarias':'moema/padarias.jpg','parques':'guia/alameda-parque.jpg','cultura':'guia/auditorio-ibirapuera.jpg'}
+FOTO.update(FOTO_EXTRA)
 
 def ico(k): return f'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="{P.get(k, "M12 4v16M4 12h16")}"/></svg>'
 
@@ -112,7 +114,7 @@ def render(L, cs, u, wa, img_base):
             out += '<div class="mx-ic mx-rv">' + ''.join(f'<a href="{u("moema/"+k)}"><div class="r">{ico(k)}<small>{n[k][1]:02d}</small></div><b>{esc(n[k][0][1])}</b></a>' for k in ic) + '</div>'
         out += '</div></section>'
     return (CSS + '<main class="mx">'
-        f'<section class="mx-h"><img src="{img_base}guia/skyline-ibirapuera.jpg" alt="Moema vista do alto, com o Ibirapuera"><div class="in">'
+        f'<section class="mx-h"><img src="{img_base}guia/avenida-arborizada.jpg" alt="Avenida arborizada em Moema, fim de tarde"><div class="in">'
         f'<nav class="mx-ey"><a href="{u("guia-moema")}">Guia Moema</a><span>/</span><span>Moema por categoria</span></nav>'
         f'<h1><span><i>Moema,</i></span><span><i><em>de perto.</em></i></span></h1>'
         f'<p class="mx-lead">Onde comer, tomar um café, passear e resolver a vida no bairro. Cada lugar mapeado, e os melhores escolhidos pela W3W.</p>'
