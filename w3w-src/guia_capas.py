@@ -1,6 +1,12 @@
 """Fotos de capa das categorias do Guia Moema sem foto própria (Unsplash, licença livre).
 Baixa para w3w-img/moema/<categoria>.jpg (4:5, 1200x1500). Roda no GitHub Actions (w3w-localize.yml)."""
-import os, io, urllib.request
+import os, io, re, urllib.request
+UA={'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15','Accept-Language':'pt-BR,pt;q=0.9'}
+def url_foto(pid):
+    h=urllib.request.urlopen(urllib.request.Request(f'https://unsplash.com/photos/{pid}',headers=UA),timeout=60).read().decode('utf-8','ignore')
+    m=re.search(r'https://images\.unsplash\.com/photo-[\w-]+',h)
+    if not m: raise RuntimeError('sem og:image')
+    return m.group(0)+'?w=1600&q=85&fm=jpg'
 from PIL import Image
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'w3w-img', 'moema')
 CAPAS = {  # categoria: id da foto no Unsplash
@@ -14,7 +20,7 @@ def baixar():
         p = os.path.join(ROOT, cat + '.jpg')
         if os.path.exists(p): continue
         try:
-            d = urllib.request.urlopen(urllib.request.Request(f'https://unsplash.com/photos/{pid}/download?force=true', headers={'User-Agent': 'Mozilla/5.0'}), timeout=60).read()
+            d = urllib.request.urlopen(urllib.request.Request(url_foto(pid), headers=UA), timeout=60).read()
             im = Image.open(io.BytesIO(d)).convert('RGB'); w, h = im.size; r = 4 / 5
             if w / h > r: nw = int(h * r); im = im.crop(((w - nw) // 2, 0, (w - nw) // 2 + nw, h))
             else: nh = int(w / r); im = im.crop((0, (h - nh) // 2, w, (h - nh) // 2 + nh))
