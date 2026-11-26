@@ -54,6 +54,7 @@ body:has(.mp) .hd,body:has(.mp) .ft{display:none!important}
 .mp-grp button{height:58px;border:0;border-radius:16px;background:rgba(255,255,255,.55);box-shadow:inset 0 0 0 1px var(--ln);font:500 11.5px/1.2 var(--sans);color:var(--tx2);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;transition:all .3s var(--e);padding:4px}
 .mp-grp button svg{width:18px;height:18px}
 .mp-grp button[aria-pressed=true]{background:linear-gradient(135deg,#2F6FD0,#1E4E9E);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 10px 22px -10px rgba(47,111,208,.7)}
+.mp-sel{position:fixed;z-index:30;top:150px;left:50%;transform:translateX(-50%);box-shadow:0 20px 40px -18px rgba(0,0,0,.5);white-space:nowrap}@media(max-width:700px){.mp-sel{top:182px}}.mp-sel{padding:12px 16px;border-radius:14px;background:#14171C;color:#fff;font:500 13.5px var(--sans,sans-serif);text-decoration:none}.mp-sel[hidden]{display:none}
 .mp-chips{display:none!important;gap:6px;overflow-x:auto;padding:14px 24px;scrollbar-width:none;flex:none}
 .mp-chips::-webkit-scrollbar{display:none}
 .mp-chips button{flex:none;display:inline-flex;align-items:center;gap:8px;height:34px;padding:0 13px;border-radius:999px;border:0;font:500 12.5px var(--sans);color:var(--tx2);background:rgba(255,255,255,.6);box-shadow:inset 0 0 0 1px var(--ln);cursor:pointer;transition:all .25s}
@@ -131,7 +132,7 @@ body:has(.mp) .hd,body:has(.mp) .ft{display:none!important}
 .maplibregl-ctrl-bottom-right{right:390px!important}
 .maplibregl-ctrl-group{border-radius:14px!important;overflow:hidden;box-shadow:0 10px 24px -12px rgba(20,23,28,.4)!important}
 .maplibregl-ctrl-attrib{font:10px var(--sans)!important;background:rgba(255,255,255,.6)!important;border-radius:8px 0 0 0}
-.mp-pop{font:500 12px var(--sans);padding:6px 10px;border-radius:10px;background:#14171C;color:#fff;white-space:nowrap;pointer-events:none}
+.mp-pop{font:500 12px var(--sans);padding:6px 10px;border-radius:10px;background:#14171C;color:#fff;white-space:nowrap}@media(max-width:700px){.mp-sel{top:182px}}.mp-sel{pointer-events:none}
 .maplibregl-popup-content{padding:0!important;background:none!important;box-shadow:none!important}
 .maplibregl-popup-tip{display:none}
 .mp-handle{display:none}
@@ -201,7 +202,7 @@ body:has(.mp) .wa{bottom:auto!important;top:150px!important;right:12px!important
 .mp-tools{top:64px!important;left:10px!important;right:10px!important;justify-content:flex-start!important;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
 .mp-tools::-webkit-scrollbar{display:none}
 .mp-tools .mp-tg{display:flex;gap:6px;flex:none;margin:0}
-.mp-tools .mp-tg button{height:42px;padding:0 14px;border-radius:999px;border:0;font:500 12.5px var(--sans);white-space:nowrap;background:linear-gradient(160deg,rgba(58,66,79,.94),rgba(34,40,49,.96))!important;color:#C5CBD4!important;display:inline-flex;align-items:center;gap:7px}
+.mp-tools .mp-tg button{height:42px;padding:0 14px;border-radius:999px;border:0;font:500 12.5px var(--sans);white-space:nowrap}@media(max-width:700px){.mp-sel{top:182px}}.mp-sel{background:linear-gradient(160deg,rgba(58,66,79,.94),rgba(34,40,49,.96))!important;color:#C5CBD4!important;display:inline-flex;align-items:center;gap:7px}
 .mp-tools .mp-tg button i{width:7px;height:7px;border-radius:50%;background:#3DDC97}
 .mp-tools .mp-tg button[aria-pressed=true]{background:#F3F2EF!important;color:#1C2129!important}
 .mp-top{top:118px!important}
@@ -235,8 +236,8 @@ body:has(.mp) .wa{bottom:16px!important}
 .mp-sg button:hover,.mp-sg button.k,.mp-panel .mp-sg button.k:not([aria-pressed=true]),.mp-panel .mp-sg button:hover:not([aria-pressed=true]){background:rgba(255,255,255,.08)!important}
 .mp-sg b{flex:none;width:9px;height:9px;border-radius:50%}
 .mp-sg span{flex:1;min-width:0}
-.mp-sg strong{display:block;font:500 14.5px var(--sans);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.mp-sg small{display:block;font:12px var(--sans);color:#8F98A6;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
+.mp-sg strong{display:block;font:500 14.5px var(--sans);white-space:nowrap}@media(max-width:700px){.mp-sel{top:182px}}.mp-sel{overflow:hidden;text-overflow:ellipsis}
+.mp-sg small{display:block;font:12px var(--sans);color:#8F98A6;white-space:nowrap}@media(max-width:700px){.mp-sel{top:182px}}.mp-sel{overflow:hidden;text-overflow:ellipsis;margin-top:2px}
 .mp-sg em{flex:none;font:500 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;font-style:normal;color:#5FE3A8;background:rgba(61,220,151,.12);padding:4px 8px;border-radius:999px}
 .mp-sg p{margin:0;padding:14px;color:#8F98A6;font-size:14px}
 .mp-msb .mp-sg{top:auto;bottom:calc(100% + 14px);left:-6px;right:-6px}
@@ -345,7 +346,7 @@ def render(wa, cats_json, grupos_json='[]', logo='', base=''):
 <div class="mp-hd"><div class="mp-logo"><a href="{base}/" aria-label="W3W Imóveis, voltar ao site">{logo}</a><nav><a href="{base}/guia-moema/">Guia Moema</a><a href="{base}/">← Site W3W</a></nav></div><span class="ey">Guia Moema · Mapa vivo</span><h1>Moema <em>agora.</em></h1><p>Restaurantes, bares, cafés, docerias, farmácias e serviços 24 horas do bairro, com o que está aberto neste momento.</p></div>
 <div class="mp-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="mpQ" type="search" placeholder="Buscar um lugar" aria-label="Buscar um lugar"></div>
 <div class="mp-tg"><button id="mpOpen" aria-pressed="false"><i></i>Aberto agora</button><button id="mp24" aria-pressed="false">24 horas</button></div>
-<div class="mp-grp" id="mpGrp" role="group" aria-label="O que você procura"></div><div class="mp-chips" id="mpChips" role="group" aria-label="Categorias"></div>
+<div class="mp-grp" id="mpGrp" role="group" aria-label="O que você procura"></div><div class="mp-chips" id="mpChips" role="group" aria-label="Categorias"></div><a id="mpSel" class="mp-sel" hidden></a>
 <div class="mp-count"><span id="mpN">—</span><span id="mpNow"></span></div>
 <div class="mp-list" id="mpList"></div>
 </aside>
@@ -363,7 +364,7 @@ def render(wa, cats_json, grupos_json='[]', logo='', base=''):
 
 
 JS = r"""
-(()=>{const $=s=>document.querySelector(s),C=window.MP_CATS,CM=Object.fromEntries(C.map(c=>[c[0],c]));
+(()=>{const $=s=>document.querySelector(s),C=window.MP_CATS,CM=Object.fromEntries(C.map(c=>[c[0],c])),SEL=window.MP_SEL||[];
 const R=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* horários (formato OpenStreetMap) */
@@ -393,7 +394,7 @@ const inG=c=>!GS||G.find(g=>g[0]===GS)[2].includes(c);const tot=ALL.filter(l=>in
 $('#mpChips').innerHTML=`<button aria-pressed="${!F.cat}" data-c="">Todos <small>${tot}</small></button>`+C.filter(c=>n[c[0]]&&inG(c[0])).map(c=>`<button aria-pressed="${F.cat===c[0]}" data-c="${c[0]}"><b style="background:${c[2]}"></b>${c[1]} <small>${n[c[0]]}</small></button>`).join('');
 $('#mpChips').querySelectorAll('button').forEach(b=>b.onclick=()=>{F.cat=b.dataset.c||null;chips();draw(true)})}
 function list(ign,noCat){const q=norm(F.q);const gc=GS?G.find(g=>g[0]===GS)[2]:null;return ALL.map(l=>({...l,st:status(l.horario)})).filter(l=>(!F.fav||FAV.has(l.id))&&(!gc||gc.includes(l.cat))&&(noCat||!F.cat||l.cat===F.cat)&&(ign||!F.open||l.st.k==='o'||l.st.k==='h')&&(ign||!F.h24||l.st.k==='h')&&(!q||norm(l.nome+' '+(l.end||'')+' '+CM[l.cat][1]).includes(q)))}
-function draw(fit){const L=list();$('#mpN').textContent=L.length+' lugares';$('#mpNow').textContent=new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+function draw(fit){const L=list();{const s=$('#mpSel');if(s){if(s.parentNode!==document.body)document.body.appendChild(s);const ok=F.cat&&SEL.includes(F.cat);s.hidden=!ok;if(ok){s.href='../moema/'+F.cat+'/';s.textContent='Ver a seleção de '+CM[F.cat][1].toLowerCase()+' em Moema →'}}}$('#mpN').textContent=L.length+' lugares';$('#mpNow').textContent=new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
 $('#mpList').innerHTML=L.length?L.slice(0,300).map((l,i)=>`<div class="mp-it${sel===l.id?' on':''}" data-id="${l.id}" style="animation-delay:${Math.min(i,20)*18}ms"><b style="background:${CM[l.cat][2]}"></b><div><strong>${esc(l.nome)}${FAV.has(l.id)?'<span class="hf">♥</span>':''}${l.destaque?'<span class="mp-dest">W3W indica</span>':''}</strong><span>${CM[l.cat][1]}${l.end?' · '+esc(l.end):''}</span></div>${l.st.k!=='?'?`<span class="mp-st ${l.st.k}">${l.st.t}</span>`:''}</div>`).join(''):empty();grid(L);catbar($('#mpTop'));
 const ab=$('#mpAll');if(ab)ab.onclick=()=>{F.open=F.h24=false;$('#mpOpen').setAttribute('aria-pressed',false);$('#mp24').setAttribute('aria-pressed',false);draw(true)};
 $('#mpList').querySelectorAll('.mp-it').forEach(el=>{el.onclick=()=>pick(el.dataset.id,true);el.onmouseenter=()=>hover(el.dataset.id)});

@@ -105,10 +105,15 @@ a{color:inherit;text-decoration:none}
 .nav{display:flex;align-items:center;gap:6px}
 .nav a{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;padding:8px 12px;opacity:.72;transition:opacity .2s}
 .nav a:hover,.nav a[aria-current]{opacity:1}
+.nav .dd{position:relative;display:inline-flex}
+.nav .sub{position:absolute;top:100%;left:0;min-width:220px;display:flex;flex-direction:column;padding:10px;background:var(--paper-2,#fff);border:1px solid var(--line,rgba(0,0,0,.1));opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .25s,transform .25s,visibility .25s;z-index:20}
+.nav .dd:hover .sub,.nav .dd:focus-within .sub{opacity:1;visibility:visible;transform:none}
+.nav .sub a{padding:10px 12px;letter-spacing:.1em}
+
 .nav .btn{opacity:1;margin-left:8px;padding:11px 18px}
 .burger{display:none;background:none;border:0;width:40px;height:40px;cursor:pointer;color:var(--ink)}
 @media(max-width:900px){.nav{position:fixed;inset:84px 0 auto 0;flex-direction:column;align-items:stretch;background:var(--paper-2);border-bottom:1px solid var(--line);padding:12px 20px 24px;gap:0;transform:translateY(-120%);transition:transform .35s var(--ease)}
-.nav.open{transform:none}.nav a{padding:14px 0;border-bottom:1px solid var(--line)}.nav .btn{margin:16px 0 0}.burger{display:block}.hd .wrap{height:72px}.nav{inset:72px 0 auto 0}.brand svg{height:36px}}
+.nav.open{transform:none}.nav .dd{display:flex;flex-direction:column}.nav .sub{position:static;opacity:1;visibility:visible;transform:none;border:0;padding:0 0 0 16px;background:none;min-width:0}.nav .dd>a+.sub+*{}.nav .sub a{font-size:11px}.nav a{padding:14px 0;border-bottom:1px solid var(--line)}.nav .btn{margin:16px 0 0}.burger{display:block}.hd .wrap{height:72px}.nav{inset:72px 0 auto 0}.brand svg{height:36px}}
 /* hero */
 .hero{position:relative;color:#F6F7F9;background:#1A1817 center/cover no-repeat}
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,17,16,.86) 0%,rgba(18,17,16,.66) 50%,rgba(18,17,16,.86) 100%)}
@@ -721,7 +726,7 @@ def header(active=''):
 <a class="brand" href="{BASE}/" aria-label="W3W Imóveis, página inicial">{LOGO}<span class="creci">{CRECI}</span></a>
 <button class="burger" aria-label="Abrir menu" aria-expanded="false" onclick="var n=document.querySelector('.nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h16M4 16h16"/></svg></button>
 <nav class="nav" aria-label="Principal">
-<a href="{BASE}/#imoveis">Imóveis</a><a href="{BASE}/#territorio">Território</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{u('mapa-moema')}">Mapa de Moema</a><a href="{BASE}/#socios">Quem somos</a>
+<a href="{BASE}/#imoveis">Imóveis</a><a href="{BASE}/#territorio">Território</a><span class="dd"><a href="{u('guia-moema')}">Guia Moema</a><span class="sub"><a href="{u('guia-moema')}">Matérias</a><a href="{u('mapa-moema')}">Mapa de Moema</a><a href="{u('moema')}">Moema por categoria</a><a href="{u('moema/pizzarias')}">Pizzarias</a><a href="{u('moema/japoneses')}">Japoneses</a><a href="{u('moema/padarias')}">Padarias</a></span></span><a href="{u('mapa-moema')}">Mapa de Moema</a><a href="{BASE}/#socios">Quem somos</a>
 <a class="btn" href="{BASE}/#contato">Fale com um consultor</a></nav></div></header>'''
 
 def footer():
@@ -729,7 +734,7 @@ def footer():
     WA_MAP = json.dumps({e['nome']: u('empreendimentos/' + e['slug']) for e in EM}, ensure_ascii=False)
     return f"""<footer class="ft"><div class="wrap ft-t">
 <a class="brand ft-b" href="{BASE}/">{LOGO}<span class="creci">{CRECI}</span></a>
-<nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{u('mapa-moema')}">Mapa de Moema</a><a href="{BASE}/#socios">Quem somos</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
+<nav class="ft-n"><a href="{BASE}/#imoveis">Imóveis</a><a href="{u('moema')}">Moema por categoria</a><a href="{u('guia-moema')}">Guia Moema</a><a href="{u('mapa-moema')}">Mapa de Moema</a><a href="{BASE}/#socios">Quem somos</a><a href="{u('politica-de-privacidade')}">Privacidade</a></nav>
 <div class="ft-c"><a href="{wa('Olá, visitei o site da W3W e quero mais informações.')}" target="_blank" rel="noopener">{TEL}</a><a href="mailto:{EMAIL}">{EMAIL}</a></div>
 </div><div class="wrap ft-bot"><span>W3W Imóveis · Inteligência imobiliária · Desde 2004</span><span>{CRECI} · Moema, São Paulo</span></div><div class="wrap ft-kco"><a href="https://kcooyakawa.github.io/kco-studio/" target="_blank" rel="noopener">Produzido por KCO Studio</a></div></footer>
 <button class="wa" id="waBtn" type="button" aria-label="Falar no WhatsApp" aria-expanded="false" aria-controls="waBox">{WA_ICON}</button>
@@ -1319,7 +1324,7 @@ def build_mapa():
     write('mapa-moema/mapa.js', mapa_page.JS)
     cats = json.dumps(mapa_page.CATS, ensure_ascii=False)
     pg = head('Mapa de Moema | Guia Moema · W3W Imóveis', 'Restaurantes, bares, cafés, docerias, farmácias e serviços 24 horas de Moema, com o que está aberto agora. Atualizado toda semana.', 'mapa-moema')
-    pg += header('guia-moema') + mapa_page.render(wa, cats, json.dumps(mapa_page.GRUPOS, ensure_ascii=False), LOGO, BASE) + footer()
+    pg += header('guia-moema') + mapa_page.render(wa, cats, json.dumps(mapa_page.GRUPOS, ensure_ascii=False), LOGO, BASE).replace('<script>', '<script>window.MP_SEL='+json.dumps([c[0][0] for c in __import__('moema_cat').cats_validas(json.load(open(os.path.join(ROOT,'mapa','locais.json')))['locais'], mapa_page.CATS)])+';', 1) + footer()
     write('mapa-moema/index.html', pg)
 
 def build_moema_cats():
