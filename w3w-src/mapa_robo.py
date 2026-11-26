@@ -430,6 +430,7 @@ def main():
             if l['id'] in porid: l.update(porid.pop(l['id']))
         locais += [c for c in porid.values() if c.get('lat')]
         locais += [c for c in cur if not c.get('id') and c.get('lat')]
+        locais = [l for l in locais if not l.get('remover')]  # fechados / mudaram de endereço
     locais.sort(key=lambda l: (not l.get('destaque'), l['cat'], l['nome']))
     # lista de trabalho da curadoria: lugares sem horário que têm telefone ou site
     pri = ['restaurantes','pizzarias','churrascarias','japoneses','hamburguerias','bares','cafes','docerias','sorveterias','padarias','farmacias','mercados','pet','lavanderias','chaveiros','cabeleireiros','estetica']
