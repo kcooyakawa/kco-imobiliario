@@ -189,8 +189,8 @@ def render(cat, L, CATS, u, wa, img_base='', img_ok=None):
             for i, l in enumerate(itens[:60])]},
         {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]},
         {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Guia Moema", "item": u('guia-moema')}, {"@type": "ListItem", "position": 2, "name": "Moema por categoria", "item": u('moema')}, {"@type": "ListItem", "position": 3, "name": label}]}]}
-    import moema_idx
-    return moema_idx.render_cat(cat, L, cats_validas(L, CATS), u, wa, img_base, titulo, intro, ld)
+    import moema_v3
+    return moema_v3.render_cat(cat, L, cats_validas(L, CATS), u, wa, img_base, titulo, intro, ld)
     st_ind = f'<div><dt>{len(ind)}</dt><dd>W3W indica</dd></div>' if ind else ''
     sec_ind = ('<section class="mc-sec mc-rv"><h2><span>A W3W <em>indica.</em></span><small>Arraste para o lado →</small></h2><div class="mc-ind">'
                + ''.join(card(l, CM, True, i + 1) for i, l in enumerate(ind)) + '</div></section>') if ind else ''
