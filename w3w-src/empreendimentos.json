@@ -5355,7 +5355,8 @@
   "bairro_slug": "moema",
   "status": "Em obras",
   "tipos": [
-   "Apartamento"
+   "Apartamento",
+   "Studio"
   ],
   "frase": "Exclusividade e sofisticação te esperam em Moema. Descubra um refúgio com detalhes que surpreendem.",
   "resumo": {
@@ -5377,20 +5378,24 @@
    "plantas_tit": "do tipo ao duplex e garden.",
    "assinaturas": [
     [
-     "Incorporação e construção",
+     "Incorporação",
+     "Munir Abbud"
+    ],
+    [
+     "Realização e construção",
      "Diálogo Engenharia"
     ],
     [
-     "Conceito",
-     "Grand lodge"
+     "Arquitetura",
+     "Aflalo/Gasperini"
     ],
     [
-     "Torres",
-     "3"
+     "Interiores",
+     "Juliana Abbud"
     ],
     [
-     "Andares",
-     "2 unidades por andar"
+     "Paisagismo",
+     "Soma Arquitetos"
     ]
    ],
    "destaques": [
@@ -5415,7 +5420,7 @@
     [
      "Tipo",
      "172 m²",
-     "2 ou 3 suítes",
+     "3 suítes",
      "Sob consulta"
     ],
     [
@@ -5427,25 +5432,37 @@
     [
      "Tipo",
      "241 m²",
-     "2 ou 3 suítes",
+     "3 suítes",
      "Sob consulta"
     ],
     [
      "Tipo",
      "284 m²",
-     "3 ou 4 suítes",
+     "4 suítes",
+     "Sob consulta"
+    ],
+    [
+     "Garden com piscina",
+     "323 e 569 m²",
+     "3 e 4 suítes",
+     "Sob consulta"
+    ],
+    [
+     "Duplex com piscina",
+     "344 a 562 m²",
+     "3 e 4 suítes",
      "Sob consulta"
     ],
     [
      "Duplex",
-     "344 a 562 m²",
-     "3 ou 4 suítes",
+     "475 m²",
+     "3 suítes",
      "Sob consulta"
     ],
     [
-     "Garden",
-     "323 a 569 m²",
-     "4 suítes",
+     "Studio NR",
+     "Sob consulta",
+     "Studio",
      "Sob consulta"
     ]
    ],
@@ -5466,18 +5483,28 @@
     "Pet place"
    ],
    "local": [
-    "Entre Moema e o Parque Ibirapuera",
-    "Av. Indianópolis, com saída rápida para a 23 de Maio",
-    "Frentes para as ruas Açocê e dos Aicás"
+    "Entre Moema e o Parque Ibirapuera"
    ],
    "tecnica": [
     [
-     "Torres",
-     "3"
+     "Torres residenciais",
+     "3, com 26 unidades cada"
     ],
     [
-     "Imagens",
-     "Perspectivas artísticas da incorporadora"
+     "Pavimentos",
+     "14"
+    ],
+    [
+     "Unidades por andar",
+     "2 (duplex no 13º e 14º)"
+    ],
+    [
+     "Metragem",
+     "172 a 569 m²"
+    ],
+    [
+     "Lazer",
+     "Residencial, independente da torre de studios"
     ],
     [
      "Status",
@@ -5523,7 +5550,31 @@
       "Duplex · 562 m²"
      ]
     ]
-   }
+   },
+   "tecnica_st": [
+    [
+     "Torre",
+     "Torre smart de studios NR"
+    ],
+    [
+     "Acesso",
+     "Lobby e elevadores independentes das torres residenciais"
+    ],
+    [
+     "Lazer",
+     "Próprio, separado do lazer residencial"
+    ],
+    [
+     "Metragem",
+     "Sob consulta"
+    ]
+   ],
+   "tecnica_geral": [
+    [
+     "Torres",
+     "4 (3 residenciais e 1 de studios NR)"
+    ]
+   ]
   },
   "entrega": "Out/2026"
  },
@@ -8598,6 +8649,694 @@
      [
       "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casa-jardim-petrella/implantacao.jpg",
       "Implantação do condomínio"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "hive-ibirapuera",
+  "nome": "Hive Ibirapuera",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Lançamento",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Torre única com vista livre de 180º para o Ibirapuera e lazer no rooftop.",
+  "resumo": {
+   "tipologias": "1 e 2 suítes e penthouses",
+   "metragem": "55 a 192 m²",
+   "vagas": "1 vaga"
+  },
+  "torres": [],
+  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/hive-ibirapuera/capa.jpg",
+  "categorias": [
+   "apartamentos"
+  ],
+  "ficha": {
+   "tagline": "Na primeira fila do Ibirapuera, com vista livre de 180º.",
+   "conceito": "O Hive tem apenas 42 apartamentos numa torre única de frente para o Parque Ibirapuera, o Clube Monte Líbano e o Parque das Bicicletas. Todas as unidades têm vista, pé-direito piso a piso de 3,90 m e 1 vaga livre. São plantas de 55 a 80 m² com 1 e 2 suítes, unidades maiores de 108 a 144 m² e penthouses de até 192 m². Arquitetura do premiado FGMF e lazer no rooftop com piscina.",
+   "entrega": "Lançamento",
+   "faixa": "55 a 192 m²",
+   "plantas_tit": "de 1 e 2 suítes às penthouses.",
+   "assinaturas": [
+    [
+     "Arquitetura",
+     "FGMF Arquitetos"
+    ],
+    [
+     "Interiores",
+     "Marcia Kalil"
+    ],
+    [
+     "Paisagismo",
+     "Gabriella Ornaghi"
+    ],
+    [
+     "Incorporação",
+     "Constrac"
+    ]
+   ],
+   "destaques": [
+    [
+     "42",
+     "apartamentos"
+    ],
+    [
+     "180º",
+     "de vista livre"
+    ],
+    [
+     "3,90 m",
+     "piso a piso"
+    ],
+    [
+     "Rooftop",
+     "piscina e sauna"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "55 e 57 m²",
+     "1 suíte",
+     "1 vaga"
+    ],
+    [
+     "Tipo",
+     "78 e 80 m²",
+     "2 suítes",
+     "1 vaga"
+    ],
+    [
+     "Tipo amplo",
+     "108 a 144 m²",
+     "1 ou 2 suítes",
+     "1 vaga"
+    ],
+    [
+     "Penthouse",
+     "Até 192 m²",
+     "Sob consulta",
+     "1 vaga"
+    ]
+   ],
+   "lazer": [
+    "Piscina no rooftop",
+    "Sauna seca",
+    "Bar piscina",
+    "Solarium",
+    "Salão de festas com espaço chef",
+    "Fitness",
+    "Espaço yoga / zen",
+    "Lounge bar gourmet",
+    "Mini mercado",
+    "Lavanderia coletiva",
+    "Pet place",
+    "Espaço delivery com elevador monta-cargas",
+    "Bicicletário"
+   ],
+   "local": [
+    "Vista para o Parque Ibirapuera e o Parque das Bicicletas",
+    "Vizinho ao Clube Atlético Monte Líbano"
+   ],
+   "tecnica": [
+    [
+     "Torre",
+     "Única"
+    ],
+    [
+     "Unidades",
+     "42 apartamentos"
+    ],
+    [
+     "Vagas",
+     "1 vaga livre por unidade"
+    ],
+    [
+     "Pé-direito",
+     "3,90 m piso a piso"
+    ],
+    [
+     "Subsolos",
+     "3"
+    ],
+    [
+     "Uso misto",
+     "Loja e escritórios com acessos separados do residencial"
+    ],
+    [
+     "Status",
+     "Lançamento"
+    ]
+   ],
+   "img": {
+    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/hive-ibirapuera/capa.jpg",
+    "fachada": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/hive-ibirapuera/fachada.jpg",
+    "par": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/hive-ibirapuera/par-1.jpg",
+      "Living · penthouse de 192 m²"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/hive-ibirapuera/par-2.jpg",
+      "Terraço"
+     ]
+    ],
+    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/hive-ibirapuera/voo.jpg",
+    "lazer": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/hive-ibirapuera/lazer-1.jpg",
+      "Piscina no rooftop"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/hive-ibirapuera/lazer-2.jpg",
+      "Sauna seca"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/hive-ibirapuera/lazer-3.jpg",
+      "Bar piscina"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/hive-ibirapuera/lazer-4.jpg",
+      "Fitness"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/hive-ibirapuera/lazer-5.jpg",
+      "Salão de festas"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/hive-ibirapuera/lazer-6.jpg",
+      "Hall social"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "fraiha-ybira-chibaras",
+  "nome": "Fraiha Ybirá Chibarás",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Lançamento",
+  "tipos": [
+   "Apartamento"
+  ],
+  "frase": "Um legado arquitetônico que habita o bem-estar.",
+  "resumo": {
+   "tipologias": "3 suítes",
+   "metragem": "194 m²",
+   "vagas": "2 a 4 vagas"
+  },
+  "torres": [],
+  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/fraiha-ybira-chibaras/capa.jpg",
+  "categorias": [
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "Um legado arquitetônico que habita o bem-estar.",
+   "conceito": "Segundo capítulo da série Ybirá da Fraiha em Moema: torre de esquina com 48 apartamentos de 194 m² e 3 suítes, apenas dois por andar. O wellness é estrutura do projeto, com Wellness Therapy Center assinado por Tania Ginjas: performance pool de 25 m, vitality pool, cold pool, sauna finlandesa e recovery room. Arquitetura de Pablo Slemenson.",
+   "entrega": "Breve lançamento",
+   "faixa": "194 m²",
+   "plantas_tit": "3 suítes, dois por andar.",
+   "assinaturas": [
+    [
+     "Incorporação",
+     "Fraiha"
+    ],
+    [
+     "Arquitetura",
+     "Pablo Slemenson · PSA"
+    ],
+    [
+     "Interiores",
+     "Paula Aveiro"
+    ],
+    [
+     "Paisagismo",
+     "Benedito Abbud"
+    ],
+    [
+     "Wellness",
+     "Tania Ginjas"
+    ]
+   ],
+   "destaques": [
+    [
+     "194 m²",
+     "3 suítes"
+    ],
+    [
+     "48",
+     "unidades"
+    ],
+    [
+     "2",
+     "por andar"
+    ],
+    [
+     "25 m",
+     "performance pool"
+    ]
+   ],
+   "plantas": [
+    [
+     "Tipo",
+     "194 m²",
+     "3 suítes",
+     "2 a 4 vagas"
+    ]
+   ],
+   "lazer": [
+    "Performance pool de 25 m",
+    "Vitality pool",
+    "Cold pool",
+    "Sauna finlandesa",
+    "Wellness recovery room",
+    "Sensorial lounge e quiet lounge",
+    "Outdoor studio mind & body",
+    "Private pool house",
+    "Amplo fitness",
+    "Espaço gourmet com churrasqueira",
+    "Piscina adulto com prainha e hidromassagem",
+    "Piscina infantil e solarium",
+    "Salão de festas",
+    "Private meeting room",
+    "Brinquedoteca e playground",
+    "Jogos juvenil",
+    "Pet place",
+    "Delivery storage"
+   ],
+   "local": [
+    "Moema, perto do Parque Ibirapuera",
+    "Edifício de esquina"
+   ],
+   "tecnica": [
+    [
+     "Pavimentos",
+     "24 pavimentos-tipo"
+    ],
+    [
+     "Unidades",
+     "48 (2 por andar)"
+    ],
+    [
+     "Tipologia",
+     "194 m² · 3 suítes"
+    ],
+    [
+     "Vagas",
+     "2 a 4 vagas determinadas"
+    ],
+    [
+     "Fachada ativa",
+     "2 lojas"
+    ],
+    [
+     "Status",
+     "Pré-lançamento"
+    ]
+   ],
+   "img": {
+    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/fraiha-ybira-chibaras/capa.jpg",
+    "fachada": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/fraiha-ybira-chibaras/fachada.jpg",
+    "par": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/fraiha-ybira-chibaras/par-1.jpg",
+      "Lobby social"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/fraiha-ybira-chibaras/par-2.jpg",
+      "Living · 194 m²"
+     ]
+    ],
+    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/fraiha-ybira-chibaras/voo.jpg",
+    "lazer": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/fraiha-ybira-chibaras/lazer-1.jpg",
+      "Fitness"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/fraiha-ybira-chibaras/lazer-2.jpg",
+      "Performance pool"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/fraiha-ybira-chibaras/lazer-3.jpg",
+      "Outdoor studio mind & body"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/fraiha-ybira-chibaras/lazer-4.jpg",
+      "Acqua pavilion"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/fraiha-ybira-chibaras/lazer-5.jpg",
+      "Piscina"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/fraiha-ybira-chibaras/lazer-6.jpg",
+      "Playground"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "casas-altas-do-morumbi",
+  "nome": "Casas Altas do Morumbi",
+  "bairro": "Morumbi",
+  "bairro_slug": "morumbi",
+  "vitrine": true,
+  "status": "Lançamento",
+  "tipos": [
+   "Casa"
+  ],
+  "frase": "Apenas 6 casas em condomínio fechado no alto do Morumbi, com rooftop privativo.",
+  "resumo": {
+   "tipologias": "Casas de 4 suítes",
+   "metragem": "576 a 730 m²",
+   "vagas": "4 vagas"
+  },
+  "torres": [],
+  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/capa.jpg",
+  "categorias": [
+   "casas",
+   "alto-padrao"
+  ],
+  "ficha": {
+   "tagline": "Trouxemos de volta o prazer de morar em uma casa.",
+   "conceito": "Condomínio fechado com apenas seis casas isoladas entre si, de 576 a 730 m² de área privativa, 4 suítes e 4 vagas. São quatro pavimentos: subsolo, térreo com living de 9,60 m de frente para o jardim privativo, dormitórios e rooftop ensolarado com vista para a cidade. Implantação na cota mais alta do terreno, com mais privacidade, e paisagismo com 47 espécies nativas.",
+   "entrega": "Futuro lançamento",
+   "faixa": "576 a 730 m²",
+   "plantas_tit": "casas de 4 suítes.",
+   "assinaturas": [
+    [
+     "Arquitetura",
+     "Jorge Pessoa"
+    ],
+    [
+     "Interiores",
+     "Marina Linhares"
+    ],
+    [
+     "Paisagismo",
+     "Ricardo Cardim"
+    ],
+    [
+     "Realização",
+     "Visna e Rovic"
+    ]
+   ],
+   "destaques": [
+    [
+     "6",
+     "casas no condomínio"
+    ],
+    [
+     "576 m²",
+     "casa a partir de"
+    ],
+    [
+     "4",
+     "suítes e 4 vagas"
+    ],
+    [
+     "Rooftop",
+     "privativo"
+    ]
+   ],
+   "plantas": [
+    [
+     "Casa",
+     "576 a 590 m²",
+     "4 suítes",
+     "4 vagas"
+    ],
+    [
+     "Casa com rooftop e piscina",
+     "730 m²",
+     "4 suítes",
+     "4 vagas"
+    ]
+   ],
+   "lazer": [
+    "Rooftop privativo em todas as casas",
+    "Piscina no rooftop (casa 6)",
+    "Jardim privativo integrado ao living",
+    "Academia Life Fitness",
+    "Alameda de pedestres",
+    "Guarita blindada com clausura"
+   ],
+   "local": [
+    "Alto do Morumbi, entre ruas arborizadas e praças",
+    "Acesso rápido à Ponte Cidade Jardim"
+   ],
+   "tecnica": [
+    [
+     "Casas",
+     "6, isoladas entre si"
+    ],
+    [
+     "Pavimentos",
+     "Subsolo, térreo, dormitórios e rooftop"
+    ],
+    [
+     "Vagas",
+     "4 por casa, com tomadas para carro elétrico"
+    ],
+    [
+     "Segurança",
+     "Projeto Haganá, guarita blindada e clausura"
+    ],
+    [
+     "Status",
+     "Futuro lançamento"
+    ]
+   ],
+   "img": {
+    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/capa.jpg",
+    "fachada": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/fachada.jpg",
+    "par": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/par-1.jpg",
+      "Living · casa 1"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/par-2.jpg",
+      "Living e jardim · casa 1"
+     ]
+    ],
+    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/voo.jpg",
+    "lazer": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/lazer-1.jpg",
+      "Academia"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/lazer-2.jpg",
+      "Rooftop"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/lazer-3.jpg",
+      "Rooftop com piscina · casa 6"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/lazer-4.jpg",
+      "Sala de jantar e cozinha"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/lazer-5.jpg",
+      "Suíte master"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/lazer-6.jpg",
+      "Living · casa 6"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "slug": "sp-360-moema",
+  "nome": "SP_360° Smart Living",
+  "bairro": "Moema",
+  "bairro_slug": "moema",
+  "status": "Lançamento",
+  "tipos": [
+   "Studio",
+   "Apartamento"
+  ],
+  "frase": "Studios e 1 dormitório da Eztec em Moema, a 400 m do metrô Eucaliptos.",
+  "resumo": {
+   "tipologias": "Studios e 1 dorm.",
+   "metragem": "24 a 35 m²",
+   "vagas": "Sem vaga"
+  },
+  "torres": [],
+  "img": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/capa.jpg",
+  "categorias": [
+   "studios",
+   "apartamentos"
+  ],
+  "ficha": {
+   "tagline": "A menor distância entre São Paulo e a rentabilidade.",
+   "conceito": "Smart living da Eztec pensado para renda: studios de 24 a 30 m² e apartamentos de 1 dormitório de 34 e 35 m², em torno de um grande átrio central. Fica a 400 m da estação Eucaliptos, perto do Shopping Ibirapuera e a 2,6 km de Congonhas, ideal para locação por temporada e relocation de executivos.",
+   "entrega": "Lançamento",
+   "faixa": "24 a 35 m²",
+   "plantas_tit": "studios e 1 dormitório.",
+   "assinaturas": [
+    [
+     "Incorporação e construção",
+     "Eztec"
+    ],
+    [
+     "Arquitetura",
+     "DWA Arquitetura"
+    ],
+    [
+     "Paisagismo",
+     "Benedito Abbud"
+    ],
+    [
+     "Decoração",
+     "Bohrer Arquitetos"
+    ]
+   ],
+   "destaques": [
+    [
+     "400 m",
+     "da estação Eucaliptos"
+    ],
+    [
+     "2,6 km",
+     "de Congonhas"
+    ],
+    [
+     "20 m",
+     "de piscina"
+    ],
+    [
+     "Átrio",
+     "central"
+    ]
+   ],
+   "plantas": [
+    [
+     "Studio",
+     "24 e 25 m²",
+     "Studio",
+     "Sem vaga"
+    ],
+    [
+     "Studio",
+     "28 a 30 m²",
+     "Studio",
+     "Sem vaga"
+    ],
+    [
+     "1 dormitório",
+     "34 e 35 m²",
+     "1 dorm.",
+     "Sem vaga"
+    ]
+   ],
+   "tecnica": [
+    [
+     "Unidades",
+     "138 apartamentos de 1 dormitório"
+    ],
+    [
+     "Metragem",
+     "34 e 35 m²"
+    ],
+    [
+     "Vagas",
+     "Sem vaga"
+    ],
+    [
+     "Status",
+     "Lançamento"
+    ]
+   ],
+   "tecnica_st": [
+    [
+     "Unidades",
+     "Studios de 24 a 30 m²"
+    ],
+    [
+     "Perfil",
+     "Investimento, temporada e relocation"
+    ],
+    [
+     "Acesso",
+     "Fechadura com controle de acesso"
+    ],
+    [
+     "Vagas",
+     "Sem vaga"
+    ],
+    [
+     "Status",
+     "Lançamento"
+    ]
+   ],
+   "tecnica_geral": [
+    [
+     "Torre",
+     "Única, 20 pavimentos"
+    ],
+    [
+     "Total",
+     "778 unidades e 2 lojas"
+    ]
+   ],
+   "lazer": [
+    "Piscina adulto de 20 m",
+    "Átrio galeria e átrio lobby",
+    "Coworking",
+    "Espaço gourmet",
+    "Lounge gourmet",
+    "Fitness aeróbico e musculação",
+    "Massage time",
+    "Pet care",
+    "Bicicletário",
+    "Porte-cochère"
+   ],
+   "local": [
+    "400 m da estação Eucaliptos",
+    "Perto do Shopping Ibirapuera",
+    "2,6 km de Congonhas"
+   ],
+   "img": {
+    "capa": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/capa.jpg",
+    "fachada": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/fachada.jpg",
+    "par": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/par-1.jpg",
+      "Átrio lobby"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/par-2.jpg",
+      "Studio decorado"
+     ]
+    ],
+    "voo": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/voo.jpg",
+    "lazer": [
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/lazer-1.jpg",
+      "Piscina"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/lazer-2.jpg",
+      "Átrio galeria"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/lazer-3.jpg",
+      "Espaço gourmet"
+     ],
+     [
+      "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/sp-360-moema/lazer-6.jpg",
+      "Lounge"
      ]
     ]
    }

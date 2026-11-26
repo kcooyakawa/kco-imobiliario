@@ -67,6 +67,7 @@ BAIRROS = {
    lead='Moema reúne ruas arborizadas, o Parque Ibirapuera a poucos minutos, metrô, boa gastronomia e alguns dos lançamentos mais disputados de São Paulo. Selecionamos aqui os empreendimentos que acompanhamos de perto, de studios a apartamentos de alto padrão.',
    desc='Apartamentos e studios novos em Moema: lançamentos, imóveis em obras e prontos para morar, com a inteligência imobiliária da W3W Imóveis.'),
  'brooklin': dict(nome='Brooklin', titulo='Imóveis no Brooklin', lead='No Brooklin, a W3W acompanha casas em condomínio e projetos selecionados, sob consulta.', desc='Imóveis selecionados no Brooklin, sob consulta, com a inteligência imobiliária da W3W Imóveis.'),
+ 'morumbi': dict(nome='Morumbi', titulo='Imóveis no Morumbi', lead='No Morumbi, a W3W acompanha casas em condomínio fechado de alto padrão, sob consulta.', desc='Casas de alto padrão em condomínio no Morumbi, sob consulta, com a inteligência imobiliária da W3W Imóveis.'),
  'vila-nova-conceicao': dict(nome='Vila Nova Conceição', titulo='Imóveis novos na Vila Nova Conceição',
    lead='A Vila Nova Conceição é um dos endereços mais valorizados de São Paulo: vizinha do Ibirapuera, residencial, silenciosa e com projetos assinados por grandes incorporadoras. Aqui estão os empreendimentos que a W3W acompanha no bairro.',
    desc='Apartamentos novos de alto padrão na Vila Nova Conceição: lançamentos, em obras e prontos, com a inteligência imobiliária da W3W Imóveis.'),
@@ -934,7 +935,11 @@ def rich(e, h='h2'):
     if I.get('lazer'): out += '<section class="bk-grid">' + ''.join(fig(s2, c2) for s2, c2 in I['lazer']) + '</section>'
     out += f'<section class="bk-txt bk-lz"><span class="eyebrow">Tudo o que o lazer oferece</span><ul class="bk-list">{"".join(f"<li>{esc(x)}</li>" for x in f["lazer"])}</ul></section>'
     if I.get('terraco'): out += fig(I['terraco'], I.get('terraco_cap', 'Terraço, duplex de 572 m²'), 'bk-full')
-    out += f"""<section class="bk-txt bk-tec"><span class="eyebrow">Ficha técnica</span><dl>{''.join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in f['tecnica'] if not re.search(r'endere|localiza|terreno', a, re.I))}</dl>
+    _dl = lambda rows: '<dl>' + ''.join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in rows if not re.search(r'endere|localiza|terreno', a, re.I)) + '</dl>'
+    if f.get('tecnica_st'):  # duas fichas: apartamentos e studios (pedido Kco, nov/2026)
+        _tec = (_dl(f['tecnica_geral']) if f.get('tecnica_geral') else '') + '<h4 class="pl-g">Ficha técnica · Apartamentos</h4>' + _dl(f['tecnica']) + '<h4 class="pl-g">Ficha técnica · Studios</h4>' + _dl(f['tecnica_st'])
+    else: _tec = _dl(f['tecnica'])
+    out += f"""<section class="bk-txt bk-tec"><span class="eyebrow">Ficha técnica</span>{_tec}
 <p class="bk-note">Imagens: perspectivas ilustradas fornecidas pela incorporadora. Informações sujeitas a alteração.</p></section>
 <section class="lx-end"><span class="eyebrow">Fale com a W3W</span><h3>Quer saber mais <em>sobre o {esc(nome)}?</em></h3>
 <a class="btn light solid-l" href="{way(msg)}" target="_blank" rel="noopener">Quero mais informações</a></section>
