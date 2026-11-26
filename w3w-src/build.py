@@ -1322,6 +1322,16 @@ def build_mapa():
     pg += header('guia-moema') + mapa_page.render(wa, cats, json.dumps(mapa_page.GRUPOS, ensure_ascii=False), LOGO, BASE) + footer()
     write('mapa-moema/index.html', pg)
 
+def build_moema_cats():
+    import moema_cat, mapa_page
+    L = json.load(open(os.path.join(ROOT, 'mapa', 'locais.json'), encoding='utf-8'))['locais']
+    for c, n in moema_cat.cats_validas(L, mapa_page.CATS):
+        t, intro = moema_cat.TXT.get(c[0], (f'{c[1]} em Moema', ''))
+        pg = head(f'{t} | Guia Moema · W3W Imóveis', (intro or f'{c[1]} em Moema com endereço, horário e como chegar.')[:158], 'moema/' + c[0])
+        write(f'moema/{c[0]}/index.html', pg + header('guia-moema') + moema_cat.render(c, L, mapa_page.CATS, u, wa) + footer())
+    pg = head('Moema por categoria | Guia Moema · W3W Imóveis', 'Restaurantes, cafés, padarias, bares, serviços e lazer de Moema organizados por categoria pela W3W Imóveis.', 'moema')
+    write('moema/index.html', pg + header('guia-moema') + moema_cat.render_index(L, mapa_page.CATS, u, wa) + footer())
+
 def build_servicos():
     import servicos
     pg = head('Serviços W3W · Marketing imobiliário de alto padrão', 'Campanha por produto, criação assinada por Head of Art e Lead Dossiê: a W3W cria, anuncia e atende imóveis de alto padrão em Moema.', 'servicos')
@@ -1347,4 +1357,4 @@ if __name__ == '__main__':
     build()
     build_guia()
     build_servicos()
-    build_mapa()
+    build_mapa(); build_moema_cats()
