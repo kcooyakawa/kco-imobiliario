@@ -86,6 +86,14 @@ CSS = '''<style>
 .mc-ind article{scroll-snap-align:start;position:relative;min-height:440px;display:flex;flex-direction:column;justify-content:flex-end;padding:28px;border-radius:30px;color:var(--cr);background:linear-gradient(170deg,color-mix(in srgb,var(--k) 88%,#fff 12%),var(--kd));overflow:hidden;box-shadow:0 30px 60px -34px color-mix(in srgb,var(--k) 70%,#000);transition:transform .5s cubic-bezier(.16,1,.3,1)}
 .mc-ind article:hover{transform:translateY(-6px) rotate(-.6deg)}
 .mc-ind article::before{content:attr(data-n);position:absolute;top:10px;right:18px;font:200 150px/1 var(--serif,serif);font-style:italic;color:rgba(255,255,255,.14)}
+.mc-ind article.f{background:var(--kd)}
+.mc-ind article.f img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:opacity .8s cubic-bezier(.16,1,.3,1),transform 1.2s cubic-bezier(.16,1,.3,1)}
+.mc-ind article.f{isolation:isolate}
+.mc-ind article.f::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(15,11,8,0) 30%,rgba(15,11,8,.55) 62%,rgba(15,11,8,.88))}
+.mc-ind article.f::before{color:rgba(255,255,255,.22);z-index:0}
+.mc-ind article.f2 img+img{opacity:0}
+.mc-ind article.f:hover img{transform:scale(1.05)}
+.mc-ind article.f2:hover img+img{opacity:1}
 .mc-ind .tg{align-self:flex-start;font:500 10px var(--mono,monospace);letter-spacing:.12em;text-transform:uppercase;color:var(--kd);background:var(--cr);padding:5px 10px;border-radius:999px}
 .mc-ind h3{font:300 36px/1 var(--sans,sans-serif);letter-spacing:-.035em;margin:16px 0 10px}
 .mc-ind p{margin:0 0 3px;font-size:14px;opacity:.85;line-height:1.5}
@@ -129,6 +137,11 @@ CSS = '''<style>
 JS = '''<script>(()=>{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});document.querySelectorAll('.mc-rv').forEach(el=>io.observe(el));
 const q=document.getElementById('mcQ');if(q){const it=[...document.querySelectorAll('.mc-ls article')],n=document.getElementById('mcN');const nm=s=>s.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase();q.oninput=()=>{const t=nm(q.value);let c=0;it.forEach(a=>{const ok=!t||nm(a.textContent).includes(t);a.style.display=ok?'':'none';ok&&c++});n.textContent=c+' lugares'}}})()</script>'''
 
+import os as _os
+try: FOTOS = json.load(open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 'locais_fotos.json')))
+except Exception: FOTOS = {}
+IMGB = 'https://kcooyakawa.github.io/kco-imobiliario/w3w-img/moema/locais/'
+
 IMG = {'parques': 'guia/alameda-parque.jpg', 'cultura': 'guia/auditorio-ibirapuera.jpg'}
 
 def card(l, CM, dark=False, n=0):
@@ -139,7 +152,9 @@ def card(l, CM, dark=False, n=0):
     hh = f'<div class="h">{esc(h)}</div>' if h else ''
     nota = f'<p>{esc(l.get("nota"))}</p>' if l.get('nota') else ''
     if dark:
-        return f'<article data-n="{n:02d}"><span class="tg">W3W indica</span><h3>{esc(l["nome"])}</h3>{nota}<p>{esc(l.get("end") or "Moema, São Paulo")}</p>{hh}<div class="mc-ac">{acts}</div></article>'
+        fs = FOTOS.get(l['nome'], [])
+        ph = ''.join(f'<img src="{IMGB}{f}.jpg" alt="{esc(l["nome"])}, Moema" loading="lazy">' for f in fs[:2])
+        return f'<article data-n="{n:02d}"{" class=\"f" + (" f2" if len(fs) > 1 else "") + "\"" if fs else ""}>{ph}<span class="tg">W3W indica</span><h3>{esc(l["nome"])}</h3>{nota}<p>{esc(l.get("end") or "Moema, São Paulo")}</p>{hh}<div class="mc-ac">{acts}</div></article>'
     ini = (l['nome'].strip()[:1] or '·').upper()
     return f'<article><span class="mo">{esc(ini)}</span><h3>{esc(l["nome"])}</h3><p>{esc(l.get("end") or "Moema, São Paulo")}</p>{hh}<div class="mc-ac">{acts}</div></article>'
 
