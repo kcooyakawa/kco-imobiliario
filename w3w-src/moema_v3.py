@@ -109,6 +109,9 @@ if(q)q.oninput=run;if(more)more.onclick=()=>{all=true;run()};run()})()</script>'
 
 CK = {'japoneses':'#B3262D','pizzarias':'#C8442B','padarias':'#B07A1E','restaurantes':'#2F4A36','bares':'#6B1E2E','noite':'#2A2350','cafes':'#6A4630','docerias':'#B0476F','sorveterias':'#2C7FA8','churrascarias':'#7A2A1C','hamburguerias':'#B5551E','parques':'#2E5E44','cultura':'#22407A'}
 FAC = {'speranza-1','casale-1','djapa-1','hito-1','kinoshita-1','yakitori-1','pingo-1','padoca-1','padoca-2','boston-1'}
+NOPB = {'Vaca Verde'}
+def src(f, img_base):
+    return f'https://lh3.googleusercontent.com/{f}=w1600' if f.startswith('gps') else f'{img_base}{LB}{f}.jpg'
 def gm(l): return f'https://www.google.com/maps/dir/?api=1&destination={l["lat"]},{l["lon"]}'
 def rua(l):
     e = (l.get('end') or '').strip()
@@ -122,9 +125,10 @@ def render_cat(cat, L, cs, u, wa, img_base, titulo, intro, ld):
     ind = [l for l in it if l.get('destaque')]
     com = [l for l in ind if FOTOS.get(l['nome'])]; sem = [l for l in ind if not FOTOS.get(l['nome'])]
     resto = sorted([l for l in it if not l.get('destaque')], key=lambda l: l['nome'].lower())
-    fotos = ([FOTO[key]] if key in FOTO else []) + [LB + FOTOS[l['nome']][0] + '.jpg' for l in com]
+    fotos = ([FOTO[key]] if key in FOTO else []) + [(lambda f: f if f.startswith('gps') else LB + f + '.jpg')(FOTOS[l['nome']][-1]) for l in com]
     fotos = fotos[:3]
-    bd = f'<div class="v3-bd"><img src="{img_base}{fotos[0]}" alt="{esc(label)} em Moema" loading="eager"></div>' if fotos else f'<div class="v3-bd"><div class="ph">{ico(key)}</div></div>'
+    H = lambda f: f'https://lh3.googleusercontent.com/{f}=w2000' if f.startswith('gps') else img_base + f
+    bd = f'<div class="v3-bd"><img src="{H(fotos[0])}" alt="{esc(label)} em Moema" loading="eager"></div>' if fotos else f'<div class="v3-bd"><div class="ph">{ico(key)}</div></div>'
     if len(fotos) >= 3: mo = '<div class="v3-mo">' + ''.join(f'<figure><img src="{img_base}{f}" alt="{esc(label)} em Moema" loading="eager"></figure>' for f in fotos) + '</div>'
     elif fotos: mo = f'<div class="v3-mo one"><figure><img src="{img_base}{fotos[0]}" alt="{esc(label)} em Moema" loading="eager"></figure></div>'
     else: mo = f'<div class="v3-mo one"><figure class="ph">{ico(key)}</figure></div>'
@@ -132,7 +136,7 @@ def render_cat(cat, L, cs, u, wa, img_base, titulo, intro, ld):
         return (f'<a href="{gm(l)}" target="_blank" rel="noopener">Como chegar</a>' + (f'<a href="{esc(l["site"])}" target="_blank" rel="noopener nofollow">Site</a>' if l.get('site') else '')
                 + (f'<a href="tel:{esc("".join(c for c in l["tel"] if c.isdigit() or c=="+"))}">Ligar</a>' if l.get('tel') else ''))
     from moema_idx import hum
-    fe = ''.join(f'<article class="v3-it v3-rv" data-h="{esc(l.get("horario"))}"><div class="v3-pi v3-zz">' + ''.join(f'<img{" class=\"pb\"" if f in FAC else ""} src="{img_base}{LB}{f}.jpg" alt="{esc(l["nome"])}, Moema" loading="lazy">' for f in FOTOS[l['nome']][:2])
+    fe = ''.join(f'<article class="v3-it v3-rv" data-h="{esc(l.get("horario"))}"><div class="v3-pi v3-zz">' + ''.join(f'<img{" class=\"pb\"" if (f in FAC or (f.startswith("gps") and i==0 and l["nome"] not in NOPB)) else ""} src="{src(f, img_base)}" alt="{esc(l["nome"])}, Moema" loading="lazy">' for i, f in enumerate(FOTOS[l['nome']][:2]))
                  + f'</div><div><p class="v3-st">{esc(rua(l))}</p><h3>{esc(l["nome"])}</h3>' + (f'<p>{esc(l["nota"])}</p>' if l.get('nota') else '')
                  + (f'<div class="hr">{esc(hum(l.get("horario")))}</div>' if l.get('horario') else '') + f'<div class="v3-op"><i></i><em>Horário não informado</em></div><div class="v3-ac">{acts(l)}</div></div></article>' for l in com)
     tb = ''.join(f'<a href="{gm(l)}" target="_blank" rel="noopener" data-h="{esc(l.get("horario"))}">{ico(key)}<div><b>{esc(l["nome"])}</b><span>{esc(rua(l))}</span></div></a>' for l in sem)
