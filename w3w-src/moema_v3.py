@@ -14,11 +14,11 @@ body:has(.v3){background:#fff}
 .v3 h1,.v3 h2,.v3 h3{font-family:var(--sans,sans-serif);font-weight:300;margin:0}
 .v3-h{padding:clamp(110px,11vw,150px) 0 0}
 .v3-bc{display:flex;gap:10px;font-size:14px;color:var(--i2)}.v3-bc a{color:inherit}
-.v3-h h1{font-size:clamp(76px,15.5vw,270px);line-height:.82;letter-spacing:-.065em;margin:18px 0 0;overflow:hidden;padding-bottom:.04em}
+.v3-h h1{font-size:clamp(76px,15.5vw,270px);line-height:.9;letter-spacing:-.035em;margin:18px 0 0;overflow:hidden;padding-bottom:.04em}
 .v3-h h1 span{display:inline-block;animation:v3u 1.3s var(--e) both}
 @keyframes v3u{from{transform:translateY(100%)}}
 .v3-hg{display:grid;grid-template-columns:5fr 7fr;gap:clamp(24px,4vw,72px);margin-top:clamp(28px,3vw,48px);align-items:start}
-.v3-ld{font-size:clamp(18px,1.5vw,22px);line-height:1.5;max-width:40ch;margin:0;animation:v3f 1.1s .3s var(--e) both}
+.v3-ld{font-size:clamp(18px,1.4vw,21px);line-height:1.75;max-width:40ch;margin:0;animation:v3f 1.1s .3s var(--e) both}
 .v3-live{margin:28px 0 0;font-size:clamp(26px,2.4vw,36px);line-height:1.1;letter-spacing:-.03em;animation:v3f 1.1s .45s var(--e) both}
 .v3-live b{font-weight:500;color:var(--k)}
 .v3-live i{display:inline-block;width:.38em;height:.38em;border-radius:50%;background:var(--k);margin-right:.3em;vertical-align:.12em;animation:v3p 2s infinite}
@@ -40,16 +40,16 @@ body:has(.v3){background:#fff}
 .v3-mo.one{grid-template-columns:1fr;grid-template-rows:1fr}
 .v3-mo .ph{display:grid;place-items:center;color:var(--ink);background:var(--g1)}.v3-mo .ph svg{width:34%;height:34%}
 .v3 svg path{fill:none;stroke:currentColor;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
-.v3-sec{padding:clamp(120px,13vw,220px) 0 0}
-.v3-sec>.in>h2,.v3-hd{font-size:clamp(52px,7.4vw,124px);line-height:.88;letter-spacing:-.055em;margin-bottom:clamp(40px,5vw,80px)}
-.v3-it{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,4vw,72px);align-items:end;margin-bottom:clamp(90px,10vw,170px)}
+.v3-sec{padding:clamp(150px,16vw,260px) 0 0}
+.v3-sec>.in>h2,.v3-hd{font-size:clamp(52px,7.4vw,124px);line-height:1;letter-spacing:-.03em;margin-bottom:clamp(40px,5vw,80px)}
+.v3-it{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,4vw,72px);align-items:end;margin-bottom:clamp(120px,13vw,220px)}
 .v3-it:nth-of-type(even){grid-template-columns:5fr 7fr}.v3-it:nth-of-type(even) .v3-pi{order:2}
 .v3-pi{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--g1)}
 .v3-pi img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.6s var(--e),opacity .9s var(--e)}
-.v3-pi img+img{opacity:0}.v3-pi:hover img+img{opacity:1}.v3-pi:hover img{transform:scale(1.04)}
-.v3-st{font-size:clamp(40px,4.6vw,76px);line-height:.92;letter-spacing:-.05em;font-weight:300;margin:0 0 22px}
-.v3-it h3{font-size:clamp(24px,2vw,30px);font-weight:500;letter-spacing:-.02em}
-.v3-it p{margin:10px 0 0;font-size:17px;line-height:1.55;max-width:40ch}
+.v3-pi img.pb{filter:grayscale(1) contrast(1.06);transition:filter 1s var(--e),transform 1.6s var(--e),opacity .9s var(--e)}.v3-pi:hover img.pb{filter:none}.v3-pi img+img{opacity:0}.v3-pi:hover img+img{opacity:1}.v3-pi:hover img{transform:scale(1.04)}
+.v3-st{font-size:clamp(36px,4vw,64px);line-height:1.02;letter-spacing:-.025em;font-weight:300;margin:0 0 22px}
+.v3-it h3{font-size:clamp(22px,1.8vw,27px);font-weight:500;letter-spacing:0;margin-top:6px}
+.v3-it p{margin:14px 0 0;font-size:17px;line-height:1.75;max-width:40ch}
 .v3-it .hr{margin-top:14px;font-size:15px;color:var(--i2)}
 .v3-op{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-size:15px;font-weight:500}
 .v3-op i{width:8px;height:8px;border-radius:50%;background:#B9BCC2}.v3-op.on i{background:#1E9E6A}
@@ -57,7 +57,7 @@ body:has(.v3){background:#fff}
 .v3-ac a{font:500 14px var(--sans,sans-serif);padding:13px 20px;text-decoration:none;background:var(--g1);color:var(--ink);transition:background .3s,color .3s,transform .3s var(--e)}
 .v3-ac a:first-child,.v3-ac a:hover{background:var(--ink);color:#fff}.v3-ac a:active{transform:scale(.97)}
 .v3-dk{background:var(--k);color:#fff;padding:clamp(100px,11vw,180px) 0;margin-top:clamp(40px,5vw,80px)}
-.v3-dk h2{font-size:clamp(52px,7.4vw,124px);line-height:.88;letter-spacing:-.055em;margin-bottom:clamp(40px,5vw,72px)}
+.v3-dk h2{font-size:clamp(52px,7.4vw,124px);line-height:1;letter-spacing:-.03em;margin-bottom:clamp(40px,5vw,72px)}
 .v3-tb{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:4px}
 .v3-tb a{display:flex;flex-direction:column;justify-content:space-between;min-height:220px;padding:26px;background:rgba(0,0,0,.18);color:#fff;text-decoration:none;transition:background .45s var(--e),color .45s}
 .v3-tb a:hover{background:#fff;color:var(--ink)}
@@ -68,7 +68,7 @@ body:has(.v3){background:#fff}
 .v3-fl button{font:500 15px var(--sans,sans-serif);padding:14px 22px;border:0;background:var(--g1);color:var(--ink);cursor:pointer;transition:background .3s,color .3s}
 .v3-fl button[aria-pressed=true]{background:var(--ink);color:#fff}
 .v3-fl input{flex:1;min-width:220px;height:52px;border:0;background:var(--g1);padding:0 20px;font:17px var(--sans,sans-serif);color:var(--ink);outline-offset:2px}
-.v3-ls a{display:grid;grid-template-columns:1.4fr 1.4fr 1fr 28px;gap:18px;align-items:center;padding:22px 20px;color:var(--ink);text-decoration:none;transition:background .3s,padding .5s var(--e)}
+.v3-ls a{display:grid;grid-template-columns:1.4fr 1.4fr 1fr 28px;gap:18px;align-items:center;padding:28px 24px;color:var(--ink);text-decoration:none;transition:background .3s,padding .5s var(--e)}
 .v3-ls a:nth-child(odd){background:var(--g1)}
 .v3-ls a:hover{background:var(--ink);color:#fff;padding-left:30px}
 .v3-ls b{font-size:21px;font-weight:400;letter-spacing:-.015em}
@@ -81,7 +81,7 @@ body:has(.v3){background:#fff}
 .v3-ot svg{width:22px;height:22px}.v3-ot a:hover{background:var(--ink);color:#fff;transform:translateY(-3px)}
 .v3-mm{margin-top:clamp(120px,13vw,220px);background:var(--g1);color:var(--ink)}.v3-mm .v3-ot a{background:#fff;color:var(--ink)}.v3-mm .v3-ot a:hover{background:#fff;color:var(--ink)}
 .v3-end{display:grid;grid-template-columns:1fr auto;align-items:end;gap:30px;padding:clamp(120px,13vw,220px) 0 clamp(80px,9vw,140px)}
-.v3-end h2{font-size:clamp(52px,7.4vw,124px);line-height:.88;letter-spacing:-.055em}
+.v3-end h2{font-size:clamp(52px,7.4vw,124px);line-height:1;letter-spacing:-.03em}
 .v3-end a{background:var(--k);color:#fff;text-decoration:none;padding:20px 30px;font:500 16px var(--sans,sans-serif);transition:transform .35s var(--e)}.v3-end a:hover{transform:translateY(-3px)}
 .v3-rv>*{opacity:0;transform:translateY(26px);transition:opacity 1s var(--e),transform 1s var(--e)}
 .v3-rv.on>*{opacity:1;transform:none}
@@ -108,6 +108,7 @@ document.querySelectorAll('.v3-fl button').forEach(b=>b.onclick=()=>{f=b.dataset
 if(q)q.oninput=run;if(more)more.onclick=()=>{all=true;run()};run()})()</script>'''
 
 CK = {'japoneses':'#B3262D','pizzarias':'#C8442B','padarias':'#B07A1E','restaurantes':'#2F4A36','bares':'#6B1E2E','noite':'#2A2350','cafes':'#6A4630','docerias':'#B0476F','sorveterias':'#2C7FA8','churrascarias':'#7A2A1C','hamburguerias':'#B5551E','parques':'#2E5E44','cultura':'#22407A'}
+FAC = {'speranza-1','casale-1','djapa-1','hito-1','kinoshita-1','yakitori-1','pingo-1','padoca-1','padoca-2','boston-1'}
 def gm(l): return f'https://www.google.com/maps/dir/?api=1&destination={l["lat"]},{l["lon"]}'
 def rua(l):
     e = (l.get('end') or '').strip()
@@ -131,7 +132,7 @@ def render_cat(cat, L, cs, u, wa, img_base, titulo, intro, ld):
         return (f'<a href="{gm(l)}" target="_blank" rel="noopener">Como chegar</a>' + (f'<a href="{esc(l["site"])}" target="_blank" rel="noopener nofollow">Site</a>' if l.get('site') else '')
                 + (f'<a href="tel:{esc("".join(c for c in l["tel"] if c.isdigit() or c=="+"))}">Ligar</a>' if l.get('tel') else ''))
     from moema_idx import hum
-    fe = ''.join(f'<article class="v3-it v3-rv" data-h="{esc(l.get("horario"))}"><div class="v3-pi v3-zz">' + ''.join(f'<img src="{img_base}{LB}{f}.jpg" alt="{esc(l["nome"])}, Moema" loading="lazy">' for f in FOTOS[l['nome']][:2])
+    fe = ''.join(f'<article class="v3-it v3-rv" data-h="{esc(l.get("horario"))}"><div class="v3-pi v3-zz">' + ''.join(f'<img{" class=\"pb\"" if f in FAC else ""} src="{img_base}{LB}{f}.jpg" alt="{esc(l["nome"])}, Moema" loading="lazy">' for f in FOTOS[l['nome']][:2])
                  + f'</div><div><p class="v3-st">{esc(rua(l))}</p><h3>{esc(l["nome"])}</h3>' + (f'<p>{esc(l["nota"])}</p>' if l.get('nota') else '')
                  + (f'<div class="hr">{esc(hum(l.get("horario")))}</div>' if l.get('horario') else '') + f'<div class="v3-op"><i></i><em>Horário não informado</em></div><div class="v3-ac">{acts(l)}</div></div></article>' for l in com)
     tb = ''.join(f'<a href="{gm(l)}" target="_blank" rel="noopener" data-h="{esc(l.get("horario"))}">{ico(key)}<div><b>{esc(l["nome"])}</b><span>{esc(rua(l))}</span></div></a>' for l in sem)
