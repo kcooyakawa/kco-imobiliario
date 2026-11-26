@@ -1325,12 +1325,15 @@ def build_mapa():
 def build_moema_cats():
     import moema_cat, mapa_page
     L = json.load(open(os.path.join(ROOT, 'mapa', 'locais.json'), encoding='utf-8'))['locais']
+    IMGB = 'https://kcooyakawa.github.io/kco-imobiliario/w3w-img/'
+    md = os.path.join(ROOT, '..', 'w3w-img', 'moema')
+    IMGOK = {f.rsplit('.', 1)[0]: 'moema/' + f for f in (os.listdir(md) if os.path.isdir(md) else []) if f.lower().endswith(('.jpg', '.jpeg', '.png', '.webp'))}
     for c, n in moema_cat.cats_validas(L, mapa_page.CATS):
         t, intro = moema_cat.TXT.get(c[0], (f'{c[1]} em Moema', ''))
         pg = head(f'{t} | Guia Moema · W3W Imóveis', (intro or f'{c[1]} em Moema com endereço, horário e como chegar.')[:158], 'moema/' + c[0])
-        write(f'moema/{c[0]}/index.html', pg + header('guia-moema') + moema_cat.render(c, L, mapa_page.CATS, u, wa) + footer())
+        write(f'moema/{c[0]}/index.html', pg + header('guia-moema') + moema_cat.render(c, L, mapa_page.CATS, u, wa, IMGB, IMGOK) + footer())
     pg = head('Moema por categoria | Guia Moema · W3W Imóveis', 'Restaurantes, cafés, padarias, bares, serviços e lazer de Moema organizados por categoria pela W3W Imóveis.', 'moema')
-    write('moema/index.html', pg + header('guia-moema') + moema_cat.render_index(L, mapa_page.CATS, u, wa) + footer())
+    write('moema/index.html', pg + header('guia-moema') + moema_cat.render_index(L, mapa_page.CATS, u, wa, IMGB, IMGOK) + footer())
 
 def build_servicos():
     import servicos
