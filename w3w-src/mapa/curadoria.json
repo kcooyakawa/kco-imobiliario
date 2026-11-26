@@ -281,5 +281,10 @@
   "tel": "(11) 95470-6282",
   "horario": "Mo-Su 12:00-22:00",
   "destaque": true
+ },
+ {
+  "id": "r14660926",
+  "nome": "Chico Hamburger",
+  "destaque": true
  }
 ]

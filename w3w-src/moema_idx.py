@@ -34,7 +34,7 @@ GR = [('Comer bem', 'gastronomia', ['restaurantes','pizzarias','japoneses','chur
       ('A noite', 'noite', ['bares','noite']),
       ('Viver o bairro', 'vida', ['parques','cultura','academias','hoteis']),
       ('Dia a dia', 'servicos', ['mercados','farmacias','saude','pet','estetica','cabeleireiros','escolas','faculdades','concessionarias','oficinas','postos'])]
-FOTO_EXTRA = {"churrascarias": "moema/locais/gm-29b554724b.jpg", "hamburguerias": "moema/locais/k-burger.jpg", "cafes": "moema/locais/k-cafe.jpg", "docerias": "moema/locais/gm-5e5dcc50f4.jpg", "bares": "moema/locais/gm-5654ef8c06.jpg", "noite": "moema/locais/gm-89cc7cf948.jpg", "restaurantes": "moema/locais/gm-c71d70184b.jpg", "sorveterias": "moema/locais/k-bacio0.jpg"}
+FOTO_EXTRA = {"churrascarias": "moema/locais/gm-29b554724b.jpg", "hamburguerias": "moema/locais/k-chico1.jpg", "cafes": "moema/locais/k-cafe.jpg", "docerias": "moema/locais/gm-5e5dcc50f4.jpg", "bares": "moema/locais/gm-5654ef8c06.jpg", "noite": "moema/locais/gm-89cc7cf948.jpg", "restaurantes": "moema/locais/gm-c71d70184b.jpg", "sorveterias": "moema/locais/k-gelato.jpg", "padarias": "moema/locais/boston-2.jpg"}
 FOTO = {'pizzarias':'moema/pizzarias.jpg','japoneses':'moema/japoneses.jpg','padarias':'moema/padarias.jpg','parques':'guia/alameda-parque.jpg','cultura':'guia/auditorio-ibirapuera.jpg'}
 FOTO.update(FOTO_EXTRA)
 
