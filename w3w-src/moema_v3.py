@@ -87,6 +87,7 @@ body:has(.v3){background:#fff}
 .v3-rv.on>*{opacity:1;transform:none}
 .v3-rv.on>*:nth-child(2){transition-delay:.08s}.v3-rv.on>*:nth-child(3){transition-delay:.16s}.v3-rv.on>*:nth-child(4){transition-delay:.24s}
 .v3-pi.v3-zz img:first-child{transform:scale(1.12)}.v3-it.on .v3-pi img:first-child{transform:scale(1)}
+@media(hover:none){.v3-pi.cor img.pb{filter:none}.v3-pi.cor2 img+img{opacity:1}}
 @media(max-width:860px){.v3-hg,.v3-it,.v3-it:nth-of-type(even),.v3-end{grid-template-columns:1fr}.v3-it:nth-of-type(even) .v3-pi{order:0}.v3-mo{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto}.v3-mo figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}.v3-mo figure{aspect-ratio:1}.v3-ls a{grid-template-columns:1fr auto}.v3-ls .ad{display:none}}
 @media(prefers-reduced-motion:reduce){.v3 *{animation:none!important;transition:none!important}.v3-rv>*{opacity:1;transform:none}}
 </style>'''
@@ -102,6 +103,7 @@ let tot=0,ab=0;document.querySelectorAll('[data-h]').forEach(el=>{const o=open(e
 const lv=document.getElementById('v3Live');if(lv)lv.innerHTML=`<i></i>Agora, <b>${ab}</b> de ${tot} estão abertos.`;
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{rootMargin:'0px 0px -10% 0px'});document.querySelectorAll('.v3-rv').forEach(el=>io.observe(el));
 const mo=[...document.querySelectorAll('.v3-bd img')];if(mo.length&&!matchMedia('(prefers-reduced-motion: reduce)').matches){let t=0;addEventListener('scroll',()=>{if(t)return;t=requestAnimationFrame(()=>{t=0;const y=scrollY;mo.forEach((im,i)=>im.style.transform=`translateY(${y*.12}px)`)})},{passive:true})}
+if(matchMedia('(hover: none)').matches){const io2=new IntersectionObserver(es=>es.forEach(e=>{const p=e.target;clearTimeout(p._t);if(e.isIntersecting){p.classList.add('cor');p._t=setTimeout(()=>p.classList.add('cor2'),1600)}else{p.classList.remove('cor','cor2')}}),{rootMargin:'-30% 0px -30% 0px'});document.querySelectorAll('.v3-pi').forEach(p=>io2.observe(p))}
 const q=document.getElementById('v3Q'),it=[...document.querySelectorAll('.v3-ls a')],n=document.getElementById('v3N'),more=document.getElementById('v3More');let f='t',all=false;const nm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
 function run(){const t=nm(q?q.value:'');let c=0,shown=0;it.forEach(a=>{const ok=(!t||nm(a.textContent).includes(t))&&(f==='t'||a.dataset.o==='1');if(ok)c++;const vis=ok&&(all||t||shown<14);if(vis)shown++;a.style.display=vis?'':'none'});if(n)n.textContent=c+(c===1?' lugar':' lugares');if(more)more.hidden=all||!!t||c<=14}
 document.querySelectorAll('.v3-fl button').forEach(b=>b.onclick=()=>{f=b.dataset.f;document.querySelectorAll('.v3-fl button').forEach(x=>x.setAttribute('aria-pressed',x===b));run()});
@@ -125,7 +127,8 @@ def render_cat(cat, L, cs, u, wa, img_base, titulo, intro, ld):
     ind = [l for l in it if l.get('destaque')]
     com = [l for l in ind if FOTOS.get(l['nome'])]; sem = [l for l in ind if not FOTOS.get(l['nome'])]
     resto = sorted([l for l in it if not l.get('destaque')], key=lambda l: l['nome'].lower())
-    fotos = ([FOTO[key]] if key in FOTO else []) + [(lambda f: f if f.startswith('gps') else LB + f + '.jpg')(FOTOS[l['nome']][-1]) for l in com]
+    HERO = {'restaurantes':'gps-cs-s/ANWiy9SdasrHy0tFBddBcznhCeSTsnYj4aP8S-0ONyrBI4Fi7IE0GWd6gx5fCo2drmrzkkJA4-in5_qnVeK3cJoV1wmDAHTwR9_O2f7F_0KmFuMXDCcrQ1joyQZvywtZhmEX-wFj7UHa'}
+    fotos = ([HERO[key]] if key in HERO else []) + ([FOTO[key]] if key in FOTO else []) + [(lambda f: f if f.startswith('gps') else LB + f + '.jpg')(FOTOS[l['nome']][-1]) for l in com]
     fotos = fotos[:3]
     H = lambda f: f'https://lh3.googleusercontent.com/{f}=w2000' if f.startswith('gps') else img_base + f
     bd = f'<div class="v3-bd"><img src="{H(fotos[0])}" alt="{esc(label)} em Moema" loading="eager"></div>' if fotos else f'<div class="v3-bd"><div class="ph">{ico(key)}</div></div>'
