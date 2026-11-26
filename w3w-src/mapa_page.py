@@ -260,6 +260,78 @@ body:has(.mp) .wa{bottom:22px!important;right:20px!important}
 .mp-cta{left:20px!important;right:auto!important;bottom:52px!important;top:auto!important;max-width:340px}
 }
 @media(max-width:900px){.mp-tools .mp-upd{display:none}}
+/* atalhos */
+.mp-ints{position:absolute;left:10px;right:10px;bottom:76px;z-index:6;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:4px 2px;mask-image:linear-gradient(90deg,#000 88%,transparent)}
+.mp-ints::-webkit-scrollbar{display:none}
+.mp-ints button{flex:none;display:inline-flex;align-items:center;gap:7px;height:38px;padding:0 15px;border-radius:999px;border:0;cursor:pointer;font:500 13px var(--sans);color:#E9EBEE;background:linear-gradient(160deg,rgba(58,66,79,.94),rgba(34,40,49,.96));box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 10px 24px -14px rgba(10,14,20,.6);transition:transform .25s var(--e),background .25s}
+.mp-ints button:active{transform:scale(.96)}
+.mp-ints button svg{width:15px;height:15px}
+.mp-ints button[aria-pressed=true]{background:#F3F2EF;color:#1C2129}
+.mp-ints button.ld svg{animation:mpspin 1s linear infinite}
+@keyframes mpspin{to{transform:rotate(360deg)}}
+.mp:has(.mp-card.on) .mp-ints,.mp.rota .mp-ints,.mp.rota .mp-msb{opacity:0;pointer-events:none}
+.mp-ints,.mp-msb{transition:opacity .3s}
+@media(min-width:901px){.mp-ints{left:50%;right:auto;transform:translateX(-50%);width:min(760px,calc(100% - 200px));bottom:86px;justify-content:center}.mp-grid{bottom:140px!important}}
+@media(max-width:900px){.mp-grid{bottom:126px!important}}
+.mp.lista .mp-ints{opacity:1}
+/* eu */
+.mp-me{width:18px;height:18px;border-radius:50%;background:#2F6FD0;border:3px solid #fff;box-shadow:0 0 0 0 rgba(47,111,208,.5);animation:mpme 2s infinite}
+@keyframes mpme{70%{box-shadow:0 0 0 16px rgba(47,111,208,0)}100%{box-shadow:0 0 0 0 rgba(47,111,208,0)}}
+/* aviso */
+.mp-toast{position:absolute;left:50%;bottom:136px;z-index:9;transform:translate(-50%,12px);width:min(440px,calc(100% - 24px));padding:14px 18px;border-radius:18px;font:14px/1.45 var(--sans);color:#E9EBEE;background:linear-gradient(160deg,rgba(58,66,79,.97),rgba(34,40,49,.98));box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 24px 48px -18px rgba(10,14,20,.6);opacity:0;pointer-events:none;transition:all .45s var(--e);cursor:pointer}
+.mp-toast.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+.mp-toast strong{color:#fff;font-weight:500}.mp-toast u{color:#8DB8FF;text-underline-offset:3px}
+@media(min-width:901px){.mp-toast{bottom:146px}}
+/* botão ? */
+.mp-mob .hq{flex:none;width:36px;height:36px;border-radius:50%;border:0;cursor:pointer;margin-left:auto;margin-right:6px;font:500 15px var(--sans);color:#F3F2EF;background:rgba(255,255,255,.09)}
+.mp-mob .gm{margin-left:0}
+/* folha (sobre / roteiros) */
+.mp-sheet{position:absolute;inset:0;z-index:20;background:rgba(14,17,22,.35);backdrop-filter:blur(4px);display:flex;align-items:flex-end;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s}
+.mp-sheet.on{opacity:1;pointer-events:auto}
+.mp-sheet .in{position:relative;width:min(620px,100%);max-height:88%;overflow-y:auto;margin:12px;padding:30px 26px 26px;border-radius:28px;color:#F3F2EF;background:linear-gradient(160deg,#3A424F,#222831);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 40px 80px -30px rgba(0,0,0,.6);transform:translateY(30px);transition:transform .5s var(--e)}
+.mp-sheet.on .in{transform:none}
+.mp-sheet .x{position:absolute;right:16px;top:16px;width:34px;height:34px;border-radius:50%;border:0;cursor:pointer;color:#F3F2EF;background:rgba(255,255,255,.09)}
+.mp-sheet .ey,.mp-rt .ey{font:500 10.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#8DB8FF}
+.mp-sheet h3{font:300 clamp(30px,6vw,40px)/1 var(--sans);letter-spacing:-.04em;margin:12px 0 14px}
+.mp-sheet h3 em{font-family:var(--serif);font-style:italic;color:#8DB8FF}
+.mp-sheet h4{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#8F98A6;margin:26px 0 8px}
+.mp-sheet p{margin:0;font:14.5px/1.55 var(--sans);color:#C5CBD4}.mp-sheet p.ld{font-size:16px;color:#E3E6EA}
+.mp-sheet .sb{display:grid;gap:10px;margin-top:20px}
+.mp-sheet .sb div{display:grid;grid-template-columns:34px 1fr;gap:2px 10px;padding:14px;border-radius:16px;background:rgba(255,255,255,.06)}
+.mp-sheet .sb b{grid-row:span 2;font:500 11px var(--mono);color:#8DB8FF;padding-top:3px}
+.mp-sheet .sb strong{font:500 15px var(--sans)}.mp-sheet .sb span{font:13.5px/1.45 var(--sans);color:#AEB6C2}
+.mp-sheet .fp{display:grid;gap:10px}@media(min-width:600px){.mp-sheet .fp{grid-template-columns:1fr 1fr}}
+.mp-sheet .fp a{display:flex;flex-direction:column;gap:6px;padding:18px;border-radius:18px;text-decoration:none;color:#F3F2EF;background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);transition:background .25s}
+.mp-sheet .fp a:hover{background:rgba(255,255,255,.12)}
+.mp-sheet .fp strong{font:500 15px var(--sans)}.mp-sheet .fp span{font:13px/1.45 var(--sans);color:#AEB6C2}.mp-sheet .fp i{font-style:normal;font:500 13px var(--sans);color:#8DB8FF;margin-top:auto;padding-top:6px}
+.mp-sheet .rl{display:grid;gap:10px}
+.mp-sheet .rl button{display:flex;flex-direction:column;gap:5px;text-align:left;padding:18px;border-radius:18px;border:0;cursor:pointer;color:#F3F2EF;background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);transition:background .25s,transform .25s var(--e)}
+.mp-sheet .rl button:hover{background:rgba(255,255,255,.12)}.mp-sheet .rl button:active{transform:scale(.98)}
+.mp-sheet .rl strong{font:400 20px var(--sans);letter-spacing:-.02em}.mp-sheet .rl span{font:13.5px/1.45 var(--sans);color:#C5CBD4}.mp-sheet .rl small{font:500 10.5px/1.6 var(--mono);color:#8F98A6;letter-spacing:.04em}
+/* faixa do roteiro */
+.mp-rt{position:absolute;left:10px;right:10px;bottom:12px;z-index:7;padding:16px 16px 14px;border-radius:24px;color:#F3F2EF;background:linear-gradient(160deg,rgba(58,66,79,.97),rgba(34,40,49,.98));box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 24px 48px -16px rgba(10,14,20,.6);transform:translateY(130%);transition:transform .5s var(--e)}
+.mp.rota .mp-rt{transform:none}
+.mp-rt .rh{display:flex;align-items:center;gap:10px;margin-bottom:12px}.mp-rt .rh strong{font:400 18px var(--sans);letter-spacing:-.02em;flex:1}
+.mp-rt .x{width:32px;height:32px;border-radius:50%;border:0;cursor:pointer;color:#F3F2EF;background:rgba(255,255,255,.09)}
+.mp-rt .st{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}.mp-rt .st::-webkit-scrollbar{display:none}
+.mp-rt .st button{flex:none;display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:999px;border:0;cursor:pointer;color:#F3F2EF;background:rgba(255,255,255,.07);text-align:left}
+.mp-rt .st i{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font:500 12px var(--mono);font-style:normal;background:#F3F2EF;color:#1C2129}
+.mp-rt .st span{font:500 13.5px var(--sans);white-space:nowrap}.mp-rt .st small{display:block;font:11px var(--sans);color:#8F98A6}
+@media(min-width:901px){.mp-rt{left:50%;right:auto;width:min(760px,calc(100% - 200px));transform:translate(-50%,130%)}.mp.rota .mp-rt{transform:translate(-50%,0)}}
+.mp.rota .mp-card.on~.mp-rt,.mp.rota:has(.mp-card.on) .mp-rt{opacity:0;pointer-events:none}
+/* cartão do lugar mais bonito */
+.mp-card{padding:0!important;overflow:hidden}
+.mp-card .bn{height:92px;padding:18px 22px;display:flex;align-items:flex-end;gap:8px;background:radial-gradient(120% 140% at 0% 0%,color-mix(in srgb,var(--c) 85%,#fff 15%),color-mix(in srgb,var(--c) 70%,#1C2129 30%));position:relative}
+.mp-card .bn::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.07) 0 2px,transparent 2px 14px);pointer-events:none}
+.mp-card .bn .cat{color:#fff!important;font:500 10.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;position:relative;z-index:1}
+.mp-card .bn .w3{position:relative;z-index:1;font:500 10px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#1C2129;background:#F3F2EF;padding:4px 8px;border-radius:999px}
+.mp-card h2,.mp-card>p,.mp-card>.mp-st,.mp-card .hrs,.mp-card .acts,.mp-card .mp-fix,.mp-card .dist{margin-left:22px!important;margin-right:22px!important}
+.mp-card h2{margin-top:18px!important}
+.mp-card .mp-fix{display:block;margin-bottom:20px!important;margin-top:14px}
+.mp-card .dist{display:block;font:500 11px var(--mono);letter-spacing:.06em;color:#2F6FD0;margin:-2px 0 8px}
+.mp-card .x,.mp-card .fv{background:rgba(255,255,255,.85)!important;backdrop-filter:blur(8px);z-index:2}
+.mp-card>.mp-st{display:inline-block}
+body:has(.mp.rota) .wa,body:has(.mp-sheet.on) .wa{opacity:0;pointer-events:none}
 </style>
 """
 
@@ -339,7 +411,7 @@ const geo=L=>({type:'FeatureCollection',features:L.map(l=>({type:'Feature',id:ha
 const hash=s=>{let h=0;for(const c of s)h=(h*31+c.charCodeAt(0))|0;return Math.abs(h)};
 const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function pick(id,fly){const l=ALL.find(x=>x.id===id);if(!l)return;sel=id;const st=status(l.horario),c=CM[l.cat];
-$('#mpCard').innerHTML=`<button class="x" aria-label="Fechar">✕</button><button class="fv${FAV.has(l.id)?' on':''}" aria-label="Favoritar" aria-pressed="${FAV.has(l.id)}">${FAV.has(l.id)?'♥':'♡'}</button><span class="cat" style="color:${c[2]}">${c[1]}${l.destaque?' · W3W indica':''}</span><h2>${esc(l.nome)}</h2>${st.k!=='?'?`<span class="mp-st ${st.k}">${st.t}</span>`:''}${l.nota?`<p>${esc(l.nota)}</p>`:''}${l.end?`<p>${esc(l.end)}</p>`:''}${l.horario?`<div class="hrs">${esc(human(l.horario))}${l.conferido?'<br><span style="color:#1E9E6A">✓ Confirmado pela W3W</span>':(l.fonte_horario==='site'?'<br><span style="opacity:.7">Conforme o site do estabelecimento</span>':'')}</div>`:''}
+$('#mpCard').innerHTML=`<button class="x" aria-label="Fechar">✕</button><button class="fv${FAV.has(l.id)?' on':''}" aria-label="Favoritar" aria-pressed="${FAV.has(l.id)}">${FAV.has(l.id)?'♥':'♡'}</button><div class="bn" style="--c:${c[2]}"><span class="cat">${c[1]}</span>${l.destaque?'<span class="w3">W3W indica</span>':''}</div><h2>${esc(l.nome)}</h2>${window.mpKm&&window.mpKm(l)!=null?`<span class="dist">${window.mpKm(l)<1?Math.round(window.mpKm(l)*1000)+' m':window.mpKm(l).toFixed(1).replace('.',',')+' km'} de você · ${Math.max(1,Math.round(window.mpKm(l)*13))} min a pé</span>`:''}${st.k!=='?'?`<span class="mp-st ${st.k}">${st.t}</span>`:''}${l.nota?`<p>${esc(l.nota)}</p>`:''}${l.end?`<p>${esc(l.end)}</p>`:''}${l.horario?`<div class="hrs">${esc(human(l.horario))}${l.conferido?'<br><span style="color:#1E9E6A">✓ Confirmado pela W3W</span>':(l.fonte_horario==='site'?'<br><span style="opacity:.7">Conforme o site do estabelecimento</span>':'')}</div>`:''}
 <div class="acts"><a class="mp-btn p" href="https://www.google.com/maps/dir/?api=1&destination=${l.lat},${l.lon}" target="_blank" rel="noopener">Como chegar</a>${l.site?`<a class="mp-btn" href="${esc(l.site)}" target="_blank" rel="noopener">Site</a>`:''}${l.tel?`<a class="mp-btn" href="tel:${esc(l.tel.replace(/[^+\d]/g,''))}">Ligar</a>`:''}</div><a class="mp-fix" href="https://wa.me/5511940297871?text=${encodeURIComponent('Olá! Sou do '+l.nome+' e quero atualizar nosso horário no Mapa de Moema: ')}" target="_blank" rel="noopener">${l.horario?'Horário errado? Avise a W3W':'É o responsável? Informe o horário'} →</a>`;
 $('#mpCard').classList.add('on');$('#mpCard .fv').onclick=()=>{toggleFav(id);pick(id,false)};$('#mpCard .x').onclick=()=>{$('#mpCard').classList.remove('on');sel=null;pop&&pop.remove();$('#mpPanel').classList.remove('min');if(map)map.setFilter('sel',['==',['get','id'],'']);draw()};
 if(map){map.setFilter('sel',['==',['get','id'],id]);if(fly)map.flyTo({center:[l.lon,l.lat],zoom:Math.max(map.getZoom(),16.2),pitch:55,bearing:-18,padding:pad(),duration:R?0:1600,essential:true})}
@@ -367,6 +439,66 @@ sg.classList.add('on');sg.querySelectorAll('button').forEach(b=>b.onclick=()=>go
 q.addEventListener('input',show);q.addEventListener('focus',show);
 q.addEventListener('keydown',e=>{const bs=[...sg.querySelectorAll('button')];if(e.key==='Enter'){e.preventDefault();if(res.length)go(res[Math.max(ix,0)])}else if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();ix=(ix+(e.key==='ArrowDown'?1:-1)+bs.length)%bs.length;bs.forEach((b,i)=>b.classList.toggle('k',i===ix))}else if(e.key==='Escape')close()});
 document.addEventListener('pointerdown',e=>{if(!q.parentNode.contains(e.target))close()});})();
+/* ===== intenções, perto de mim, roteiros, sobre ===== */
+(()=>{
+const SVG={pin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>',rt:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg>'};
+const INT=[['almoco','Almoço agora',['restaurantes','japoneses','churrascarias','hamburguerias','pizzarias'],1],['cafe','Café para trabalhar',['cafes','padarias','docerias'],1],['noite','Aberto de madrugada',null,1],['kids','Programa com crianças',['parques','cultura','sorveterias','docerias'],0],['pet','Pet',['pet'],0]];
+const ROT=[{id:'sab',t:'Um sábado em Moema',d:'Café da manhã de padaria, parque, almoço sem pressa, doce e jantar.',s:['w521400165','f62842a9da3bf540a7193dd02','w521402703','f519ba195498ede1bb53b5bad','w596585888']},
+{id:'cafe',t:'Rota dos cafés',d:'Cinco paradas para quem trabalha de notebook ou gosta de um bom café.',s:['n12750164559','w1107535725','f4ebc503a30f88739f46f8e79','f530d0215498eb63e492780a7','w732230691']},
+{id:'noite',t:'Noite no bairro',d:'Dos drinques ao som ao vivo, os bares que a W3W indica.',s:['f4bc6606251b376b008881b6f','f5442d69e498eb4249672d239','f50808fd0e4b0134247d7055b','f4beedc262c082d7f58ff3042','n9969076355']}];
+const mp=document.querySelector('.mp');
+/* filtro de intenção dentro de list() */
+const _list=list;window.__it=null;window.__near=null;
+const km=(a,b)=>{const R=6371,t=x=>x*Math.PI/180,dl=t(b[1]-a[1]),dn=t(b[0]-a[0]);const h=Math.sin(dl/2)**2+Math.cos(t(a[1]))*Math.cos(t(b[1]))*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(h))};
+list=function(ign,noCat){let L=_list(ign,noCat);const it=window.__it&&INT.find(i=>i[0]===window.__it);
+if(it){L=L.filter(l=>it[0]==='noite'?(l.st.k==='h'||(l.st.k==='o'&&['bares','noite','hamburguerias','pizzarias','farmacias','postos','mercados'].includes(l.cat))):(it[2].includes(l.cat)&&(!it[3]||l.st.k==='o'||l.st.k==='h')))}
+if(window.__near){L.forEach(l=>l.km=km(window.__near,[l.lon,l.lat]));L.sort((a,b)=>a.km-b.km)}return L};
+window.mpKm=l=>window.__near?km(window.__near,[l.lon,l.lat]):null;
+/* faixa de atalhos acima da busca */
+const bar=document.createElement('div');bar.className='mp-ints';
+bar.innerHTML=`<button data-a="near">${SVG.pin}Perto de mim</button><button data-a="rot">${SVG.rt}Roteiros W3W</button>`+INT.map(i=>`<button data-i="${i[0]}">${i[1]}</button>`).join('');
+mp.append(bar);
+bar.querySelectorAll('[data-i]').forEach(b=>b.onclick=()=>{const on=window.__it===b.dataset.i;window.__it=on?null:b.dataset.i;bar.querySelectorAll('[data-i]').forEach(x=>x.setAttribute('aria-pressed',x===b&&!on));draw(true)});
+let me=null;
+bar.querySelector('[data-a=near]').onclick=e=>{const b=e.currentTarget;if(window.__near){window.__near=null;b.setAttribute('aria-pressed',false);me&&me.remove();draw();return}
+if(!navigator.geolocation){toast('Seu navegador não permite localização.');return}b.classList.add('ld');
+navigator.geolocation.getCurrentPosition(p=>{b.classList.remove('ld');const c=[p.coords.longitude,p.coords.latitude];
+if(km(c,[-46.664,-23.601])>6){toast('Você está fora de Moema. Mostrando o centro do bairro.');window.__near=[-46.664,-23.601]}else window.__near=c;
+b.setAttribute('aria-pressed',true);if(map&&window.maplibregl){const el=document.createElement('div');el.className='mp-me';me&&me.remove();me=new maplibregl.Marker({element:el}).setLngLat(window.__near).addTo(map);map.flyTo({center:window.__near,zoom:16,pitch:45,duration:1400})}draw()},
+()=>{b.classList.remove('ld');toast('Não foi possível pegar sua localização. Verifique a permissão do navegador.')},{enableHighAccuracy:true,timeout:9000})};
+/* roteiros */
+const sh=document.createElement('div');sh.className='mp-sheet';mp.append(sh);
+const openSheet=h=>{const t=document.querySelector('.mp-toast');t&&t.classList.remove('on');sh.innerHTML=`<div class="in"><button class="x" aria-label="Fechar">✕</button>${h}</div>`;sh.classList.add('on');sh.querySelector('.x').onclick=()=>sh.classList.remove('on');sh.onclick=e=>{if(e.target===sh)sh.classList.remove('on')}};
+bar.querySelector('[data-a=rot]').onclick=()=>{openSheet(`<span class="ey">Roteiros W3W</span><h3>Moema em <em>um passeio.</em></h3><div class="rl">${ROT.map(r=>{const st=r.s.map(id=>ALL.find(l=>l.id===id)).filter(Boolean);return`<button data-r="${r.id}"><strong>${r.t}</strong><span>${r.d}</span><small>${st.map(l=>esc(l.nome)).join(' → ')}</small></button>`}).join('')}</div>`);
+sh.querySelectorAll('[data-r]').forEach(b=>b.onclick=()=>{sh.classList.remove('on');rota(ROT.find(r=>r.id===b.dataset.r))})};
+const strip=document.createElement('div');strip.className='mp-rt';mp.append(strip);
+function rota(r){const st=r.s.map(id=>ALL.find(l=>l.id===id)).filter(Boolean);if(!st.length)return;mp.classList.add('rota');
+strip.innerHTML=`<div class="rh"><span class="ey">Roteiro W3W</span><strong>${r.t}</strong><button class="x" aria-label="Fechar roteiro">✕</button></div><div class="st">${st.map((l,i)=>`<button data-id="${l.id}"><i>${i+1}</i><span>${esc(l.nome)}<small>${CM[l.cat][1]}</small></span></button>`).join('')}</div>`;
+strip.querySelector('.x').onclick=fimRota;strip.querySelectorAll('[data-id]').forEach(b=>b.onclick=()=>pick(b.dataset.id,true));
+if(map&&window.maplibregl){const fc={type:'FeatureCollection',features:[{type:'Feature',geometry:{type:'LineString',coordinates:st.map(l=>[l.lon,l.lat])},properties:{}},...st.map((l,i)=>({type:'Feature',geometry:{type:'Point',coordinates:[l.lon,l.lat]},properties:{n:String(i+1),id:l.id}}))]};
+if(map.getSource('rota'))map.getSource('rota').setData(fc);else{map.addSource('rota',{type:'geojson',data:fc});
+map.addLayer({id:'rota-l',type:'line',source:'rota',filter:['==',['geometry-type'],'LineString'],layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':'#2F3742','line-width':4,'line-dasharray':[0.2,1.8]}});
+map.addLayer({id:'rota-p',type:'circle',source:'rota',filter:['==',['geometry-type'],'Point'],paint:{'circle-radius':13,'circle-color':'#2F3742','circle-stroke-color':'#fff','circle-stroke-width':2.5}});
+map.addLayer({id:'rota-n',type:'symbol',source:'rota',filter:['==',['geometry-type'],'Point'],layout:{'text-field':['get','n'],'text-font':['Noto Sans Regular'],'text-size':12,'text-allow-overlap':true},paint:{'text-color':'#fff'}});
+map.on('click','rota-p',e=>pick(e.features[0].properties.id,true))}
+['rota-l','rota-p','rota-n'].forEach(id=>map.setLayoutProperty(id,'visibility','visible'));
+const b=new maplibregl.LngLatBounds();st.forEach(l=>b.extend([l.lon,l.lat]));map.fitBounds(b,{padding:{top:200,bottom:230,left:60,right:60},pitch:40,duration:1400})}}
+function fimRota(){mp.classList.remove('rota');if(map&&map.getLayer('rota-l'))['rota-l','rota-p','rota-n'].forEach(id=>map.setLayoutProperty(id,'visibility','none'))}
+/* sobre o mapa */
+const WA='https://wa.me/5511940297871?text=';
+const sobre=()=>openSheet(`<span class="ey">Mapa vivo de Moema · W3W</span><h3>O bairro inteiro, <em>num mapa só.</em></h3>
+<p class="ld">Um guia vivo de Moema feito pela W3W Imóveis: restaurantes, cafés, bares, serviços e o que está aberto agora, para quem mora, trabalha ou está chegando no bairro.</p>
+<div class="sb"><div><b>01</b><strong>Ache o que precisa</strong><span>Busque pelo nome ou use os atalhos: almoço agora, café para trabalhar, aberto de madrugada.</span></div><div><b>02</b><strong>Veja o que está aberto</strong><span>Horários conferidos nos sites dos lugares e, quando possível, confirmados pela W3W.</span></div><div><b>03</b><strong>Salve e saia andando</strong><span>Favorite seus lugares, siga os roteiros W3W e abra a rota no seu app de mapas.</span></div></div>
+<h4>Como funciona</h4><p>Os dados vêm de bases abertas (OpenStreetMap e Foursquare), são atualizados duas vezes por semana e passam pela curadoria da W3W, que destaca os lugares que indica.</p>
+<h4>Faça parte</h4><div class="fp"><a href="${WA+encodeURIComponent('Olá! Tenho um negócio em Moema e quero aparecer no Mapa de Moema da W3W.')}" target="_blank" rel="noopener"><strong>Tenho um negócio em Moema</strong><span>Corrija seus dados, confirme o horário ou conheça os planos de destaque, cupom e roteiros.</span><i>Falar com a W3W →</i></a>
+<a href="${WA+encodeURIComponent('Olá! Quero receber as novidades de Moema da W3W.')}" target="_blank" rel="noopener"><strong>Moro ou vou morar em Moema</strong><span>Receba novidades do bairro, lugares novos e roteiros no WhatsApp.</span><i>Quero receber →</i></a></div>`);
+const mob=document.querySelector('.mp-mob');if(mob){const q=document.createElement('button');q.className='hq';q.setAttribute('aria-label','O que é o Mapa de Moema');q.textContent='?';q.onclick=sobre;mob.insertBefore(q,mob.querySelector('.gm'))}
+/* aviso da primeira visita */
+function toast(t,ms=4200){let el=document.querySelector('.mp-toast');if(!el){el=document.createElement('div');el.className='mp-toast';mp.append(el)}el.innerHTML=t;el.classList.add('on');clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove('on'),ms);el.onclick=()=>el.classList.remove('on')}
+window.mpToast=toast;
+let seen=false;try{seen=localStorage.getItem('mpSeen')}catch(e){}
+if(!seen){setTimeout(()=>{toast('<strong>Moema inteira num mapa.</strong> Veja o que está aberto agora, busque, siga os roteiros e salve favoritos. <u>Saiba mais</u>',6500);const el=document.querySelector('.mp-toast');el.onclick=()=>{el.classList.remove('on');sobre()}},1800);try{localStorage.setItem('mpSeen','1')}catch(e){}}
+})();
 setInterval(()=>draw(),60000);new MutationObserver(()=>{const p=$('#mpPanel');if(p.classList.contains('min'))p.scrollTop=0}).observe($('#mpPanel'),{attributes:true,attributeFilter:['class']});
 /* mapa com estilo próprio */
 if(!window.maplibregl)return;
