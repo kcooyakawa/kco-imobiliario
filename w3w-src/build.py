@@ -74,6 +74,7 @@ BAIRROS = {
 }
 
 CSS = r"""
+.bk-vid{margin:0 auto;max-width:1200px;padding:0 20px 48px}.bk-vid video{width:100%;display:block;background:#000;aspect-ratio:16/9;object-fit:cover}.bk-vid-v{max-width:420px}.bk-vid-v video{aspect-ratio:9/16}.bk-vid figcaption{font-size:13px;opacity:.7;margin-top:10px}
 html,body{overflow-x:clip;max-width:100%;overscroll-behavior-x:none}@supports not (overflow-x:clip){body{overflow-x:hidden}}
 .pf-grid .g,.sc{content-visibility:auto;contain-intrinsic-size:auto 420px}
 @font-face{font-family:'PP Editorial New';src:url(__F__/ppeditorial-ultralight.woff2) format('woff2');font-weight:200 300;font-style:normal;font-display:swap}
@@ -926,6 +927,9 @@ def rich(e, h='h2'):
 <section class="bk-open"><div class="bk-meta"><span class="eyebrow">{esc(e['bairro'])} · São Paulo</span><span class="eyebrow">{esc(f['entrega']) if 'ronto' in f['entrega'] else 'Entrega ' + esc(f['entrega'])}</span></div>
 <p class="bk-lead">{esc(f['conceito'])}</p>
 <dl class="bk-sig">{''.join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in f['assinaturas'])}</dl></section>"""
+    for v in f.get('videos', []):  # vídeos do produto (Casas Altas, nov/2026)
+        _auto = 'autoplay muted loop ' if v.get('auto') else ''
+        out += f'<figure class="bk-vid{" bk-vid-v" if v.get("vertical") else ""}"><video {_auto}playsinline controls preload="none" poster="{v["poster"]}"><source src="{v["src"]}" type="video/mp4"></video><figcaption>{esc(v["cap"])}</figcaption></figure>'
     if I.get('fachada'): out += fig(I['fachada'], I.get('fachada_cap', 'Fachada · Perspectiva ilustrada'), 'bk-full')
     out += f"""<section class="lx-num">{''.join(f'<div><strong>{a}</strong><span>{esc(b)}</span></div>' for a, b in f['destaques'])}</section>"""
     if I.get('par'): out += '<section class="bk-pair">' + ''.join(fig(s2, c2) for s2, c2 in I['par']) + '</section>'
@@ -933,6 +937,7 @@ def rich(e, h='h2'):
 {tabs}</section>"""
     if I.get('voo'): out += f'<section class="bk-voo"><img src="{I["voo"]}" alt="Lazer do {esc(nome)}" loading="lazy"><div class="bk-voo-t"><span class="eyebrow">O lazer</span><h3>Um clube <em>dentro de casa.</em></h3></div></section>'
     if I.get('lazer'): out += '<section class="bk-grid">' + ''.join(fig(s2, c2) for s2, c2 in I['lazer']) + '</section>'
+    if f.get('proximo'): out += f'<section class="bk-txt bk-lz"><span class="eyebrow">Nos arredores</span><ul class="bk-list">{"".join(f"<li>{esc(x)}</li>" for x in f["proximo"])}</ul></section>'
     out += f'<section class="bk-txt bk-lz"><span class="eyebrow">Tudo o que o lazer oferece</span><ul class="bk-list">{"".join(f"<li>{esc(x)}</li>" for x in f["lazer"])}</ul></section>'
     if I.get('terraco'): out += fig(I['terraco'], I.get('terraco_cap', 'Terraço, duplex de 572 m²'), 'bk-full')
     _dl = lambda rows: '<dl>' + ''.join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in rows if not re.search(r'endere|localiza|terreno', a, re.I)) + '</dl>'

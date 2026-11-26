@@ -9150,7 +9150,31 @@
       "Living · casa 6"
      ]
     ]
-   }
+   },
+   "videos": [
+    {
+     "src": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/filme.mp4",
+     "poster": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/filme-poster.jpg",
+     "cap": "Filme do empreendimento",
+     "auto": true
+    },
+    {
+     "src": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/marina.mp4",
+     "poster": "https://kcooyakawa.github.io/kco-imobiliario/w3w-img/casas-altas-do-morumbi/marina-poster.jpg",
+     "cap": "Marina Linhares, autora dos interiores, apresenta as casas",
+     "vertical": true
+    }
+   ],
+   "proximo": [
+    "Hospital Albert Einstein, a 8 min",
+    "Shopping Cidade Jardim e Shopping Morumbi",
+    "Jockey Club e Clube Paineiras do Morumby",
+    "Praça Vinícius de Moraes e Parque Alfredo Volpi",
+    "Fundação Maria Luisa e Oscar Americano e Casa de Vidro Lina Bo Bardi",
+    "Colégio Visconde de Porto Seguro, Pio XII, Santo Américo e Avenues",
+    "São Paulo Surf Club",
+    "Acesso rápido às pontes Cidade Jardim e Morumbi"
+   ]
   }
  },
  {

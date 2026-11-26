@@ -1,4 +1,5 @@
 
+.bk-vid{margin:0 auto;max-width:1200px;padding:0 20px 48px}.bk-vid video{width:100%;display:block;background:#000;aspect-ratio:16/9;object-fit:cover}.bk-vid-v{max-width:420px}.bk-vid-v video{aspect-ratio:9/16}.bk-vid figcaption{font-size:13px;opacity:.7;margin-top:10px}
 html,body{overflow-x:clip;max-width:100%;overscroll-behavior-x:none}@supports not (overflow-x:clip){body{overflow-x:hidden}}
 .pf-grid .g,.sc{content-visibility:auto;contain-intrinsic-size:auto 420px}
 @font-face{font-family:'PP Editorial New';src:url(/kco-imobiliario/w3w-fonts/ppeditorial-ultralight.woff2) format('woff2');font-weight:200 300;font-style:normal;font-display:swap}
