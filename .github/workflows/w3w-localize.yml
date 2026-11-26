@@ -2,7 +2,7 @@ name: W3W localizar imagens
 on:
   workflow_dispatch:
   push:
-    paths: ['w3w-src/empreendimentos.json','w3w-src/localize.py','w3w-src/localize_site.py','w3w-src/guia_capas.py']
+    paths: ['w3w-src/empreendimentos.json','w3w-src/localize.py','w3w-src/localize_site.py']
 permissions:
   contents: write
 jobs:
@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - run: pip install pillow pillow-avif-plugin
-      - run: cd w3w-src && python guia_capas.py && python localize_site.py && python localize.py && python build.py
+      - run: cd w3w-src && python localize_site.py && python localize.py && python build.py
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

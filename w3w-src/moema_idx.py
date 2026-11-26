@@ -36,9 +36,6 @@ GR = [('Comer bem', 'gastronomia', ['restaurantes','pizzarias','japoneses','chur
       ('Dia a dia', 'servicos', ['mercados','farmacias','saude','pet','estetica','cabeleireiros','escolas','faculdades','concessionarias','oficinas','postos'])]
 FOTO_EXTRA = {"churrascarias": "moema/locais/gm-29b554724b.jpg", "hamburguerias": "moema/locais/k-chico1.jpg", "cafes": "moema/locais/k-cafe.jpg", "docerias": "moema/locais/gm-5e5dcc50f4.jpg", "bares": "moema/locais/gm-5654ef8c06.jpg", "noite": "moema/locais/gm-89cc7cf948.jpg", "restaurantes": "moema/locais/gm-c71d70184b.jpg", "sorveterias": "moema/locais/k-gelato.jpg", "padarias": "moema/locais/boston-2.jpg", "concessionarias": "moema/u-concessionarias.jpg", "hoteis": "moema/u-hoteis.jpg", "cabeleireiros": "moema/u-cabeleireiros.jpg", "mercados": "moema/u-mercados.jpg", "estetica": "moema/u-estetica.jpg", "faculdades": "moema/u-faculdades.jpg", "academias": "moema/u-academias.jpg", "pet": "moema/u-pet.jpg", "oficinas": "moema/u-oficinas.jpg", "escolas": "moema/u-escolas.jpg", "postos": "moema/u-postos.jpg", "saude": "moema/u-saude.jpg", "farmacias": "moema/u-farmacias.jpg"}
 FOTO = {'pizzarias':'moema/pizzarias.jpg','japoneses':'moema/japoneses.jpg','padarias':'moema/padarias.jpg','parques':'guia/alameda-parque.jpg','cultura':'guia/auditorio-ibirapuera.jpg'}
-import os as _o
-for _c in ('academias','hoteis','mercados','farmacias','cabeleireiros','pet','escolas','concessionarias','estetica','faculdades','oficinas','postos','saude'):
-    if _o.path.exists(_o.path.join(_o.path.dirname(_o.path.abspath(__file__)),'..','w3w-img','moema',_c+'.jpg')): FOTO.setdefault(_c,'moema/'+_c+'.jpg')
 FOTO.update(FOTO_EXTRA)
 
 def ico(k): return f'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="{P.get(k, "M12 4v16M4 12h16")}"/></svg>'
