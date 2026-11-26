@@ -9,7 +9,7 @@ except Exception:  # fallback sem ícones
 def ic(n):
     return _svg(n)
 
-IMG = '../../../w3w-img/deck/kit/'
+IMG = '../../../../w3w-img/deck/kit/'
 WA = 'https://wa.me/5511992460734?text=' + 'Ol%C3%A1%20Wilson!%20Vi%20a%20apresenta%C3%A7%C3%A3o%20do%20Kit%20Boas-vindas%20Moema%20e%20quero%20conversar%20sobre%20a%20parceria.'
 
 CSS = r'''

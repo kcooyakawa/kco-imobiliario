@@ -1351,8 +1351,10 @@ def build_moema_cats():
     write('moema/index.html', pg + header('guia-moema') + moema_cat.render_index(L, mapa_page.CATS, u, wa, IMGB, IMGOK) + footer())
 
 def build_deck_kit():
-    import deck_kit
-    write('deck/kit-boas-vindas-moema/index.html', deck_kit.render())
+    import deck_kit_v001, deck_kit_v002
+    write('deck/kit-boas-vindas-moema/index.html', deck_kit_v002.render('../../../w3w-img/deck/kit/'))
+    write('deck/kit-boas-vindas-moema/v002/index.html', deck_kit_v002.render('../../../../w3w-img/deck/kit/'))
+    write('deck/kit-boas-vindas-moema/v001/index.html', deck_kit_v001.render())
 
 def build_servicos():
     import servicos
