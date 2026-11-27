@@ -16,20 +16,37 @@ function count(el){var t=el.textContent,m=t.match(/^([\d.,]+)(.*)$/);if(!m)retur
 window.W3WMotion=init;
 document.querySelectorAll('main .lx').forEach(init);
 })();
-/* Menu mobile: fecha ao clicar num link e rola direto pra seção */
+/* Menu: fecha ao clicar e leva até a seção certa, corrigindo a rota enquanto imagens carregam */
 (function(){
-function nav(){return document.querySelector('.nav')}
-function close(){var n=nav();if(!n)return;n.classList.remove('open');var b=document.querySelector('.burger');if(b)b.setAttribute('aria-expanded','false')}
-document.addEventListener('click',function(e){
-  var a=e.target.closest&&e.target.closest('.nav a');if(!a)return;
-  var n=nav();if(!n||!n.classList.contains('open')){return}
-  var u=new URL(a.href,location.href);
-  close();
-  if(u.hash&&u.pathname.replace(/index\.html$/,'')===location.pathname.replace(/index\.html$/,'')){
-    var t=document.getElementById(decodeURIComponent(u.hash.slice(1)));
-    if(t){e.preventDefault();history.pushState(null,'',u.hash);
-      setTimeout(function(){t.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})},60)}
+var OFF=80,rm=matchMedia('(prefers-reduced-motion: reduce)').matches,job=0;
+function hdr(){var h=document.querySelector('.hd');return h?h.getBoundingClientRect().height+8:OFF}
+function close(){var n=document.querySelector('.nav');if(n)n.classList.remove('open');var b=document.querySelector('.burger');if(b)b.setAttribute('aria-expanded','false')}
+function go(t){
+  var id=++job,start=performance.now(),stable=0;
+  document.documentElement.style.scrollBehavior='auto';
+  function y(){return t.getBoundingClientRect().top+scrollY-hdr()}
+  /* carrega já as imagens entre a posição atual e o destino */
+  [].forEach.call(document.images,function(im){if(im.loading==='lazy'){var r=im.getBoundingClientRect().top+scrollY;if(r<y()+innerHeight)im.loading='eager'}});
+  function tick(){
+    if(id!==job)return;
+    var cur=scrollY,dst=Math.max(0,Math.min(y(),document.documentElement.scrollHeight-innerHeight)),d=dst-cur;
+    if(Math.abs(d)<2){window.scrollTo(0,dst);if(++stable>12||performance.now()-start>4000){document.documentElement.style.scrollBehavior='';return}}
+    else{stable=0;window.scrollTo(0,rm?dst:cur+d*0.18+(d>0?1:-1))}
+    requestAnimationFrame(tick)
   }
-});
+  requestAnimationFrame(tick);
+  ['wheel','touchstart','keydown'].forEach(function(ev){addEventListener(ev,function c(){job++;document.documentElement.style.scrollBehavior='';removeEventListener(ev,c)},{once:true,passive:true})});
+}
+function norm(p){return p.replace(/index\.html$/,'').replace(/\/?$/,'/')}
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href*="#"]');if(!a)return;
+  if(a.closest('.nav'))close();
+  var u=new URL(a.href,location.href);if(!u.hash||norm(u.pathname)!==norm(location.pathname))return;
+  var t=document.getElementById(decodeURIComponent(u.hash.slice(1)));if(!t)return;
+  e.preventDefault();history.pushState(null,'',u.hash);setTimeout(function(){go(t)},40);
+},true);
+/* vindo de outra página com #secao */
+if(location.hash.length>1){var t0;try{t0=document.getElementById(decodeURIComponent(location.hash.slice(1)))}catch(_){}
+  if(t0){if('scrollRestoration' in history)history.scrollRestoration='manual';addEventListener('load',function(){go(t0)});setTimeout(function(){go(t0)},50)}}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
 })();
