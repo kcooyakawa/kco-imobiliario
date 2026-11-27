@@ -25,8 +25,6 @@ function go(t){
   var id=++job,start=performance.now(),stable=0;
   document.documentElement.style.scrollBehavior='auto';
   function y(){return t.getBoundingClientRect().top+scrollY-hdr()}
-  /* carrega já as imagens entre a posição atual e o destino */
-  [].forEach.call(document.images,function(im){if(im.loading==='lazy'){var r=im.getBoundingClientRect().top+scrollY;if(r<y()+innerHeight)im.loading='eager'}});
   function tick(){
     if(id!==job)return;
     var cur=scrollY,dst=Math.max(0,Math.min(y(),document.documentElement.scrollHeight-innerHeight)),d=dst-cur;
